@@ -1,0 +1,13 @@
+\documentclass{xourse}
+
+%\input{../preamble.tex} %Don't have this yet but probably will.
+
+\title{Math 1125 Extras}
+
+\begin{document}
+\maketitle
+
+\activity{../integers/integersHistory.tex} 
+
+
+\end{document}
