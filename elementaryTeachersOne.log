@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=latex 2015.5.24)  4 JUN 2018 12:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=latex 2015.5.24)  4 JUN 2018 12:42
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -9,8 +9,11 @@ de"##1"{\Link##1}\expandafter\HCode\else\expandafter\Link\fi}\def\Link#1.a.b.c.
 documentstyle\def\documentstyle{\let\documentstyle\HCode\expandafter\def\csname
  tex4ht\endcsname{#1,html}\def\HCode####1{\documentstyle[tex4ht,}\@ifnextchar[{
 \HCode}{\documentstyle[tex4ht]}}}\makeatother\HCode ximera,charset=utf-8,-css.a
-.b.c.\input  integersHistory.tex
-(./integersHistory.tex
+.b.c.\input  elementaryTeachersOne.tex
+(./elementaryTeachersOne.tex
+(/Users/Jenny/Library/texmf/tex/latex/ximeraLatex/xourse.cls
+Document Class: xourse 2015/07/15 Version 1.26 by Bart Snapp, Oscar Levin, Hans
+ Parshall
 (/Users/Jenny/Library/texmf/tex/latex/ximeraLatex/ximera.cls
 Document Class: ximera 2016/08/17 Version 1.33 by Bart Snapp
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/article.cls
@@ -1139,10 +1142,11 @@ Package: forloop 2006/09/18 v3.0 For Loops for LaTeX
 \c@problem@Depth=\count222
 \c@hintLevel=\count223
 \c@problem=\count224
-)
-(../preamble.tex (/usr/local/texlive/2015/texmf-dist/tex/latex/was/gensymb.sty
+))
+(./preamble.tex (/usr/local/texlive/2015/texmf-dist/tex/latex/was/gensymb.sty
 Package: gensymb 2003/07/02 v1.0 (WaS)
-) (/usr/local/texlive/2015/texmf-dist/tex/latex/geometry/geometry.sty
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2010/09/12 v5.6 Page Geometry
 \Gm@cnth=\count225
 \Gm@cntv=\count226
@@ -1325,15 +1329,15 @@ version 2009-01-07-07:11
 ) (/usr/local/texlive/2015/texmf-dist/tex/generic/tex4ht/tex4ht.sty
 version 2008-10-27-17:23
 
---- needs --- tex4ht integersHistory ---
+--- needs --- tex4ht elementaryTeachersOne ---
 \tmp:cnt=\count293
-\openout15 = `integersHistory.tmp'.
+\openout15 = `elementaryTeachersOne.tmp'.
 
-(./integersHistory.tmp)
+(./elementaryTeachersOne.tmp)
 \tmp:dim=\skip138
- (./integersHistory.xref)
+ (./elementaryTeachersOne.xref)
 \:refout=\write6
-\openout6 = `integersHistory.xref'.
+\openout6 = `elementaryTeachersOne.xref'.
 
 
 (/usr/local/texlive/2015/texmf-dist/tex/generic/tex4ht/html4.4ht
@@ -1416,10 +1420,10 @@ version 2009-05-18-23:01
 --- Note --- for linear crosslinks of pages, use the command line option `next'
 
 --------------------------------------
-\openout15 = `integersHistory.4ct'.
+\openout15 = `elementaryTeachersOne.4ct'.
 
 \:tocout=\write7
-\openout7 = `integersHistory.4tc'.
+\openout7 = `elementaryTeachersOne.4tc'.
 
 
 (/usr/local/texlive/2015/texmf-dist/tex/generic/tex4ht/html4.4ht
@@ -1535,17 +1539,33 @@ version 2015-01-26-15:58
 (/usr/local/texlive/2015/texmf-dist/tex/generic/tex4ht/html4-math.4ht
 version 2009-05-18-23:01
 ))
+(/Users/Jenny/Library/texmf/tex/latex/ximeraLatex/xourse.4ht
+version 2015-08-22-10:35
+\c@ximera@part=\count294
+
+/Users/Jenny/Library/texmf/tex/latex/ximeraLatex/xourse.4ht:53: Too many }'s.
+l.53 }
+      
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
+(/usr/local/texlive/2015/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2015-01-26-15:58
+)
+(/usr/local/texlive/2015/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2009-05-18-23:01
+))
 (/Users/Jenny/Library/texmf/tex/latex/ximeraLatex/ximera.4ht
 version 2014-01-26-09:44
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/microtype/microtype.sty
 Package: microtype 2013/05/23 v2.5a Micro-typographical refinements (RS)
 \MT@toks=\toks62
-\MT@count=\count294
+\MT@count=\count295
 LaTeX Info: Redefining \textls on input line 766.
 \MT@outer@kern=\dimen268
 LaTeX Info: Redefining \textmicrotypecontext on input line 1285.
-\MT@listname@count=\count295
+\MT@listname@count=\count296
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/microtype/microtype-pdftex.def
 File: microtype-pdftex.def 2013/05/23 v2.5a Definitions specific to pdftex (RS)
@@ -1559,7 +1579,7 @@ Package microtype Info: Loading configuration file microtype.cfg.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/microtype/microtype.cfg
 File: microtype.cfg 2013/05/23 v2.5a microtype main configuration file (RS)
 ))
-\c@identification=\count296
+\c@identification=\count297
 
 
 /Users/Jenny/Library/texmf/tex/latex/ximeraLatex/ximera.4ht:51: LaTeX Error: En
@@ -1587,7 +1607,7 @@ l.57 \ConfigureQuestionEnv{shuffle}{shuffle}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-\c@choiceId=\count297
+\c@choiceId=\count298
 /Users/Jenny/Library/texmf/tex/latex/ximeraLatex/ximera.4ht:223: Illegal parame
 ter number in definition of \desmos.
 <to be read again> 
@@ -1839,7 +1859,7 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count298
+\c@section@level=\count299
 )
 (/usr/local/texlive/2015/texmf-dist/tex/generic/tex4ht/nameref.4ht
 version 2013-06-28-15:01
@@ -1883,15 +1903,16 @@ version 2015-01-26-15:58
 (/usr/local/texlive/2015/texmf-dist/tex/generic/tex4ht/html4-math.4ht
 version 2009-05-18-23:01
 ))
-runsystem(sed -i "/@/d" integersHistory.jax)...executed.
+runsystem(sed -i "/@/d" elementaryTeachersOne.jax)...executed.
 
-runsystem(sed -i "s/##\\([0-9]\\)/#\\1/g" integersHistory.jax)...executed.
+runsystem(sed -i "s/##\\([0-9]\\)/#\\1/g" elementaryTeachersOne.jax)...executed
+.
 
 
-(./integersHistory.oc)
+(./elementaryTeachersOne.oc)
 \eqtoks=\toks63
- (./integersHistory.aux)
-\openout1 = `integersHistory.aux'.
+ (./elementaryTeachersOne.aux)
+\openout1 = `elementaryTeachersOne.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 121.
 LaTeX Font Info:    ... okay on input line 121.
@@ -1911,7 +1932,7 @@ LaTeX Font Info:    ... okay on input line 121.
 Package pgfplots notification 'compat/show suggested version=true': document ha
 s been generated with the most recent feature set (\pgfplotsset{compat=1.12}).
 
-\c@lstlisting=\count299
+\c@lstlisting=\count300
 \AtBeginShipoutBox=\box66
 Package hyperref Info: Link coloring ON on input line 121.
 LaTeX Info: Redefining \ref on input line 121.
@@ -1979,6 +2000,18 @@ l.165 \fi
          
 I'm ignoring this; it doesn't match any \if.
 
+/Users/Jenny/Library/texmf/tex/latex/ximeraLatex/ximera.cfg:193: Undefined cont
+rol sequence.
+\a:@HEAD ...ame="og:image" content="}\xourse@logo 
+                                                  \HCode {" />\Hnewline }\HC...
+l.193 \EndPreamble
+                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
 
 LaTeX Warning: No \author given.
 
@@ -1987,79 +2020,28 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 )
-Overfull \hbox (10005.85825pt too wide) in paragraph at lines 193--7
-[][]\OT1/cmr/m/n/10 History of In-te-gers[][][][][][][][][][][][][][][][][][][]
-[][][][][][] 
+Overfull \hbox (10003.41385pt too wide) in paragraph at lines 193--9
+[][]\OT1/cmr/m/n/10 Math 1125 Ex-tras[][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][] 
  []
 
 [1
 
-] [2]
-
-./integersHistory.tex:8: LaTeX Error: Environment abstract undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.8 \begin{abstract}
-                    
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-./integersHistory.tex:10: LaTeX Error: \begin{document} ended by \end{abstract}
-.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.10 \end{abstract}
-                   
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-LaTeX Font Info:    Try loading font information for U+msa on input line 20.
-(/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-(/usr/local/texlive/2015/texmf-dist/tex/latex/microtype/mt-msa.cfg
-File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 20.
-
-(/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-(/usr/local/texlive/2015/texmf-dist/tex/latex/microtype/mt-msb.cfg
-File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
-)
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 26.
-
-(/usr/local/texlive/2015/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 26.
- [3] [4]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 67.
- [5]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 67.
-
-(./integersHistory.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 67.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 67.
+] [2] [3]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 13.
+ [4]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 13.
+ (./elementaryTeachersOne.aux)
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 13.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 13.
  ) 
 Here is how much of TeX's memory you used:
- 44628 strings out of 493090
- 955526 string characters out of 6134868
- 1302173 words of memory out of 5000000
- 47157 multiletter control sequences out of 15000+600000
- 6161 words of font info for 25 fonts, out of 8000000 for 9000
+ 44536 strings out of 493090
+ 954218 string characters out of 6134868
+ 1304193 words of memory out of 5000000
+ 47085 multiletter control sequences out of 15000+600000
+ 3808 words of font info for 15 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 81i,5n,86p,10890b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 87i,5n,88p,10897b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on integersHistory.dvi (5 pages, 37252 bytes).
+Output written on elementaryTeachersOne.dvi (4 pages, 26172 bytes).
