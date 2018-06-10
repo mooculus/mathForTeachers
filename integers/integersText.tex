@@ -1,0 +1,124 @@
+\documentclass{ximera}
+
+\input{../preamble.tex}
+
+\title{Integers: Models and Operations}
+
+\begin{document}
+
+\begin{abstract}
+We discuss various models for integers as well as how to use these models to understand operations with integers.
+\end{abstract}
+\maketitle
+
+\section{Motivation}
+
+From the point of view of arithmetic, the whole numbers have had two serious deficiencies.
+\begin{itemize}
+	\item We can add any two whole numbers and get another whole number, but the same isn't true for subtraction.
+	\item We can multiply any two whole numbers and get another whole number, but the same isn't true for division.
+\end{itemize} 
+We fix the second deficiency by introducing the set of \wordChoice{\choice[correct]{fractions} \choice{even numbers} \choice{imaginary numbers}} -- we can now divide any whole number by any other whole number which is not $\answer[given]{0}$ and get a meaningful answer.  In fact, the same is true for the entire (now expanded) set of integers and fractions together.  To solve the first deficiency, we want to do something similar.  The expansion of the whole number system to the system of integers, that is, introducing negative numbers to go along with positive numbers, is designed to resolve this problem.
+
+
+From an application point of view, we need integers to be able to quantifiably describe situations in which we have what we will call an artificial zero.
+\begin{definition}
+An \textbf{artificial zero} is a situation in which it makes sense and is useful for values of the quantities to be less than zero.
+\end{definition}
+ Remember (or read in the section about the history of the integers) that finding such situations was difficult for mathematicians for many centuries!  Many physical situations do not need integers because they have what we will call an absolute zero.
+ \begin{definition} An \textbf{absolute zero} is a situation in which it does not make sense and is not useful for values of the quantities to be less than zero.
+ \end{definition}
+  It makes no sense to say, ``I have fewer than zero oranges'', so this situation would have an absolute zero.  ``I am taking fewer than zero classes this semester'' has an \wordChoice{\choice{artificial zero} \choice[correct]{absolute zero}}, and ``I have fewer than zero dollar bills in my wallet'' has an \wordChoice{\choice{artificial zero} \choice[correct]{absolute zero}}, while ``It is fewer than zero degrees outside'' has an \wordChoice{\choice[correct]{artificial zero}\choice{absolute zero}}.
+
+In situations with an artificial zero, or a zero arbitrarily set, it makes sense to be talking about amounts that are less than zero.  Here are some examples.
+\begin{itemize}
+	\item {\em Temperature.}  In the Fahrenheit and Celsius scales, zero is set at some arbitrary temperature (often for a reason), but it is possible for temperatures to be colder than that set zero.  Notice that the Kelvin scale is different:  zero is set at the point there is completely no heat, so a temperature less than zero Kelvin is not possible.
+	\item {\em Finances.}  Although having a financial worth of zero is often a bad situation, one can have less financial worth in the sense of owing someone money.  So, having a worth of $-5$ dollars means you need to somehow gain \$5 before you can say you are ``even'', with no debt and no profit.  Notice that this can get complicated! If oranges are the currency, one could say one has $-5$ oranges instead of $-5$ dollars even though it is impossible to physically have $-5$ oranges or $-5$ dollar bills.  The idea of owing someone oranges or dollars makes this idea work.
+	\item {\em Sports.}  In golf, ``par'' is the artificial zero which is defined as the number of shots (e.g., 5 shots) experts think a golfer should need in order to be able to get the golf ball into the hole.  However, if the golfer takes fewer shots (e.g., 2) to get into the hole, we say the golfer is so many shots ``under par''.  
+	\begin{example} A certain golf hole has a par of $5$.  If a golfer takes $2$ shots to get into the hole, we say the golfer is $\answer[given]{3}$ shots under par, or at $\answer[given]{-3}$ with respect to par.  \end{example}
+	Notice that the actual number of shots is always a positive number, but par is playing the role of an artificial zero. In football, the artificial zero is the line of scrimmage, or where the play begins.  If a player who is running gets tackled behind this line, we say that the player has rushed for negative yardage. \begin{example}  A running play starts at the 25 yard line and ends at the 19 yard line.  In this case, the runner has gone backwards $\answer[given]{6}$ yards, so football commentators would say that the play went for a total of $\answer[given]{-6}$ yards.  \end{example}
+\end{itemize}
+
+\section{Representations of Integers}
+
+There are several main ways we represent integers, or several important tools we will discuss.
+
+{\em Stories.}  We use situations similar to those with an artificial zero described above.  These stories are useful because we can start to picture what we would like to do with integers, why we would like to do these things, and most importantly we can use the stories to check whether or not our answers make sense.
+
+{\em Chips.}  We use one black chip to represent one positive unit and one red chip to represent one negative unit.  If I have one black chip together with one red chip, I have the same amount in value as if I have no chips at all.  We might say that one red chip cancels one black chip.  Sometimes these chips are used alongside a story, and we might say one black chip is \$$1$ while one red chip is \$$\answer[given]{-1}$.  ***Maybe a picture example here??***
+
+{\em Number lines.}  Previously, we marked zero and one on our number lines, and considered how we could mark all of the other positive numbers to the right of zero.  With integers, we extend the number line to the left of zero as well.
+\begin{center}
+\begin{tikzpicture}[font=\Large]
+\draw (-0.5,0) -- (12.5,0);
+\foreach \x in {0,3,6,9,12}
+\draw[shift={(\x,0)},color=black] (0pt,3pt) -- (0pt,0pt);
+%\foreach \x in {0,1,2,3,4,5,6,7,8,9,10,11,12}
+%\draw[shift={(\x,0)},color=black] (0pt,0pt) -- (0pt,-3pt) node[below] 
+%{$\frac{\x}{3}$};
+\draw (0,0) node[below]{$-2$};
+\draw (3,0) node[below]{$-1$};
+\draw (6,0) node[below]{$0$};
+\draw (9,0) node[below]{$1$};
+\draw (12,0) node[below]{$2$};
+\end{tikzpicture}
+\end{center}
+
+
+
+
+
+
+\end{document}
+
+
+2.	Chips: A black chip represents one positive unit (e.g., 1 dollar in profit) and a red chip represents one negative unit (e.g., 1 dollar in debt).  If I have one black cchip together with one red chip, I have the same amount in value as if I have no chips at all (0).  That is, in the chip representation, one black chip “cancels” one red chip.
+3.	Number Line:  Now one can go to the left of the zero you set.
+Comparison of Integers
+Like with the other number systems we’ve studied, we would like to discuss having two integer amounts and be able to tell which one is greater, lesser, or if the two amounts are equal.
+While we could just “state a rule” for this, as with all mathematics, if it is possible to come up with a rule from a sense-making point of view, it will be more understandable and useful.
+Note that, because, with allowing negative numbers, we are often not dealing with sets of objects that one can see and thus a physical one-to-one correspondence (even with the different-colored chips) is difficult to attain here.
+However, like in other number systems, we can look at “real-life” situations and ask, say, which case someone has a better financial worth than another, better or worse rushing statistics in football, hotter (more) or colder (less) temperature, etc.  In each case, one needs to define which attribute means greater and which means lesser (e.g., in golf, the more negative score is a “better” score).
+We can also use a number line and take advantage of what we did with positive numbers when saying that the number on the right is the greater number.  For example, -5 < 2 because -5 is to the left of 2 on the number line (Note: In some situations, one might say -5 is “greater” because it is further from zero, but those are in situations where we are not comparing integers, but only the absolute values of these integers to measure, for example, distance).
+Operations with Integers
+“Answers” to the activity? Correct stories, solving the stories with representations (including describing issues such as renaming with chips, deciding direction on number line via “good news/bad news” reasoning, etc.)?  I already sort of have that in the “When Two Negatives are Positive” activity (but not so much with addition/subtraction):
+When Two Negatives Make a Positive:  Multiplication of Integers
+Let’s return to our integer addition and subtraction scenarios involving “net worth”.  Recall the following guidelines:
+1.	“Plus” means “Receive in the Mail” and “Minus” means “Send in the Mail”
+2.	“Positive” means “Check” and “Negative” means “Bill”
+3.	Money and net worth are in terms of dollars.
+4.	Each black chip means a positive one dollar and each red chip means a negative one dollar.
+Now, things get a little bit more complicated when dealing with a more complicated operation such as multiplication, where the “wholes” for each of the three quantities in a problem are different (# Groups   # Objects in each Group = # Objects).  So we need to be a little more careful in how we phrase our problems.
+As always, let’s start with what we know to lead us to what we don’t know:  Let’s model (3) (5) with a problem that we’ll also want to use for (3) (-5), (-3) (5), and (-3) (-5).  Because multiplication is “repeated addition”, we want to try to stay close to what we’ve already accomplished with addition and subtraction.
+For (3) (5), we’ll be joining 3 groups with 5 objects in each of those groups.  That is, it’s already “addition” from the start.  Since our addition (and missing addend subtraction) problems asked “what is our net worth now”, let’s stay with that, which forces our objects (our “answer”) to be dollars (positive means our final net worth is “ahead” and negative means we wind up “in debt”).  
+Thus, for (3) (5), we’ll have 3 groups with 5 objects in each group, which is 3 groups with a positive 5 dollars in each group.  So, each group is going to be, in this example, a check for $5 (so a positive second number means we’re talking about checks.  A negative second number means we’re talking about bills for that amount).
+The second issue is whether we’re receiving or sending these checks or bills (i.e., receiving or sending these objects).  That is, will we be receiving a bunch of checks or bills for the same amount or will we be sending those checks or bills for the same amount?  Because we have not dealt with the sign of the first number, this is what that will mean.  That is, (3) (5) will be “we receive 3 checks, each worth $5”.  The “receive” is from the first number (3) being positive.  The “checks” is from the second number (5) being positive.
+Finally, our stories for addition always asked “what is our net worth now?”  However, our “starting” net worth was always our first number (e.g., for 4 + 5:  “We start ahead $4…”).  Here, we can’t do that for (3) (5) because 3 is telling us how many checks or bills we are receiving or sending.  Thus, if our final question is still going to be “what is our net worth now?”, what should we assume our “starting net worth” to be with each problem?
+Thus, let’s put this all together:  The story problem for (3) (5) will be (fill in the blank and circle the appropriate choices:  
+“We start with a net worth of ____.  We (receive or send) 3 (checks or bills) for $5 each.  What is our net worth now?”
+Now do the same for each of (3) (-5), (-3) (5), and (-3) (-5).  Write the story, model it with chips, and model it on a number line (Direction determined by “good or bad news”).  Finally, write an arithmetic expression for each involving repeated addition or repeated subtraction (depending on whether we’re receiving or sending).
+
+2.  Making sense by numerical patterns:
+      a.  Starting with knowing (8)  (5) = 40 (and knowing that (positive)  (positive) = positive), work your way down one-by-one on the second number until you reach (8)  (0) = 0.  Notice a pattern in the answers and use that pattern to predict what (8)  (-1) should be.  Then predict what (8)  (-2) and (8)  (-3) should be.
+      b.  Starting with knowing (8)  (-5) = -40 (and knowing that (positive)  (negative) = negative from part (a)), work your way down one-by-one on the first number until you reach (0)  (-5) = 0.  Notice a pattern in the answers and use that pattern to predict what (-1)  (-5) should be.  Then predict what (-2)  (-5) and (-3)  (-5) should be.
+
+3.   Assuming that we know that the associative property of multiplication holds for all signed numbers AND that we know that unlike signs multiply to be a negative, what is wrong with the following argument?:
+We want to find out what (-3)  (-5) should be (or in general, what a negative times negative should be).  
+Step #1:  Well, (-3) = (-1)  (3).  
+Step #2:  So, (-3)  (-5) should be   (-1)   (3)  (-5)   (i.e., rewriting (-3)).  
+Because we know the associative property of multiplication and that a positive times negative = negative, we pair up the (3)  (-5) to get (-15).
+Thus, we have (-1)   (3)  (-5) = (-1)   (-15) = 15.  
+Thus, (-3)  (-5) = 15 (and, thus, by similar argument, negative times negative must be positive).
+
+4.    Back in school, you probably learned that distance = rate x time.  In this exercise, we’ll look at it as distance = time x rate, so that the number of groups is the first factor.  For example, if you traveled for 3 hours at a rate of 50 miles per hour, you would have traveled a distance of 3 x 50 = 150 miles (objects are miles and groups are hours).  In other words, your position has shifted 150 miles from where you started.
+       Let’s expand this idea to take advantage that we can speak of time in terms of time in the past (“ago”:  considered to be negative time) and time in the future (positive time).  We can also speak of position (as opposed to distance, which is always positive) in terms of west (negative) and east (positive).  
+       In this scheme, we can rewrite our 3 x 50 problem in the following way:  Let’s assume we are currently at home, which sits on a west-east highway.  Let’s say we’ve been traveling eastward at 50 miles per hour for awhile and will continue to do so.  Where will we be 3 hours from now (in the future)?  That is, what is our position 3 hours from now (as opposed to asking how far did we travel)?
+              In this scheme, what would the story problem (and answer) be for:
+3 x (-50)?  
+(-3) x 50?  
+(-3) x (-50)?  
+
+
+
+
+

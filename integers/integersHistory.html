@@ -9,7 +9,7 @@
 <meta name="originator" content="TeX4ht (http://www.tug.org/tex4ht/)" /> 
 <!-- charset=utf-8,-css,html,htex4ht,xhtml --> 
 <meta name="src" content="integersHistory.tex" /> 
-<meta name="date" content="2018-06-04 12:41:00" /> 
+<meta name="date" content="2018-06-04 18:32:00" /> 
 <meta name="author" content="" /> 
 <meta charset="UTF-8" /> 
 <meta name="generator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)" /> 
@@ -33,6 +33,10 @@
 \newcommand {\restoregeometry }[0]{\clearpage \Gm@restore@pkg \Gm@changelayout }
 \newcommand {\savegeometry }[1]{\Gm@save \expandafter \edef \csname Gm@restore@@##1\endcsname {\Gm@restore }}
 \newcommand {\loadgeometry }[1]{\clearpage \@ifundefined {Gm@restore@@##1}{\PackageError {geometry}{\string \loadgeometry : name ‘##1&#x2019;undefined}{The name ‘##1&#x2019;should be predefined with \string \savegeometry }}{\@nameuse {Gm@restore@@##1}\Gm@changelayout }}
+\newcommand {\firsthline }[0]{\multicolumn 1c{\global \backup@length \ht \@arstrutbox \global \advance \backup@length \dp \@arstrutbox \global \advance \backup@length \arrayrulewidth \raise \extratabsurround \copy \@arstrutbox }\\[-\backup@length ]\hline }
+\newcommand {\lasthline }[0]{\hline \multicolumn 1c{\global \backup@length 2\ht \@arstrutbox \global \advance \backup@length 2\dp \@arstrutbox \global \advance \backup@length \arrayrulewidth }\\[-\backup@length ]\multicolumn 1c{\lower \extratabsurround \copy \@arstrutbox }}
+\newcommand {\reserved@a }[0]{\ifx \reserved@a \hline \vskip \doublerulesep \vskip -\arrayrulewidth \fi \ifnum 0=‘{\fi }}
+\newcommand {\@xhline }[0]{\ifx \reserved@a \hline \vskip \doublerulesep \fi \ifnum 0=‘{\fi }}
 \newcommand {\npfourdigitsep }[0]{\nprt@numsepfourtrue }
 \newcommand {\npfourdigitnosep }[0]{\nprt@numsepfourfalse }
 \newcommand {\npaddmissingzero }[0]{\nprt@addmissingzerotrue }
@@ -119,7 +123,6 @@
 \newcommand {\egone }[1]{\multido {\i =1+1}{##1}{\includegraphics [scale=.1]{egyptian/egypt_stroke.pdf}\hspace {0.5mm}}}
 \newcommand {\egyptify }[7]{ \multido {\i =1+1}{##1}{\includegraphics [scale=.1]{egyptian/egypt_person.pdf}\hspace {0.5mm}} \multido {\i =1+1}{##2}{\includegraphics [scale=.1]{egyptian/egypt_fish.pdf}\hspace {0.5mm}} \multido {\i =1+1}{##3}{\includegraphics [scale=.1]{egyptian/egypt_finger.pdf}\hspace {0.5mm}} \multido {\i =1+1}{##4}{\includegraphics [scale=.1]{egyptian/egypt_lotus.pdf}\hspace {0.5mm}} \multido {\i =1+1}{##5}{\includegraphics [scale=.1]{egyptian/egypt_scroll.pdf}\hspace {0.5mm}} \multido {\i =1+1}{##6}{\includegraphics [scale=.1]{egyptian/egypt_heel.pdf}\hspace {0.5mm}} \multido {\i =1+1}{##7}{\includegraphics [scale=.1]{egyptian/egypt_stroke.pdf}\hspace {0.5mm}} \hspace {.5mm} }
 \newcommand {\reserved@a }[2]{}
-\newcommand {\reserved@a }[2]{}
 \newcommand {\HyperFirstAtBeginDocument }[0]{\AtBeginDocument }
 \newcommand {\reserved@a }[1]{}
 \newcommand {\reserved@a }[2]{}
@@ -129,9 +132,6 @@
 \newcommand {\epstopdfsetup }[0]{\setkeys {ETE}}
 \newcommand {\epstopdfcall }[1]{\ifETE@InsideSetfile \expandafter \@firstoftwo \else \expandafter \@secondoftwo \fi {‘##1}{\Gin@base \Gin@ext }}
 \newcommand {\epstopdfDeclareGraphicsRule }[4]{\ifx \\##4\\\@PackageError {epstopdf-base}{Conversion command is missing}\@ehc \else \begingroup \@ifundefined {Gin@rule@##1}{}{\@PackageInfo {epstopdf-base}{Redefining graphics rule for ‘##1&#x2019;}}\endgroup \@namedef {Gin@rule@##1}####1{{##2}{##3}{\epstopdfcall {##4}}}\fi }
-\newcommand {\mdf@patchamsthm }[0]{\let \mdf@deferred@thm@head \deferred@thm@head \pretocmd {\deferred@thm@head }{\@inlabelfalse }{\mdf@PackageInfo {mdframed detected package amsthm
- changed the theorem header of amsthm\MessageBreak }}{\mdf@PackageError {mdframed detected package amsthm
- changed the theorem header of amsthm failed\MessageBreak }}}
 \newcommand {\GetTitleStringSetup }[0]{\setkeys {gettitlestring}}
 \newcommand {\GetTitleString }[0]{\ifGTS@expand \expandafter \GetTitleStringExpand \else \expandafter \GetTitleStringNonExpand \fi }
 \newcommand {\GetTitleStringExpand }[1]{\def \GetTitleStringResult {##1}\begingroup \GTS@DisablePredefinedCmds \GTS@DisableHook \edef \x {\endgroup \noexpand \def \noexpand \GetTitleStringResult {\GetTitleStringResult }}\x }
@@ -152,7 +152,6 @@
 \newcommand {\celsius  }[0]{\ifmmode ^\circ \mathrm {C}\else $^\circ $C\fi }
 \newcommand {\ohm  }[0]{\ifmmode \Omega \else $\Omega $\fi }
 \newcommand {\reserved@a }[2]{}
-\newcommand {\reserved@a }[2]{}
 \newcommand {\reserved@a }[0]{\AtBeginDocument }
 \newcommand {\reserved@a }[1]{}
 \newcommand {\reserved@a }[2]{}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          </script><script type="text/javascript"> 
@@ -166,9 +165,9 @@ class="abstract"
 </p></div>
 <div class="maketitle"></div>
 <!--l. 14--><p class="noindent" >You might have noticed that there is one common class of numbers that we haven&#x2019;t much discussed, yet: <span class="word-choice" id="word-choice1"><a 
- id="x1-140r1"></a><span class="choice  "   id="choice1">whole
+ id="x1-139r1"></a> <span class="choice  "   id="choice1">whole
 numbers</span> <span class="choice correct "   id="choice2">negative numbers</span> <span class="choice  "   id="choice3">fractions</span> <span class="choice  "   id="choice4">decimals</span>
-</span>. One of the choices that the author of your textbook has made is to discuss the various kinds of operations
+</span> . One of the choices that the author of your textbook has made is to discuss the various kinds of operations
 (addition, subtraction, multiplication, division) as a whole, including many of the types of numbers in the
 discussion. This helps to highlight the fact that multiplication, for instance is the same thing no matter
 what kinds of numbers you use. Other textbooks take a different approach: looking at whole numbers
@@ -261,7 +260,7 @@ didn&#x2019;t have a very good representation for negative numbers that made sen
 consider a few problems.
 </p>
 <div class="problem-environment question" id="problem2"><a 
- id="x1-141r2"></a> For each of the problems below, write an expression that would solve the problem, i.e. <script type="math/tex"> <![CDATA[ 
+ id="x1-140r2"></a> For each of the problems below, write an expression that would solve the problem, i.e. <script type="math/tex"> <![CDATA[ 
 3+4 
 ]]> 
 </script>.
@@ -315,7 +314,7 @@ cases.
 </p><!--l. 48--><p class="noindent" >Let&#x2019;s try another example.
 </p>
 <div class="problem-environment question" id="problem3"><a 
- id="x1-145r3"></a> For each of the problems below, write an expression that would solve the problem, i.e. <script type="math/tex"> <![CDATA[ 
+ id="x1-144r3"></a> For each of the problems below, write an expression that would solve the problem, i.e. <script type="math/tex"> <![CDATA[ 
 3+4 
 ]]> 
 </script>.
