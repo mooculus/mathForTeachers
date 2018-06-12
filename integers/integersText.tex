@@ -45,26 +45,70 @@ There are several main ways we represent integers, or several important tools we
 
 {\em Stories.}  We use situations similar to those with an artificial zero described above.  These stories are useful because we can start to picture what we would like to do with integers, why we would like to do these things, and most importantly we can use the stories to check whether or not our answers make sense.
 
-{\em Chips.}  We use one black chip to represent one positive unit and one red chip to represent one negative unit.  If I have one black chip together with one red chip, I have the same amount in value as if I have no chips at all.  We might say that one red chip cancels one black chip.  Sometimes these chips are used alongside a story, and we might say one black chip is \$$1$ while one red chip is \$$\answer[given]{-1}$.  ***Maybe a picture example here??***
+{\em Chips.}  We use one black chip to represent one positive unit and one red chip to represent one negative unit.  If I have one black chip together with one red chip, I have the same amount in value as if I have no chips at all.  We might say that one red chip cancels one black chip.  Sometimes these chips are used alongside a story, and we might say one black chip is \$$1$ while one red chip is \$$\answer[given]{-1}$.  %%***Maybe a picture example here??***
 
 {\em Number lines.}  Previously, we marked zero and one on our number lines, and considered how we could mark all of the other positive numbers to the right of zero.  With integers, we extend the number line to the left of zero as well.
 \begin{center}
 \begin{tikzpicture}[font=\Large]
-\draw (-0.5,0) -- (12.5,0);
+\draw[<->] (-0.5,0) -- (12.5,0);
 \foreach \x in {0,3,6,9,12}
-\draw[shift={(\x,0)},color=black] (0pt,3pt) -- (0pt,0pt);
-%\foreach \x in {0,1,2,3,4,5,6,7,8,9,10,11,12}
-%\draw[shift={(\x,0)},color=black] (0pt,0pt) -- (0pt,-3pt) node[below] 
-%{$\frac{\x}{3}$};
+\draw[shift={(\x,0)},color=black] (0pt,3pt) -- (0pt,-2pt);
 \draw (0,0) node[below]{$-2$};
 \draw (3,0) node[below]{$-1$};
 \draw (6,0) node[below]{$0$};
 \draw (9,0) node[below]{$1$};
 \draw (12,0) node[below]{$2$};
-\end{tikzpicture}
+\end{tikzpicture}  
 \end{center}
 
 
+\section{Comparison of Integers}
+
+Like with the other number systems we’ve studied, we would like to discuss having two integer amounts and be able to tell which one is greater, lesser, or if the two amounts are equal.  While we could just state a rule for this, as with all mathematics, if it is possible to come up with a rule from a sense-making point of view, it will be more understandable and useful.
+
+Your first guess might be to try a one-to-one correspondence.  However, with negative numbers we are sometimes dealing with sets of objects that don't physically exist, and so making a one-to-one correspondence is very difficult in this case.  Also, when we work with models like the chips, our physical objects have different meanings, and so they cannot be placed in a one-to-one correspondence without extra care!  
+\begin{example}
+Imagine a situation in which Ava has $4$ black chips, and Aleks has $8$ red chips.  The value of Ava's chips is $\answer[given]{4}$, while the value of Aleks' chips is $\answer[given]{-8}$.  If we line up their chips in a one-to-one correspondence, we see that \wordChoice{\choice{Ava} \choice[correct]{Aleks}} has more chips, but \wordChoice{\choice[correct]{Ava} \choice{Aleks}} has the greater value in chips.
+\end{example}
+
+However, like in other number systems, we can use our story problems to look at real-life situations and ask, ``Which situation is better?'' or ``Which number has more value in this situation?''  For instance, we have things like the following.
+\begin{itemize}
+\item Which financial worth is better? (``Better'' here usually means more money.)
+\item Which team's total running yards is better? (``Better'' here usually means more yards, with positive yards being better than negative yards.)
+\item Which temperature is better? (Here, ``better'' depends on the situation!  We should probably ask instead, ``Which temperature is hotter?'')
+\item Which golf score is better? (Here, ``better'', with respect to par, would actually be the more negative number!)
+\end{itemize}
+Notice that in each case, one needs to define which attribute means greater and which means lesser.
+
+We can also use a number line and take advantage of what we did with positive numbers when saying that the number further to the \wordChoice{\choice{left} \choice[correct]{right}} is the greater number. 
+\begin{example}
+Consider the following number line, and the locations of $-5$ and $2$.
+\begin{center}
+\begin{tikzpicture}[font=\Large]
+\draw[<->] (-0.5,0) -- (9.5,0);
+\foreach \x in {0,1,2, 3, 4, 5,6, 7, 8, 9}
+\draw[shift={(\x,0)},color=black] (0pt,3pt) -- (0pt,-2pt);
+\draw (0,0) node[below]{$-6$};
+\draw (1, 0) node[below]{$-5$};
+\draw (2, 0) node[below]{$-4$};
+\draw (3,0) node[below]{$-3$};
+\draw (4,0) node[below]{$-2$};
+\draw (5,0) node[below]{$-1$};
+\draw (6,0) node[below]{$0$};
+\draw (7,0) node[below]{$1$};
+\draw (8,0) node[below]{$2$};
+\draw (9,0) node[below]{$3$};
+\node at (1,0)[circle,fill,inner sep=1.5pt]{};
+\node at (8,0)[circle,fill,inner sep=1.5pt]{};
+\end{tikzpicture}  
+\end{center}
+
+On the number line above, $\answer[given]{-5} < \answer[given]{2}$ because $-5$ is to the \wordChoice{\choice[correct]{left} \choice{right}} of $2$ on the number line.  However, of these two numbers, $\answer[given]{-5}$ is further from zero.  If our home was located at $0$ and we asked, ``Which of $-5$ and $2$ is further from home?'' we might say that $\answer[given]{2} < \answer[given]{-5}$.
+ \end{example}
+Again, notice how complicated these ideas get!  We should always keep in mind the context for our numbers.
+
+
+\section{Operations with Integers}
 
 
 
@@ -72,15 +116,9 @@ There are several main ways we represent integers, or several important tools we
 \end{document}
 
 
-2.	Chips: A black chip represents one positive unit (e.g., 1 dollar in profit) and a red chip represents one negative unit (e.g., 1 dollar in debt).  If I have one black cchip together with one red chip, I have the same amount in value as if I have no chips at all (0).  That is, in the chip representation, one black chip “cancels” one red chip.
-3.	Number Line:  Now one can go to the left of the zero you set.
-Comparison of Integers
-Like with the other number systems we’ve studied, we would like to discuss having two integer amounts and be able to tell which one is greater, lesser, or if the two amounts are equal.
-While we could just “state a rule” for this, as with all mathematics, if it is possible to come up with a rule from a sense-making point of view, it will be more understandable and useful.
-Note that, because, with allowing negative numbers, we are often not dealing with sets of objects that one can see and thus a physical one-to-one correspondence (even with the different-colored chips) is difficult to attain here.
-However, like in other number systems, we can look at “real-life” situations and ask, say, which case someone has a better financial worth than another, better or worse rushing statistics in football, hotter (more) or colder (less) temperature, etc.  In each case, one needs to define which attribute means greater and which means lesser (e.g., in golf, the more negative score is a “better” score).
-We can also use a number line and take advantage of what we did with positive numbers when saying that the number on the right is the greater number.  For example, -5 < 2 because -5 is to the left of 2 on the number line (Note: In some situations, one might say -5 is “greater” because it is further from zero, but those are in situations where we are not comparing integers, but only the absolute values of these integers to measure, for example, distance).
-Operations with Integers
+
+
+
 “Answers” to the activity? Correct stories, solving the stories with representations (including describing issues such as renaming with chips, deciding direction on number line via “good news/bad news” reasoning, etc.)?  I already sort of have that in the “When Two Negatives are Positive” activity (but not so much with addition/subtraction):
 When Two Negatives Make a Positive:  Multiplication of Integers
 Let’s return to our integer addition and subtraction scenarios involving “net worth”.  Recall the following guidelines:
