@@ -1,0 +1,24 @@
+\documentclass{ximera}
+
+\input{../../preamble.tex}
+
+\begin{document}
+
+\begin{question}
+TYPE YOUR QUESTION OR PROBLEM HERE 
+
+\begin{selectAll}
+
+\choice {TYPE OPTION A}
+%NOTE THAT we include [correct] next to "\choice" without leaving a space
+\choice[correct]{TYPE OPTION B}
+\choice {TYPE OPTION C}
+\choice {TYPE OPTION D}
+
+
+\end{selectAll}
+
+
+
+\end{question}
+\end{document}
