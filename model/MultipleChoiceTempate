@@ -1,0 +1,25 @@
+\documentclass{ximera}
+
+\input{../../preamble.tex}
+
+\begin{document}
+
+\begin{question}
+TYPE YOUR QUESTION/PROBLEM HERE
+
+\begin{multipleChoice}
+
+\choice {OPTION A}
+\choice {OPTION B}
+\choice[correct]{OPTION C}
+
+\choice {OPTION D}
+\choice {OPTION E}
+
+\end{multipleChoice}
+
+
+
+\end{question}
+
+\end{document}
