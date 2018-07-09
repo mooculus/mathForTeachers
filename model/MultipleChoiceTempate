@@ -12,7 +12,7 @@ TYPE YOUR QUESTION/PROBLEM HERE
 \choice {OPTION A}
 \choice {OPTION B}
 \choice[correct]{OPTION C}
-
+%NOTE THAT we include [correct] next to "\choice" without leaving a space
 \choice {OPTION D}
 \choice {OPTION E}
 
