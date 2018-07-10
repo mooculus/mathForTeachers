@@ -12,47 +12,242 @@ We look at multiplying integers.
 \end{abstract}
 \maketitle
 
-Some stuff will go here.
+Now that we've conquered addition and subtraction, let's move on to multiplication.  The first thing we should notice when comparing multiplication to addition and subtraction is that with multiplication, the wholes for each of our quantities are different, while with addition and subtraction they are all the same.  For instance, we might have something like the following.
+\begin{center}
+    $4$ (apples) + $9$ (apples) = $13$ (apples)
+    
+    $4$ (baskets of apples) $\times$ $9$ (apples per basket) = $36$ (apples)
+\end{center}
+We need to continue to be careful in how we phrase our problems!
+
+\subsection{Checks and Bills}
+
+As we have done previously, let's begin by looking at a straightforward multiplication problem with whole numbers, and then slowly introduce integers.  Remember to look back at our sections about multiplication in the text!
+
+\begin{question}
+Johnny has $9$ lunch bags, and each lunch bag has $2$ apples in it.  How many apples does Johnny have all together?
+
+\begin{prompt}
+As an expression involving the multiplication sign, Johnny has $\answer[given]{9 \times 2}$ apples.
+\end{prompt}
+\end{question}
+
+We can think of this problem as making $9$ copies of the $2$ apples per bag.  As a story about checks and bills, then, we could think of making $9$ copies of \$$2$.
+
+\begin{example}
+Let's start to write our story problem for $9 \times 2$.  Johnny is our usual small business owner.  Starting with the second number, we know that these should be \wordChoice{\choice[correct]{checks} \choice{bills}}, each worth \$$2$, since the $2$ is positive.
+
+For the first number, we know that Johnny \wordChoice{\choice[correct]{receives} \choice{sends}} $9$ of these checks, because the $9$ is positive.
+\end{example}
+
+But what should be our question?  We could start by saying that Johnny's net worth is \$$0$, and ask what his net worth is now.  The natural answer to this question would be
+\[
+0 + (9\times 2) = 9 \times 2, 
+\]
+but that extra zero can feel a little bit confusing.
+
+We might instead ask, ``How has Johnny's net worth changed?''  In this case, no matter what he had to start with, he now has \$$9 \times 2$ {\em more} than he did previously.  Let's proceed with this second formulation, but cautiously.  We will need to make sure all of this still makes sense as we introduce negative numbers.
+
+For our first question, let's change the second number to be negative.
+\begin{question}
+Johnny receives $5$ bills, each for \$$10$.  After all bills are paid, how has Johnny's net worth changed?
+
+\begin{prompt}
+As an expression involving the multiplication sign, Johnny's net worth has changed by \$$\answer[given]{5\times(-10)}$.
+\end{prompt}
+\end{question}
+Since Johnny is paying bills in this situation, it makes sense for his net worth to decrease, or for the change to be negative.
+
+What if our first number is negative?  In other words, what would it mean to have negative groups?  It may feel a little bit forced, but we will use the convention that a negative group means we are {\em sending} that many copies of our check or bill.  
+
+\begin{example}
+Johnny opens his business for today with a net worth of \$$0$, and then sends $3$ checks for \$$8$ each.  What is Johnny's net worth now?
+
+\begin{explanation}
+Each of the checks is worth \$$8$, and there are $3$ of them.  This means that Johnny is sending out \$$\answer[given]{24}$.  In other words, his total net worth should be \$$\answer[given]{-24}$.  Writing this as an expression, we have
+\[
+    \answer[given]{0} - \left ( \answer[given]{3} \times \answer[given]{8} \right ) = (-3) \times (8).
+\]
+\end{explanation}
+\end{example}
+
+While beginning with a net worth of \$$0$ helps us to understand why negative groups might be represented by sending, this convention may still feel artificial.  Instead, we could ask the following.
+\begin{question}
+Johnny sends three checks, each for eight dollars.  How much has Johnny's net worth changed?
+
+\begin{prompt}
+As an expression involving the multiplication sign, Johnny's net worth has changed by \$$\answer[given]{(-3) \times 8}$.
+\end{prompt}
+\end{question}
+You might object that what we are doing here is actually calculating $3 \times 8$, and reasoning that the overall answer should be negative.  That's okay!  Remember that this concept is difficult, and we are doing the best we can.
+
+Finally, let's look at what happens when we multiply two negatives together.
+\begin{question}
+Johnny sends $22$ bills, each for \$$54$.  After all bills are paid, how much has Johnny's net worth changed?
+
+\begin{prompt}
+As an expression involving the multiplication sign, Johnny's net worth has changed by \$$\answer[given]{(-22)\times(-54}$.
+\end{prompt}
+\end{question}
+In terms of the situation with checks and bills, should this answer be positive or negative?  If Johnny is sending bills to other people, and then these other people pay their bills, this money comes back to Johnny.  So, his net worth overall should increase, meaning the change should be positive.  Notice that we didn't need to memorize any rules about negative numbers in order to come to this conclusion!
 
 
 
+\subsection{Number Lines}
+
+Next, let's use a number line to solve some multiplication problems with integers.  You can write 
+a story problem to go along with each of these expressions for extra practice.
+
+\begin{example}
+Imagine using a number line like the one below to solve the multiplication problem $5 \times (-3) $.
+\begin{center}
+\begin{tikzpicture}[font=\Large]
+\draw[<->] (-0.5,0) -- (12.5,0);
+\foreach \x in {0,1.5, 3, 4.5, 6, 7.5, 9, 10.5,12}
+\draw[shift={(\x,0)},color=black] (0pt,3pt) -- (0pt,-2pt);
+\draw (0,0) node[below]{$-4$};
+\draw (1.5,0) node[below]{$-3$};
+\draw (3,0) node[below]{$-2$};
+\draw (4.5,0) node[below]{$-1$};
+\draw (6,0) node[below]{$0$};
+\draw (7.5,0) node[below]{$1$};
+\draw (9,0) node[below]{$2$};
+\draw (10.5,0) node[below]{$3$};
+\draw (12,0) node[below]{$4$};
+\end{tikzpicture}  
+\end{center}
+Remember that multiplication is repeated addition.  We want to add $-3$ five times, or make five copies of $-3$.  As with our story problems, the question or starting point requires care.  With our stories, our starting net worth was $\answer[given]{0}$, so with a number line we begin by standing at the tick marked with $\answer[given]{0}$.  Since we 
+are adding, we face towards the \wordChoice{\choice{right} \choice[correct]{left}}.  Now, we can think of the steps as our groups, meaning the amount we move with each step should be $\answer[given]{3}$ ticks \wordChoice{\choice{forward} \choice[correct]{backward}}, 
+since $3$ is positive.  After taking $\answer[given]{5}$ such steps,  where on the number line are we now? 
+
+\begin{prompt}
+We are located at the tick labeled $\answer[given]{-15}$.
+\end{prompt}
+\end{example}
+
+\begin{example}
+Imagine using a number line like the one below to solve the multiplication problem $(-8) \times (-7)$.
+\begin{center}
+\begin{tikzpicture}[font=\Large]
+\draw[<->] (-0.5,0) -- (12.5,0);
+\foreach \x in {0,1.5, 3, 4.5, 6, 7.5, 9, 10.5,12}
+\draw[shift={(\x,0)},color=black] (0pt,3pt) -- (0pt,-2pt);
+\draw (0,0) node[below]{$-4$};
+\draw (1.5,0) node[below]{$-3$};
+\draw (3,0) node[below]{$-2$};
+\draw (4.5,0) node[below]{$-1$};
+\draw (6,0) node[below]{$0$};
+\draw (7.5,0) node[below]{$1$};
+\draw (9,0) node[below]{$2$};
+\draw (10.5,0) node[below]{$3$};
+\draw (12,0) node[below]{$4$};
+\end{tikzpicture}  
+\end{center}
+We begin by standing on the number line at the tick marked with $\answer[given]{0}$.  Since our groups are negative, we will face towards the \wordChoice{\choice{right} \choice[correct]{left}}, and take $\answer[given]{8}$ total steps.  Each step will move  $\answer[given]{7}$ ticks \wordChoice{\choice{forward} \choice[correct]{backward}}, 
+since $7$ is negative.  Where on the number line are we now? 
+
+\begin{prompt}
+We are located at the tick labeled $\answer[given]{56}$.
+\end{prompt}
+\end{example}
+
+Notice again that if we multiply two negative numbers, we face backwards while moving backwards, for a net result of moving in the positive direction along the number line.  Try this out with some friends if you are skeptical.
+
+
+\subsection{Patterns}
+
+Finally, we investigate subtraction of negative numbers via patterns.
+\begin{example}
+Consider the sequence of addition problems.
+\begin{align*}
+5 \times 4 &= \answer[given]{20} \\
+5 \times 3 &= \answer[given]{15} \\
+5 \times 2 &= \answer[given]{10} \\
+5 \times 1 &= \answer[given]{5} \\
+5 \times 0 &= \answer[given]{0}
+\end{align*}
+As we move down the chart, moving one row down results in the final answer decreasing by 
+$\answer[given]{5}$.  So, if the pattern continues to hold, we expect the answer to 
+$5 \times (-1)$ to be $\answer[given]{-5}$, since it is five less than $0$.
+\end{example}
+If we are convinced by this pattern that a positive number times a negative number should be negative, we can use the commutative property to convince ourselves that a negative number times a positive number should also be negative.  Then, we can use our patterns again to convince ourselves that a negative number times a negative number should be positive.
+\begin{example}
+Consider the sequence of addition problems.
+\begin{align*}
+-5 \times 4 &= \answer[given]{-20} \\
+-5 \times 3 &= \answer[given]{-15} \\
+-5 \times 2 &= \answer[given]{-10} \\
+-5 \times 1 &= \answer[given]{-5} \\
+-5 \times 0 &= \answer[given]{0}
+\end{align*}
+As we move down the chart, moving one row down results in the final answer increasing by 
+$\answer[given]{5}$.  So, if the pattern continues to hold, we expect the answer to 
+$-5 \times (-1)$ to be $\answer[given]{5}$, since it is five more than $0$.
+\end{example}
+
+\subsection{Extra Examples}
+Since multiplication with negatives is a complicated topic, here are two extra ways to think about this concept.
+
+\begin{example} 
+We mentioned very briefly when talking about patterns that the properties of addition and subtraction can help us to understand multiplication with negative numbers.  
+
+In particular, we can model multiplication problems like $2 \times (-17)$ without much trouble.  In fact, most of our trouble came from attempting to understand what negative groups should mean.  If we instead wanted to consider $(-17) \times 2$, we might quickly realize that the commutative property of multiplication gives us 
+\[
+(-17) \times 2 = \answer[given]{2} \times \answer[given]{-17}, 
+\]
+which we could model with a story, a number line, or chips.
+
+Also, we might notice that since $-17 = (-1) \times 17$, we could use the associative property of multiplication to write
+\[
+(-17) \times 2 = \left ( (-1) \times \answer[given]{17} \right ) \times 2 = (-1) \times \left ( \answer[given]{17} \times \answer[given]{2} \right ),
+\]
+and we have plenty of practice computing $2 \times 17$.
+
+This technique can also give us some help with things like $(-2) \times (-17)$.
+\begin{align*}
+    (-2) \times (-17) &= (-1)\left( \answer[given]{2} \right ) \times (-1) \times \left ( \answer[given]{17}\right ) \\
+    & = (-1) \times \left ( \answer[given]{2} \times \left ( (-1) \answer[given]{17} \right ) \right ) \\
+    & = (-1) \times \left ( \left (\answer[given]{2} \times  (-1) \right ) \times \answer[given]{17} \right ) \\
+    & = (-1) \times \left ( \left ((-1) \times \answer[given]{2} \right ) \times \answer[given]{17} \right ) \\
+    & = (-1) \times \left ( (-1) \times \left (\answer[given]{2} \times \answer[given]{17} \right ) \right ) \\
+    &= \left ((-1) \times (-1) \right ) \times \left ( \answer[given]{2} \times \answer[given]{17} \right )
+\end{align*}
+Again, as long as we understand what to do with $(-1)(-1)$, we have plenty of practice computing $2 \times 17$.
+\end{example}
+
+\begin{example}
+You might recall the equation
+\[
+\text{Distance} = \text{Time} \times \text{Rate}.
+\]
+Let's say that zero is our position at noon, and we have been traveling east on an east-west highway at a steady rate of $50$ miles per hour.  Where were we at $9$am?
+
+Notice that $9$am was three hours ago, and so this question is equivalent to asking for the solution to $(-3) \times 50$.  Knowing that the answer is $\answer[given]{-150}$, we should interpret this result to say that at $9$am, we were $\answer[given]{150}$ miles \wordChoice{\choice{east} \choice[correct]{west}} of where we were at noon.
+\end{example}
+
+
+\subsection{Division}
+
+Now that we've had so much practice, we will generally leave you to think about division as the inverse of multiplication.  We have discussed many ways to understand the sign of a multiplication problem with integers.  Once we understand whether a result should be positive or negative, the problem is reduced to computing with positive numbers.  What we mean by thinking of division as the inverse of multiplication is to turn your division problem back into a multiplication problem, and then use what you know about multiplication to understand the sign of the answer.
+\begin{example}
+What is $24 \div (-6)$?
+
+We can think of $24 \div (-6)$ as a multiplication problem by using
+\[
+(-6) \times ? = 24
+\]
+or
+\[
+? \times (-6) = 24.
+\]
+While which problem we choose matters in our stories, the \wordChoice{\choice{associative} \choice[correct]{commutative} \choice{distributive}} property of multiplication gives us the same answer in either case.  We also know from our work with multiplication that the sign of the answer must be \wordChoice{\choice{positive} \choice[correct]{negative}}.  Since $24 \div 6 = \answer[given]{4}$, we now know that $24 \div (-6)$ should equal $\answer[given]{-4}$.
+\end{example}
 
 
 
+As we have stated throughout, this is a complicated concept.  You may need to work through the examples several times, as well as ask questions, before understanding completely.  Don't worry, though -- many of history's most notable mathematicians shared these struggles!
 
 
 
 \end{document}
-
-
-
-%Now, things get a little bit more complicated when dealing with a more complicated operation such as multiplication, where the �wholes� for each of the three quantities in a problem are different (# Groups   # Objects in each Group = # Objects).  So we need to be a little more careful in how we phrase our problems.
-%As always, let�s start with what we know to lead us to what we don�t know:  Let�s model (3) (5) with a problem that we�ll also want to use for (3) (-5), (-3) (5), and (-3) (-5).  Because multiplication is �repeated addition�, we want to try to stay close to what we�ve already accomplished with addition and subtraction.
-%For (3) (5), we�ll be joining 3 groups with 5 objects in each of those groups.  That is, it�s already �addition� from the start.  Since our addition (and missing addend subtraction) problems asked �what is our net worth now�, let�s stay with that, which forces our objects (our �answer�) to be dollars (positive means our final net worth is �ahead� and negative means we wind up �in debt�).  
-%Thus, for (3) (5), we�ll have 3 groups with 5 objects in each group, which is 3 groups with a positive 5 dollars in each group.  So, each group is going to be, in this example, a check for $5 (so a positive second number means we�re talking about checks.  A negative second number means we�re talking about bills for that amount).
-%The second issue is whether we�re receiving or sending these checks or bills (i.e., receiving or sending these objects).  That is, will we be receiving a bunch of checks or bills for the same amount or will we be sending those checks or bills for the same amount?  Because we have not dealt with the sign of the first number, this is what that will mean.  That is, (3) (5) will be �we receive 3 checks, each worth $5�.  The �receive� is from the first number (3) being positive.  The �checks� is from the second number (5) being positive.
-%Finally, our stories for addition always asked �what is our net worth now?�  However, our �starting� net worth was always our first number (e.g., for 4 + 5:  �We start ahead $4��).  Here, we can�t do that for (3) (5) because 3 is telling us how many checks or bills we are receiving or sending.  Thus, if our final question is still going to be �what is our net worth now?�, what should we assume our �starting net worth� to be with each problem?
-%Thus, let�s put this all together:  The story problem for (3) (5) will be (fill in the blank and circle the appropriate choices:  
-%�We start with a net worth of ____.  We (receive or send) 3 (checks or bills) for $5 each.  What is our net worth now?�
-%Now do the same for each of (3) (-5), (-3) (5), and (-3) (-5).  Write the story, model it with chips, and model it on a number line (Direction determined by �good or bad news�).  Finally, write an arithmetic expression for each involving repeated addition or repeated subtraction (depending on whether we�re receiving or sending).
-
-%2.  Making sense by numerical patterns:
-%      a.  Starting with knowing (8)  (5) = 40 (and knowing that (positive)  (positive) = positive), work your way down one-by-one on the second number until you reach (8)  (0) = 0.  Notice a pattern in the answers and use that pattern to predict what (8)  (-1) should be.  Then predict what (8)  (-2) and (8)  (-3) should be.
-%      b.  Starting with knowing (8)  (-5) = -40 (and knowing that (positive)  (negative) = negative from part (a)), work your way down one-by-one on the first number until you reach (0)  (-5) = 0.  Notice a pattern in the answers and use that pattern to predict what (-1)  (-5) should be.  Then predict what (-2)  (-5) and (-3)  (-5) should be.
-
-%3.   Assuming that we know that the associative property of multiplication holds for all signed numbers AND that we know that unlike signs multiply to be a negative, what is wrong with the following argument?:
-%We want to find out what (-3)  (-5) should be (or in general, what a negative times negative should be).  
-%Step #1:  Well, (-3) = (-1)  (3).  
-%Step #2:  So, (-3)  (-5) should be   (-1)   (3)  (-5)   (i.e., rewriting (-3)).  
-%Because we know the associative property of multiplication and that a positive times negative = negative, we pair up the (3)  (-5) to get (-15).
-%Thus, we have (-1)   (3)  (-5) = (-1)   (-15) = 15.  
-%Thus, (-3)  (-5) = 15 (and, thus, by similar argument, negative times negative must be positive).
-
-%4.    Back in school, you probably learned that distance = rate x time.  In this exercise, we�ll look at it as distance = time x rate, so that the number of groups is the first factor.  For example, if you traveled for 3 hours at a rate of 50 miles per hour, you would have traveled a distance of 3 x 50 = 150 miles (objects are miles and groups are hours).  In other words, your position has shifted 150 miles from where you started.
-%       Let�s expand this idea to take advantage that we can speak of time in terms of time in the past (�ago�:  considered to be negative time) and time in the future (positive time).  We can also speak of position (as opposed to distance, which is always positive) in terms of west (negative) and east (positive).  
-%       In this scheme, we can rewrite our 3 x 50 problem in the following way:  Let�s assume we are currently at home, which sits on a west-east highway.  Let�s say we�ve been traveling eastward at 50 miles per hour for awhile and will continue to do so.  Where will we be 3 hours from now (in the future)?  That is, what is our position 3 hours from now (as opposed to asking how far did we travel)?
-%              In this scheme, what would the story problem (and answer) be for:
-%3 x (-50)?  
-%(-3) x 50?  
-%(-3) x (-50)?  
 
