@@ -117,7 +117,7 @@ Imagine using a number line like the one below to solve the multiplication probl
 \end{tikzpicture}  
 \end{center}
 Remember that multiplication is repeated addition.  We want to add $-3$ five times, or make five copies of $-3$.  As with our story problems, the question or starting point requires care.  With our stories, our starting net worth was $\answer[given]{0}$, so with a number line we begin by standing at the tick marked with $\answer[given]{0}$.  Since we 
-are adding, we face towards the \wordChoice{\choice[correct]{right} \choice{left}}.  Now, we can think of the steps as our groups, meaning the amount we move with each step should be $\answer[given]{3}$ ticks \wordChoice{\choice{forward} \choice[correct]{backward}}, 
+are adding, we face towards the \wordChoice{\choice[correct]{right} \choice{left}}.  Now, we can think of the steps as our groups, meaning the amount we move with each step should be $\answer[given]{3}$ spaces \wordChoice{\choice{forward} \choice[correct]{backward}}, 
 since $-3$ is negative.  After taking $\answer[given]{5}$ such steps,  where on the number line are we now? 
 
 \begin{prompt}
@@ -143,7 +143,7 @@ Imagine using a number line like the one below to solve the multiplication probl
 \draw (12,0) node[below]{$4$};
 \end{tikzpicture}  
 \end{center}
-We begin by standing on the number line at the tick marked with $\answer[given]{0}$.  Since our groups are negative, we will face towards the \wordChoice{\choice{right} \choice[correct]{left}}, and take $\answer[given]{8}$ total steps.  Each step will move  $\answer[given]{7}$ ticks \wordChoice{\choice{forward} \choice[correct]{backward}}, 
+We begin by standing on the number line at the tick marked with $\answer[given]{0}$.  Since our groups are negative, we will face towards the \wordChoice{\choice{right} \choice[correct]{left}}, and take $\answer[given]{8}$ total steps.  Each step will move  $\answer[given]{7}$ spaces \wordChoice{\choice{forward} \choice[correct]{backward}}, 
 since $7$ is negative.  Where on the number line are we now? 
 
 \begin{prompt}
@@ -186,34 +186,66 @@ $-5 \times (-1)$ to be $\answer[given]{5}$, since it is five more than $0$.
 \end{example}
 
 \subsection{Extra Examples}
-Since multiplication with negatives is a complicated topic, here are two extra ways to think about this concept.
+Since multiplication with negatives is a complicated topic, here are two extra ways to think about this concept.  First, we will talk about algebra, and second we will use a more advanced physical model.
 
-\begin{example} 
 We mentioned very briefly when talking about patterns that the properties of addition and subtraction can help us to understand multiplication with negative numbers.  
 
-In particular, we can model multiplication problems like $2 \times (-17)$ without much trouble.  In fact, most of our trouble came from attempting to understand what negative groups should mean.  If we instead wanted to consider $(-17) \times 2$, we might quickly realize that the commutative property of multiplication gives us 
+\begin{example}
+We can model multiplication problems like $2 \times (-17)$ without much trouble.  In fact, most of our trouble came from attempting to understand what negative groups should mean.  If we instead wanted to consider $(-17) \times 2$, we might quickly realize that the commutative property of multiplication gives us 
 \[
 (-17) \times 2 = \answer[given]{2} \times \answer[given]{-17}, 
 \]
-which we could model with a story, a number line, or chips.
-
-Also, we might notice that since $-17 = (-1) \times 17$, we could use the associative property of multiplication to write
-\[
-(-17) \times 2 = \left ( (-1) \times \answer[given]{17} \right ) \times 2 = (-1) \times \left ( \answer[given]{17} \times \answer[given]{2} \right ),
-\]
-and we have plenty of practice computing $2 \times 17$.
-
-This technique can also give us some help with things like $(-2) \times (-17)$.
-\begin{align*}
-    (-2) \times (-17) &= (-1)\left( \answer[given]{2} \right ) \times (-1) \times \left ( \answer[given]{17}\right ) \\
-    & = (-1) \times \left ( \answer[given]{2} \times \left ( (-1) \answer[given]{17} \right ) \right ) \\
-    & = (-1) \times \left ( \left (\answer[given]{2} \times  (-1) \right ) \times \answer[given]{17} \right ) \\
-    & = (-1) \times \left ( \left ((-1) \times \answer[given]{2} \right ) \times \answer[given]{17} \right ) \\
-    & = (-1) \times \left ( (-1) \times \left (\answer[given]{2} \times \answer[given]{17} \right ) \right ) \\
-    &= \left ((-1) \times (-1) \right ) \times \left ( \answer[given]{2} \times \answer[given]{17} \right )
-\end{align*}
-Again, as long as we understand what to do with $(-1)(-1)$, we have plenty of practice computing $2 \times 17$.
+which we could model with a story, a number line, or chips.  Notice, however, that we're making use of the idea that a positive number multiplied by a negative number gives us a negative answer overall -- and this fact requires justification some other way!
 \end{example}
+
+Earlier in this section, our justification for why a positive number multiplied by a negative number is a negative number came mostly from describing the multiplication in a way we could understand or represent with a physical situation.  Even number lines could be thought of as a physical situation, since we can use our bodies to move along the lines.  Patterns are the beginning of looking at this concept algebraically, and let's now do some more advanced algebra.
+
+We know that if we have a negative number, like $-17$, we can write this as $(-1) \times 17$.  Algebraically, why should this be true?  We want our negative numbers to represent the opposite of our positive numbers.  If Sue has $-17$ dollars, she needs to obtain $17$ more dollars to make it back to zero.  If Sam is standing on the tick labeled $-17$, he needs to move $17$ spaces to the right to get back to zero.  In other words, $-17$ should satisfy the equation 
+\[17 + (-17) = 0.\]
+
+What about $(-1) \times 17$?
+\begin{example}
+Let's look at $(-1) \times 17$ to see if this is really equal to $-17$.  If so, when we add $17$ to $(-1) \times 17$, we should get back to $0$.
+\[
+(-1) \times 17 + 17 = ?
+\]
+First, we see that there is a $17$ in each of these terms, so let's factor it out.
+\[
+\answer[given]{17} \left ( \answer[given]{-1} + \answer[given]{1} \right ) = ?
+\]
+Inside the parenthesis, we should now know what to do.
+\[
+\answer[given]{17} \left ( \answer[given]{0} \right ) = \answer[given]{0}
+\]
+\end{example}
+
+This may seem a little silly, but understanding and developing good rules for using negative numbers with algebra was a concern of many mathematicians before negative numbers were fully accepted.  
+
+There is actually one extra fact we have used in the previous argument that you may have noticed.  To really be sure that $(-1) \times 17 = -17$, we should really be sure that the only number we can add to $17$ to get zero is $-17$.  Proving this fact is possible, but we won't look at that proof in this course.  
+
+Now that we know that we can write a negative number as $-1$ multiplied by the positive version of that number, we can use more of our properties.
+
+\begin{example}
+Use the associative property of multiplication and the fact that $-17 = (-1) \times 17$ to make sense of $(-17) \times 2$.
+\begin{explanation}
+\[
+(-17) \times 2 = \left ( (-1) \times \answer[given]{17} \right ) \times 2 = (-1) \times \left ( \answer[given]{17} \times \answer[given]{2} \right )
+\]
+We have plenty of practice computing $17 \times 2$, and this algebra shows us why $(-17) \times 2$ is the negative of $17 \times 2$.
+\end{explanation}
+%This technique gets a little less useful, however, with things like $(-2) \times (-17)$.
+%\begin{align*}
+%    (-2) \times (-17) &= (-1)\left( \answer[given]{2} \right ) \times (-1) \times \left ( \answer[given]{17}\right ) \\
+%    & = (-1) \times \left ( \answer[given]{2} \times \left ( (-1) \answer[given]{17} \right ) \right ) \\
+%    & = (-1) \times \left ( \left (\answer[given]{2} \times  (-1) \right ) \times \answer[given]{17} \right ) \\
+%    & = (-1) \times \left ( \left ((-1) \times \answer[given]{2} \right ) \times \answer[given]{17} \right ) \\
+%    & = (-1) \times \left ( (-1) \times \left (\answer[given]{2} \times \answer[given]{17} \right ) \right ) \\
+%    &= \left ((-1) \times (-1) \right ) \times \left ( \answer[given]{2} \times \answer[given]{17} \right )
+%\end{align*}
+%Again, as long as we understand what to do with $(-1)(-1)$, we have plenty of practice computing $2 \times 17$.
+\end{example}
+
+Let's now move to a different kind of model for multiplication.
 
 \begin{example}
 You might recall the equation
