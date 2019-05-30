@@ -1,0 +1,59 @@
+\documentclass{ximera}
+\input{preamble}
+
+\title{Building Blocks, Revisited}
+\author{Vic Ferdinand, Betsy McNeal, Jenny Sheldon, Mike Steward}
+
+\begin{document}
+\begin{abstract}
+\end{abstract}
+\maketitle
+
+\begin{instructorIntro}
+This activity leads students to justify the volume formula for right rectangular prisms.  Just as they placed squares on top of lines to justify the area formula for rectangles in Building Blocks, they will place unit cubes on top of squares in this activity.  The key idea of this exercise is the subtle reasoning about the volume formula for prisms.  The students will create layers of cubes.  The volume of one layer of cubes is the same number of volume units as the area of the base.  This observation, which can be applied to all prisms (and cylinders, in fact), justifies the volume formula for a prism $V = Ah$.
+
+\timing{This activity should probably take about 1/2 of a class period.}
+
+{\bf Possible Extensions:}
+Using Cavallieri's Principle to see that the same formula applies to other cylinders, not just right cylinders. If students remember Building Blocks well, this activity could lead to a discussion of three-dimensional arrays.
+
+\end{instructorIntro}
+
+
+\begin{problem}
+First measure the area of the rectangle below.  Describe how you would build a rectangular prism with volume $8$ cubic inches with its base on the rectangle.
+
+%\vspace{1 in}
+\tikz{ \draw (-2 in,-1 in) -- (2 in,-1 in); \draw (-2 in, -1 in) -- (-2 in, 1 in); \draw (-2 in, 1 in) -- (2 in, 1 in);\draw (2 in, 1 in) -- (2 in, -1 in);\draw (-2 in, -1 in) -- (2 in, -1 in); \draw(-2 in, 0)--(2 in, 0);\draw(-1 in, -1 in)--(-1 in, 1 in);\draw(0 in, -1 in)--(0 in, 1 in);\draw(1 in, -1 in)--(1 in, 1 in);}
+
+\begin{solution}
+The area of the rectangle is 8 square inches.  A rectangular prism with a volume of 8 cubic units can be made by stacking one cubic inch on top of each square inch.
+\end{solution}
+\end{problem}
+
+\begin{problem}
+Using the same base, build a rectangular prism with volume $24$ cubic inches.
+
+\begin{solution}
+Your prism should have three layers identical to the prism you build in Problem 1.
+\end{solution}
+\end{problem}
+
+
+\begin{problem}
+We are familiar with the formula for the volume of a rectangular prism $V = \ell \times w \times h = A \times h$.  Using our Math 1125 interpretation of multiplication, explain why this formula is accurate.
+
+\begin{solution}
+Here we can see that we have $h$ layers, each containing $\ell \times w$ number of volume units.  In other words, we have $h$ layers, each containing $A$ volume units for a total of $h \times A$ total volume units.  Notice something strange, here: the area (which is 2-dimnesional) gives us a number of (3-dimensional) volume units!
+\end{solution}
+\end{problem}
+
+\begin{problem} 
+Think about a right circular cylinder.  How can you justify the volume formula $V = \pi r^2 h$?
+
+\begin{solution}
+The idea is the same as the rectangular case: we have $h$ layers, each containing $A$ units of volume.  Here, however, the $A$ units of volume aren't organized in a neat array.  Instead, we can use the one-to-one correspondence between the area of the base and the volume of the first layer to find the volume of each of the layers.
+\end{solution}
+\end{problem}
+
+\end{document}

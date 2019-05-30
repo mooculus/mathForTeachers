@@ -1,0 +1,103 @@
+\documentclass{ximera}
+\input{preamble}
+
+\title{Building Blocks}
+\author{Vic Ferdinand, Betsy McNeal, Jenny Sheldon, Mike Steward}
+
+\begin{document}
+\begin{abstract}
+\end{abstract}
+
+\maketitle
+
+\begin{instructorIntro}
+This activity is meant to be a precursor to Building Blocks Revisited (or to Beckmann's Class Activity 13K).  In this activity, students are instructed to create rectangles as arrays of squares.  The activity can educe the concepts of arrays, areas of rectangles, and in the later problems, nonstandard units of area.  The key point to make in this activity is the idea that the area formula for rectangles, while literally a product of two lengths, can really be thought of as $A = $ (number of layers) $\times$ (number of area units per layer).
+\vskip 0.1in
+Supplies needed: some 1 inch by 1 inch by 1 inch cubes and pattern blocks.
+
+
+
+\timing{This activity takes about 1 class period.  Have the students work through the first three problems, then discuss and try to elicit the idea of the area formula described above.  Then have the students move on to the last three questions.}
+
+\end{instructorIntro}
+
+
+
+\begin{problem} 
+Measure the length of the line below; then using plastic tiles or a ruler, build a rectangle with area $4$ sq. in. with its base on the line.
+
+\vspace{1 in}
+\tikz{ \draw (-2 in,0) -- (2 in,0); \draw (-2 in, -2 pt) -- (-2 in, 2 pt); \draw (-1 in, -2 pt) -- (-1 in, 2 pt);\draw (0 in, -2 pt) -- (0 in, 2 pt);\draw (1 in, -2 pt) -- (1 in, 2 pt); \draw (2 in, -2 pt) -- (2 in, 2 pt);}
+
+\begin{solution}
+Your rectangle should have height 1in and length 4in.
+\end{solution}
+
+\end{problem}
+
+\begin{problem}
+Build a rectangle with area $12$ sq. in. with its base on the line.
+
+\vspace{3.25 in}
+\tikz{ \draw (-2 in,0) -- (2 in,0); \draw (-2 in, -2 pt) -- (-2 in, 2 pt); \draw (-1 in, -2 pt) -- (-1 in, 2 pt);\draw (0 in, -2 pt) -- (0 in, 2 pt);\draw (1 in, -2 pt) -- (1 in, 2 pt); \draw (2 in, -2 pt) -- (2 in, 2 pt);}
+
+\begin{solution}
+Your rectangle should have height 3in and base length 4in.
+\end{solution}
+
+\end{problem}
+
+\begin{problem}
+ We are familiar with the formula for the area of a rectangle $A = \ell \times w$.  Using our Math 1125 interpretation of multiplication, explain why this formula is accurate.
+
+\begin{solution}
+    The number of square units it takes to build the rectangle can be seen as an array: there are $\ell$ rows of square units, each with $w$ square units per row.
+\end{solution}
+
+\end{problem}
+
+%\newpage
+
+Let's repeat the same questions with a new unit of area, pictured below.
+
+\tikz{ \draw (0 cm,0) -- (2.3 cm,0); \draw (2.3 cm, 0) -- (3.5 cm, 2 cm); \draw (3.5 cm, 2 cm) -- (1.2 cm, 2 cm);\draw (1.2 cm, 2 cm) -- (0 cm, 0);}  = 1 unit of area
+
+%\tikz{ \draw (-1.25 cm,0) -- (1.25 cm,0); \draw (1.25 cm, 0) -- (1.75 cm, 2 cm); \draw (1.75 cm, 2 cm) -- (-0.75 cm, 2 cm);\draw (-0.75 cm, 2 cm) -- (-1.25 cm, 0);}  = 1 unit of area
+
+
+\begin{problem}
+Build a parallelogram with an area of $4$ units on the line below.
+
+\vspace{2.5 cm}
+%\tikz{ \draw (-2 in,0) -- (2 in,0); \draw (-2 in, -2 pt) -- (-2 in, 2 pt); \draw (-1 in, -2 pt) -- (-1 in, 2 pt);\draw (0 in, -2 pt) -- (0 in, 2 pt);\draw (1 in, -2 pt) -- (1 in, 2 pt); \draw (2 in, -2 pt) -- (2 in, 2 pt);}
+\tikz{ \draw (0 cm,0) -- (9.2 cm,0); \draw (0 cm, -2 pt) -- (0cm, 2 pt); \draw (2.3 cm, -2 pt) -- (2.3cm, 2 pt);\draw (4.6cm, -2 pt) -- (4.6 cm, 2 pt);\draw (6.9 cm, -2 pt) -- (6.9 cm, 2 pt); \draw (9.2 cm, -2 pt) -- (9.2 cm, 2 pt);}
+
+\begin{solution}
+ You should use four units of area: one on each unit of the line.
+\end{solution}
+
+\end{problem}
+
+\begin{problem}
+Build a parallelogram with an area of $12$ units on the line below.  Then build a parallelogram with an area of 20 units, and finally one with an area of 8 units.  What area formula is emerging?
+
+\vspace{6.5cm}
+\tikz{ \draw (0 cm,0) -- (9.2 cm,0); \draw (0 cm, -2 pt) -- (0cm, 2 pt); \draw (2.3 cm, -2 pt) -- (2.3cm, 2 pt);\draw (4.6cm, -2 pt) -- (4.6 cm, 2 pt);\draw (6.9 cm, -2 pt) -- (6.9 cm, 2 pt); \draw (9.2 cm, -2 pt) -- (9.2 cm, 2 pt);}
+
+\begin{solution}
+    For 12 units, arrange these in a $3 \times 4$ array.  For 20 units, arrange these in a $5 \times 4$ array.  For 8 units, arrange these in a $2 \times 4$ array.  We see the formula $A = \ell \times w$ again!
+\end{solution}
+
+\end{problem}
+
+\begin{problem}
+Draw a new unit of area.  Now swap units of area with someone else in your group.  Can you draw a shape whose area in those units has the formula we noticed above?
+
+\begin{solution}
+    Answers will vary here.
+\end{solution}
+\end{problem}
+
+
+
+\end{document}
