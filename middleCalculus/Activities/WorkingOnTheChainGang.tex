@@ -1,0 +1,104 @@
+\documentclass{ximera}
+\input{preamble}
+
+\author{Vic Ferdinand}
+\title{Working On the Chain Gang}
+\outcome{Develop chain rule.}
+
+
+\begin{document}
+\begin{abstract}
+\end{abstract}
+\maketitle
+
+
+\begin{instructorIntro}
+Here, we develop the concept and use of the chain rule.  I do have them read the narrative, but they often require some whole class discussion of what they read (especially the truck example).  I then set up several functions at the board with the same $g(t)$ and have them derive them. This usually gets them into the swing of it, although they often will later have difficulties distinguishing between a product and a composition of functions.  The most difficult ``outside function'' for them seems to be logarithms. I then have them work on the given exercises. If time, I occasionally derive the chain rule with the limit definition.  
+\end{instructorIntro}
+
+
+We want to be able to find the slope function (i.e., rate function or derivative) for more than just the basic functions or their sums, differences, products, and quotients.  We'd like to find the derivatives of functions when they are more than just $f(x)$, but rather a function of a function:  $f(g(t))$, where $g(t)$ replaces $x$.  For example, instead of knowing just the derivative of   $\sqrt{x}$, or  $\sin(x)$,  or  $e^x$, we'd like to know the derivative of  $\sqrt{t^5+4t-\ln t}$ or $\sin(t^5+4t-\ln t)$ or   $e^{(t^5+4t-\ln t)}$.  (Here, $g(t) = t^5 + 4t-\ln t$  replaces $x$ in the basic functions.).  Perhaps you have seen this idea before:  These are called ``compositions'' of functions (sometimes written as $(f \circ g)(t)$ in textbooks.) or ``functions of functions''.
+
+These arise in real life when we have a chain of dependencies.  For example, I'm dependent on the grocery store for my breakfast cereal.  But the grocery store in turn is dependent on the cereal manufacturer to make that cereal (and, in turn, the cereal manufacturer is dependent on the farmer for the wheat of the cereal).  Thus, ultimately, I'm dependent on the farmer for my breakfast cereal.  A mathematical example (although we can place mathematics on the cereal example- such as prices, etc.) would be when we're blowing up a balloon.  The volume of the balloon is dependent (or a function of) the radius (in fact, there is a formula for that:   $V(r) = \frac{4}{3}\pi r^3$).  However, while you're blowing up the balloon, the radius in turn depends on how long you've been blowing it up (i.e., radius is a function of time). Let's say $r(t) = t^5+4t-\ln t$ (note that we're not blowing it up at a constant rate because $r(t)$ is not linear!).  Thus, ultimately, the volume of the balloon is dependent on (or a function of) the time you've been blowing it up.  Symbolically, we would say  
+\[
+(V \circ r)(t) = V(r(t)) = \frac{4}{3}\pi r^3 = \frac{4}{3}\pi (t^5+4t-\ln t)^3,
+\] 
+where the $(t^5+4t-\ln t)$ ``replaces'' $r$ in the volume formula.  What we would like to do is find out at what rate the volume is changing with respect to time (without having to deal with the ``middleman'' radius).  So we write the volume as a function of time (as we did here) and take its derivative without worrying about $r$.  The question is:  How do we do this?
+
+Let's take a simple example- one in which all the rates involved are constant (i.e., we're going to use what we already know to make sense of something we don't know) and see how we answer the question.  Let's say you're a truck driver (perhaps delivering my breakfast cereal!) and you want to know how much money you earn per hour.  However, all that you know is that you earn $\$5$ per mile you drive (it's fancy breakfast cereal!).  Thus, the money you earn is dependent on (is a function of) the distance you drive (i.e., $\$=f(d)$).  Also, we know that $f'(d) = 5$.  However, you also know that you drive at an average rate of $42$ miles per hour.  Thus, the distance you drive is dependent upon (is a function of) time (i.e., $d=g(t)$ and you know  $g'(t) = 42$.).  Now, how much money do you earn per hour (i.e., you want to treat your money ultimately as a function of time without the ``middleman'' distance and you want to know the rate of dollars per hour)?
+
+ Hopefully, you basically used multiplication to answer the problem.  $5$ (dollars per mile) times $42$ (miles per hour) gives you $210$ dollars per hour (you have $42$ of those miles every hour and thus have $42$ of those ``$\$5$'' for every hour you drive. Thus, the unit called {\em miles} ``cancels'' out in the calculation.).
+ 
+ 
+Let's take a step back to see what happened.  To find the rate of dollars per hour, we took the rate of dollars per mile and multiplied it by the rate of miles per hour.  Because rates are derivatives, symbolically, we calculated  \[
+\frac{d\$}{d(\text{dist})} \times \frac{d(\text{dist})}{dt} = \frac{d\$}{dt}.
+\]
+(Note:  It ``looks like'' the ``$d(\text{dist})$'' cancelled out.  That really did not happen in the derivative notation because the ``$\frac{dy}{dx}$'' notation is technically one unbreakable symbol.  However, it does not seriously compromise the theory at this level if you do think of it as ``canceling'').   
+
+ This is what happens in general. Essentially, we take the derivative of the ``major'' (or ``outside'') function first as if we did not have a composition situation.  Then you multiply that by the derivative of the composed function.  For example, in our balloon example, to find  $V'(t)$, we take the derivative of the $\frac{4}{3}\pi r^3$  (i.e.,  $3\times \frac{4}{3}\pi r^2 = 4\pi r^2$) and multiply it by the derivative of $r(t)$ (i.e., $5t^4+4-\frac{1}{t}$).  Thus, the derivative is, as in the truck example,  $\frac{dV}{dt} = \frac{dV}{dr} \times \frac{dr}{dt} = (4\pi r^2 \times \left (5t^4+4-\frac{1}{t} \right ) )$.  
+ 
+    We then can replace $r$ with what it is in terms of time (i.e.,  $r(t) = t^5+4t-\ln t$):   $\frac{dV}{dt} = V'(t) = 4\pi(t^5+4t-\ln t)^2 \left ( 5t^4+4-\frac{1}{t} \right )$.  That way, we can plug directly into $t$ to find the rate with respect to time without bothering with the radius.  In fact, most of the time, we don't even think of the ``middleman'' when taking the derivative- we take the derivative directly as a function of time.
+    
+     Thus, let's take the derivative of the two functions we started with:
+If  $f(t) = \sqrt{t^5+4t-\ln t}$, then we look at $f$ as the ``square root of something''.  Thus, to find its derivative, we take the derivative of the square root function and just recopy the inside function in there (i.e., only deal with square root).  Then multiply that by the derivative of the inside function (the ``something''):
+\[
+f'(t) = \frac{1}{2}(t^5+4t-\ln t)^{-\frac{1}{2}}\left (5t^4+4-\frac{1}{t} \right) = \frac{5t^4 + 4 - \frac{1}{t}}{2\sqrt{t^5+4t-\ln t}}
+\]
+(the last step was just simplification after we took the derivative- i.e., the answer you would see in the fabled back of the book).
+
+
+If  $f(t) = \sin(t^5+4t-\ln t$, we look at this as ``sine of something'' (rather than square root of something).  Thus, we take the derivative of sine (with the inside function copied in) and multiply that by the derivative of the ``something'':
+\[
+f'(t) = [\cos(t^5+4t-\ln t)] \times \left (5t^4+4-\frac{1}{t} \right) = \left (5t^4+4-\frac{1}{t} \right)\cos(t^5+4t-\ln t).
+\]
+The last step was, again, simplification (we normally put the cosine term last so we don't think we're taking cosine of the  $5t^4+4-\frac{1}{t}$.)
+
+
+     We call this the {\em chain rule} because of the chain of dependencies.
+
+
+\begin{exercise}
+Now find the derivative of each of the following functions:
+\begin{enumerate}
+    \item $f(x) = \sin(x^3) - \sin^3(x)$
+    \item $f(x) = x^2(4x^3+5)^{72}$
+    \item $f(x) = \cos(\sqrt{x+7})$
+    \item $f(x) = \sqrt{\cos(x) +7}$
+    \item $f(x) = \sqrt{\cos(x)} + 7$
+    \item $f(x) = \cos \left ( \sqrt{1+e^{(x^3-6x)}}\right )$
+    \item $f(x) = 7^{x^5\sin(x)}$
+    \item $f(x) = \ln(g(x))$
+    \item Find the derivative of $\sqrt{\text{ugly function}}$ and the derivative of \\ $\cos(\text{even uglier function})$.
+\end{enumerate}
+\end{exercise}
+ 
+\section*{(Optional Reading): Derivation of the Quotient Rule (Using Product and Chain Rule)}
+
+Earlier, I just stated the ``rule'' for finding the derivative of a quotient of functions.  It is difficult to conceptually describe why the rule works, but we can derive it from knowing and using two rules we have argued from a conceptual point of view:  the product and chain rules.
+
+We write  $Q(x) = \frac{f(x)}{g(x)} = f(x) \times [g(x)]^{-1}$.  That is, we now have a product of two functions, with one of the factors being something raised to the ''$-1$'' power.
+
+
+Let’s use product rule to find the derivative of this:   
+\[
+Q'(x) = f(x) \times (-1)[g(x)]^{-2} \times g'(x)+ f'(x)\times[g(x)]^{-1}.
+\]
+In the first term, we copied  $f(x)$ and multiplied by the derivative of  $[g(x)]^{-1}$, which required the chain rule.  In the second term, we copied  $[g(x)]^{-1}$ and multiplied by the derivative of  $f(x)$.
+
+
+The calculus is done.  We now only need to simplify:
+\[
+Q'(x) = f(x) \times (-1)[g(x)]^{-2} \times g'(x)+ f'(x)\times[g(x)]^{-1} = \frac{-f(x)g'(x)}{[g(x)]^2} + \frac{f'(x)}{g(x)}.
+\]
+We now find a common denominator:  $[g(x)]^2$:   
+\begin{align*}
+\frac{-f(x)g'(x)}{[g(x)]^2} + \frac{f'(x)}{g(x)} &= \frac{-f(x)g'(x)}{[g(x)]^2} + \frac{f'(x)g(x)}{[]g(x)]^2}\\
+&= \frac{-f(x)g'(x) + f'(x) g(x)}{[g(x)]^2} \\
+&= \frac{g(x) f'(x) - f(x) g'(x)}{[g(x)]^2}
+\end{align*}
+which is the usual form with which we affectionately refer to the ``Quotient Rule''.
+
+
+
+
+\end{document}

@@ -1,0 +1,217 @@
+\documentclass{ximera}
+\input{preamble}
+
+\author{Vic Ferdinand}
+\title{Would You Like the Combo Meal?}
+\outcome{Develop sum/difference rule for derivatives.}
+\outcome{Develop product/quotient rule for derivatives.}
+
+\begin{document}
+\begin{abstract}
+\end{abstract}
+\maketitle
+
+\begin{instructorIntro}
+Here, we now take arithmetic combinations of the functions dealt with in ``Hall of Fame Derivatives'' (chain rule is dealt with in ``Chain Gang'').  With the sum (difference) rule, we take two students and enact the car scenario described. 
+
+After the intuitive results are conjectured, I prove them for the class with the limit definition (we go through the product rule picture, assuming our two functions are increasing).  I occasionally formally derive the quotient rule (optional reading and good exam bonus question).
+There are sometimes difficulties with the exercises at the end, but students will usually correct their peers.
+
+\end{instructorIntro}
+
+Now that we've learned about the derivatives (slope functions) of famous functions, we'd like to also know the derivatives of combinations of those functions.  For example, if we know the derivatives of  $x^5$,  $\sqrt[7]{x}$,  $\ln x$, and  $\sin x$, what does that tell us about the derivatives of combinations of these functions like  $8x^5$,  $\sin x + x^5$, $(\sin x)(\sqrt[7]{x}$, or $\frac{x^5}{\ln x}$  (or even  $\sin(5^x)$, which will be covered in ``Working on the Chain Gang'')?
+
+\section*{Derivatives of Constant Multiples of Functions}
+
+To see what happens to a derivative when we multiply the original (amount or position) function by a number, let's consider the easiest case: linear functions for which we easily read off the slope (a constant!).  Consider $f(x) = x$ versus $g(x) = 5x$  (i.e.,  $g(x) = 5f(x)$).  Suppose these describe the positions of Joe and Fred, respectively with both starting to drive at time $0$ minutes ($x=\#$ minutes and $y = \#$ of miles driven).  At $x=3$ minutes, Joe is at position $3$ miles ($f(3)=3$) while Fred is at $15$ miles ($g(3)=5\cdot 3=15$ miles) east of the starting point.  Because both were traveling constant rates in the same direction over the same period of time, how many times further did Fred go versus Joe?  What does that mean in terms of their velocities? That is, what is the derivative of $g(x)$ in terms of $f(x)$?
+
+    In the case of non-linear functions, try to look at the graphs of, say, $f(x) = x^2$  vs.  $g(x) = 5x^2$ (or  $f(x) = \ln x$ vs.  $g(x) = 5\ln x$) at $x=3$ on your graphing calculator.  What conjecture can you make as to what happens to a function's derivative when the function is multiplied by a constant?
+    
+   Try to see that your conjecture works by definition:  If we're looking at $g(x) = 5x^9$ vs.  $f(x) = x^9$, what does $\frac{g(x+h)-g(x)}{h}$  look like compared to $\frac{f(x+h)-f(x)}{h}$ before the algebra circus begins?  What can you do with the ``$5$'' before you start the algebra?  What does this mean for any  $g(x) = 5f(x)$?
+
+\begin{problem}
+Now find the derivative of each of the following functions:
+\begin{enumerate}
+    \item $f(x) = -3\cos(x)$
+    \item $f(x) = \frac{1}{2}\ln x$
+    \item $f(x) = \pi \sqrt[7]{x}$
+    \item $f(x) = \frac{5}{3x}$
+\end{enumerate} 
+\end{problem}
+
+
+\section*{Derivatives of Sums and Differences of Functions}
+
+Imagine that you are driving on a straight country road with a car coming in the opposite direction (in its own lane, of course!)  and that $f(x)$ is your position at time $x$ and $g(x)$ is the other car's position at that time (Then what do $f'(x)$ and $g'(x)$ mean here and what should their signs be?).  Suppose you have Superman-type vision and can see the other car after it goes by you for quite awhile.  Assume that at some point in time after that (say time $3$ minutes), that you are $9$ miles east of town and going eastward at $50$ mph and the other car is $7$ miles east of town and traveling westward at $60$ miles per hour.
+
+
+ What does $f(3)-g(3)$ represent? (Drawing a picture might help).  What does $f'(3)-g'(3)$ represent (Hint: your rearview mirror with Superman vision)?
+ 
+Assuming that  $p(x) = f(x) - g(x)$, how do you think $p'(x)$ should be calculated?
+
+It turns out that your answer to the derivative of a difference of functions also gives us the answer to what the derivative of a sum of functions is (because we can write any sum as a difference:  $5+3$ = $5-(-3)$.  Thus, if we know the answer to the derivative of the combined function $f(x) - (-g(x)$, we know the answer to the derivative of  $f(x) + g(x)$.  Try to prove your conjecture for the derivative of $f(x) + g(x)$ by the ``limit'' definition.
+
+Note:  Does your result give us the same derivative for $f(x) = x^2+5x+17$ (a sum of 3 functions) that we found earlier in the course?
+
+\begin{question}
+Now find the derivative of each of the following functions:
+\begin{enumerate}
+    \item $f(x) = 4x^6-6x^2+3e^x-7\cdot (9.8)^x - \pi^e$
+    \item $f(x) = \frac{7}{\sqrt{x}} + 17\ln x - 3\sin x$
+    \item $f(x) = g(x) + \cos(x)$, where $g(x)$ is any function
+    \item If you know the derivative of $\sqrt{\text{uglyfunction}}$ and the derivative of $\cos(\text{evenuglierfunction})$, what would be the derivative of $\sqrt{\text{uglyfunction}} + \cos(\text{evenuglierfunction})$ be?
+\end{enumerate}
+\end{question}
+
+\section*{Derivatives of Products of Functions}
+
+Having just completed reasoning out what the derivative of a sum of functions is (just what you think it would be without reasoning!), it now seems to be a hop, skip, and a jump to finding the derivatives of products (and quotients) of functions.  That is, it would be great if the derivative of a product of two functions was the product of their derivatives.
+
+    Soooo\dots. It should be that the derivative of $x^3\sin x$ will be  $3x^2\cos x$, right?  Well, we have no way of knowing (except if you try nDeriv on your calculator and check the graph of the derivative- you don't have to, but I think you would say ``uh-oh'' if you did).
+    
+    Let's test this ``Rule'' (soon to be called ``Fool's Rule'') on something we already know the derivative for:  $x^{10}$.  We know the derivative of this function is  $10x^9$.  Let's rewrite the function $x^{10}$ as the product of two functions: $f(x) = x^7$  and $g(x) = x^3$ (that is,  $x^{10} = f(x) g(x) = x^7x^3$).  Now, by the ``Rule'', what should the derivative of $x^{10}$  be?  Does your result simplify to the known $10x^9$ or to something wrong?  Do you think we can take the ``easy way'' out to find the derivatives of products of functions?  (I hope not\dots.)
+    
+     As it turns out, the {\em real} ``Product Rule'' is a bit more complicated than the false ``Fool's Rule''.  And to reason out why it works is a bit more difficult as well (I argue it below geometrically if you'd like to see).  Here it is:  The derivative of $f(x) g(x)$ is  $f(x)g'(x) + f'(x) g(x)$.  That is, recopy one of the functions and multiply it by the derivative of the other.  Then add the ``vice versa'' of that.
+     
+    Check to see that this works to give the derivative of $x^{10} = f(x)g(x) = x^7x^3$ as  $10x^9$.
+
+\begin{question}
+Now find the derivative of each of the following functions:
+\begin{enumerate}
+    \item $f(x) = x^3\sin x$
+    \item $f(x) = (\sin x)(\log_6 x)$
+    \item $f(x) = e^x \sin x - 5x^3$
+    \item $f(x) = e^x\sqrt{x} - 4x^7\cos x$
+    \item $f(x) = 12^xg(x)$, where $g(x)$ is any function.
+    \item If you know the derivative of $\sqrt{\text{uglyfunction}}$ and the derivative of  $\cos(\text{evenuglierfunction})$, what would the derivative of  $\sqrt{\text{uglyfunction}}\times \cos(\text{evenuglierfunction})$  be?
+\end{enumerate}
+\end{question}
+
+\section*{Optional Reading: An argument for the Product Rule:}
+
+   From a geometric point of view, the most famous multiplication done is in finding the area of a rectangle.  Let’s pretend that our hero functions $f(x)$ and $g(x)$ are the length and widths of a rectangle.  Then, its area $A(x)$ is $f(x)g(x)$.  We want to find $A'(x)$ (i.e., the derivative of the product of functions).  
+   
+    So we have this picture:
+    \begin{center}
+        \begin{tikzpicture}
+        \draw (0,0) -- (0,3) -- (5,3) -- (5,0) -- (0,0);
+        \draw [decorate,decoration={brace,amplitude=10pt},xshift=-4pt,yshift=0pt]
+            (0,0) -- (0,3) node [black,midway,xshift=-0.7cm] {$f(x)$};
+        \draw [decorate,decoration={brace,amplitude=10pt,mirror},xshift=0pt,yshift=-4pt]
+            (0,0) -- (5,0) node [black,midway,yshift=-0.6cm] {$g(x)$};
+        \end{tikzpicture}
+    \end{center}
+ 
+ 
+Now, we add a little bit (``$h$'') to what we are plugging into both $f$ and $g$.  Assuming (for simplicity) that $f$ and $g$ are increasing functions, we now have the following picture:
+
+    \begin{center}
+        \begin{tikzpicture}
+        \draw (0,0) -- (0,3) -- (5,3) -- (5,0) -- (0,0);
+        \draw [decorate,decoration={brace,amplitude=10pt},xshift=-4pt,yshift=0pt]
+            (0,0) -- (0,3) node [black,midway,xshift=-0.7cm] {$f(x)$};
+        \draw [decorate,decoration={brace,amplitude=10pt,mirror},xshift=0pt,yshift=-4pt]
+            (0,0) -- (5,0) node [black,midway,yshift=-0.6cm] {$g(x)$};
+        \draw (0,3)--(0,4)--(5,4)--(5,3);
+        \draw [decorate,decoration={brace,amplitude=10pt},xshift=-4pt,yshift=0pt]
+            (0,3) -- (0,4) node [black,midway,xshift=-1.6cm] {$f(x+h) - f(x)$};
+        \draw (5,3)--(6,3)--(6,0)--(5,0);
+        \draw (5,4)--(6,4)--(6,3);
+        \draw [decorate,decoration={brace,amplitude=10pt,mirror},xshift=0pt,yshift=-4pt]
+            (5,0) -- (6,0) node [black,midway,yshift=-0.6cm] {$g(x+h)-g(x)$};
+        \draw [decorate,decoration={brace,amplitude=10pt},xshift=0pt,yshift=4pt]
+            (0,4) -- (6,4) node [black,midway,yshift=0.6cm] {$g(x+h)$};
+        \draw [decorate,decoration={brace,amplitude=10pt,mirror},xshift=4pt,yshift=0pt]
+            (6,0) -- (6,4) node [black,midway,xshift=1cm] {$f(x+h)$};
+        \end{tikzpicture}
+    \end{center}
+
+   The additional areas, going from top left to bottom right, are:  $[f(x+h)-f(x)]\times g(x)$;  $[f(x+h)-f(x)]\times [g(x+h)-g(x)]$; and  $f(x) \times [g(x+h)-g(x)]$.
+    
+    Thus, the total additional area is the sum of the above: 
+    \begin{align*}
+    A(x+h) -A(x) = [f(x+h)-f(x)]&\times g(x) + f(x)\times[g(x+h)-g(x)]\\
+    &+[f(x+h)-f(x)]\times[g(x+h)-g(x)].
+    \end{align*}
+    (Note that I put the top right corner area last here).
+
+    Here’s the trick: Dividing by $h$ on both sides leaves us with:
+    \begin{align*}
+    \frac{A(x+h)-A(x)}{h} = \frac{f(x+h)-f(x)}{h}&\times g(x) \\
+    &+ f(x) \times \frac{g(x+h)-g(x)}{h} \\
+    &+ \frac{f(x+h)-f(x)}{h} \times [g(x+h)-g(x)].
+    \end{align*}
+
+Notice that we have the original ``definition form'' of the derivative in several places in the equation!  Thus, if we ``send'' $h$ to zero, we would have the following:   $A'(x) = f'(x) \times g(x) + f(x) \times g'(x) + f'(x) \times 0$.  That last ``zero'' is there because when we plug $h=0$ in, we have $[g(x+0)-g(x)] = g(x) - g(x) = 0$.  Thus, we have:
+\[
+A'(x) = f'(x) \times g(x) + f(x) \times g'(x),
+\]
+which is the ``Product Rule''!
+
+
+\section*{Derivatives of Quotients of Functions}
+
+Now we look to finding the derivative of a quotient of functions (e.g.,  $\frac{x^3}{\sin x}$).  Now, as we went through with products, do you think that the derivative of this function will be  $\frac{3x^2}{\cos x}$ (i.e., the derivative of the quotient is the quotient of the derivatives?).  Wouldn't that be nice?
+
+Sorry, but it just doesn't work out that way.  To show that the ``Fool's Rule , Jr'' does not work, let's again test it on the tried and true  $x^{10}$, which we know the derivative for:   $10x^9$.  As before, let's rewrite the function  $x^{10}$, but this time as the quotient of two functions:  $f(x) = x^{14}$ and $g(x) = x^4$ (that is,  $x^{10} = \frac{x^{14}}{x^4}$.  Now, by the ``Rule'', what should the derivative of $x^{10}$  be?  Does your result simplify to the known $10x^9$ or to something (again) wrong?
+
+ As it turns out (again), the real ``Quotient Rule'' is more complicated than the ``Fool's Rule, Jr.''.  Here it is:  The derivative of $\frac{f(x)}{g(x)}$ is  $\frac{g(x) \times f'(x) - f(x) \times g'(x)}{[g(x)]^2}$.  That is, square the denominator function and ``leave'' it in the denominator.  Then your numerator is much like the product rule, except it's a difference (and thus the order matters in which of the two derivatives you take first).
+ 
+When I was learning calculus from Dr. Isaac Newton back in the '80s (1780's), I memorized the rule this way:  ``Square the bottom.  Then copy the original bottom function on top multiplied the derivative of the top.  Then subtract the reverse''.
+
+Test this by finding the derivative of $x^{10} = \frac{x^{14}}{x^4}$  and see if it simplifies to $10x^9$.
+
+It turns out, again, to be difficult to conceptually prove the Quotient Rule.  Probably the easiest way to do so would require that we know the ``Chain Rule'' as well as the Product Rule (i.e., we can rewrite any quotient as a product:   $\frac{f(x)}{g(x)} = f(x) \times [g(x)]^{-1}$).  I will do this as an optional reading after the smoke clears on ``Working on the Chain Gang''.
+
+\begin{question}
+Now find the derivative of each of the following functions:
+\begin{enumerate}
+    \item $f(x) = \frac{\sin x }{x^3}$
+    \item $f(x) = \frac{13\sqrt[5]{x} + \cos x}{3\sqrt{x}}$
+    \item $f(x) = \frac{x^2-\ln x - 6}{3\sqrt{x} - \sin x} - 4^x$
+    \item $f(x) = e^x \cos x - \frac{(5x^2-10\sqrt{x}-4)(\sin x - \cos x)}{3x+2}$
+    \item If you know the derivative of $\sqrt{\text{uglyfunction}}$ and the derivative of  $\cos(\text{evenuglierfunction})$, what would the derivative of  $\sqrt{\text{uglyfunction}} \div \cos(\text{evenuglierfunction})$  be?
+\end{enumerate}
+\end{question}
+
+
+
+\section*{Derivation of Other Trig Function's Derivatives}
+
+From class, we know that the derivative of $\sin x$ is $\cos x$ and the derivative of $\cos x$ is 
+$–\sin x$ (We made sense of this through graphs of the functions.  We also essentially saw the graph of $f'$  from the graph of $f$ (with $f =$ periodic function) in Hall of Fame Derivatives).
+
+What about the other $4$ trig functions?  We can derive their derivatives by using the quotient rule (If you know the graphs of these functions, you'll see the results make sense: e.g., the graph of tangent is always increasing.  Here, we'll see its derivative is a square of a function and thus always positive).  
+
+\begin{enumerate}[label=\arabic*.]
+    \item $f(x) = \tan x$.  From precalculus, we know that $\tan x = \frac{\sin x }{\cos x}$  (Geometrically the ``opposite''/``adjacent'' for angles in a right triangle.  For the periodic interpretation, it's how the slope ($y$-coordinate/$x$-coordinate) of the radius of the unit circle changes as you go counterclockwise around it).  Thus, by quotient rule, 
+    \[
+    f'(x) = \frac{\cos x(\cos x) - \sin x(-\sin x)}{\cos^2 x} = \frac{\cos^2 x + \sin^2 x}{\cos^2 x} = \frac{1}{\cos^2 x} = \sec^2 x.
+    \]
+    The identity $\cos^2 x + \sin^2 x = 1$ was used here (That identity comes from the Pythagorean Theorem).
+    \item If $f(x) = \sec x = \frac{1}{\cos x}$ (reciprocal of $\cos x$, we use the quotient rule to find its derivative:
+    \[
+    f'(x) = \frac{\cos x (0) - 1(-\sin x)}{\cos^2 x} = \frac{\sin x}{\cos^2 x} = \frac{1}{\cos x} \cdot \frac{\sin x}{\cos x} = \sec x \cdot \tan x.
+    \]
+    \item If $f(x) = \csc x = \frac{1}{\sin x}$ (reciprocal of $\sin x$),  we use the quotient rule to find its derivative:
+    \[
+    f'(x) = \frac{\sin x (0) - 1(\cos x)}{\sin^2 x} = \frac{-\cos x}{\sin^2 x} = -\frac{1}{\sin x} \cdot \frac{\cos x}{\sin x} = -\csc x \cdot \cot x,
+    \]
+    with $\cot x =$ the reciprocal of $\tan x$.
+    \item If $f(x) = \cot x = \frac{1}{\tan x} = \frac{\cos x}{\sin x}$ (reciprocal of $\tan x$, we use the quotient rule to find its derivative:
+    \begin{align*}
+    f'(x) &= \frac{\sin x (-\sin x) - (\cos x)(\sin x)}{\sin^2 x} = \frac{-(\sin^2 x + \cos^2 x)}{\sin^2 x} \\
+    &= \frac{-1}{\sin^2 x} = -\csc^2 x.
+    \end{align*}
+\end{enumerate}
+
+Thus, we have:   $(\tan x)' = \sec^2 x$,  $(\sec x)' = \sec x \cdot \tan x$,  $(\csc x)' = -\csc x \cdot \cot x$, and $(\cot x)' = -\csc^2 x$. 
+
+
+ 
+
+
+
+
+
+\end{document}

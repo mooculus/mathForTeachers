@@ -1,0 +1,65 @@
+\documentclass{ximera}
+\input{preamble}
+
+\author{Vic Ferdinand}
+\title{Recap of Results from ``Graphing All the Way''}
+
+\begin{document}
+\begin{abstract}
+\end{abstract}
+\maketitle
+
+
+Here is a summary of what we found in ``Graphing All the Way''.  Note the similarity in processes for what you do with the three main functions ($f(x)$, $f'(x)$, $f''(x)$), yet each reveals a different kind of information about the behavior of $f(x)$, information that makes that behavior clearer and clearer (Always keep in mind that our ultimate goal is always what the information tells us about $f(x)$),:
+
+\section*{What can the signs of $f(x)$ tell us?}
+
+When (i.e., for $x$-values for which) $f(x)$ is positive, the graph of $f(x)$ is located above the $x$-axis.  When $f(x)$ is negative, the graph of $f(x)$ is below the $x$-axis.  We find when $f(x)$ might change between being above and below the $x$-axis by finding when (for what $x$-values) $f(x) = 0$.  By their nature, these values are the $x$-intercepts on tha graph of $f(x)$.
+
+\section*{What can the signs of $f'(x)$ tell us?}
+
+When (i.e., for $x$-values for which) $f'(x)$ is positive, the graph of $f(x)$ is increasing (i.e., the $y$-values go ``up'' as $x$ moves from left to right).  When $f'(x)$ is negative, the graph of $f(x)$ is decreasing (i.e., the $y$-values go ``down'' as $x$ moves from left to right).  We find when $f(x)$ might change between increasing and decreasing by finding when (for what $x$-values) $f'(x) = 0$.  By their nature, these values are the candidates for local maximum and minimum points (``peaks and valleys'') on the graph of $f(x)$.
+
+\section*{What can the signs of $f''(x)$ tell us?}
+
+When (i.e., for $x$-values for which) $f''(x)$ is positive, the graph of $f(x)$ is concave up (i.e., the {\em slopes} increase in value as $x$ moves from left to right).  When $f''(x)$ is negative, the graph of $f(x)$ is concave down (i.e., the {\em slopes} decrease in value as $x$ moves from left to right).  We find when $f(x)$ might change between concave up and concave down by finding when (for what $x$-values) $f''(x) = 0$.  By their nature, these values are the candidates for inflection points (``hit the brakes'' or ``signals to consider selling (or buying) the stock'') on the graph of $f(x)$.
+
+\section*{Epilogue}
+
+Note the difference between what {\em types} of information $f'(x)$ and $f''(x)$ each give us about the graph of $f(x)$.  
+
+The signs of $f'(x)$ tell us how the $y$-values (or amounts or positions) on the graph of $f(x)$ are changing (going up or going down).  That is (as we knew before), $f'(x)$ tells us the rate of change of the amount at any time $t$ (e.g., Miles per hour could be the units of $f'(x)$.  So could dollars per hour).  That is, $f'(x)$ is the velocity of the $y$-values.  If that rate ($f'(x)$) is positive, we expect the $y$ values on $f(x)$ are increasing.  If that rate ($f'(x)$) is negative, we expect the $y$ values on $f(x)$ are decreasing.
+
+On the other hand, the signs of $f''(x)$ tell us more sensitive information.  They will tell us {\em how} (rather than just whether) the function $f(x)$ is increasing or decreasing during those times.  They tell us how the {\em slopes} (the velocities) of the graph are changing (i.e., steeper or shallower).  That is, $f''(x)$ tell us the rate of change of the velocity at any time $t$ (e.g., Miles per hour per hour or Dollars per hour per hour could be the units of $f''(x)$).  That is, $f''(x)$ is the acceleration of the $y$-values and the velocity of the velocity values (rate of change of the rate).
+
+Because $f''(x)$ tells us if the slopes on $f(x)$ are increasing or decreasing (graph of $f(x)$ is getting steeper or shallower), we need to be careful when talking about how to interpret the signs of $f''(x)$.  This will give us the four possible shapes for any part of a graph of $f(x)$.
+
+If $f''(x)$ is positive for a time, we say that the graph of $f(x)$ is {\em concave up}.  This means that values of the slopes are increasing.  Now, if the actual $y$-values are increasing (i.e., $f'(x)$ is also positive), that means the graph is getting steeper (e.g., slopes are going from $2$ to $4$ to $9$, etc.).  But if the actual $y$-values are decreasing (i.e., $f'(x)$ is negative), then the graph is getting shallower (e.g., slopes are going from $-10$ to $-7$ to $-1$, etc.- note these are indeed increasing values of the slope!). In a nutshell, we can put both scenarios in one picture- a smile.
+\[
+\includegraphics[width=\textwidth]{graphics/ConcaveUp.pdf}
+\]
+
+If $f''(x)$ is negative for a time, we say that the graph of $f(x)$ is {\em concave down}.  This means that values of the slopes are decreasing.  Now, if the actual $y$-values are increasing (i.e., $f'(x)$ is positive), that means the graph is getting shallower (e.g., slopes are going from $9$ to $4$ to $2$, etc.).  But if the actual $y$-values are decreasing (i.e., $f'(x)$ is negative), then the graph is getting steeper (e.g., slopes are going from $-1$ to $-7$ to $-10$, etc.- note these are indeed decreasing values of the slope!).  In a nutshell, we can put both scenarios in one picture- a frown.
+\[
+\includegraphics[width=\textwidth]{graphics/ConcaveDown.pdf}
+\]
+
+In a nutshell, only $f'(x)$ and $f''(x)$ tell us about the {\em shape} of the graph of $f(x)$ at any time.  $f(x)$ only tells us about {\em location} of points on the graph.  Note also that we are always (for different reasons), finding when a function is zero and then positive and negative.  For a review of that ``positive and negative'' part from an algebraic/arithmetic point of view, see the optional reading called ``Pros and Cons'' next.
+
+\section*{Pros and Cons: Review of Finding when a Formula is Positive and when it is Negative}
+
+Here is a review of how to algebraically determine the $x$-values for when the function ($y$) values are positive and negative.  We are talking only about functions that do not have a vertical asymptote (e.g., has an $x$-value that forces division by zero) here.
+
+Let's look at a ``rigged-up'' example: $f(x) = x^3-5x^2-29x+105$.  We also can write this $ f(x)$ as $f(x) = (x+5)(x-3)(x-7)$.  We want to know when $f(x) > 0$ and when $f(x) < 0$ (i.e., for what $x$ is $f(x)$ positive and negative?). For the time being, do not graph the function (we want to do this algebraically).
+
+The key behind it all is knowing what must happen for a function to change from being positive to negative (and vice versa).  What is that?  Is there a ``special'' value that the function must achieve in order to cross from one side to the other?  In our example, have we sufficiently rigged the function so that you can find those times for achieving that special value?  What are those times?
+
+Pick to adjacent times from the three you found in the previous paragraph.  In between those times, what can we say about the sign(s) of the value $f(x)$ will take on?  That is, will they always stay the same sign or will they change to the opposite sign somewhere between those times?  What does this suggest for a technique you can use to see what sign the function is between two of the times?  Do this technique to answer the original question: For what $x$ is $f(x)$ positive and for what $x$ is $f(x)$ negative.
+
+For the case that $f(x)$ can be written as a product (such as our beloved example), can you come up with another technique that takes advantage of the fact that we know the signs of products of signs (e.g., a positive $\times$ a negative $=$ a negative) to solve our problem?  You might recall this as setting up a ``sign chart'' for the function.
+
+Now look at the graph of the function (try window $[-10, 10]\times [-200, 200]$ to verify (actually just support) your results.
+
+
+
+\end{document}

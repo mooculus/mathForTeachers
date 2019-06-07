@@ -1,0 +1,69 @@
+\documentclass{ximera}
+\input{preamble}
+
+\author{Vic Ferdinand}
+\title{A Method for Finding Roots of Functions}
+
+\begin{document}
+\begin{abstract}
+\end{abstract}
+\maketitle
+
+We will be looking at another method for finding roots of polynomials for when our usual algebraic techniques fail us.  That is, given a function $f(x)$, we'd like to find value(s) of $x$ that make $f(x) = 0$.  Note that all equations (of a single variable) $h(x) = g(x)$ can be written this way by just ``subtracting $g(x)$ from both sides''.
+
+It's possible that, in 1165, you discussed other methods of approximating solutions to equations:  the traditional ``undoing'' method from school, the ``bisection'' method, and ``fixed point iteration'' (working the equation to the form $g(x) = x$), when it would work (you're welcome to investigate bisection and fixed point on your own!).
+
+The method studied here will tie together some of those ideas with the core idea behind differential calculus that we studied in the first part of 2167.  Here is one iteration in a picture (You need to do this several times and see if you get closer to the root. $x_n$ is one approximation and $x_{n+1}$ is {\em derived from that} for (hopefully) a better approximation.  We then do the same thing to $x_{n+1}$  as we did to $x_n$ to get a further approximation = $x_{n+2}$):
+
+
+\begin{center}
+\begin{tikzpicture}
+\draw[->] (-1,0)--(3,0);
+\draw[->] (0,-1)--(0,3);
+\draw[color=blue, domain=-1:3] plot (\x, {(1/4)*(\x-1)*(\x+2)});
+\draw[color=red, domain=0.5:3] plot (\x, {(5/4)*(\x-2)+1});
+\draw[color=blue, dashed] (2,0)--(2,1);
+\draw (1,-0.1)--(1,0.1);
+\node at (1, 0.2) {$x$};
+\draw (1.2,-0.1)--(1.2,0.1);
+\node at (1.5, -0.3) {$x_{n+1}$};
+\node at (2.2, -0.2) {$x_n$};
+\end{tikzpicture}
+\end{center}
+
+\begin{problem}
+
+Try this method out on the following examples.  Do a few “by hand” (with, say, a calculator), but switch to Excel to speed up the work.  Your initial approximation is given.  Sometimes there will be more than one initial approximation given (i.e., do the same process separately with each given initial approximation).
+
+\begin{enumerate}
+\item $x^2-x-2=0$.  (This, via factoring or quadratic formula, has solutions $x = -1$ and $x = 2$).  For Bisection, begin with two numbers: $x = -0.5$ and $x = 7$.  For both Fixed Point and Newton’s begin with  $x = -3$, $x=4$, $x=-345$, and finally $x = 5786$.   (If you’re looking at Fixed Point Iteration on the side (no credit, though), find both roots by rewriting the equation as  $x=1+\frac{2}{x}$.  There are other equations that you could use Fixed Point Iteration for this function as well).
+
+\item  $2x – 5 = 0$. This has solution $x = 2.5$. Start anywhere.  Do a bunch of them! 
+
+\item $x^3+2x-4=0$.   This is one that would be more difficult to find a solution by our ``undoing'' processes.  Try any starting points. 
+
+\item $x^4-2x^3+5x^2-6=0$.   (Find the root in $(0, 8)$ as well the one in $(-8, 0)$).
+
+\item $x^2+4x+4-\ln x = 0$.   (This one could not be found by our ``undoing'' processes).
+
+\item  $x^3-2x^2-11x+12 =0$.  This has solutions $-3$, $1$, and $4$.  Start at $2.35287527$, $2.35284172$, $2.3528373$, $2.352836327$, and $2.352836323$.  What happened?
+
+\item 	Estimate  $\sqrt[5]{20}$.
+
+\item $x^3-2x+2=0$.   Start at $x = 1$, $1.5$, $1.53$, $-0.5$, and $-0.53$.  What happened?
+
+\item $2x^3-3x^2-36x+2=0$.   (Start at $x = 3$.  Then start at $x = 3.000001$)
+
+\item $\frac{1}{x}-10 = 0$. (Start anywhere except x = 0.1)
+
+\item $x^2+9=0$. Start at $x = 0.1$.  Start anywhere.
+\end{enumerate}
+\end{problem}
+
+\begin{problem}
+
+What do you think needs to be true about a function if this method is to have a chance to work?
+\end{problem}
+
+
+\end{document}

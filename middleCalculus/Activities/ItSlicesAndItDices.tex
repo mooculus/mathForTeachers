@@ -1,0 +1,55 @@
+\documentclass{ximera}
+\input{preamble}
+
+\author{Vic Ferdinand}
+\title{It Slices and it Dices! (Or: Round and Round She Goes! Or: The Spirit of '76)}
+\outcome{Apply integrals to real-life scenarios.}
+\outcome{Find volumes by slicing.}
+\outcome{Find volumes of solids of revolution.}
+
+\begin{document}
+\begin{abstract}
+\end{abstract}
+\maketitle
+
+\begin{instructorIntro}
+We wrap up the course by exploring (mostly geometric) applications of integration- extending at least two ideas that are dealt with in early algebra or geometry.  
+
+The rest of the activities use the Riemann sum that was developed intuitively in Winter Storm Warning and consider that the sum (as the size of the intervals ($\Delta x$) approaches zero) approaches the definite integral.  The key is recognizing what the ``$f'(x)$'' now is (instead of a rate, but rather some other measurement dependent upon the function $f(x)$).  This also could be done with the area between curves, but they are better able to intuitively see that without the Riemann sum. 
+
+Because of time, I usually derive all of the formulas in a whole-class setting and let them work on the problems- often assigning certain problems to certain groups. The hardest application is the volume by slicing, which uses the volume of a prism as the $A(x) \Delta x$.  They usually will intuitively understand the ``loaf of sliced bread'' argument (bringing a loaf to class helps!), but have difficulty in actually finding the $A(x)$ in the exercises, particularly if it involves a triangle (Often, we end up doing these as a whole class in the end).
+
+The volumes of solids of revolution is much easier (although they often don't see it as a special case of the slicing, perhaps because the revolution goes behind the plane).  The biggest difficulty seems to be in problems where we are revolving a region between curves about the $x$-axis in keeping the ``top and bottom'' volumes separate (i.e., they are tempted to write $(f(x)-g(x))^2$ rather than $(f(x))^2 - (g(x))^2$).  If you don't do anything else here, try to squeeze in the volume of a cone and sphere.
+
+\end{instructorIntro}
+
+A famous application of integration is not only to find areas, but {\em volumes} as well.  Although the volume of more general figures requires multi-variable calculus (things called double and triple integrals that come from double and triple Riemann sums- not too far afield from what we've accomplished here anyway!), we can use single-variable calculus to find volumes of special $3$-D figures:  Those whose cross-sections perpendicular to the $x$-axis are defined by a specific shape and a single variable function.
+
+First, a review of geometry:  A {\em prism} is a figure with a base and a top with congruent (same shape and size) cross-sections throughout (A box is the most famous prism- if you cut anywhere parallel to the base, you have a rectangle that is congruent to the base rectangle. A cylinder is the second most famous:  its base and parallel cross-sections are circles).  It turns out that the volume (the amount of $3$D space inside) of a prism is its (Area of the base) times the (Vertical Height):  We basically have the base repeated infinitely in its cross-sections from top to bottom.  The actual formula was argued in the pool problem in HW \#6 (putting unit cubes on top of unit squares).  If we turn the prism on its side and lay it along the $x$-axis (So the base and cross-sections are perpendicular to the $x$-axis), its volume doesn't change at all (well, duh), but we can look at the volume of as the sum of ``(Area of a cross-section) times (length along $x$-axis)''
+      
+(Think of a loaf of bread laying on a table with the crust end against the $y$-axis and the loaf extending along the $x$-axis with same-shaped, although not necessarily similar, slices - with one slice being a ``cross-section'').
+
+Due to time constraints this semester, we're going to only consider the case of the cross-sections being circles bounded by the graph of a positive function $f(x)$ and its reflection about the $x$-axis (Think of a football with the $x$-axis going through from one pointy end to the other).  An easier way to visualize this is to think of the graph of $f(x)$ (always in the above the $x$-axis for this course) as being {\em revolved about the $x$-axis} to form the solid.  Thus, we call these ``solids of revolution'' (much different than ``Daughters of the Revolution'').  
+
+We would like to find the volume of this object   This is not a cylinder, but we could cut it into tiny slices (cuts made perpendicular to the $x$-axis- like slicing the loaf of bread) so that we have a bunch of objects that are essentially ``thin cylinders'' (Since $f(x)$  won't change much over a small interval).  Then, the area of the cross-section circular slice won't change much over the short interval, but {\em will be} dependent on at what $x$-value we sliced at.  The area of a cross-section is thus a function of $x$. (call it $A(x)$).  
+
+Since the cross-section is a circle, whose area is  $\pi r^2$, why does it make sense that the ``radius'' at $x$ is $f(x)$ itself?  And why would the volume of the thin cylinder be  $\pi r^2 \times \Delta x = \pi (f(x))^2 \times \Delta x$, where $Delta x$ is the length of each little interval (Is the thin slice a ``prism''?)?  What would we then do to these ``little'' volumes of these ``thin cylinders'' to find the volume of the whole object?  And what would $\Delta x$ need to do in order for the estimation to become more-and-more accurate?  Do we have a (fill in the blank) \underline{\hspace{0.5in}} (named after a famous 19th century mathematician named Bernhard Riemann)?  What would be the formula of the exact volume of the entire figure (assuming it lies along the $x$-axis on the interval $[a, b]$)?
+
+
+\begin{question} 
+Find the volume of the solid generated by rotating the graph of $f(x) = x^3$ (on $[2,5]$) about the $x$-axis.  What will this solid look like?
+\end{question}
+\begin{question} 
+Set up the integral that would find the volume of the solid generated by rotating the graph of $f(x) = 5x-x^2$ (on $[0,5]$) about the $x$-axis.  What will this solid look like?
+\end{question}
+\begin{question} 
+Set up the integral that would find the volume of the solid generated by rotating the region between the graphs of $f(x) = x^2-5x+17$ and $g(x) = 3x+10$ about the $x$-axis. (What happens in the middle of this solid?)
+\end{question}
+\begin{question} 
+Derive the formula for the volume of a sphere of radius $r$ by considering it a solid of revolution (the graph to be rotated is in the $1$st and $2$nd quadrants.  Fun Fact:  The equation of a circle of radius $r$ centered at $(0, 0)$ is  $x^2 + y^2 = r^2$).
+\end{question}
+\begin{question} 
+Derive the formula for the volume of a cone of base radius $r$ and height $h$ by considering it to be a solid of revolution. (Hint:  What two points do you know will be on the function that is rotated?  Use them to derive the function's formula).
+\end{question} 
+
+\end{document}

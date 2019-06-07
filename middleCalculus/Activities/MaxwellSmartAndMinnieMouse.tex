@@ -1,0 +1,97 @@
+\documentclass{ximera}
+\input{preamble}
+
+\author{Vic Ferdinand}
+\title{MAXwell Smart and MINnie Mouse}
+\outcome{Optimization of functions.}
+
+\begin{document}
+\begin{abstract}
+\end{abstract}
+\maketitle
+
+\begin{instructorIntro}
+Here, the students go into detail about when a function has a chance to attain its (global or local) extreme values.  This should be considered a special case of what they learned with the graphing and, after reading the narrative on the first page, will likely be able to come up with and report a step-by-step process on their own after stating that the first step is to read and understand the problem and to write down what needs to be maximized or minimized (often a difficult step!) and to write down a one-variable function for that quantity (often the most difficult step!) as we won't be dealing with functions that are undefined (except at zero, which will not be part of the practical domains).
+
+One thing they will need to wrestle with is deciding whether the function they have written is restricted between two values (usually by practicalities) or not.  Thus, one of the possible locations of max or min (and now absolute max or min) is an endpoint.  The best problem in the practice problems that brings this out is the fold-up-box problem (although the endpoints here make no box), but also the oil refinery problem in the homework (many students forget about this idea and only shoot for the middle critical value- you might want to change the costs of underwater and above ground pipes so that an endpoint minimizes the cost).  Also, a subtle restriction is on \#1 in the homework in that we don't want either dimension to be negative (so $2x + y$ must be less than or equal to $2400$).
+
+Although they can describe why the second derivative test works (using a ``smile-frown'' argument), they are often shy about using it to test the critical values (they are used to making the sign chart for $f'$).  Encourage them to use both tests in the activities.
+
+\end{instructorIntro}
+
+
+In this activity, we will look more closely at what we've already learned about how calculus can reveal much about the behavior of a function, whether it is represented with a formula or graphically.  In probably the most famous application of derivatives, we will reveal to a waiting world a function's greatest and lowest moments of its life, whether the function likes it or not.
+
+We will be working with functions that are represented by its formula only.  You may use the graph of a function to ``check'', but a graphing calculator's ability to always pinpoint a peak or valley of a function is not always foolproof.
+
+In this activity, you will develop a process for identifying $x$-values (if any) for which a given function has local maximum and minimal $y$-values (i.e., peaks and valleys).  You've already done most of the conceptual groundwork; it's just a matter of putting together a step-by-step recipe for success!
+
+\begin{exploration} 
+What must happen when a function  has a peak (local max) or valley (local min)?  That is, what should we look for to identify $x$-values for which a function to even have a chance to have a peak or valley?  This was something discovered in the first or second week of the course.
+\end{exploration}
+\begin{exploration}
+Assuming the criteria in the previous part has occurred at a value of $x$, how can we tell whether or not (without looking at the graph of  $f(x)$) is a max, min, or neither?  Hint:  What must the function (and its derivative) be doing around (just before and after) the suspected $x$-value if it gives a max?  If it gives a min?  If it gives neither?  The answer to this question is the basis for what is called the ``First Derivative Test''. 
+\end{exploration}	
+\begin{exploration} 
+If the previous part's result is too cumbersome to algebraically work out, is there another, easier way to find if our suspected $x$-value give a max, min, or neither for $f(x)$?  In Homework \#4, you dealt with a ``Second Derivative Test'', in which you looked at the concavity around a suspected max or min.  For example, if $x = 5$ is our suspected $x$, then if $f''(5)$ is positive, what does that say about $f(x)$ at $x = 5$ (and why?)?  If $f''(5)$ is negative, what does that say about $f(x)$ at $x = 5$ (and why?)?  If $f''(5)$ is zero, what does that say about $f(x)$ at $x = 5$ (and why? Be careful on this one)?  
+\end{exploration}
+\begin{exploration} 
+Write down a step-by-step process for finding value(s) of suspected $x$'s and determining if it gives a local max value of $y$, a local min value of $y$, or neither.  Your process should start with this ``precalculus'' step:  FIND A FORMULA FOR THE THING WE WANT TO MINIMIZE OR MAXIMIZE.  This often is the hardest part before we let ``calculus do the driving'' on the formula to find the max/mins (e.g., recall the container on the final question in Conjunction Junction.)
+\end{exploration}
+
+
+\section*{The Special Case when We Only Care about Part of a Function}
+
+In several real-life situations, we only care about our beloved function for certain values of $x$ (usually a closed interval).  Most of the time, the function in question will only make sense in the context of the situation at hand for only those values of $x$ (e.g., other values might make a physical measurement such as area a negative number).  Make sure to ask if this is the case whenever you approach an optimization problem (or any problem!).
+
+What should we do in these cases if we only have a formula?  To develop a plan, take a look at these ``partial graphs'' and identify where the largest and smallest values of $y$ take place in the interval (these will be called absolute maxes and mins for that interval).  After you do this, take the process you developed above for general functions and adapt it to this case.
+
+\begin{center}
+    \begin{tabular}{ccc}
+        \begin{tikzpicture}
+            \draw[ultra thick] (0,0) sin (1,1) cos (2,0) sin (3,-1) cos (4,0);
+        \end{tikzpicture}
+        & \hspace{0.2in} &
+        \begin{tikzpicture}
+            \draw[ultra thick, domain=0:6.3] plot (\x, {-sin(deg \x)});
+        \end{tikzpicture}\\ 
+        & \hspace{0.2in} & \\
+        \begin{tikzpicture}
+            \draw[ultra thick] (0,0) sin (1,2) cos (2,1.5) sin (3,1) cos (4,2);
+        \end{tikzpicture} 
+        & &
+        \begin{tikzpicture}
+            \draw[ultra thick, domain=0:3.2] plot (\x, {(\x-0.5)*(\x-1)*(\x-1.5)*(\x-3)});
+        \end{tikzpicture} \\ 
+        & \hspace{0.2in} & \\
+        \begin{tikzpicture}
+            \draw[ultra thick, domain=0:4] plot (\x, {((1/2)*\x-1)^3});
+        \end{tikzpicture}
+        & & 
+        \begin{tikzpicture}
+            \draw[ultra thick, domain=0:3.1] plot (\x, {cos(deg \x)});
+        \end{tikzpicture} \\
+    \end{tabular}
+\end{center}
+ 
+ 
+Now practice your newly-developed processes on the following problems:
+
+\begin{problem} 
+Leo Duh Vinci wants to build a rectangular piece of Florida land comprising $36$ square miles for his snowman collection.  The piece of land will lie along a river, on which side there is no need for fencing (the snowmen are afraid of alligators).  What is the least amount of fencing he will need to buy to enclose the land?  Do the same if he had $A$ square miles.
+\end{problem} 
+\begin{problem} 
+Elpo, a small dog food manufacturer makes $x$ pounds of dog food per year.  Analysts say that the last couple years' figures suggest that it costs the company $C(x) = 84+1.26x-0.01x^2+0.00007x^3$ dollars to produce $x$ pounds of dog food and that the company was charging $p(x) = 3.50 - 0.01x$ dollars per pound of dog food.  Assuming this is to hold true for this year, how many pounds of dog food should be manufactured to maximize the company's profits?
+\end{problem} 
+\begin{problem} 
+A $20$ by $30$ inch rectangular piece of cardboard is to be used to construct an open-topped box.  The box is to be constructed by cutting out a square (of the same size) from each corner of the rectangle and folding it up.  What should be the size of a square to make the box of maximum volume?  What will that volume be?
+\end{problem}
+\begin{problem} 
+What are the dimensions of an aluminum can that holds $40$ cubic inches of juice and that uses the least amount of aluminum?  What is that amount of aluminum?  Assume that the can is cylindrical and is capped on both ends.
+\end{problem}
+\begin{problem} 
+You have a piece of wire of length $20$ inches from which you construct a square and/or a circle.  How should you do this so that you have the largest possible total area inside the figures?  Do the same if you had a piece of wire of length $L$.
+\end{problem}
+
+
+\end{document}

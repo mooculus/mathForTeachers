@@ -1,0 +1,91 @@
+\documentclass{ximera}
+\input{preamble}
+
+\author{Vic Ferdinand}
+\title{Under The Big Umbrella}
+\outcome{Trapezoid and Simpson's Rule.}
+
+\begin{document}
+\begin{abstract}
+\end{abstract}
+\maketitle
+
+
+\begin{instructorIntro}
+This activity goes with ``Trapped'' and the notes refer to both activities.
+
+Here, we continue trying to estimate the net change of a function given its derivative- this time taking advantage that we know that it's equivalent to finding the net area between the rate function and the $t$-axis.  I usually just have them read the narratives of each and have them argue first the area formula for a trapezoid, apply it to the case that our two heights are rate-values, and come up with the Trapezoid Rule (they usually will need help seeing that we use the same endpoint twice in most of the trapezoids).  
+
+I usually will just quote Simpson's Rule after a picture is drawn, showing the need for an even number of intervals, and mentioning that, in each interval, we are basically using the area under the unique 2nd degree polynomial they might have derived in their first content course using systems of equations (3 equations and 3 coefficient unknowns).
+
+The main part of these activities are the exercises where they are given experiences solving (via the estimation rules) basically the same problem with three different representations.
+Thus, the students have a way to at least estimate net change (because we'll see later that finding anti-derivative functions is not as easy or successful as finding derivative functions). 
+
+\end{instructorIntro}
+
+
+We now have two methods for estimating the net change of a function given the rate function over a given period of time.  Both (using rectangles and trapezoids) are using the geometric interpretation that the net change is the area between the rate function and the $t$-axis on that time interval (i.e.,  $\int_a^b f'(t)\, dt$).  This journey will lead us to what turns out to be a much more accurate method of estimation, but yet still use the idea of area (but not of a geometric object we know of).
+
+The key idea behind the rule lies in something we learned a long time ago in that galaxy:  Given any two points, there is a unique \underline{\hspace{1.5in}} (fill in the blank).  What you just filled in can be coordinatized and represented by an equation that looks like  $y=ax+b$.  In fact, you can find the equation of the \underline{\hspace{1.5in}} by using the two points, plugging in for $x$ and $y$ in each, and solving ``two equations and two unknowns ($a$ and $b$)'' (Try this for $(3, 5)$ and $(9, 17)$.).  Now, what if we're given $3$ points?  Will there be a unique kind of graph that goes through those (assuming, technically that all three do not lie on the same line).  Hint:  You'd be setting up ``three equations and three unknowns'' to find the values for $a$, $b$, and $c$.
+
+Now, draw a graph of some function (e.g., some rate function that increases and decreases).  Divide the $t$-axis for the graph up into an even number of intervals.  Now take every three points and draw that unique curve through them.  How well will finding the area under that special curve help us estimate the actual area under the rate function?  Might it be better than the rectangle or trapezoid method?
+
+Now, the details for deriving a formula for this is a bit much for this course (but not impossible!).  It would involve basically two things:  Knowing how to solve three equations and three unknowns to derive the formula for the famous curve and then find the exact area underneath it (That last part would involve some algebraic calculus that is about a week away for us).  For your purposes, it is not important to do so here, so ask a friendly math teacher near you to just give you the formula that estimates $\int_a^b f'(t) \, dt$ using these famous curves.  
+
+The rule is called ``Simpson's Rule''.  It was named after its developer.
+
+\begin{question}
+Stupid Historical Quiz: Simpson's Rule was developed by:
+\begin{multipleChoice}
+\choice{Homer Simpson}
+\choice{Orenthal James Simpson}
+\choice{Joe Rule}
+\choice{None of the above}
+\choice{All of the above}
+\end{multipleChoice}
+\end{question}
+Now, in humbling honor of its founder, use Simpson's Rule (say with $8$ intervals) to estimate the snowfall in Winter Storm Warning.
+
+
+Now accumulate more insight and knowledge (rather than snow) in doing the following in your group.
+\begin{exercise}
+The rate of growth of those delightful snipes at the Boy Scout camp at any time $t$ years after January 1, 2013 is given by $r(t) = 2t^3-t^2-8t-9$ snipes per year.  This formula is accurate from January 1, 2011 through January 1, 2017.  Use Trapezoidal Rule with $n = 12$ to estimate how the population changed over the $6$ years (i.e., Estimate $\int_{-2}^4 r(t)\, dt$).  Also, if the population at on January 1, 2011 was $5600$ snipes, estimate the total population on January 1, 2017.  
+
+\end{exercise}
+
+
+\begin{exercise}
+Speed Racer got his speedometer fixed, but now his odometer went out (along with his trip odometer).  This time, he wants to know how far he travels on a trip (all in the same direction, so distance = displacement).  So he measures his speed (positive velocity) every $5$ minutes:
+\begin{center}
+    \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|} \hline
+        Time (minutes) & 0&5&10&15&20&25&30&35&40&45&50  \\ \hline
+        Speed (mph) & 75&32&67&96&$6^\ast$&57&68&37&53& 63&14 \\ \hline
+    \end{tabular}
+\end{center}
+$^\ast$ Just after being pulled over by neighborhood police
+
+Use Simpson's Rule to estimate how far Speed Racer went over the course of the $50$ minutes (be careful with units with $\Delta t$!)
+\end{exercise}
+
+\begin{exercise}
+Water flows in and out of a storage tank.  A graph of the rate of change $V'(t)$ of the volume of water (in gallons per day) is shown.  What does $\int_0^4 V'(t)\, dt$ mean in this problem?  Use Simpson’s Rule with $n = 8$ to estimate its value.  What does $V(0) + \int_0^4 V'(t)\, dt$ mean in this problem?
+
+\begin{center}
+    \begin{tikzpicture}
+        \draw [step=0.5, help lines] (0,-1.5) grid (4.5,2.5); 
+        \draw [->] (-1.2,0) -- (4.7,0); 
+        \node at (-0.2, 2.7) {$V'$};
+        \foreach \x/\xtext in {0, 1, 2, 3, 4} 
+            \draw (\x cm,1pt) -- (\x cm,-1pt) node[anchor=north,fill=white] {$\xtext$};
+        \node at (-0.4, 2) {$2000$};
+        \node at (-0.4, 1) {$1000$};
+        \node at (-0.55, -1) {$-1000$};
+        \draw [domain=0:4] plot (\x, {(1/7.2)*(\x-3)*(\x+0.4)*(\x-6)});
+    \end{tikzpicture}
+\end{center}
+
+
+\end{exercise}
+
+
+\end{document}

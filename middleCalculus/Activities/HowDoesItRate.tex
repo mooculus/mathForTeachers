@@ -1,0 +1,82 @@
+\documentclass[handout]{ximera}
+\input{preamble}
+
+
+\outcome{Estimate derivatives numerically from $f(t)$ using average velocity.}
+\outcome{Understand limit definition of derivative at a point.}
+
+\author{Vic Ferdinand}
+\title{How Does It Rate?}
+
+\begin{document}
+\begin{abstract}
+\end{abstract}
+\maketitle
+
+
+\begin{instructorIntro}
+Here, we work toward numerically finding the derivative of a function at a particular time (rather than as an entire function as we did graphically in the previous activity.  We will build to the algebraic equivalent beginning here).  After asking a couple ``amount'' questions, I ask what the rate would be if the amount of water was a linear function of $t$.  Students are often surprised to find that they got the same answer each time and that it happened to be the slope of the line (even after seeing the graphical role of slope in the previous activity)!  However, they also saw how the ``change in $y$ over change in $x$'' makes sense to find the rate as opposed to just being a formula they memorized.
+
+Students fairly easily saw the issue when we change to non-linear functions, that they only have one point at which they can guarantee the slope at that point (We often discuss the $0/0$ idea (that it can be anything we want) at this point or soon thereafter).  However, they adapted quite well in the next parts- seeing that we can approximate the slope as much as we want by taking advantage of the ``middle school constant slope'' knowledge from the linear case and adapting it to the variable slope situation.
+
+The rest of the problems should take some time, but go rather smoothly as the students imitate the process (and take advantage of the work on function notation in computing $f(3 + h)$).  In those latter parts, students are motivated (by the lengthy and complicated process) to generalize the process as much as they can.  Somewhere in here, depending on the class' work, I try to formally bring into play the $0/0$ limit idea where we eventually ``cancel out'' the troublesome $h$ because $h$ is approaching $0$ and is not equal to $0$).
+
+\end{instructorIntro}
+
+
+Water is being poured into a large tub in such a way that the amount of water in the tub $t$ minutes after the pouring started is: $f(t) = 7t+19$  gallons.  We want to find out how fast water is being poured in at time $t = 3$ minutes.  That is, we want  $f'(3)$.
+
+\begin{question}
+How much water is in the tub when water started being poured in?
+\end{question}
+
+\begin{question}
+How much water is in the tub at 3 minutes?
+\end{question}
+
+
+\begin{question} \label{HowDoesItRate3}
+We want to find the rate of pouring at $3$ minutes. Since we can't tell right away what our rate is at one instance of time, let's go back to middle school algebra to find some average rates (and try to answer the rate at 3 minutes in part (b)):
+\begin{enumerate}
+    \item Find the average rate of pouring between $t=2$ and $t=5$ minutes.  Between $t = 7$ and $t=23$ minutes.  Between $t=4.26$ and $t=2.938$ minutes.  Between $t=3$ and $t = 3.01$ minutes.  How did you calculate these?  What is the unit for the rates?  Why are you getting the results you are?  What is another ``Algebra I'' name for the rates you are finding?
+    \item What do you think the rate at $3$ minutes is?  What do you think the rate at $t$ minutes is?  How confident are you with your guess (and why)?
+\end{enumerate}
+\end{question}
+
+
+\begin{question} \label{HowDoesItRate4}
+Let's now take a huge step and deal with an ``amount function'' that is not linear, which means the rate is constantly changing (like you change velocity on the highway- we're not on cruise control!).  Let's say the amount of water in the tub $t$ minutes after the pouring started is  $f(t) = t^2+5t+17$. 
+\begin{enumerate} 
+\item    Find the average rate of pouring between $t=2$ and $t=5$ minutes.  Between $t = 7$ and $t=23$ minutes.  Between $t=4.26$ and $t=2.938$ minutes.  Between $t=3$ and $t=5$ minutes.  Between $t=3$ and $t=4$ minutes.  Between $t=3$ and $t=3.5$ minutes.  Between $t=3$ to $t=3.1$ minutes.  Between $t=3$ and $t=3.01$ minutes.  Between $t=3$ and $t=3.001$ minutes.  (Can you make this process easier by taking advantage of the function and table feature of your graphing calculator?)
+\item     What is the issue we have to wrestle with that we didn't in Question \ref{HowDoesItRate3}?  What are you observing?  How does this help you make a conjecture for the precise rate of pouring ($f'(3)$)? Is there a rate at time $t=3$ minutes?
+     \end{enumerate}
+\end{question}
+
+\begin{question} 
+From a graphical perspective, what were you doing in the previous question?
+\end{question}
+
+\begin{question}  \label{HowDoesItRate6}
+Write a general algebraic formula for the process you did in Question \ref{HowDoesItRate4} (Hint:  Could you describe the process to a friend?).  What would we change about it to find, say, $f'(7)$?  How would the process change if the function was really complicated, such as   and we wanted to estimate 
+\[
+f(t) = \sqrt{\frac{e^{t^{37}}+\sin(t+4)-6}{\log t + \frac{67}{\sqrt[54]{t^9-89}}}}
+\]
+(Don't do the process for that monster, but would the essential technique change (recall you have a graphing calculator).
+\end{question}
+\begin{question}	
+Free Space
+\end{question}
+\begin{question}\label{HowDoesItRate8}
+Back to the boring quadratic we we've been dealing with.  How could we use the algebraic formula from Question \ref{HowDoesItRate6} to ``speed up'' the process to find, say, $f'(7)$ (i.e., so we won't have to plug in numbers after numbers like in Question \ref{HowDoesItRate4})?  Do so.  Do it again to find  $f'(5.26)$.  (Note: What mathematical weirdness are you forced to deal with here? (Hint:  What does $\frac{0}{0}$ mean?))
+\end{question}
+\begin{question}
+What could we do to speed up the process done in Question \ref{HowDoesItRate8} (i.e., so we won't have to go through the process of Question \ref{HowDoesItRate8} for each and every time for which we want the rate)?  This is what we'll do in the next activity.
+\end{question}
+
+Note:  A graphing calculator with a ``derivative'' capability can calculate a numerical derivative.  For TI's, this is the nDeriv feature under the MATH menu (in the MATH portion of that menu).  To find the derivative at a point, enter nDeriv(function, $x$, time for which you want the rate).  For example, for $f'(3)$  above, you would type in nDeriv($x^2+5x+17$ , $x$, $3$).  If you already have the function in the ``$Y=$'' menu (say, as  $Y_4$), you can type in nDeriv($Y_4$, $x$, $3$), where you can find ``$Y_4$'' by going to VARS, then Y-VARS, then FUNCTION, then select $Y_4$  from the list.
+
+
+
+
+
+\end{document}

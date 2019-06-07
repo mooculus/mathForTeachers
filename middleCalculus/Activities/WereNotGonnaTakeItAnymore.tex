@@ -1,0 +1,43 @@
+\documentclass{ximera}
+\input{preamble}
+
+\author{Vic Ferdinand}
+\title{We're Not Gonna Take it Anymore!}
+\outcome{Consider derivatives as functions via limit definition.}
+
+\begin{document}
+\begin{abstract} 
+\end{abstract}
+\maketitle
+
+\begin{instructorIntro}
+Here, we continue the process started in How Does It Rate?  In coming up with a ``slope function'' (culminating algebraically what they did graphically two activities ago).  For the most part, the narrative sets things up and then the students apply the limit process to the various functions at the end.  This takes up the most time (sometimes, but not always), I've assigned groups to do part (a) and two of (b) through (e) and teach them to their peers at the board.  They usually will need help executing the given hints and many algebraic errors ensue (perhaps a good thing in a way- Motivating that this is a complicated process even with fairly simple functions).
+\end{instructorIntro}
+
+
+
+In ``How Does it Rate'', we found a process by which we could, given the position (or amount) function  $f(t)$, the value of the rate of change of that position or amount at a particular time (e.g., $f'(971.863)$  or the slope of the tangent line to at $t=971.863$.
+
+However, we also saw that it was a quite tedious process- one in which we found the slopes of successive secant lines that were closer and closer to the tangent line and guessed what value those slopes appeared to be getting closer and closer to (which is called a limit and may or may not be a nice whole number!).  Even if we found, say, $f'(971.863)$ algebraically (by computing $\frac{f(971.863+h) - f(971.863)}{h}$  and making $h$ very small), if we wished to estimate the slope at another point on the graph, we'd have to start from scratch and do the same process over again!
+
+Thus, it would be great if we could just go through this process {\em once} for {\em all} possible $t$'s and wind up with a formula (i.e., a new function) that we could just plug in our $t$ value and it would give us our slope for free.  That is, we would have a ``slope'' function in addition to our position function (one tells us where we are or how much and the other tells us how fast and in what direction our amount or position are changing ($f$ is the odometer function and $f'$ is our speedometer function.)
+
+Note that we did this precisely in ``Where am I? How fast am I going?'', only we did it graphically (i.e., we found the ``entire'' global function $f'(t)$ by knowing the entire global function $f(t)$).   Here we are doing the exact same thing with algebraic notation (although we did so ``locally'' at specific points first).
+
+How should we do this?  If we have a question about an algebraic process, we need to go back to the arithmetic process we followed with numbers.  So, for $f(t) = t^2+5t+17$ from ``How does it rate?'', we endeavor now to find $f'(t)$ in general (one struggle once and for all) by looking at how we found  $f'(3)$.  Go back and do this (Recall that we did it through successive slopes and then by calculating $\frac{f(3+h)- f(3)}{h}$ (which is the change of $y$ over the change of $x$ in disguise!) allowing $h$ to grow small (to zero- needed to eventually ``cancel'' out the $h$'s so you didn't have a $0/0$ case).  Note you also did the same process to find $f'(7)$ and  $f'(5.26)$).
+
+Because you keep following the same process over and over, now follow that process for $t$ instead of $3$, $7$, or $5.26$.  Come up with a formula in terms of $t$ (once you're allowed to ``cancel'' the $h$'s and send the rest to zero).  This will be your  $f'(t)$;  Your slope function (the derivative)!.  Check it by plugging in $3$, $7$, and $5.26$ to see that you get the same slope values that you struggled separately to find earlier.
+
+\begin{question} 
+Now follow this process again (i.e., find, say, $f'(3)$ to serve as a guide and then find $f'(t)$ following the same steps) with the following functions:
+\begin{enumerate}
+\item $f(t) = 50$     
+\item $f(t) = 7t+19$     
+\item $f(t) = 4t^2-8t-907$  
+\item $f(t) = \frac{6}{t}$  (Hint:  Multiply top and bottom by the common denominator of the two fractions on the top).
+\item $f(t) = \sqrt{t+8}$  (Fun Fact: $(\sqrt{a} - \sqrt{b})(\sqrt{a} + \sqrt{b}) = a-b$.   That is, try to multiply top and bottom by the sum of the square roots to help make some of their wickedness go away).
+\item   Conclude:  Although this is useful so that we just need to ``plug-n-chug'' to find our slope at any time, I'm hoping you're concluding it's still not very fun or efficient, even for these relatively simple functions.  We will try to alleviate that difficulty next time- at least in the cases of ``famous'' functions and combinations thereof.
+\end{enumerate}
+\end{question}
+
+\end{document}

@@ -1,0 +1,152 @@
+\documentclass{ximera}
+\input{preamble}
+
+\author{Vic Ferdinand}
+\title{Graphing All The Way}
+
+\begin{document}
+\begin{abstract}
+\end{abstract}
+\maketitle
+
+\begin{instructorIntro}
+Here, we work from the typical context of a person's position to develop what the derivatives of a function can tell us about that function's graph (sometimes, students will later confuse this problem with those that ask to graph the derivative.  I continually emphasize that we are only concerned about the graph of $f$ here).
+
+I often do this activity (part by part) as a whole class discussion after they've done the reading for each part.  We discuss how we know when a graph is above or below the $x$-axis (or increase or decrease or concave up vs. concave down:  The function in question is either positive or negative) and the value of those functions that must be attained for the function to switch from one behavior to another (zero:  we mention, but don't emphasize, the case of the function being undefined).  Also, at each stage, we draw the graph with only the information to date.
+
+I emphasize the idea (from earlier) that the derivative of a function tells us the rate of change of what ever the function is measuring.  That is, a sign chart for the derivative will tell us if that quantity is increasing or decreasing.  This is particularly helpful when discussing the second derivative as measuring when the velocity is increasing or decreasing (including with negative numbers).  This helps develop the four possible shapes the graph can take on (eventually consolidated into two:  Concave up = smile and concave down = frown).
+
+Students usually do not have much difficulty (or difficulty correcting peer errors) with the follow-up exercises.
+
+Students usually have needed the ``pros and cons'' sheet to do the homework.  I don't spend any class time with it except to respond to reported difficulties.  These difficulties often not having experienced making a sign chart for a function and using the notion that a function cannot change sign except when it is undefined (or discontinuous) or zero (thus, we just need to identify those $x$-values and pick one sample value in each interval to determine the sign).
+
+\end{instructorIntro}
+
+
+A graph is just one of the three major representations (formula, table, graphing) of a relationship between variables.  That is, it is one way to tell the tale of how one variable changes when the other increases.  We are going to see how calculus can help us to pinpoint when certain ``important events'' occur on a graph and for the function in general.
+
+For example, here is a graph of Harry's position (in miles) from home (positive = east, negative = west) as he travels along an east-west road throughout the day (i.e., as time increases).  Assume noon is when $t = 0$ hours.  We can call Harry's position function $f(t)$. Although we have no formula for $f(t)$, everything we will do here will correspond to algebraic methods we {\em would} do if we had a formula for his position (don't worry- you'll do these things with a formula soon enough!). 
+
+        After each part, catch your breath and stop for a whole class discussion of the exciting things you've found.
+
+\begin{image}
+    \begin{tikzpicture}
+        \draw plot [smooth] coordinates {(-4,0) (-2.8,-1) (-1,-0.2) (-0.6,0) (1.3,0.5) (3,0) (4.7,-1.5) (6.7, -2.5) (8,-1.8) (9,0)};
+        \draw[->] (-5.25,0) -- (10.25,0) coordinate (x axis);
+        \draw[->] (0,-3.25) -- (0,2.25) coordinate (y axis);
+        \foreach \x/\xtext in {-5, -4, -3, -2, -1, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10} 
+   \draw (\x cm,1pt) -- (\x cm,-1pt) node[anchor=north] {$\xtext$};
+% \foreach \y/\ytext in {-3, -2, -1, 1, 2} 
+%   \draw (1pt,\y cm) -- (-1pt,\y cm) node[anchor=east] {$\ytext$};
+    \node at (-0.3,2) {$y$};
+    \node at (10, 0.3) {$t$};
+   \node at (-4,0)[circle,fill,inner sep=1.5pt]{};
+   \node at (-2.8,-1)[circle,fill,inner sep=1.5pt]{};
+   \node at (-1,-0.2)[circle,fill,inner sep=1.5pt]{};
+   \node at (-0.6,0)[circle,fill,inner sep=1.5pt]{};
+   \node at (1.3,0.5)[circle,fill,inner sep=1.5pt]{};
+   \node at (3,0)[circle,fill,inner sep=1.5pt]{};
+   \node at (4.7,-1.5)[circle,fill,inner sep=1.5pt]{};
+   \node at (6.7,-2.5)[circle,fill,inner sep=1.5pt]{};
+   \node at (9,0)[circle,fill,inner sep=1.5pt]{};
+\end{tikzpicture}
+\end{image}
+
+
+\begin{exploration}
+For what times is Harry's position east of home?  West of home?  What did you look for on the graph to answer those questions?  What special thing happens at the demarcation times?  If we had a formula for $f(t)$, what would you do with the formula to determine those demarcation times?  If you did not have the graph of $f(t)$ and only had the answers to the initial questions to $\#1$, what would you know and not know about the graph?
+
+\end{exploration}
+
+
+\begin{exploration}
+Now let’s examine Harry's {\em motion}, not just where he is.  For what times is Harry moving eastward?  Moving westward?  What did you look for on the graph to answer those questions?  What special thing happens at the demarcation times?  If we had a formula for $f(t)$, what would you do with the formula to determine those demarcation times?  If you did not have the graph of $f(t)$ and only had the answers to the initial questions to $\#1$ and $\#2$, what would you now know and not know about the graph?
+
+\end{exploration}
+
+\begin{exploration}
+     Now let's precisely examine Harry's acceleration.  When Harry is moving eastward, for what times is his speed increasing?  For what times is his eastward speed decreasing?  What did you look for on the graph to answer those questions?  What special thing happens at the demarcation times?  If we had a formula for $f(t)$, what would you do with the formula to determine those demarcation times?          
+\end{exploration}
+
+
+\begin{exploration}
+     When Harry is moving westward, for what times is his speed increasing?  For what times is his speed decreasing?  What did you look for on the graph to answer those questions?  What special thing happens at the demarcation times?  If we had a formula for $f(t)$, what would you do with the formula to determine those demarcation times?
+\end{exploration}
+
+\begin{exploration}
+     Classify the four basic shapes of any part of a graph of a function by describing each shape in terms of what you found in $\#2$ and $\#3$.
+\end{exploration}
+
+Now do the following:
+
+\begin{question}
+Sketch a graph of $f(x)$ with as much detail as possible given the following sign information about $f(x)$, $f'(x)$,  and $f''(x)$.  Be sure to describe how you interpreted the information (e.g., what does knowing the sign of $f'$  on an interval tell you about the graph of $f$ on that interval?).
+
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+    \text{Up To} x= & -3 & 1 & 4 & 5 & 7 & 9 & 10 & \text{Higher} \\ \hline
+    f(x) & \text{Neg} & \text{Pos} & \text{Pos} & \text{Pos} & \text{Neg} & \text{Neg} & \text{Pos} &\text{Pos} \\ \hline
+    f'(x) & \text{Pos} & \text{Pos} &\text{Neg} &\text{Neg} &\text{Neg} &\text{Pos} &\text{Pos} &\text{Pos} \\ \hline
+    f''(x) & \text{Neg} & \text{Neg} & \text (Neg) & \text{Pos} & \text{Pos} & \text{Pos} & \text{Pos} & \text{Neg} \\ \hline
+\end{tabular}
+
+This just in: Other Fun Facts: $f(1) = 8$, $f(4) = 2$, $f(7) = -5$
+\end{question}
+
+\begin{question}
+For the graph of $f$ below, make a sign chart for $f(x)$, $f'(x)$,  and $f''(x)$  (similar in form to that in $\#1$).
+
+\begin{center}
+    \begin{tikzpicture}[scale=0.8]
+        \draw plot [smooth] coordinates {(-7,5) (-6,3) (-5,2.5) (-4,1.7) (-3,-0.5) (-2,-1.5) (-1,-2) (0, -2.3) (1,-2.5) (2,-2) (3,-0.8) (4,1.5) (4.5, 2) (5,1.5) (6,-0.8) (7,-2) (8,-0.8) (8.5,2)};
+        \draw[->] (-7.25,0) -- (8.25,0) coordinate (x axis);
+        \draw[->] (0,-5.25) -- (0,5.25) coordinate (y axis);
+        \foreach \x/\xtext in {-7, -6, -5, -4, -3, -2, -1, 1, 2, 3, 4, 5, 6, 7, 8} 
+   \draw (\x cm,1pt) -- (\x cm,-1pt) node[anchor=north] {$\xtext$};
+% \foreach \y/\ytext in {-3, -2, -1, 1, 2} 
+%   \draw (1pt,\y cm) -- (-1pt,\y cm) node[anchor=east] {$\ytext$};
+    \node at (-0.3, 5) {$y$};
+    \node at (8, 0.3) {$x$};
+    \node at (4, 4) {$y=f(x)$};
+\end{tikzpicture}
+\end{center}
+
+
+
+
+\end{question}
+
+\begin{question}
+Determine whether the following properties can be satisfied by a function (of which you could draw the entire graph without lifting your pencil- which we call continuous).  If such a function is possible, sketch a graph of that function.  If such a function is not possible, explain why.
+\begin{enumerate}
+  \item A function $f$ is concave down and positive everywhere.
+  \item  A function $f$ is increasing and concave down everywhere.
+  \item  A function $f$ has exactly two extrema (i.e., mins and/or maxes) and three inflection points.
+  \item  A function $f$ has exactly four roots and two extrema (i.e., mins and/or maxes). 
+  \end{enumerate}
+
+\end{question}
+
+
+\begin{question}
+You are told that $f''(x) > 0$  for all $x$.  Which of the following must be true about the graph of $y = f(x)$?:
+\begin{enumerate}
+\item	The graph is a straight line.
+\item	The graph crosses the $x$-axis at most once.
+\item	The graph is concave down.
+\item	The graph crosses the $y$-axis more than once.
+\item	The graph is concave up.
+\end{enumerate}
+\end{question}
+
+
+\begin{question}
+You are told that $f''(x) > 0$ for all $x$.  Which of the following must be true about the maximum value of $f(x)$ on the domain  $0 \leq x \leq 2$?
+\begin{enumerate}
+\item	Some critical value strictly between $0$ and $2$.
+\item	Either $x = 0$ or $x = 2$.
+\item	There is a maximum, but not enough information is given.
+\item	$f$ need not have a maximum.
+\end{enumerate}
+\end{question}
+
+\end{document}

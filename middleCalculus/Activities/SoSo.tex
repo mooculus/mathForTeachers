@@ -1,0 +1,69 @@
+\documentclass{ximera}
+\input{preamble}
+
+\author{Vic Ferdinand}
+\title{So-So}
+\outcome{Apply integrals to real-life scenarios.}
+\outcome{Compute average values of functions.}
+
+\begin{document}
+\begin{abstract}
+\end{abstract}
+\maketitle
+
+\begin{instructorIntro}
+We wrap up the course by exploring (mostly geometric) applications of integration- extending at least two ideas that are dealt with in early algebra or geometry.  
+
+The rest of the activities use the Riemann sum that was developed intuitively in Winter Storm Warning and consider that the sum (as the size of the intervals ($\Delta x$) approaches zero) approaches the definite integral.  The key is recognizing what the ``$f'(x)$'' now is (instead of a rate, but rather some other measurement dependent upon the function $f(x)$).  This also could be done with the area between curves, but they are better able to intuitively see that without the Riemann sum. 
+
+Because of time, I usually derive all of the formulas in a whole-class setting and let them work on the problems- often assigning certain problems to certain groups. The hardest application is the volume by slicing, which uses the volume of a prism as the $A(x) \Delta x$.  They usually will intuitively understand the ``loaf of sliced bread'' argument (bringing a loaf to class helps!), but have difficulty in actually finding the $A(x)$ in the exercises, particularly if it involves a triangle (Often, we end up doing these as a whole class in the end).
+
+For the average value of a function, I've found it easier for the students to compare the area under the curve of a function with the equivalent area of a rectangle of length $\Delta x$ (`` $b - a$'') and height being the average value.  Then we just solve for the average value by dividing both sides of the equation by $b – a$.  However, you can also use the given Riemann Sum argument as well.
+
+\end{instructorIntro}
+
+Our final (albeit non-geometric) application of Riemann sums is finding the average value of a function's ($f(x)$) values on an interval (call the interval, of all things, $[a, b]$).  For example, if $f(x)$ is the temperature at time $x$, what is the average temperature for the day?
+
+Now, if we had a finite number of $y$-values, say $14$ of them, we'd add all $14$ function values and divide by $14$ for the average (i.e., the number that would be the constant value if all values were the same).  
+
+(What kind of division is this and why?)
+
+Our problem is that there are an {\em infinite} number of function values and we don't have the machinery to add an infinite number of values and divide by infinity!  Thus, how can we get that elusive average value?
+
+Let's take the values at equal intervals along the $x$-axis.  That is, if we have $n$ intervals (i.e., a finite number of intervals), the length of each interval (i.e.,  $\Delta x$) is  $\frac{b-a}{n}$.  Now, as we just argued above with $n = 14$,  the average value of all $n$ functional values is the sum of those functional values divided by 
+\[
+n =  \frac{f(a) + f(2\text{nd}) + f(3\text{rd}) + \dots + f(b)}{n}.
+\]
+But this is the same (definition of fraction addition) as  
+\[
+\frac{f(a)}{n} + \frac{f(2\text{nd})}{n} + \frac{f(3\text{rd})}{n} + \dots + \frac{f(b)}{n} = \sum \frac{f(x's)}{n}.
+\]
+
+Unfortunately, this is not written as the sum of ``(somethings) times  $\Delta x$'' to get that \underline{\hspace{0.5in}} (named after a famous $19$th century mathematician named Bernhard Riemann).  
+
+So, we take advantage that $\Delta x$ is the same as $\frac{b-a}{n}$  and multiply and divide each term by $(b-a)$ and rearrange.  Thus, we have:
+\begin{align*}
+\sum \frac{f(x's)}{n} &= \sum\left ( \frac{f(x's)}{n}\times \frac{b-a}{b-a}\right)\\ 
+&= \sum (f(x's)) \times \frac{b-a}{n}\times \frac{1}{b-a} \\
+&= \frac{1}{b-a}\sum (f(x's))\times \Delta x,
+\end{align*}
+with the last equality because $\frac{1}{b-a}$ is a constant factor of all the addends and thus can be factored out of the sum.  Also, this gets more and more accurate to the actual elusive average as $\Delta x$ gets smaller.  Thus, we have a \underline{\hspace{0.5in}} (named after a famous $19$th century mathematician named Bernhard Riemann)!
+
+Now write a formula for the average value of a function $f(x)$ on an interval $[a, b]$.
+
+After all that work, is there a ``middle-school'' way to find the same formula by just considering what kind of division we do when finding the average and applying that to what we know about the area under $f(x)$ and the area of a rectangle?
+
+Find the average value of the following functions:
+
+\begin{problem} 
+$f(x) = x+5$ on $[2, 8]$ (Does your answer make sense?)
+\end{problem}
+\begin{problem} 
+$f(x) = x^2+7x-3$ on $[1, 6]$
+\end{problem}
+\begin{problem} 
+$f(x) = 2x^{\frac{3}{2}}-89$ on $[3, 8]$
+\end{problem}
+
+
+\end{document}

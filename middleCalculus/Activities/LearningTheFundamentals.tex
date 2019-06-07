@@ -1,0 +1,79 @@
+\documentclass{ximera}
+\input{preamble}
+
+\author{Vic Ferdinand}
+\title{Learning the Fundamentals (or The Viper)}
+\outcome{Argue for Fundamental Theorem of Calculus using accumulation functions.}
+
+\begin{document}
+\begin{abstract}
+\end{abstract}
+\maketitle
+
+\begin{instructorIntro}
+Here, we use the ``window washer function'' to give a geometric and algebraic ``proof'' of what the students have already deduced from intuition (in Winter Storm Warning and Good Ol' Days):  That the exact net change in a function is the same as the net-change of the function's derivative's antiderivative (i.e., that the antiderivative truly undoes the derivative).  Because of time constraints, I've usually led this as a whole-class discussion.  Of course, this does little good unless one can find the antiderivative to plug into (which we'll continue to endeavor to find techniques for in Pinch Hitter)!!
+\end{instructorIntro}
+
+There is one small thing that we have not dealt with yet with respect to getting the exact value of the net change of a function (i.e.,  $\int_a^b f'(t)\, dt = f(b) - f(a)$).  Although it seems obvious from the definition of ``net change'' (from Integrated Language), as well as our estimate calculations with rectangles (rate times change in time- from Winter Storm Warning), we haven't {\em officially} shown that the value of the integral (and finding the area between $f'(t)$  and the $t$-axis) is indeed exactly the same as the {\em change of the anti-derivative of} $f'(t)$ (rather than just stating that it is like we did in Integrated Language) and the area under the graph of $f'(t)$.  That is, if we can find the function whose derivative is the rate function, finding the exact net change (and the exact area) is just two ``plug-n-chugs'' away!
+
+    We will show this here with a geometrical argument:
+ 
+ \begin{image}
+     \begin{tikzpicture}[
+      declare function = {f(\x) = -sin(deg(\x)) + 3;} ]
+	\begin{axis}[
+            domain=-.2:7, xmin =-.2,xmax=7,ymax=5,ymin=-.2,
+            width=4in,
+            height=2in,
+            xtick={1,6}, 
+            xticklabels={$a$,$b$},
+            ytick style={draw=none},
+            yticklabels={},
+            axis lines=center, xlabel=$t$, ylabel=$f'(t)$,
+            every axis y label/.style={at=(current axis.above origin),anchor=south},
+            every axis x label/.style={at=(current axis.right of origin),anchor=west},
+            axis on top, clip=false
+          ]
+          \addplot [draw=none, fill=black!30!white,domain=1:6, smooth] {f(x)} \closedcycle;
+          \addplot [ultra thick, smooth] {f(x)};
+          \node at (axis cs: 3.5,-0.5) {Figure $1$};
+        \end{axis}
+\end{tikzpicture}
+ \end{image}
+ 
+  \begin{image}
+     \begin{tikzpicture}[
+      declare function = {f(\x) = -sin(deg(\x)) + 3;} ]
+	\begin{axis}[
+            domain=-.2:7, xmin =-.2,xmax=7,ymax=5,ymin=-.2,
+            width=4in,
+            height=2in,
+            xtick={1,4,5,6}, 
+            xticklabels={$a$,$t$, $t+h$,$b$},
+            ytick style={draw=none},
+            yticklabels={},
+            axis lines=center, xlabel=$t$, ylabel=$f'(t)$,
+            every axis y label/.style={at=(current axis.above origin),anchor=south},
+            every axis x label/.style={at=(current axis.right of origin),anchor=west},
+            axis on top, clip=false
+          ]
+          \addplot [draw=none, fill=black!30!white,domain=4:5, smooth] {f(x)} \closedcycle;
+          \addplot [ultra thick, smooth] {f(x)};
+          \node at (axis cs: 3.5,-1) {Figure $2$};
+          \draw (axis cs: 1,0)--(axis cs:1,2.1585);
+          \draw (axis cs: 6,0)--(axis cs:6,3.2794);
+        \end{axis}
+        
+\end{tikzpicture}
+ \end{image}
+
+We have a graph of $f'(t)$ here.  We want to find the area between the graph and the $t$-axis on the interval $(a, b)$ (Figure 1).  To do so, we define the ``window-wiper'' area function  $A(t)$. $A(t)$  is the area under the curve from $0$ to $t$.  Thus, what does $A(a)$ represent?  What does $A(b)$ represent?  Write the area that we want in terms of  $A(t)$ (Hint:  A difference of values of $A(t)$ at two times).  Thus, our problem comes down to showing that $A(t)$ is the same as  $f(t)$ (or, equivalently, that $A'(t)$ is the same as $f'(t)$).
+
+Consider two times within the interval $(a, b)$ with the times being very close to each other.  Call them $t$ and  $t+h$, where $h$ is very small.  We'd like the area underneath the curve of $f'(t)$ for this interval of times only (Figure 2). What would this area be in terms of  $A(t)$? (Hint: Another difference).  On the other hand, since $h$ is very small, this same small, skinny region looks very much like what shape?  What is the area of that shape (in terms of $h$ and  $f'(t)$)?
+
+Thus, we have two expressions representing the very same area of the very same (skinny) region.  Thus, set them equal to each other.  Now divide both sides by $h$.  For very small $h$, what does the side involving $A(t)$ represent?  What must $A'(t)$ indeed be the same as?  Thus, what must $A(t)$ be the same as?  Thus, what is $A(b) - A(a)$  the same as (in terms of $f$)?
+
+Thus, we now have hope of finding the exact net change in an amount function- if only we can find the antiderivative of the rate function!
+
+
+\end{document}

@@ -1,0 +1,70 @@
+\documentclass{ximera}
+\input{preamble}
+
+\author{Vic Ferdinand}
+\title{Moron Functions (or ``More on Functions'')}
+\outcome{Review graphs of functions.}
+
+\begin{document}
+\begin{abstract}
+\end{abstract}
+\maketitle
+
+\begin{instructorIntro}
+This activity goes together with ``Conjunction Junction''; you may want to look at the notes there as well.
+
+In ``Moron Functions'', we look at functions graphically as telling a story about a quantity as time goes on- ``A picture is worth a thousand words''.  Introducing ideas about increasing vs. decreasing as well as concavity (different ways to increase and decrease) might be briefly interjected here.  
+\end{instructorIntro}
+
+
+
+\begin{question} 
+You put some ice cubes in a glass, fill the glass with cold water, and then let the glass sit on a table.  Sketch a rough graph of the temperature of the water as a function of the elapsed time.  Explain.
+\end{question}
+\begin{question}
+Sketch a rough graph of the number of hours of daylight as a function of the time of year.
+\end{question}	
+\begin{question} 
+At first, there were very few cases of the flu.  People were falling ill, but so slowly that the news didn't catch the attention of the papers.  After two weeks, though, the infection reached epidemic proportions.  But then things slowed down a bit.  By the end of a month, nearly everyone had come down with the bug and there were just a few new cases each day.  Sketch a graph of the total number of cases as a function of time.  Sketch a graph of the current number of cases as a function of time.
+\end{question}
+\begin{question} 
+Louise swims to the island in the middle of a big lake.  When she starts out, she has lots of energy.  However, she tires soon and her speed decreases until she reaches the island.  Sketch a graph of Louise's distance from the island as a function of time.  Sketch a graph of Louise's {\em distance traveled} as a function of time.
+\end{question}
+\begin{question} 
+For each of the following, describe in words the situation that the graph depicts.  Use both the language of amounts as well as rates.
+
+\begin{enumerate}
+    \item \leavevmode\vadjust{\vspace{-\baselineskip}}\newline
+        \begin{center}
+            \begin{tikzpicture}
+                \draw[->] (0,0)--(0,3);
+                \draw[->] (0,0)--(3,0);
+                \draw (0,0.8)--(2.8,0.8);
+                \node[align=left, below] at (-1,2) {Savings \\for my \\new car};
+                \node at (3,-0.2) {$t$};
+            \end{tikzpicture}
+        \end{center}
+    \item \leavevmode\vadjust{\vspace{-\baselineskip}}\newline
+        \begin{center}
+            \begin{tikzpicture}
+                \draw[->] (0,0)--(0,3);
+                \draw[->] (0,0)--(3,0);
+                \draw[domain=0:2.8] plot (\x, {0.7*\x});
+                \node[align=left, below] at (-1,2) {Volume  \\of water in \\a bucket};
+                \node at (3,-0.2) {$t$};
+            \end{tikzpicture}
+        \end{center}
+    \item \leavevmode\vadjust{\vspace{-\baselineskip}}\newline
+        \begin{center}
+            \begin{tikzpicture}
+                \draw[->] (0,0)--(0,3);
+                \draw[->] (0,0)--(3,0);
+                \draw[domain=0:2.8] plot (\x, {(-1/3)*(\x-1)^3+2});
+                \node[align=left, below] at (-1,2) {Amount of  \\gas left in \\my tank};
+                \node at (3,-0.2) {$t$};
+            \end{tikzpicture}
+        \end{center}
+\end{enumerate}
+\end{question}
+
+\end{document}

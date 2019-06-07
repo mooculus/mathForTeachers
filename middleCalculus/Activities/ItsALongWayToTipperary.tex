@@ -1,0 +1,56 @@
+\documentclass{ximera}
+\input{preamble}
+
+\author{Vic Ferdinand}
+\title{It's a Long Way to Tipperary!}
+\outcome{Apply integrals to real-life scenarios.}
+\outcome{Compute length of curves.}
+
+\begin{document}
+\begin{abstract}
+\end{abstract}
+\maketitle
+
+\begin{instructorIntro}
+We wrap up the course by exploring (mostly geometric) applications of integration- extending at least two ideas that are dealt with in early algebra or geometry.  
+
+The rest of the activities use the Riemann sum that was developed intuitively in Winter Storm Warning and consider that the sum (as the size of the intervals ($\Delta x$) approaches zero) approaches the definite integral.  The key is recognizing what the ``$f'(x)$'' now is (instead of a rate, but rather some other measurement dependent upon the function $f(x)$).  This also could be done with the area between curves, but they are better able to intuitively see that without the Riemann sum. 
+
+Because of time, I usually derive all of the formulas in a whole-class setting and let them work on the problems- often assigning certain problems to certain groups. The hardest application is the volume by slicing, which uses the volume of a prism as the $A(x) \Delta x$.  They usually will intuitively understand the ``loaf of sliced bread'' argument (bringing a loaf to class helps!), but have difficulty in actually finding the $A(x)$ in the exercises, particularly if it involves a triangle (Often, we end up doing these as a whole class in the end).
+
+Length of curves, drawing upon the distance between two points formula (from the Pythagorean Theorem), usually gives the students little problem, although many forget to take the derivative before squaring under the radical).
+
+\end{instructorIntro}
+
+Another application of integrals that takes advantage of Riemann Sums is finding the length of a graph of a function.  That is, if you traveled along the curve itself, how far would you go?  The $2$nd grade way to do it is with a piece of string and a ruler.  The more mature and sophisticated way is with coordinate geometry.  
+
+If our graph is a line (and we want the length of a line segment between two points), then the problem is a middle school problem using the Pythagorean Theorem.  For example, find the length of the line segment with endpoints $(-2, 7)$ and $(8, 13)$ (draw the graph and fill in a right triangle to get the idea).
+
+In general, the linear distance between two points $(x_0, y_0)$ and  $(x_1, y_1)$ is what?
+
+Now, our problem is no longer finding the length of a line segment, but rather, the length of a curve defined by some $f(x)$  on some interval $[a, b]$ (Note:  Our line segments in the example were on the $x$-coordinate intervals $[-2, 8]$ and  $[x_0, x_1]$, respectively).  But we know that over very short intervals, our function's rate does not change much and thus, $f(x)$ is close to being a \underline{\hspace{0.5in}} over that short interval?  Thus, if we can find the length of all of these very small segments, what can we do to find the length of the entire graph on $[a, b]$?  
+
+Let's examine the formula for the length of the curve $y=f(x)$ on the very short interval  $[x_0, x_1]$.  That is, find the length of the segment between the points $(x_0, f(x_0))$ and  $(x_1, f(x_1))$.
+
+Now, to find the total length of these, we'll want to add them up.  However, there is no ``$\Delta x''$  at the end of each term so that we wind up with a (fill in the blank) \underline{\hspace{ 0.5in}} (named after a famous $19$th century mathematician named Bernhard Riemann).  Thus, we need to do a bit of algebraic trickery to force it to happen.  The main idea is to think of the change of $x$'s and $y$'s as  $\Delta x$'s and  $\Delta y$'s.  Factor $(x_1-x_0)^2=(\Delta x)^2$ out of the expression inside the square root (keeping it in the square root).  Now, take it out of the square root (What is the square root of a square?).  
+
+Now, what do you have left under the square root (We should have a famous number $+$ something involving  $\frac{\Delta y}{\Delta x}$)?  As $\Delta x$ gets very small (which will get our sum of lengths of segments closer to the real length), what happens to this second term (i.e., what else can we call it- from the earliest days of the recorded history of this semester)?
+
+Thus, we now have a summation of products of (a square root of something) times  $\Delta x$.  Thus, we now have a \underline{\hspace{0.5in}} (named after a famous $19$th century mathematician named Bernhard Riemann)!
+
+Now write a formula for the exact length of the curve given by the function $f(x)$ on the interval $[a, b]$.
+
+Now find the length of the following curves (You may need to call on Old Man Simpson once in awhile!).
+
+\begin{problem} 
+$f(x) = x+5$ on $[2, 8]$ (Does your answer make sense?)
+\end{problem}
+\begin{problem} 
+$f(x) = x^2+7x-3$ on $[1, 6]$
+\end{problem}
+\begin{problem} 
+$f(x) = 2x^{\frac{3}{2}}-89$ on $[3, 8]$
+\end{problem}
+
+
+\end{document}

@@ -1,0 +1,30 @@
+\documentclass{ximera}
+\input{preamble}
+
+\author{Vic Ferdinand}
+\title{Summing It All Up (Geometric Applications of Integrals}
+
+\begin{document}
+\begin{abstract}
+\end{abstract}
+\maketitle
+
+\begin{instructorIntro}
+We wrap up the course by exploring (mostly geometric) applications of integration- extending at least two ideas that are dealt with in early algebra or geometry.  
+
+The rest of the activities use the Riemann sum that was developed intuitively in Winter Storm Warning and consider that the sum (as the size of the intervals ($\Delta x$) approaches zero) approaches the definite integral.  The key is recognizing what the ``$f'(x)$'' now is (instead of a rate, but rather some other measurement dependent upon the function $f(x)$).  This also could be done with the area between curves, but they are better able to intuitively see that without the Riemann sum. 
+
+Because of time, I usually derive all of the formulas in a whole-class setting and let them work on the problems- often assigning certain problems to certain groups. The hardest application is the volume by slicing, which uses the volume of a prism as the $A(x) \Delta x$.  They usually will intuitively understand the ``loaf of sliced bread'' argument (bringing a loaf to class helps!), but have difficulty in actually finding the $A(x)$ in the exercises, particularly if it involves a triangle (Often, we end up doing these as a whole class in the end).
+
+\end{instructorIntro}
+
+
+Back in Winter Storm Warning, we estimated that the total accumulation (net change) of snow over the $4$ hours was the sum of a bunch of terms that all looked like  $f'(t) \Delta t$, as these were the amount of snow that fell over a short time period if we assumed a constant rate (and computed it as $(\text{rate}) \times (\text{change of time})$).  Adding these up gave us an approximation of the {\em overall} change over the $4$ hours.  The notation for this summation is  $\sum_i f'(t_i)\Delta t$, where the ``$i$'s'' just mean that we take a sequence of times over the same size interval (i.e., the  $t_i$'s were the left-hand endpoints of each interval. We will be not concerning ourselves with this ``$i$'' notation anymore here- just remember that what we are plugging a sequence of $t$'s into  while the change in $t$ (length of each interval) remains the same).  
+
+We also saw that if the length of the intervals ($\Delta t$) gets very small, our approximation gets closer and closer to the exact value (why?), which we wrote as  $\int_a^b f'(t) \, dt$, where $[a, b]$ is the interval of time we were interested in.  Thus, $\sum f'(t) \Delta t$  ``turns into'' $\int_a^b f'(t)\, dt$  as $\Delta t$ gets very small.  And they were also approximating (and eventually exactamating) the {\em area} between the graph of $f'(t)$ and the $t$-axis.  
+
+Well, it turns out that if we replace $f'(t)$ by {\em something else} (with the goal of doing a different sort of measurement) and the measurement involves adding up the products of (``that something else'') $\times \Delta t$  and the estimation becomes more and more exact as $\Delta t$ gets closer to zero, then it turns out that the sum  $\sum (\text{something else})$ ``turns into''  $\int_a^b (\text{something else})\, dt$.  These types of sums are called ``Riemann Sums'', named after a famous $19$th century mathematician named Bernhard Riemann.  The biggest problem in most of these applications is defining the ``something''.
+
+The following are just a couple of a few applications of Riemann sums in which we use integrals to do more than just measure area.
+
+\end{document}

@@ -1,0 +1,56 @@
+\documentclass{ximera}
+\input{preamble}
+
+\author{Vic Ferdinand}
+\title{Trapped}
+\outcome{Trapezoid and Simpson's Rule.}
+
+\begin{document}
+\begin{abstract}
+\end{abstract}
+\maketitle
+
+\begin{instructorIntro}
+This activity goes with ``Under the Big Umbrella'' and the notes refer to both activities.
+
+Here, we continue trying to estimate the net change of a function given its derivative- this time taking advantage that we know that it's equivalent to finding the net area between the rate function and the $t$-axis.  I usually just have them read the narratives of each and have them argue first the area formula for a trapezoid, apply it to the case that our two heights are rate-values, and come up with the Trapezoid Rule (they usually will need help seeing that we use the same endpoint twice in most of the trapezoids).  
+
+I usually will just quote Simpson's Rule after a picture is drawn, showing the need for an even number of intervals, and mentioning that, in each interval, we are basically using the area under the unique 2nd degree polynomial they might have derived in their first content course using systems of equations (3 equations and 3 coefficient unknowns).
+
+The main part of these activities are the exercises where they are given experiences solving (via the estimation rules) basically the same problem with three different representations.
+Thus, the students have a way to at least estimate net change (because we'll see later that finding anti-derivative functions is not as easy or successful as finding derivative functions). 
+
+\end{instructorIntro}
+
+
+
+We have seen in Winter Storm Warning that, given the rate function, one can find the net change in position or amount (i.e., displacement $=\int_a^b f'(t) \, dt$) by finding the area between the graph of $f'(t)$ and the $t$-axis).  
+
+     Now, unless the figure found by the graph of the rate function and the $t$-axis is a ``nice'' one you learned the area formula for in some geometry course in a galaxy far far away and long long ago, the best we can hope for in finding this net change is an estimate.
+     
+     In Winter Storm Warning, we made this estimate with areas of figures for which it is a State Law to know the area for: Rectangles.  Will the Rectangle method (in any of its forms- left, right, midpoint, etc.) give us an exact area?  Why not? What is it about rectangles and a graph that would cause error?  To see this, sketch a graph of some function that both increases and decreases and show the rectangle method.
+     
+     What can we do to remedy this lowly state that we're in?  Some have tried Trapezoids!  Here are two such trapezoids (From these pictures, what is a trapezoid?):
+    \begin{image}
+        \begin{tikzpicture}
+        \draw (0,0)--(3,0)--(3,3)--(0,2)--(0,0);
+        \node at (-0.2, 1) {$y_1$};
+        \node at (3.2, 1.5) {$y_2$};
+        \node at (1.5, -0.2) {$t$};
+        \draw (5,0)--(8,0)--(8,2)--(5,3)--(5,0);
+        \node at (4.8, 1.5) {$y_1$};
+        \node at (6.5, -0.2) {$t$};
+        \node at (8.2, 1) {$y_2$};
+        \end{tikzpicture}
+    \end{image}
+    
+Why do you think trapezoids might help us in our error-filled (rectangle) ways of estimating area under the rate curve?
+
+Now, for this method to have any hope of helping us, it would sure be neat to know the area formula for trapezoids:  Find it (using the variables shown above:  Use numbers if necessary to get the idea)!
+       
+Once we know the area formula for a trapezoid, what now needs to be done to make our new estimate of the net change?  Derive a formula for an estimate of  $\int_a^b f'(t)\, dt$:  Use, for uniformity sake, $8$ intervals from $a$ to $b$ on the $t$-axis.  Key Idea:  How do we find the ``$y$'s''?  Test it out (or help yourself derive the formula) on the Winter Storm Warning problem.
+
+       You've just derived what mathematicians have creatively called ``The Trapezoid Rule''.   Congratulations!
+
+
+\end{document}

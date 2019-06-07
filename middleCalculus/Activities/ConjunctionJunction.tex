@@ -1,0 +1,61 @@
+\documentclass{ximera}
+\input{preamble}
+
+\author{Vic Ferdinand}
+\title{Conjunction Junction, What's Your Function}
+\outcome{Review functions and notation.}
+
+\begin{document}
+\begin{abstract}
+\end{abstract}
+\maketitle
+
+\begin{instructorIntro}
+This activity goes together with ``Moron Functions''; see the notes there as well.
+
+Before these two activities, we review why the point-slope form of a line makes sense (``Start + Change'') as well as division involving zero (In particular, that $0/0$ is undefined due to ambiguity).  Obviously, we use these two ideas often in differential calculus.
+
+As basic calculus is about something we derive from functions in general (and not about specific kinds of functions), these should be a review of what a function is and the different representations that we'll use for them throughout the course (algebraic (including $f(x)$ notation), graphical, and table).  
+\end{instructorIntro}
+
+
+We use functions, as a special case of relationships between two or more variables (only two in this course), to predict the value of one variable given the value of the other.  For this activity, our function will first be given to us in ``formula'' form:  If $t$ is the time (in seconds) after we throw a ball up in the air and $y$ is the height (in feet) of the ball at that time, then  $y = f(t) = -16t^2+80t+200$.  
+
+\begin{question} 
+Find the following and state what it means in the ``real-life'' problem:
+\begin{enumerate}
+    \item $f(2)$
+    \item $f(17)$
+    \item $f(-4)$
+    \item Find $t$ if $f(t) = 280$.
+    \item Solve for $t$: $-16t^2+80t+200 = 280$
+    \item Find $t$ if $f(t) = 10000$
+\end{enumerate}
+\end{question}
+
+
+In the above, which were ``realistic'' problems for the situation?  Which ones could there be exactly one answer for?  For which ones were two answers realistic?  What is a ``function''?
+
+\begin{question} 
+Use your ``table'' feature on your calculator for another form for which we can view and work with $f(t)$.  Set various values for ``TblStart'' and ``$\Delta \text{Tbl}$''.  Use the table to answer the same questions as above.
+\end{question}
+
+\begin{question} 
+Use your table to establish ranges for $x$ and $y$ that would show a ``complete'' graph form of $f(t)$.
+\end{question}
+\begin{question} 
+Find:   $f(x)$, $f(-x)$, $f(\text{Joe})$, $f(t+4)$, $f(t) + 4$, $f(t+h)$, $f(\sqrt{x})$, $\sqrt{f(x)}$, $e^{f(x)}$, $f(x)^e$, $\sin(f(x))$, $f(\sin(x))$.
+\begin{instructorNotes}
+Students have had the most difficulty with this question (setting up for the $f(t + h)$ later).  I find that by going through the arithmetic of squaring whatever the input is and multiplying by $-16$, followed by adding $80$ times whatever we plug in followed by adding $200$, and doing this with ``$t = \text{Joe}$'', the students tend to be more comfortable.  Noting the difference between $f(t + h)$ and $f(t) + h$ as well as ``$f$ of $g$'' vs. ``$g$ of $f$'' to be important and can be referred to later.
+\end{instructorNotes}
+\end{question}
+
+
+\begin{question} 
+A rectangular storage container with an open top has a volume of $9$ cubic meters.  The length of the base is twice its width.  Material for the base costs $\$10$ per square meter while material for the sides costs $\$6$ per square meter.  Express the cost of the materials as a function of the width of the base.
+\end{question}
+
+
+
+
+\end{document}

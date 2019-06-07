@@ -1,0 +1,268 @@
+\documentclass{ximera}
+\input{preamble}
+
+\author{Vic Ferdinand}
+\title{Where Am I?  How Fast Am I Going?}
+\outcome{Use graphs of $f(t)$ and $f'(t)$ to describe position, velocity, and acceleration.}
+
+\begin{document}
+\begin{abstract}
+\end{abstract}
+\maketitle
+
+
+\begin{instructorIntro}
+Here, we reiterate their experience with $f$ and $f'$, but now we do it graphically (essentially letting them find the derivative before doing it numerically/algebraically).  It is here that they first recognize that we are finding the slope and treating $f'$ as the slope function (whose $y$-values are rates and not amounts- a difficult hurdle to overcome).  
+
+They also, going deeper, will begin to recognize that when the function is increasing (decreasing), $f'$ is above (below) the $x$-axis and when $f$ is at a max or min value, $f'$ is $0$ ($x$-intercept of $f'$ graph.  We do mention cusps, where $f'$ is undefined, but don't dwell on them very much in the course).  They may even want to make a sign chart for $f'$ at this point.
+
+A nice expansion of this activity would be for the students to draw their own functions and have their peers graph the derivatives.
+\end{instructorIntro}
+
+\begin{question} 
+In the gondola of a hot air balloon, two instruments monitor the balloon's course over the course of a $6$-minute period.  An altimeter shows the balloon’s height and a rate-of-climb meter shows how fast the balloon rises or falls.  Here are the resultant graphs (Heights change a lot due to updrafts and downdrafts).
+
+ 
+\begin{center}
+\begin{tabular}{cc}
+\begin{tikzpicture}
+	\begin{axis}[
+            width=2.2in,
+            domain=0:8,
+            ymax=6000, ymin=0,
+            axis lines =middle,
+            every axis y label/.style={at=(current axis.above origin),anchor=south},
+            every axis x label/.style={at=(current axis.right of origin),anchor=west},
+            xtick={1,...,8},
+            ytick={1000,2000,...,6000},
+            grid=both,
+            grid style={dashed, gray},
+          ]
+	  \addplot [very thick, smooth] {3800+1350*x-410*x^2+27*x^3+818*sin(deg(pi*x/2))};
+          \end{axis}
+\end{tikzpicture}
+
+&
+
+\begin{tikzpicture}
+	\begin{axis}[
+            domain=0:8,
+            width=2.2in,
+            ymax=3000, ymin=-3000,
+            axis lines =middle,
+            every axis y label/.style={at=(current axis.above origin),anchor=south},
+            every axis x label/.style={at=(current axis.right of origin),anchor=west},
+            grid=both,
+            grid style={dashed, gray},
+            xtick={1,...,8},
+            ytick={-3000,-2000,...,3000},
+          ]
+	  \addplot [very thick, smooth] {1350-820*x+81*x^2+818*cos(deg(pi*x/2))*pi/2};
+          \end{axis}
+\end{tikzpicture} \\
+\footnotesize Altitude (ft) vs.\ time (min) & \footnotesize Vertical velocity (ft/min) vs.\ time (min)
+\end{tabular}
+\end{center}
+ 
+ 
+ 
+ 
+ 
+
+\begin{enumerate}
+\item Find when the balloon is going up (height increasing) and going down (height decreasing).  Look at each graph separately to answer the question.
+\item 	At what time is the velocity of the balloon zero?  What is happening to the balloon at those times? Look at each graph separately to answer the question.
+\item	Use the second graph to answer when the balloon is rising the fastest and when it is falling the fastest.  What does the first graph do at those times?
+\end{enumerate}
+
+\begin{instructorNotes}
+Expect this problem to take a long time among all students!
+\end{instructorNotes}
+\end{question}
+
+\begin{question} 
+The graph below shows the position function of a car as it goes to work.  Answer the following questions:
+
+
+\[
+\begin{tikzpicture}
+        \begin{axis}[
+            axis lines =middle,
+            clip=false,
+            every axis y label/.style={at=(current axis.above origin),anchor=south},
+            every axis x label/.style={at=(current axis.right of origin),anchor=west},
+            ticks=none,
+            axis lines =middle, xlabel=$t$, ylabel=$s$,
+          ]
+	  \addplot [very thick, smooth] coordinates {
+          (0,0)
+          (.5,.1)
+          (1,.5)
+          (2,2.4)
+          (4,3)
+          (5,3.5)
+          (8,3.7)
+          (9.5,4.8)
+          (10,5)
+          };
+          \node at (axis cs:1,.5) [anchor=south east] {$A$};
+          \node at (axis cs:2,2.4) [anchor=south east] {$B$};
+          \node at (axis cs:4,3) [anchor=south east] {$C$};
+          \node at (axis cs:5,3.5) [anchor=south east] {$D$};
+          \node at (axis cs:8,3.7) [anchor=south east] {$E$};
+          \addplot[color=black,fill=black,only marks,mark=*] coordinates{(1,.5)};  %% closed hole          
+          \addplot[color=black,fill=black,only marks,mark=*] coordinates{(2,2.4)};  %% closed hole          
+          \addplot[color=black,fill=black,only marks,mark=*] coordinates{(4,3)};  %% closed hole          
+          \addplot[color=black,fill=black,only marks,mark=*] coordinates{(5,3.5)};  %% closed hole          
+          \addplot[color=black,fill=black,only marks,mark=*] coordinates{(8,3.7)};  %% closed hole          
+          \end{axis}
+          \end{tikzpicture}
+\]
+
+
+\begin{enumerate}
+\item	What was the initial velocity of the car?
+\item	Was the car going faster at $B$ or at $C$?
+\item Was the car slowing down or speeding up at $A$, $B$, and $C$?
+\item	What happened between $D$ and $E$?
+\item	At what times did the car turn back for home?
+\end{enumerate}
+\end{question}
+\begin{question} 
+For (a)-(c), suppose an object can move only along the positive $x$-axis.  Sketch the graph of the object's position vs. time graph and its velocity vs. time graph.
+\begin{enumerate}
+\item	The object is standing still.
+\item	The object is moving away from the origin at a constant velocity.
+\item	The object is moving toward the origin at a steadily increasing speed.
+\end{enumerate}
+\end{question}
+
+\begin{question}	For each of the following, given the graph of the function, graph its derivative.
+
+
+\begin{enumerate}
+\item \leavevmode\vadjust{\vspace{-\baselineskip}}\newline 
+      \begin{tikzpicture}
+	\begin{axis}[
+            domain=0:6,
+            ymax=2, ymin=-2,
+            xmax=6, xmin=0,
+            axis lines =middle,
+            every axis y label/.style={at=(current axis.above origin),anchor=south},
+            every axis x label/.style={at=(current axis.right of origin),anchor=west},
+            xtick={1,...,8},
+            ytick={-2,...,2},
+            grid=both,
+            grid style={dashed, gray},
+            width=4.5in,
+            view={0}{90},unit vector ratio*=1.6 1 1
+          ]
+	  \addplot [very thick] {(-2/3)*x+2};
+          \end{axis}
+\end{tikzpicture}
+\item \leavevmode\vadjust{\vspace{-\baselineskip}}\newline 
+      \begin{tikzpicture}
+	\begin{axis}[
+            domain=0:8,
+            ymax=2, ymin=-2,
+            xmax=8, xmin=0,
+            axis lines =middle,
+            every axis y label/.style={at=(current axis.above origin),anchor=south},
+            every axis x label/.style={at=(current axis.right of origin),anchor=west},
+            xtick={1,...,8},
+            ytick={-2,...,2},
+            grid=both,
+            grid style={dashed, gray},
+            width=4.5in,
+            view={0}{90},unit vector ratio*=1.6 1 1
+          ]
+	  \addplot [very thick] {.2*(x^2-8*x+7)};
+          \end{axis}
+          \end{tikzpicture}
+
+\item  \leavevmode\vadjust{\vspace{-\baselineskip}}\newline
+\pgfmathdeclarefunction{gauss}{2}{%
+  \pgfmathparse{1/(#2*sqrt(2*pi))*exp(-((x-#1)^2)/(2*#2^2))}%
+}
+ \begin{tikzpicture}
+	\begin{axis}[
+            domain=0:8,
+            ymax=2, ymin=-2,
+            xmax=8, xmin=0,
+            axis lines =middle,
+            every axis y label/.style={at=(current axis.above origin),anchor=south},
+            every axis x label/.style={at=(current axis.right of origin),anchor=west},
+            xtick={1,...,8},
+            ytick={-2,...,2},
+            grid=both,
+            grid style={dashed, gray},
+            width=4.5in,
+            view={0}{90},unit vector ratio*=1.6 1 1
+          ]
+	  \addplot [very thick,smooth] {2*gauss(4,.75)};
+          \end{axis}
+          \end{tikzpicture}
+
+\item \leavevmode\vadjust{\vspace{-\baselineskip}}\newline 
+      \begin{tikzpicture}
+	\begin{axis}[
+            domain=0:8,
+            ymax=3, ymin=-2,
+            xmax=8, xmin=0,
+            axis lines =middle,
+            every axis y label/.style={at=(current axis.above origin),anchor=south},
+            every axis x label/.style={at=(current axis.right of origin),anchor=west},
+            xtick={1,...,8},
+            ytick={-2,...,3},
+            grid=both,
+            grid style={dashed, gray},
+            width=4.5in,
+            view={0}{90},unit vector ratio*=1.6 1 1
+          ]
+	  \addplot [very thick,smooth] {2*sin(1.5*deg(x))/(x+.5) +1};
+          \end{axis}
+          \end{tikzpicture}
+\item \leavevmode\vadjust{\vspace{-\baselineskip}}\newline 
+    \begin{tikzpicture}
+	\begin{axis}[
+            width=2.2in,
+            domain=0:8,
+            ymax=6000, ymin=0,
+            axis lines =middle,
+            every axis y label/.style={at=(current axis.above origin),anchor=south},
+            every axis x label/.style={at=(current axis.right of origin),anchor=west},
+            xtick={1,...,8},
+            ytick={1000,2000,...,6000},
+            grid=both,
+            grid style={dashed, gray},
+          ]
+	  \addplot [very thick, smooth] {3800+1350*x-410*x^2+27*x^3+818*sin(deg(pi*x/2))};
+          \end{axis}
+    \end{tikzpicture}
+\item \leavevmode\vadjust{\vspace{-\baselineskip}}\newline
+    \begin{tikzpicture}
+	\begin{axis}[
+            domain=0:8,
+            width=2.2in,
+            ymax=3000, ymin=-3000,
+            axis lines =middle,
+            every axis y label/.style={at=(current axis.above origin),anchor=south},
+            every axis x label/.style={at=(current axis.right of origin),anchor=west},
+            grid=both,
+            grid style={dashed, gray},
+            xtick={1,...,8},
+            ytick={-3000,-2000,...,3000},
+          ]
+	  \addplot [very thick, smooth] {1350-820*x+81*x^2+818*cos(deg(pi*x/2))*pi/2};
+          \end{axis}
+    \end{tikzpicture}
+\end{enumerate}
+
+\begin{instructorNotes}
+Expect this problem, especially parts (c) and (d), to take a long time among all students!
+\end{instructorNotes}
+
+\end{question}
+
+
+\end{document}

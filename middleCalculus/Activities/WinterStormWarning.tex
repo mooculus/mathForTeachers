@@ -1,0 +1,67 @@
+\documentclass{ximera}
+\input{preamble}
+
+\author{Vic Ferdinand}
+\title{Winter Storm Warning}
+\outcome{Approximating the definite integral by assuming a constant rate.}
+\outcome{Value of the definite integral as area under rate curve.}
+
+\begin{document}
+\begin{abstract}
+\end{abstract}
+\maketitle
+
+\begin{instructorNotes}
+This activity estimates the net change of the amount of snow on the ground given the rate of snowfall by assuming what we already know:  How to find the amount of snowfall if that rate was constant.  Through this, the student connects middle school mathematics (Amount of change = (Rate) times (Change in time)) and develops the notation of a Riemann Sum.  The student also sees that the estimate becomes more and more accurate (or, at least, that the estimate changes less and less) when we assume a constant rate for shorter amounts of time.
+
+For the most part (except for the note below), students have little trouble with the activity or with reporting on their results (minus arithmetic errors and a reminder that $f'$ is the rate (not the amount) of snowfall).  They also make sense of the final amount of snow being the initial amount plus the net change, which I then ask for the notation in terms of functions and integrals:   $f(4) = f(0) + \int_0^4 f'(t)\, dt$.  I also ask them to relate it to the point-slope form of a line (where the rate is constant):  $f(4) = f(0) + m (4-0)$  (This idea will be brought out more in ``Good Ol' Days'').
+
+
+
+\end{instructorNotes}
+
+
+
+    Snow is starting to fall with a rate at any time $t$ after the start being $f'(t) = 1.5t-0.25t^2+1.4$ inches per hour for $t$ in $[0,4]$ (i.e., the snow falls for $4$ hours- from noon until $4$PM).  There were already $5$ inches on the ground when the storm started (What does this statement say notation-wise?).
+    
+   A natural question would be to ask how much snow fell during the storm (what is the calculus notation for this?).  But because the rate is always changing, this is a difficult question to answer (Yet, we will eventually answer it!).  Let's take what we know about constant rates and amounts and use that to help us answer our question (i.e., once again, taking what we know and using it to find out something about what we don't know).
+   
+(Side note:  We will be saying ``how much snow fell'', but what we're really asking is how the depth of snow on the ground changed - with  being the rate at time $t$ of how the depth is changing at time $t$.  In this problem, these likely will mean the same thing- Why?)
+
+\begin{question} 
+Assume the rate stays the same as it was at the start of the storm.  How much snow fell?  Is this a realistic estimate?
+\end{question}
+
+\begin{question} 
+Now assume the rate is the same as it is at the start for the first two hours, then changes to what it is at $2$PM for the final two hours.  How much snow fell?  Is this a realistic estimate?  Is it likely to be better or worse than that of the first question?
+\end{question} 
+\begin{question} 
+Now assume the rate stays constant by the hour (i.e., it only changes on the hour to its rate at those times of noon, $1$PM, $2$PM, and $3$PM).  How much snow fell?
+\end{question} 
+
+\begin{question} 
+Now do the same, but it changes on the half-hour.
+\end{question} 
+\begin{question} 
+What would we need to do to find the exact amount that fell?
+\end{question} 
+
+\begin{question} 
+Graph $f'(t)$  and interpret what you did in terms of the curve (i.e., geometrically) for all the parts.
+\begin{instructorNotes}
+The only real confusion happens here.  The students often are not sure of what they are measuring with their calculations until they go back step-by-step, particularly with the first step of assuming it's a constant rate for the entire time (i.e., $f'$ is a horizontal line, making a rectangle with height = the rate).  Then have them draw the next case: when we have two rectangles, etc.  They hopefully will then see that the graph being drawn will be closer to $f'$ as the number of rectangles gets larger and that we are finding the area between the rate curve and the $t$-axis.
+\end{instructorNotes}
+
+\end{question} 
+
+\begin{question} 
+What would you need to do geometrically to find the exact amount that fell?
+\end{question}
+
+\begin{question} 
+If you knew the exact amount that fell, what would you need to do to determine how much snow is on the ground?  Also, write the notation for the amount of snow on the ground (think about the ``side note'' given at the end of the intro and fanfare).
+
+\end{question} 
+
+
+\end{document}

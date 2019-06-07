@@ -1,0 +1,68 @@
+\documentclass{ximera}
+\input{preamble}
+
+\title{Pinch Hitter}
+\author{Vic Ferdinand}
+\outcome{Finding antiderivatives via substitution.}
+\outcome{Reverse the chain rule.}
+
+
+\begin{document}
+\begin{abstract}
+\end{abstract}
+\maketitle
+
+
+\begin{instructorIntro}
+NOTE: If you are running out of time and need to choose between substitution techniques and geometric applications of integrals, I would opt for the geometric applications because it would be more closely tied to what they've learned in 1166 as well as to formulas they will likely provide for their own students.
+
+Up until now, we've only been able to find antiderivatives of basic functions.  Here, we expand our list of functions that we can find antiderivatives of (and thus, the usefulness of the FTC) by considering substitution.  To further the connections between algebraic derivatives and antiderivatives, I have them look at it as reversing the chain rule rather than immediately using the $u$-substitution technique (I do bring this up to tidy their work up after they have gotten used to finding the ``$f'((g(t))g'(t)$'' relationship (or not) in what we want to integrate and reported their (non) success in determining if they have a ``chain rule refugee'' as well as constant issues).  (Students sometimes have difficulty in recognizing that the $g'(t)$ needs to be in the numerator to the first power).
+
+This activity takes a couple days.   Unfortunately, there is no time to develop other related techniques such as integration by parts (relating to the product rule).  In past years, I did give some problems such as $\int \frac{x^2}{\sqrt{x-2}}$ (or integral forms from a table, replacing $x$ with, say, $\cos x$) , but found them to be beyond most of the students' ability to the point of being counterproductive.
+
+\end{instructorIntro}
+
+Let's see if we can find antiderivatives for more than just the basic ``famous'' functions.  You’ll recall that there were a number of ``rules'' for finding the {\em derivatives} of {\em combinations} of functions.  The easiest of these was the constant multiple rule (rate is multiplied by the same constant, thus, it just ``comes along for the ride'').  Thus, what should the antiderivative of a constant multiple of a function $f'(t)$ be (Think about its effect on the graph of $f'(t)$ and thus the area underneath it)?
+
+Also ``easy'' was sum and difference rule in that the derivative of the sum was the sum of the derivatives.  Because the antiderivative of a sum just takes you back to the original function, we just go backwards with each term (as exhibited in Exactamundo and in finding the exact snowfall from Winter Storm Warning).  Why does this happen from an ``area'' perspective?
+
+However, you'll also recall that the derivatives of products and quotients of functions were more complicated than we bargained for.  It makes sense that going backwards must be complicated as well.  For example, to find an antiderivative that will wind up being the product of two functions, we must be integrating the sum of two products that happen to be of the form $f(x) g'(x) + f'(x) g(x)$.  (There is a ``product rule'' for integration, by the way, called {\em integration by parts}.  We will not study that in this course).
+
+ What we will look at is the chain rule backwards.  You’ll recall that if instead of finding the derivative of  $f(t) = t^{53}$, we wanted the derivative of  $f(t) = (t^3 - 4t + \ln t -9)^{53}$, we would deal with the $53$rd power first and then multiply by the derivative of what is on the inside (see ``Working on the Chain Gang'' to see reasoning).  Thus,  $f'(t) = 53(t^3-4t+\ln t -9)^{52} \left (3t^2 - 4 + \frac{1}{t} \right )$.  Notice that the derivative of the ``inside'' function is written in the numerator and to the first power.
+
+What then, must the general antiderivative of \[\int 53(t^3-4t+\ln t -9)^{52} \left (3t^2 - 4 + \frac{1}{t} \right )\, dt\] be?  Why?
+
+\begin{problem}
+Find the following antiderivatives (i.e., just write ``antiderivative $+C$'' for now.  If it was a definite integral, we'd use the FTC to find the exact value anyway):
+\begin{enumerate}
+    \item $\int \left ( 3t^2 - 4 + \frac{1}{t} \right) e^{(t^3 - 4t+\ln t -9)}\, dt$
+    \item $\int \left ( 3t^2 - 4 + \frac{1}{t} \right) \sin(t^3 - 4t+\ln t -9)\, dt$
+    \item $\int \frac{ 3t^2 - 4 + \frac{1}{t}}{2\sqrt{(t^3 - 4t+\ln t -9)}}\, dt$
+    \item $\int \frac{ 3t^2 - 4 + \frac{1}{t}}{(t^3 - 4t+\ln t -9)^5}\, dt$
+    \item $\int \frac{ 3t^2 - 4 + \frac{1}{t}}{t^3 - 4t+\ln t -9}\, dt$
+    \item $\int \frac{1}{t^3 - 4t+\ln t -9}\, dt $
+    \item $\int \sin(t^3-4t+\ln t - 9) \, dt$
+    \item $\int [\cos(t^3-4t+\ln t - 9)][\sin(t^3-4t+\ln t - 9)] \, dt $
+    \item $\int \left ( 3t^2 - 4 + \frac{1}{t} \right ) [\cos(t^3-4t+\ln t - 9)][\sin(t^3-4t+\ln t - 9)] \, dt$
+    \item $\int t^2 \sin(t^3)\, dt$
+    \item $\int 7t^2 \sin(t^3)\, dt$
+    \item $\int t^3 \sin(t^2) \, dt$
+    \item $\int \sin(t^3)\, dt$
+    \item $\int \sin(7t-123)\, dt$
+    \item $\int (3t^2-12t)(t^3-6t^2+7)^{34}\, dt$
+    \item $\int (6t^2-24t)(t^3-6t+7)^{34}\, dt$
+    \item $\int \left ( \frac{3}{2}t^2-6t \right) (t^3-6t^2+7)^{34}\, dt$
+    \item $\int (6t^2-23t)(t^3-6t^2+7)^{34}\, dt$
+    \item $\int g'(t) \times f'(g(t)) \, dt$
+\end{enumerate}
+
+\end{problem}
+
+Finding antiderivatives of ``chain rule refugees'' is known as the {\em substitution} method.  This is because of the practice that you will find in many calculus books in which they ``substitute'' the ``inside'' function with a single letter variable (often called ``$u$'', which leads to many calling the technique ``$u$-substitution'', which has nothing to do with identity crises or when you need someone to fill in for you).  Your flight attendant will lead you through a couple examples of this (from above) to see if you might prefer that approach to what you've done (It's treating the expression inside the integral as two parts:  The ``main'' function and the ``derivative of what's inside times $dt$'' part.  All parts must be accounted for to insure worthiness to move on). 
+
+Now, there are other algebraic methods for finding the exact antiderivative of other functions (most are based on the idea of substitution, just a bit fancier).  We won't be working on those in this course.  You can also look at tables of integrals in the back of most calculus books- sometimes upwards of $300$ different integrals might be given with the antiderivative.  Computer algebra systems such as Mathematica also will work toward giving you an antiderivative formula.
+
+ The bottom line, though, is this.  If one of the functions to integrate is changed, even in the slightest, there is a good chance that you (or most other people) will not be able to algebraically find the antiderivative.  Thus, going backward ($f'$ to $f$) is much more difficult algebraically and less successful than going forward ($f$ to  $f'$).  Thus, we have a plethora of estimation techniques to fill this void.
+
+
+\end{document}

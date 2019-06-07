@@ -1,0 +1,92 @@
+\documentclass{ximera}
+\input{preamble}
+
+\author{Vic Ferdinand}
+\title{Exactamundo (Or ``We're not Gonna Take it Anymore (Sort of))}
+\outcome{Fundamental Theorem of Calculus.}
+\outcome{Finding exact values of definite integrals by considering the antiderivative is the amount function.}
+
+\begin{document}
+\begin{abstract}
+\end{abstract}
+\maketitle
+
+\begin{instructorIntro}
+The students are finally given the opportunity to find the exact net change of a function (given its rate function) by taking advantage of the common sense that $\int_a^b f'(t)\, dt = f(b) - f(a)$ that they've known from the first day of integral calculus (and will be verified from a geometrical (area) point of view in Learning the Fundamentals.  This is also noted in the asterisked comment at the end of the activity).  
+
+Students generally don't have too much trouble with the exercises, although they hit a brick wall on the few that they can't directly find (thus giving them the idea that finding the exact value of the net change may not work out as well as it did with finding the instantaneous rate).  They do run into the ``$+C$'' idea (and the algebraic reason why), although that will be fleshed out in ``Good Ol' Days''.  This is the notion that might “trouble their conscience” in the final problem.
+
+\end{instructorIntro}
+
+
+We've now developed three techniques for estimating the net change in an amount or position function $f(t)$  over a period of time if we're only give its rate function $f'(t)$ or sequential values for  $f'(t)$ (i.e., we know the rate at particular times).  That is, we now know techniques for estimating  $\int_a^b f'(t) \, dt$.
+
+Back when we were looking at the opposite question of being given the position or amount function $f(t)$ and we asked to find the rate function  $f'(t)$, we started with approximation techniques developed from knowing what happened with a function of a constant rate (i.e., constant slope, which somewhat held true as the time period dwindled toward zero).  We used the concept of finding the slope given two points to develop $\frac{f(t+h) - f(t)}{h}$ (as $h$, which is equivalent to $\Delta t$, tends toward zero).  When $h$ was zero,  $\frac{f(t+h) - f(t)}{h} = f'(t)$ (see ``interesting'' side note at end of this debacle)*.  However, using this technique to get both numerical and algebraic exact values of the derivative was tedious, even with relatively simple functions.  Thus, we began to notice patterns in the derivatives (slope values) of famous everyday functions and then developed rules for combinations of those functions so we could ``avoid'' needing to use the difference quotient to find the slope function for virtually any function that we could imagine (not all, but for most functions the general public encounters).
+
+In the same way, we have come up with not one, but three ways to estimate the net change in a function (only done numerically- the algebra (called Riemann Sums) is much more difficult than the difference quotient was).  However, these are tedious calculations and we must do more of them (i.e., more intervals) to attain better accuracy.  Thus, the question is begged and pleaded:  Is there a way to obtain the {\em exact} value of $\int_a^b f'(t)\, dt  =$ the net change in $f$ over the time period $(a, b)$?
+
+The answer lies in the alternative way we've written $\int_a^b f'(t)\, dt$ back in Integrated Language.  That is, $\int_a^b f'(t)\, dt = f(b) - f(a) =$ the net change in $f$ over the interval.  That is, if we can find the function $f(t)$ for which we have its derivative $f'(t)$, we're just $2$ plug-n-chugs away from being done!  (Sad Side Note:  Note that this will not help if we're given just a table of values or a graph for  $f'(t)$, not a formula- although there are techniques to come up with an approximate formula in a branch of mathematics called ``numerical analysis'').
+
+Let's work a few examples of finding the $f(t)$ to plug into (this is called finding the ``anti-derivative'' because we're going backwards from our exploits of the first half of the course).
+
+\begin{problem}
+$\int_1^3 4t^3\, dt$
+\end{problem}      
+
+\begin{problem}
+$\int_1^3 t^3\, dt$
+\end{problem}
+
+\begin{problem}
+$\int_1^3 178t^3\, dt$
+\end{problem}
+
+\begin{problem}
+$\int_1^3 \sqrt{t}\, dt$
+\end{problem}
+
+\begin{problem}
+$\int_1^3 \frac{7}{t^{10}}\, dt$
+\end{problem}
+
+\begin{problem}
+$\int_1^3 \frac{7}{t}\, dt$
+\end{problem}
+
+\begin{problem}
+$\int_0^{\frac{\pi}{3}} \sin t\, dt$
+\end{problem}
+
+\begin{problem}
+$\int_1^3 e^t\, dt$
+\end{problem}
+
+\begin{problem}
+$\int_1^3 5^t\, dt$
+\end{problem}
+
+\begin{problem}
+$\int_1^3 (t^3 - \sin t + e^t)\, dt$
+\end{problem}
+
+\begin{problem}
+$\int_0^{\frac{\pi}{3}} t^3 \sin t\, dt$
+\end{problem}
+
+\begin{problem}
+$\int_0^{\frac{\pi}{3}} \sin(3t)\, dt$
+\end{problem}
+
+\begin{problem}
+$\int_0^{\frac{\pi}{3}} \sin(t^2) \, dt$
+\end{problem}
+
+\begin{problem}
+Now, calculate the exact value of the Winter Storm Warning problem: $\int_0^4 (1.5t-0.25t^2+1.4)\, dt =$   the amount of snow that fell from noon to $4$PM. 
+\end{problem} 
+
+*Note that if we multiply both sides by $h$ (i.e.,  $\Delta t$), we get that the change in the function over the short period of time $(t, t+h)$ is equal to  $f(t+h)-f(t) = f'(t) \Delta t$, which is what we did to get the net change in the function using rectangles in Winter Storm Warning, only we then added up a bunch of those changes to get the total net change over a longer period of time ($(0, 4)$ in that example).  So, we're talking about the same thing!
+
+
+
+\end{document}

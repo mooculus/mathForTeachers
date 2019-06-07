@@ -1,0 +1,70 @@
+\documentclass{ximera}
+\input{preamble}
+
+\author{Vic Ferdinand}
+\title{Hall of Fame Derivatives (Or We're Not Gonna Take it Anymore!- Part II)}
+\outcome{Develop formulas for derivatives of specific types of functions using algebra, graphs, and tables.}
+\outcome{State power rule.}
+\outcome{Find derivative of $e^x$.}
+\outcome{Find derivative of $\ln (x)$.}
+\outcome{Find derivatives of $\sin x$ and $\cos x$.}
+
+\begin{document}
+\begin{abstract}
+\end{abstract}
+\maketitle
+
+\begin{instructorIntro}
+Here, we take advantage of our precalculus knowledge (some of which usually needs review:  e.g., the difference between power and exponential functions, that exponential functions describe constant percentage growth, that trig functions relate length to angle but also serve as a model for periodic behavior).
+
+All of these are ``derived'' intuitively from numerical (e.g., table) and graphical knowledge, keeping in mind that the derivative is our ``slope function'' (always harkening back to middle school).  I only ask for derivation via limit with the powers of $x$, although I do run through the ``official'' proof for them after they've conjectured what the derivative of the function is.
+
+Note:  On the exponential functions, I use the table feature (with change of $t = 1$) and we calculate the constant ratio between the derivative entries (first with base e (easy to guess) and then base $7$ (hard to guess).  I let them squirm to guess what the weird decimal is until we talk about the log function on the table (and we see our weird decimal is $\ln 7$).
+
+\end{instructorIntro}
+
+
+
+As we've seen, to find the derivative of a function by the ``difference quotient'' (or ``average rate'') method is, at best, an ordeal for even the simplest functions.  Sometimes it requires knowledge of ``tricks''.  Sometimes it is impossible!
+
+ This activity will help us avoid that long-winded method for the functions we usually deal with in ``real life''.  That is, polynomials, exponential, logarithmic, and trigonometric functions.  We will use the meaning of derivative as well as take advantage of the calculator's ability to graph and make tables for the functions (and their derivatives, by learning about the ``nDeriv'' command!).
+     
+\begin{exercise} 
+Unfortunately, this one will use the definition one last time!  Find the derivative (i.e., slope or rate function) for $1$, $x$, $x^2$, $x^3$, $x^4$,     and $x^5$ by definition.  Fun Facts:   
+\begin{align*} 
+(x+h)^3 &= x^3 + 3x^2h + 3xh^2+h^3\\
+(x+h)^4 &= x^4 + 4x^3h + 6x^2h^2 + 4xh^3 + h^4\\
+(x+h)^5 &= x^5 + 5x^4h + 10x^3h^2 + 10x^2h^3+5xh^4+h^5
+\end{align*}
+
+What pattern do you notice?  Why, in the derivation, is this pattern occurring? What conjecture would you have for the derivative of  $f(x) = x^n$? In particular, what about the derivatives of  $x^{173}$?    $\sqrt{x}$? (for fun, could you find this function's derivative by definition?),  $\frac{1}{x^7}$?   $\sqrt[7]{x^{13}}$?
+
+Before going on to \#2, where do we see polynomial functions?  Why do they dominate the algebra curriculum so much?  Can you give a few examples where they model ``real-life'' phenomena?
+\end{exercise}
+\begin{exercise} 
+What are exponential functions?  How are they (algebraically) different from polynomials (Hint:  Does the commutative property from Math 1165 hold for exponents?)?  Where do we see/use exponential functions in real life (Hint:  How are they somewhat the same as linear functions?)?
+\begin{enumerate}
+\item Consider the most famous exponential function: $f(x) = e^x$   (you can punch this in on your calculator:  $e$ is about $2.71828$, but it has its own key on your calculator!).  Then find type nDeriv($e^x$, $x$, $x$) as one of the functions on your ``$Y=$'' menu (also have $e^x$  as one of the functions.  Graph both of them!  What do you notice?  Now look at table values for any range for $t$ and $\Delta t$.  What conjecture would you make for the derivative of this function?
+\item  What about other exponential functions (say,  $f(x) = 7^x$).  Do the same thing.  Notice it's not as ``clear'' as with $f(x) = e^x$, but take the ratio of any derivative value divided by the function value.  You'll always get the same weird decimal number (which we'll discover what it is in a later part of this spectacular activity).
+\end{enumerate}
+\end{exercise}
+
+\begin{exercise} 
+What are logarithmic functions?  How are they related to exponential functions?  Where do we see logarithmic functions in real life?
+\begin{enumerate}
+\item	Consider the most famous logarithmic function:   $f(x) = \ln x - \log_e x$.  If you plug in an $x$ value, you'll get the number you would raise $e$ to to get that number (e.g., calculate $\ln 7$ on your calculator.  Have you seen this number before?  Now raise $e$ to that number- you should get back $7$.)  Basically, logarithms ``undo'' exponentials in the same way roots undo powers of $x$ (e.g., $\sqrt[17]{x}$ is the ``inverse function'' for  $x^{17}$. $\log_{17}x$   is the ``inverse function'' for  $17^x$).
+
+Now look at the derivative of $\ln x$ on your calculator and compare it to the function $\ln x$ (both in graph and in table).  What do you notice?  What conjecture can be made for a formula for the slope function of $\ln x$?
+\item	What about other log functions, such as  $\log_{17} x$.  As it turns out (from precalculus), $\log_{17} x = \frac{\log_e x}{\log_e 17} = \frac{\ln x}{\ln 17}$.  You would need to enter the function on the calculator using that quotient (There is no ``$\log_{17} x$'' button).  Now observe what happens with the numerical derivative and compare it to what you got with $\ln x$ (e.g., via ratios of the derivative here to the derivative values of $\ln x$).
+\end{enumerate}
+\end{exercise}
+\begin{exercise} 
+Now let's consider trigonometric functions (just $\sin x$ and $\cos x$ for now).  What is trigonometry and why does it exist?  How do we use it in real life (two classic uses)?
+\begin{enumerate}
+\item	Now let's look at the graphs of $\sin x$ and $\cos x$ on the calculator (put calculator in radian mode and set the window to $x$ in $(-20, 20)$ and $y$ on $(-2,2)$).  Why do the graphs look like that?
+\item	Now let's concentrate on $\sin x$ and let's use the graph of it and its derivative to conjecture what its algebraic derivative is.
+\item	Now do the same for $\cos x$.
+\end{enumerate}
+\end{exercise}
+
+\end{document}
