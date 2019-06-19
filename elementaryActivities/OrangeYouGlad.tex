@@ -15,9 +15,9 @@ The objective of this activity is to help students make the connection between t
 
 
 \begin{enumerate}
-    \item Where did you run into the number $\frac35$, and why?  (This is one of the unit rates, or 3/5 of a unit of yellow paint goes with 1 unit of red paint.
-    \item What does $\frac35 = 0.6$ mean in this problem?  What are its units?  (Emphasizing that this is a number, not just ``3 over 5'' or ``3 to 5''.)
-    \item Can we write the answer as $\frac35 \times 7841.9$? If so, why do we use multiplication here?  What are the groups and objects? (Yes; the groups are the batches and the objects in those groups are whatever is in one batch.)
+    \item Where did you run into the number $\frac35$, and why?      
+    \item What does $\frac35 = 0.6$ mean in this problem?  What are its units?     
+    \item Can we write the answer as $\frac35 \times 7841.9$? If so, why do we use multiplication here?  What are the groups and objects?  
     \item How would this interpretation change if we replaced ``gallons of red paint and gallons of yellow paint'' with ``hours traveled and miles traveled'' on a trip?
 \end{enumerate}
 \end{instructorIntro}
@@ -37,12 +37,25 @@ This part should be done as a whole class and should be done quickly.  The idea 
 \begin{question}
 Let $x$ stand for the number of gallons of red paint in our mixture, and $y$ stand for the number of gallons of yellow paint in our mixture.
 \begin{enumerate}
-    \item Make a table with at least three more combinations of $x$ and $y$ that would make the same color of orange paint as in Question 1.
+    \item Make a table with at least three more combinations of $x$ and $y$ that would make the same color of orange paint we have been working with.
     \item On the axes below, plot at least three of the points from your table.
     \item Does it make sense to connect the dots in some fashion on your graph?
 \end{enumerate}
 
-\includegraphics[height=4in]{graphics/axes.png}
+
+\begin{center}
+    \begin{tikzpicture}[scale=0.8]
+        \draw [step=1, help lines] (0,0) grid (10,10); 
+        \draw [->] (-0.2,0) -- (10.2,0);
+        \draw[->] (0, -0.2)--(0,10.2); 
+        \node at (0, 10.5) {$y$};
+        \node at (10.5, 0){$x$};
+        \foreach \x/\xtext in {1, ..., 10} 
+            \draw (\x cm,1pt) -- (\x cm,-1pt) node[anchor=north] {$\xtext$};
+        \foreach \y/\ytext in {1, ..., 10} 
+            \node at (-0.25, \y){$\ytext$};
+    \end{tikzpicture}
+\end{center}
 
 \begin{instructorNotes}
 Students should be guided to use reasonably small amounts of each color so their points will fit on the given grid (or with a need for only a small extension).  It is likely that many students will make 1, 2, 3, or 4 batches of the base recipe with perhaps some non-integral copies of it to fit the grid.
@@ -90,10 +103,10 @@ We intend students to recognize the familiar understanding of slope as ``over an
 
 
 \begin{question}
-The topics in this activity, especially in Question 4, have a strong relationship to similar triangles.  What is this relationship?
+The topics in this activity, especially in the previous question, have a strong relationship to similar triangles.  What is this relationship?
 
 \begin{instructorNotes}
-Here, we see a better idea for why our graph is a line from a geometric point of view.  The arithmetic done in \#4 forms similar (right) triangles (slope = constant internal factor).  You might ask them to recall a salient feature of similar triangles: That they all have congruent angles.  Thus, the generation of new points (near or far) will be done in a way such that the direction must always be the same (never changes) and thus the points representing combos of orange paint must all lie on a line.
+Here, we see a better idea for why our graph is a line from a geometric point of view.  The arithmetic done in the previous problem forms similar (right) triangles (slope = constant internal factor).  You might ask them to recall a salient feature of similar triangles: That they all have congruent angles.  Thus, the generation of new points (near or far) will be done in a way such that the direction must always be the same (never changes) and thus the points representing combos of orange paint must all lie on a line.
 \end{instructorNotes}
 \end{question}
 
@@ -101,14 +114,14 @@ Here, we see a better idea for why our graph is a line from a geometric point of
 
 \begin{question}
 \begin{enumerate}
-    \item What kind of graph did you draw in Question 2?  How can you be sure this is correct?
+    \item What kind of graph did you draw earlier?  How can you be sure this is correct?
     \item Write an equation corresponding to your graph.
     \item Explain how each part of your equation is connected with the original paint situation.
-    \item Explain how your solution method to Question 1 is related to this graph.  In other words, how can you see each step of your solution to Question 1 on the graph?
+    \item Explain how your solution method to the first question of this activity is related to this graph.  In other words, how can you see each step of your solution to that first question on the graph?
 \end{enumerate}
 
 \begin{instructorNotes}
-In part (a), we are expecting students to connect the ideas of ratios, similar triangles, and constant rate of change from problem 5 and our work with arithmetic sequences earlier in the semester.  If you've done ``Return to Walk the Line'', you might bring up these concepts.  You should also connect with the ``over 5 and up 3'' manner brought out in \#4.  This might be developed through \#3 as we develop things algebraically and use the equation and graph in \#4 and \#5.
+In part (a), we are expecting students to connect the ideas of ratios, similar triangles, and constant rate of change from problem 5 and our work with arithmetic sequences earlier in the semester.  If you've done ``Return to Walk the Line'', you might bring up these concepts.  You should also connect with the ``over 5 and up 3'' manner brought out previously.
 
 Once we realize this graph should be linear, it's easier to write an equation for it.  On (b), you might recall the activity ``I Walk the Line'' and discuss why the equation is $y = (3/5)x$ and not, say, $y = (3/5)x + 7$.  Most of (c) should be bringing together and reviewing the various parts of this activity.
 
