@@ -1,0 +1,262 @@
+\PassOptionsToPackage{numbers}{natbib} % passing an option to  natbib before tufte-book
+\documentclass[justified,openany,nofonts]{tufte-book}
+
+
+\bibliographystyle{amsplain}
+\usepackage{teacherEd}
+
+
+%\usepackage{microtype}
+
+%\usepackage{lineno}
+%\linenumbers
+
+
+\usepackage{framed}
+\usepackage{comment}
+%\RequirePackage{xcolor,colortbl}% http://ctan.org/pkg/xcolor.  % Needed for secondDifferences activity. 
+
+%\newenvironment{teachingnote}{\begin{framed}\begin{itshape}\begin{bfseries}\noindent Teaching Note:}{\end{bfseries}\end{itshape}\end{framed}}
+
+\newenvironment{teachingnote}{\begin{framed}\noindent \textbf{Teaching Note:}}{\end{framed}}
+\newcommand{\teachingnotes}{With Teaching Notes}
+%\excludecomment{teachingnote}
+%\newcommand{\teachingnotes}{}
+
+\def\fixnote#1{\begin{framed}{\color{red}Fixnote: #1}\end{framed}}  % Allows insertion of red notes about needed edits
+%\def\fixnote#1{}
+
+%%% This sets how the enumerate command works
+\renewcommand{\theenumi}{$(\mathrm{\arabic{enumi}})$}
+\renewcommand{\labelenumi}{\theenumi}
+
+
+\title{Numbers \\ and Algebra}
+\author{\teachingnotes}
+\publisher{Math 1165: Autumn 2018 \\ This document was typeset on \today.}
+
+\begin{document}
+
+\def\document#1{} %% Needed to add standards
+\maketitle
+%%%% Front matter
+\input{../chapters/front}
+%%%%
+
+\vspace{1in}
+
+\begin{teachingnote}
+Activities to be added or revised:  
+\begin{itemize}
+\item Beckmann 1G
+\item Product Puzzle from Connected Mathematics Project 
+\item A.13. There are many factors to consider.  Needs revision. 
+\item A.20. Picture Yourself Dividing.  Include $1\frac{3}{4 }\div \frac{1}{2}$. 
+\item A.26. Poor Old Horatio.  Need new ratio table problems.
+\item A.54  Second Differences.  Current version won't compile within notes.  
+\end{itemize}
+\end{teachingnote}
+
+% Fixnote summary and other needs
+%
+% Highlight Deep Insights, such as
+%  * The point-slope form of a line turns a non-proportional situation into a proportional one. 
+%  * The sequence of partial sums of an arithmetic series is a quadratic function. 
+%  * With common denominators, division of fractions ? 
+%
+% Fix the footnotes
+%
+%More problems needed: 
+% 1.1. Other bases
+% 1.2. Doubling and halving algorithm for multiplication 
+%         Mysterious base two game
+% 2.1. Models of integer arithmetic
+% 3.1. Easy problems on ratio and proportional reasoning
+% 	Ratio tables, going through 1, tables that aren?t ratio tables
+% 3.2. More problem on quadratics, exponentials?  (Some in LaTeX comments.)
+%
+% Discussion:  Meaning of the equals sign somewhere
+%
+
+
+\newpage
+%\pagenumbering{arabic}
+%\pagestyle{fancy}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%% Sections to be included %%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setcounter{secnumdepth}{2}% turn on numbering for parts and chapters
+
+\input{../chapters/algebra}
+
+\input{../chapters/number}
+
+\input{../chapters/ratio}
+
+\input{../chapters/solve}
+
+\input{../chapters/circle}
+
+
+\appendix
+
+\renewcommand{\theenumi}{$(\mathrm{\alph{enumi}})$}
+\renewcommand{\labelenumi}{\theenumi}
+\chapter{Activities}
+%\addtocontents{toc}{\protect\setcounter{tocdepth}{0}}
+
+
+%\input{../chapters/appendix/shemp.tex} 
+
+\input{../chapters/appendix/bases.tex}  % Shelby and Scotty
+
+\input{../chapters/appendix/hieroArith.tex}
+
+\input{../chapters/appendix/blocksAlgo.tex}
+
+\input{../chapters/appendix/blocksMult.tex}
+
+\input{../chapters/appendix/compare.tex}
+
+\input{../chapters/appendix/integerAddition}
+
+\input{../chapters/appendix/integerMultiplication}
+
+\input{../chapters/appendix/divisionMeaning.tex}
+
+\input{../chapters/appendix/divisibility}
+
+\input{../chapters/appendix/hallOfShoes.tex}
+
+\input{../chapters/appendix/sieve.tex}
+
+\input{../chapters/appendix/infPrimes.tex}
+
+\input{../chapters/appendix/countingFactors.tex}
+
+\input{../chapters/appendix/whyDoesItWork.tex}
+
+\input{../chapters/appendix/prome.tex}
+
+\input{../chapters/appendix/equivFrac.tex}
+
+\input{../chapters/appendix/fracPictMean.tex}
+
+\input{../chapters/appendix/fractionMultiplication}
+
+\input{../chapters/appendix/divFractions.tex}
+
+\input{../chapters/appendix/pictDivision.tex}
+
+\input{../chapters/appendix/crossMult.tex}
+
+\input{../chapters/appendix/hundredthsGrid}
+
+\input{../chapters/appendix/repeat.tex}
+
+\input{../chapters/appendix/decimals.tex}
+
+\input{../chapters/appendix/ratioLaunch.tex}
+
+\input{../chapters/appendix/ratios.tex}
+
+\input{../chapters/appendix/ratioAddition.tex}
+
+%\input{../chapters/appendix/solved.tex}
+
+\input{../chapters/appendix/triathlete.tex}
+
+\input{../chapters/appendix/dreadedStoryProblem.tex}
+
+\input{../chapters/appendix/walkTheLine.tex}
+
+\input{../chapters/appendix/constantAmount.tex}
+
+\input{../chapters/appendix/constantRatio.tex}
+
+%\input{../chapters/appendix/exponentRules.tex}  Replaced by Meanings of Exponents
+
+\input{../chapters/appendix/meaningsOfExponents}
+
+%\input{../chapters/appendix/doesntAddUp.tex}  Replaced by arithmetic series
+
+%\input{../chapters/appendix/worldSeries.tex}  Moved to problems
+
+% \input{../chapters/appendix/gertrude.tex}   % replaced by ConstantAmount and WorldSeries
+
+% \input{../chapters/appendix/billy.tex}    %  replaced by ConstantRatio and WorldSeries
+
+\input{../chapters/appendix/arithmeticSeries}
+
+\input{../chapters/appendix/geometicSeries}
+
+%\input{../chapters/appendix/secondDifferences}   % Requires \RequirePackage{xcolor,colortbl}, but then some of the Euclidean Algorithm sections won't compile.  
+
+\input{../chapters/appendix/hieroAlg.tex}
+
+\input{../chapters/appendix/otherSide.tex}
+
+\input{../chapters/appendix/solvingQuadratics}
+
+\input{../chapters/appendix/completeSquares}
+
+\input{../chapters/appendix/vertex.tex}
+
+%\input{../chapters/appendix/leastSquares.tex}
+
+\input{../chapters/appendix/solvingCubics}
+
+%\input{../chapters/appendix/otherCurves.tex}
+
+\input{../chapters/appendix/sketchRoots.tex}
+
+\input{../chapters/appendix/complexAddition.tex}
+
+\input{../chapters/appendix/complexMultiplication.tex}
+
+%\input{../chapters/appendix/deg2Ext.tex}
+
+%\input{../chapters/appendix/inverseFunctions.tex}
+
+%\input{../chapters/appendix/gaussianInt.tex}
+
+%\input{../chapters/appendix/orderMod.tex}
+
+%\input{../chapters/appendix/closeButNoCigar.tex}
+
+\input{../chapters/appendix/traffic.tex}
+
+\input{../chapters/appendix/factOrFiction.tex}
+
+%\input{../chapters/appendix/pyramid.tex}
+
+\input{../chapters/appendix/countOnIt.tex}
+
+\input{../chapters/appendix/whichRoad.tex}
+
+\input{../chapters/appendix/lumpyAndEddie.tex}
+
+\input{../chapters/appendix/climbTree.tex}
+
+\input{../chapters/appendix/fallForAnything.tex}
+
+
+%\input{../chapters/appendix/harmtri.tex}
+
+%\input{../chapters/appendix/whoops.tex}
+
+%\input{../chapters/appendix/largePrime.tex}
+
+
+%% \chapter{Enrichment Topics}
+
+%% \input{../chapters/enrichment/continuedFractions.tex}
+
+%% \input{../chapters/enrichment/music.tex}
+
+
+%%%% Index and References
+\input{../chapters/back}
+%%%%
+
+\end{document}
