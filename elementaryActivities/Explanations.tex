@@ -12,31 +12,29 @@ This activity will help you begin to think about what it means to write an expla
 \end{abstract}
 \maketitle
 
-\begin{instructorIntro}
-We use this activity as an introduction to the course, and a first experience at what a mathematical explanation can look like.  We have found that giving students such concrete examples helps them form their first explanations on their own.
-
-{\bf Suggested Timing:} After the course introduction (which sometimes takes about half a class period), we use the rest of the first day for this activity.
-
-\end{instructorIntro}
 
  How many squares are in the following image?
-\[
-\includegraphics[height=0.7in]{graphics/squares.pdf}
-\]
+\begin{center}
+\begin{tikzpicture}
+    \draw (0,0)--(3,0)--(3,3)--(0,3)--(0,0);
+    \draw (0,1)--(3,1);
+    \draw (0,2)--(3,2);
+    \draw (1,0)--(1,3);
+    \draw (2,0)--(2,3);
+\end{tikzpicture}
+\end{center}
+
+
 Spend a few minutes thinking about this problem, and conjecture your own answer.  
 \begin{enumerate}
 \item Did each member of your group come up with the same answer?  Did each member come to their answer in the same way?
-\begin{instructorNotes}
-We sometimes put this problem on the board for students to solve before directing them to look at the activity.  We also encourage students to work in groups, as this course may be the first time they have done so in a math class.  This question is designed to give everyone in the group a chance to speak.
-\end{instructorNotes}
+
 
 
 \item
 Pick one method and answer from your group.  Discuss this method in detail, as if you were presenting it to the class.  What ideas are the most important?  What steps are the most complicated?
 
-\begin{instructorNotes}
-At this point, it's good to stop and have students who are willing present their solutions at the board.  Discuss the different answers, and see if anyone came up with other answers during the process of solving.  This also gives a good opportunity to highlight the problem-solving process which will serve students well throughout the course.
-\end{instructorNotes}
+
 
 
 \item Now imagine that you are a teacher, and you have given this problem to your students.  On the back of this paper are four example explanations that you could get from your students.  With your group mates, compare and contrast these four explanations.  Discuss things you like about them, and things you don't like.
@@ -49,9 +47,24 @@ At this point, it's good to stop and have students who are willing present their
 \begin{mdframed}
 
 {\bf Explanation 1:}
-\[
-\includegraphics[height=0.5in]{graphics/squaresSol1.pdf}
-\]
+\begin{center}
+\begin{tikzpicture}[scale=0.6]
+    \draw (0,0)--(3,0)--(3,3)--(0,3)--(0,0);
+    \draw (0,1)--(3,1);
+    \draw (0,2)--(3,2);
+    \draw (1,0)--(1,3);
+    \draw (2,0)--(2,3);
+    \node at (0.5, 2.5) {$1$};
+    \node at (1.5, 2.5) {$2$};
+    \node at (2.5, 2.5) {$3$};
+    \node at (0.5, 1.5) {$4$};
+    \node at (1.5, 1.5) {$5$};
+    \node at (2.5, 1.5) {$6$};
+    \node at (0.5, 0.5) {$7$};
+    \node at (1.5, 0.5) {$8$};
+    \node at (2.5, 0.5) {$9$};
+\end{tikzpicture}
+\end{center}
 
 I counted 9 squares in the picture, and labeled them on the figure.
 
@@ -71,9 +84,17 @@ $$ 14 = 3\times 3 + 2\times 2 + 1 $$
 
 First, I remember that to be a ``square'', you have to have the same length on both sides.  The easiest squares to see are the tiny ones, and I can see three rows with three tiny squares in each of those rows for a total of nine tiny squares.  The next easiest square to see is the biggest one: the entire picture is a square!  Lastly, there are some medium-sized squares.  Look at my picture to see an example.  I found four of these medium-sized squares: two with their tops on the top row, and two with their bottoms on the bottom row.  So, there are 14 total squares.
 
-\[
-\includegraphics[height=0.5in]{graphics/squaresSol3.pdf}
-\]
+
+\begin{center}
+\begin{tikzpicture}[scale=0.6]
+    \draw (0,0)--(3,0)--(3,3)--(0,3)--(0,0);
+    \draw (0,1)--(3,1);
+    \draw (0,2)--(3,2);
+    \draw (1,0)--(1,3);
+    \draw (2,0)--(2,3);
+    \draw[very thick] (0,1)--(2,1)--(2,3)--(0,3)--(0,1);
+\end{tikzpicture}
+\end{center}
 
 I'm convinced these are all of the squares in the figure, because the tiny ones are $1\times 1$, the medium ones are $2 \times 2$, and the large one is $3\times 3$, which is the entire original figure.
 \end{mdframed}
@@ -94,8 +115,27 @@ I'm convinced these are all of the squares in the figure, because the tiny ones 
 \end{tabularx}
 \end{mdframed}
 
+
+
+
+\newpage
+
+
 \begin{instructorNotes}
-Looking at these explanations is often eye-opening for students.  Explanation 1 helps students to see how we might deal with an incorrect solution, with a partial explanation.  Explanation 2 is what they might have written in other math classes; we want to emphasize that this will not be enough in this course!  Explanations 3 and 4 are different ways of writing a nearly complete explanation, with many details, but the ideas are organized in fundamentally different ways.  It can be very interesting to have students assign a ``grade'' to each of these explanations, and then to discuss what grade you might give each.  The students' grades can be very different than ours!
+We use this activity as an introduction to the course, and a first experience at what a mathematical explanation can look like.  We have found that giving students such concrete examples helps them form their first explanations on their own.
+
+
+We sometimes put the initial problem on the board for students to solve before directing them to look at the activity.  We also encourage students to work in groups, as this course may be the first time they have done so in a math class.  This question is designed to give everyone in the group a chance to speak.
+
+After students have had a chance to discuss in small groups, it's good to stop and have students who are willing present their solutions at the board.  Discuss the different answers, and see if anyone came up with other answers during the process of solving.  This also gives a good opportunity to highlight the problem-solving process which will serve students well throughout the course.
+
+
+
+Looking at the provided explanations is often eye-opening for students.  Explanation 1 helps students to see how we might deal with an incorrect solution, with a partial explanation.  Explanation 2 is what they might have written in other math classes; we want to emphasize that this will not be enough in this course!  Explanations 3 and 4 are different ways of writing a nearly complete explanation, with many details, but the ideas are organized in fundamentally different ways.  It can be very interesting to have students assign a ``grade'' to each of these explanations, and then to discuss what grade you might give each.  The students' grades can be very different than ours!
+
+
+{\bf Suggested Timing:} After the course introduction (which sometimes takes about half a class period), we use the rest of the first day for this activity.
+
 \end{instructorNotes}
 
 \end{document}
