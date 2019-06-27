@@ -1,0 +1,44 @@
+\newpage
+\section{Constant Amount Changes}\label{A:ConstantAmount}
+
+In this section, we explore sequences and functions and the fact that sequences are functions. 
+
+Sometimes you compute the output value of a function from a previous output value.  This is called a \emph{recursive} representation of the function.  Other times, you compute the output value directly from the input value.  This is called a \emph{closed form} representation of the function.  Both approaches are important, as they provide different insights.  
+
+\begin{prob}
+We can use function notation for sequences, with $f(n)$ representing the $n^\mathrm{th}$ term of a sequence.  Here is an example of a sequence specified recursively:  
+$$f(0) = 1\text{, }f(1) = 1,\text{ and }f(n) = f(n-1)+f(n-2)\text{ for }n \ge 2.$$
+\begin{enumerate}
+\item Find $f(6)$ and explain your reasoning.  
+\item Why was it important to give the values $f(0) = 1$ and $f(1) = 1$?  
+\end{enumerate}
+\end{prob}
+
+\begin{prob}%\label{P:gtg1}
+Gertrude the Gumchewer has an addiction to Xtra Sugarloaded Gum, and it's getting worse.  At the beginning of her habit, on day 0, she chews 3 pieces and then, each day afterward, she chews 8 more pieces than she chewed the day before.
+\begin{enumerate}
+\item Gertrude's friend Wanda notices that Gertrude chewed 35 pieces on day 4.  Wanda claims that, because Gertrude is increasing the number of pieces she chews at a constant rate, we can just use proportions with the given piece of information to find out how many pieces Gertrude chewed on any other day.  Is Wanda correct or not?  Explain. 
+\item Make a table of how many pieces of gum Gertrude chewed on each of the first 10 days of her addiction.  
+\item Think of what a $4^\mathrm{th}$ grader would do to predict the next day's number of pieces given the previous day's number of pieces.  Use the variables $Next$ and $Now$ to write an equation that describes the thinking.
+\item Write a recursive specification for a function $g(n)$ that gives the number of pieces of gum Gertrude chewed on the $n^\mathrm{th}$ day.  
+\item How many pieces of gum Gertrude did chew on the $793^\mathrm{rd}$ day of her habit?  Explain your reasoning.  
+\item How would the $4^\mathrm{th}$ grader answer the previous question?  How does this differ from how you solved it?
+\item Write a closed formula for computing $g(n)$ directly from $n$.  
+\item Make a graph of your data about Gertrude's gum chewing.  Which variable do you plot on the horizontal axis?  Explain.  
+\item Does it make sense to connect the dots on your graph?  Explain.  
+\item  Locate the values $g(6)$ and $g(5)$ in your table from above, compute  $g(6) - g(5)$, and interpret your result.  How might you have known the answer without doing any calculation?  
+\end{enumerate}
+\end{prob}
+
+\begin{prob}
+Slimy Sam steals a car from a rest area 3 miles east of the Indiana-Ohio state line and starts heading east along the side of I-70.  Because the car is a real clunker, it can only go 8 miles per hour.  
+\begin{enumerate}
+\item Assuming the police are laughing too hard to arrest Sam, describe Sam's position on I-70 (via mile markers) $t$ hours after stealing the car.  
+\item Make a graph of your data about Sam's travel.  Which variable do you plot on the horizontal axis?  Explain.  
+\item Does it make sense to connect the dots on your graph?  Explain your reasoning.  
+\item Write a recursive specification for a function $s(t)$ that gives Sam's position on I-70 at hour $t$.  
+\item Write closed formula for $s(t)$.  
+\item How is this problem the same and how is it different from the Gertrude problem?  
+\item Dumb Question:  At any specific time, how many positions could Sam be in? 
+\end{enumerate}
+\end{prob}

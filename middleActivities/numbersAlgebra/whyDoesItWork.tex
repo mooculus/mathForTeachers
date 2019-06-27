@@ -1,0 +1,64 @@
+\newpage
+\section{Why Does It Work?}\label{A:GCDwork}
+
+The Euclidean Algorithm\index{Euclidean Algorithm} is pretty
+neat. Let's see if we can figure out \textbf{why} it works. As a gesture of friendship, I'll compute $\gcd(351,153)$:
+\begin{align*}
+351 &= \boldsymbol{153}\cdot 2 + \boldsymbol{45}\\ 
+\boldsymbol{153} &= \boldsymbol{45}\cdot 3 + \boldsymbol{18}\\
+\boldsymbol{45} &= \boldsymbol{18}\cdot 2 + \fbox{$\boldsymbol{9}$}\\
+18 &= 9\cdot 2 + 0 \qquad \fbox{$\therefore \gcd(351,153) = 9$}
+\end{align*}
+
+Let's look at this line-by-line.
+
+\paragraph{The First Line}
+\begin{prob}
+Since $351 = 153\cdot 2 + 45$, explain why $\gcd(153,45)$ divides $351$.
+\end{prob}
+
+\begin{prob}
+Since $351 = 153\cdot 2 + 45$, explain why $\gcd(351,153)$ divides $45$.
+\end{prob}
+
+\begin{prob}
+Since $351 = 153\cdot 2 + 45$, explain why $\gcd(351,153) = \gcd(153,45)$.
+\end{prob}
+
+
+\paragraph{The Second Line}
+\begin{prob}
+Since $153 = 45\cdot 3 + 18$, explain why $\gcd(45,18)$ divides $153$.
+\end{prob}
+
+\begin{prob}
+Since $153 = 45\cdot 3 + 18$, explain why $\gcd(153,45)$ divides $18$.
+\end{prob}
+
+\begin{prob}
+Since $153 = 45\cdot 3 + 18$, explain why $\gcd(153,45) = \gcd(45,18)$.
+\end{prob}
+
+
+\paragraph{The Third Line}
+\begin{prob}
+Since $45 = 18\cdot 2 + 9$, explain why $\gcd(18,9)$ divides $45$.
+\end{prob}
+
+\begin{prob}
+Since $45 = 18\cdot 2 + 9$, explain why $\gcd(45,18)$ divides $9$.
+\end{prob}
+
+\begin{prob}
+Since $45 = 18\cdot 2 + 9$, explain why $\gcd(45,18) = \gcd(18,9)$.
+\end{prob}
+
+
+\paragraph{The Final Line}
+
+\begin{prob}
+Why are we done? How do you know that the Euclidean Algorithm
+will \textbf{always} terminate?
+\end{prob}
+
+\fixnote{New question:  What does the final line look like when the GCD is 1?}  

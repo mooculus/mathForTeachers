@@ -1,0 +1,70 @@
+\newpage
+\section{Solving Cubic Equations}\label{A:solvingCubics}
+
+To solve the cubic equation $x^3+px+q=0$, we use methods that were discovered and advanced by various mathematicians, including Ferro, Tartaglia, and Cardano.  The approach is organized in three steps.  \textbf{Make notes in the margin as you follow along.}  
+
+%\begin{itemize}
+%\item Step 1:  Replace $x$ with $u+v$.
+%\item Step 2: Set $uv$ so that all of the terms are eliminated except for $u^3$, $v^3$, and constant terms.
+%\item Step 3: Clear denominators, recognize the equation as a quadratic in $u^3$, and use the quadratic formula.
+%\end{itemize}
+
+\subsection{Step 1:  Replace $x$ with $u+v$}
+In $x^3+px+q=0$, let $x = u + v$.  % $$(u+v)^3+p(u+v)+q=0.$$ 
+Show that the result can be written as follows:  
+
+$$u^3+v^3+(3uv+p)(u+v)+q = 0.$$
+
+\subsection{Step 2: Set $uv$ to eliminate terms}
+If $3uv+p=0$, then all of the terms are eliminated except for $u^3$, $v^3$, and constant terms. Explain why the equation simplifies nicely to:
+
+$$u^3+v^3 + q = 0.$$
+
+Solve $3uv+p=0$ for $v$, substitute, and show that we have:  
+
+$$u^3+\left( \frac{-p}{3u}\right)^3+q=0.$$
+
+\subsection{Step 3:  Recognize the equation as a quadratic in $u^3$ and solve}
+
+By multiplying by $u^3$, show that we get a quadratic in $u^3$:   
+
+$$u^6+qu^3+\left( \frac{-p}{3}\right)^3 = 0.$$
+
+Show that this has solutions: 
+
+$$u^3 = \frac{-q\pm\sqrt{q^2-4\left( \frac{-p}{3}\right)^3}}{2}.$$
+
+Now, use the facts $v= -p/(3u)$ and $x = u + v$ to write a formula for $x$: 
+
+$$x = \sqrt[3]{\frac{-q\pm\sqrt{q^2-4\left( \frac{-p}{3}\right)^3}}{2}} 
++  \frac{-p}{3\sqrt[3]{\frac{-q\pm\sqrt{q^2-4\left( \frac{-p}{3}\right)^3}}{2}}}.$$
+
+\begin{prob}
+How many values does this formula give for $x$?  From the original equation $x^3+px+q=0$, how many solutions should we expect? 
+\end{prob}
+\vfill
+
+\begin{prob}
+Use the above formula to solve the specific equation $x^3-15x-4=0$.  Show that $$x = \sqrt[3]{2 \pm \sqrt{-121}} + \frac{5}{\sqrt[3]{2\pm\sqrt{-121}}}.$$
+Are these values of $x$ real numbers?  
+\end{prob}
+\vfill
+
+
+\begin{prob}
+Use technology to graph $y=x^3-15x-4$.  According to the graph, how many real roots does the polynomial have?  What is going on?  
+\end{prob}
+\vfill
+
+\begin{prob}
+Choose ``plus'' in the $\pm$, and check that $2+\sqrt{-1}$ is a cube root of $2 + \sqrt{-121}$.  Use that fact to simplify the above expression for $x$.  What do you notice?  
+\end{prob}
+\vfill
+
+\begin{prob}
+Now choose ``minus'' in the $\pm$ above, and find the value of $x$.  What do you notice?  
+\end{prob}
+
+\vfill
+In both cases, the formula requires computations with square roots of negative numbers, but the result is a real solution.  These kinds of occurrences were the historical impetus behind the gradual acceptance of complex numbers.  
+

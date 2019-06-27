@@ -1,0 +1,109 @@
+\newpage
+\section{Close, but No Cigar}
+
+Sometimes, we are not able to come up with formulas for our function
+models.  In fact, sometimes all that we have are a few data points $(x,
+y)$.  Obviously, we'd like to know more exact values of our function,
+but the cupboard is often bare---we have to make lemonade out of
+lemons.  Thus, we try to ``fill in'' points in between the given points
+in order for our model to have some predictive quality to it.
+
+You already saw this in Statistics 145 when you talked about the
+``best-fit'' line.  There actually could be several definitions of what
+is meant by this, but typically we use the ``least-squares'' line.
+Although we usually see the formula for the slope and intercept of
+this line either just quoted or derived with multi-variable calculus
+in textbooks (something probably not done with the limited time
+allotted for Math 111), you can actually find it for yourself using
+algebraic ideas from school (although it also would be nice to know
+why those algebraic ideas work!):
+
+\begin{prob}
+Find the ``least-squares'' line for the data points $(2, 3)$, $(4,
+5)$, and $(6, 11)$ (note that these don't already form a line- graph
+or algebraically see or just use common sense): That is, find $a$ and
+$b$ so that the sum of the squares of the vertical distances of the
+above data points from the line $y=ax+b$ is as small as possible
+(Unpack what these words really say---a graph is probably best!  Then
+solve algebraically using what you know from Algebra II or so).
+\end{prob}
+
+\begin{prob}
+Of course, contrary to the ``linear disease'' that engulfs our
+country, not every variable grows at the same rate all the time (i.e.,
+we're not always on cruise control or, mathematically, not every
+relationship is linear!)!  If the data you're given appear to be
+non-linear, we try to fit a predictive non-linear curve to such a
+graph (e.g., if the graph appears to be exponential in nature, we try
+to fit a ``best-fit exponential function'' $y=ke^{ax}$ instead of a
+``best-fit'' line $y=ax+b$).  Now how can you tell if a graph appears
+to be exponential or more like a polynomial?  For example, look at the
+data below:
+\[
+\begin{array}{|c|c|c|c|c|}\hline
+x & 0 & 1 & 2 & 3 \\ \hline
+y & 8.1 & 22.1 & 60.1 & 165 \\ \hline
+\end{array}
+\]
+
+A group of students graph the data.  Susie says, ``This sure looks
+like a parabola!''  But Fred says, ``No it doesn't, I just got done
+studying exponentials and it looks like an exponential!''  Susie says
+in reply, ``What?! I sat in those boring classes with you---I know
+about exponentials, but I also know my parabolas---and this is a
+parabola.''  Then Julie chimes in, ``Both of you dummies are wrong,
+it's a quartic ($x^4$)''.  Then a whole slew of ``Says who? Says me!''
+ensues.  Before this turns into a brawl and people get hurt, how can
+we sanely tell who is right, if any of them? They can't all be right!
+
+
+Hint: Think about the most famous graph of all, the one you know most
+about.  And see if you can somehow convert the above data to get that
+type of graph by graphing the relationship between variables related
+to $x$ and $y$ That is, if it was truly best modeled by $y=ke^{ax}$,
+then we'd know (why?) $\ln(y) = ax \ln(k)$ (try graphing the
+$x$-coordinates on the horizontal axis and the natural log of the $y$
+coordinates on the vertical axis. What should that graph look like if
+it is best modeled by an exponential?).  If it were best modeled by $y
+= kx^a$ (i.e., like a polynomial), then we'd know (why?) $\ln(y) =
+a\ln(x) + \ln(k)$ (what would you graph on each axis here?).  Graph
+each of these with the given data and see what happens (and find best
+values for either $k$ or $a$ for the model you conjecture is best.  Note:
+We could ask you to find the ``best-fit'' line for the ``linearized'' data
+like in \#1, but we'll give you a break and just ask for a good eyeball
+estimate here!)).
+
+Now do the same with this data:
+\[
+\begin{array}{|c|c|c|c|c|}\hline
+x & 1 & 2 & 3 & 4 \\ \hline
+y & 8.3 & 443.6 & 24420.8 & 1364278.6 \\ \hline
+\end{array}
+\]
+
+Now do the same with this data:
+\[
+\begin{array}{|c|c|c|c|c|c|}\hline
+x & 1 & 2 & 3 & 4 & 5 \\ \hline
+y & 7 & 62 & 220 & 506 & 1012 \\ \hline 
+\end{array}
+\]
+\end{prob}
+
+\begin{prob}
+Although not all data are modeled by polynomials, because of their
+easy function evaluations (place value, all K-8 arithmetic!) and
+smoothness of graphs, polynomials are often a universal go-to model
+for data (we try to fit a polynomial that contains all the data
+points).  As was noted in Polly Nomial \#3, there are a couple of ways
+to do this, at least one of which you'll do in a future activity.
+
+Note: sometimes, finding ``best-fit'' curves can be done by a graphing
+calculator (On the TI-83 and its kin, go to STATS, enter your
+(2-variable) data into EDIT, and go to CALC (where you'll find LinReg,
+CubicReg (cubic polynomial), ExpReg , etc.)  Of course, the
+graphing calculator will blindly give you the ``best-fit'' curve of
+all ilk's.  It still takes, as illustrated above, a human mind to
+figure out which, if any, best fit the given data.for purposes of
+prediction.
+\end{prob}

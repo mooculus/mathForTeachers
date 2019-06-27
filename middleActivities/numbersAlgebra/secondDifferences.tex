@@ -1,0 +1,114 @@
+\newpage
+\section{Second Differences}\label{A:secondDifferences}
+In a previous activity, we developed strategies for finding the sum of arithmetic series.  In this activity, we use arithmetic series to develop a formula for a sequence that has constant second differences.  Then we demonstrate that all quadratic sequences have constant second differences.  
+
+\begin{prob}
+Consider the sequence $f(n)$ given in the table below.  In the rightmost column, $\Delta$ (``delta'') means difference, computed by subtracting the current value of $f(n)$ from the next.  
+\vspace{0.1in} 
+\[{\renewcommand{\arraystretch}{1.6}
+\begin{tabular}{|c|c|c|}\hline
+$n$ & $f(n)$ & $\Delta$ \\ \hline
+   0     &  \cellcolor{lightgray}4  &  \cellcolor{lightgray}3  \\ \hline
+   1     &  7 &   \cellcolor{lightgray}3 \\ \hline
+   2     &  10 &  \cellcolor{lightgray}3  \\ \hline
+   3     &  13 &  \cellcolor{lightgray}3  \\ \hline
+   4     &  16 &  \cellcolor{lightgray}3   \\ \hline
+   5     &  19 &    \\ \hline
+\rule[5mm]{12mm}{0mm}  &  \rule[5mm]{12mm}{0mm} &\rule[5mm]{12mm}{0mm}    \\ \hline
+\end{tabular}}
+\]
+\vspace{0.1in} 
+\begin{enumerate}
+\item Explain how $f(5)$ can be computed from the shaded cells in the table.  
+\item Generalize your method to develop and explain a formula for $f(n)$.  
+\item What was it about the differences that made this problem easy?  
+\end{enumerate}
+\end{prob}
+
+\newpage
+
+\begin{prob}
+Consider the sequence $g(n)$ given in the table below.  
+\vspace{0.1in} 
+\[{\renewcommand{\arraystretch}{1.6}
+\begin{tabular}{|c|c|c|c|}\hline
+$n$ & $g(n)$ & $\Delta$ & $\Delta\Delta$ \\ \hline
+   0     &  \cellcolor{lightgray}1  &  \cellcolor{lightgray}  & \\ \hline
+   1     &  $-2$ &  \cellcolor{lightgray} & \\ \hline
+   2     &  1 &  \cellcolor{lightgray}  & \\ \hline
+   3     &  10 &  \cellcolor{lightgray} &  \\ \hline
+   4     &  25 & \cellcolor{lightgray}  &  \\ \hline
+   5     &  46 &   &  \\ \hline
+   6     &  73 &   &  \\ \hline
+\rule[5mm]{12mm}{0mm}  &  \rule[5mm]{12mm}{0mm} &\rule[5mm]{12mm}{0mm}  &\rule[5mm]{12mm}{0mm}   \\ \hline
+\end{tabular}}
+\]
+\vspace{0.1in} 
+\begin{enumerate}
+\item Compute $\Delta$ by subtracting the current value of $g(n)$ from the next.  
+\item Explain the formula $\Delta(n) = g(n+1)-g(n)$.
+\item Check that the shaded cells sum to $g(5)$, and explain how that makes sense based upon how the $\Delta$ values were calculated.  \item Because the $\Delta$ values (``first differences'') are not constant, use the $\Delta\Delta$ column to compute the ``differences of the differences'' (also called ``second differences'').  
+\item From the fact that the second differences are constant, develop an explicit formula for $\Delta$ in terms of $n$.  
+\end{enumerate}
+\end{prob}
+
+\newpage
+
+\begin{prob}
+The same sequence $g(n)$ is given below, this time with a formula for $\Delta$ in terms of $n$.    
+\vspace{0.1in} 
+\[{\renewcommand{\arraystretch}{1.6}
+\begin{tabular}{|c|c|c|}\hline
+$n$ & $g(n)$ & $\Delta(n)=6n-3$  \\ \hline
+   0     &   \cellcolor{lightgray}1  &   \cellcolor{lightgray}$-3$  \\ \hline
+   1     &  $-2$ &  \cellcolor{lightgray}3   \\ \hline
+   2     &  1 &    \cellcolor{lightgray}9  \\ \hline
+   3     &  10 &  \cellcolor{lightgray}15    \\ \hline
+   4     &  25 &   \cellcolor{lightgray}21   \\ \hline
+   5     &  46 &  27   \\ \hline
+   6     &  73 &     \\ \hline
+\rule[5mm]{12mm}{0mm}  &  \rule[5mm]{12mm}{0mm} &\rule[5mm]{12mm}{0mm}    \\ \hline
+\end{tabular}}
+\]
+\vspace{0.1in} 
+\begin{enumerate}
+\item Explain each of the following steps:    
+\begin{align*}
+g(5) &= 1 + \Delta(0) + \Delta(1) + \Delta(2) + \Delta(3) + \Delta(4)  \\
+        &= 1 + (6\cdot 0 -3) + (6\cdot1 -3) + (6\cdot2 -3) + (6\cdot3 -3) + (6\cdot4 -3) \\
+        & = 1 + 6\cdot( 0 + 1 + 2 + 3 + 4) + (-3 + -3 + -3 + -3 + -3) \\
+        & = 1 + 6\cdot\frac{5\cdot 4}{2} + 5\cdot (-3)
+\end{align*}
+\item Where do you see arithmetic series in the calculations you just explained?  
+\item Generalize the above approach to yield an expression for $g(n)$.  
+\item What kind of sequence is $g(n)$?  
+\end{enumerate}
+
+\end{prob}
+
+\newpage
+
+\begin{prob}
+A general quadratic sequence $h(n)$ is given below.    
+\vspace{0.1in} 
+\[{\renewcommand{\arraystretch}{1.6}
+\begin{tabular}{|c|c|c|c|}\hline
+$n$ & $h(n)=an^2+bn+c$ & $\Delta$ & $\Delta\Delta$ \\ \hline
+   0     &    &    & \\ \hline
+   1     &   &   & \\ \hline
+   2     &   &    & \\ \hline
+   3     &   &   &  \\ \hline
+\rule[5mm]{12mm}{0mm}  &  \rule[5mm]{12mm}{0mm} &\rule[5mm]{30mm}{0mm}  &\rule[5mm]{30mm}{0mm}   \\ \hline
+\end{tabular}}
+\]
+\vspace{0.1in} 
+\begin{enumerate}
+\item Compute the values of $h(n)$.  
+\item Compute $\Delta$ by subtracting the next value of $h(n)$ from the current.  
+\item Use the $\Delta\Delta$ column to compute the second differences.  
+\item Generalize the result for first differences by computing $\Delta(n)=h(n+1)-h(n)$.
+\item Generalize the result for second differences by computing $\Delta\Delta(n)=\Delta(n+1)-\Delta(n)$.
+\item Explain how your work demonstrates that, for any quadratic sequence, the second differences must be constant.  
+\end{enumerate}
+\end{prob}
+

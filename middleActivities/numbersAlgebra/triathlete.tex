@@ -1,0 +1,76 @@
+\newpage
+\section{The Triathlete}\label{A:Triathlete}
+
+\begin{prob} 
+On Friday afternoon, just as Laine got off the bus, she realized that she had left her bicycle at school.  In order to have her bicycle at home for the weekend, she decided to run to school and then ride her bike back home.  If she averaged 6 mph running and 12 mph on her bike, what was her average speed for the round trip?  Explain your reasoning. 
+\end{prob}
+
+\begin{teachingnote}
+A key idea here is that the average speed is independent of the distance.  Here are several ways that students can solve it: 
+\begin{itemize}
+\item Pick a distance, say 12 miles.  Then running to school will take 2 hours, and biking back home will take 1 hour.  That's a total of 24 miles in 3 hours, or an average of 8 mph.  
+\item Let the distance be $d$.  Then running to school will take $\frac{d}{6}$ hours, and biking back home will take $\frac{d}{12}$ hours.  The total distance is $2d$.  So the average rate is 
+
+$$\frac{2d}{\frac{d}{6}+\frac{d}{12}}=\frac{2}{\frac{1}{6}+\frac{1}{12}}=\frac{2}{\frac{3}{12}}=\frac{2}{\frac{1}{4}}=8 \text{ mph}$$
+Notice that the $d$ factors out of both the numerator and the denominator (and hence cancels), which shows that the average speed is independent of the distance.  
+
+Notice also that this calculation can be expressed as a different kind of average:  $$\frac{\frac{1}{6}+\frac{1}{12}}{2}=\frac{1}{8}$$
+This average is called the \emph{harmonic mean}.  Specifically, 8 is the harmonic mean of 6 and 12 because it is the reciprocal of the average of their reciprocals.  (Math 1165 students do not need to know this language.)
+\item Sometimes is helpful to think of speed as ``time per distance,'' which is the reciprocal of ``distance per time.''  In this problem, we can reason that Lanie runs a ``ten-minute mile" as follows:  Her speed of 6 mph would be $\frac{1}{6}$ hour/mile, which is the same as 10 min/mile.  Similarly, she bikes at 5 min/mile.  With this insight, we can cut the distance between home and school into 1-mile pieces and reason that she will take 10 minutes to run each mile and 5 minutes to bike the same mile on the way home.  That would be 15 minutes for both directions (2 miles), for an average speed of 7.5 min/mile, which is the same as 8 mph.  
+\item Another way of thinking about these kinds of problems is as weighted averages.  For example, because the distances are the same, Laine will spend twice as much time running (i.e., at half the speed) as she spends on her bike.  Thus, we can weight the 6 mph running speed twice and the 12 mph biking speed just once, as follows:  
+$$\textrm{Average speed }= \frac{2\cdot6 + 12}{3} = 8.$$
+Notice we divide by 3 because that is the sum of the weights.  The same reasoning can work even when the numbers are more challenging.  
+\end{itemize}
+\end{teachingnote}
+
+\begin{prob}
+On Saturday, Laine completed a workout in which she split the time evenly between running and cycling.  If she again averaged 6 mph running and 12 mph on her bike, what was her average speed for the workout?  Explain your reasoning. 
+\end{prob}
+
+\begin{teachingnote}
+Here the naive calculations works:  The average speed is the average of the two speeds, so the answer is $\frac{6+12}{2}=9$ mph.  But we should be clear why this works.  Here are two approaches: 
+\begin{itemize}
+\item Pick a time, say 1 hour, to spend on each activity.  Lanie will run 6 miles in 1 hour and will bike 12 miles in 1 hour.  That will be 18 miles in 2 hours, or an average of 9 mph.  This will work, of course, for every hour of activity, which suggests that the result is independent of time.  
+\item Algebra:  Let the $t$ represent the time spent on each activity.  The distance running will be $6t$, the distance biking will be $12t$, and the total time will be $2t$.  So the average speed will be $$\frac{6t+12t}{2t}=\frac{18t}{2t}=9 \text{ mph.}$$  
+Notice the common factor of $t$ cancels, which shows that the average speed is independent of the time.  
+\end{itemize}
+\end{teachingnote}
+
+\begin{prob}
+Why was her average speed on Saturday different from her average speed on Friday?  Can you reason, without computation, which average speed should be faster?  
+\end{prob}
+
+\begin{teachingnote}
+One approach:  When the times are the same, the average will be midway between the two speeds.  When the distances are the same, in contrast, she will spend more time traveling at the slower speed than at the faster speed, so the average will be closer to the slower speed, which implies that the same-distance average is slower than the same-time average.  
+\end{teachingnote}
+
+\begin{prob} On Sunday, Laine's workout included swimming.  Assuming that she can swim at an average speed of 2 mph, describe two running-cycling-swimming workouts, one similar to Friday's scenario (same distance) and a second similar to Saturday's (same time).  Compute the average speed for each and explain your reasoning.  
+\end{prob}
+
+\begin{teachingnote}
+Same distance (a la Friday):  
+
+$$\text{Average speed } = \frac{3d}{\frac{d}{2}+\frac{d}{6}+\frac{d}{12}}=\frac{3}{\frac{1}{2}+\frac{1}{6}+\frac{1}{12}}=\frac{3}{\frac{9}{12}}=\frac{3}{\frac{3}{4}}=4  \text{ mph.}$$
+
+Same time (a la Saturday):  $$\text{Average speed } = \frac{2t+6t+12t}{3t}=\frac{20t}{3t}=6\frac{1}{3} \text{ mph.}$$
+\end{teachingnote}
+
+\begin{prob}
+Which of the workout scenarios (same distance or same time) most closely resembles an actual triathlon?  Why do you think that is the case?
+\end{prob}
+
+\begin{teachingnote}
+In actual triathlons, the running distances are much shorter than the biking distances, and the swimming distances are much shorter still.  It would not be reasonable to swim any reasonable biking distance.  So the ``same time'' scenario is closer.  But in reality, the swimming times are quite a bit shorter than the running and biking times.  
+\end{teachingnote}
+
+\begin{prob}
+After two months of intense training, Laine is able to average $s$ mph swimming, $r$ mph running, and $c$ mph cycling.  Again describe two running-cycling-swimming workouts, one similar to each of the two original scenarios, and compute her average speeds.     
+\end{prob}
+
+\begin{teachingnote}
+Same distance (a la Friday):  
+
+$$\text{Average speed } = \frac{3d}{\frac{d}{s}+\frac{d}{r}+\frac{d}{c}}=\frac{3}{\frac{1}{s}+\frac{1}{r}+\frac{1}{c}}$$
+
+Same time (a la Saturday):  $$\text{Average speed } = \frac{st+rt+ct}{3t}=\frac{(s+r+c)t}{3t}=\frac{s+r+c}{3}$$
+\end{teachingnote}

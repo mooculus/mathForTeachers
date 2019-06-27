@@ -1,0 +1,107 @@
+\newpage
+\section{Sieving It All Out}\label{A:Sieve}
+
+\begin{prob} 
+Try to find all the primes from $1$ to $120$ \textit{without}
+doing any division.  Try to circle numbers that are prime and 
+cross out numbers that are not prime.  
+As a gesture of friendship, here are the numbers from $1$ to $120$.
+\[
+\begin{tabular}{r r r r r r r r r r}
+
+  1 &   2 &   3 &   4 &   5 &   6 &   7 &   8 &   9 &  10\\
+  \\
+ 11 &  12 &  13 &  14 &  15 &  16 &  17 &  18 &  19 &  20\\
+ \\
+ 21 &  22 &  23 &  24 &  25 &  26 &  27 &  28 &  29 &  30\\
+ \\
+ 31 &  32 &  33 &  34 &  35 &  36 &  37 &  38 &  39 &  40\\
+ \\
+ 41 &  42 &  43 &  44 &  45 &  46 &  47 &  48 &  49 &  50\\
+ \\
+ 51 &  52 &  53 &  54 &  55 &  56 &  57 &  58 &  59 &  60\\
+ \\
+ 61 &  62 &  63 &  64 &  65 &  66 &  67 &  68 &  69 &  70\\
+ \\
+ 71 &  72 &  73 &  74 &  75 &  76 &  77 &  78 &  79 &  80\\
+ \\
+ 81 &  82 &  83 &  84 &  85 &  86 &  87 &  88 &  89 &  90\\
+ \\
+ 91 &  92 &  93 &  94 &  95 &  96 &  97 &  98 &  99 & 100\\
+ \\
+101 & 102 & 103 & 104 & 105 & 106 & 107 & 108 & 109 & 110\\
+\\
+111 & 112 & 113 & 114 & 115 & 116 & 117 & 118 & 119 & 120\\
+\end{tabular}
+\]
+
+Describe your method.  
+\end{prob}
+
+\newpage
+
+\begin{prob}
+Now let's be systematic.  Ignore 1 (we'll talk about why later).   
+As you identify a prime, first circle it, then cross out its multiples that are not already crossed out.  
+Keep track of your work so that you can answer the following questions:  
+\begin{enumerate}
+\item After circling a new prime, note the first number crossed out with that prime.  Record your results in a table.
+\marginfigure{%\footnotesize\sffamily
+{\renewcommand{\arraystretch}{1.4}
+\begin{tabular}{c|c}
+        prime    & first \# crossed out \\
+%                     & crossed out   \\
+\hline
+         2       &                      \\
+                 &                      \\
+                 &                      \\
+                 &                      \\
+                 &                      \\
+\end{tabular}
+}}
+\item What was the biggest prime for which you crossed out at least one multiple?
+\end{enumerate}
+
+\begin{teachingnote}
+When being systematic, the first number crossed out should be the square of the circled prime.  (All earlier multiples should have been crossed out because of smaller primes.)  
+
+A quick check for the carefulness of the process is to look at $119 = 7 \times 17$. 
+
+Side note:  When the sieve is done in six columns, we can observe that any prime greater than 3 must be one more or one less than a multiple of 6.
+\end{teachingnote}
+
+\[
+\begin{tabular}{r r r r r r r r r r}
+
+  1 &   2 &   3 &   4 &   5 &   6 &   7 &   8 &   9 &  10\\
+  \\
+ 11 &  12 &  13 &  14 &  15 &  16 &  17 &  18 &  19 &  20\\
+ \\
+ 21 &  22 &  23 &  24 &  25 &  26 &  27 &  28 &  29 &  30\\
+ \\
+ 31 &  32 &  33 &  34 &  35 &  36 &  37 &  38 &  39 &  40\\
+ \\
+ 41 &  42 &  43 &  44 &  45 &  46 &  47 &  48 &  49 &  50\\
+ \\
+ 51 &  52 &  53 &  54 &  55 &  56 &  57 &  58 &  59 &  60\\
+ \\
+ 61 &  62 &  63 &  64 &  65 &  66 &  67 &  68 &  69 &  70\\
+ \\
+ 71 &  72 &  73 &  74 &  75 &  76 &  77 &  78 &  79 &  80\\
+ \\
+ 81 &  82 &  83 &  84 &  85 &  86 &  87 &  88 &  89 &  90\\
+ \\
+ 91 &  92 &  93 &  94 &  95 &  96 &  97 &  98 &  99 & 100\\
+ \\
+101 & 102 & 103 & 104 & 105 & 106 & 107 & 108 & 109 & 110\\
+\\
+111 & 112 & 113 & 114 & 115 & 116 & 117 & 118 & 119 & 120\\
+\end{tabular}
+\]
+\end{prob}
+
+
+%\begin{prob}
+%Find all of the prime factors of 1008. How can you be sure you've
+%found them all?
+%\end{prob}

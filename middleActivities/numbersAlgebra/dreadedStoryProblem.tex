@@ -1,0 +1,96 @@
+\newpage
+\section{The Dreaded Story Problem}\label{A:dreadedStoryProblem}
+
+Let's try our hand at a problem involving ratios.
+
+\begin{teachingnote}
+This problem is challenging.  Naive ``solutions'' are likely to be wrong.  
+\end{teachingnote}
+
+
+\begin{prob}
+On orders from his doctor, every day, Marathon Marty must run from his
+house to a statue of Millard Fillmore and run back home along the same
+path.  So Marty doesn't lollygag, the doctor orders him to average 8
+miles per hour for the round trip.  
+\begin{enumerate}
+\item On Monday, Marty ran into Gabby Gilly on his way
+to the statue and averaged only 6 miles per hour for the trip out to
+the statue.What must Marty do to ensure he's obeyed his doctor's orders? 
+
+
+\begin{teachingnote}
+Here is a sketch of an algebraic solution.  
+
+Identify the following constants and variables:  
+\begin{itemize}
+\item $6 \text{ mph} =$ the rate traveling from home to the statue
+\item $8 \text{ mph} =$ the average rate traveling for the round trip
+\item $x = $ the rate traveling from the statue back home
+\item $d =$ the distance to from home to the statue
+\item $t_1 = $ the time traveling from home to the statue
+\item $t_2 = $ the time traveling from the statue back home
+\end{itemize}
+
+\vspace{0.15in}
+
+There are several relationships among distance, rate, and time.  Write the following equations: 
+\begin{itemize}
+\item Going to the statue:  $d = 6t_1$
+\item Returning from the statue:  $d = xt_2$
+\item For the round trip:  $2d = 8(t_1+t_2)$
+\end{itemize}
+
+%\begin{itemize}
+%\item Going to the statue:  $6=\dfrac{d}{t_1}$
+%\item Returning from the statue:  $x=\dfrac{d}{t_2}$
+%\item For the round trip:  $8=\dfrac{2d}{t_1+t_2}$
+%\end{itemize}
+
+\begin{enumerate}[1.]
+\item Explain each of the above equations.  
+\item Explain how to use these equations to yield the following equation:  
+$$8 = \frac{2d}{\frac{d}{6}+\frac{d}{x}}.$$
+\item Now solve this equation for $x$ to yield $x=12$.  
+\item Explain how the solution shows that the answer is ``independent of the distance.''  (Hint:  What does the phrase in quotes mean?)  
+\item For the following problems, generalize by using an outgoing rate of $r$, and the above equation becomes
+$$8 = \frac{2d}{\frac{d}{r}+\frac{d}{x}}.$$
+\item Solving this equation for $x$ yields $x=\frac{8r}{2r-8}$.  
+\end{enumerate}
+
+\end{teachingnote}
+
+\item On Tuesday, Marty did not see Gilly on his way to the statue and
+averaged 9.23 miles per hour for the trip out to the statue.
+What must Marty do to ensure he's obeyed his doctor's orders?
+\begin{teachingnote}
+$$x=\frac{8\cdot 9.23}{2\cdot 9.23 - 8}\approx 7.06$$
+\end{teachingnote}
+%\item Now assume the doctor orders him to average 6 miles per hour for the round trip.
+%Being fired up, Marty ignores Gilly and averages 8 miles per
+%hour on the way out.  What must Marty do to ensure he's obeyed his
+%doctor's orders?
+\item On Wednesday, Gilly talks so much
+that Marty only averages 4 miles per hour on the way out.  What must
+Marty do to ensure he's obeyed his doctor's orders?
+\begin{teachingnote}
+In this case, the general solution for $x$ is undefined because of division by 0.  Encourage students also to try numbers near 4, such as 4.1, and 4.01, and they will see that the required return speed approaches infinity as $r$ approaches 4 from the right.  One way to think about this is that averaging 4 mph on the way out uses up all of time allotted for an 8 mph round trip, so there is 0 time left for the return.  
+\end{teachingnote}
+
+\item Assuming that Marty, for whatever reason, averages $r$ miles per hour on
+the trip out to the statue. What must Marty do to ensure he's obeyed
+his doctor's orders?
+
+\begin{teachingnote}
+Assuming that the previous result is $x=\frac{8r}{2r-8}$, analyze this to explain the previous results, including the vertical and horizontal asymptotes.
+\end{teachingnote}
+\end{enumerate}
+\end{prob}
+
+
+%
+%Now the doctor orders him to average $n$ miles per hour for the round trip.
+%Assuming that Marty, for whatever reason, averages $m$ miles per hour on
+%the trip out to the statue. What must Marty do to ensure he's obeyed
+%his doctor's orders?
+

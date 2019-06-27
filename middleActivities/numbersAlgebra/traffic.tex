@@ -1,0 +1,67 @@
+\newpage
+\section{On the Road}\label{A:traffic}
+
+
+\begin{prob} 
+Steve likes to drive the city roads. Suppose he is driving down a road
+with three traffic lights. For this activity, we will ignore yellow
+lights, and pretend that lights are either red or green.
+\begin{enumerate}
+\item How many ways could he see one red light and two green lights?
+\item How many ways could he see one green light and two red lights?
+\item How many ways could he see all red lights?
+\end{enumerate}
+\end{prob}
+
+\begin{prob} 
+Now suppose Steve is driving down a road with four traffic lights.
+\begin{enumerate}
+\item How many ways could he see two red light and two green lights?
+\item How many ways could he see one green light and three red lights?
+\item How many ways could he see all green lights?
+\end{enumerate}
+\end{prob}
+
+\begin{prob} 
+In the following chart let $n$ be the number of traffic
+lights and $k$ be  the number of green lights seen. In each square, write the number of ways this number of green lights could be seen while Steve drives down the street.
+\newpage
+
+\begin{teachingnote}
+It is hard for students to see the patterns.  But sheering the table might make it to recognize as Pascal's triangle, and then some students will fill it in rotely rather than spending their intellectual energy on careful, organized counting of the possibilities.  
+
+Don't worry about $n = k = 0$ at this point.  But when $k > n$ the entry clearly should be $0$. 
+\end{teachingnote}
+\[
+\begin{array}{|c|c|c|c|c|c|c|c|}
+    \hline
+          & k=0 & k=1 & k=2 & k=3 & k=4 & k=5 & k = 6\\
+    \hline
+    n=0 &\rule[0mm]{0mm}{7mm}&       &       &       &       &   &   \\
+    \hline
+    n=1 &\rule[0mm]{0mm}{7mm}  &       &       &       &       &   &   \\
+    \hline
+    n=2 & \rule[0mm]{0mm}{7mm} &     &     &       &       &    &  \\
+    \hline
+    n=3 &\rule[0mm]{0mm}{7mm}       &       &       &       &       &   &   \\
+    \hline
+    n=4 & \rule[0mm]{0mm}{7mm}      &       &       &       &       &   &   \\
+    \hline
+    n=5 &\rule[0mm]{0mm}{7mm}       &       &       &       &       &   &   \\
+    \hline
+    n=6 &\rule[0mm]{0mm}{7mm}       &       &       &       &       &   &   \\
+    \hline
+\end{array}
+\]
+Describe any patterns you see in your table and try to explain them in
+terms of traffic lights.
+\begin{teachingnote}
+Let $\binom{n}{k}$ denote the entry in the $n^{th}$ row and $k^{th}$ column.  Then we hope that students will notice patterns such as the following: 
+\begin{itemize}
+\item $\binom{n}{0} = \binom{n}{n} = 1$
+\item $\binom{n}{1} = n$
+\item $\binom{n}{k} = \binom{n}{n-k}$
+\end{itemize}
+They should be able to explain these facts by talking about ``choosing'' lights in particular ways.  
+\end{teachingnote}
+\end{prob}

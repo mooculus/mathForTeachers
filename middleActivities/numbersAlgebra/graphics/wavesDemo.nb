@@ -1,0 +1,179 @@
+(* Content-type: application/mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 7.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       145,          7]
+NotebookDataLength[      6678,        170]
+NotebookOptionsPosition[      6357,        154]
+NotebookOutlinePosition[      6692,        169]
+CellTagsIndexPosition[      6649,        166]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"comb", "=", 
+     RowBox[{"Plot", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"Sin", "[", "x", "]"}], ",", 
+         RowBox[{"Sin", "[", 
+          RowBox[{"x", "*", 
+           RowBox[{"1", "/", "w"}]}], "]"}], ",", "0"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"x", ",", "0", ",", 
+         RowBox[{"3", "*", "2", " ", "Pi"}]}], "}"}], ",", 
+       RowBox[{"Ticks", "\[Rule]", "False"}], ",", 
+       RowBox[{"Axes", "\[Rule]", "False"}], ",", 
+       RowBox[{"PlotStyle", "\[Rule]", 
+        RowBox[{"{", "Black", "}"}]}], ",", 
+       RowBox[{"AspectRatio", "\[Rule]", 
+        RowBox[{"1", "/", "3"}]}]}], "]"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"sum", "=", 
+     RowBox[{"Plot", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"Sin", "[", "x", "]"}], "+", 
+          RowBox[{"Sin", "[", 
+           RowBox[{"x", "*", 
+            RowBox[{"1", "/", "w"}]}], "]"}]}], ",", "0"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"x", ",", "0", ",", 
+         RowBox[{"3", "*", "2", " ", "Pi"}]}], "}"}], ",", 
+       RowBox[{"Ticks", "\[Rule]", "False"}], ",", 
+       RowBox[{"Axes", "\[Rule]", "False"}], ",", 
+       RowBox[{"PlotRange", "\[Rule]", "All"}], ",", 
+       RowBox[{"PlotStyle", "\[Rule]", 
+        RowBox[{"{", "Black", "}"}]}], ",", 
+       RowBox[{"AspectRatio", "\[Rule]", 
+        RowBox[{"1", "/", "3"}]}]}], "]"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"sound", "=", 
+     RowBox[{"Play", "[", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"Sin", "[", 
+         RowBox[{"400", " ", "2", " ", "Pi", " ", "t", "*", 
+          RowBox[{"1", "/", "w"}]}], "]"}], "+", 
+        RowBox[{"Sin", "[", 
+         RowBox[{"400", " ", "2", " ", "Pi", " ", "t"}], "]"}]}], ",", 
+       RowBox[{"{", 
+        RowBox[{"t", ",", "0", ",", "1"}], "}"}]}], "]"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"With", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"comb", "=", "comb"}], ",", 
+        RowBox[{"sum", "=", "sum"}], ",", 
+        RowBox[{"sound", "=", "sound"}]}], "}"}], ",", 
+      RowBox[{"GraphicsGrid", "[", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", "comb", "}"}], ",", 
+         RowBox[{"{", "sum", "}"}], ",", 
+         RowBox[{"{", "sound", "}"}]}], "}"}], "]"}]}], "]"}]}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"w", ",", ".5"}], "}"}], ",", ".1", ",", "1", ",", ".05"}], 
+    "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.465997415116832*^9, 3.465997416373166*^9}, {
+  3.465997447582012*^9, 3.465997587176815*^9}, {3.465997681421702*^9, 
+  3.465997818525549*^9}, {3.46599790109373*^9, 3.465997946539914*^9}, {
+  3.466001572991841*^9, 3.466001597012395*^9}, {3.46600165474951*^9, 
+  3.466001688043731*^9}, {3.46620210733298*^9, 3.466202110970917*^9}, {
+  3.466202152873333*^9, 3.466202158806808*^9}, {3.4662022166906*^9, 
+  3.466202217865474*^9}, {3.466248198945525*^9, 3.466248217970858*^9}}],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`w$$ = 0.677, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`w$$], 0.5}, 0.1, 1}}, Typeset`size$$ = {
+    268., {214., 218.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = True, $CellContext`w$11406$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, "Variables" :> {$CellContext`w$$ = 0.5}, 
+      "ControllerVariables" :> {
+        Hold[$CellContext`w$$, $CellContext`w$11406$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> ($CellContext`comb = Plot[{
+           Sin[$CellContext`x], 
+           Sin[$CellContext`x (1/$CellContext`w$$)], 0}, {$CellContext`x, 0, 
+           3 2 Pi}, Ticks -> False, Axes -> False, PlotStyle -> {Black}, 
+          AspectRatio -> 1/3]; $CellContext`sum = 
+        Plot[{Sin[$CellContext`x] + Sin[$CellContext`x (1/$CellContext`w$$)], 
+           0}, {$CellContext`x, 0, 3 2 Pi}, Ticks -> False, Axes -> False, 
+          PlotRange -> All, PlotStyle -> {Black}, AspectRatio -> 
+          1/3]; $CellContext`sound = 
+        Play[Sin[400 2 Pi $CellContext`t (1/$CellContext`w$$)] + 
+          Sin[400 2 Pi $CellContext`t], {$CellContext`t, 0, 1}]; 
+       GraphicsGrid[{{$CellContext`comb}, {$CellContext`sum}, \
+{$CellContext`sound}}]), 
+      "Specifications" :> {{{$CellContext`w$$, 0.5}, 0.1, 1}}, 
+      "Options" :> {}, "DefaultOptions" :> {}],
+     ImageSizeCache->{313., {258., 263.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{{3.465997532048053*^9, 3.465997550097384*^9}, {
+   3.465997667342055*^9, 3.465997682293517*^9}, {3.465997730183515*^9, 
+   3.465997743059483*^9}, {3.465997778791178*^9, 3.465997819364695*^9}, {
+   3.46599793362921*^9, 3.465997956237939*^9}, 3.46600153279752*^9, {
+   3.466001576370674*^9, 3.46600159806269*^9}, 3.466001658439375*^9, 
+   3.466001688608994*^9, {3.466202082374159*^9, 3.466202112311454*^9}, 
+   3.466202159459943*^9, {3.46620219477802*^9, 3.466202218486925*^9}}]
+}, Open  ]]
+},
+WindowSize->{640, 655},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+FrontEndVersion->"7.0 for Linux x86 (32-bit) (February 25, 2009)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[567, 22, 3091, 78, 231, "Input"],
+Cell[3661, 102, 2680, 49, 538, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)

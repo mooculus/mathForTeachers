@@ -1,0 +1,122 @@
+\newpage
+\section{Suitable Precision in Language and Notation}
+Geometry is about points, lines, and other figures made up of points.  Points can have coordinates, which are numbers, but we save these approaches for later in the course.  
+
+Even without coordinates, geometry involves numbers, especially as measures of lengths, angles, and areas.  
+
+\begin{prob}
+Let $M$ be the midpoint of $\overline{AB}$.   
+\[
+\definecolor{qqqqff}{rgb}{0.,0.,1.}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\clip(-0.5,-0.3) rectangle (5,0.15);
+\draw [line width=0.8pt] (0.,0.)-- (4.,0.);
+%\draw [line width=0.8pt] (2.,0.)-- (1.,0.);
+\draw [fill=qqqqff] (0.,0.) circle (1.2pt);
+\draw[color=qqqqff] (-0.16,-0.17) node {$A$};
+\draw [fill=qqqqff] (4.,0.) circle (1.2pt);
+\draw[color=qqqqff] (4.14,-0.17) node {$B$};
+\draw [fill=qqqqff] (2.,0.) circle (1.2pt);
+\draw[color=qqqqff] (2,-0.20) node {$M$};
+\end{tikzpicture}
+\]
+Which of the following are true?  Explain.
+\begin{enumerate}
+\item $\overline{AB} = \overline{BA}$
+\item $AB = BA$
+\item $\overline{AM} = \overline{MB}$
+\item $AM = MB$
+\end{enumerate}
+\end{prob}
+
+\begin{prob}
+Describe the geometric distinction between a segment and its length.  How are the two usually denoted differently?  
+\end{prob}
+
+\vspace{.8in}
+
+
+\begin{prob}
+Compare $\angle CAB$ and $\angle FDE$ in the figure below.  
+\[
+\definecolor{qqqqff}{rgb}{0.,0.,1.}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\clip(-0.5,-.5) rectangle (14,5.5);
+\draw [line width=0.8pt] (1.,3.5)-- (0.,1.);
+\draw [line width=0.8pt] (0.,1.)-- (3.,2.);
+\draw [line width=0.8pt] (5.,0.)-- (11.,2.);
+\draw [line width=0.8pt] (7.,5.)-- (5.,0.);
+%\draw [fill=qqqqff] (0.,1.) circle (1.2pt);
+\draw[color=qqqqff] (-0.22,0.89) node {$A$};
+%\draw [fill=qqqqff] (3.,2.) circle (1.2pt);
+\draw[color=qqqqff] (3.29,1.9) node {$B$};
+%\draw [fill=qqqqff] (1.,3.5) circle (1.2pt);
+\draw[color=qqqqff] (0.91,3.85) node {$C$};
+%\draw [fill=qqqqff] (5.,0.) circle (1.2pt);
+\draw[color=qqqqff] (4.80,-0.15) node {$D$};
+%\draw [fill=qqqqff] (11.,2.) circle (1.2pt);
+\draw[color=qqqqff] (11.25,1.95) node {$E$};
+%\draw [fill=qqqqff] (7.,5.) circle (1.2pt);
+\draw[color=qqqqff] (6.97,5.35) node {$F$};
+\end{tikzpicture}
+\]
+Which of the following are true?  Explain. 
+\begin{enumerate}
+\item $\angle CAB = \angle BAC$
+\item $\angle CAB = \angle FDE$
+\item $m\angle CAB < m\angle FDE$
+\item $m\angle CAB = m\angle FDE$
+\end{enumerate}
+\end{prob}
+
+
+\begin{prob}
+There are (at least) two ways of thinking about angles.  
+\begin{enumerate}
+\item Use precise language to describe an angle as a set of points.  
+\vspace{.4in}
+\item Use precise language to describe an angle as an amount of turning.  
+\end{enumerate}
+\vspace{.4in}
+\end{prob}
+\begin{teachingnote}
+An angle is the union of two rays with a common endpoint, which is called the vertex of the angle.  The vertex of an angle can also be considered the center of a rotation that would map one ray that the other.  
+\end{teachingnote}
+
+\begin{prob}
+Describe the geometric distinction between an angle and its measure.  How are the two usually denoted differently?  And how do your answers relate to the previous problem?  
+\end{prob}
+\vspace{.8in}
+
+\begin{prob}
+Use your meanings for angles to improve upon the following imprecise statements. 
+
+\vspace{0.15in}
+
+{\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{|>{\centering\arraybackslash}m{4cm}|>{\centering\arraybackslash}m{9.5cm}|>{\centering\arraybackslash}m{4cm}|}\hline
+Statement & Improved Version & Comments \\\hline
+
+\rule{0pt}{1cm}A triangle has $180^\circ$. & & \\ \hline
+
+\rule{0pt}{1cm}A line measures $180^\circ$. & & \\ \hline
+
+\rule{0pt}{1cm}A circle is (or has) $360^\circ$. & & \\ \hline
+ \hline
+\end{tabular}}
+\end{prob}
+
+\begin{teachingnote}
+\begin{itemize}
+\itemsep0em
+\item Let students struggle to figure out what is imprecise about the statements in the problem:  degrees measure angles, not lines, not triangles, not circles. 
+\item The three vertices of the triangle are vertices of the three interior angles to be measured (and then summed).  
+\item As a set of points, a straight angle is a line.  But a line is not a straight angle because an angle requires a vertex.  On a line, any point may be considered the vertex of a straight angle.
+\item For a circle, we need its center, which is the vertex of central angles 
+that can sum to $360^\circ$.  
+\item Define right angle without using degrees: Two lines intersect to form four congruent angles.  Or two congruent angles that form a straight angle.
+\end{itemize}  
+\end{teachingnote}
+
+
+

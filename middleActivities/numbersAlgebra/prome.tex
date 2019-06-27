@@ -1,0 +1,109 @@
+\newpage
+\section{Prome Factorization}\label{A:Prome}
+
+\begin{teachingnote}
+In the course, we first assume Euclid's Lemma and use it to prove the Fundamental Theorem of Arithmetic (FTA).  In this activity, both Euclid's Lemma and the FTA fail.
+
+It might help to begin the class with the following questions:  
+\begin{itemize}
+\item If $7|(ab)$ (where $a$ and $b$ integers), does it follow that $7$ must divide either $a$ or $b$? 
+\item If $14|(ab)$ (where $a$ and $b$ integers), does it follow that $14$ must divide either $a$ or $b$? 
+\end{itemize}
+
+Through discussion, students should decide that the answers are ``yes'' and ``no,'' respectively, and the reason is that 7 is prime but 14 is not.  Some students should realize that, in the second case, the factors of 2 and 7 (of 14) might be ``split'' between $a$ and $b$.  This realization can be stated as Euclid's Lemma:  
+
+\begin{center}
+Suppose $a$ and $b$ are integers and $p$ is prime.  If $p|ab$, then $p|a$ or $p|b$.  
+\end{center}
+
+Students are not be responsible for its name.  At this point, we accept it without proof.  
+
+The purpose of questions 1-4 is to see that this ``new'' number system is very much like the integers:  You can always add, subtract, and multiply, but you cannot necessarily divide.  Students can use their reasoning about integers to explain these facts about the system $3\Z$.  
+
+The purpose of questions 5-7 is to notice that both Euclid's Lemma and Unique Factorization fail in this number system.  Some examples:  
+
+$$36 = 3\times 12 = 6\times 6$$
+$$72 = 3\times 24=6\times 12$$
+\end{teachingnote}
+
+
+Let's consider a crazy set of numbers---all multiples of $3$. Let's
+use the symbol $3\Z$ to denote the set consisting of all multiples of
+$3$. As a gesture of friendship, I have written down the first $100$
+nonnegative integers in $3\Z$:
+
+\[
+\begin{array}{cccccccccc}
+0   & 3   & 6   & 9   & 12  & 15  & 18  & 21  & 24  & 27  \\
+\\
+30  & 33  & 36  & 39  & 42  & 45  & 48  & 51  & 54  & 57  \\
+\\
+60  & 63  & 66  & 69  & 72  & 75  & 78  & 81  & 84  & 87  \\
+\\
+90  & 93  & 96  & 99  & 102 & 105 & 108 & 111 & 114 & 117 \\
+\\
+120 & 123 & 126 & 129 & 132 & 135 & 138 & 141 & 144 & 147 \\
+\\
+150 & 153 & 156 & 159 & 162 & 165 & 168 & 171 & 174 & 177 \\
+\\
+180 & 183 & 186 & 189 & 192 & 195 & 198 & 201 & 204 & 207 \\
+\\
+210 & 213 & 216 & 219 & 222 & 225 & 228 & 231 & 234 & 237 \\
+\\
+240 & 243 & 246 & 249 & 252 & 255 & 258 & 261 & 264 & 267 \\
+\\
+270 & 273 & 276 & 279 & 282 & 285 & 288 & 291 & 294 & 297
+\end{array}
+\]
+
+
+
+\begin{prob}
+Given any two integers in $3\Z$, will their sum be in $3\Z$? Explain
+your reasoning.
+\end{prob}
+
+\begin{prob}
+Given any two integers in $3\Z$, will their difference be in $3\Z$?
+Explain your reasoning.
+\end{prob}
+\begin{teachingnote}
+Yes, but students might need to be reminded that $3\Z$ includes negative integers.  
+\end{teachingnote}
+
+\begin{prob}
+Given any two integers in $3\Z$, will their product be in $3\Z$?
+Explain your reasoning.
+\end{prob}
+
+\begin{prob}
+Given any two integers in $3\Z$, will their quotient be in $3\Z$?
+Explain your reasoning.
+\end{prob}
+
+\begin{definition}
+Call a positive integer \textbf{prome} in $3\Z$ if it cannot be
+expressed as the product of two integers \textit{both} in $3\Z$.
+\end{definition}
+
+As an example, I tell you that $6$ is prome number in $3\Z$. You may
+object because $6 = 2\cdot 3$, but remember---$2$ is not in $3\Z$!
+
+
+\begin{prob}
+List some of the prome numbers less than $297$.  Hint:  What numbers in $3\Z$ \emph{can} be expressed as a product of two integers \emph{both} in $3\Z$?  
+\end{prob}
+
+\begin{prob}
+Can you give some sort of algebraic characterization of prome numbers
+in $3\Z$? 
+\end{prob}
+
+\begin{prob}
+Can you find numbers that factor completely into prome numbers in
+\textit{two} different ways? How many can you find?
+\end{prob}
+
+
+
+

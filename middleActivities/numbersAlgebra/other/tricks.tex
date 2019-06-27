@@ -1,0 +1,218 @@
+\newpage
+\section{Turning Tricks into Techniques}
+
+We will show you three separate \textit{tricks}, which are all quite
+similar. By considering these tricks, we will develop techniques for
+solving problems.
+
+\paragraph{First Trick}\index{paradox!1=0.9@$1 = 0.999\dots$} 
+As we shall see, not only do fractions have problems with multiple
+representations---decimals have their issues too. How is $0.999\dots$
+related to $1$? I claim we have the following paradox: I intend to
+show that
+\[
+0.999\ldots = 1.
+\]  
+To see this, set:
+\[
+x=0.999\dots
+\]
+Now we have:
+\[
+10x =9.999\dots 
+\]
+So we see that 
+\begin{align*}
+10x - x &= (9.999\ldots) -(0.999\ldots) \\
+9x &= 9,
+\end{align*}
+and we are forced to conclude that $x=1$, but we started off with the
+assumption that $x= 0.999\dots$, hence $1 = 0.999\dots$.
+
+This paradox challenges a common implicit (and false) notion that
+every number has exactly one decimal representation. We are forced to
+conclude that $0.999\dots$ and $1$ are representations for the same
+number! To be completely explicit, using a similar method as described
+above we see that
+\begin{align*}
+4.999\dots &= 5,\\
+7.3999\dots &= 7.4,\\
+23.745999\dots &= 23.746,
+\end{align*}
+and so on. Hence numbers can have multiple decimal representations.
+
+
+\paragraph{Second Trick}
+
+Keeping the first trick used above in the back of your mind, consider
+this next similar trick. What is:
+\[
+x = \sqrt{1+\sqrt{1+\sqrt{1+\sqrt{1+\cdots}}}}
+\]
+Now we have:
+\[
+x = \sqrt{1+x} 
+\]
+Squaring both sides we get:
+\[
+x^2 = 1+x.
+\]
+Now putting everything on the left-hand side:
+\[
+x^2-x-1 = 0.
+\]
+By the Quadratic Formula, 
+\[
+x = \frac{1\pm \sqrt{5}}{2},
+\]
+and since we can see that $x> 1$, we must conclude that 
+\[
+x = \frac{1+ \sqrt{5}}{2}.
+\]
+Well this seems like a strange number. Oh well, let's keep on going.
+
+\paragraph{Third Trick}
+Now what about:
+\[
+x =   1 + \frac{1}{\displaystyle 1 
+          + \frac{1}{\displaystyle 1 
+          + \frac{1}{\displaystyle 1 
+       + \frac{1}{\displaystyle 1 + \cdots
+}}}}
+\]
+Again using a similar trick as above,
+\[
+x = 1+ \frac{1}{x}.
+\]
+Multiplying both sides by $x$ we get:
+\[
+x^2 = x + 1.
+\]
+Now putting everything on the left-hand side:
+\[
+x^2-x-1 = 0.
+\]
+By the Quadratic Formula, 
+\[
+x = \frac{1\pm \sqrt{5}}{2},
+\]
+and since we can see that $x> 1$ we must conclude that 
+\[
+x = \frac{1+ \sqrt{5}}{2}.
+\]
+Wait a minute, this says that:
+\[
+\sqrt{1+\sqrt{1+\sqrt{1+\sqrt{1+\cdots}}}} = 
+1 + \frac{1}{\displaystyle 1 
+          + \frac{1}{\displaystyle 1 
+          + \frac{1}{\displaystyle 1 
+       + \frac{1}{\displaystyle 1 + \cdots
+}}}}
+\]
+Wow! Who would have ever thought that?  These two crazy looking
+formulas are equal, and despite the fact that the only number in them
+is a one, they are both equal to the messy number:
+\[
+\frac{1+\sqrt{5}}{2} = 1.6180339887\dots
+\]
+
+So what about the continued fraction:
+\[
+x = 1 + \frac{1}{\displaystyle 2
+          + \frac{1}{\displaystyle 2 
+          + \frac{1}{\displaystyle 2 
+       + \frac{1}{\displaystyle 2 + \cdots
+}}}}
+\]
+Using the technique as above,
+\[
+x = 1+ \frac{1}{1+x}.
+\]
+Multiplying both sides by $1+x$ we get:
+\[
+x+x^2 = (1+x) +1.
+\]
+Now putting all the $x$'s on the left-hand side and all the numbers on the right:
+\[
+x^2 = 2.
+\]
+Ah! So  $x = \sqrt{2}$. Using your calculator, you can see that:
+\[
+\sqrt{2} = 1.4142135623\dots \index{sqrt2@$\sqrt{2}$}
+\]
+This means that:
+\[
+1.4142135623\ldots = 1 + \frac{1}{\displaystyle 2
+          + \frac{1}{\displaystyle 2 
+          + \frac{1}{\displaystyle 2 
+       + \frac{1}{\displaystyle 2 + \cdots
+}}}}
+\]
+Note that on the left-hand side you don't see much of a
+pattern. However, on the right-hand side a clear pattern is
+formed. This is part of the beauty of continued fractions. Now it
+turns out that you can do this with other numbers and and get lots of
+other cool patterns!
+
+
+\item Find the exact value for $x$ when:
+\[
+x = \sqrt{2+\sqrt{2+\sqrt{2+\sqrt{2+\cdots}}}}
+\]
+Explain your work.
+\item Find the exact value for $x$ when:
+\[
+x = \sqrt{6+\sqrt{6+\sqrt{6+\sqrt{6+\cdots}}}}
+\]
+Explain your work.
+\item Find the exact value for $x$ when:
+\[
+x = \sqrt{12+\sqrt{12+\sqrt{12+\sqrt{12+\cdots}}}}
+\]
+Explain your work.
+\item Find the exact value for $x$ when:
+\[
+x = \sqrt{20+\sqrt{20+\sqrt{20+\sqrt{20+\cdots}}}}
+\]
+Explain your work.
+\item Find the exact value for $x$ when:
+\[
+x = \sqrt{30+\sqrt{30+\sqrt{30+\sqrt{30+\cdots}}}}
+\]
+Explain your work.
+\item Find the exact value for $x$ when:
+\[
+  x = 2 + \frac{1}{\displaystyle 4 
+          + \frac{1}{\displaystyle 4
+          + \frac{1}{\displaystyle 4
+          + \frac{1}{\displaystyle 4 +\cdots
+}}}}
+\]
+Explain your work.
+\item Find $x$ when:
+\[
+  x = 4 + \frac{1}{\displaystyle 6
+          + \frac{1}{\displaystyle 6
+          + \frac{1}{\displaystyle 6
+          + \frac{1}{\displaystyle 6 +\cdots
+}}}}
+\]
+Explain your work.
+\item Find the exact value for $x$ when:
+\[
+  x = 4 + \frac{1}{\displaystyle 8 
+          + \frac{1}{\displaystyle 8
+          + \frac{1}{\displaystyle 8
+          + \frac{1}{\displaystyle 8 +\cdots
+}}}}
+\]
+Explain your work.
+\item Find the exact value for $x$ when:
+\[
+  x = 3 + \frac{1}{\displaystyle 10 
+          + \frac{1}{\displaystyle 10
+          + \frac{1}{\displaystyle 10
+          + \frac{1}{\displaystyle 10 +\cdots
+}}}}
+\]
+Explain your work.

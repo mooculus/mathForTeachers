@@ -1,0 +1,72 @@
+\newpage
+\section{Least Squares Approximation}\label{A:leastSquares}
+
+In this activity, we are going to investigate \textit{least
+squares approximation}\index{least squares approximation}.
+
+\begin{prob}
+Consider the following data:
+\{(2,3), (4,5), (6,11)\}
+\[
+\includegraphics{../graphics/complexPlane.pdf}
+\]
+Plot the data and use a ruler to sketch a ``best fit'' line.
+\end{prob}
+
+\begin{prob}
+Now we are going to record some more data in the chart below:
+\begin{enumerate}
+\item  For each data point, use a ruler to measure the vertical distance between the point and the line. Record this in the first empty row of the table below.
+\item For each data point, square the vertical distance. Record this in the second empty row of the table below.
+\end{enumerate}
+\[
+{\renewcommand{\arraystretch}{1.8}
+\renewcommand{\arraycolsep}{3mm}
+\begin{array}{|l||c|c|c|c|}\hline
+\text{Point} & (2,3) & (4,5) & (6,11)  \\ \hline\hline
+\text{Vertical Distance} & & & \\ \hline
+\text{Squares} & & & \\ \hline
+\end{array}}
+\]
+\end{prob}
+
+\begin{prob}
+Add up the squares of the vertical distances. You want this to be as
+small as possible. Compare your sum with that of a friend, or enemy.
+Whoever got the smallest value has the best approximation of the given data.
+\end{prob}
+
+\begin{prob}
+Now find the equation of the line you drew. Write it down and don't
+forget it!
+\end{prob}
+
+So far we've just been ``eye-balling'' our data. Let's roll up our
+sleaves and do some real math.
+
+\begin{prob}
+Suppose that your line is $\l(x) = ax + b$. Give an expression
+representing the sum of squares you get with your data above.
+\end{prob}
+
+\begin{teachingnote}
+Here we're looking for something like:
+\[
+(a\cdot 2+ b -3)^2 + (a\cdot 4+ b -5)^2 + (a\cdot 6+ b -11)^2
+\]
+\end{teachingnote}
+
+\begin{prob}
+Simplfy the expression above. You should now have a quadratic in two
+variables $a$ and $b$. Find the minimum, thinking of this as quadratic equation in $a$ and then thinking of this as a quadratic equation in $b$. 
+\end{prob}
+
+\begin{prob}
+You should now have two equations, and two unknowns---solve!
+\end{prob}
+
+
+\begin{prob}
+Compare your computed formula with the line you guessed---how did you
+do?
+\end{prob}
