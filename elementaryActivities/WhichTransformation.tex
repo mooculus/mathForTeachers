@@ -8,42 +8,50 @@
 \end{abstract}
 \maketitle
 
-\begin{instructorIntro}
 
-The goal of this activity is to have students explore how different transformations interact.  Your discussion should be driven more by student observation than to answer the question.  Up to this point, we have only considered the result of a single transformation.
-
-This activity is a complicated version of this question.  You can skip this activity entirely if you don't have time for it, or replace with a simpler version.
-
-The questions in this activity are a little more open-ended than many we ask.  Encourage the students to come up with their own explicit examples to justify their claims.
-
-Tracing paper can be helpful for students to test their ideas!
-\end{instructorIntro}
 
 This figure shows a zig-zag shape that has been transformed using two different transformations.  The original shape is on the left, and the transformed shape is on the right.
 
-\[
-\includegraphics[height=2.25in]{graphics/transformNoHelp.png}
-\]
+\vskip 0.5in
 
-\begin{problem}
+\begin{center}
+    \begin{tikzpicture}
+        \draw (0,0)--(-1,2)--(2,3)--(-2,3);
+        \draw[cm={cos(60) ,-sin(60) ,sin(60) ,cos(60) ,(3 cm,-1 cm)}] (0,0)--(-1,2)--(2,3)--(-2,3);
+    \end{tikzpicture}
+\end{center}
+\vskip 0.5in
+
+
+\begin{problem} \label{WhichTrans1}
 Is exactly one of the transformations a reflection?  Why or why not?
-\begin{instructorNotes}
-The answer is no because the orientation of the figure hasn't changed.  The students will likely not know this terminology, so you can introduce it if you like.  But, they should be able to describe how one reflection would leave the shape ``flipped over''.
-\end{instructorNotes}
+
 \end{problem}
 
 \begin{problem}
 What is the result when we rotate twice around the same center of rotation? 
-\begin{instructorNotes}
-The result of doing two rotations (of angles measuring $A$ and $B$) is the same as doing one rotation (of angle $A+B$).
-\end{instructorNotes}
+
 \end{problem}
 
 \begin{problem}
 Find the two transformations that were used.
-\begin{instructorNotes}
-The two transformations are a translation and a rotation.  It's easiest to do the translation first (moving the lower-most point of the figures to match up) and then rotate using that point as the center.
-\end{instructorNotes}
+
 \end{problem}
+
+\newpage
+\begin{instructorNotes}
+
+The goal of this activity is to have students explore how different transformations interact.  Overall, we usually aim more to help students develop their ideas about transformations rather than just get to the correct answer.  This activity is a complicated version of this question with very open-ended problems, designed to draw out observations and questions.  There are certainly many simpler versions of this question, which is why we don't necessarily focus on getting the correct answer here.  Instead, we sometimes focus on examples that students generate to justify their claims.  Up to this point in our course, we have defined basic transformations (reflections, rotations, translations), but only considered the result of a single transformation.  We sometimes provide tracing paper for students to use with this activity.
+
+
+\begin{itemize}
+    \item Problem \ref{WhichTrans1} is designed to bring up the idea of orientation.  We would like the students to see that a single reflection has to leave the shape ``flipped over''.  
+    \item The two transformations used to produce the second figure are a translation and a rotation.  Students tend to think it's easiest to do the translation first (moving the lower-most point of the figures to match up) and then to rotate using that point as the center.
+\end{itemize}
+
+
+
+\timing{We use half a class period for this activity.  We give students 5-10 minutes to think about the concepts in the activity with their small groups, then spend 15-20 minutes in whole-class discussion.  If necessary, we give students more time to generate examples of their ideas, and then discuss these examples, but this can stretch the activity to a full class period.}
+\end{instructorNotes}
 
 \end{document}

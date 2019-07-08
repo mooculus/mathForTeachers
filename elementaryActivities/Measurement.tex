@@ -1,4 +1,4 @@
-\documentclass[handout]{ximera}
+\documentclass{ximera}
 \input{preamble}
 
 \title{Measurement}
@@ -9,58 +9,76 @@
 \end{abstract}
 \maketitle
 
-\begin{instructorIntro}
-This activity is intended to remind students that even though we most often use a square unit for measuring area (and, by extension, a cubic unit for measuring volume), this is not necessary.
 
-\timing{About 10-15 minutes in groups, followed by 15-20 minutes of discussion.}
 
-\end{instructorIntro}
-
-\begin{problem}
+\begin{problem} \label{Measurement1}
 
 Measure a 1-D aspect of your desk using an object you have in your backpack.  Explain your procedure and why your answer makes sense.  
 
-\begin{instructorIntro}
-This problem introduces the idea of measuring length.  The focus here is on the procedure, rather than the particular unit.  Students should be asked to share their results and discuss how they can know whose length is the greatest.
-\end{instructorIntro}
+
 \end{problem}
 
 
-\begin{problem}
-Now consider this ``unit" of area:
- \[
-\includegraphics[scale=0.55]{graphics/measurement-2.pdf}
-\]
+\begin{problem} \label{Measurement2}
+Now consider this ``unit" of area.  (The unit is the shaded part of the drawing, not the entire grid.)
+
+\begin{center}
+    \begin{tikzpicture}[scale=0.5]
+        \draw [step=1, help lines] (0,0) grid (4,4);
+        \draw[fill=black] (1,1)--(2,1)--(2,2)--(3,2)--(3,3)--(1,3)--(1,1);
+    \end{tikzpicture}
+\end{center}
 Explain how to measure the three shapes below using this unit of area.
 
-\[
-\includegraphics[scale=0.55]{graphics/measurement-1.pdf}
-\]
 
-
-\begin{instructorNotes}
-    On this question and the next, students might think about the question in various ways.  They can be a little unsure whether they are allowed to break up the unit into smaller pieces - you might ask whether they can do this with our usual units.  Some students count square units and divide by three to find the area, while others try to count copies of the unit inside the given shape.  You should discuss both of these solutions, and why they both give us the correct area.
-    
-    Some students will be confused as to whether they should write ``units'' or ``square units''.  This is a good time to start this discussion with students - the unit in this case measures area, so we can just say ``units''.  A ``square unit'' is a special kind of area unit, and we sometimes abbreviate this as ``sq. un.'' or ``un$^2$'', though we prefer the first notation over the second.
-\end{instructorNotes}
+\begin{center}
+    \begin{tikzpicture}[scale=0.5]
+        \draw [step=1, help lines] (0,0) grid (21,6);
+        \draw[fill=red] (2,2)--(6,2)--(6,3)--(5,3)--(5,4)--(1,4)--(1,3)--(2,3)--(2,2);
+        \node at (0.5, 5.5) {$A$};
+        \draw[fill=yellow] (9,2)--(13,2)--(13,5)--(9,5)--(9,2);
+        \node at (8.5, 5.5) {$B$};
+        \draw[fill=blue] (18,1)--(19,1)--(19,3)--(20,3)--(20,4)--(19,4)--(19,5)--(18,5)--(18,4)--(16,4)--(16,3)--(18,3)--(18,1);
+        \node at (17.5, 5.5) {$C$};
+    \end{tikzpicture}
+\end{center}
 \end{problem}
 
-\begin{problem}
+\begin{problem} \label{Measurement3}
 Using our unit of area, measure the area of this circle.
 
-\[
-\includegraphics[scale=0.55]{graphics/measurement-3.pdf}
-\]
+\begin{center}
+    \begin{tikzpicture}[scale=0.5]
+        \draw[step=1, help lines] (0,0) grid (10,10);
+        \draw[ultra thick] (5,5) circle (4cm);
+    \end{tikzpicture}
+\end{center}
 
-\begin{solution}
-    The area is around 17 units.
-\end{solution}
 
-\begin{instructorNotes}
-    Most students do well with this problem by this point in the activity.  The most common methods are to count the total number of squares and divide by three, or to outline as many units as possible, and then try to collect leftover pieces.  Occasionally, students will try other strategies (which are great to discuss) such as measuring the diameter of the circle and using a previously-known formula for area.  These ideas can lead to some pretty interesting discussions!
-    
-    Common questions from students: (1) Can we break up the unit?  You could ask students again: what does it mean to measure with this unusual unit?  What if it were squares instead? (2) Can we use the formula for the area of a circle?  You could ask students: what would that mean in this case, and how would it relate to the unit we're using?
-\end{instructorNotes}
+
+
 
 \end{problem}
+
+\newpage
+
+\begin{instructorNotes}
+This activity is intended to introduce the idea of measuring with a non-standard unit.  We use non-standard units quite a bit in our course, so that students rely less on formulas they have memorized and more on the meaning of area and the procedure of measurement. Both length and area are considered in the activity, though this activity generally falls for us inside a unit about area. No prior experience with non-standard units is required for this activity.  By the time we work through this activity, however, we have discussed the procedure for measuring area in general, and have usually also used some non-standard units.
+\begin{itemize}
+    \item In Problem \ref{Measurement1}, we focus on the procedure, rather than the particular unit.  We ask students to share their results and discuss how they can know whose length is the greatest.
+    \item In Problems \ref{Measurement2} and \ref{Measurement3}, we have seen students think about the question in various ways.  A common question students ask is whether the unit can be broken into smaller pieces.  We see strategies where the students fit the unit into the shapes as well as strategies using counting and division.
+    \item We frequently have some students who report their answer in ``square units''.  We generally take some time in this activity to discuss (or remind students about) the meaning of a square unit. 
+    \item In Problem \ref{Measurement3}, the most common methods we see are to count the total number of squares and divide by three, or to outline as many units as possible, and then try to collect leftover pieces.  Occasionally, students will try  measuring the diameter of the circle and using a previously-known formula for area.  We sometimes bring up this strategy and ask students to evaluate whether it makes sense and whether it gives us the correct answer.
+\end{itemize}
+
+
+
+
+\timing{We take about 10-15 minutes in groups, followed by 15-20 minutes of discussion.}
+
+\end{instructorNotes}
+
+
+
+
 \end{document}
