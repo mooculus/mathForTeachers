@@ -10,32 +10,28 @@
 \end{abstract}
 \maketitle
 
-\begin{instructorIntro}
-This activity was invented to talk more about properties of triangles in the event we have extra time before Exam 1.  So, if you need a catch-up day, feel free to just skip this.
 
-The goals are to talk about properties of triangles and to understand how all other polygons can be made out of triangles.  So, knowing something about triangles actually tells us something about other polygons as well.
-
-The first two problems talk about how we can use the interior angle sum of a triangle to get a formula for the interior angle sum of other polygons.  This might have been discussed in homework, but there are usually some fine points that are nice to talk about as a group.
-
-The next three problems discuss congruence of triangles in a light fashion.  We have a project at the end of the semester detailing this content, so the activity doesn't go very much in depth with this topic.  We are using these as further examples of some of the properties of parallelograms we introduced earlier in the course.
-
-The last two problems are explorations using our tools.  Students should try to do these problems with their protractors and compasses and then try to generalize their results.  Don't worry about introducing the triangle congruence theorems - these are better discussed elsewhere.
-
-You should feel free to choose any of the groupings of problems that seem interesting to you.  This is way too much for one class period.  Some of these things might have come up earlier or may have been assigned as homework.
-
-\end{instructorIntro}
 
 \begin{problem}
 Erika claims, ``I think the number of triangles in a polygon is always two less than the number of sides.  Like, if you have a six-sided figure, then it has four triangles."  The picture on the left shows Erika's work.  However, her classmate Sarah is confused because she has drawn a picture of an octagon with eight triangles in it (the picture on the right). Compare Sarah's idea and Erika's idea: can they both be correct? Why or why not?
-		\[
-		\includegraphics[height=1in]{graphics/hw1-3new.pdf}
-		\]
-		
-		\begin{instructorNotes}
-		One of the main ideas in this problem is that we can't just count up the number of triangles, we actually need to look at which angles are relevant for the interior angle sum of the polygon.
-		
-		Some additional extensions:  It's nice to talk about why there are specifically two fewer triangles than the number of sides, but this argument is pretty tough to make clear for the entire class.  You might also ask whether these strategies are generalizable to polygons with other numbers of sides or polygons which are not convex.  In particular, there are ways to draw the ``two fewer triangles'' that work for every polygon (such as Erika's example) but there are other ways that don't generalize.  You could have students come up with their own examples and discuss this concept.
-		\end{instructorNotes}
+
+		\begin{center}
+		    \begin{tikzpicture}
+		    \draw (0,0)--(3,0)--(4,1)--(3,3)--(1,3)--(-1,2)--(0,0);
+		    \draw[green] (0,0)--(4,1);
+		    \draw[green] (0,0)--(3,3);
+		    \draw[green] (0,0)--(1,3);
+		    \draw (6,0)--(9,0)--(10,1)--(10,2)--(8,3)--(6,3)--(5,2)--(5,1)--(6,0);
+		    \draw[green] (7.5, 1.5)--(6,0);
+		    \draw[green] (7.5, 1.5)--(9,0);
+		    \draw[green] (7.5, 1.5)--(10,1);
+		    \draw[green] (7.5, 1.5)--(10,2);
+		    \draw[green] (7.5, 1.5)--(8,3);
+		    \draw[green] (7.5, 1.5)--(6,3);
+		    \draw[green] (7.5, 1.5)--(5,2);
+		    \draw[green] (7.5, 1.5)--(5,1);
+		    \end{tikzpicture}
+		\end{center}
 \end{problem}
 
 \begin{problem}
@@ -46,10 +42,7 @@ Use what we've discussed about the interior angle sum of a triangle to find a fo
     \item a regular $n$-gon. (What about a non-regular $n$-gon?)
 \end{enumerate}
 
-\begin{instructorNotes}
-This should be a straightforward application of the previous problem.
 
-\end{instructorNotes}
 \end{problem}
 
 \newpage
@@ -60,24 +53,26 @@ What should it mean for two shapes to be ``congruent''?  Be as specific as possi
 
 \begin{problem}
 Using your definition above and the properties we've discussed, explain how you know that the two triangles formed by this parallelogram and its diagonal are congruent.
-\[
-\includegraphics[height=1in]{graphics/parallelogramDiagonal.pdf}
-\]
 
-\begin{instructorNotes}
-Using the definition above, we need to check (using the properties of parallelograms that we discussed, but didn't really prove) that all of the angles are the same and all of the side lengths are the same.  It's appropriate to do this both by cutting/folding/mathcing as well as by reasoning using the properties.
-\end{instructorNotes}
+\begin{center}
+    \begin{tikzpicture}
+        \draw (0,0)--(4,0)--(6,1)--(2,1)--(0,0);
+        \draw (0,0)--(6,1);
+    \end{tikzpicture}
+\end{center}
 \end{problem}
+
+
 
 \begin{problem}
 Assume that drawing the diagonal in this rhombus makes two congruent triangles.  Use this information to show that the rhombus must also be a parallelogram.
-\[
-\includegraphics[height=1.5in]{graphics/rhombus.pdf}
-\]
+\begin{center}
+    \begin{tikzpicture}[scale=0.7]
+        \draw (0,0)--(3,-4)--(6,0)--(3,4)--(0,0);
+    \end{tikzpicture}
+\end{center}
 
-\begin{instructorNotes}
-This is the logical opposite of the previous problem.  Here we assume we have congruent triangles and explain why we get a parallelogram, whereas in the previous problem, we started with a parallelogram and explained why the triangles are congruent.
-\end{instructorNotes}
+
 \end{problem}
 
 \begin{problem}
@@ -87,6 +82,27 @@ How many different triangles can you draw whose side lengths are $2$cm, $3cm$, a
 \begin{problem}
 How many different triangles can you draw whose angle measures are $20\degree$, $40\degree$, and $120\degree$?  You should use your protractor to help you answer this question, and describe how you know you got them all.
 \end{problem}
+
+\newpage
+
+\begin{instructorNotes}
+This activity was invented to illustrate how the properties of triangles affect the properties of other shapes when we decompose other shapes into triangles.
+
+There are generally three groupings of problems here.  We only use this activity as a bringing concepts together review if we don't need a ``catch-up day'' before our first midterm.  So, we generally use this activity by picking one grouping of problems depending on where we feel our students could use the most extra practice.  Also, the full activity assumes that students have already studied parallelism, properties of polygons (including interior angle sum but not including triangle congruence), and constructions with compass, protractor, and ruler.
+
+The first two problems are the first grouping, and they talk about how we can use the interior angle sum of a triangle to get a formula for the interior angle sum of other polygons.  
+
+The second grouping is the next three problems, which discuss congruence of triangles in a light fashion.  We have a project at the end of the semester detailing this content, so this would be the first time our students encounter this content.  For these reasons, the activity doesn't go very much in depth with this topic.  We are using these problems as further examples of some of the properties of parallelograms we introduced earlier in the course, as well as extra practice using our definitions for various quadrilaterals.  We expect students to be able to do these problems on two levels of sophistication: by reasoning using properties, and also by cutting, folding, or matching. 
+
+The last two problems are the third grouping, and they focus on explorations using compass, protractor, and straightedge or ruler.  We intend for students to try to do these problems with their protractors and compasses and then try to generalize their results.  Triangle congruence theorems would not be used here in our course because we would not have discussed them.
+
+
+
+
+\timing{The entire activity would likely take us about 1.5 class periods.  Each problem grouping is enough for about half a class given our typical 5-10 minutes for students to work in groups, and then 15-20 minutes of whole-class discussion.  We have also found many of these problems to be excellent for homework.}
+
+\end{instructorNotes}
+
 
 
 

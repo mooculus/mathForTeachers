@@ -10,9 +10,7 @@
 \maketitle
 
 
-\begin{instructorIntro}
-The idea in this activity is to get the students to see the generalizability of the ``same direction'' definition of parallel lines as opposed to the still-useful (in 2-D) lines that never intersect.  It is much easier to argue with the concept of direction (for both ``angle'' and ``parallel'') in making sense of the Parallel Postulate.  As with vertical angles, transitory arguments may be difficult for some to grasp.
-\end{instructorIntro}
+
 
 
 \begin{question}
@@ -29,9 +27,20 @@ How should we define ``parallel lines'' if the lines are on a flat piece of pape
 
 \begin{problem} \label{Euclid1}
 The converse of the Parallel Postulate says that we can check that two lines are parallel by checking for congruent {\bf corresponding angles} (a and b in the picture below).  Why is this a reasonable assumption? That is, what would happen if angles a and b were not equal?  
-\[
-\includegraphics[width=3in]{graphics/parallelEuclid.pdf}
-\]
+
+\begin{center}
+    \begin{tikzpicture}
+        \draw[domain=0:8] plot (\x, {0.1*\x});
+        \draw[domain=0:8] plot (\x, {0.1*\x + 3});
+        \draw[domain=2:6] plot (\x, {2*\x-6});
+        \node at (4.5, 3.7) {$a$};
+        \node at (2.9, 0.6) {$b$};
+        \node at (5, 3.3) {$c$};
+    \end{tikzpicture}
+\end{center}
+
+
+
 \end{problem}
 
 
@@ -49,8 +58,15 @@ In the figure above, label all of the angles with letters.  Then, make a list (o
 \end{problem}
 
 
+\newpage
 
+\begin{instructorNotes}
+The idea in this activity is to help students to see the generalizability of the ``same direction'' definition of parallel lines as opposed to the still-useful (in 2-D) lines that never intersect.  For us, this activity comes after introducing the Parallel Postulate and before discussing definitions and properties of shapes.
 
+We have found that it is much easier for students to make sense of the angles and parallelism in the Parallel Postulate using the concept of direction rather than the concept of non-intersection.  Also, we have seen some student difficulties with vertical angles to reappear in this context.
+
+\timing{This activity takes us about half a class period.  We give students about 5-10 minutes to think about the problems in their small groups, then discuss for 10-15 minutes as a whole class.}
+\end{instructorNotes}
 
 
 \end{document}
