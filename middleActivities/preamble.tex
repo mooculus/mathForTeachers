@@ -1,99 +1,214 @@
-\usepackage{gensymb}
-\usepackage{tabularx}
-\usepackage{mdframed}
-\usepackage{pdfpages}
-%\usepackage{chngcntr}
+% Below are packages and macros previously used for the Math 1165 and Math 1166 notes.  Most are commented out and included here for convenience should they need to be used again.  
 
-\let\problem\relax
-\let\endproblem\relax
-
-\newcommand{\property}[2]{#1#2}
-
-
-
-
-\newtheoremstyle{SlantTheorem}{\topsep}{\fill}%%% space between body and thm
- {\slshape}                      %%% Thm body font
- {}                              %%% Indent amount (empty = no indent)
- {\bfseries\sffamily}            %%% Thm head font
- {}                              %%% Punctuation after thm head
- {3ex}                           %%% Space after thm head
- {\thmname{#1}\thmnumber{ #2}\thmnote{ \bfseries(#3)}} %%% Thm head spec
-\theoremstyle{SlantTheorem}
-\newtheorem{problem}{Problem}[]
-
-%\counterwithin*{problem}{section}
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%Jenny's code%%%%%%%%%%%%%%%%%%%%
-
-%%% Solution environment
-%\newenvironment{solution}{
-%\ifhandout\setbox0\vbox\bgroup\else
-%\begin{trivlist}\item[\hskip \labelsep\small\itshape\bfseries Solution\hspace{2ex}]
-%\par\noindent\upshape\small
-%\fi}
-%{\ifhandout\egroup\else
-%\end{trivlist}
-%\fi}
+%
+%\RequirePackage{marvosym}
+%\RequirePackage[framemethod=TikZ]{mdframed}
+%\RequirePackage{environ}
+%\RequirePackage{tikz}
+%\RequirePackage{amssymb}
+%\RequirePackage{amsmath}
+%\RequirePackage{mathtools} %% trying to get cases to work in caption
+%\RequirePackage{ntheorem}
+%\RequirePackage{thmtools}
+%\RequirePackage{microtype}
+%\RequirePackage{enumerate}
+%\RequirePackage{rotating}
+%
+%\RequirePackage{pifont}
+%\RequirePackage{bigstrut}
+%\RequirePackage[all,cmtip]{xy}
+%
+%\usepackage{protosem}
+%
+\usepackage{pgfplots}\pgfplotsset{compat=1.7}  % Needed for eclipseTheEllipse
 %
 %
-%%% instructorIntro environment
-%\ifhandout
-%\newenvironment{instructorIntro}[1][false]%
-%{%
-%\def\givenatend{\boolean{#1}}\ifthenelse{\boolean{#1}}{\begin{trivlist}\item}{\setbox0\vbox\bgroup}{}
+\usetikzlibrary{shadows}
+\usetikzlibrary{shapes}
+\usetikzlibrary{decorations}
+\usetikzlibrary{arrows}
+
+\tikzset{>=stealth} %% makes all arrows the same
+%
+%
+%%% Font
+%\RequirePackage[T1]{fontenc}
+%
+%%% New Century Schoolbook
+%%\RequirePackage{fouriernc}
+%
+%
+%\usepackage{array}
+%%\setlength{\extrarowheight}{-.2cm}   % Commented out by Findell to fix table headings.  Was this for typesetting division?  
+%\newdimen\digitwidth
+%\settowidth\digitwidth{9}
+%\def~{\hspace{\digitwidth}}
+%\def\divrule#1#2{
+%\noalign{\moveright#1\digitwidth
+%\vbox{\hrule width#2\digitwidth}}}
+
+
+\usepackage{framed}
+\usepackage{comment}
+
+%\newenvironment{teachingnote}{\begin{framed}\begin{itshape}\begin{bfseries}\noindent Teaching Note:}{\end{bfseries}\end{itshape}\end{framed}}
+
+\newenvironment{teachingnote}{\begin{framed}\noindent \textbf{Teaching Note:}}{\end{framed}}
+\newcommand{\teachingnotes}{With Teaching Notes}
+%\excludecomment{teachingnote}
+%\newcommand{\teachingnotes}{}
+
+\def\fixnote#1{\begin{framed}{\color{red}Fixnote: #1}\end{framed}}  % Allows insertion of red notes about needed edits
+%\def\fixnote#1{}
+
+%%% This set of code is all of our user defined commands
+\newcommand{\bysame}{\mbox{\rule{3em}{.4pt}}\,}
+\newcommand{\N}{\mathbb N}
+%\renewcommand{\C}{\mathbb C}
+\newcommand{\C}{\mathbb C}
+\newcommand{\W}{\mathbb W}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+\newcommand{\A}{\mathbb A}
+\newcommand{\D}{\mathcal D}
+\newcommand{\F}{\mathcal F}
+\newcommand{\ph}{\varphi}
+\newcommand{\ep}{\varepsilon}
+\newcommand{\aph}{\alpha}
+\newcommand{\QM}{\begin{center}{\huge\textbf{?}}\end{center}}
+\renewcommand{\le}{\leqslant}
+\renewcommand{\ge}{\geqslant}
+\renewcommand{\a}{\wedge}
+\renewcommand{\v}{\vee}
+\renewcommand{\l}{\ell}
+\newcommand{\mat}{\mathsf}
+\renewcommand{\vec}{\mathbf}
+\renewcommand{\subset}{\subseteq}
+\renewcommand{\supset}{\supseteq}
+\renewcommand{\emptyset}{\varnothing}
+\newcommand{\xto}{\xrightarrow}
+\renewcommand{\qedsymbol}{$\blacksquare$}
+%\renewcommand{\bibname}{References and Further Reading}
+\renewcommand{\bar}{\protect\overline}
+\renewcommand{\hat}{\protect\widehat}
+\renewcommand{\tilde}{\widetilde}
+\newcommand{\tri}{\triangle}
+\newcommand{\minipad}{\vspace{1ex}}
+\newcommand{\leftexp}[2]{{\vphantom{#2}}^{#1}{#2}}
+
+%% More user defined commands
+\renewcommand{\epsilon}{\varepsilon}
+\renewcommand{\theta}{\vartheta} %% only for kmath
+\renewcommand{\l}{\ell}
+\renewcommand{\d}{\, d}
+\newcommand{\ddx}{\frac{d}{dx}}
+\newcommand{\dydx}{\frac{dy}{dx}}
+
+
+
+%\renewcommand{\footnote}[1]{~(#1)}
+
+%\newenvironment{activitynote}{\begin{framed}\begin{itshape}\begin{bfseries}\noindent Note:}{\end{bfseries}\end{itshape}\end{framed}}
+%\NewEnviron{activitynote}{\marginnote{\BODY}}
+
+
+
+
+%\newcommand{\dd}[1]{\frac{d}{d #1}}
+\def\dd{\@ifnextchar[{\@with}{\@without}}
+\def\@with[#1]#2{\frac{d #1}{d #2}}
+\def\@without#1{\frac{d}{d #1}}
+
+
+%\everymath{\displaystyle}
+
+
+%
+%
+%\usepackage{multicol} % Use letters for lists
+%\renewcommand{\theenumi}{$(\mathrm{\alph{enumi}})$}
+%\renewcommand{\labelenumi}{\theenumi}
+%\setlength{\columnsep}{3em}
+%
+%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% CCSS Macros
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%\renewcommand{\thetable}{\arabic{table}}
+%\def\billcomment#1{\footnote{#1}}
+%\def\marginformat{\centering\footnotesize\sffamily}
+%\let\realcite\cite
+%\def\cite#1{}
+%\def\hyperlink#1#2{#2}
+%\def\standardid#1{}
+%\def\sectionid#1{}
+%\def\anchor#1{}
+%\def\theme#1{}
+%\def\domain#1{}
+%\def\domainid#1{\def\thedomainid{#1}}
+%\def\grade#1{\def\thegradeid{#1}}
+%\def\cluster#1{}
+%\def\standardnumber#1{\def\thestandardnumber{#1}}
+%\def\letter#1{}
+%\def\adv#1{}
+%\def\mod#1{}
+%%\def\text#1{\def\thetext{#1}} % clobbered text - hence moved
+%
+%
+%\definecolor{light}{gray}{.75} 
+%\definecolor{mcgray}{gray}{0.9}
+%\definecolor{magenta}{rgb}{.451,.137,.11}
+%
+%% To move up comments, use the optional marginnote parameter [-3\baselineskip].  But this causes multiple notes to overwrite each other.  
+%
+%\def\standard#1{\textsuperscript{\color{black}\footnotesize{#1}}%
+%\marginnote{\def\text##1{\def\thetext{##1}}\input{../../../CCSS/Standards/#1.tex}\noindent CCSS #1: \thetext}}
+%
+%\def\standardhs#1{\textsuperscript{\color{black}\footnotesize{#1}}%
+%\marginnote{\def\text##1{\def\thetext{##1}}\input{../../../CCSS/Standards/9-12.#1.tex}\noindent CCSS #1: \thetext}}
+%
+%%\def\document#1{} %% Needed to add standards;  Placed in main document
+%
+%\def\clarification#1{}
+%%\def\clarification#1{\emph{#1}}
+%
+%%% \def\practice#1#2{%
+%%% %$^{\mbox{\footnotesize\color{blue}\ding{171}}}$
+%%% \textsuperscript{{\footnotesize#1}}
+%%% \marginpar{%
+%%% \setbox1=\hbox{\parbox{3in}{\textsuperscript{{\footnotesize#1}}
+%%% \sffamily 
+%%% %{\color{blue} \ding{171}} 
+%%% \footnotesize #2 \normalfont}}\box1
+%%% }%
+%%% }
+%
+%\def\marginfigure#1{$^{\mbox{\footnotesize\color{red}\textbullet}}$\marginpar{
+%\setbox1=\hbox{
+%{\footnotesize\color{red}\textbullet}
+%\setbox0=\hbox{#1}\lower0.5\ht0\hbox{#1}
 %}
-%{%
-%\ifthenelse{\givenatend}{\end{trivlist}}{\egroup}{}
-%}
-%\else
-%\newenvironment{instructorIntro}[1][false]%
-%{%
-%  \ifthenelse{\boolean{#1}}{\begin{trivlist}\item[\hskip \labelsep\bfseries Instructor Notes:\hspace{2ex}]}
-%{\begin{trivlist}\item[\hskip \labelsep\bfseries Instructor Notes:\hspace{2ex}]}
-%{}
-%}
-%% %% line at the bottom} 
-%{\end{trivlist}\par\addvspace{.5ex}\nobreak\noindent\hung} 
-%\fi
+%\box1
+%}}
 %
+%%% \def\marginfigurenodot#1{\marginpar{
+%%% \setbox1=\hbox{
+%%%   {\footnotesize\color{red}\textbullet}
+%%%   \setbox0=\hbox{#1}\lower0.5\ht0\hbox{#1}
+%%%   }
+%%% \box1
+%%% }}
 %
-
-
-\let\instructorNotes\relax
-\let\endinstructorNotes\relax
-%%% instructorNotes environment
-\ifhandout
-\newenvironment{instructorNotes}[1][false]%
-{%
-\def\givenatend{\boolean{#1}}\ifthenelse{\boolean{#1}}{\begin{trivlist}\item}{\setbox0\vbox\bgroup}{}
-}
-{%
-\ifthenelse{\givenatend}{\end{trivlist}}{\egroup}{}
-}
-\else
-\newenvironment{instructorNotes}[1][false]%
-{%
-  \ifthenelse{\boolean{#1}}{\begin{trivlist}\item[\hskip \labelsep\bfseries {\Large Instructor Notes: \\} \hspace{\textwidth} ]}
-{\begin{trivlist}\item[\hskip \labelsep\bfseries {\Large Instructor Notes: \\} \hspace{\textwidth} ]}
-{}
-}
-{\end{trivlist}}
-\fi
-
-
-%% Suggested Timing
-\newcommand{\timing}[1]{{\bf Suggested Timing: \hspace{2ex}} #1}
-
-
-
-
-\hypersetup{
-    colorlinks=true,       % false: boxed links; true: colored links
-    linkcolor=blue,          % color of internal links (change box color with linkbordercolor)
-    citecolor=green,        % color of links to bibliography
-    filecolor=magenta,      % color of file links
-    urlcolor=cyan           % color of external links
-}
+%\def\margincomment#1{$^{\mbox{\footnotesize\color{red}\textbullet}}$%
+%\marginpar{%
+%\setbox1=\hbox{\parbox{3in}{\footnotesize {\color{red}\textbullet} \sffamily #1}}\hbox{\box1}
+%}
+%}
