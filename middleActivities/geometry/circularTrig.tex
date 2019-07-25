@@ -1,6 +1,19 @@
-\newpage 
+%\documentclass[handout]{ximera}
+\documentclass{ximera}
 
-\section{Circular Trigonometry}
+\input{../preamble}
+
+\title{Circular Trigonometry}
+\author{Bart Snapp and Brad Findell}
+
+\outcome{Learning outcome goes here.}
+
+\begin{document}
+\begin{abstract}
+Abstract goes here.  
+\end{abstract}
+\maketitle
+
 \begin{teachingnote}
 Need Trigonometry Checkup as preactivity, perhaps with a special office hour.  
 
@@ -14,32 +27,32 @@ A key point here is ``extending the domain of an idea.''  Some things no longer 
 As we have seen, right triangle trigonometry is restricted to acute angles.  But angles are often obtuse, so it is quite useful to extend trigonometry to angles greater than $90^\circ$.  Here is one approach:  Place the angle with the vertex at the origin in the coordinate plane and with one side of the angle (the initial side) along the positive $x$-axis.  
 Measure to the other side of the angle (the terminal side) as a counter-clockwise rotation about the origin.   
 
-\[
-\includegraphics[scale=0.6]{../graphics/referenceTriangle}
-\]
+\begin{image}
+\includegraphics[scale=0.6]{referenceTriangle}
+\end{image}
 
 If we choose a point on the terminal side of this angle, we can draw what is called \emph{reference triangle} by dropping a perpendicular to the $x$-axis.  Then we can use the values of $x$, $y$, and $r$ from this triangle, just as before.  What is different in this picture is that $x$ is negative, as will be the case for any angle with a terminal side in the second quadrant.  
 
 
-\begin{prob}
+\begin{problem}
 Draw a picture and use it to find the following values: 
 \begin{enumerate}
 \item $\sin 135^\circ = $
 \item $\cos 135^\circ =$
 \item $\tan 135^\circ =$
 \end{enumerate}
-\end{prob}
+\end{problem}
 
-\begin{prob}
+\begin{problem}
 Draw a picture and use it to find the following values: 
 \begin{enumerate}
 \item $\sin 150^\circ =$
 \item $\cos 150^\circ =$
 \item $\tan 150^\circ =$
 \end{enumerate}
-\end{prob}
+\end{problem}
 
-\begin{prob}
+\begin{problem}
 For some angles, the reference triangle is not actually a `triangle,' but that's okay.  Draw pictures to demonstrate the following: 
 \begin{enumerate}
 \item $\sin 90^\circ =$
@@ -49,19 +62,22 @@ For some angles, the reference triangle is not actually a `triangle,' but that's
 \item $\cos 180^\circ =$
 \item $\tan 180^\circ =$
 \end{enumerate}
-\end{prob}
+\end{problem}
 
-%\begin{prob}
+%\begin{problem}
 %Now we can find the area of a triangle given two sides and an angle.\standardhs{G-SRT.9}  
-%\end{prob}
+%\end{problem}
 %
 %% Laws of Sines and Cosines \standardhs{G-SRT.10}, \standardhs{G-SRT.11}
 
 Because angles are often about rotation, angles greater than $180^\circ$ can make sense, too.  And negative angles can describe rotation in the opposite direction.  If we consider the angle to change continuously, then rotation about the origin creates a situation that repeats every $360^\circ$.  This repetition provides the foundation for modeling lots of repetitive (periodic) contexts in the real world.  For this modeling, we need \emph{circular trigonometry}, which turns out to be much cleaner if (1) angles are measured not in degrees but in a more ``natural'' unit, called radians; and (2) we use \emph{the unit circle}, which is a circle of radius 1 centered at the origin.   
 
-\begin{prob}
-Below is the unit circle with special angles labeled in degrees, radians, and with coordinates.\standardhs{F-TF.2} 
-$$\includegraphics[scale=0.25]{../graphics/unitCircle}$$
+\begin{problem}
+Below is the unit circle with special angles labeled in degrees, radians, and with coordinates.%\standardhs{F-TF.2} 
+\fixnote{Cite CCSS F-TF.2}
+\begin{image}
+\includegraphics[scale=0.25]{unitCircle.pdf}
+\end{image}
 \begin{enumerate}
 \item Explain what the various numbers mean in this unit circle.  
 \item Use the unit circle to make a table showing (1) angle in degrees, (2) angle in radians, (3) sine of the angle, and (4) cosine of the angle.  
@@ -71,7 +87,7 @@ $$\includegraphics[scale=0.25]{../graphics/unitCircle}$$
 \item Extend your graphs to angles greater than $360^\circ$, and use the unit circle to explain why your extension makes sense. 
 \item Extend your graphs to angles less than $0^\circ$, and use the unit circle to explain why your extension makes sense.
 \end{enumerate}
-\end{prob}
+\end{problem}
 
 %\begin{enumerate}
 %\item Understanding radian measure.\standardhs{G-C.5}, \standardhs{F-TF.1}
@@ -84,4 +100,4 @@ $$\includegraphics[scale=0.25]{../graphics/unitCircle}$$
 %\end{enumerate}
 
 \fixnote{Possibly add an activity with questions about radian measure and modeling with trig functions.}
-
+\end{document}

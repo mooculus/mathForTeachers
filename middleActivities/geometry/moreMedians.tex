@@ -1,12 +1,25 @@
-\newpage
+%\documentclass[handout]{ximera}
+\documentclass{ximera}
 
-\section{More Medians}
+\input{../preamble}
+
+\title{More Medians}
+\author{Bart Snapp and Brad Findell}
+
+\outcome{Learning outcome goes here.}
+
+\begin{document}
+\begin{abstract}
+Abstract goes here.  
+\end{abstract}
+\maketitle
+
 \begin{teachingnote}
 Problem 1 is a good preactivity.  The centroids should all be thirds, but some students will decide they are halves.  
 \end{teachingnote}
 Here we use coordinates to explore several ways of thinking about the medians of triangles.  
 
-\begin{prob}
+\begin{problem}
 For each set of points below, plot the points in the coordinate plane, and use a ruler to draw the triangle.  Locate the midpoint of each side, and use a ruler to draw the medians.   Check that the medians are concurrent, and find the coordinates of the centroid.  
 \begin{enumerate}
 \setlength{\itemsep}{4pt}
@@ -16,15 +29,17 @@ For each set of points below, plot the points in the coordinate plane, and use a
 %\item $J=(11,-2)$, $K=(14,2)$, $L=(10, 4)$.  Centroid: \underline{\hspace{1.5cm}}. 
 \end{enumerate}
 
-$$\includegraphics[width=5in]{../graphics/graphPaper.pdf}$$
+\begin{image}
+\includegraphics[width=5in]{graphPaper.pdf}
+\end{image}
 
-\end{prob}
+\end{problem}
 
-\begin{prob}
+\begin{problem}
 What do you notice about how the coordinates of the centroid depend upon the coordinates of the vertices?  Make a conjecture about the centroid of a triangle with vertices at $(x_1, y_1)$, $(x_2, y_2)$, and $(x_3, y_3)$.  Check that your formula works for all of the triangles above.
-\end{prob}
+\end{problem}
 
-\begin{prob}
+\begin{problem}
 Imagine a triangle made of nearly weightless material with one-pound weights placed at each of the vertices, $A=(x_1, y_1)$, $B=(x_2, y_2)$, and $C=(x_3, y_3)$.  
 \begin{enumerate}
 \item Explain why the triangle will balance on a ruler along the median to side $\overline{AB}$.  
@@ -32,9 +47,9 @@ Imagine a triangle made of nearly weightless material with one-pound weights pla
 \item Now imagine trying to balance the triangle at a single point along the median.  Where will it balance?  Use the phrase ``weighted average'' to explain your reasoning.   
 \item Use weighted-average reasoning to compute the coordinates of this balance point, assuming the vertices are $A=(x_1, y_1)$, $B=(x_2, y_2)$, and $C=(x_3, y_3)$.
 \end{enumerate}
-\end{prob}
+\end{problem}
 
-\begin{prob}
+\begin{problem}
 Consider a triangle with vertices at $A=(x_1, y_1)$, $B=(x_2, y_2)$, and $C=(x_3, y_3)$.  
 \begin{enumerate}
 \item Explain why the equation of the line containing the median from $C$ to the midpoint of $\overline{AB}$ can be written as follows:  
@@ -45,5 +60,6 @@ $$\frac{y-y_3}{x-x_3}=\frac{y_1+y_2-2y_3}{x_1+x_2-2x_3}$$
 \item Have you now proven that the medians are concurrent?  Explain.
 \end{enumerate}
 
-\end{prob}
+\end{problem}
 
+\end{document}

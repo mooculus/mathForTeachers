@@ -1,5 +1,19 @@
-\newpage
-\section{Coordinate Constructions}
+%\documentclass[handout]{ximera}
+\documentclass{ximera}
+
+\input{../preamble}
+
+\title{Coordinate Constructions}
+\author{Bart Snapp and Brad Findell}
+
+\outcome{Learning outcome goes here.}
+
+\begin{document}
+\begin{abstract}
+Abstract goes here.  
+\end{abstract}
+\maketitle
+
 In synthetic geometry, point, line and plane are taken to be undefined terms.  In analytic (coordinate) geometry, in contrast, we make the following definitions.  
 \begin{definition}
 A \emph{point} is an ordered pair $(x,y)$ of real numbers. A \emph{line} is the set of ordered pairs $(x,y)$ that satisfy an equation of the form $ax + by = c$, where $a$, $b$, and $c$ are real numbers and $a$ and $b$ are not both 0.   
@@ -9,27 +23,28 @@ Many of the problems below are expressed generally.  You may find it useful to t
 
 \fixnote{Include some specific examples to help get students started.}
 
-\begin{prob}
+\begin{problem}
 In the above definition of a line in coordinate geometry, why is it important to require that $a$ and $b$ are not both 0?  
-\end{prob}
+\end{problem}
 
-\begin{prob}
+\begin{problem}
 Given points $(x_1, y_1)$ and $(x_2, y_2)$, find the distance between them in the coordinate plane.
-\end{prob}
+\end{problem}
 
-\begin{prob}
+\begin{problem}
 Find the midpoint of the segment from $(x_1, y_1)$ and $(x_2, y_2)$.  Explain why your formula makes sense. 
-\end{prob}
+\end{problem}
 
 \begin{teachingnote}
 Probably out of habit from the slope formula, some students will subtract coordinates to find midpoints.  This is a good place to connect algebraically various ways of finding the midpoint of two values, such as (1) taking half the difference and adding it to the lower number; (2) adding the two numbers and dividing by two. 
 \end{teachingnote}   
 
-\begin{prob}
-Recall that in synthetic geometry, a circle is defined as the set of points that are equidistant from a center.  Use this definition to determine the equation of circle with center $(h, k)$ and radius $r$.\standardhs{G-GPE.1}  
-\end{prob}
+\begin{problem}
+Recall that in synthetic geometry, a circle is defined as the set of points that are equidistant from a center.  Use this definition to determine the equation of circle with center $(h, k)$ and radius $r$.%\standardhs{G-GPE.1}  
+\fixnote{Cite CCSS G-GPE.1.}
+\end{problem}
 
-\begin{prob}
+\begin{problem}
 For each pair of points below, find an equation of the line containing the two points.  
 \begin{enumerate}
 \item Points $(2,3)$ and $(5,7)$.  
@@ -37,13 +52,15 @@ For each pair of points below, find an equation of the line containing the two p
 \item Points $(2,3)$ and $(5,3)$. 
 \item Points $(x_1, y_1)$ and $(x_2, y_2)$.  
 \end{enumerate}
-\end{prob}
+\end{problem}
 
-\begin{prob}
+\begin{problem}
 Express each of your previous equations in the form $ax + by = c$ and also in the form $y = mx + b$.   What are the advantages and disadvantages of these forms?  
-\end{prob}
+\end{problem}
 
-\begin{prob}
-In school mathematics, lines are usually of the form $y = mx + b$.  Why is it unambiguous to talk about \emph{the slope} of such a line?  In other words, given a non-vertical line in the plane, explain why any two points on the line will yield the same slope.\standard{8.EE.6}  
-\end{prob}
+\begin{problem}
+In school mathematics, lines are usually of the form $y = mx + b$.  Why is it unambiguous to talk about \emph{the slope} of such a line?  In other words, given a non-vertical line in the plane, explain why any two points on the line will yield the same slope.%\standard{8.EE.6}  
+\fixnote{Cite CCSS 8.EE.6.}
+\end{problem}
 
+\end{document}
