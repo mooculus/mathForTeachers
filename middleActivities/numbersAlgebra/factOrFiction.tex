@@ -1,9 +1,25 @@
-\newpage
-\section{Pascal's Triangle: Fact or Fiction?}\label{A:factOrFiction}
+%\documentclass[handout]{ximera}
+\documentclass{ximera}
+
+\input{../preamble}
+
+\title{Pascal's Triangle: Fact or Fiction?}
+\author{Bart Snapp and Brad Findell}
+
+\outcome{Learning outcome goes here.}
+
+\begin{document}
+\begin{abstract}
+Abstract goes here.  
+\end{abstract}
+\maketitle
+
+\label{A:factOrFiction}
 
 \begin{teachingnote}
 Connect to previous activity as follows:  Let $\binom{n}{k}$ denote the entry in the $n^{th}$ row and $k^{th}$ column, think of it as choosing $k$ green lights from $n$ lights, and use the shorthand language ``$n$ choose $k$.''  An ultimate goal for this content is that students can explain these patterns in many ways: Pascal's triangle, traffic lights, binomial coefficients, $n$ choose $k$ as an idea, the $n$ choose $k$ formula, pizza toppings, flipping coins, etc.
 \end{teachingnote}
+\begin{problem}
 Consider the numbers $\binom{n}{k}$.  These numbers can be arranged
 into a ``triangle'' form that is popularly called ``Pascal's
 Triangle''.  Assuming that the ``top'' entry is $\binom{0}{0}=1$, we
@@ -20,4 +36,6 @@ the following patterns in the context of relevant models. Here are three pattern
 \item The sum of the entries in each row is $2^n$.
 \item $\binom{n}{k-1} + \binom{n}{k} = \binom{n+1}{k}$.
 \end{enumerate}
+\end{problem}
 
+\end{document}

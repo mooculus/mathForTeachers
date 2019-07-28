@@ -1,5 +1,20 @@
-\newpage
-\section{Why Does It Work?}\label{A:GCDwork}
+%\documentclass[handout]{ximera}
+\documentclass{ximera}
+
+\input{../preamble}
+
+\title{Why Does It Work?}
+\author{Bart Snapp and Brad Findell}
+
+\outcome{Learning outcome goes here.}
+
+\begin{document}
+\begin{abstract}
+Abstract goes here.  
+\end{abstract}
+\maketitle
+
+\label{A:GCDwork}
 
 The Euclidean Algorithm\index{Euclidean Algorithm} is pretty
 neat. Let's see if we can figure out \textbf{why} it works. As a gesture of friendship, I'll compute $\gcd(351,153)$:
@@ -13,52 +28,54 @@ neat. Let's see if we can figure out \textbf{why} it works. As a gesture of frie
 Let's look at this line-by-line.
 
 \paragraph{The First Line}
-\begin{prob}
+\begin{problem}
 Since $351 = 153\cdot 2 + 45$, explain why $\gcd(153,45)$ divides $351$.
-\end{prob}
+\end{problem}
 
-\begin{prob}
+\begin{problem}
 Since $351 = 153\cdot 2 + 45$, explain why $\gcd(351,153)$ divides $45$.
-\end{prob}
+\end{problem}
 
-\begin{prob}
+\begin{problem}
 Since $351 = 153\cdot 2 + 45$, explain why $\gcd(351,153) = \gcd(153,45)$.
-\end{prob}
+\end{problem}
 
 
 \paragraph{The Second Line}
-\begin{prob}
+\begin{problem}
 Since $153 = 45\cdot 3 + 18$, explain why $\gcd(45,18)$ divides $153$.
-\end{prob}
+\end{problem}
 
-\begin{prob}
+\begin{problem}
 Since $153 = 45\cdot 3 + 18$, explain why $\gcd(153,45)$ divides $18$.
-\end{prob}
+\end{problem}
 
-\begin{prob}
+\begin{problem}
 Since $153 = 45\cdot 3 + 18$, explain why $\gcd(153,45) = \gcd(45,18)$.
-\end{prob}
+\end{problem}
 
 
 \paragraph{The Third Line}
-\begin{prob}
+\begin{problem}
 Since $45 = 18\cdot 2 + 9$, explain why $\gcd(18,9)$ divides $45$.
-\end{prob}
+\end{problem}
 
-\begin{prob}
+\begin{problem}
 Since $45 = 18\cdot 2 + 9$, explain why $\gcd(45,18)$ divides $9$.
-\end{prob}
+\end{problem}
 
-\begin{prob}
+\begin{problem}
 Since $45 = 18\cdot 2 + 9$, explain why $\gcd(45,18) = \gcd(18,9)$.
-\end{prob}
+\end{problem}
 
 
 \paragraph{The Final Line}
 
-\begin{prob}
+\begin{problem}
 Why are we done? How do you know that the Euclidean Algorithm
 will \textbf{always} terminate?
-\end{prob}
+\end{problem}
 
 \fixnote{New question:  What does the final line look like when the GCD is 1?}  
+
+\end{document}

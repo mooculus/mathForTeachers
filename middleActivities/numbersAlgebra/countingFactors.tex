@@ -1,5 +1,20 @@
-\newpage
-\section{There Are Many Factors to Consider}\label{A:CF}
+%\documentclass[handout]{ximera}
+\documentclass{ximera}
+
+\input{../preamble}
+
+\title{There Are Many Factors to Consider}
+\author{Bart Snapp and Brad Findell}
+
+\outcome{Learning outcome goes here.}
+
+\begin{document}
+\begin{abstract}
+Abstract goes here.  
+\end{abstract}
+\maketitle
+
+\label{A:CF}
 
 Suppose we want to know how many factors $43,560$ has, but we don't need to list them all.  In this activity we develop a method for computing the number of factors of a number.  
 
@@ -7,15 +22,15 @@ Suppose we want to know how many factors $43,560$ has, but we don't need to list
 Maybe begin by asking student to list all the factors of $43,560$, in hopes that they will feel compelled to find a more efficient strategy.
 \end{teachingnote}
 
-\begin{prob}
+\begin{problem}
 Vic listed the following factors of 80:  1, 2, 4, 5, 8, 10, 20, 40, 80.  What is missing? Describe your method of checking the list.  
 \vspace{0.2in}
 \begin{teachingnote}
 We hope they are organizing the factors in pairs and that they notice the $5$ has no ``partner.''  
 \end{teachingnote}
-\end{prob}
+\end{problem}
 
-\begin{prob} Factors of 60. 
+\begin{problem} Factors of 60. 
 \begin{enumerate}
 \item List the factors of 60. 
 \vspace{0.2in}
@@ -30,9 +45,9 @@ Students are likely to test 1, 2, 3, 4, \dots.  If they list the factors in pair
 Informally, the prime factorization of each factor of $60$ is ``included'' in the prime factorization of $60$.  Since $60=2^2\cdot 3\cdot5$, the factors can use only the primes $2$, $3$, and $5$, and with an exponent less than or equal to its exponent in $60$.  
 \end{teachingnote}
 \end{enumerate}
-\end{prob}
+\end{problem}
 
-\begin{prob}
+\begin{problem}
 Factors of $3^7$.  
 \begin{enumerate}
 \item Is $2$ a factor of $3^7$?  Say how you know. %What about $7$?  What about $6$? 
@@ -47,9 +62,9 @@ Factors of $3^7$.
 Answer: $(n+1)$.
 \end{teachingnote}
 \end{enumerate} 
-\end{prob}
+\end{problem}
 
-\begin{prob} 
+\begin{problem} 
 List all the factors of $3^2\cdot7^3$.  Use your example to reason about the number of factors of $p^nq^m$, where $p$ and $q$ are both prime numbers.  
 \vspace{1.5in}
 \begin{teachingnote}
@@ -59,26 +74,26 @@ A general strategy: Fix the exponent of 3 and list all of the possible exponents
 
 Answer: $(n+1)(m+1)$.
 \end{teachingnote}
-\end{prob}
+\end{problem}
 
-\begin{prob} 
+\begin{problem} 
 List all the factors of $3^2\cdot7^3\cdot11$.  Use your example to reason about the number of factors of $p^nq^mr^s$, where $p$, $q$, and $r$ are all prime numbers.  
 \vspace{1.5in}
 \begin{teachingnote}
 Answer: $(n+1)(m+1)(r+1)$.
 \end{teachingnote}
-\end{prob}
+\end{problem}
 
-\begin{prob}
+\begin{problem}
 How many factors does $43,560$ have?  Use the example of $43,560$ to describe and explain a method for computing the number of factors that a
 number has.
-\end{prob}
+\end{problem}
 \vspace{1.5in}
 
-%\begin{prob} Which integers between $0$ and $100$ have the most factors?         
-%\end{prob}
+%\begin{problem} Which integers between $0$ and $100$ have the most factors?         
+%\end{problem}
 
-%\begin{prob}
+%\begin{problem}
 %Consider the following diagram:
 %\[
 %\includegraphics{../graphics/treeDia.pdf}
@@ -86,4 +101,6 @@ number has.
 %What is going on in this diagram? What do the numbers represent? How
 %does it help you count the number of factors of $2^3\cdot 3^2 \cdot
 %5$?
-%\end{prob}
+%\end{problem}
+
+\end{document}

@@ -1,5 +1,19 @@
-\newpage
-\section{Go Climb a Tree!} 
+%\documentclass[handout]{ximera}
+\documentclass{ximera}
+
+\input{../preamble}
+
+\title{Go Climb a Tree!}
+\author{Bart Snapp and Brad Findell}
+
+\outcome{Learning outcome goes here.}
+
+\begin{document}
+\begin{abstract}
+Abstract goes here.  
+\end{abstract}
+\maketitle
+
 
 %\fixnote{Make this more careful and focused.  Perhaps begin with one and one freethrows in basketball as a reason to draw a tree diagram.  In all problems, we need to assume independence.  In problem 3, best of five games would be enoug.  In problem 5, we mean by guessing.}
 
@@ -8,7 +22,7 @@ using tree diagrams, fraction arithmetic, and counting.
 
 % Removed the following problem because the multiplication connection is not fully made.  Restore if we can find a way. 
 %
-%\begin{prob}
+%\begin{problem}
 %Give a story problem that is modeled by the expression:
 %\[
 %\frac{3}{7} \times \frac{2}{5}
@@ -18,10 +32,12 @@ using tree diagrams, fraction arithmetic, and counting.
 %wholes) and explain why it makes sense that multiplying fractions is
 %the same as multiplying the numerators and multiplying the
 %denominators.
-%\end{prob}
+%\end{problem}
 %
+
 %Removed the following problem because weather events are not independent.  
-%\begin{prob}
+%
+%\begin{problem}
 %The Weather Channel has predicted that there is a 70\% chance of rain today, a 20\% chance of rain tomorrow, and a 40\% chance of rain the day after tomorrow.  Use a tree diagram to help answer the following:
 %\begin{enumerate}
 %\item What is the probability that it will rain today and not rain tomorrow? 
@@ -32,15 +48,15 @@ using tree diagrams, fraction arithmetic, and counting.
 %\item What is the probability it won't rain at all?
 %\item What is the probability it will rain on at least one of the days?
 %\end{enumerate}
-%\end{prob}
+%\end{problem}
 
-\begin{prob}
+\begin{problem}
 Place \textbf{three green} cubes and \textbf{three red} cubes in a bag.  Without looking, draw three cubes, one at a time, \textbf{without replacement}.  
 \begin{enumerate}
 \item Write probabilities in the tree diagram below to organize the possible outcomes and compute their probabilities.  
-\[
-\includegraphics[scale=0.8]{../graphics/tree.pdf}
-\]
+\begin{image}
+\includegraphics[scale=0.8]{tree.pdf}
+\end{image}
 \vspace{.15in}
 \item What is the probability of three reds? 
 \item What is the probability of two reds and a green? 
@@ -50,16 +66,16 @@ Place \textbf{three green} cubes and \textbf{three red} cubes in a bag.  Without
 \item If the first cube is red, what is the probability that the second cube is red? 
 \item What is the probability that the second cube is red?  
 \end{enumerate}
-\end{prob}
+\end{problem}
 
 \newpage
-\begin{prob}
+\begin{problem}
 Place \textbf{three green} cubes and \textbf{three red cubes} in a bag.  Without looking, draw three cubes, one at a time, \textbf{this time with replacement}.  
 \begin{enumerate}
 \item Write probabilities in the tree diagram below to organize the possible outcomes and compute their probabilities.  
-\[
-\includegraphics[scale=0.8]{../graphics/tree.pdf}
-\]
+\begin{image}
+\includegraphics[scale=0.8]{tree.pdf}
+\end{image}
 \vspace{.15in}
 \item What is the probability of three reds? 
 \item What is the probability of two reds and a green? 
@@ -70,16 +86,16 @@ Place \textbf{three green} cubes and \textbf{three red cubes} in a bag.  Without
 \item What is the probability that the second cube is red?  
 \item Use the words "dependent" and "independent" to contrast the probability that the second cube is red in this and the previous scenario.  
 \end{enumerate}
-\end{prob}
+\end{problem}
 
 \newpage
-\begin{prob}
+\begin{problem}
 This time, place \textbf{two green} cubes and \textbf{three red} cubes in a bag.  Without looking, draw three cubes, one at a time, \textbf{again with replacement}.  
 \begin{enumerate}
 \item Write probabilities in the tree diagram below to organize the possible outcomes and compute their probabilities.  
-\[
-\includegraphics[scale=0.8]{../graphics/tree.pdf}
-\]
+\begin{image}
+\includegraphics[scale=0.8]{tree.pdf}
+\end{image}
 \vspace{.15in}
 \item What is the probability of three reds? 
 \item What is the probability of two reds and a green? 
@@ -91,11 +107,11 @@ This time, place \textbf{two green} cubes and \textbf{three red} cubes in a bag.
 \item Is the probability that the second cube is red independent of the outcome of the first cube?  Explain. 
 \item In the previous scenario, some outcomes are equally likely.  Is that true here?  Why or why not? 
 \end{enumerate}
-\end{prob}
+\end{problem}
 
 \newpage
 
-\begin{prob}
+\begin{problem}
 Suppose the Indians and the Yankees are to face each other in a best-of-three series.  Suppose the probability that the Indians will win any game is 60\%, and suppose the outcomes of the games are independent of one another.  
 \begin{enumerate}
 \item Draw a tree diagram for the series.  
@@ -103,10 +119,10 @@ Suppose the Indians and the Yankees are to face each other in a best-of-three se
 \item What is the probability that the Indians win the series in exactly 3 games?
 \item What is the probability that the Indians win the series?
 \end{enumerate}
-\end{prob}
+\end{problem}
 
 
-\begin{prob} 
+\begin{problem} 
 Fred the Slob has an unreliable car that starts only 60\% of the days.
 If the car doesn't start, poor Fred must walk the one block to work.
 This week, he is slated to work 5 days (Monday through Friday).  
@@ -116,16 +132,15 @@ and drive the other days?
 \item What is the probability that Fred will drive on exactly 4 of the days? 
 \item What is the probability that poor Fred will have to walk on at least two of the days?
 \end{enumerate}
-\end{prob}
+\end{problem}
 
 
 
-
-
-
-%\begin{prob}
+%\begin{problem}
 %Use the techniques of this activity (i.e., using a special case and
 %fraction arithmetic to help investigate a more general case) to find
 %the probability of passing a 10-question true/false test by guessing if you
 %must get 70\% or more correct to pass.
-%\end{prob}
+%\end{problem}
+
+\end{document}

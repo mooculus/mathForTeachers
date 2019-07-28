@@ -1,7 +1,22 @@
-\newpage
-\section{Sieving It All Out}\label{A:Sieve}
+%\documentclass[handout]{ximera}
+\documentclass{ximera}
 
-\begin{prob} 
+\input{../preamble}
+
+\title{Sieving It All Out}
+\author{Bart Snapp and Brad Findell}
+
+\outcome{Learning outcome goes here.}
+
+\begin{document}
+\begin{abstract}
+Abstract goes here.  
+\end{abstract}
+\maketitle
+
+\label{A:Sieve}
+
+\begin{problem} 
 Try to find all the primes from $1$ to $120$ \textit{without}
 doing any division.  Try to circle numbers that are prime and 
 cross out numbers that are not prime.  
@@ -36,17 +51,18 @@ As a gesture of friendship, here are the numbers from $1$ to $120$.
 \]
 
 Describe your method.  
-\end{prob}
+\end{problem}
 
 \newpage
 
-\begin{prob}
+\begin{problem}
 Now let's be systematic.  Ignore 1 (we'll talk about why later).   
 As you identify a prime, first circle it, then cross out its multiples that are not already crossed out.  
 Keep track of your work so that you can answer the following questions:  
 \begin{enumerate}
 \item After circling a new prime, note the first number crossed out with that prime.  Record your results in a table.
-\marginfigure{%\footnotesize\sffamily
+
+
 {\renewcommand{\arraystretch}{1.4}
 \begin{tabular}{c|c}
         prime    & first \# crossed out \\
@@ -58,7 +74,8 @@ Keep track of your work so that you can answer the following questions:
                  &                      \\
                  &                      \\
 \end{tabular}
-}}
+}
+
 \item What was the biggest prime for which you crossed out at least one multiple?
 \end{enumerate}
 
@@ -98,10 +115,12 @@ Side note:  When the sieve is done in six columns, we can observe that any prime
 111 & 112 & 113 & 114 & 115 & 116 & 117 & 118 & 119 & 120\\
 \end{tabular}
 \]
-\end{prob}
+\end{problem}
 
 
-%\begin{prob}
+%\begin{problem}
 %Find all of the prime factors of 1008. How can you be sure you've
 %found them all?
-%\end{prob}
+%\end{problem}
+
+\end{document}

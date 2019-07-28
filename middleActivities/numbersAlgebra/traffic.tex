@@ -1,8 +1,22 @@
-\newpage
-\section{On the Road}\label{A:traffic}
+%\documentclass[handout]{ximera}
+\documentclass{ximera}
 
+\input{../preamble}
 
-\begin{prob} 
+\title{On the Road}
+\author{Bart Snapp and Brad Findell}
+
+\outcome{Learning outcome goes here.}
+
+\begin{document}
+\begin{abstract}
+Abstract goes here.  
+\end{abstract}
+\maketitle
+
+\label{A:traffic}
+
+\begin{problem} 
 Steve likes to drive the city roads. Suppose he is driving down a road
 with three traffic lights. For this activity, we will ignore yellow
 lights, and pretend that lights are either red or green.
@@ -11,24 +25,24 @@ lights, and pretend that lights are either red or green.
 \item How many ways could he see one green light and two red lights?
 \item How many ways could he see all red lights?
 \end{enumerate}
-\end{prob}
+\end{problem}
 
-\begin{prob} 
+\begin{problem} 
 Now suppose Steve is driving down a road with four traffic lights.
 \begin{enumerate}
 \item How many ways could he see two red light and two green lights?
 \item How many ways could he see one green light and three red lights?
 \item How many ways could he see all green lights?
 \end{enumerate}
-\end{prob}
+\end{problem}
 
-\begin{prob} 
+\begin{problem} 
 In the following chart let $n$ be the number of traffic
 lights and $k$ be  the number of green lights seen. In each square, write the number of ways this number of green lights could be seen while Steve drives down the street.
 \newpage
 
 \begin{teachingnote}
-It is hard for students to see the patterns.  But sheering the table might make it to recognize as Pascal's triangle, and then some students will fill it in rotely rather than spending their intellectual energy on careful, organized counting of the possibilities.  
+It is hard for students to see the patterns.  But sheering the table might make it easy to recognize as Pascal's triangle, and then some students will fill it in rotely rather than spending their intellectual energy on careful, organized counting of the possibilities.  
 
 Don't worry about $n = k = 0$ at this point.  But when $k > n$ the entry clearly should be $0$. 
 \end{teachingnote}
@@ -64,4 +78,6 @@ Let $\binom{n}{k}$ denote the entry in the $n^{th}$ row and $k^{th}$ column.  Th
 \end{itemize}
 They should be able to explain these facts by talking about ``choosing'' lights in particular ways.  
 \end{teachingnote}
-\end{prob}
+\end{problem}
+
+\end{document}

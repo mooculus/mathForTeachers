@@ -23,12 +23,14 @@
 %\RequirePackage{microtype}
 %\RequirePackage{enumerate}
 \RequirePackage{rotating}
+\RequirePackage{xcolor,colortbl} % Required for Second Differences but causes problems for Euclidean Algorithm
+
 %
 %\RequirePackage{pifont}
 %\RequirePackage{bigstrut}
 %\RequirePackage[all,cmtip]{xy}
 %
-%\usepackage{protosem}
+\usepackage{protosem} % Needed for hieroglyphic activities
 %
 \usepackage{pgfplots}\pgfplotsset{compat=1.7}  % Needed for eclipseTheEllipse
 %
@@ -50,12 +52,12 @@
 %
 %\usepackage{array}
 %%\setlength{\extrarowheight}{-.2cm}   % Commented out by Findell to fix table headings.  Was this for typesetting division?  
-%\newdimen\digitwidth
-%\settowidth\digitwidth{9}
-%\def~{\hspace{\digitwidth}}
-%\def\divrule#1#2{
-%\noalign{\moveright#1\digitwidth
-%\vbox{\hrule width#2\digitwidth}}}
+\newdimen\digitwidth 
+\settowidth\digitwidth{9}
+%\def~{\hspace{\digitwidth}}  % Commented out by Findell because it messed up \title
+\def\divrule#1#2{
+\noalign{\moveright#1\digitwidth
+\vbox{\hrule width#2\digitwidth}}}
 
 
 \usepackage{framed}
@@ -158,7 +160,7 @@
 
 %
 %
-%\usepackage{multicol} % Use letters for lists
+\usepackage{multicol} % Use letters for lists
 %\renewcommand{\theenumi}{$(\mathrm{\alph{enumi}})$}
 %\renewcommand{\labelenumi}{\theenumi}
 %\setlength{\columnsep}{3em}

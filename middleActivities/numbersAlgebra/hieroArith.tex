@@ -1,5 +1,20 @@
-\newpage
-\section{Hieroglyphical Arithmetic}\label{A:HAr}
+%\documentclass[handout]{ximera}
+\documentclass{ximera}
+
+\input{../preamble}
+
+\title{Hieroglyphical Arithmetic}
+\author{Bart Snapp and Brad Findell}
+
+\outcome{Learning outcome goes here.}
+
+\begin{document}
+\begin{abstract}
+Abstract goes here.  
+\end{abstract}
+\maketitle
+
+\label{A:HAr}
 \emph{Note: This activity is based on an activity originally designed by Lee Wayand.}
 
 %\symbolfootnote[0]{This activity is based on an activity originally designed by Lee Wayand.}
@@ -18,6 +33,7 @@
 %\newcommand{\lz}{\vcenter{\hbox{\PHstrainer}}}
 %\newcommand{\lw}{\vcenter{\hbox{\PHtunny}}}
 
+
 \newcommand{\lo}{\vcenter{\hbox{\textproto{a}}}}
 \newcommand{\loo}{\vcenter{\hbox{\textproto{d}}}}
 \newcommand{\la}{\vcenter{\hbox{\textproto{w}}}}
@@ -33,8 +49,10 @@
 \newcommand{\lw}{\vcenter{\hbox{\textproto{q}}}}
 
 
+\fixnote{Fix the width on the tables below.}
+
 Consider the following addition and multiplication tables:
-\begin{fullwidth}
+
 \[
 {\renewcommand{\arraystretch}{1.8}
 \begin{array}{clc}
@@ -80,17 +98,19 @@ Consider the following addition and multiplication tables:
 \end{array}}
 \end{array}}
 \]
-\end{fullwidth}
+
+
+
 \newpage
 
-\begin{prob} 
+\begin{problem} 
 Use the addition table to compute the following:
 \[
 \lb + \la \qquad\text{and}\qquad \lc + \lf
 \]
-\end{prob}
+\end{problem}
 
-\begin{prob} 
+\begin{problem} 
 Do you notice any patterns in the addition table? Tell us about them.
 \begin{teachingnote}
 Discuss \textbf{commutativity}, which can be seen by symmetry across the main diagonal of the table.  (This symmetry is much easier to see if these hieroglyphics are replaced by familiar symbols, such as Latin (or even Greek) letters.)  
@@ -99,41 +119,41 @@ Discuss \textbf{closure}, which is demonstrated by the fact that every entry in 
 
 For \textbf{associativity}, there is not a simple test in the table.  The naive approach requires checking that $(a + b) + c = a + (b + c)$ for all triples $a, b, c$.  
 \end{teachingnote}
-\end{prob}
+\end{problem}
 
-\begin{prob} 
+\begin{problem} 
 Can you tell me which glyph represents $0$? How did you arrive at this
 conclusion?
 \begin{teachingnote}
 Call $\lo$ the \textbf{additive identity} in this number system.
 \end{teachingnote}
-\end{prob}
+\end{problem}
 
-\begin{prob} 
+\begin{problem} 
 Use the multiplication table to compute the following:
 \[
 \li \cdot \lb \qquad\text{and}\qquad \la \cdot \lf
 \]
-\end{prob}
+\end{problem}
 
-\begin{prob} 
+\begin{problem} 
 Do you notice any patterns in the multiplication table? Tell us about them.
 \begin{teachingnote}
 Again discuss \textbf{commutativity} and \textbf{closure}.  And again note that \textbf{associativity} is tedious to check fully.  
 \end{teachingnote}
 
-\end{prob}
+\end{problem}
 
-\begin{prob} 
+\begin{problem} 
 Can you tell me which glyph represents $1$? How did you arrive at this
 conclusion?
 \begin{teachingnote}
 Call $\loo$ the \textbf{multiplicative identity}.  
 \end{teachingnote}
-\end{prob}
+\end{problem}
 
 
-\begin{prob} Compute:
+\begin{problem} Compute:
 \[
 \loo - \la \qquad\text{and}\qquad \ld - \lc
 \]
@@ -156,9 +176,9 @@ The upshot is that there are (at least) two ways of thinking about subtraction: 
 
 Note: In the expression $\loo - \la$, the negative sign indicates a binary operation, subtraction.  In the expression $-\la$, the negative sign indicates a unary operation, negation.  This ``double use'' of the negative sign obscures some subtleties here.  
 \end{teachingnote}
-\end{prob}
+\end{problem}
 
-\begin{prob} Compute:
+\begin{problem} Compute:
 \[
 \lf \div \lc \qquad\text{and}\qquad \lh \div \li
 \]
@@ -171,9 +191,9 @@ It happens that $\lc$ are $\li$ multiplicative inverses of each other.
 
 Note:  The notations $a^{-1}$ and $1/a$ are both confusing and also far from $1\div a$, upon which the ideas are based.  
 \end{teachingnote}
-\end{prob}
+\end{problem}
 
-\begin{prob} 
+\begin{problem} 
 Keen Kelley was working with our tables above. All of a sudden, she
 writes
 \[
@@ -184,15 +204,15 @@ with other glyphs. What do you find? Can you explain this?
 \begin{teachingnote}
 Students might notice that for all elements in this set, the sum of three copies of an element is always the additive identity (i.e., $x + x + x = 0$).  This is a feature of this number system, which (for what its worth) is the field with 9 elements.  
 \end{teachingnote}
-\end{prob}
+\end{problem}
 
 
-\begin{prob}
+\begin{problem}
 Can you find any other oddities of the arithmetic above? Hint: Try
 repeated multiplication!
 \begin{teachingnote}
 One possibility: Students might use the shorthand that $\loo = 1$ and $\lo = 0$, and then conclude that $\ld = -1$ because $\loo+\ld=\lo$.  Then they might notice that $\lh\cdot \lh = \ld$, so $\lh$ is like $i$, a ``square root of negative 1.''
 \end{teachingnote}
-\end{prob}
+\end{problem}
 
-
+\end{document}

@@ -1,6 +1,0 @@
-Midsegment (done)
-Morley
-ScalingArea
-SideSplitter (done)
-tiltedSquare (done)
-Venn (done)

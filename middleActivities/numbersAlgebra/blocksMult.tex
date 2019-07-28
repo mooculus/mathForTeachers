@@ -1,5 +1,20 @@
-\newpage
-\section{More Playing with Blocks}\label{A:B2}\index{base-ten blocks} 
+%\documentclass[handout]{ximera}
+\documentclass{ximera}
+
+\input{../preamble}
+
+\title{More Playing with Blocks}
+\author{Bart Snapp and Brad Findell}
+
+\outcome{Learning outcome goes here.}
+
+\begin{document}
+\begin{abstract}
+Abstract goes here.  
+\end{abstract}
+\maketitle
+
+\label{A:B2}\index{base-ten blocks} 
 %Did you put your blocks away? Darn---there is still more to be
 %done! Just so that we are all on the same page, here are the basic
 %blocks:
@@ -7,7 +22,12 @@
 %\includegraphics{../graphics/baseTenBlocks.pdf}
 %\]
 
-\begin{prob}
+\fixnote{The division doesn't look good with slanted digits.  
+Furthermore, the division might not be typesetting properly.  The ~ is intended to 
+space by digitwidth, but this definition was commented out in the preamble because 
+it caused the title control sequence to generate an error.}
+
+\begin{problem}
 Now Oscar is modeling the basic multiplication algorithm:
 \[
 \begin{tabular}{@{}r@{}}
@@ -17,11 +37,11 @@ $\times$~~3\\ \hline
 702
 \end{tabular}
 \]
-\[
-\includegraphics[scale=0.9]{../graphics/oscarMult.pdf}
-\]
+\begin{image}
+\includegraphics[scale=0.9]{oscarMult.pdf}
+\end{image}
 Can you explain what is going on?  Does his model illustrate the algorithm?  If so, explain how.  If not, describe how to use base ten blocks to explain the algorithm.  
-\end{prob}
+\end{problem}
 
 \begin{teachingnote}
 This model doesn't show the separate steps in the algorithm.  It creates the three copies of 243 all at once rather than one place value at a time.  
@@ -49,7 +69,7 @@ And here is the ``behind the scenes algebra.''
 \end{teachingnote}
 
  
-\begin{prob}
+\begin{problem}
 Here is an example of the basic division algorithm:
 \[
 3\,\begin{tabular}[b]{@{}r@{}r} 
@@ -65,7 +85,7 @@ Here is an example of the basic division algorithm:
 \end{tabular}
 \]
 Explain how to model this algorithm with base-ten blocks, assuming that you start with 202 as two flats and two blocks and that you intend to organize them into three equal piles.  
-\end{prob}
+\end{problem}
 
 \begin{teachingnote}
 \begin{itemize}
@@ -75,3 +95,5 @@ Explain how to model this algorithm with base-ten blocks, assuming that you star
 \item Organize the blocks into 3 groups give 7 blocks in each group for a total of 21 blocks.  After subtraction 1 block remains.  
 \end{itemize}
 \end{teachingnote}
+
+\end{document}

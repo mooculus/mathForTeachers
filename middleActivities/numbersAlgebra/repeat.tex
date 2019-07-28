@@ -1,8 +1,24 @@
-\newpage
-\section{Shampoo, Rinse, \dots}\label{A:Shampoo}
+%\documentclass[handout]{ximera}
+\documentclass{ximera}
+
+\input{../preamble}
+
+\title{Shampoo, Rinse, \dots}
+\author{Bart Snapp and Brad Findell}
+
+\outcome{Learning outcome goes here.}
+
+\begin{document}
+\begin{abstract}
+Abstract goes here.  
+\end{abstract}
+\maketitle
+
+\label{A:Shampoo}
 \index{repeating decimal}
 \index{terminating decimal}
 
+\fixnote{Table doesn't look great.  Cross-references are not working.}
 We're going to investigate the following question: If $a$ and $b$ are
 integers with $b \ne 0$, what can you say about the decimal
 representation of $a/b$? 
@@ -11,16 +27,14 @@ As a middle school teacher, you should know from memory the decimal equivalents 
 you should be able to compute others quickly in your head.  Use this activity to hone this skill, and use your calculator 
 as backup support.  
 
-\begin{prob}\label{AR:exp} 
+\begin{problem}\label{AR:exp} 
 Complete the following table.  For type, write ``T'' for ``Terminating,'' and use other letters for other types you observe.  
 
-%\begin{fullwidth}
 %\begin{multicols}{2}
 
-\rotatebox{90}{
-\renewcommand{\arraystretch}{1.8}
+\renewcommand{\arraystretch}{2}
 \begin{tabular}{l}
-$\begin{array}{|c|p{2in}|p{0.7in}|}
+$\begin{array}{|c|p{1.5in}|p{0.5in}|}
 \hline
 \text{Fraction} & Decimal & Type \\ \hline
 \frac{1}{2} & &  \\  \hline
@@ -51,15 +65,14 @@ $\begin{array}{|c|p{2in}|p{0.7in}|}
 \frac{1}{80} & &  \\   \hline
 \end{array}$
 \end{tabular}
-}
-%    \end{multicols}
-%  \end{fullwidth}
+
+%\end{multicols}
 
 
-\end{prob}
+\end{problem}
 
 
-%\begin{prob}
+%\begin{problem}
 %Write the following fractions in decimal notation. Which have a
 %``terminating'' and which have a ``non-terminating'' decimal?
 %\[
@@ -68,23 +81,23 @@ $\begin{array}{|c|p{2in}|p{0.7in}|}
 % \dfrac{1}{16}, & \dfrac{1}{20}, &  \dfrac{1}{24}, &  \dfrac{1}{25}, &  \dfrac{1}{28}, &  \dfrac{1}{32}, &  \dfrac{1}{35}, &  \dfrac{1}{40}, &  \dfrac{1}{42}, &  \dfrac{1}{48}, &  \dfrac{1}{64}, &  \dfrac{1}{80}.
 %\end{array}
 %\]
-%\end{prob}
+%\end{problem}
 
-\begin{prob}\label{AR:conj}
+\begin{problem}\label{AR:conj}
 Can you find a pattern from your results from Problem~\ref{AR:exp}?
 Use your pattern to guess whether the following fractions
 ``terminate''?  
 \[
 \dfrac{1}{61}\qquad \dfrac{1}{625} \qquad \dfrac{1}{6251}
 \]
-\end{prob}
+\end{problem}
 
 
-\begin{prob}
+\begin{problem}
 Can you explain why your conjecture from Problem~\ref{AR:conj} is true?
-\end{prob}
+\end{problem}
 
-\begin{prob} Now let's consider fractions with decimal representations that do not terminate.  
+\begin{problem} Now let's consider fractions with decimal representations that do not terminate.  
 \begin{enumerate}
 \item Use long division to compute $1/7$.
 \item \index{Division Theorem!for integers}
@@ -96,18 +109,18 @@ is the divisor? And what does this imply about the remainder?
 what can you say about the decimal representation of $a/b$, assuming
 it does not terminate?  Explain your reasoning.  
 \end{enumerate}
-\end{prob}
+\end{problem}
 
-\begin{prob}\label{AR:nines} 
+\begin{problem}\label{AR:nines} 
 Compute $\frac{1}{9}$, $\frac{1}{99}$, and $\frac{1}{999}$. Can you
 find a pattern? Can you explain why your pattern holds?
-\end{prob}
+\end{problem}
 
 \begin{teachingnote}
 From long division, $\frac{1}{9} = 0.\overline{1}$, $\frac{1}{99} = 0.\overline{01}$, and $\frac{1}{999} = 0.\overline{001}$.  
 \end{teachingnote}
 
-\begin{prob}
+\begin{problem}
 Use your work from Problem~\ref{AR:nines} to give the fraction form of
 the following decimals:
 \begin{enumerate}
@@ -116,7 +129,7 @@ the following decimals:
 \item $0.23\overline{4598}$
 \item $76.3\overline{421}$
 \end{enumerate}
-\end{prob}
+\end{problem}
 
 \begin{teachingnote}
 The technique is to reason from decimal multiplication as follows:  
@@ -132,14 +145,16 @@ No need to simplify these anticipated solutions:
 \end{enumerate}
 \end{teachingnote}
 
-\begin{prob} 
+\begin{problem} 
 Assuming that the pattern holds, is the number
 \[
 .123456789101112131415161718192021\dots
 \]
 a rational number? Explain your reasoning.
-\end{prob}
+\end{problem}
 
 \begin{teachingnote}
 Reasoning from the finite list of remainders, the decimal representation of any rational number either terminates or (eventually) repeats.  In this problem, the number shows an interesting and predictiable pattern, but it does not show a sequence of digits that appears in exactly the same way again and again.  
 \end{teachingnote}
+
+\end{document}
