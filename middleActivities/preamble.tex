@@ -3,6 +3,7 @@
   {./}
   {graphics/}
   {geometry/graphics/}
+  {numbersAlgebra/graphics/}
 }
 
 \newtheorem{postulate}{Postulate}
@@ -30,7 +31,6 @@
 %\RequirePackage{bigstrut}
 %\RequirePackage[all,cmtip]{xy}
 %
-\usepackage{protosem} % Needed for hieroglyphic activities
 %
 \usepackage{pgfplots}\pgfplotsset{compat=1.7}  % Needed for eclipseTheEllipse
 %
@@ -116,6 +116,23 @@
 \renewcommand{\d}{\, d}
 \newcommand{\ddx}{\frac{d}{dx}}
 \newcommand{\dydx}{\frac{dy}{dx}}
+
+
+%% Commands for special characters in Hieroglyphic activities
+\usepackage{protosem} 
+\newcommand{\lo}{\vcenter{\hbox{\textproto{a}}}}
+\newcommand{\loo}{\vcenter{\hbox{\textproto{d}}}}
+\newcommand{\la}{\vcenter{\hbox{\textproto{w}}}}
+\newcommand{\lb}{\vcenter{\hbox{\textproto{H}}}}
+\newcommand{\lc}{\vcenter{\hbox{\textproto{T}}}}
+\newcommand{\ld}{\vcenter{\hbox{\textproto{K}}}}
+\newcommand{\lf}{\vcenter{\hbox{\textproto{E}}}}
+\newcommand{\lh}{\vcenter{\hbox{\textproto{l}}}}
+\newcommand{\li}{\vcenter{\hbox{\textproto{o}}}}
+\newcommand{\lx}{\vcenter{\hbox{\textproto{x}}}}
+\newcommand{\ly}{\vcenter{\hbox{\textproto{R}}}}
+\newcommand{\lz}{\vcenter{\hbox{\textproto{v}}}}
+\newcommand{\lw}{\vcenter{\hbox{\textproto{q}}}}
 
 
 %%
