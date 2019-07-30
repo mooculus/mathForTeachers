@@ -35,14 +35,43 @@ On the other hand, the signs of $f''(x)$ tell us more sensitive information.  Th
 Because $f''(x)$ tells us if the slopes on $f(x)$ are increasing or decreasing (graph of $f(x)$ is getting steeper or shallower), we need to be careful when talking about how to interpret the signs of $f''(x)$.  This will give us the four possible shapes for any part of a graph of $f(x)$.
 
 If $f''(x)$ is positive for a time, we say that the graph of $f(x)$ is {\em concave up}.  This means that values of the slopes are increasing.  Now, if the actual $y$-values are increasing (i.e., $f'(x)$ is also positive), that means the graph is getting steeper (e.g., slopes are going from $2$ to $4$ to $9$, etc.).  But if the actual $y$-values are decreasing (i.e., $f'(x)$ is negative), then the graph is getting shallower (e.g., slopes are going from $-10$ to $-7$ to $-1$, etc.- note these are indeed increasing values of the slope!). In a nutshell, we can put both scenarios in one picture- a smile.
-\[
-\includegraphics[width=\textwidth]{graphics/ConcaveUp.pdf}
-\]
+
+
+\begin{center}
+    \begin{tikzpicture}
+        \draw[domain=-2:2] plot (\x, {0.3*\x*\x});
+        \draw[fill=black] (-0.5, 2) circle (3pt);
+        \draw[fill=black] (0.5, 2) circle (3pt);
+        \draw[fill=black] (0,0) circle (2pt);
+        \draw (-0.2, 1)--(0.2,1)--(0,1.2)--(-0.2,1);
+        \node at (-3.8, 2) {\underline{$f$}};
+        \node at (4,2) {\underline{$f$}};
+        \node at (-4, 1.5) {Decrease $f'<0$};
+        \node at (-4, 1) {Concave Up $f''>0$};
+        \node at (3.9, 1.5) {Increase $f'>0$};
+        \node at (3.9, 1) {Concave Up $f''>0$};
+    \end{tikzpicture}
+\end{center}
 
 If $f''(x)$ is negative for a time, we say that the graph of $f(x)$ is {\em concave down}.  This means that values of the slopes are decreasing.  Now, if the actual $y$-values are increasing (i.e., $f'(x)$ is positive), that means the graph is getting shallower (e.g., slopes are going from $9$ to $4$ to $2$, etc.).  But if the actual $y$-values are decreasing (i.e., $f'(x)$ is negative), then the graph is getting steeper (e.g., slopes are going from $-1$ to $-7$ to $-10$, etc.- note these are indeed decreasing values of the slope!).  In a nutshell, we can put both scenarios in one picture- a frown.
-\[
-\includegraphics[width=\textwidth]{graphics/ConcaveDown.pdf}
-\]
+
+\begin{center}
+    \begin{tikzpicture}
+        \draw[domain=-2:2] plot (\x, {-0.3*\x*\x});
+        \draw[fill=black] (-0.5, 2) circle (3pt);
+        \draw[fill=black] (0.5, 2) circle (3pt);
+        \draw[fill=black] (0,0) circle (2pt);
+        \draw (-0.2, 1)--(0.2,1)--(0,1.2)--(-0.2,1);
+        \node at (-3.8, 0) {\underline{$f$}};
+        \node at (4,0) {\underline{$f$}};
+        \node at (-4, -.5) {Increase $f'>0$};
+        \node at (-4, -1) {Concave Down $f''<0$};
+        \node at (3.9, -.5) {Decrease $f'<0$};
+        \node at (3.9, -1) {Concave Down $f''<0$};
+    \end{tikzpicture}
+\end{center}
+
+
 
 In a nutshell, only $f'(x)$ and $f''(x)$ tell us about the {\em shape} of the graph of $f(x)$ at any time.  $f(x)$ only tells us about {\em location} of points on the graph.  Note also that we are always (for different reasons), finding when a function is zero and then positive and negative.  For a review of that ``positive and negative'' part from an algebraic/arithmetic point of view, see the optional reading called ``Pros and Cons'' next.
 
