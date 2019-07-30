@@ -1,5 +1,5 @@
 %\documentclass[handout]{ximera}
-\documentclass{ximera}
+\documentclass[nooutcomes]{ximera}
 
 \input{../preamble}
 
@@ -10,7 +10,7 @@
 
 \begin{document}
 \begin{abstract}
-Abstract goes here.  
+  We explore multiplication algorithms.
 \end{abstract}
 \maketitle
 
@@ -28,7 +28,7 @@ Now Oscar is modeling the basic multiplication algorithm:
 \[
 \normalfont
 \begin{tabular}{@{}r@{}}
-11~~\\
+11\phantom{0}\\
 234\\
 $\times$~~3\\ \hline
 702
@@ -75,10 +75,10 @@ Here is an example of the basic division algorithm:
 \cline{1-1}
 \Big)\begin{tabular}[t]{@{}l@{}} 202\\ 
 18 \\ 
-\divrule{0}{2}  ~22 \\
- ~21\\
+\divrule{0}{2}  \phantom{0}22 \\
+ \phantom{0}21\\
  \divrule{1}{2}
-~~1
+\phantom{0}\phantom{0}1
 \end{tabular}
 \end{tabular}
 \]
