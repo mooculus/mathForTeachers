@@ -73,9 +73,19 @@
 \usepackage{comment}
 
 %\newenvironment{teachingnote}{\begin{framed}\begin{itshape}\begin{bfseries}\noindent Teaching Note:}{\end{bfseries}\end{itshape}\end{framed}}
-
+\ifinstructornotes
 \newenvironment{teachingnote}{\begin{framed}\noindent \textbf{Teaching Note:}}{\end{framed}}
 \newcommand{\teachingnotes}{With Teaching Notes}
+\else
+        \newenvironment{teachingnote}%
+                       {%
+                         \setbox0\vbox\bgroup
+                       }
+{\egroup\ignorespacesafterend
+                       }
+\newcommand{\teachingnotes}{}                       
+                       \fi      
+
 %\excludecomment{teachingnote}
 %\newcommand{\teachingnotes}{}
 
