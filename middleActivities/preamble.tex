@@ -58,7 +58,8 @@
 %%% New Century Schoolbook
 %%\RequirePackage{fouriernc}
 %
-%
+
+
 %\usepackage{array}
 %%\setlength{\extrarowheight}{-.2cm}   % Commented out by Findell to fix table headings.  Was this for typesetting division?  
 \newdimen\digitwidth 
@@ -92,10 +93,31 @@
 \def\fixnote#1{\begin{framed}{\color{red}Fixnote: #1}\end{framed}}  % Allows insertion of red notes about needed edits
 %\def\fixnote#1{}
 
+
+%\renewcommand{\footnote}[1]{~(#1)}
+
+%\newenvironment{activitynote}{\begin{framed}\begin{itshape}\begin{bfseries}\noindent Note:}{\end{bfseries}\end{itshape}\end{framed}}
+%\NewEnviron{activitynote}{\marginnote{\BODY}}
+
+
+
+\def\margincomment#1{$^{\mbox{\footnotesize\color{red}\textbullet}}$%
+\marginpar{%
+\setbox1=\hbox{\parbox{1.4in}{\footnotesize {\color{red}\textbullet} \sffamily #1}}\hbox{\box1}
+}
+}
+
+
+\usepackage{multicol} % Use letters for lists
+%\renewcommand{\theenumi}{$(\mathrm{\alph{enumi}})$}
+%\renewcommand{\labelenumi}{\theenumi}
+%\setlength{\columnsep}{3em}
+
+
+
 %%% This set of code is all of our user defined commands
 \newcommand{\bysame}{\mbox{\rule{3em}{.4pt}}\,}
 \newcommand{\N}{\mathbb N}
-%\renewcommand{\C}{\mathbb C}
 \newcommand{\C}{\mathbb C}
 \newcommand{\W}{\mathbb W}
 \newcommand{\Z}{\mathbb Z}
@@ -137,6 +159,15 @@
 \newcommand{\dydx}{\frac{dy}{dx}}
 
 
+%\newcommand{\dd}[1]{\frac{d}{d #1}}
+\def\dd{\@ifnextchar[{\@with}{\@without}}
+\def\@with[#1]#2{\frac{d #1}{d #2}}
+\def\@without#1{\frac{d}{d #1}}
+
+
+%\everymath{\displaystyle}
+
+
 %% Commands for special characters in Hieroglyphic activities
 \usepackage{protosem} 
 \newcommand{\lo}{\vcenter{\hbox{\textproto{a}}}}
@@ -176,36 +207,4 @@
 %\colorlet{gridColor}{gray!50} % Color of grid in a plot
 
 
-
-%\renewcommand{\footnote}[1]{~(#1)}
-
-%\newenvironment{activitynote}{\begin{framed}\begin{itshape}\begin{bfseries}\noindent Note:}{\end{bfseries}\end{itshape}\end{framed}}
-%\NewEnviron{activitynote}{\marginnote{\BODY}}
-
-
-
-
-%\newcommand{\dd}[1]{\frac{d}{d #1}}
-\def\dd{\@ifnextchar[{\@with}{\@without}}
-\def\@with[#1]#2{\frac{d #1}{d #2}}
-\def\@without#1{\frac{d}{d #1}}
-
-
-%\everymath{\displaystyle}
-
-
-%
-%
-\usepackage{multicol} % Use letters for lists
-%\renewcommand{\theenumi}{$(\mathrm{\alph{enumi}})$}
-%\renewcommand{\labelenumi}{\theenumi}
-%\setlength{\columnsep}{3em}
-%
-%
-
-\def\margincomment#1{$^{\mbox{\footnotesize\color{red}\textbullet}}$%
-\marginpar{%
-\setbox1=\hbox{\parbox{1.4in}{\footnotesize {\color{red}\textbullet} \sffamily #1}}\hbox{\box1}
-}
-}
 
