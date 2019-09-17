@@ -1,5 +1,5 @@
 %\documentclass[handout]{ximera}
-\documentclass[nooutcomes]{ximera}
+\documentclass[nooutcomes,instructornotes]{ximera}
 
 \input{../preamble}
 
@@ -14,13 +14,86 @@
 \end{abstract}
 \maketitle
 
-
 \begin{teachingnote}
-Precede this with triangle area problems 1.3.7 and 8.  The point is connecting the geometric thinking with the algebraic thinking.  For example, how, algebraically and geometrically, does the first one look like an average?  In the last problem, students might not see the similar triangles.
+We set the stage with triangles.  A challenge for students is distinguishing the various `bases,' and realizing how helpful it is to label them with different letters.   
 \end{teachingnote}
 
+\begin{problem}Explain how the following picture ``proves'' that
+  the area of a right triangle is half the base times the height.
+
+\[
+\definecolor{qqwuqq}{rgb}{0.,0.39215686274509803,0.}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\clip(-0.1,-0.1) rectangle (3.1,4.1);
+\draw[line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.10] (0.2828,0.) -- (0.2828,0.2828) -- (0.,0.2828) -- (0.,0.) -- cycle; 
+\draw [line width=0.8pt] (0.,4.)-- (0.,0.);
+\draw [line width=0.8pt] (0.,0.)-- (3.,0.);
+\draw [line width=0.8pt] (3.,0.)-- (0.,4.);
+\draw [line width=0.8pt,dash pattern=on 2pt off 2pt] (0.,4.)-- (3.,4.);
+\draw [line width=0.8pt,dash pattern=on 2pt off 2pt] (3.,4.)-- (3.,0.);
+\end{tikzpicture}
+\]
+%
+%\[
+%\includegraphics[scale=0.8]{pbpAreaRight.pdf}
+%\]
+\end{problem}
+
+\begin{problem} Suppose you know that the area of a \textbf{right} triangle is
+  half the base times the height. Explain how the following picture
+  ``proves'' that the area of \textbf{every} triangle is half the base times the
+  height.
+\[
+\definecolor{qqwuqq}{rgb}{0.,0.392,0.}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\clip(-0.5,-0.05) rectangle (5,2.55);
+\draw[line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (3.,0.1954) -- (2.8046,0.1954) -- (2.8046,0.) -- (3.,0.) -- cycle; 
+\draw[line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (3.1954,0.) -- (3.1954,0.1954) -- (3.,0.1954) -- (3.,0.) -- cycle; 
+\draw [line width=0.8pt] (0.,0.)-- (3.,2.5);
+\draw [line width=0.8pt] (3.,2.5)-- (4.,0.);
+\draw [line width=0.8pt] (4.,0.)-- (0.,0.);
+\draw [line width=0.8pt] (0.,0.)-- (3.,0.);
+\draw [line width=0.8pt] (3.,0.)-- (4.,0.);
+\draw [line width=0.8pt,dash pattern=on 2pt off 2pt] (3.,0.)-- (3.,2.5);
+\end{tikzpicture}
+\]
+%\[
+%\includegraphics[scale=0.8]{../graphics/pbpDisTri.pdf}
+%\]
+Now suppose that \textit{Geometry Giorgio} attempts to
+solve a similar problem. Again knowing that the area of a right
+triangle is half the base times the height, he draws the following
+picture:
+\[
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\clip(-0.5,-0.05) rectangle (5.25,2.55);
+\draw [line width=0.8pt,dash pattern=on 2pt off 2pt] (0.,0.)-- (0.,2.5);
+\draw [line width=0.8pt,dash pattern=on 2pt off 2pt] (0.,2.5)-- (5.,2.5);
+\draw [line width=0.8pt,dash pattern=on 2pt off 2pt] (5.,2.5)-- (5.,0.);
+\draw [line width=0.8pt] (5.,2.5)-- (2.,0.);
+\draw [line width=0.8pt] (5.,2.5)-- (0.,0.);
+\draw [line width=0.8pt] (0.,0.)-- (2.,0.);
+\draw [line width=0.8pt,dash pattern=on 2pt off 2pt] (2.,0.)-- (5.,0.);
+\end{tikzpicture}
+\]
+%\[
+%\includegraphics[scale=0.8]{../graphics/pbpDisTriGio.pdf}
+%\]
+\textit{Geometry Giorgio} states that the diagonal line cuts the
+rectangle in half, and thus the area of the triangle is half the base
+times the height. Is this correct reasoning? If so, give a complete
+explanation. If not, give correct reasoning based on \textit{Geometry
+  Giorgio}'s picture.
+\end{problem}
+
+
+\begin{teachingnote}
+The point of the next problem is connecting the geometric thinking with the algebraic thinking.  For example, how, algebraically and geometrically, does the first trapezoid formula look like an average?  In the last problem, students might not see the similar triangles.
+\end{teachingnote}
+
+
 \begin{problem}
-In this activity, we explore several ways of justifying the formula for the area of a trapezoid, as labeled below. 
+Now we explore several ways of justifying the formula for the area of a trapezoid, as labeled below. 
 \begin{image}
 \includegraphics[scale=0.6]{trapezoid1.pdf}
 \end{image}
@@ -47,7 +120,6 @@ Two triangles with the same height and different bases. &                 & \\ \
           & \includegraphics[scale=0.7]{trapezoid6.pdf}&  \hspace{\formulawidth} \\ \hline
 \end{tabular}}
 }
-
 \end{problem}
 
 %
@@ -55,7 +127,7 @@ Two triangles with the same height and different bases. &                 & \\ \
 %
 \newpage
 \begin{teachingnote}
-
+Answers:
 \resizebox{\textwidth}{!}{
 {\renewcommand{\arraystretch}{1.5}
 \begin{tabular}{|>{\centering\arraybackslash}m{2.5cm}|>{\centering\arraybackslash}m{9.5cm}|c|}\hline
