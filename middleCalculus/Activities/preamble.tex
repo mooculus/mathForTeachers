@@ -6,8 +6,8 @@
 
 
 
-
-\newtheoremstyle{SlantTheorem}{\topsep}{\topsep}%%% space between body and thm
+\newtheoremstyle{SlantTheorem}{\topsep}{\fill}%%% space between body and thm
+%\newtheoremstyle{SlantTheorem}{\topsep}{\topsep}%%% space between body and thm
  {\slshape}                      %%% Thm body font
  {}                              %%% Indent amount (empty = no indent)
  {\bfseries\sffamily}            %%% Thm head font
@@ -17,3 +17,30 @@
 \theoremstyle{SlantTheorem}
 \newtheorem{question}{Question}
 \counterwithin*{question}{section}
+
+
+
+\let\instructorNotes\relax
+\let\endinstructorNotes\relax
+%%% instructorNotes environment
+\ifhandout
+\newenvironment{instructorNotes}[1][false]%
+{%
+\def\givenatend{\boolean{#1}}\ifthenelse{\boolean{#1}}{\begin{trivlist}\item}{\setbox0\vbox\bgroup}{}
+}
+{%
+\ifthenelse{\givenatend}{\end{trivlist}}{\egroup}{}
+}
+\else
+\newenvironment{instructorNotes}[1][false]%
+{%
+  \ifthenelse{\boolean{#1}}{\begin{trivlist}\item[\hskip \labelsep\bfseries {\Large Instructor Notes: \\} \hspace{\textwidth} ]}
+{\begin{trivlist}\item[\hskip \labelsep\bfseries {\Large Instructor Notes: \\} \hspace{\textwidth} ]}
+{}
+}
+{\end{trivlist}}
+\fi
+
+
+%% Suggested Timing
+\newcommand{\timing}[1]{{\bf Suggested Timing: \hspace{2ex}} #1}
