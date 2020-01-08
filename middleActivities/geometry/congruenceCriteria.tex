@@ -25,11 +25,11 @@ Simplify by eliminating the prime notation.  After the translation, for example,
 \end{teachingnote}
 
 In this activity, we show how the common triangle congruence criteria follow from
- what we now know about isometries.\margincomment{CCSS G-CO.8.  Explain how the criteria for triangle congruence (ASA, SAS, and
+ what we now know about rigid motions.\margincomment{CCSS G-CO.8.  Explain how the criteria for triangle congruence (ASA, SAS, and
   SSS) follow from the definition of congruence in terms of rigid motions.}  
  Recall that two figures are said to be 
-congruent if there exists an isometry (translation, rotation, or reflection) or a 
-sequence of isometries that maps one figure onto the other.  
+\emph{congruent} if there exists a basic rigid motion (translation, rotation, or reflection) or a 
+sequence of basic rigid motions that maps one figure onto the other.  
 
 \begin{problem}
 Proof of Side-Angle-Side (SAS) congruence.  Suppose $\triangle ABC$ and $\triangle XYZ$ are such that $AB=XY$, $AC=XZ$, and $\angle A \cong \angle X$.  Prove, using basic rigid motions, that $\triangle ABC \cong \triangle XYZ$.  Consider the figure below.  
@@ -39,9 +39,13 @@ Proof of Side-Angle-Side (SAS) congruence.  Suppose $\triangle ABC$ and $\triang
 Fill in the details of the following proof.  
 \begin{enumerate}
 \item Translate $\triangle ABC$ through the vector $\overrightarrow{AX}$.  Call the image $\triangle A'B'C'$.  Explain why $A'$ and $X$ coincide.
+\vspace{1in}
 \item Rotate $\triangle A'B'C'$ about $X=A'$ through $\angle B'XY$ so that ray $\overrightarrow{A'B'}$ is along ray $\overrightarrow{XY}$.  Call the image $\triangle A''B''C''$   Explain how you know the segments $\overline{A''B''}$ and $\overline{XY}$ coincide. 
+\vspace{1in}
 \item Reflect $\triangle A''B''C''$ about the line $\overleftrightarrow{A''B''} = \overleftrightarrow{XY}$.  Call the image $\triangle A'''B'''C'''$.  Explain why $\overline{A'''C'''}$ and $\overline{XZ}$ coincide.
+\vspace{1in}
 \item Explain how you now know that all sides and angles of $\triangle A'''B'''C'''$ are congruent to the corresponding sides and angles of $\triangle XYZ$.  
+\vspace{1in}
 \item Explain how to modify the above steps to handle the following different cases: 
 \begin{itemize}
 \item Initially $X = A$. 
@@ -49,8 +53,10 @@ Fill in the details of the following proof.
 \item After the rotation, $\overline{A''C''}$ and $\overline{XZ}$ coincide.  (Hint:  Consider whether $C''$ and $Z$ are on the same side or on opposite sides of $\overleftrightarrow{XZ}$.)  
 \end{itemize}
 \end{enumerate}
+\vfill
 \end{problem}
 
+\newpage
 \begin{problem}
 Proof of Angle-Side-Angle (ASA) congruence.  Suppose $\triangle ABC$ and $\triangle XYZ$ are such that $AB=XY$, $\angle A \cong \angle X$, and $\angle B \cong \angle Y$.  Prove, using basic rigid motions, that $\triangle ABC \cong \triangle XYZ$.  
 \begin{enumerate}
@@ -61,7 +67,10 @@ Proof of Angle-Side-Angle (ASA) congruence.  Suppose $\triangle ABC$ and $\trian
 \item Explain carefully how you know, after the sequence of rigid motions, that the ``final image'' of $C$ coincides with $Z$.  
 \item Describe how to modify the outline to handle other cases. 
 \end{enumerate}
+\vfill
 \end{problem}
+
+\newpage
 
 \begin{problem}
 In a previous activity, you used triangle congruence criteria to prove the following results: 
@@ -70,6 +79,7 @@ In a previous activity, you used triangle congruence criteria to prove the follo
 \item The points on a perpendicular bisector of a segment are exactly those that are equidistant from the endpoints.
 \end{itemize}
 Verify that these results could have been established using only SAS and ASA congruence.  (Thus, you may use these results in the problems that follow.) 
+\vspace{1in}
 \end{problem}
 
 \begin{problem}
@@ -77,6 +87,7 @@ Proof of Hypotenuse-Leg (HL) congruence.  Suppose $\triangle ABC$ and $\triangle
 \begin{image}
 \includegraphics[scale=0.6]{HL.pdf}
 \end{image}
+\vfill
 \end{problem}
 
 \begin{teachingnote}
@@ -87,6 +98,7 @@ Easier:  Translate $\triangle ABC$ through the vector $\overrightarrow{CZ}$.  Th
 Alternatively, save HL until after SSS?
 \end{teachingnote}
 
+\newpage
 
 \begin{problem}
 Proof of Side-Side-Side (SSS) congruence.  Suppose $\triangle ABC$ and $\triangle XYZ$ are such that $AB=XY$, $AC=XZ$, and $BC=YZ$.  Prove, using basic rigid motions, that $\triangle ABC \cong \triangle XYZ$.  Build toward the general case through the following steps:  
@@ -102,6 +114,7 @@ Or maybe these two figures don't matter if we emphasize that $A$ and $B$ both li
 \item Case 2:  $A=X$ but $B \ne Y$.
 \item Case 3: The general case.  
 \end{enumerate}
+\vfill
 \end{problem}
 
 \end{document}
