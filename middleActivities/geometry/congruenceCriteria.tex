@@ -1,12 +1,12 @@
 %\documentclass[handout]{ximera}
-\documentclass[nooutcomes]{ximera}
+\documentclass[instructornotes,nooutcomes]{ximera}
 
 \input{../preamble}
 
 \title{Congruence Criteria}
 \author{Bart Snapp and Brad Findell}
 
-\outcome{Learning outcome goes here.}
+%\outcome{Learning outcome goes here.}
 
 \begin{document}
 \begin{abstract}
@@ -15,11 +15,11 @@
 \maketitle
 
 \begin{teachingnote}
-Perhaps ask students to come up with the sequence of transformations. 
+Perhaps ask students to come up with the sequence of transformations. Suggest patty paper to help.  
 
 Discuss a common error:   Translate $\triangle ABC$ through the vector $\overrightarrow{BY}$.  Then rotate about $Y$ by $\angle C'YZ.$. 
 
-The generality of the proofs requires consideration of the possibility that a reflection might not be necessary in the general case.  Use half-plane ideas to ask whether points are on the same side or opposite sides of lines.  
+The generality of the proofs requires consideration of the possibility that a reflection might not be necessary in the general case.  Use half-plane ideas to ask whether points are on the same side or opposite sides of lines, and reflect if they are on opposite sides.  
 
 Simplify by eliminating the prime notation.  After the translation, for example, $A$ coincides with $X$.  (See photos from class.)
 \end{teachingnote}
@@ -38,7 +38,12 @@ Proof of Side-Angle-Side (SAS) congruence.  Suppose $\triangle ABC$ and $\triang
 \end{image}
 Fill in the details of the following proof.  
 \begin{enumerate}
-\item Translate $\triangle ABC$ through the vector $\overrightarrow{AX}$.  Call the image $\triangle A'B'C'$.  Explain why $A'$ and $X$ coincide.
+\item Translate $\triangle ABC$ through the vector $\overrightarrow{AX}$.  Call the image $\triangle A'B'C'$.  Explain why $A'$ and $X$ coincide. 
+
+\begin{teachingnote}
+This is pretty obvious, but it helps to say it:  Move $A$ through 
+the vector $\overrightarrow{AX}$ and it will be at $X$.  
+\end{teachingnote}
 \vspace{1in}
 \item Rotate $\triangle A'B'C'$ about $X=A'$ through $\angle B'XY$ so that ray $\overrightarrow{A'B'}$ is along ray $\overrightarrow{XY}$.  Call the image $\triangle A''B''C''$   Explain how you know the segments $\overline{A''B''}$ and $\overline{XY}$ coincide. 
 \vspace{1in}
@@ -103,7 +108,9 @@ Alternatively, save HL until after SSS?
 \begin{problem}
 Proof of Side-Side-Side (SSS) congruence.  Suppose $\triangle ABC$ and $\triangle XYZ$ are such that $AB=XY$, $AC=XZ$, and $BC=YZ$.  Prove, using basic rigid motions, that $\triangle ABC \cong \triangle XYZ$.  Build toward the general case through the following steps:  
 \begin{teachingnote}
-Or maybe these two figures don't matter if we emphasize that $A$ and $B$ both lie on the perpendicular bisector of $\overline{CZ}$.
+Or maybe these two figures don't matter if we emphasize that $A$ and $B$ both lie on the perpendicular bisector of $\overline{CZ}$.  
+
+Marking the diagrams is helpful.
 \end{teachingnote}
 \begin{enumerate}
 \item Case 1a:  $A=X$, $B=Y$, and $C$ and $Z$ lie on opposite sides of $\overleftrightarrow{AB}$.  (Hint:  Explain why the situation must be like one of the figures below, argue that $\overleftrightarrow{AB}$ is the perpendicular bisector of $\overline{CZ}$, and then use a reflection.)

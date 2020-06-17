@@ -102,9 +102,11 @@
 %\excludecomment{teachingnote}
 %\newcommand{\teachingnotes}{}
 
+\ifinstructornotes
 \def\fixnote#1{\begin{framed}{\color{red}Fixnote: #1}\end{framed}}  % Allows insertion of red notes about needed edits
-%\def\fixnote#1{}
-
+\else
+\def\fixnote#1{}
+\fi
 
 %\renewcommand{\footnote}[1]{~(#1)}
 
