@@ -24,7 +24,22 @@
 \counterwithin*{question}{section}
 
 
- % Alternate Teaching Notes
+
+%% journal style
+\makeatletter
+\newcommand\overviewstyle{%
+  \def\activitystyle{activity-chapter}
+  \def\maketitle{%
+                {\flushleft\small\sffamily\bfseries\@pretitle\par\vspace{-1.5em}}%
+                {\flushleft\LARGE\sffamily\bfseries \hspace{1em}\@title \par }%
+                {\vskip .6em\noindent\textit\theabstract\setcounter{question}{0}\setcounter{sectiontitlenumber}{0}}%
+                    \par\vspace{2em}
+                    \phantomsection\addcontentsline{toc}{section}{\hspace{1em}\textbf{\@title}}%
+                     }}
+\makeatother
+
+
+ % Framed Teaching Notes
 
 \usepackage{framed}
 \usepackage{comment}
