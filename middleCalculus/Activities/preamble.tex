@@ -24,19 +24,30 @@
 \counterwithin*{question}{section}
 
 
-
-%% journal style
+%
+%%% journal style
 \makeatletter
 \newcommand\overviewstyle{%
   \def\activitystyle{activity-chapter}
   \def\maketitle{%
-                {\flushleft\small\sffamily\bfseries\@pretitle\par\vspace{-1.5em}}%
-                {\flushleft\LARGE\sffamily\bfseries \hspace{1em}\@title \par }%
-                {\vskip .6em\noindent\textit\theabstract\setcounter{question}{0}\setcounter{sectiontitlenumber}{0}}%
+                {\flushleft\small\bfseries\@pretitle\par\vspace{-1.5em}}%
+                {\flushleft\LARGE\bfseries\@title \par }%
+                {\vskip .6em\noindent\textit\theabstract\setcounter{problem}{0}\setcounter{sectiontitlenumber}{0}}%
                     \par\vspace{2em}
-                    \phantomsection\addcontentsline{toc}{section}{\hspace{1em}\textbf{\@title}}%
+                    \phantomsection\addcontentsline{toc}{section}{{\phantom{0}\hspace{1em}\@title}}%
+                     }}
+\newcommand\defaultstyle{%
+  \def\activitystyle{activity-chapter}
+  \def\maketitle{%
+                \addtocounter{titlenumber}{1}%
+                {\flushleft\small\bfseries\@pretitle\par\vspace{-1.5em}}%
+                {\flushleft\LARGE\bfseries\thetitlenumber\hspace{1em}\@title \par }%
+                {\vskip .6em\noindent\textit\theabstract\setcounter{problem}{0}\setcounter{sectiontitlenumber}{0}}%
+                    \par\vspace{2em}
+                    \phantomsection\addcontentsline{toc}{section}{{\thetitlenumber\hspace{1em}\@title}}%
                      }}
 \makeatother
+
 
 
  % Framed Teaching Notes

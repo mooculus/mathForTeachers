@@ -1,6 +1,6 @@
 %\documentclass[nooutcomes, instructornotes, numbers, handout]{xourse}
 
-\documentclass[nooutcomes, instructornotes, numbers]{xourse}
+\documentclass[nooutcomes, numbers]{xourse}
 
 \input{preamble.tex}
 
@@ -19,8 +19,8 @@ These are in-class activities for Math 2167.
 
 
 \overviewstyle
-\activity{../InstructorOverview.tex}
-\chapterstyle
+\ifinstructornotes{\activity{../InstructorOverview.tex}\fi
+\defaultstyle
 \activity{ConjunctionJunction}
 \activity{MoronFunctions}
 \activity{RatedPG}
