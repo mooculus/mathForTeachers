@@ -1,0 +1,150 @@
+%\documentclass[handout]{ximera}
+\documentclass[nooutcomes]{ximera}
+
+\input{../preamble}
+
+\title{Picture Yourself Dividing}
+\author{Bart Snapp and Brad Findell}
+
+\outcome{Learning outcome goes here.}
+
+\begin{document}
+\begin{abstract}
+We think about division of dfractions.
+\end{abstract}
+\maketitle
+
+
+%We want to understand how to visualize 
+%\[
+%\frac{a}{b} \div \frac{c}{d}
+%\]
+%Let's see if we can ease into this.
+
+
+\begin{problem}
+Alice and Rita wish to model the calculation $1\frac{3}{4} \div \frac{1}{2}$.  They propose the following story problem: 
+
+\begin{quote}
+Alice and Rita have $1\frac{3}{4}$ pizzas, as shown below.
+\begin{image}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\clip(-1.2,-1.2) rectangle (6,1.2);
+\draw [line width=0.8pt] (0.,0.) circle (1.cm);
+\draw [shift={(3.,0.)},line width=0.8pt]  plot[domain=-4.7124:0.,variable=\t]({1.*1.*cos(\t r)+0.*1.*sin(\t r)},{0.*1.*cos(\t r)+1.*1.*sin(\t r)});
+\draw [line width=0.8pt] (3.,1.)-- (3.,0.);
+\draw [line width=0.8pt] (3.,0.)-- (4.,0.);
+\end{tikzpicture}
+\end{image}
+
+They share the pizza fairly, as follows:   
+\begin{image}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\clip(-1.2,-1.2) rectangle (6,1.2);
+\draw [line width=0.8pt] (0.,0.) circle (1.cm);
+\draw [line width=0.8pt] (0.,1.)-- (0.,-1.);
+\draw [line width=0.8pt] (-1.,0.)-- (1.,0.);
+\draw [line width=0.8pt] (2.,0.)-- (4.,0.);
+\draw [line width=0.8pt] (3.,1.)-- (3.,-1.);
+\draw [shift={(3.,0.)},line width=0.8pt]  plot[domain=-4.7124:0.,variable=\t]({1.*1.*cos(\t r)+0.*1.*sin(\t r)},{0.*1.*cos(\t r)+1.*1.*sin(\t r)});
+\draw [line width=0.8pt] (3.,0.)-- (3.707,-0.707);
+\draw (-0.4,0.4) node {A};
+\draw (0.4,0.4) node {R};
+\draw (0.4,-0.4) node {A};
+\draw (-0.4,-0.4) node {R};
+\draw (2.6,0.4) node {A};
+\draw (2.6,-0.4) node {R};
+\draw (3.2,-0.55) node {A};
+\draw (3.6,-0.25) node {R};
+\end{tikzpicture}
+\end{image}
+So they each get $3\frac{1}{2}$ pieces.  
+\end{quote}
+
+\begin{enumerate}
+\item Did they get the right answer for $1\frac{3}{4} \div \frac{1}{2}$?  
+\item Does this context model $1\frac{3}{4} \div \frac{1}{2}$ as they claim?  Explain?  
+\end{enumerate}
+
+\begin{teachingnote}
+Their answer of $3\frac{1}{2}$ is numerically correct but their model is not.  The model shows division by $2$ rather than division by $\frac{1}{2}$.  They got the correct answer by switching to slices (i.e., quarter pizzas) rather than pizzas.  Their answer of $3\frac{1}{2}$ slices is actually $3\frac{1}{2}$ quarters or $\frac{7}{8}$ of a pizza.
+
+They can begin with this context and correcly model $1\frac{3}{4} \div \frac{1}{2}$ in one of two ways. 
+\begin{itemize}
+\item Alice and Rita have $1\frac{3}{4}$ pizzas, which is $\frac{1}{2}$ of the amount of pizza they need for a meeting of the math club.  How much pizza do they need for the meeting? (How many in one group?)
+\item Alice and Rita have $1\frac{3}{4}$ pizzas.  How many $\frac{1}{2}$ pizza portions can they make? (How many groups?)
+\end{itemize}
+\end{teachingnote}
+\vspace{1in}
+\end{problem}
+
+
+\begin{problem}
+Draw a picture that shows how to compute:
+\[
+12\div 3
+\]
+Write a story problem to go along with your picture.  Are your picture and story asking ``how many groups?'' or ``how many in
+one group?''
+\vspace{2in}
+\end{problem}
+
+\begin{teachingnote}
+Some students will write story problems that make sense only for whole number divisors, dividends, quotients, and remainders.  These problems are (mentally) challenging to imagine with non-integer quantities.  Spend some class discussion on discrete vs. continuous quantities, and talk about how continuous quantities are crucial for thinking about fraction division.  
+\end{teachingnote}
+
+\begin{problem}
+Try to use a similar process to the one you used in the first problem
+to draw a picture that shows how to compute:
+\[
+\frac{1}{4} \div 3
+\]
+Write a story problem to go along with your picture.  Are your picture and story asking ``how many groups?'' or ``how many in
+one group?''
+\vspace{2in}
+\end{problem}
+
+\newpage
+\begin{problem}
+Try to use a similar process to the one you used in the first two problems
+to draw a picture that shows how to compute:
+\[
+3 \div \frac{1}{4}
+\]
+Write a story problem to go along with your picture.  Are your picture and story asking ``how many groups?'' or ``how many in
+one group?''
+\vspace{2in}
+\end{problem}
+
+
+
+\begin{problem}
+Try to use a similar process to the one you used in the first three problems
+to draw a picture that shows how to compute:
+\[
+%\frac{7}{5} \div \frac{3}{4}
+\frac{6}{5} \div \frac{3}{4}
+\]
+Write a story problem to go along with your picture.  Are your picture and story asking ``how many groups?'' or ``how many in
+one group?''
+\vspace{2in}
+\end{problem}
+
+%\begin{problem}
+%Explain how to draw pictures to visualize:
+%\[
+%\frac{a}{b} \div \frac{c}{d}
+%\]
+%\end{problem}
+%
+%\begin{problem}
+%Use pictures to explain why:
+%\[
+%\frac{a}{b} \div \frac{c}{d} = \frac{a}{b} \cdot \frac{d}{c}
+%\]
+%\end{problem}
+
+
+
+
+\end{document}
