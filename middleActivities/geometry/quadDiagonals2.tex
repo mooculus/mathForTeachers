@@ -40,8 +40,11 @@ Here are some hints:
 \newpage
 \begin{problem}
 Summarize your findings in a table organized like the following.  
-\[
-\begin{array}{|l|c|c|c|c|c|}
+{
+\renewcommand\arraystretch{2.8}
+\renewcommand\tabcolsep{12pt}
+\begin{table}[h]
+\begin{tabular}{|l|p{4cm}|c|c|c|p{4cm}|}
 \hline 
  & Definition  & \multicolumn{3}{c|}{Diagonals} &  Comments \\  %\hline
 Quadrilateral & (A quad. with \dots) & \begin{sideways}Cong.\end{sideways} & 
@@ -53,8 +56,9 @@ Parallelogram &           &   &  &         &                  \\ \hline
 Kite                &           &   &  &          &                  \\ \hline
 Trapezoid       &           &   &  &         &                  \\ \hline
 Isosceles Trap.       &           &   &  &         &                  \\ \hline
-\end{array}
-\]
+\end{tabular}
+\end{table}
+}
 \end{problem}
 
 
