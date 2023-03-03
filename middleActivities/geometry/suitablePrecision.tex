@@ -1,5 +1,5 @@
-%\documentclass[handout]{ximera}
-\documentclass[nooutcomes,instructornotes]{ximera}
+\documentclass[handout]{ximera}
+%\documentclass[nooutcomes,instructornotes]{ximera}
 
 \input{../preamble}
 
@@ -14,13 +14,35 @@
 \end{abstract}
 \maketitle
 
+Geometry is about points, lines, and other figures made up of points.  Geometric objects are sets of points.  Points can have coordinates, which are numbers, but we save these approaches for later in the course.  
+
+Even without coordinates, geometry involves numbers because geometric objects often have length, angle measure, or area.  These are measurements:  numbers combined with units.  
+
+The symbol $\cong$ means \emph{congruent}, which (for now) means ``has the same measure as.''  (Later, we will use transformations to define congruence.)
+
+For now, we need some notational conventions: 
+
+\begin{itemize}
+\item $\overleftrightarrow{XY}$ denotes the \emph{line} containing $X$ and $Y$, extending indefinitely in both directions. 
+\item $\overline{XY}$ denotes the \emph{line segment} from $X$ to $Y$.  Both $X$ and $Y$ are called \emph{endpoints} of the segment. 
+\item $\overrightarrow{XY}$ denotes the \emph{ray} from $X$ through $Y$, and $X$ is called the \emph{endpoint} of the ray. 
+\item $XY$ denotes the length of the line segment $\overline{XY}$, which is also the distance from $X$ to $Y$.  
+\end{itemize}
+
+We will find it useful to adopt the following conventions in our use of letters: 
+\begin{itemize}
+\item Points are usually denoted with capital letters.  
+\item When a single letter is used to denote a line or segment, a lower case letters is usually used.  
+\item When a single letter is used to denote an angle, a Greek letter is sometimes used.   
+\end{itemize}
+
+\textbf{Note: In general, $A\ne a \ne \alpha$. Be sure to distinguish between these types of letters!}.  
+
+\newpage 
+
 \begin{teachingnote}
-The first two questions are about the distinction between a segment, which is a set of points, and its length, which is a measurement.  It is worth discussing also the notation for a ray and a line.  
+The first two questions are about the distinction between a segment, which is a set of points, and its length, which is a measurement. 
 \end{teachingnote}
-
-Geometry is about points, lines, and other figures made up of points.  Points can have coordinates, which are numbers, but we save these approaches for later in the course.  
-
-Even without coordinates, geometry involves numbers, especially as measures of lengths, angles, and areas.  
 
 \begin{problem}
 Let $M$ be the midpoint of $\overline{AB}$.   
@@ -42,8 +64,10 @@ Mark each statement T (true) or F (false).  Briefly explain your reasoning.
 \begin{enumerate}
 \item $\overline{AB} = \overline{BA}$
 \item $AB = BA$
+\item $\overline{AB} \cong \overline{BA}$
 \item $\overline{AM} = \overline{MB}$
 \item $AM = MB$
+\item $\overline{AM} \cong \overline{MB}$
 \end{enumerate}
 \end{problem}
 
@@ -58,24 +82,24 @@ Describe the geometric distinction between a segment and its length.  How are th
 Compare $\angle CAB$ and $\angle FDE$ in the figure below.  
 \[
 \definecolor{qqqqff}{rgb}{0.,0.,1.}
-\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
-\clip(-0.5,-.5) rectangle (14,5.5);
-\draw [line width=0.8pt] (1.,3.5)-- (0.,1.);
-\draw [line width=0.8pt] (0.,1.)-- (3.,2.);
-\draw [line width=0.8pt] (5.,0.)-- (11.,2.);
-\draw [line width=0.8pt] (7.,5.)-- (5.,0.);
-%\draw [fill=qqqqff] (0.,1.) circle (1.2pt);
+\begin{tikzpicture}[scale=0.75,line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\clip(-0.5,-0.3) rectangle (14,5.6);
+\draw [to-, line width=0.8pt] (1.2,4)-- (0.,1.);
+\draw [-to, line width=0.8pt] (0.,1.)-- (3.6,2.2);
+\draw [to-, line width=0.8pt] (7.2,5.5)-- (5.,0.);
+\draw [-to, line width=0.8pt] (5.,0.)-- (11.6,2.2);
+\draw [fill=qqqqff] (0.,1.) circle (1.2pt);
 \draw[color=qqqqff] (-0.22,0.89) node {$A$};
-%\draw [fill=qqqqff] (3.,2.) circle (1.2pt);
-\draw[color=qqqqff] (3.29,1.9) node {$B$};
-%\draw [fill=qqqqff] (1.,3.5) circle (1.2pt);
-\draw[color=qqqqff] (0.91,3.85) node {$C$};
-%\draw [fill=qqqqff] (5.,0.) circle (1.2pt);
-\draw[color=qqqqff] (4.80,-0.15) node {$D$};
-%\draw [fill=qqqqff] (11.,2.) circle (1.2pt);
-\draw[color=qqqqff] (11.25,1.95) node {$E$};
-%\draw [fill=qqqqff] (7.,5.) circle (1.2pt);
-\draw[color=qqqqff] (6.97,5.35) node {$F$};
+\draw [fill=qqqqff] (3.,2.) circle (1.2pt);
+\draw[color=qqqqff] (3.1,1.7) node {$B$};
+\draw [fill=qqqqff] (1.,3.5) circle (1.2pt);
+\draw[color=qqqqff] (0.8,3.7) node {$C$};
+\draw [fill=qqqqff] (5.,0.) circle (1.2pt);
+\draw[color=qqqqff] (4.7,-0.1) node {$D$};
+\draw [fill=qqqqff] (11.,2.) circle (1.2pt);
+\draw[color=qqqqff] (11.1,1.7) node {$E$};
+\draw [fill=qqqqff] (7.,5.) circle (1.2pt);
+\draw[color=qqqqff] (6.8,5.2) node {$F$};
 \end{tikzpicture}
 \]
 Mark each statement T (true) or F (false).  Briefly explain your reasoning.
@@ -84,6 +108,7 @@ Mark each statement T (true) or F (false).  Briefly explain your reasoning.
 \item $\angle CAB = \angle FDE$
 \item $m\angle CAB < m\angle FDE$
 \item $m\angle CAB = m\angle FDE$
+\item $m\angle CAB \cong m\angle FDE$
 \end{enumerate}
 \end{problem}
 
@@ -101,7 +126,6 @@ There are (at least) two ways of thinking about angles.
 An angle is the union of two rays with a common endpoint, which is called the vertex of the angle.  The vertex of an angle can also be considered the center of a rotation that would map one ray that the other.  
 \end{teachingnote}
 
-\newpage
 \begin{problem}
 Describe the geometric distinction between an angle and its measure.  How are the two usually denoted differently?  And how do your answers relate to the previous problem?  
 \vspace{1in}
