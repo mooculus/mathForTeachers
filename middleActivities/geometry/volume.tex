@@ -126,101 +126,98 @@ Provide an informal explanation of a volume formula for any pyramid-like object 
 \newpage
 
 \begin{problem}
-In this problem you derive the formula for the volume of a sphere of 
-radius $r$.\margincomment{CCSS G-GME.2. Give an informal argument using Cavalieri's principle for the formulas for the volume of a sphere and other solid figures.}
-The figures below shows a half-sphere of radius $r$ alongside a cylinder of radius $r$ and height $r$ with a cone of radius $r$ and height $r$ removed.
-\begin{image}\resizebox{.4\textwidth}{!}{%
+In this problem you derive the formula for the volume of a sphere of radius $r$.\margincomment{CCSS G-GME.2. Give an informal argument using Cavalieri's principle for the formulas for the volume of a sphere and other solid figures.}  The figures below shows a half-sphere alongside a cylinder from which a cone has been ``removed.''  Their radii are all $r$.  
+
+\begin{center}\resizebox{.7\textwidth}{!}{%
     \begin{tikzpicture}
-      \clip (-3.2,-2) rectangle (3.2,4);
+ 
+  % *** Hemisphere ***
   %% back of base
-  \begin{scope} 
-  \clip (-3,-2) rectangle (4,3);
-  \draw (0,0) ellipse (3cm and .5cm);
-  \end{scope}
+  \draw[dashed] (0,0) ellipse (3cm and .45cm);
   
   %% front of base
   \begin{scope} 
-  \clip (-3.3,0) rectangle (3.3,-3);
-  \draw[ultra thick] (0,0) ellipse (3cm and .5cm);
+  \clip (-3.3,0) rectangle (3.3,-0.5);
+  \draw[ultra thick] (0,0) ellipse (3cm and .45cm);
   \end{scope}
 
   %% Mid ellipse
-  \draw[fill=black!20!white] (0,1.5) ellipse (2.6cm and .5cm);
+  \draw[fill=black!20!white] (0,1.2) ellipse (2.72cm and .4cm);
 
   %% triangle
-  \draw[thick,rounded corners=.5] (0,0) -- (0,1.5) -- (2.6,1.5) -- cycle;
+  \draw[thin] (0,0) -- (0,0.78);
+  \draw[densely dotted] (0,0.78) -- (0,1.2);
+  \draw[thin] (0,1.2) -- (2.72,1.2);
+  \draw[densely dotted] (2.72,1.2) -- (0,0);
+  \draw[thin] (0.8*2.72,0.8*1.2) -- (0,0);
 
-  
   %% dome
   \draw[ultra thick] (3,0) arc (0:180:3);
 
-  
   %% labels
-  \node[left] at (0,.75) {$h$};
-  \node[above] at (1.3,1.5) {$s$};
-  \node[right] at (1.4,.75) {$r$};
-  \end{tikzpicture}}
-  \resizebox{.4\textwidth}{!}{\begin{tikzpicture}
-      \clip (-3.2,-2) rectangle (4,4);
-  %% back of base
-  \begin{scope} 
-  \clip (-3,0) rectangle (3,6);
-  \draw (0,0) ellipse (3cm and .5cm);
-  \end{scope}
+  \node[left] at (0,.62) {$x$};
+  \node[above] at (1.2,1.2) {$s$};
+  \node[right] at (1.45,.5) {$r$};
+
+ % *** Cone in Cylinder ***
+\begin{scope}[shift={(7,0)}]
+  \draw[dashed] (0,0) ellipse (3cm and .45cm);
   
   %% front of base
   \begin{scope} 
-  \clip (-3.3,0) rectangle (3.3,-3);
-  \draw[ultra thick] (0,0) ellipse (3cm and .5cm);
+  \clip (-3.3,0) rectangle (3.3,-0.5);
+  \draw[ultra thick] (0,0) ellipse (3cm and .45cm);
   \end{scope}
 
   %% top
-  \draw[ultra thick] (0,3) ellipse (3cm and .5cm);
+  \draw[ultra thick] (0,3) ellipse (3cm and .45cm);
 
-  
   %% outer cone (behind ellipse)
-  \draw (0,0) -- (-1.5,1.5);
-  \draw (0,0) -- (1.5,1.5);
+  \draw (0,0) -- (-1.2,1.2);
+  \draw (0,0) -- (1.2,1.2);
   
   %% Mid ellipse
-  \draw[fill=black!20!white] (0,1.5) ellipse (3cm and .5cm);
-  \draw[fill=white] (0,1.5) ellipse (1.5cm and .25cm);
+  \draw[fill=black!20!white] (0,1.2) ellipse (3cm and .45cm);
+  \draw[fill=white] (0,1.2) ellipse (1.2cm and .18cm);
 
   %% outer cone (front of ellipse)
-  \draw (-3,3) -- (-1.5,1.5);
-  \draw (3,3) -- (1.5,1.5);
-  
+  \draw (-3,3) -- (-1.2,1.2);
+  \draw (3,3) -- (1.2,1.2);
 
   %% sides
   \draw[ultra thick] (-3,0) -- (-3,3);
   \draw[ultra thick] (3,0) -- (3,3);
-
-
   
   %% labeled lengths
   %\draw[thick] (0,0) -- (0,1.5);
-  \draw[thick] (-1.5,1.5) -- (0,1.5);
+  \draw[thick] (-1.2,1.2) -- (0,1.2);
   \draw[thick] (0,0) -- (3,0);
+%  \draw[dashed] (0,0) -- (0,3);
+  \draw[thin] (0,0) -- (0,.75);
+  \draw[thin] (0,1.02) -- (0,3);
+ \draw[thin] (-3,3) -- (0,3);
 
   %% side brace
   \draw [decorate,decoration={brace,mirror},xshift=4pt,yshift=0pt]
-(3,0) -- (3,1.5) node [black,midway,xshift=9pt] {$h$};
+(3,0) -- (3,1.2) node [black,midway,xshift=9pt] {$x$};
 
   %% labels
   %\node[left] at (0,.75) {$h$};
-  \node[above] at (-.75,1.5) {$h$};
+  \node[above] at (-.45,1.17) {$?$};
   \node[below] at (1.5,0) {$r$};
+  \end{scope}
 \end{tikzpicture}}
-\end{image}
-Think of $r$ as fixed, and think of $h$ as the varying height of a cross section.  The (hard to read) $s$ is the radius of the cross section of the sphere.  
+\end{center}
+Think of $r$ as fixed, and think of $x$ as the varying height of a cross section of both figures.  The $s$ is the radius of the cross-section of the sphere.  
 \begin{enumerate}
-\item The heights of the cylinder and the cone are not $h$.  What are their heights?  
-\item What is $h$?  Explain why the several values labeled $h$ are indeed equal.   
-\item Draw and label an ``aerial view'' of the cross sections.   
-\item Explain why the cross sections at height $h$ have the same area.  
-\item Use the formula for the volume of a cone and Cavalieri's principle to derive a formula for the volume of a sphere of radius $r$.  
+\item The sphere, cylinder, and cone should all have the same ``height.''  What should that height be?  Explain why this is necessary.  
+\item The shaded cross section of the cylinder minus the cone is called an ``annulus'' (or washer).  Explain why its inner radius, marked with $?$, is the same as $x$. 
+\item Draw and label an ``aerial view'' of the cross sections.   Explain why the cross-sections at height $x$ have the same area.  
+\item State a three-dimensional version of Cavalieri's principle.  
+\item Use Cavalieri's principle to and the formulas for the volume of a cylinder and the volume of a cone to derive a formula for the volume of a sphere of radius $r$.  
 \end{enumerate}
-\vfill
 \end{problem}
+
+
 
 \end{document}
