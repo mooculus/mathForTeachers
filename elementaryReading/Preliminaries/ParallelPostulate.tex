@@ -13,7 +13,7 @@ We consider lines that are parallel.
 \maketitle
 
 Lines can come in lots of configurations, but one particular configuration that ends up being both important and useful is when two lines are parallel.
-\begin{center}
+\begin{image}
 	\begin{tikzpicture}
   % Define coordinates
   \coordinate (A) at (0,0);
@@ -29,7 +29,7 @@ Lines can come in lots of configurations, but one particular configuration that 
   \node[right] at (B) {$l_1$};
   \node[right] at (D) {$l_2$};
 \end{tikzpicture}
-\end{center}
+\end{image}
 
 
 The lines $l_1$ and $l_2$ in the image above are parallel, but how do we know this? Our first clue is to use the definition.
@@ -40,7 +40,7 @@ The lines $l_1$ and $l_2$ in the image above are parallel, but how do we know th
 To fully understand this definition, we would need to understand what we mean by the ``same direction'', and a full explanation for this idea would take us into the topic of vectors. We'll avoid that for now and just use our intuition to say that the lines above do in fact go in the same direction.
 
 In a two-dimensional world, ``going in the same direction'' means the same thing as ``the lines never cross'', and so if we are working in a two-dimensional world, we can use ``the lines never cross'' as the definition for parallel lines. But in three-dimensional space we have something called ``skew lines'' that never cross but also don't go in the same direction. We don't want these lines to classify as parallel. In the picture below, imagine that line $l_2$ is above line $l_1$ in 3D space. These lines will never cross, but they don't go in the same direction.
-\begin{center}
+\begin{image}
 \begin{tikzpicture}[x={(1cm,0cm)}, y={(0cm,1cm)}, z={(0.5cm,0.5cm)}]
   % Define coordinates
   \coordinate (A) at (0,0,-1);
@@ -60,7 +60,7 @@ In a two-dimensional world, ``going in the same direction'' means the same thing
   \node[above right] at (B) {$l_1$};
   \node[above right] at (D) {$l_2$};
 \end{tikzpicture}
-\end{center} 
+\end{image} 
 
 \section{The Parallel Postulate}
 
@@ -72,7 +72,7 @@ To state the parallel postulate, we also need to know that a \dfn{transversal} i
 
 \begin{definition}
 The \dfn{Parallel Postulate} states that if we have two parallel lines and they are crossed by a transversal, the alternate interior angles formed by the transversal and the parallel lines must be congruent. In the picture below, lines $m$ and $n$ are parallel, and $t$ is a transversal. The Parallel Postulate states that angles $a$ and $b$ are congruent.
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
   % Define coordinates
   \coordinate (A) at (0,0);
@@ -99,14 +99,14 @@ The \dfn{Parallel Postulate} states that if we have two parallel lines and they 
   \node[right] at (F) {$t$};
 
 \end{tikzpicture}
-\end{center}
+\end{image}
 \end{definition}
 
 
 
 Sometimes, the Parallel Postulate is defined instead to say that the \dfn{corresponding angles} formed by the transversal are equal. Angles $a$ and $c$ are corresponding in the figure below, because they are in the same relative position along the transversal but on different lines.
 
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
   % Define coordinates
   \coordinate (A) at (0,0);
@@ -133,13 +133,13 @@ Sometimes, the Parallel Postulate is defined instead to say that the \dfn{corres
   \node[right] at (F) {$t$};
 
 \end{tikzpicture}
-\end{center}
+\end{image}
 
 For our course, either statement of the Parallel Postulate is acceptable, but please be clear when you state it and point out which angles you are discussing.
 
 \begin{question}
 The image below shows two lines cut by a transversal.
-\begin{center}
+\begin{image}
 	\begin{tikzpicture}
   % Define coordinates
   \coordinate (A) at (0,-1);
@@ -173,7 +173,7 @@ The image below shows two lines cut by a transversal.
   \node[above] at (F) {$n$};
 
 \end{tikzpicture}
-\end{center}
+\end{image}
 Choose all options below which are a pair of alternate interior angles.
 \begin{selectAll}
 \choice{$g$ and $c$}
@@ -187,7 +187,7 @@ Choose all options below which are a pair of alternate interior angles.
 
 \begin{question}
 The image below shows two lines cut by a transversal.
-\begin{center}
+\begin{image}
 	\begin{tikzpicture}
   % Define coordinates
   \coordinate (A) at (0,-1);
@@ -221,7 +221,7 @@ The image below shows two lines cut by a transversal.
   \node[above] at (F) {$n$};
 
 \end{tikzpicture}
-\end{center}
+\end{image}
 Choose all options below which are a pair of corresponding angles.
 \begin{selectAll}
 
@@ -238,7 +238,7 @@ We will also use the converse of the Parallel Postulate. The \dfn{converse} of a
 \begin{definition}
 The \dfn{converse of the Parallel Postulate} states that when we have two lines $l$ and $m$ and a transversal $t$ which crosses them, if the alternate interior angles formed by that transversal are equal, then the two lines $l$ and $m$ are parallel. In the figure below, if we know that angles $a$ and $b$ are congruent (or have the same measure), then lines $l$ and $m$ must be parallel.
 
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
   % Define coordinates
   \coordinate (A) at (0,0);
@@ -265,7 +265,7 @@ The \dfn{converse of the Parallel Postulate} states that when we have two lines 
   \node[right] at (F) {$t$};
 
 \end{tikzpicture}
-\end{center}
+\end{image}
 
 \end{definition}
 
@@ -273,7 +273,7 @@ We could of course also replace ``alternate interior angles'' with ``correspondi
 
 \begin{question}
 Are the lines $l$ and $m$ below parallel?
-\begin{center}
+\begin{image}
 	\begin{tikzpicture}
   % Define coordinates
   \coordinate (A) at (0,-1);
@@ -303,7 +303,7 @@ Are the lines $l$ and $m$ below parallel?
   \node[above] at (F) {$n$};
 
 \end{tikzpicture}
-\end{center}
+\end{image}
 
 \begin{multipleChoice}
 \choice{Yes.}
