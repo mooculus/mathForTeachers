@@ -43,15 +43,15 @@ The word ``iterate'' in step 3 might feel a little strange here, but the goal is
 In the previous section, we talked about measuring a golf club using a golf pencil. Let's return to this example to talk about how we would actually make this measurement.
 
 First, we choose an aspect to measure. In this case it's the \wordChoice{\choice[correct]{length} \choice{area} \choice{volume}} of the golf club. We could also draw a picture of the golf club and indicate on our picture what we mean by the length to make things even more clear.
-\[
-\includegraphics{Club.png}
-\]
+\begin{image}
+\includegraphics[width=0.3\textwidth]{Club.png}
+\end{image}
 Next, we choose a unit of measure. In this case it's the \wordChoice{\choice[correct]{length} \choice{area} \choice{volume}} of the golf pencil. We know this unit of measure is appropriate for this measurement because both the aspect we are measuring and the unit we are using are \wordChoice{\choice[correct]{1D} \choice{2D} \choice{3D}}. We could again draw and label a picture of our unit if we found that helpful, but we'll skip it for this example.
 
 Our third step is to iterate the unit all over the object, leaving no gaps and no overlaps. In this case we want to cover up the entire length of the golf club with pencils. So, we start at one end of the golf club and line up our unit. We then line up the next unit with the end of the first unit, leaving no gaps and no overlaps. We keep using the same unit of measure, so we don't turn the pencil sideways. We keep repeating this process until we have accounted for the entire length of the golf club. We include a drawing of our process below.
-\[
-\includegraphics{MeasuredClub.png}
-\]
+\begin{image}
+\includegraphics[width=0.3\textwidth]{MeasuredClub.png}
+\end{image}
 For our fourth step, we report and interpret our results. In this case it looks like we used $5\frac{1}{3}$ pencils to cover up the entire length of the golf club. To be really precise, we would have to make sure that last pencil is cut into three equal pieces! This means that our answer is that the length of the golf club is $\answer[given]{5+\frac{1}{3}}$ pencil lengths. Our answer means that if we think of the length of the pencil as one unit, the length of the golf club is $5 \frac13$ times as much as that original unit, or that it takes $5 \frac13$ copies of our unit to make up the 1D space that the length of the club takes up. Remember, that's what it means to be a length of something!
 
 \end{example}
@@ -70,7 +70,7 @@ Estimate the area inside the shape below.
 \begin{center}
 \begin{tikzpicture}
 \draw[gray, step=0.4] (0,0) grid (5,5);
-\draw[smooth, thick] plot coordinates {(0.5,0.5) (1,4) (3,3) (4,5) (5,2) (3,2) (2,1) (0.5,0.5)};
+\draw[smooth, very thick] plot coordinates {(0.5,0.5) (1,4) (3,3) (4,5) (5,2) (3,2) (2,1) (0.5,0.5)};
 \end{tikzpicture}
 \end{center}
 
@@ -91,9 +91,9 @@ In the example above, we used the grid squares as our area unit, and grid square
 A \dfn{square unit} is a unit which is in the shape of a square. For instance, a \dfn{square inch} is a square whose sides measure 1 inch. A \dfn{square centimeter} is a square whose sides measure 1 centimeter. A \dfn{square mile} is a square whose sides measure 1 mile.
 \end{definition}
 However, we don't need to use square units to make our estimates. In fact, there's a game some people play where they try to estimate the number of candies in a jar. Usually the point of this game is that the person whose estimate is closest to the actual number of candies wins the whole jar. This game is really just about estimating the amount of 3D space inside the jar using the candies. 
-\[
-\includegraphics{CandyJar.png}
-\]
+\begin{image}
+\includegraphics[width=0.3\textwidth]{CandyJar.png}
+\end{image}
 The amount of 3D space inside the jar is the aspect we are measuring, and one individual candy is our unit. We fill the jar with candies, and then the number of candies is an approximation for the 3D space inside the jar. The candies don't fill the jar exactly, since there is a bit of space between each one. These are the gaps that we don't want to leave for an exact measurement, but we are okay with for an approximation. In other words, the number of candies is \wordChoice{\choice{an over estimate (too big)} \choice[correct]{an under estimate (too small)}} for the exact volume because we don't account for all of the space inside the jar. So, if you ever run across this game after this, you can use your geometry approximation skills to win the candy!
 
 
@@ -163,15 +163,15 @@ We can use the moving principle to rearrange the L-shape below into another shap
 \begin{center}
 \begin{tikzpicture}
 \draw[gray] (-1,-1) grid (5,5);
-\draw[thick] (0,0)--(0,4)--(4,4)--(4,2)--(1,2)--(1,0)--(0,0);
+\draw[very thick] (0,0)--(0,4)--(4,4)--(4,2)--(1,2)--(1,0)--(0,0);
 \end{tikzpicture}
 \end{center}
 We can cut off the bottom part of the L and move it to the top part of the L. If we attach it with no gaps and no overlaps, we will still have the same amount of area that we started with according to the moving principle.
 \begin{center}
 \begin{tikzpicture}
 \draw[gray] (-2,1) grid (5,5);
-\draw[thick] (-1,2)--(-1,4)--(4,4)--(4,2)--(-1,2);
-\draw[thick, dashed] (0,2)--(0,4);
+\draw[very thick] (-1,2)--(-1,4)--(4,4)--(4,2)--(-1,2);
+\draw[very thick, dashed] (0,2)--(0,4);
 \end{tikzpicture}
 \end{center}
 In the image, the dashed line shows where the extra piece from the bottom was attached to the bigger piece, forming a rectangle which is $5$ squares wide and $2$ squares tall. We can count the squares in either figure to verify that the area hasn't changed: in each figure we have $\answer[given]{10}$ squares of area in total.
