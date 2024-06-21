@@ -69,7 +69,7 @@ Notice that in the previous section, we actually gave an approximate answer to t
 Estimate the area inside the shape below.
 \begin{center}
 \begin{tikzpicture}
-\draw[gray, step=0.4] (0,0) grid (5,5);
+\draw[dotted, gray, step=0.4] (0,0) grid (5,5);
 \draw[smooth, very thick] plot coordinates {(0.5,0.5) (1,4) (3,3) (4,5) (5,2) (3,2) (2,1) (0.5,0.5)};
 \end{tikzpicture}
 \end{center}
@@ -162,7 +162,7 @@ Again, this should feel a little bit like common sense, but the moving principle
 We can use the moving principle to rearrange the L-shape below into another shape whose area might be easier to find.
 \begin{center}
 \begin{tikzpicture}
-\draw[gray!0.8] (-1,-1) grid (5,5);
+\draw[dotted, gray] (-1,-1) grid (5,5);
 \draw[very thick] (0,0)--(0,4)--(4,4)--(4,2)--(1,2)--(1,0)--(0,0);
 \end{tikzpicture}
 \end{center}
