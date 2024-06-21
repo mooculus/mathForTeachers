@@ -162,14 +162,14 @@ Again, this should feel a little bit like common sense, but the moving principle
 We can use the moving principle to rearrange the L-shape below into another shape whose area might be easier to find.
 \begin{center}
 \begin{tikzpicture}
-\draw[gray!0.5] (-1,-1) grid (5,5);
+\draw[gray!0.8] (-1,-1) grid (5,5);
 \draw[very thick] (0,0)--(0,4)--(4,4)--(4,2)--(1,2)--(1,0)--(0,0);
 \end{tikzpicture}
 \end{center}
 We can cut off the bottom part of the L and move it to the top part of the L. If we attach it with no gaps and no overlaps, we will still have the same amount of area that we started with according to the moving principle.
 \begin{center}
 \begin{tikzpicture}
-\draw[thin, gray] (-2,1) grid (5,5);
+\draw[dotted, gray] (-2,1) grid (5,5);
 \draw[very thick] (-1,2)--(-1,4)--(4,4)--(4,2)--(-1,2);
 \draw[very thick, dashed] (0,2)--(0,4);
 \end{tikzpicture}
