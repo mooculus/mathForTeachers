@@ -203,6 +203,81 @@ Notice that the definition for an isosceles triangle says ``at least'' two sides
 	\end{center}
 \end{definition}
 
+When we work with triangles, we often designate one of its sides as the \dfn{base} of the triangle. We are usually most accustomed to seeing the bottom side labeled as the base, but any of the three sides of the triangle can be chosen as the base. Once we choose the segment called the base, we can also find a segment called the \dfn{height} of the triangle.
+\begin{definition}
+The \dfn{height} of a triangle is a segment which makes a right angle with the chosen base of the triangle (or an extension of that base) and also passes through the vertex of the triangle which is not on the base.
+\end{definition}
+This definition is a bit easier to understand with a picture, so let's take a look.
+\begin{example}
+Let's find the height of the triangle below in two different ways.
+\begin{image}
+\begin{tikzpicture}
+\draw[thick] (0,0)--(3,0)--(5,2)--(0,0);
+\node[below] at (0,0) {$A$};
+\node[below] at (3,0) {$B$};
+\node[above] at (5,2) {$C$};
+\end{tikzpicture}
+\end{image}
+First, let's choose the bottom side $AB$ of this triangle as the base. If we do so, we should first notice that the vertex which is not on the base (labeled $C$ in the image above) is not directly above the base, so we will extend the base using a dashed line.
+\begin{image}
+\begin{tikzpicture}
+\draw[thick] (0,0)--(3,0)--(5,2)--(0,0);
+\node[below] at (0,0) {$A$};
+\node[below] at (3,0) {$B$};
+\node[above] at (5,2) {$C$};
+\draw[dashed] (3,0)--(6,0);
+\end{tikzpicture}
+\end{image}
+Next, we need to draw a segment which makes a \wordChoice{\choice{straight} \choice[correct]{right} \choice{$45\degree}$} angle with $AB$ and passes through $C$. Try doing this with your protractor on your own!
+\begin{image}
+\begin{tikzpicture}
+\draw[thick] (0,0)--(3,0)--(5,2)--(0,0);
+\node[below] at (0,0) {$A$};
+\node[below] at (3,0) {$B$};
+\node[above] at (5,2) {$C$};
+\draw[dashed] (3,0)--(6,0);
+\draw[dashed] (5,0)--(5,2);
+\node[below] at (1.5, 0) {base};
+\node[right] at (5,1) {height};
+\draw[fill=black] (5,0) circle (2pt) node[below]{$D$};
+\end{tikzpicture}
+\end{image}
+We have labeled the intersection of the extension of the base and the perpendicular line as $D$, and our height in this case is the segment $CD$.
+
+Next, let's choose the segment $BC$ as our base. Now we need to draw a segment which makes a right angle with segment $\answer[given]{BC}$ and passes through point $\answer[given]{A}$. We will first draw a dashed line extending the base.
+\begin{image}
+\begin{tikzpicture}
+\draw[thick] (0,0)--(3,0)--(5,2)--(0,0);
+\node[below] at (0,0) {$A$};
+\node[below] at (3,0) {$B$};
+\node[above] at (5,2) {$C$};
+\draw[dashed] (3,0)--(1,-2);
+\node[right] at (4,1) {base};
+\end{tikzpicture}
+\end{image}
+Finally, we draw the segment making a right angle with the extension of the base and passing through vertex $A$. Again, try doing this with your protractor on your own!
+\begin{image}
+\begin{tikzpicture}
+\draw[thick] (0,0)--(3,0)--(5,2)--(0,0);
+\node[below] at (0,0) {$A$};
+\node[below] at (3,0) {$B$};
+\node[above] at (5,2) {$C$};
+\draw[dashed] (3,0)--(1,-2);
+\draw[dashed] (0,0)--(1.5, -1.5);
+\node[right] at (4,1) {base};
+\node[below left] at (1, -1) {height};
+\draw[fill=black] (1.5, -1.5) circle (2pt) node[below right] {$E$};
+\end{tikzpicture}
+\end{image}
+We have labeled the intersection of the extension of the base and the perpendicular line as $E$, and our height in this case is the segment $\answer[given]{AE}$.
+\end{example}
+\begin{question}
+Pause and think: how could you draw the height if you chose the third side of the triangle as its base?
+\begin{freeResponse}
+Draw your answer in your notes, and make a record here of how to find your drawings later.
+\end{freeResponse}
+\end{question}
+
 The next type of definitions we have tell us about triangles whose angles have specific characteristics. Notice that when we talk about the angles in a shape, we are talking about the \dfn{interior angles}, or the ones made on the interior of the shape. There are also \dfn{exterior angles}, but you typically have to draw extra lines in order to see the exterior angles.
 
 \begin{definition}
