@@ -259,21 +259,347 @@ However we do it, we will find that we get the same area formula for every trian
 If we have a triangle whose base measures $L$ units and whose height measures $H$ units, the area $A$ in square units of that triangle is given by $A = \frac12 L \times H$.
 \end{theorem}
 
+There are many other area formulas, and we will develop some of them in class. The point of developing area formulas is to practice with the meaning of measurement and to understand why the formulas make sense. We will ask you both to justify why area formulas make sense as well as use area formulas to solve problems. We'll list a few formulas here, and you are welcome to also search for more formulas if needed. Just remember that you should think about how to justify anything you find online!
+
+\begin{theorem}
+The area $A$ in square units of a parallelogram with base length $L$ units and height which measures $H$ units is given by
+\[
+A = H \times L.
+\]
+\end{theorem}
+It's very important to notice in the formula above that the height $H$ of the parallelogram is not one of the sides of the parallelogram unless the parallelogram is actually a rectangle. See the figure below.
+\begin{image}
+\begin{tikzpicture}
+\draw[thick] (0,0)--(4,0)--(5,4)--(1,4)--(0,0);
+\node[below] at (2,0) {base};
+\draw[dashed] (1,4)--(1,0);
+\node[right] at (1,2) {height};
+\end{tikzpicture}
+\end{image}
+
+\begin{theorem}
+Consider a trapezoid where the lengths of the two parallel sides are $A$ units and $B$ units. We draw the height as a segment perpendicular to both of the parallel sides, and we write the length of this height as $H$ units. In this case, the area $A$ in square units is given by
+\[
+A = \frac12 (A+B)H.
+\]
+\end{theorem}
+Again, notice that the height is not any of the sides of the trapezoid! We have labeled the various parts of the formula in the figure below.
+\begin{image}
+\begin{tikzpicture}
+\draw[thick] (0,0)--(6,0)--(5,3)--(2,3)--(0,0);
+\node[above] at (3.5, 3){length $A$};
+\node[below] at (3,0) {length $B$};
+\draw[dashed] (2,3)--(2,0);
+\node[right] at (2,1.5) {height};
+\end{tikzpicture}
+\end{image}
+
+Our last example in this section will be the area formula for circles.
+\begin{theorem}
+The area $A$ in square units of a circle whose radius measures $r$ units is given by
+\[
+A = \pi r^2.
+\]
+\end{theorem}
+\begin{explanation}
+Let's start by drawing a circle and marking its radius. In the figure below, the radius has length $r$.
+\begin{image}
+\begin{tikzpicture}
+\draw[thick] (0,0) circle (2cm);
+\draw[dashed] (0,0)--(2,0);
+\node[below] at (1,0) {$r$};
+\end{tikzpicture}
+\end{image}
+In case we need them later, we will also use $C$ to refer to the length of the circle's circumference, and $D$ to refer to the length of the circle's diameter.
+
+We will use a moving and additivity strategy to find the area of this circle. Our goal will be to cut up and rearrange the area into a shape that we recognize. Watch the next video to see the process.
+
+VIDEO
+
+Now that we have rearranged the pieces, they are arranged in a shape that looks somewhat like this.
+\begin{image}
+\begin{tikzpicture}
+\draw[thick] (0,0)--(3,0)--(3,1)--(0,1)--(0,0);
+\node[right] at (3,0.5) {$B$};
+\node[above] at (1.5, 1) {$A$};
+\end{tikzpicture}
+\end{image}
+What shape have we made with our circle pieces?
+\begin{multipleChoice}
+\choice{A circle}
+\choice{A triangle}
+\choice[correct]{A rectangle}
+\choice{A parallelogram}
+\choice{A trapezoid}
+\end{multipleChoice}
+The side marked $A$ in the figure (on the right side of the shape) is the \wordChoice{\choice{diameter} \choice{circumference} \choice[correct]{radius}} of the original circle, and so it measures $\answer[given]{r}$ units. The side marked $B$ in the figure (on the top or bottom of the shape) is half of the \wordChoice{\choice{diameter} \choice[correct]{circumference} \choice{radius}} of the original circle, and so it measures $\frac{1}{2} \answer[given]{C}$.
+
+Since the figure in question is a rectangle, we can use the area formula for rectangles to find the area of this shape. We see the following.
+\[
+A = (r) \times \left ( \frac12 C \right )
+\]
+Since we also know from the definition of $\pi$ that $C = \pi D = \pi \times 2r = 2\pi r$, we can replace the $C$ in our equation.
+\[
+A = (r) \times \left (\frac12 \times 2 \pi r \right )
+\]
+Finally, we can combine like terms to get the formula we want.
+\[
+A = \pi \times r \times r = \pi r^2
+\]
+
+\end{explanation}
+As with many of our other figures, notice again that the radius of the circle is a specific segment, and its measure is a different idea than the segment itself! So, $r$ refers to the length of the radius in our formula.
 
 
-Mention parallelogram, trapezoid
-
-Circle area formula
-
+\begin{question}
+Pause and think: what similarities and differences have you seen among the formulas we've discussed? What ideas do you want to remember?
+\begin{freeResponse}
+Write your thoughts here!
+\end{freeResponse}
+\end{question}
 
 
 \section{Volume}
 
-V=Axh formula/box volume example
+It's time now to think about volume formulas, and we'll use the same perspective we took for length and area by using the four-step measurement process. Let's start with the volume of a box.
+\begin{example}
+Let's find the volume of a box whose base has sides which measure $5$cm and $4$cm and whose height measures $2$cm. We'll start by drawing a picture of this box.
+\begin{image}
+\begin{tikzpicture}
+    % Define the coordinates of the box vertices
+    \coordinate (A) at (0, 0, 0);
+    \coordinate (B) at (5, 0, 0);
+    \coordinate (C) at (5, 2, 0);
+    \coordinate (D) at (0, 2, 0);
+    \coordinate (E) at (0, 0, 4);
+    \coordinate (F) at (5, 0, 4);
+    \coordinate (G) at (5, 2, 4);
+    \coordinate (H) at (0, 2, 4);
 
-List other formulas
+    % Draw the bottom face
+    \draw[thick] (A) -- (B) -- (C) -- (D) -- cycle;
 
-Wrap up about grade levels
+    % Draw the vertical edges
+    \draw[thick] (A) -- (E);
+    \draw[thick] (B) -- (F);
+    \draw[thick] (C) -- (G);
+    \draw[thick] (D) -- (H);
+
+    % Draw the top face
+    \draw[thick] (E) -- (F) -- (G) -- (H) -- cycle;
+
+    % Draw the hidden lines for clarity
+    \draw[dashed] (A) -- (E);
+    \draw[dashed] (B) -- (F);
+    \draw[dashed] (C) -- (G);
+    \draw[dashed] (D) -- (H);
+    
+    %label the measurements
+    \node[below] at (2.5,0,4) {5 cm};
+    \node[right] at (5,0,2){4cm};
+    \node[right] at (5,1,0) {2cm};
+\end{tikzpicture}
+\end{image}
+With our four step measuring process, the first thing we need to do is choose an aspect to measure, which in this case is the volume of the box. The second step is to choose an appropriate unit. The lengths are measured in centimeters, so we should choose \wordChoice{\choice{centimeters}\choice{square centimeters} \choice[correct]{cubic centimeters}} because the volume is a 3D aspect and we need our unit to also be a 3D aspect. So one unit is one cubic centimeter (remember that this just means we have a cube whose side lengths all measure one centimeter).
+
+Let's start by fitting square centimeters on the bottom face of the box. We'll draw a picture of just the bottom face, and then imagine how the boxes will fit. Here is a picture of just the bottom of the box.
+\begin{image}
+\begin{tikzpicture}
+    % Define the coordinates of the box vertices
+    \coordinate (A) at (0, 0, 0);
+    \coordinate (B) at (5, 0, 0);
+    \coordinate (C) at (5, 2, 0);
+    \coordinate (D) at (0, 2, 0);
+    \coordinate (E) at (0, 0, 4);
+    \coordinate (F) at (5, 0, 4);
+    \coordinate (G) at (5, 2, 4);
+    \coordinate (H) at (0, 2, 4);
+
+    % Draw the bottom face
+    \draw[thick] (E) -- (A) -- (B) -- (F) -- cycle;
+    
+    %label the measurements
+    \node[below] at (2.5,0,4) {5 cm};
+    \node[right] at (5,0,2){4cm};
+    %\node[right] at (5,1,0) {2cm};
+\end{tikzpicture}
+\end{image}
+This figure is a rectangle, even though it looks like a parallelogram. So, we can place a grid on top of this rectangle that will show us how to cover it with cubes.
+\begin{image}
+\begin{tikzpicture}
+    % Define the coordinates of the box vertices
+    \coordinate (A) at (0, 0, 0);
+    \coordinate (B) at (5, 0, 0);
+    \coordinate (C) at (5, 2, 0);
+    \coordinate (D) at (0, 2, 0);
+    \coordinate (E) at (0, 0, 4);
+    \coordinate (F) at (5, 0, 4);
+    \coordinate (G) at (5, 2, 4);
+    \coordinate (H) at (0, 2, 4);
+
+    % Draw the bottom face
+    \draw[thick] (E) -- (A) -- (B) -- (F) -- cycle;
+    
+    %label the measurements
+    \node[below] at (2.5,0,4) {5 cm};
+    \node[right] at (5,0,2){4cm};
+    %\node[right] at (5,1,0) {2cm};
+    \foreach \x in {1, 2, ..., 4} \draw (\x,0,4)--(\x,0,0);
+   \foreach \y in {1, 2, ..., 3} \draw (0,0,\y)--(5,0,\y);
+\end{tikzpicture}
+\end{image}
+This grid is made out of squares even though it looks like they are parallelograms again. We know that the length of the rectangle measures $5$cm, so we can fit $\answer[given]{5}$ squares along the length, making $5$ groups of squares. We also know that the width of this rectangle is $4$cm, so we can fit $\answer[given]{4}$ squares in each of the groups. All in total, we have $5 \times 4 = 20$ total squares that fit on the bottom of this shape.
+
+But, we are not trying to fill the shape with squares, we are trying to fill it with cubes. Thankfully, since our cubes measure 1 centimeter on each side, they have faces that exactly match up with the squares drawn on this face. Let's draw one of the cubes sitting on top of one of the squares.
+\begin{image}
+\begin{tikzpicture}
+    % Define the coordinates of the box vertices
+    \coordinate (A) at (0, 0, 0);
+    \coordinate (B) at (5, 0, 0);
+    \coordinate (C) at (5, 2, 0);
+    \coordinate (D) at (0, 2, 0);
+    \coordinate (E) at (0, 0, 4);
+    \coordinate (F) at (5, 0, 4);
+    \coordinate (G) at (5, 2, 4);
+    \coordinate (H) at (0, 2, 4);
+
+    % Draw the bottom face
+    \draw[thick] (E) -- (A) -- (B) -- (F) -- cycle;
+    
+    %label the measurements
+    \node[below] at (2.5,0,4) {5 cm};
+    \node[right] at (5,0,2){4cm};
+    %\node[right] at (5,1,0) {2cm};
+    \foreach \x in {1, 2, ..., 4} \draw (\x,0,4)--(\x,0,0);
+   \foreach \y in {1, 2, ..., 3} \draw (0,0,\y)--(5,0,\y);
+   \draw (0,0,1)--(0,1,1)--(1,1,1)--(1,1,0)--(0,1,0)--(0,1,1);
+   \draw (1,1,1)--(1,0,1);
+   \draw (1,1,0)--(1,0,0);
+   \draw (0,1,0)--(0,0,0);
+\end{tikzpicture}
+\end{image}
+Imagine such a cube fitting exactly on each square, so we need a total of $\answer[given]{20}$ cubes to fill up the bottom of the box.
+
+Next, we know that the box is $2$cm tall, so we can fit exactly $\answer[given]{2}$ such layers of cubes in the entire box. If we think of each layer as a box, we have the following.
+\[
+\answer{2} \textrm{ layers } \times \answer{20} \textrm{ cubes per layer} = 40 \textrm{ cubes total}
+\]
+We used one layer as one group, and one cube as one object in our multiplication.
+\end{example}
+
+Let's take a step back and develop a more general formula here. To find the volume of this box, we first found the area of the rectangle at the base. We justified using multiplication, or we could have used the area formula for a rectangle. We then matched the squares up with cubes (using a one-to-one correspondence again!) to find the volume of the bottom layer. Since all the layers were the same, we used the cubic inches as our objects (one cubic inch was one object) and then we took the number of layers and used that as the number of groups (one layer is one group) and got the following formula.
+\begin{theorem}
+The volume $V$ in cubic units of a solid whose base measures $A$ square units, whose height measures $h$ units, and where the layers of volume made by the units of height are all the same is
+\[
+V = A \times h.
+\]
+\end{theorem}
+For a box whose height measures $h$ and whose base is a rectangle with sides measuring $l$ and $w$, this formula gives us
+\[
+V = A \times h = (l \times w) \times h
+\]
+and this is the box volume formula that you have probably seen before.
+
+But this formula is more flexible, as well. Suppose we have a right prism with a triangular base. We can use the area formula for triangles to find the area of the base, and then since the prism is a right prism we'll have all the layers the same, and so we can use the same formula. The triangular prism below has a triangle as its base with (triangle) base length of $b$ and a (triangle) height length of $a$ as well as a (prism) height of $h$.
+\begin{image}
+\begin{tikzpicture}
+    % Define the coordinates of the triangular base vertices
+    \coordinate (A) at (0, 0, 0);
+    \coordinate (B) at (3, 0, 0);
+    \coordinate (C) at (1.5, 2.5, 0);
+
+    % Define the height of the prism
+    \coordinate (D) at (0, 0, 3);
+    \coordinate (E) at (3, 0, 3);
+    \coordinate (F) at (1.5, 2.5, 3);
+
+    % Draw the bottom face
+    %\draw[thick] (A) -- (B) -- (C) -- cycle;
+    \draw[dashed] (C)--(A)--(B);
+    \draw[thick] (B)--(C);
+
+    % Draw the vertical edges
+    \draw[dashed] (A) -- (D);
+    \draw[thick] (B) -- (E);
+    \draw[thick] (C) -- (F);
+
+    % Draw the top face
+    \draw[thick] (D) -- (E) -- (F) -- cycle;
+
+    %label some lengths
+    \draw[dotted] (1.5,0,0)--(1.5,2.5,0);
+    \node[right] at (1.5, 1.25, 0) {$a$};
+    \node[right] at (3,0,1.5) {$h$};
+    \node[below] at (1.5, 0, 3) {$b$};
+
+\end{tikzpicture}
+\end{image}
+We can calculate the area of the base using the area formula for triangles, since the base is a triangle. We get
+\[
+\frac12 \times \answer[given]{a} \times b
+\]
+for the area of the base, and then the height measures $h$, so the volume of this figure is given by
+\[
+V = A \times h =\left ( \frac12\times  \answer[given]{a} \times b \right ) \times \answer[given]{h}.
+\]
+In fact, we could use this formula on an oblique prism with a triangular base, since we could first shear the oblique prism into a right one! You should still imagine matching the cubes to the area squares in the first layer, but you might need to use part of a cube if you only have part of an area unit.
+
+We could also use this formula to calculate the volume of a right cylinder whose base is a circle of radius $r$ and whose height measures $h$. The area of the base is given by
+\[
+\pi \times \answer{r}^2
+\]
+which means the volume is given by
+\[
+V = A \times h = (\pi \times \answer{r}^2 ) \times h.
+\]
+This is a powerful formula!
+
+However, we cannot use this formula to calculate every volume, because not every solid has layers which are all the same. For instance, if you took a right cone with a circular base and tried to cut it into layers, the layers would all be different. Here is a cone to help you visualize, but if you have some modeling dough handy you could try this out yourself.
+\begin{image}
+\begin{tikzpicture}
+% Define dimensions
+\def\radius{1.5}
+\def\height{3}
+
+% Draw the oval base
+\draw (0,0) ellipse[x radius=2*\radius, y radius=0.5*\radius];
+
+% Draw lines to the apex
+\draw (-3,0)--(0,\height);
+\draw (2.8,0.27)--(0,\height);
+\draw (1,-0.7)--(0,\height);
+\draw (2.8, -0.27)--(0,\height);
+\draw (-1,-0.7)--(0,\height);
+
+%mark radius and height
+\draw[dashed] (0,3)--(0,0)--(3,0);
+\node[right] at (0,1.5){$h$};
+\draw[fill=black] (0,0) circle (2pt);
+\node[below] at (1.5,0) {$r$};
+\end{tikzpicture}
+\end{image}
+\begin{theorem}
+The volume $V$ in cubic units of a cone whose base is a circle with radius length $r$ and whose height has length $h$ units is given by
+\[
+V = \frac13 \pi r^2 h.
+\]
+\end{theorem}
+We won't prove this theorem here and we won't ask you to explain where it comes from, but you should be able to use it like our other formulas. Similarly, here is the formula for the volume of a sphere.
+\begin{theorem}
+The volume $V$ in cubic units of a sphere whose radius measures $r$ units is given by
+\[
+V = \frac43 \pi r^3.
+\]
+\end{theorem}
+
+The Ohio Mathematics Standards have kids thinking about length formulas by grade two, area formulas starting in grade three, and volume formulas starting in grade five. More importantly than using the formulas, the standards talk about relating the formulas to the meanings of operations that kids are learning as well as connecting to the meaning of length, area, and volume. While we might not go into as much detail and depth about why the formulas make sense with kids as we have done in this section, we want you to deeply understand how all of these ideas are connected so that you are ready to teach both today's standards as well as any that come in the future. More importantly, we want you to be able to engage deeply with kids on these topics!
+
+\begin{question}
+Pause and think: in your own words, what are the connections between the meaning of area, the meaning of multiplication, and the area formulas we have discussed?
+\begin{freeResponse}
+Write some thoughts here!
+\end{freeResponse}
+\end{question}
 
 
 \end{document}
