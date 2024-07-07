@@ -22,22 +22,18 @@ Notice what this definition is doing for us: we use rotations, reflections, and 
 Let's look at an example to help us put our thinking in order.
 \begin{example}
 Let's start with a triangle.
-\begin{center}\begin{tikzpicture}
+\begin{image}\begin{tikzpicture}
 \draw[thick] (-4,-1)--(-2,1)--(-3.8, 0.5)--(-4,-1);
-\end{tikzpicture}\end{center}
+\end{tikzpicture}\end{image}
 Next, let's translate that triangle so it's in a different spot. We'll show one of the translation arrows using a dashed line.
-\begin{center}\begin{tikzpicture}
+\begin{image}\begin{tikzpicture}
 \draw[thick] (-4,-1)--(-2,1)--(-3.8, 0.5)--(-4,-1);
 \draw[thick, dashed, ->] (-4,-1)--(-1,1);
 \draw[thick] (-1,1)--(1,3)--(-0.8,2.5)--(-1,1);
 %\draw[fill=black] (0,2) circle (2pt);
-\end{tikzpicture}\end{center}
+\end{tikzpicture}\end{image}
 Next, we'll remove the arrow from the original to the translated one and draw the translated one using a dotted line instead of a solid one (so that you can see the final shape). Then, let's rotate our translated (dotted) triangle 50 degrees counterclockwise around the marked point on one of the sides.
-\begin{center}\begin{tikzpicture}
-\draw[thick] (-4,-1)--(-2,1)--(-3.8, 0.5)--(-4,-1);
-\end{tikzpicture}\end{center}
-Next, let's translate that triangle so it's in a different spot. We'll show one of the translation arrows using a dashed line.
-\begin{center}\begin{tikzpicture}
+\begin{image}\begin{tikzpicture}
 \draw[thick] (-4,-1)--(-2,1)--(-3.8, 0.5)--(-4,-1);
 %\draw[thick, dashed, ->] (-4,-1)--(-1,1);
 \draw[thick, dotted] (-1,1)--(1,3)--(-0.8,2.5)--(-1,1);
@@ -45,7 +41,18 @@ Next, let's translate that triangle so it's in a different spot. We'll show one 
 \draw[thick] (0.1232, 0.5911)--(-0.1232, 3.4088)--(-0.8972, 1.70856)--(0.1232, 0.5911);
 \node at (-3, -1) {old};
 \node at (0,0) {new};
-\end{tikzpicture}\end{center}
+\end{tikzpicture}\end{image}
+
+%Next, let's translate that triangle so it's in a different spot. We'll show one of the translation arrows using a dashed line.
+%\begin{image}\begin{tikzpicture}
+%\draw[thick] (-4,-1)--(-2,1)--(-3.8, 0.5)--(-4,-1);
+%%\draw[thick, dashed, ->] (-4,-1)--(-1,1);
+%\draw[thick, dotted] (-1,1)--(1,3)--(-0.8,2.5)--(-1,1);
+%\draw[fill=black] (0,2) circle (2pt);
+%\draw[thick] (0.1232, 0.5911)--(-0.1232, 3.4088)--(-0.8972, 1.70856)--(0.1232, 0.5911);
+%\node at (-3, -1) {old};
+%\node at (0,0) {new};
+%\end{tikzpicture}\end{image}
 
 \begin{question}
 True or false: The old triangle is the same as the new triangle, just in a different location.
@@ -103,7 +110,7 @@ Using these theorems to prove that triangles are congruent is a focus in high sc
 
 \begin{example} 
 Two triangles, $ABC$ and $DEF$, are pictured below. The length of side $AB$ is 3cm, the length of side $BC$ is 5.5cm, and the angle $ABC$ measures $104\degree$.  The length of side $DE$ is 3cm, the length of side $EF$ is 5.5cm, and the angle $DEF$ measures $104\degree$.
-\begin{center} \begin{tikzpicture}
+\begin{image} \begin{tikzpicture}
 % First triangle ABC
 \coordinate (A) at (0,0);
 \coordinate (B) at (3,0);
@@ -129,7 +136,7 @@ Two triangles, $ABC$ and $DEF$, are pictured below. The length of side $AB$ is 3
 \node at (9.3, 1.5) {5.5 cm};
 \node at (2.7, 0.2) {$104\degree$};
 \node at (7.7, 0.2){$104\degree$};
-\end{tikzpicture}\end{center}
+\end{tikzpicture}\end{image}
 Are the two triangles congruent? If so, which theorem tells us that they are congruent?
 \begin{multipleChoice}
 \choice{They are congruent by SSS}
@@ -155,24 +162,24 @@ Another way that triangle congruence can be used is to show that certain propert
 Prove that opposite sides of a parallelogram are congruent. (We mentioned this fact in the ``Constructions'' section.)
 
 First, let's start with any parallelogram called $ABCD$. We'll draw one example, but you should pay attention to how this argument would work if we drew a different parallelogram.)
-\begin{center}\begin{tikzpicture}
+\begin{image}\begin{tikzpicture}
 \draw[thick] (0,0)--(3,0)--(7,2)--(4,2)--(0,0);
 \node[below] at (0,0) {$A$};
 \node[below] at (3,0) {$B$};
 \node[above] at (7,2) {$C$};
 \node[above] at (4,2) {$D$};
-\end{tikzpicture}\end{center}
+\end{tikzpicture}\end{image}
 Next, our goal is to use the triangle congruence theorems, so we need some triangles. We'll get them by drawing a diagonal through the parallelogram. (Either diagonal is fine!)
-\begin{center}\begin{tikzpicture}
+\begin{image}\begin{tikzpicture}
 \draw[thick] (0,0)--(3,0)--(7,2)--(4,2)--(0,0);
 \node[below] at (0,0) {$A$};
 \node[below] at (3,0) {$B$};
 \node[above] at (7,2) {$C$};
 \node[above] at (4,2) {$D$};
 \draw[dashed] (0,0)--(7,2);
-\end{tikzpicture}\end{center}
+\end{tikzpicture}\end{image}
 Next, we want to show that these triangles are congruent, so we need to start thinking about pieces that we already know. We know from the definition of a parallelogram that opposite sides are parallel, so we can use side $AB$ and side $CD$ as parallel lines and the diagonal $AC$ as a transversal. The Parallel Postulate says that alternate interior angles are congruent in this situation, so we know that angle $a$ is congruent to angle $b$ in the figure.
-\begin{center}\begin{tikzpicture}
+\begin{image}\begin{tikzpicture}
 \draw[thick] (0,0)--(3,0)--(7,2)--(4,2)--(0,0);
 \node[below] at (0,0) {$A$};
 \node[below] at (3,0) {$B$};
@@ -181,9 +188,9 @@ Next, we want to show that these triangles are congruent, so we need to start th
 \draw[dashed] (0,0)--(7,2);
 \node at (5.7, 1.8) {$a$};
 \node at (1.3, 0.2) {$b$};
-\end{tikzpicture}\end{center}
+\end{tikzpicture}\end{image}
 We also showed previously that parallelograms have the properties that opposite angles are equal. This means that the angle at $D$ is congruent to the angle at $\answer[given]{B}$. We'll mark those as $\alpha$ and $\beta$ in the figure.
-\begin{center}\begin{tikzpicture}
+\begin{image}\begin{tikzpicture}
 \draw[thick] (0,0)--(3,0)--(7,2)--(4,2)--(0,0);
 \node[below] at (0,0) {$A$};
 \node[below] at (3,0) {$B$};
@@ -194,7 +201,7 @@ We also showed previously that parallelograms have the properties that opposite 
 \node at (1.3, 0.2) {$b$};
 \node at (2.9, 0.2) {$\beta$};
 \node at (4, 1.8) {$\alpha$};
-\end{tikzpicture}\end{center}
+\end{tikzpicture}\end{image}
 Finally, here's a tricky step: the length of the diagonal is equal to itself.
 \begin{question}
 How do we know that triangle $ACD$ is congruent to triangle $CAB$?
@@ -216,7 +223,7 @@ Now that we know that the triangles are congruent, we know that they are the sam
 Prove that the opposite angles of a rhombus are congruent. (We mentioned this fact in the ``Constructions'' section.) 
 
 Let's start by drawing any rhombus. Again, we'll draw a specific rhombus called $ABCD$, but you should imagine how this argument would work for any rhombus.
-\begin{center}\begin{tikzpicture}
+\begin{image}\begin{tikzpicture}
     % Define the coordinates of the rhombus vertices
     \coordinate (A) at (0, 0);
     \coordinate (B) at (3, 2);
@@ -231,9 +238,9 @@ Let's start by drawing any rhombus. Again, we'll draw a specific rhombus called 
     \node at (B) [above] {B};
     \node at (C) [below] {C};
     \node at (D) [below] {D};
-\end{tikzpicture}\end{center}
+\end{tikzpicture}\end{image}
 Since we are trying to use the triangle congruence theorems, we need triangles. Let's do this by drawing one of the diagonals, $AC$, using a dashed line.
-\begin{center}\begin{tikzpicture}
+\begin{image}\begin{tikzpicture}
     % Define the coordinates of the rhombus vertices
     \coordinate (A) at (0, 0);
     \coordinate (B) at (3, 2);
@@ -251,7 +258,7 @@ Since we are trying to use the triangle congruence theorems, we need triangles. 
     
     %draw the diagonal
     \draw[thick, dashed] (A)--(C);
-\end{tikzpicture}\end{center}
+\end{tikzpicture}\end{image}
 Remember that the definition of a rhombus is that all sides have equal length. So we know that side $AB$ is equal in length to side $CD$, and side $BC$ is equal in length to side $AD$. Also, we know that the diagonal is equal in length to itself.
 \begin{question}
 How do we know that triangle $ABC$ is congruent to triangle $CDA$?
@@ -282,7 +289,7 @@ Enter your thoughts here, or a reminder of where you wrote your proof in your no
 Prove that the diagonals of a rhombus bisect the interior angles of that rhombus. (We mentioned this fact in the ``Properties'' section.)
 
 First, let's start with the same rhombus $ABCD$ we used in the previous example (but again you are imagining that this could be any rhombus at all).
-\begin{center}\begin{tikzpicture}
+\begin{image}\begin{tikzpicture}
     % Define the coordinates of the rhombus vertices
     \coordinate (A) at (0, 0);
     \coordinate (B) at (3, 2);
@@ -300,7 +307,7 @@ First, let's start with the same rhombus $ABCD$ we used in the previous example 
     
         %draw the diagonal
     \draw[thick, dashed] (A)--(C);
-\end{tikzpicture}\end{center}
+\end{tikzpicture}\end{image}
 We already showed that triangle $ABC$ was congruent to $ADC$ using SSS. Again, we know that this means that the triangles are the same in every way, so they have the same angles. We used angles $B$ and $D$ before, but now take a look at angles $BAC$ and $DAC$. They also must be equal, because they are in corresponding positions when we look at our congruent triangles. In other words, the diagonal $AC$ bisects the angle $BAD$. Similarly, we can see that the diagonal $AC$ bisects the angle $BCD$. To see that the other diagonal bisects the other two angles, you should draw the diagonal $BD$ and repeat the argument.
 
 \end{example}
