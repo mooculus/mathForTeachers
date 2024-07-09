@@ -26,7 +26,7 @@ When it's clear we are only scaling lengths, we typically call the linear scale 
 
 \begin{example}
 The two quadrilaterals in the example below are similar. Answer the following questions based on the figures' measurements. (The figures are not necessarily drawn to scale; use the measurements given.)
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
 % First quadrilateral
 \draw[thick] (0,0) -- (3,0) -- (4,2) -- (1,3) -- cycle;
@@ -51,7 +51,7 @@ The two quadrilaterals in the example below are similar. Answer the following qu
 \node at (1.5, -0.2) {$7$cm};
 
 \end{tikzpicture}
-\end{center}
+\end{image}
 Angle $BCD$ measures $74\degree$, side $AB$ measures $7$cm, and side $B'C'$ measures $9$cm.
 
 \begin{question}
@@ -80,14 +80,14 @@ The fact that all of the lengths in similar figures are scaled by the same scale
 \begin{example}
 Let's start with a rectangle which is $3$cm wide and $5$cm tall, and scale that quadrilateral using a scale factor of $\frac{3}{4}$. Here is a picture of the original and the scaled version.
 
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
 \draw[thick] (0,0)--(3,0)--(3,5)--(0,5)--(0,0);
 \node[rotate=90] at (-0.2, 2.5) {5cm};
 \node at (1.5, -0.2) {3cm};
 \draw[thick] (5,0)--(7.25,0)--(7.25, 3.75)--(5,3.75)--(5,0);
 \end{tikzpicture}
-\end{center}
+\end{image}
 \begin{question}
 What is the width of the scaled figure? \begin{prompt}$\answer[given]{2.25}$cm\end{prompt}
 
@@ -120,16 +120,16 @@ As a reminder, this is a theorem for triangles only; in general it is not enough
 Identifying similar triangles in the wild can sometimes help us answer questions about the world around us. For instance, there is a legend that an Ancient Greek philosopher, \link[Thales of Miletus]{https://en.wikipedia.org/wiki/Thales_of_Miletus} used the ideas of similar triangles to find the height of Pyramids in Egypt. Here is an example of reasoning that Thales could have used.
 \begin{example}
 Thales took a look at the pyramids and their shadows. He reasoned that the height of the pyramid and the shadow of the pyramid made a right triangle.
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
 \draw[thick] (0,5)--(0,0)--(3,0);
 \draw (0,0.2)--(0.2,0.2)--(0.2,0);
 \node[rotate=90] at (-0.2, 2.5) {pyramid height};
 \node at (1.5, -0.2) {pyramid shadow};
 \end{tikzpicture}
-\end{center}
+\end{image}
 Thales then set up a stick in the ground, perpendicular to the ground, and considers both the stick and the stick's shadow. We'll draw this as well as connect the dots forming two triangles.
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
 \draw[thick] (0,5)--(0,0)--(3,0);
 \draw (0,0.2)--(0.2,0.2)--(0.2,0);
@@ -142,7 +142,7 @@ Thales then set up a stick in the ground, perpendicular to the ground, and consi
 \node[rotate=90] at (4.8, 1) {stick height};
 \node at (5.75, -0.2) {stick shadow};
 \end{tikzpicture}
-\end{center}
+\end{image}
 Next, Thales reasoned that the sun rays forming the shadow of each object were roughly \wordChoice{\choice{perpendicular} \choice[correct]{parallel}} to one another, so the angles formed by the object and the sun rays in each triangle must be equal. In the figure, these are the angles at the top of each triangle. We also have a right angle in each triangle, so we can use the \wordChoice{\choice{SAS}\choice{AAS}\choice[correct]{AA}} criterion to say that these two triangles are similar, because two of their angles have equal measure.
 
 Now, Thales could measure the length of the stick and the length of the shadow as well as the pyramid's shadow, and use this information to calculate the height of the pyramid.

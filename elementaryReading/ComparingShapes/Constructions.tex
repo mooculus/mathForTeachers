@@ -25,19 +25,19 @@ To \dfn{bisect} an object means to cut the object into two equal pieces.
 
 \begin{example}
 Let's bisect the angle below.
-\begin{center}
+\begin{image}
 	\begin{tikzpicture}
 		\draw[thick, <->] (5,0)--(0,0)--(4, {4*tan(40)});
 	\end{tikzpicture}
-\end{center}
+\end{image}
 Imagine that this angle is drawn on a sheet of paper. (Better yet, draw a copy of the angle for yourself, so that you can do the folding!) To bisect this angle, we want to cut the angle exactly in half, so that we are making half of the original turn. If we fold the angle so that the vertex is on the fold and the two original rays of the angle match up with one another, the fold line can act as a new ray that we can use with the same vertex and either of the original rays to make the bisected angle.
 
-\begin{center}
+\begin{image}
 	\begin{tikzpicture}
 		\draw[thick, <->] (5,0)--(0,0)--(4, {4*tan(40)});
 		\draw[dashed, ->] (0,0)--(6, {6*tan(20)});
 	\end{tikzpicture}
-\end{center}
+\end{image}
 Why does this work? Look at your folded paper while it is still folded. The two pieces of the angle match up with one another exactly, so that when we unfold, the part of the angle on one side of the fold has to be equal to the part on the other side of the fold. So, we have cut the angle into $\answer[given]{2}$ equal-sized pieces, which was our goal.
 \end{example}
 
@@ -69,7 +69,7 @@ This folding construction is important for exploration and making conjectures, b
 Let's look at another type of example where folding can help us.
 \begin{example}
 Let's use paper folding to show that the base angles of an isosceles triangle are equal. We'll start by reminding ourselves of the definitions that we need. An isosceles triangle is a triangle which has at least two equal sides. The base angles of the triangle are the ones opposite of these equal sides. In the figure below, we will assume that sides $AC$ and $BC$ have the same length, and so the angles we are interested in are the ones marked $\alpha$ and $\beta$.
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
     % Define the vertices of the triangle
     \coordinate (A) at (0, 0);
@@ -88,7 +88,7 @@ Let's use paper folding to show that the base angles of an isosceles triangle ar
     \draw (A) -- ++(0.5, 0) arc[start angle=0, end angle=56.31, radius=0.5] node[midway, above right] {$\alpha$};
     \draw (B) -- ++(-0.5, 0) arc[start angle=180, end angle=123.69, radius=0.5] node[midway, above left] {$\beta$};
 \end{tikzpicture}
-\end{center}
+\end{image}
 Next, we imagine that we cut out this triangle on paper. We are trying to decide whether the angles $\alpha$ and $\beta$ are equal, so let's fold the paper.
 \begin{question}
 	What is our goal in making this fold?
@@ -100,7 +100,7 @@ Next, we imagine that we cut out this triangle on paper. We are trying to decide
 	\end{multipleChoice}
 \end{question}
 Here is a picture of what our folded triangle looks like.
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
     % Define the vertices of the triangle
     \coordinate (A) at (0, 0);
@@ -130,7 +130,7 @@ Here is a picture of what our folded triangle looks like.
     \draw[thick](D)--(E)--(7,0);
      \draw (E) -- ++(-0.5, 0) arc[start angle=180, end angle=123.69, radius=0.5] node[midway, above left] {$\alpha=\beta$};
 \end{tikzpicture}
-\end{center}
+\end{image}
 After folding, it indeed appears that $\alpha$ and $\beta$ match up exactly. Our next goal would be to try this same process with some other isosceles triangles to see whether their angles would also match up. Try it for yourself!
 \end{example}
 
@@ -147,7 +147,7 @@ Looking back at the previous folded triangle, what else appears to be true about
 \end{question}
 
 As a final way to use folding to create shapes, notice that in our previous example, the folding also shows that the two sides $AB$ and $AC$ are equal because they match up. In fact, if we started with a blank piece of paper and wanted to create an isosceles triangle, we could use the reverse of the previous argument.
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
     % Define the vertices of the triangle
     \coordinate (A) at (0, 0);
@@ -178,7 +178,7 @@ As a final way to use folding to create shapes, notice that in our previous exam
     \node at (8.5, 2) {cut lines};
      %\draw (E) -- ++(-0.5, 0) arc[start angle=180, end angle=123.69, radius=0.5] node[midway, above left] {$\alpha=\beta$};
 \end{tikzpicture}
-\end{center}
+\end{image}
 If we cut along the two solid lines and unfold along the fold, we'll produce the triangle we started with. We'll know that sides $AC$ and $BC$ have the same length because they were made with the exact same cut, and so we can say that a triangle made with this process is an isosceles triangle.
 
 We can use folding constructions for many more types of shapes and examples, and we hope that both the examples we've discussed here as well as the ones we talk through in class spark your creativity. We want young kids to be exploring in this way, but as they develop more mathematics we want to also demonstrate that we have ways to be more precise.
@@ -189,18 +189,18 @@ The next way we want to think about constructing using definitions and propertie
 For our first example, let's think about bisecting an angle again.
 \begin{example}
 Use your compass, protractor, and ruler (as needed) to bisect the angle below.
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
 		\draw[thick, <->] (3,0)--(0,0)--(1, {1*tan(72)});
 	\end{tikzpicture}
-\end{center}
+\end{image}
 To do this, we could take our \wordChoice{\choice{compass} \choice[correct]{protractor} \choice{ruler}} and measure the angle. This angle measures $\answer[tolerance=5]{72}$ degrees. To bisect means to cut in two equal pieces, so we are trying to draw an angle which measures $\answer[given,tolerance=2.5]{36}$ degrees, and if we use the same vertex as the original angle, our drawing might look like the following, where the bisected angle is formed using the same vertex, either of the original rays, and the dashed ray.
-\begin{center}
+\begin{image}
 	\begin{tikzpicture}
 		\draw[thick, <->] (3,0)--(0,0)--(1, {1*tan(72)});
 		\draw[dashed, ->] (0,0)--(3, {3*tan(36)});
 	\end{tikzpicture}
-\end{center}
+\end{image}
 \end{example}
 
 Hopefully you can also imagine using your tools to investigate various properties. For instance, if we wanted to check whether a parallelogram had opposite sides with equal measure, we could grab our ruler and measure the opposite sides. If we did this with a bunch of different parallelograms, we could conjecture that perhaps this property holds for every parallelogram, but we couldn't say much more for sure. We can't check every single parallelogram in this way, so if we wanted to prove that this property holds for every parallelogram we would need a different strategy. We'll come back to this idea in a later section. So, constructing by measuring is a little more advanced than folding, because we are using more advanced tools, but it has many of the same limitations that folding constructions do.
@@ -217,42 +217,42 @@ For our second example, let's think about actually making a shape using measurin
 		\choice[correct]{Four right angles}
 	\end{selectAll}
 We can start by drawing one side of the square.
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
 	\draw[thick] (0,0)--(3,0);
 \end{tikzpicture}
-\end{center}
+\end{image}
 Next, we need create an angle that measures $\answer[given]{90}$ degrees, so we grab our protractor and measure. 
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
 	\draw[thick] (0,0)--(3,0);
 	\draw[dashed, ->] (3,0)--(3,5);
 \end{tikzpicture}
-\end{center}
+\end{image}
 This next side has to have the same measure as our original side, so we grab our ruler, measure the first side, and then mark off that same length on the second side.
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
 	\draw[thick] (0,0)--(3,0)--(3,3);
 	\draw[dashed, ->] (3,0)--(3,5);
 \end{tikzpicture}
-\end{center}
+\end{image}
 We repeat these steps for the next angle and the third side.
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
 	\draw[thick] (0,0)--(3,0)--(3,3)--(0,3);
 	\draw[dashed, ->] (3,0)--(3,5);
 	\draw[dashed, ->] (3,3)--(-2,3);
 \end{tikzpicture}
-\end{center}
+\end{image}
 We repeat the steps again for the third angle and the final side.
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
 	\draw[thick] (0,0)--(3,0)--(3,3)--(0,3)--(0,0);
 	\draw[dashed, ->] (3,0)--(3,5);
 	\draw[dashed, ->] (3,3)--(-2,3);
 	\draw[dashed, ->] (0,3)--(0, -2);
 \end{tikzpicture}
-\end{center}
+\end{image}
 We have constructed the shape to have four equal sides, and we can measure the last angle to see that it is also 90 degrees so that all four angles are right angles. 
 \end{example}
 As we mentioned previously, being able to create a shape that we know is a square allows us to cut out this square and explore its properties, which we could do with either folding or measuring!
@@ -267,13 +267,13 @@ At this point you might be feeling like these constructions aren't very powerful
 To see how these constructions work, let's use the example of bisecting an angle again.
 \begin{example}
 Use your compass and straightedge (unmarked ruler) to bisect the angle below. Follow along on your notes with your own tools.
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
 		\draw[thick, <->] (3.5,0)--(0,0)--(3, {3*tan(28)});
 	\end{tikzpicture}
-\end{center}
+\end{image}
 Let's start by using our compass to draw a circle whose center is the vertex of the angle. We'll mark the points where that circle intersects the two rays of our angle.
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
 		\draw[very thick, <->] (3.5,0)--(0,0)--(3, {3*tan(28)});
 		\draw (0,0) circle (2cm);
@@ -281,9 +281,9 @@ Let's start by using our compass to draw a circle whose center is the vertex of 
 		\draw[fill=black] (2,0) circle (2pt);
 		\draw[fill=black] ({2*cos(28)},{2*sin(28)}) circle (2pt);
 	\end{tikzpicture}
-\end{center}
+\end{image}
 Next, we open our compass again, and use the same radius to trace a circle starting at each of our new marked points. These will be the dashed circle and the circle with dots and dashes.
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
 		\draw[very thick, <->] (3.5,0)--(0,0)--(3, {3*tan(28)});
 		\draw (0,0) circle (2cm);
@@ -293,9 +293,9 @@ Next, we open our compass again, and use the same radius to trace a circle start
 		\draw[dashed] (2,0) circle (2cm);
 		\draw[dashdotted] ({2*cos(28)},{2*sin(28)}) circle (2cm);
 	\end{tikzpicture}
-\end{center}
+\end{image}
 We can see a point where the dashed circle and the dot and dashed circle intersect. We'll mark that point with a circle and draw a line connecting the vertex of the angle to this new point.
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
 		\draw[very thick, <->] (3.5,0)--(0,0)--(3, {3*tan(28)});
 		\draw (0,0) circle (2cm);
@@ -307,13 +307,13 @@ We can see a point where the dashed circle and the dot and dashed circle interse
 		\draw[fill=black] ({3.9*cos(14)},{3.9*sin(14)}) circle (2pt);
 		\draw[thick, dashed, ->] (0,0) -- ({5.5*cos(14)},{5.5*sin(14)});
 	\end{tikzpicture}
-\end{center}
+\end{image}
 This final ray bisects the angle exactly.
 \end{example}
 
 The steps of that construction might seem a little mysterious, but notice what we did: we opened our compass to a certain distance and marked some circles. We know from the definition of a circle that all the points on the edge of the circle are the exact same distance from the center of the circle. So, from the vertex (marked $V$ in the next image) to either of  the points on the original rays (marked $A$ and $B$ in the next image), we know we have the same distance. Then, we used the same compass opening to make the second set of circles, and so we know that the intersection point is at that same distance from $A$ and from $B$ because the point is on a circle with the same radius. (The intersection point is marked $C$ in the next image). In other words, we have created a rhombus because the definition of a rhombus is a quadrilateral with four equal sides, and we know all four of those sides are equal. The rhombus $VACB$ is highlighted below, and the construction circles are removed so we can see a little better.
-\begin{center}
-\begin{center}
+
+\begin{image}
 \begin{tikzpicture}
 		\draw[thick, <->] (3.5,0)--(0,0)--(3, {3*tan(28)});
 		\draw[fill=black] (0,0) circle (2pt) node[below left] {$V$};
@@ -323,8 +323,8 @@ The steps of that construction might seem a little mysterious, but notice what w
 		\draw[thick, dashed, ->] (0,0) -- ({5.5*cos(14)},{5.5*sin(14)});
 		\draw[ultra thick] (0,0)--(2,0)--({3.9*cos(14)},{3.9*sin(14)})--({2*cos(28)},{2*sin(28)})--(0,0);
 	\end{tikzpicture}
-\end{center}
-\end{center}
+\end{image}
+
 We constructed this rhombus without measuring anything! So, as long as we can imagine using our compass to draw a perfect circle, we've drawn a perfect rhombus. Then, we can use a property of rhombuses that says the diagonals bisect the interior angles of a rhombus to say that we've exactly bisected angle $BVA$. Explaining why rhombuses have this property will take a bit more work (and is more on the level of high school mathematics), so we will postpone that proof until a little later.
 
 That was a pretty tough construction, but perhaps you can see how folding constructions and measuring constructions are leading us towards compass and straightedge constructions.
@@ -341,24 +341,24 @@ Compass and straightedge constructions can also be used to make shapes using the
 Given a starting segment, construct an equilateral triangle with sides the same length as that segment using only your compass and straightedge.
 
 First, let's remember the definition of an equilateral triangle, which is a triangle with three sides of equal length. Next, we are given a segment to start with.
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
 	\draw[thick] (0,0)--(3,0);
 	\draw[fill=black] (0,0) circle (2pt) node[below left] {$A$};
 	\draw[fill=black] (3,0) circle (2pt) node[below right] {$B$};
 \end{tikzpicture}
-\end{center}
+\end{image}
 We start by opening our compass to the length of the given segment $AB$ and then we draw a circle with center at $A$.
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
 	\draw[thick] (0,0)--(3,0);
 	\draw[fill=black] (0,0) circle (2pt) node[below left] {$A$};
 	\draw[fill=black] (3,0) circle (2pt) node[below right] {$B$};
 	\draw[dashed] (0,0) circle (3cm);
 \end{tikzpicture}
-\end{center}
+\end{image}
 Next, we open our compass again to the length of $AB$ and draw another circle, this time with center $B$;
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
 	\draw[thick] (0,0)--(3,0);
 	\draw[fill=black] (0,0) circle (2pt) node[below left] {$A$};
@@ -366,9 +366,9 @@ Next, we open our compass again to the length of $AB$ and draw another circle, t
 	\draw[dashed] (0,0) circle (3cm);
 	\draw[dashdotted] (3,0) circle (3cm);
 \end{tikzpicture}
-\end{center}
+\end{image}
 Notice that the two circles have \wordChoice{\choice[correct]{the same} \choice{different}} radius. Let's mark one of the points where the circles intersect (we'll call it $C$) and then draw $AC$ and $BC$.
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
 	\draw[thick] (0,0)--(3,0)--(1.5, {3*sqrt(3)/2})--(0,0);
 	\draw[fill=black] (0,0) circle (2pt) node[below left] {$A$};
@@ -377,7 +377,7 @@ Notice that the two circles have \wordChoice{\choice[correct]{the same} \choice{
 	\draw[dashdotted] (3,0) circle (3cm);
 	\draw[fill=black] (1.5, {3*sqrt(3)/2}) circle (2pt) node[above] {$C$};
 \end{tikzpicture}
-\end{center}
+\end{image}
 We have created the triangle $ABC$, and we know it's equilateral because all of its sides are the same length. We know that the length of $AB$ is equal to the length of $AC$ because they are both the radius of the same circle (and the meaning of a circle is that all points on the circle are the same distance from the center point, which in this case is $A$). We also know that the length of $AB$ is equal to the length of $BC$ for a similar reason: they are both on the same circle with center $\answer[given]{B}$. This means that the length of $AB$ is equal to both the length of $AC$ and the length of $BC$, so that all three sides have the same length.
 \end{example}
 Again, notice that we didn't need to measure anything at all, and our reasoning plus the meaning of a circle told us that we have what we want. These constructions are powerful, so perhaps you can see why the Ancient Greek mathematicians favored them.

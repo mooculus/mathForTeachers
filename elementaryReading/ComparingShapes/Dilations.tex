@@ -43,29 +43,29 @@ As we've done previously, let's see how dilations work by considering a few exam
 
 \begin{example}
 Let's start by choosing a point $O$, marked on the figure below, and a distance of $r=2$. We'll also choose a point $P$ and see what happens to this point when we dilate using $O$ and $r$.
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
 \draw[fill=black] (0,0) circle (2pt) node[below]{$O$};
 \draw[fill=black] (1,2) circle (2pt) node[above]{$P$};
 \end{tikzpicture}
-\end{center}
+\end{image}
 Our goal is to move $P$ twice as far from $O$ as it currently is. So let's start by drawing a dashed line from $O$ to $P$.
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
 \draw[fill=black] (0,0) circle (2pt) node[below]{$O$};
 \draw[fill=black] (1,2) circle (2pt) node[above left]{$P$};
 \draw[thick, dashed, ->] (0,0)--(3,6);
 \end{tikzpicture}
-\end{center}
+\end{image}
 Next, let's measure the distance between $O$ and $P$ with our ruler, or open our compass to that distance. Then we mark $\answer[given]{2}$ times that measurement along the line between $O$ and $P$ so that we move the point $2$ times as far from $O$.
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
 \draw[fill=black] (0,0) circle (2pt) node[below]{$O$};
 \draw[fill=black] (1,2) circle (2pt) node[above left ]{$P$};
 \draw[thick, dashed, ->] (0,0)--(3,6);
 \draw[fill=black] (2, 4) circle (2pt) node[above left]{$\hat{P}$};
 \end{tikzpicture}
-\end{center}
+\end{image}
 This new point, $\hat{P}$, is the image of $P$ under this dilation.
 
 \end{example}
@@ -84,7 +84,7 @@ Next, let's look at what happens when we dilate an entire shape.
 
 \begin{example}
 This time, let's start with a point $O$ that we will mark in the image below and choose a value of $r=0.3$. The figure that we'll dilate will be a square. 
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
 \draw[fill=black] (0,0) circle (2pt) node[below]{$O$};
 \draw[thick] (-4,4)--(-4,5)--(-5,5)--(-5,4)--(-4,4);
@@ -93,9 +93,9 @@ This time, let's start with a point $O$ that we will mark in the image below and
 \draw[fill=black] (-5,5) circle (2pt) node[above] {$C$};
 \draw[fill=black] (-5,4) circle (2pt) node[below] {$D$};
 \end{tikzpicture}
-\end{center}
+\end{image}
 Like we have done previously, let's dilate each vertex of the shape. You should imagine also dilating each point on each segment between the vertices! We start by drawing a dashed line between $O$ and each vertex.
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
 \draw[fill=black] (0,0) circle (2pt) node[below]{$O$};
 \draw[thick] (-4,4)--(-4,5)--(-5,5)--(-5,4)--(-4,4);
@@ -107,9 +107,9 @@ Like we have done previously, let's dilate each vertex of the shape. You should 
 \draw[thick, dashed, ->] (0,0)--(-4.53, 5.663);
 \draw[thick, dashed, ->] (0,0)--(-6, 4.8);
 \end{tikzpicture}
-\end{center}
+\end{image}
 Next, we measure the distance between $O$ and each point, multiply that distance by $r=0.3$, and mark the new distance on the line between $O$ and that point. We use a hat to distinguish the image from the original point as usual.
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
 \draw[fill=black] (0,0) circle (2pt) node[below]{$O$};
 \draw[thick] (-4,4)--(-4,5)--(-5,5)--(-5,4)--(-4,4);
@@ -126,7 +126,7 @@ Next, we measure the distance between $O$ and each point, multiply that distance
 \draw[fill=black] (-3.5, 2.8) circle (2pt) node[below]{$\hat{D}$};
 \draw[thick] (-2.8, 2.8)--(-2.8, 3.5)--(-3.5, 3.5)--(-3.5, 2.8)--(-2.8,2.8);
 \end{tikzpicture}
-\end{center}
+\end{image}
 
 
 

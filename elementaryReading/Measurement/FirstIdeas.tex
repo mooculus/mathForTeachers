@@ -18,7 +18,7 @@ So far, we have talked about comparing shapes in terms of comparing the properti
 One of the first ideas that kids explore on their way to measuring things is to compare things by ``lining them up''. For instance, kids could ask a question like, ``which kid is the tallest in our class?'' To solve this problem, the kids could start with someone that they guess is the tallest, and then have each kid stand back-to-back with that kid until they try everyone in the class, or until they find someone taller. The taller kid would then compare their height against all of the remaining children, and so on.
 \begin{question}
 Which stick figure is taller?
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
    % Taller Stick Figure
     % Head
@@ -44,7 +44,7 @@ Which stick figure is taller?
     \draw (3,0) -- (4,-1);
     \node at (3,-1.2) {Figure 2};
 \end{tikzpicture}
-\end{center}
+\end{image}
 \begin{multipleChoice}
 \choice[correct]{Figure 1}
 \choice{Figure 2}
@@ -127,7 +127,7 @@ So far, we have talked about units for measuring length, area, and volume, becau
 
 \section{Measurement and fractions}
 The idea of measuring occurs in some unexpected places throughout mathematics, including when we talk about fractions. Remember that we defined a fraction $\frac{A}{B}$ by first taking a whole and cutting it into $B$ equal pieces. Each of these equal pieces is what we mean by $\frac{1}{B}$ of the whole, and then to get $\frac{A}{B}$, we take $A$ copies of $\frac{1}{B}$. In this sense, we can think about $\frac{1}{B}$ as a sort of unit of measure that we are using to measure out the $A$ parts we need.
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
 \draw[thick, <->] (-0.3,0)--(5.3,0);
 \foreach \x in {0,1,2,...,5} \draw (\x,-0.2)--(\x, 0.2);
@@ -138,10 +138,10 @@ The idea of measuring occurs in some unexpected places throughout mathematics, i
 \node[below] at (4, -0.3) {$\frac{4}{5}$};
 \node[below] at (5, -0.3) {$1$};
 \end{tikzpicture}
-\end{center}
+\end{image}
 On the number line above, we can think of the length of $\frac{1}{5}$ as a unit, and then we have essentially made a ruler using this $\frac{1}{5}$ length. So, if we wanted to measure a length of $\frac{3}{5}$ on this number line, we would highlight three copies of that unit.
 
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
 \draw[thick, <->] (-0.3,0)--(5.3,0);
 \foreach \x in {0,1,2,...,5} \draw (\x,-0.2)--(\x, 0.2);
@@ -153,7 +153,7 @@ On the number line above, we can think of the length of $\frac{1}{5}$ as a unit,
 \node[below] at (5, -0.3) {$1$};
 \draw[very thick, yellow] (0,0)--(3,0);
 \end{tikzpicture}
-\end{center}
+\end{image}
 
 We hope this helps you to see some connections that you might not have seen before, and to understand the idea of fractions a little better!
 

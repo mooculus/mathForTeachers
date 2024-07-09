@@ -67,12 +67,12 @@ Notice that in the previous section, we actually gave an approximate answer to t
 
 \begin{example}
 Estimate the area inside the shape below.
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
 \draw[dotted, gray, step=0.4] (0,0) grid (5,5);
 \draw[smooth, very thick] plot coordinates {(0.5,0.5) (1,4) (3,3) (4,5) (5,2) (3,2) (2,1) (0.5,0.5)};
 \end{tikzpicture}
-\end{center}
+\end{image}
 
 For our process of measurement, we would like to measure the area inside the shape, and area is the amount of 2D space that the object takes up. Since the object is on top of a grid, we will use the area of one grid square as our unit. The area of the grid square is \wordChoice{\choice{1D} \choice[correct]{2D} \choice{3D}}, and so is the area we are trying to measure, so this unit is appropriate to use.
 
@@ -114,7 +114,7 @@ Javier has a bucket that has $40$ cubic centimeters of sand in it, and Damien ha
 
 \begin{explanation}
 Javier and Damien start out with their individual buckets of sand, and then they dump them out and combine them together into a single bucket.
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
 \draw[thick] (-1,2)--(0,0)--(1,0)--(2,2);
 \node at (0.5,1) {$40$ cu cm};
@@ -124,7 +124,7 @@ Javier and Damien start out with their individual buckets of sand, and then they
 \draw[->] (4.5, -0.2)--(3,-2);
 \draw[thick] (0.5,-1)--(1.5,-3)--(3.5,-3)--(4.5,-1);
 \end{tikzpicture}
-\end{center}
+\end{image}
 Our goal is to combine the amount of 3D space in the first bucket with the amount of 3D space in the second bucket, and combining is an action that we recognize as meaning we use the \wordChoice{\choice[correct]{addition} \choice{subtraction} \choice{multiplication} \choice{division}} operation. We don't gain or lose sand in this process, so we just use our chosen operation.
 \end{explanation}
 \end{question}
@@ -133,7 +133,7 @@ Notice that we can also use the additivity principle ``backwards'': if we start 
 
 \begin{example}
 Haven has a piece of rope which measures $4$ meters total. Then they cut off a piece of the rope which measures $2.5$ meters. How much rope is left after the cutting?
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
 \node at (-0.5, 0) {rope};
 \draw[very thick] (0,0)--(4,0);
@@ -142,7 +142,7 @@ Haven has a piece of rope which measures $4$ meters total. Then they cut off a p
 \node at (1.25, -0.5){$2.5$ meters};
 \node at (3.25, -0.5) {$?$ meters};
 \end{tikzpicture}
-\end{center}
+\end{image}
 In our picture, we marked off the cut at $2.5$ meters. We could write an equation that corresponds to this situation by writing the following.
 \[
 2.5 + ? = 4
@@ -160,20 +160,20 @@ Again, this should feel a little bit like common sense, but the moving principle
 
 \begin{example}
 We can use the moving principle to rearrange the L-shape below into another shape whose area might be easier to find.
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
 \draw[dotted, gray] (-1,-1) grid (5,5);
 \draw[very thick] (0,0)--(0,4)--(4,4)--(4,2)--(1,2)--(1,0)--(0,0);
 \end{tikzpicture}
-\end{center}
+\end{image}
 We can cut off the bottom part of the L and move it to the top part of the L. If we attach it with no gaps and no overlaps, we will still have the same amount of area that we started with according to the moving principle.
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
 \draw[dotted, gray] (-2,1) grid (5,5);
 \draw[very thick] (-1,2)--(-1,4)--(4,4)--(4,2)--(-1,2);
 \draw[very thick, dashed] (0,2)--(0,4);
 \end{tikzpicture}
-\end{center}
+\end{image}
 In the image, the dashed line shows where the extra piece from the bottom was attached to the bigger piece, forming a rectangle which is $5$ squares wide and $2$ squares tall. We can count the squares in either figure to verify that the area hasn't changed: in each figure we have $\answer[given]{10}$ squares of area in total.
 
 
@@ -190,42 +190,42 @@ There is a special case of the moving principle that we would like to highlight 
 
 \begin{example}
 Start with a rectangle.
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
 \draw[thick] (0,0)--(4,0)--(4,3)--(0,3)--(0,0);
 \end{tikzpicture}
-\end{center}
+\end{image}
 Cut the rectangle into a bunch of thin strips.
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
 \draw[thick] (0,0)--(4,0)--(4,3)--(0,3)--(0,0);
 \foreach \y in {0.1, 0.2, ..., 2.9} \draw (0,\y)--(4,\y);
 \draw[fill=yellow] (0,1)--(4,1)--(4,1.1)--(0,1.1)--(0,1);
 \end{tikzpicture}
-\end{center}
+\end{image}
 The moving principle says if we move around these strips without creating any gaps or overlaps, we haven't changed the area of the shape. One of the strips is highlighted yellow so that you can see how it moves. In order to not create any gaps or overlaps, the way we want to move the strips is to keep one of them right where it is, and slide all of the rest of them parallel to the one that isn't moving. There are lots of ways to do this, but here is one example.
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
 \foreach \y in {0, 0.1, 0.2, ..., 2.9} \draw (0+\y+0.1,\y+0.1)--(0+\y,\y+0.1)--(0+\y, \y)--(4+\y,\y)--(4+\y, \y+0.1);
 \draw (2.9,3)--(6.9,3);
 \draw[fill=yellow] (1,1)--(5, 1)--(5,1.1)--(1,1.1)--(1,1);
 \end{tikzpicture}
-\end{center}
+\end{image}
 Here is the tricky part. Imagine cutting those little strips thinner and thinner and thinner, until they are so thin you can't even see them (and then thinner still)! Here's an example with thinner strips so you can see what's happening.
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
 \foreach \y in {0, 0.05, 0.1, 0.15, 0.2,...,2.7, 2.75, 2.8, 2.85, 2.9, 2.95} \draw (\y+0.05,\y+0.05)--(\y,\y+0.05)--(\y, \y)--(4+\y,\y)--(4+\y, \y+0.05);
 \draw (2.95,3)--(6.95,3);
 \end{tikzpicture}
-\end{center}
+\end{image}
 (There are so many little strips here that the computer has to skip one of them. But just imagine it's there with all of the others!) As we cut more and more, the jagged sides of this shape are getting more and more smooth. So, if we imagine that we could cut the strips so thin we couldn't cut them anymore (we might call this \dfn{infinitesimally thin} but the terminology isn't too important), we would have a parallelogram instead of a rectangle.
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
 \draw[thick] (0,0)--(3,3)--(7,3)--(4,0)--(0,0);
 \foreach \y in {0, 0.1, 0.2, ..., 2.9} \draw (\y, \y)--(4+\y,\y);
 \draw[fill=yellow] (1,1)--(5,1)--(5.1,1.1)--(1.1,1.1)--(1,1);
 \end{tikzpicture}
-\end{center}
+\end{image}
 This parallelogram is one result of shearing the rectangle. When you draw your own examples of shearing, please highlight what is happening to at least one of the strips as they move around.
 
 \end{example}

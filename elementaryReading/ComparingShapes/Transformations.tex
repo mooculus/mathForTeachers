@@ -29,24 +29,24 @@ A \dfn{reflection} is what happens to all the points in the plane when we choose
 
 \begin{example}
 	Let's begin with a point $P$ and a line $M$. Our goal is to reflect point $P$ over line $M$.
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
 	\draw[thick, <->] (0,0)--(7.5,3) node[below]{$M$}; %line is y=2/5 x
 	\draw[fill=black] (3,4) circle (2pt) node[above] {$P$};
 \end{tikzpicture}
-\end{center}
+\end{image}
 We want to produce the mirror image of this point on the other side of the line. To do this, we'll start by drawing another line which goes through point $P$.
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
 	\draw[thick, <->] (0,0)--(7.5,3) node[below]{$M$}; %line is y=2/5 x; perpendicular is y-4 = -2.5 (x-3) or y=-2.5x+11.5
 	\draw[fill=black] (3,4) circle (2pt) node[right] {$P$};
 	\draw[domain=2.5:5.5, samples=100, smooth, dashed, <->] plot (\x, { -2.5*\x + 11.5 });
 \end{tikzpicture}
-\end{center}
+\end{image}
 The new line we drew isn't any line between $P$ and $M$, it's the one which is \wordChoice{\choice{parallel} \choice{piecewise} \choice{supplementary} \choice[correct]{perpendicular}} to $M$. So we could make right-angle marks indicating this relationship if we wanted to.
 
 Next, we want the mirror image of $P$ to be exactly the same distance from the line as $P$, but on the opposite side of $M$. We could measure this distance with our ruler or we could use our compass if we didn't want to measure. The new point, which we'll call $\hat{P}$, is the point we are trying to construct.
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
 	\draw[thick, <->] (0,0)--(7.5,3) node[below]{$M$}; %line is y=2/5 x; perpendicular is y-4 = -2.5 (x-3) or y=-2.5x+11.5
 	\draw[fill=black] (3,4) circle (2pt) node[right] {$P$};
@@ -54,7 +54,7 @@ Next, we want the mirror image of $P$ to be exactly the same distance from the l
 	\draw[fill=black] (143/29, -24/29) circle (2pt) node[left] {$\hat{P}$};
 	\draw (3.897, 1.7586)--(4.034, 1.8138)--(4.103, 1.6414);
 \end{tikzpicture}
-\end{center}
+\end{image}
 
 \end{example}
 We will say that the new point $\hat{P}$ is the \dfn{image} of $P$ when we reflect over $M$.
@@ -72,7 +72,7 @@ Let's try again, but this time let's reflect an entire shape.
 
 \begin{example}
 Let's reflect a triangle over the line $M$.
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
 \draw[domain=-2:7, samples=100, smooth, <->] plot (\x, {0.3*\x+1}) node[below]{$M$};
     % Define the points of the triangle
@@ -88,9 +88,9 @@ Let's reflect a triangle over the line $M$.
     \draw[fill=black] (B) circle (2pt) node [right] {$B$};
     \draw[fill=black] (C) circle (2pt) node [above] {$C$};
 \end{tikzpicture}
-\end{center}
+\end{image}
 Let's start by drawing the reflection of each of the points $A$, $B$, and $C$, just like we did with point $P$ above. First, we draw a line which is \wordChoice{\choice{parallel} \choice{piecewise} \choice{supplementary} \choice[correct]{perpendicular}} to $M$ through each of $A$, $B$, and $C$.
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
 \draw[domain=-2:7, samples=100, smooth, <->] plot (\x, {0.3*\x+1}) node[below]{$M$};
     % Define the points of the triangle
@@ -111,9 +111,9 @@ Let's start by drawing the reflection of each of the points $A$, $B$, and $C$, j
     \draw[domain=2:3.5, samples=100, smooth, dashed, <->] plot (\x, {11-3.33333*\x});
     \draw[domain=0:2.5, samples=100, smooth, dashed, <->] plot (\x, {4.66667-3.33333*\x});
 \end{tikzpicture}
-\end{center}
+\end{image}
 Next, we mark the image of each point by measuring the \wordChoice{\choice{angle} \choice{shape} \choice[correct]{distance}} between each point and the line $M$. We mark the same \wordChoice{\choice{angle} \choice{shape} \choice[correct]{distance}}  on the other side of the line, and use a hat to distinguish the image from the original point.
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
 \draw[domain=-2:7, samples=100, smooth, <->] plot (\x, {0.3*\x+1}) node[below]{$M$};
     % Define the points of the triangle
@@ -144,10 +144,10 @@ Next, we mark the image of each point by measuring the \wordChoice{\choice{angle
     \draw[fill=black] (F) circle (2pt) node [right] {$\hat{C}$};
     
 \end{tikzpicture}
-\end{center}
+\end{image}
 Finally, to see the reflected triangle, we connect the images of the points in the same way that the original points were connected. 
 
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
 \draw[domain=-2:7, samples=100, smooth, <->] plot (\x, {0.3*\x+1}) node[below]{$M$};
     % Define the points of the triangle
@@ -178,7 +178,7 @@ Finally, to see the reflected triangle, we connect the images of the points in t
     \draw[fill=black] (F) circle (2pt) node [right] {$\hat{C}$};
     \draw[thick] (D) -- (E) -- (F) -- cycle;
 \end{tikzpicture}
-\end{center}
+\end{image}
 
 \end{example}
 Why does this construction reflect the entire triangle? We are reflecting all of the points in the plane over the line $M$, so all of the points between $A$ and $B$ also get reflected in the exact same way. Imagine every single point along the segment between $A$ and $B$ being reflected using the same process that we used. Since the reflection is a rigid motion, we're not stretching or shrinking, so we get the same result by connecting $\hat{A}$ with $\hat{B}$ as we would if we reflected each individual point. The same is true for the segment between $A$ and $C$ and the segment between $B$ and $\answer[given]{C}$, so we can connect the dots from $\hat{A}$ to $\hat{B}$ to $\hat{C}$ to get the reflected triangle.
@@ -200,14 +200,14 @@ Think of using a piece of regular paper and a piece of transparent paper. Draw t
 
 \begin{example}
 We are given the point $O$ below and an angle of $\alpha = 40\degree$ counterclockwise. We are also given the point $P$ below. Rotate $P$ around $O$ using the angle $\alpha$.
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
 \draw[fill=black] (0,0) circle (2pt) node[below]{$O$};
 \draw[fill=black] (3,5) circle (2pt) node[above]{$P$};
 \end{tikzpicture}
-\end{center}
+\end{image}
 In order to do this rotation, we need to ensure that the angle made by $P$, $O$, and the image of $P$ measures $\answer[given]{40}\degree$. So, we use point $\answer[given]{O}$ as the center of this angle and the ray $OP$ as the starting ray of the angle. So, let's draw the line from $O$ to $P$ as a solid line and then the other ray of the angle as a dashed line.
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
 \draw[fill=black] (0,0) circle (2pt) node[below]{$O$};
 \draw[fill=black] (3,5) circle (2pt) node[above]{$P$};
@@ -215,9 +215,9 @@ In order to do this rotation, we need to ensure that the angle made by $P$, $O$,
 \draw[dashed, ->] (0,0)--(-1.02, 6.414);
 \draw[thick, ->] (0.3, 0.5) arc[start angle=60, end angle=100, radius=0.5] node[midway, above] {$\alpha$};
 \end{tikzpicture}
-\end{center}
+\end{image}
 Now, since we aren't stretching or shrinking the points in the plane, we need to mark the image of $P$, which we will call $\hat{P}$, along the dashed line so that it is  \wordChoice{\choice[correct]{the same} \choice{not the same}} distance from $O$ as $P$ is from $O$. We can do this by measuring with our ruler, or we can use our compass.
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
 \draw[fill=black] (0,0) circle (2pt) node[below]{$O$};
 \draw[fill=black] (3,5) circle (2pt) node[above]{$P$};
@@ -226,7 +226,7 @@ Now, since we aren't stretching or shrinking the points in the plane, we need to
 \draw[fill=black] (-0.9158, 5.7585) circle (2pt) node[left]{$\hat{P}$};
 \draw[thick, ->] (0.3, 0.5) arc[start angle=60, end angle=100, radius=0.5] node[midway, above] {$\alpha$};
 \end{tikzpicture}
-\end{center}
+\end{image}
 As we said, this $\hat{P}$ is the image of $P$ under this rotation of angle $40\degree$ counterclockwise with center $O$.
 \end{example}
 
@@ -263,32 +263,32 @@ The final type of transformation that we want to discuss in this section is a tr
 A \dfn{translation} is what happens to all of the points in the plane when we move each point a certain distance in a certain direction. We often use a \dfn{vector} to describe the distance and direction.
 \end{definition}
 You can think of a vector as an arrow. For instance, the arrow below could tell us to move three spaces east:
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
 \draw[gray] (0,0) grid (5,3);
 \draw[very thick, ->] (1,1)--(4,1);
 \end{tikzpicture}
-\end{center}
+\end{image}
 The length of the arrow tells us how far to move, and the direction of the arrow tells us what direction to move (even if we don't have specific words to use to describe the direction). 
 
 First, let's look at what happens to a single point when we translate.
 \begin{example}
 Translate the point $P$ according to the arrow given. In this case, the arrow points a bit down and to the right, but we don't have specific direction words to use for this direction.
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
 	\draw[very thick, ->] (0,0)--(3, -1);
 	\draw[fill=black] (2,2) circle (2pt) node[above]{$P$};
 \end{tikzpicture}
-\end{center}
+\end{image}
 In order to translate this point $P$, our goal is to move the length of the arrow in the direction given by the arrow. There are many ways to actually construct this; we'll talk about several in class. In the image below, we've drawn the arrow again, but starting from the point $P$. This means that the image of $P$, or $\hat{P}$ is exactly at the other end of the arrow.
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
 	\draw[very thick, ->] (0,0)--(3, -1);
 	\draw[fill=black] (2,2) circle (2pt) node[above]{$P$};
 	\draw[thick, dashed, ->] (2,2)--(5,1);
 	\draw[fill=black] (5,1) circle (2pt) node[above right]{$\hat{P}$};
 \end{tikzpicture}
-\end{center}
+\end{image}
 \end{example}
 When you construct the arrow starting from $P$, remember that we aren't just guessing which direction the arrow goes. It has to be parallel to the original arrow that was drawn so that it goes in the same direction. 
 
@@ -308,7 +308,7 @@ Next, let's see how we can translate an entire figure.
 
 \begin{example}
 Let's translate the quadrilateral $ABCD$ by the vector given. The quadrilateral is not any special type, and the vector points up and to the left, but we don't have specific words to describe the direction.
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
 \draw[very thick, ->] (0,0)--(-2, 4);
 \draw[thick] (0,3)--(2,1)--(4,1)--(2,2.5)--(0,3);
@@ -317,9 +317,9 @@ Let's translate the quadrilateral $ABCD$ by the vector given. The quadrilateral 
 \node[right] at (4,1) {$C$};
 \node[above] at (2,2.5) {$D$};
 \end{tikzpicture}
-\end{center}
+\end{image}
 When we translate, \wordChoice{\choice[correct]{each} \choice{some}} of the points in the plane moves according to the vector. So, we can translate each of the vertices of our shape (getting $\hat{A}$, $\hat{B}$, $\hat{C}$, and $\hat{D}$. The translation shifts the points on the line segments in the same way, so we can then connect the dots to see the final shape. In the figure below, we show the arrow translating each of the vertices, and then we draw the final shape.
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
 \draw[very thick, ->] (0,0)--(-2, 4);
 \draw[thick] (0,3)--(2,1)--(4,1)--(2,2.5)--(0,3);
@@ -337,7 +337,7 @@ When we translate, \wordChoice{\choice[correct]{each} \choice{some}} of the poin
 \node[right] at (2,5) {$\hat{C}$};
 \node[above] at (0,6.5) {$\hat{D}$};
 \end{tikzpicture}
-\end{center}
+\end{image}
 
 \end{example}
 Even though the final image above looks a bit like a prism, remember that we are dealing with 2D shapes here, because we are sliding around all of the points on the plane. However, there's a good reason that the final picture looks like a prism. Remember that we made a prism by taking a second copy of a shape and moving it in 3D space. When we draw the lines from the top copy to the bottom copy, they should all be the same. So, if our vector is in 3D space, we could actually use the translation lines to make the sides of a prism.

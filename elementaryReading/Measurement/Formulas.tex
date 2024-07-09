@@ -18,16 +18,16 @@ Now that we understand the meaning of length, area, and volume, we can start try
 \section{Length}
 The most common type of length formulas that we have are for calculating the perimeter of an object. For instance, we have a formula $C = \pi \times D$ or $C = 2 \pi r$ where $C$ is the \wordChoice{\choice[correct]{circumference} \choice{area} \choice{diameter} \choice{radius}}, $D$ is the \wordChoice{\choice{circumference} \choice{area} \choice[correct]{diameter} \choice{radius}} and $r$ is the \wordChoice{\choice{circumference} \choice{area} \choice{diameter} \choice[correct]{radius}} of a particular circle. We saw in the previous section that this is the definition of the number $\pi$, so we actually don't need to justify this formula.
 
-If we are calculating the perimeter of a rectangle, perhaps you have seen the formula $P = 2l \times 2w$ where $P$ is the \wordChoice{\choice{volume} \choice[correct]{perimeter} \choice{length} \choice{width}}, $l$ is the \wordChoice{\choice{volume} \choice{perimeter} \choice[correct]{length} \choice{width}}, and $w$ is the \wordChoice{\choice{volume} \choice{perimeter} \choice{length} \choice[correct]{width}} of our rectangle. But why is this formula true?
+If we are calculating the perimeter of a rectangle, perhaps you have seen the formula $P = 2l + 2w$ where $P$ is the \wordChoice{\choice{volume} \choice[correct]{perimeter} \choice{length} \choice{width}}, $l$ is the \wordChoice{\choice{volume} \choice{perimeter} \choice[correct]{length} \choice{width}}, and $w$ is the \wordChoice{\choice{volume} \choice{perimeter} \choice{length} \choice[correct]{width}} of our rectangle. But why is this formula true?
 \begin{example}
 Let's begin with a rectangle whose length is $l$ inches and whose width is $w$ inches. We would like to calculate its perimeter, which we can label as $P$.
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
 \draw[thick] (0,0)--(4,0)--(4,1)--(0,1)--(0,0);
 \node[below] at (2,0) {$l$};
 \node[right]  at (4,0.5) {$w$};
 \end{tikzpicture}
-\end{center}
+\end{image}
 To use our four-step process of measurement, we first need to determine the aspect we are measuring, which is the perimeter of the rectangle. The perimeter is \wordChoice{\choice[correct]{1D}\choice{2D} \choice{3D}}, so we also need our unit to be \wordChoice{\choice[correct]{1D}\choice{2D} \choice{3D}}. In this case, since the length and width are described in inches, we'll choose our unit to be one inch. This is a one-dimensional length unit, so it's appropriate to use in this case. 
 
 The next thing we need to do is to iterate our unit all over the perimeter. Let's say we start at the bottom left corner of the rectangle. We'll use $l$ inches across the bottom, then $w$ inches on the right side, then $l$ inches across the top, and then $w$ inches on the left side. (Imagine taking copies of a one inch unit and laying them along the sides of this rectangle.) We would like to put together or combine all of the inches we used to travel all along the outside of the shape (in other words its perimeter), so we want to \wordChoice{\choice[correct]{add} \choice{subtract} \choice{multiply} \choice{divide}}  all the inches we used.
@@ -72,17 +72,17 @@ Find the area of a rectangle whose side lengths measure $5$cm and $3$cm.
 Our four-step measuring process says that we need to start with an aspect to measure, which in this case is the area of the square in question. Next, we choose a unit of measurement. In this case, we'll choose \wordChoice{\choice{one inch} \choice{one square inch} \choice{one centimeter} \choice[correct]{one square centimeter}} so that the dimension of our aspect matches the dimension of our unit.
 
 The third step is to cover the rectangle with our chosen units leaving no gaps and no overlaps. Let's draw a picture of the rectangle and cover it with squares in an organized fashion, like a grid. In this case, you can assume the grid lines are spaced $1$cm apart.
-\begin{center}\begin{tikzpicture}
+\begin{image}\begin{tikzpicture}
 \draw(0,0) grid (5,3);
 \draw[thick] (0,0)--(5,0)--(5,3)--(0,3)--(0,0);
 \node[below] at (2.5,0) {5 cm};
 \node[right] at (5,1.5) {3cm};
-\end{tikzpicture}\end{center}
+\end{tikzpicture}\end{image}
 
 For step four, to find our answer, we can count the number of units that we needed to cover the entire rectangle and we end up with $\answer[given]{15}$ square centimeters.
 
 However, this doesn't tell us much about a formula for the area of this rectangle. To do so, let's recognize that we can organize our square units into groups. Let's go ahead and use the vertical columns as groups in this case so that one group is one column. We have $\answer[given]{5}$ total groups.
-\begin{center}\begin{tikzpicture}
+\begin{image}\begin{tikzpicture}
 \draw[fill={rgb,255:red,0; green,191; blue,125}](0,0)--(1,0)--(1,3)--(0,3)--(0,0);
 \draw[fill={rgb,255:red,0; green,180; blue,197}](1,0)--(2,0)--(2,3)--(1,3)--(1,0);
 \draw[fill={rgb,255:red,0; green,115; blue,230}](2,0)--(3,0)--(3,3)--(2,3)--(2,0);
@@ -92,7 +92,7 @@ However, this doesn't tell us much about a formula for the area of this rectangl
 \draw[thick] (0,0)--(5,0)--(5,3)--(0,3)--(0,0);
 \node[below] at (2.5,0) {5 cm};
 \node[right] at (5,1.5) {3cm};
-\end{tikzpicture}\end{center}
+\end{tikzpicture}\end{image}
 
 Each of the groups has $\answer[given]{3}$ square centimeters in it so that one object is one square centimeter. This means that we have a total of 
 \[
@@ -110,12 +110,12 @@ The area of a rectangle whose length is $L$ units and whose width is $W$ units i
 \end{theorem}
 \begin{explanation}
 We want to proceed exactly as in the previous example, except instead of $5$ centimeters as the length, we use $L$ units as the length. In place of $3$ centimeters as the width, we use $W$ units as the width. We will draw an example rectangle here so that you can see what we are doing, but you want to imagine that this rectangle could have any length $L$ and any width $W$. In fact, you might want to draw a few more pictures in your notes, or see if you can draw a picture that could represent any $L$ and $W$.
-\begin{center}\begin{tikzpicture}
+\begin{image}\begin{tikzpicture}
 \draw(0,0) grid (7,4);
 \draw[thick] (0,0)--(7,0)--(7,4)--(0,4)--(0,0);
 \node[below] at (3.5,0) {$L$ units};
 \node[right] at (7,2) {$W$ units};
-\end{tikzpicture}\end{center}
+\end{tikzpicture}\end{image}
 We have covered the rectangle with square units, and so now we want to use multiplication to count the number of units. We notice that $L$ square units fit along the bottom side of the rectangle, and if we want to use the vertical columns as groups, each of these units represents one vertical group of units. In other words, one group is one column. Inside each column, we have $W$ square units since we know that $W$ units fit along the vertical sides of the rectangle. In this case one object is one square unit. In other words, we can find the total number of square units that cover this rectangle using the multiplication
 \[
 \answer{L} \textrm{ columns} \times \answer{W} \textrm{ square units per column}
