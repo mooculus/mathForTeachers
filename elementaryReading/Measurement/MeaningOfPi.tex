@@ -67,7 +67,31 @@ Let's draw an example radius of each circle.
 \end{image}
 Remember that the definition of a circle says that each point on the circle is the exact same distance from the center point. So, on the first circle, each point on the circle is 1cm from the center, and on the second circle each point is 3cm from the center.
 
-Next, remember our work on similarity. We said that two shapes are similar if we can find a sequence of transformations \wordChoice{\choice[correct]{including dilations} \choice{not including dilations}}, taking one to the other. To get from the first circle to the second circle, we could first line up the center points using a \wordChoice{\choice{reflection} \choice{rotation} \choice[correct]{translation} \choice{dilation}} and then scale the first circle by multiplying all distances by a scale factor of $\answer[given]{3}$. Since all the points are found by their distance from the center, when we scale a circle by just multiplying its distances, we are certain that we get another circle.
+Next, remember our work on similarity. 
+\begin{question}
+True or false: when two shapes are similar, we can use dilations as part of the sequence of transformations taking one shape to the other.
+\begin{multipleChoice}
+\choice[correct]{true}
+\choice{false}
+\end{multipleChoice}
+\end{question}
+Let's look at one way to write down this sequence of transformations.
+\begin{question}
+What kind of transformation could we use to line up the center points of the circles?
+\begin{multipleChoice}
+\choice{reflection}
+ \choice{rotation} 
+ \choice[correct]{translation} 
+ \choice{dilation}
+ \end{multipleChoice} \end{question}
+ Once the centers are lined up, let's resize the circles using a dilation.
+ \begin{question}
+ What scaling factor would we use to scale the smaller circle so that it matches exactly with the larger circle?
+ \begin{prompt}
+ We scale all distances using a scale factor of $\answer[given]{3}$.
+ \end{prompt}
+ \end{question}
+ Since all the points in a circle are found by their distance from the center, when we scale a circle by just multiplying its distances, we are certain that we get another circle.
 
 So, if the second circle is a scaled version of the first circle, we have a scale factor $r$ which scales every length in the first circle to the corresponding length in the second circle. (We know in this case that $r=3$, but we'll do this calculation in general. Feel free to replace $r=3$ in your notes if that helps things make more sense.)
 
@@ -96,15 +120,20 @@ You might have seen this formula before -- it's true because it's the definition
 
 Now that we know the meaning of $\pi$, we have a pretty quick recipe for estimating its value. We can start by finding a circle, measuring its circumference and diameter, and then taking that ratio. Find a circle and measure it, and then enter your data below. If we have already done a similar activity in class, please enter one of the values you measured in class.
 
+\begin{prompt}
+
 Circumference: $\answer[tolerance=40]{40}$
 
 Diameter: $\answer[tolerance=15]{15}$
 
 Ratio $\frac{C}{D}$: $\answer[tolerance=0.5]{3.1415}$
+\end{prompt}
 
 Hopefully your estimate fell somewhere between $3$ and $4$, which is a reasonable range for the value of $\pi$. If we did this with many circles, we could perhaps take an average of all of our estimates to get an estimate for $\pi$.  
 
-Mathematicians throughout history have estimated the value of $\pi$, and calculating more and more digits of pi is an area some mathematicians are \link[currently working on]{https://www.livescience.com/physics-mathematics/mathematics/pi-calculated-to-105-trillion-digits-smashing-world-record}. One mathematician that gave us an estimate we still use today is \link[Archimedes]{https://en.wikipedia.org/wiki/Archimedes}, who lived in Ancient Greece around 200BCE. Archimedes' strategy was to start by drawing a hexagon inside the circle, touching the circle at every corner. This type of hexagon is called ``inscribed'' in the circle.
+Mathematicians throughout history have estimated the value of $\pi$, and calculating more and more digits of pi is an area some mathematicians are \link[currently working on]{https://www.livescience.com/physics-mathematics/mathematics/pi-calculated-to-105-trillion-digits-smashing-world-record}. One mathematician that gave us an estimate we still use today is \link[Archimedes]{https://en.wikipedia.org/wiki/Archimedes}, who lived in Ancient Greece around 200BCE. Let's look at his strategy.
+\begin{example} 
+Archimedes' strategy was to start by drawing a hexagon inside the circle, touching the circle at every corner. This type of hexagon is called ``inscribed'' in the circle.
 \begin{image}
 \begin{tikzpicture}
     % Draw the circle
@@ -125,6 +154,7 @@ Not to be stopped there, Archimedes also drew a hexagon outside of the circle, b
 \[
 \frac{223}{71} < \pi < \frac{22}{7}
 \]
+\end{example}
 The estimate $\pi \approx \frac{22}{7}$ is so close to $\pi$ combined with so nice to use that people  still use it today!
 
 \end{document}

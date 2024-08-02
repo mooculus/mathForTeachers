@@ -19,7 +19,17 @@ Imagine for a moment that the only way you could work with a function was by usi
 If you said ``a coordinate system'', then you've come up with Fermat and Descartes' big contribution to this subject!
 
 \section{The rectangular coordinate system}
-When we think about functions, we start by thinking about the set of inputs, or the domain, for our function. Typically these inputs are numbers, and we've seen that often these numbers come from the real numbers. In fact, most of the time the inputs can come from any real number. When we draw the set of all real numbers, we most often represent this with a number line. Of course, to draw a number line we need some place to start the line, or a first tick mark to draw, and then we need the size of one unit along our line. The most common way to draw such a number line is to first mark zero, and then our one unit length is given by where we place the tick mark for the number $\answer[given]{1}$.
+When we think about functions, we start by thinking about the set of inputs, or the domain, for our function. Typically these inputs are numbers, and we've seen that often these numbers come from the real numbers. In fact, most of the time the inputs can come from any real number. When we draw the set of all real numbers, we most often represent this with a number line. 
+\begin{question}
+What kind of information do we need in order to draw a number line? Select all that apply.
+\begin{selectAll}
+\choice{We always have to mark the number zero.}
+\choice[correct]{We don't have to mark zero, but we need to decide at least two numbers to mark.}
+\choice{We always have to mark the number one.}
+\choice[correct]{We don't always have to mark the number one, but we need a scale from which we can determine the size of one unit.}
+\end{selectAll}
+\end{question}
+While we can draw number lines very generally using the information above, a very common way to draw  a number line for a graph is to first mark zero, and then our one unit length is given by where we place the tick mark for the number $1$.
 \begin{image}
 \begin{tikzpicture}
 \draw[thick, <->] (-3.2, 0)--(3.2,0);
@@ -80,7 +90,19 @@ Of course, it is much more common to place the intersection of the two axes at z
 \end{image}
 While we are on the subject of vocabulary, we will sometimes use $x$ to represent the input values of our function, and so the horizontal axis is also called the \dfn{$x$-axis}. We will sometimes use $y$ to represent the output values of our function, and so the vertical axis is also called the \dfn{$y$-axis}. The variable $y$ represents the function's output values, so we will sometimes write $y=f(x)$ to connect the $y$-values to the idea of the function. The $y$-variable is also sometimes called the \dfn{dependent variable} because its value \emph{depends} on the input. The $x$-variable is then called the \dfn{independent variable} because its value doesn't depend on anything; we get to choose the inputs. As much as we aren't tied to placing the horizontal axis at $y=0$ we are also not tied to using $x$ and $y$ as our variables! If we used $t$ for the independent variable (the inputs), then the horizontal axis would be called a $t$-axis. Overall, the idea of using a coordinate system to do geometry is called \dfn{analytic geometry}. These coordinates are called \dfn{rectangular coordinates} because of the fact that the axes are at right angles to one another, and they are also called \dfn{Cartesian coordinates} in honor of Descartes. (Sadly, Fermat doesn't get as much credit as Descartes!) This vocabulary lesson isn't here because we want you to use all of these terms all of the time (though you are welcome to if they help you) but more because we want you to make sense of some vocabulary you might have heard in the past and connect it to the ideas we are discussing now.
 
-These two number lines set at right angles create a plane which is \wordChoice{\choice{one-dimensional} \choice[correct]{two-dimensional} \choice{three-dimensional}}, and this plane is referred to as \dfn{the coordinate plane} or sometimes \dfn{the 2D coordinate plane}. In this case we understand that we are using rectangular coordinates unless we say otherwise. (Wait, there are other types of coordinates?? Yes! But we won't talk about them here. Please feel free to look it up if you're interested.) There is also a way to define a 3D coordinate space, but we would need three axes set at right angles to do so. In fact, you could define a 4D coordinate space, a 5D coordinate space, or larger, but these are hard to visualize. Here is a picture of the axes for 3D coordinate space. Here the origin is where the axes intersect, but it's not labeled so that the markings on the tick marks are easier to see.
+These two number lines set at right angles create a plane which is called \dfn{the coordinate plane}. 
+\begin{question}
+What dimension is the plane formed by two number lines set at right angles?
+\begin{multipleChoice}
+\choice{one-dimensional} 
+\choice[correct]{two-dimensional} 
+\choice{three-dimensional}
+\end{multipleChoice}
+\begin{feedback}[correct]
+The coordinate plane is sometimes referred to as \dfn{the 2D coordinate plane} for this reason.
+\end{feedback}
+\end{question}
+We always assume that we are using rectangular coordinates unless we say otherwise. (Wait, there are other types of coordinates?? Yes! But we won't talk about them here. Please feel free to look it up if you're interested.) There is also a way to define a 3D coordinate space, but we would need three axes set at right angles to do so. In fact, you could define a 4D coordinate space, a 5D coordinate space, or larger, but these are hard to visualize. Here is a picture of the axes for 3D coordinate space. Here the origin is where the axes intersect, but it's not labeled so that the markings on the tick marks are easier to see.
 \begin{image}
 \begin{tikzpicture}
 

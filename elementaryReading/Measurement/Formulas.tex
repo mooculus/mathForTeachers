@@ -16,9 +16,33 @@ Now that we understand the meaning of length, area, and volume, we can start try
 
 
 \section{Length}
-The most common type of length formulas that we have are for calculating the perimeter of an object. For instance, we have a formula $C = \pi \times D$ or $C = 2 \pi r$ where $C$ is the \wordChoice{\choice[correct]{circumference} \choice{area} \choice{diameter} \choice{radius}}, $D$ is the \wordChoice{\choice{circumference} \choice{area} \choice[correct]{diameter} \choice{radius}} and $r$ is the \wordChoice{\choice{circumference} \choice{area} \choice{diameter} \choice[correct]{radius}} of a particular circle. We saw in the previous section that this is the definition of the number $\pi$, so we actually don't need to justify this formula.
+The most common type of length formulas that we have are for calculating the perimeter of an object. For instance, we have a formula $C = \pi \times D$ or $C = 2 \pi r$.
+\begin{question}
+In the previous formula, what do $C$, $D$, and $r$ mean?
 
-If we are calculating the perimeter of a rectangle, perhaps you have seen the formula $P = 2l + 2w$ where $P$ is the \wordChoice{\choice{volume} \choice[correct]{perimeter} \choice{length} \choice{width}}, $l$ is the \wordChoice{\choice{volume} \choice{perimeter} \choice[correct]{length} \choice{width}}, and $w$ is the \wordChoice{\choice{volume} \choice{perimeter} \choice{length} \choice[correct]{width}} of our rectangle. But why is this formula true?
+\begin{prompt}
+$C$ is the \wordChoice{\choice[correct]{circumference} \choice{area} \choice{diameter} \choice{radius}} of the circle.
+
+$D$ is the \wordChoice{\choice{circumference} \choice{area} \choice[correct]{diameter} \choice{radius}} of the circle. 
+
+$r$ is the \wordChoice{\choice{circumference} \choice{area} \choice{diameter} \choice[correct]{radius}} of the circle. 
+\end{prompt}
+\end{question}
+We saw in the previous section that this is the definition of the number $\pi$, so we actually don't need to justify this formula.
+
+If we are calculating the perimeter of a rectangle, perhaps you have seen the formula $P = 2l + 2w$.
+\begin{question}
+In the previous formula, what do $P$, $l$ and $w$ represent?
+
+\begin{prompt}
+$P$ is the \wordChoice{\choice{volume} \choice[correct]{perimeter} \choice{length} \choice{width}} of the rectangle. 
+
+$l$ is the \wordChoice{\choice{volume} \choice{perimeter} \choice[correct]{length} \choice{width}} of the rectangle.
+
+$w$ is the \wordChoice{\choice{volume} \choice{perimeter} \choice{length} \choice[correct]{width}} of the rectangle. 
+\end{prompt}
+ \end{question}
+ But why is this formula true?
 \begin{example}
 Let's begin with a rectangle whose length is $l$ inches and whose width is $w$ inches. We would like to calculate its perimeter, which we can label as $P$.
 \begin{image}
@@ -102,7 +126,21 @@ square centimeters total in the figure. (Remember to use our convention that the
 
 \end{example}
 
-This example is getting us closer to the formula that we want, but let's pause and notice something strange here. The length and width of the rectangle are given in centimeters, which is a \wordChoice{\choice[correct]{1D}\choice{2D} \choice{3D}} unit, but the area is given in square centimeters, which is a \wordChoice{\choice{1D}\choice[correct]{2D} \choice{3D}} unit. How did we get from one-dimensional units to two-dimensional units? Remember that our goal in finding the area is to find how much 2D space the object takes up, and we use 2D units to measure that space. So our answer has to be in 2D units. In fact, we need to be working with 2D units all along. In our four-step measuring process, there's actually no room for 1D units! But notice that \emph{because our units are squares}, the 1D units along the sides of the rectangle actually tell us how we can line up the units inside the rectangle. Since the length along the bottom (or top) of our rectangle is $5$ centimeters, we see that we can fit $5$ squares along the bottom of this rectangle. These five squares along the bottom of the rectangle eventually each represent one \wordChoice{\choice[correct]{group} \choice{object}} when we look at the multiplication. Similarly, the $3$ centimeter length along the right side (and left side) of the rectangle tell us that we can fit $3$ squares along that side, or that we can fit $3$ squares (objects) inside each of our groups. In fact, you can think about this as a one-to-one correspondence: each unit of length corresponds to a single square.
+This example is getting us closer to the formula that we want, but let's pause and notice something strange here. The length and width of the rectangle are given in centimeters.
+\begin{question}
+What dimension are the measurements of length and width in a rectangle?
+\begin{prompt}
+$\answer[given]{1}$-dimensional
+\end{prompt}
+\end{question}
+However, we are trying to calculate the area of the rectangle and it is given in square centimeters.
+\begin{question}
+What dimension is the measurement of the area of a rectangle?
+\begin{prompt}
+$\answer[given]{2}$-dimensional
+\end{prompt}
+\end{question}
+How did we get from one-dimensional units to two-dimensional units? Remember that our goal in finding the area is to find how much 2D space the object takes up, and we use 2D units to measure that space. So our answer has to be in 2D units. In fact, we need to be working with 2D units all along. In our four-step measuring process, there's actually no room for 1D units! But notice that \emph{because our units are squares}, the 1D units along the sides of the rectangle actually tell us how we can line up the units inside the rectangle. Since the length along the bottom (or top) of our rectangle is $5$ centimeters, we see that we can fit $5$ squares along the bottom of this rectangle. These five squares along the bottom of the rectangle eventually each represent one group when we look at the multiplication. Similarly, the $3$ centimeter length along the right side (and left side) of the rectangle tell us that we can fit $3$ squares along that side, or that we can fit $3$ squares (objects) inside each of our groups. In fact, you can think about this as a one-to-one correspondence: each unit of length corresponds to a single square.
 
 We are also ready to explain why the area formula for rectangles is the formula we have heard before.
 \begin{theorem}
@@ -502,7 +540,9 @@ V = A \times h = (l \times w) \times h
 \]
 and this is the box volume formula that you have probably seen before.
 
-But this formula is more flexible, as well. Suppose we have a right prism with a triangular base. We can use the area formula for triangles to find the area of the base, and then since the prism is a right prism we'll have all the layers the same, and so we can use the same formula. The triangular prism below has a triangle as its base with (triangle) base length of $b$ and a (triangle) height length of $a$ as well as a (prism) height of $h$.
+But this formula is more flexible, as well. Let's look at another example.
+\begin{example}
+ Suppose we have a right prism with a triangular base. We can use the area formula for triangles to find the area of the base, and then since the prism is a right prism we'll have all the layers the same, and so we can use the same formula. The triangular prism below has a triangle as its base with (triangle) base length of $b$ and a (triangle) height length of $a$ as well as a (prism) height of $h$.
 \begin{image}
 \begin{tikzpicture}
     % Define the coordinates of the triangular base vertices
@@ -554,6 +594,7 @@ which means the volume is given by
 \[
 V = A \times h = (\pi \times \answer{r}^2 ) \times h.
 \]
+\end{example}
 This is a powerful formula!
 
 However, we cannot use this formula to calculate every volume, because not every solid has layers which are all the same. For instance, if you took a right cone with a circular base and tried to cut it into layers, the layers would all be different. Here is a cone to help you visualize, but if you have some modeling dough handy you could try this out yourself.
