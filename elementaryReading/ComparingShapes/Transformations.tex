@@ -12,15 +12,18 @@ We investigate rotations, reflections, and translations.
 \end{abstract}
 \maketitle
 
-The next way that we want to be able to compare shapes is to talk about when we have the same shape, but in a different location. Perhaps you think we could just look at two shapes and see whether or not they're the same, but remember that when we want to prove things we need to be sure that they are exactly the same in every way. So, we need some technical terminology to talk about what it means to be exactly the same in every way. This section will give us that technical terminology, called transformations.
+The next way that we want to be able to compare shapes is to talk about when we have the same shape, but in a different location. Perhaps you think we could just look at two shapes and see whether or not they're the same, but remember that when we want to prove things we need to be sure that they are exactly the same in every way. So, we need some technical terminology to talk about what it means to be exactly the same in every way. This section will give us that technical terminology using transformations.
 \begin{definition}
-We use the term \dfn{transformation} to refer to any of the following: a reflection, a rotation, or a translation.
+A \dfn{transformation} takes a shape and moves it in some way. A special case of transformation is a \dfn{basic rigid motion} which takes a shape and moves it, but in a way that doesn't stretch or shrink the shape. 
 \end{definition}
-We'll treat each of these types of transformations separately below. Each of these transformations is what we'll call a \dfn{rigid motion}, meaning that if two points are a certain distance apart before we make a transformation, they are the same distance apart after the transformation. We're not stretching or shrinking anything!
 
-It's also true that each of these transformations preserve angles. This is actually another way to think about what it means to be a transformation. But what does it mean to ``preserve angles''? The answer is that if you start with a particular angle measure, and then you do one of these transformations, however that angle moves in space, its measure doesn't change. 
+When we talk about basic rigid motions, we want to remember that the fact that they don't stretch or shrink the shape means that distances are preserved. If two points are a certain distance apart, they will remain the same distance apart after the basic rigid motion. It's also true that basic rigid motions preserve angles. If you start with a particular angle measure, and then you do one of these transformations, however that angle moves in space, its measure doesn't change. 
+
+Generally when we talk about transformations in this course, we are talking about these basic rigid motions. We'll give you a warning if we talk about transformations that aren't basic rigid motions! The first three basic rigid motions that we want to think about are reflections, rotations, and translations.
+
+
 \begin{question}
-If you begin with an angle measuring $60\degree$, what will the resulting angle be after a transformation?
+If you begin with an angle measuring $60\degree$, what will the resulting angle be after a rotation?
 
 \begin{prompt}
 The angle will still measure $\answer[given]{60}\degree$.
@@ -30,7 +33,7 @@ The angle will still measure $\answer[given]{60}\degree$.
 \section{Reflections}
 When we think of a reflection, our first thought probably involves a mirror. This is the right idea to have in our minds: a reflection is a mirror image of an object.
 \begin{definition}
-A \dfn{reflection} is what happens to all the points in the plane when we choose a particular line of reflection, which we can call $M$, and use this line $M$ to exchange each point in the plane with its mirror image with respect to $M$.
+A \dfn{reflection} is what happens to all the points in the plane when we flip them over a line. To specify a reflection, we choose a particular line of reflection, which we can call $M$, and use this line $M$ to exchange each point in the plane with its mirror image with respect to $M$. The line of reflection must be a perpendicular bisector of the segment connecting the original point and its mirror image.
 \end{definition}
  But what does that mean practically? Let's look at two examples that will help us see how to draw reflections of points and objects.
 
@@ -84,7 +87,7 @@ Let's reflect a triangle over the line $M$.
 \draw[domain=-2:7, samples=100, smooth, <->] plot (\x, {0.3*\x+1}) node[below]{$M$};
     % Define the points of the triangle
     \coordinate (A) at (0,0);
-    \coordinate (B) at (4,-2);
+    \coordinate (B) at (2,-2);
     \coordinate (C) at (3,1);
 
     % Draw the triangle
@@ -188,7 +191,7 @@ Finally, to see the reflected triangle, we connect the images of the points in t
 \end{image}
 
 
-Why does this construction reflect the entire triangle? We are reflecting all of the points in the plane over the line $M$, so all of the points between $A$ and $B$ also get reflected in the exact same way. Imagine every single point along the segment between $A$ and $B$ being reflected using the same process that we used. Since the reflection is a rigid motion, we're not stretching or shrinking, so we get the same result by connecting $\hat{A}$ with $\hat{B}$ as we would if we reflected each individual point. The same is true for the segment between $A$ and $C$ and the segment between $B$ and $\answer[given]{C}$, so we can connect the dots from $\hat{A}$ to $\hat{B}$ to $\hat{C}$ to get the reflected triangle.
+Why does this construction reflect the entire triangle? We are reflecting all of the points in the plane over the line $M$, so all of the points between $A$ and $B$ also get reflected in the exact same way. Imagine every single point along the segment between $A$ and $B$ being reflected using the same process that we used. Since the reflection is a basic rigid motion, we're not stretching or shrinking, so we get the same result by connecting $\hat{A}$ with $\hat{B}$ as we would if we reflected each individual point. The same is true for the segment between $A$ and $C$ and the segment between $B$ and $\answer[given]{C}$, so we can connect the dots from $\hat{A}$ to $\hat{B}$ to $\hat{C}$ to get the reflected triangle.
 
 \end{example}
 
@@ -203,7 +206,7 @@ Draw some ideas in your notes, and then write a summary of your thoughts here.
 \section{Rotations}
 The next type of transformation that we want to discuss is a rotation. Informally, we might think of a rotation as a turn of some kind. 
 \begin{definition}
-A \dfn{rotation} is what happens to all of the points in the plane when we choose a particular point $O$ to act as a center point, and then a particular angle $\alpha$, and we turn all of the points of the plane an angle of $\alpha$ around $O$. 
+A \dfn{rotation} is what happens to all of the points in the plane when turn all of the points in the plane around a given point. To specify a rotation, we choose a particular point $O$ to act as a center point, and then a particular angle $\alpha$, and we turn all of the points of the plane an angle of $\alpha$ around $O$. 
 \end{definition}
 Think of using a piece of regular paper and a piece of transparent paper. Draw the point $O$ on both pieces of paper and line up the two copies of $O$. Draw a point $P$ that you are trying to rotate on both pieces of paper as well, and begin by also lining up the two copies of $P$. While holding down both papers at $O$, rotate the top (transparent) paper according to the chosen angle $\alpha$. The new location of $P$ on the transparent paper is the image of the original $P$. Let's see how to construct this with our tools.
 
@@ -269,7 +272,7 @@ What happens to a triangle if we rotate using an angle of $360\degree$?
 \section{Translations}
 The final type of transformation that we want to discuss in this section is a translation. Another word you could use for a transformation is a shift.
 \begin{definition}
-A \dfn{translation} is what happens to all of the points in the plane when we move each point a certain distance in a certain direction. We often use a \dfn{vector} to describe the distance and direction.
+A \dfn{translation} is what happens to all of the points in the plane when we move each point a certain distance in a certain direction. To specify a translation, we often use a \dfn{vector} to describe the distance and direction.
 \end{definition}
 You can think of a vector as an arrow. For instance, the arrow below could tell us to move three spaces east:
 \begin{image}
@@ -305,7 +308,7 @@ When you construct the arrow starting from $P$, remember that we aren't just gue
 What property of shapes or of parallel lines could you use to verify that the arrow is exactly parallel to the original arrow?
 \begin{multipleChoice}
 \choice{Vertical angles}
-\choice{The Parallel Postulate}
+\choice[correct]{The Parallel Postulate}
 \choice{Opposite sides are equal}
 \choice{Adjacent angles are equal}
 \choice{You do not need to verify that the two vectors are parallel}
@@ -327,7 +330,7 @@ Let's translate the quadrilateral $ABCD$ by the vector given. The quadrilateral 
 \node[above] at (2,2.5) {$D$};
 \end{tikzpicture}
 \end{image}
-When we translate, \wordChoice{\choice[correct]{each} \choice{some}} of the points in the plane moves according to the vector. So, we can translate each of the vertices of our shape (getting $\hat{A}$, $\hat{B}$, $\hat{C}$, and $\hat{D}$. The translation shifts the points on the line segments in the same way, so we can then connect the dots to see the final shape. In the figure below, we show the arrow translating each of the vertices, and then we draw the final shape.
+When we translate, all of the points in the \wordChoice{\choice{entire plane} \choice{figure} \choice{direction of the arrow}} move according to the vector. So, we can translate each of the vertices of our shape (getting $\hat{A}$, $\hat{B}$, $\hat{C}$, and $\hat{D}$). The translation shifts the points on the line segments in the same way, so we can then connect the dots to see the final shape. In the figure below, we show the arrow translating each of the vertices, and then we draw the final shape.
 \begin{image}
 \begin{tikzpicture}
 \draw[very thick, ->] (0,0)--(-2, 4);
@@ -351,7 +354,24 @@ When we translate, \wordChoice{\choice[correct]{each} \choice{some}} of the poin
 \end{example}
 Even though the final image above looks a bit like a prism, remember that we are dealing with 2D shapes here, because we are sliding around all of the points on the plane. However, there's a good reason that the final picture looks like a prism. Remember that we made a prism by taking a second copy of a shape and moving it in 3D space. When we draw the lines from the top copy to the bottom copy, they should all be the same. So, if our vector is in 3D space, we could actually use the translation lines to make the sides of a prism.
 
-As a nearly final thought for this section, some people also like to use the terminology \dfn{glide-reflection} to refer to what happens to all of the points in the plane when we do both a translation and a reflection. We won't use that terminology, much, but you should be prepared to perform a sequence of any of the transformations we have discussed.
+There's another type of transformation we want to mention.
+\begin{definition}
+The \dfn{identity transformation}, sometimes called the ``do nothing'' transformation, doesn’t move the plane at all.
+\end{definition}
+
+\begin{question}
+Is the identity transformation a translation? A reflection? A rotation? Select all true statements below.
+\begin{selectAll}
+\choice[correct]{The identity transformation is a translation using a vector of length zero.}
+\choice{The identity transformation is not a translation because it doesn't move the points anywhere.}
+\choice{The identity transformation is a reflection, because we can reflect over the $x$-axis.}
+\choice[correct]{The identity transformation is not a reflection, because reflections flip things over.}
+\choice[correct]{The identity transformation is a rotation using an angle of zero degrees.}
+\choice{The identity transformation is not a rotation because it doesn't turn the points.}
+\end{selectAll}
+\end{question}
+
+As a nearly final thought for this section, some people also like to use the terminology \dfn{glide-reflection} to refer to what happens to all of the points in the plane when we do both a translation and a reflection across a line parallel to the translation. We won't use that terminology, much, but you should be prepared to perform a sequence of any of the transformations we have discussed.
 
 
 \begin{question}

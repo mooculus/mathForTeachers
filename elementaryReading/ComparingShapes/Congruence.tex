@@ -15,9 +15,9 @@ We investigate shapes that are the same.
 It might feel like we've taken a little detour, but remember that the purpose of this chapter is to talk about how we can compare and contrast shapes. Previously, we've focused on sorting shapes into various categories according to their aspects and properties, which is a huge part of the geometry curriculum in \link[grades K--5]{https://education.ohio.gov/getattachment/Topics/Learning-in-Ohio/Mathematics/Ohio-s-Learning-Standards-in-Mathematics/Ohio-s-K-8-Learning-Progressions.pdf.aspx?lang=en-US}.  We've now built up enough terminology to say something specific about when two shapes are the same. At a first glance, it might seem like saying that two shapes are ``the same'' is a more basic concept than classifying them, but remember that when we are working on proving things exactly and we want to say that two shapes are exactly the same, we really need them to be exactly the same. It's not enough to look at them and say ``they pretty much look the same'' since our eyes can easily deceive us. (Could you tell with your eyes the difference between a $90\degree$ angle and one that's $89.999\degree$? I couldn't!) In the case of proof, it's not even enough to measure them and say ``we got the same measurements for both'', since measurements are only accurate to a certain extent. (Could you measure with your protractor an angle that's $89.999\degree$? I couldn't!) However, notice that we have an increasing level of sophistication that we are building, here: we'd like kids to start by looking at shapes and making observations like ``they look the same'', and then later in school we'd like them to measure things and say ``I think they have all the same measurements'', and then finally (around seventh or eighth grade and into high school) we'd like to be able to say that two things are the same without doing any measuring. 
 
 \begin{definition}
-We say that two shapes are \dfn{congruent} if we can find a sequence of transformations which are also rigid motions taking the first shape to the second shape.
+We say that two shapes are \dfn{congruent} if we can find a sequence of transformations which are also basic rigid motions taking the first shape to the second shape.
 \end{definition}
-Notice what this definition is doing for us: we use rotations, reflections, and translations to say when two shapes are exactly the same, and we use the word \dfn{congruent} instead of ``exactly the same''. Two shapes being congruent is different from two shapes being equal, because the shapes are allowed to be in different locations and still be the same (rather than being equal, where we might want the two shapes to also be in the same spot).
+Notice what this definition is doing for us: we use rotations, reflections, and translations to say when two shapes are exactly the same, and we use the word \dfn{congruent} instead of ``exactly the same''. We are essentially giving precise instructions for how to pick up one of the shapes and place it exactly on top of the other. (Some people like to call placing one shape on top of another the ``principle of superposition''.) Two shapes being congruent is different from two shapes being equal, because the shapes are allowed to be in different locations and still be the same (rather than being equal, where we might want the two shapes to also be in the same spot).
 
 Let's look at an example to help us put our thinking in order.
 \begin{example}
@@ -63,7 +63,7 @@ True or false: The old triangle is the same as the new triangle, just in a diffe
 \end{question}
 
 \begin{question}
-True or false: The new triangle was produced by applying a sequence of transformations (which are also rigid motions) to the old triangle.
+True or false: The new triangle was produced by applying a sequence of transformations (which are also basic rigid motions) to the old triangle.
 \begin{multipleChoice}
 \choice[correct]{True}
 \choice{False}
@@ -86,7 +86,7 @@ Think also of the opposite situation: you are given the old and new triangles, a
 
 \section{A shortcut: congruence of triangles}
 
-Most of the time, it's a little bit too tedious for us to actually produce the transformations that would show that two shapes are congruent. Instead, we like to use the fact that triangles have some special properties that make it easier for us to talk about when triangles are congruent. The special thing about triangles is that they are the same \emph{shape} when they have the same angles.
+Most of the time, it's a little bit too tedious for us to actually produce the transformations that would show that two shapes are congruent. Instead, we like to use the fact that triangles have some special properties that make it easier for us to talk about when triangles are congruent. The special thing about triangles is that they are the same \emph{shape} when they have the same \emph{angles}.
 \begin{question}
 Having the same angles doesn't always produce the same shape. Which shapes below always have the same angles? Select all that apply.
 \begin{selectAll}
@@ -98,7 +98,7 @@ Having the same angles doesn't always produce the same shape. Which shapes below
 	\choice[correct]{A square and a smaller square.}
 \end{selectAll}
 \end{question}
-Since triangles have the same shape when they have the same angles, we can also tell when they are the same size using some shortcuts. These are each theorems that we could prove (and our friend Euclid from a few sections ago did prove them in his book called ``Elements'') but we won't prove them here. 
+Since triangles have the same shape when they have the same angles, we can also tell when they are the same size using some shortcuts. These are each theorems that we could prove (and our friend Euclid from a few sections ago did prove them in his book called ``Elements'') but we won't prove them here. We will, however, explore these ideas in class!
 \begin{itemize}
 	\item SAS or side-angle-side: two triangles are congruent when they have two sides with the same measure, and the angle between those sides also has the same measure.
 	\item ASA or angle-side-angle: two triangles are congruent when they have two angles with the same measure, and the side between those angles also has the same measure.
@@ -161,7 +161,7 @@ Another way that triangle congruence can be used is to show that certain propert
 \begin{example}
 Prove that opposite sides of a parallelogram are congruent. (We mentioned this fact in the ``Constructions'' section.)
 
-First, let's start with any parallelogram called $ABCD$. We'll draw one example, but you should pay attention to how this argument would work if we drew a different parallelogram.)
+First, let's start with any parallelogram called $ABCD$. We'll draw one example, but you should pay attention to how this argument would work if we drew a different parallelogram.
 \begin{image}\begin{tikzpicture}
 \draw[thick] (0,0)--(3,0)--(7,2)--(4,2)--(0,0);
 \node[below] at (0,0) {$A$};
@@ -218,6 +218,21 @@ How do we know that triangle $ACD$ is congruent to triangle $CAB$?
 Now that we know that the triangles are congruent, we know that they are the same in every way. So, side $CD$ has to be equal in length to side $AB$, and side $AD$ has to be equal in length to side $BC$. And that's what we wanted to prove!
 
 \end{example}
+
+It's a good time to point out that the way we describe parts of congruent triangles is important.
+\begin{question}
+If we know that $\triangle ABC$ is congruent to $\triangle XYZ$, is it necessarily true that $\triangle ABC$ is congruent to $\triangle ZXY$?
+\begin{multipleChoice}
+\choice{Yes}
+\choice[correct]{No}
+\begin{feedback}[correct]
+When we say that $\triangle ABC$ is congruent to $\triangle XYZ$, we mean that angle $A$ matches up with angle $X$, side $AB$ matches up with side $XY$, and so on for all of the other parts of the triangle. So if we ask about $\triangle ABC$ and $\triangle ZXY$, we are now asking whether side $AB$ is congruent to side $ZX$, and while this could be true we don't know it already from the fact that $\triangle ABC$ is congruent to $\triangle XYZ$. We do know that side $ZX$ is congruent to side $CB$, but that doesn't tell us about side $AB$.
+\end{feedback}
+\end{multipleChoice}
+\end{question}
+
+
+
 
 \begin{example}
 Prove that the opposite angles of a rhombus are congruent. (We mentioned this fact in the ``Constructions'' section.) 
