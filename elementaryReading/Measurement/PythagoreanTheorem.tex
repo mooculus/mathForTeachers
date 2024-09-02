@@ -199,9 +199,45 @@ then the triangle has to be a right triangle with the side of length $c$ as the 
 
 Kids learn about the Pythagorean Theorem in middle school, but we like to talk about it here because it helps us to really think about moving and additivity in a different way than we have previously, and it gives us more interesting length and area problems to solve.
 
+\section{The converse}
+
+We can also take a look at the converse of the Pythagorean theorem. Remember from when we talked about the Parallel Postulate that the converse of a statement is a little like its opposite; we swap the ``if'' and ``then'. You might also remember that the statement and its converse are different ideas, and when the original statement is true the converse may or may not also be true.
+
+However, in the case of the Pythagorean theorem, the converse is also a true statement.
+\begin{theorem}
+If a triangle has side lengths $a$, $b$, and $c$ for which it's also true that
+\[
+a^2 + b^2 = c^2,
+\]
+then that triangle must be a right triangle.
+\end{theorem}
+
+\begin{question}
+Is a triangle whose side lengths are 12 inches, 37 inches, and 35 inches a right triangle?
+\begin{multipleChoice}
+\choice[correct]{Yes}
+\choice{No}
+\end{multipleChoice}
+\begin{feedback}[correct] Notice that we had to rearrange the side lengths to make these make sense. The hypotenuse should always be the longest side of a right triangle, so we have to have 37 inches as the ``$c$'' value here. We see that $12^2 + 35^2 = 37^2$ so the converse of the Pythagorean theorem says this is a right triangle.
+\end{feedback}
+\end{question}
+
+\begin{question}
+Is a triangle whose side lengths are 15 inches, 9 inches, and 8 inches a right triangle?
+\begin{multipleChoice}
+\choice{Yes}
+\choice[correct]{No}
+\end{multipleChoice}
+\begin{feedback}[correct] Notice that we again had to rearrange the side lengths to make these make sense. The hypotenuse should always be the longest side of a right triangle, so we have to have 15 inches as the ``$c$'' value here. We see that $8^2 + 9^2 \neq 15^2$ so the converse of the Pythagorean theorem says this is not a right triangle.
+\end{feedback}
+\end{question}
+We won't prove the converse of the Pythagorean theorem here, but you can try to do this on your own if you'd like. A pretty famous proof actually uses the Pythagorean theorem to prove its converse (along with side-side-side congruence of triangles).
+
+A set of three numbers which form the sides of a right triangle are often called a \dfn{Pythagorean triple}. So, for instance, $(12, 35, 37)$ would be such an example, along with the famous $(3, 4, 5)$. Knowing a few basic Pythagorean triples is useful for creating problems for your future students when you know you want them to be working with a right triangle. It's the converse of the Pythagorean theorem that makes this work!
+
 
 \section{A little history}
-One thing you might notice about this theorem is that we typically think about it as relating some lengths: the side lengths of a right triangle. But our proof of the theorem was actually about some \emph{areas} that are equal. In fact, this is the way that Euclid and other Ancient Greek mathematicians would have thought about the theorem!
+One thing you might notice about the Pythagorean theorem is that we typically think about it as relating some lengths: the side lengths of a right triangle. But our proof of the theorem was actually about some \emph{areas} that are equal. In fact, this is the way that Euclid and other Ancient Greek mathematicians would have thought about the theorem!
 
 An interesting fact about the Pythagorean Theorem is that it's named for an Ancient Greek philosopher and mathematician named \link[Pythagoras]{https://en.wikipedia.org/wiki/Pythagoras} who lived around 500 BCE. However, most people think that it wasn't actually Pythagoras who proved this theorem! Pythagoras ran a school of mathematics which appears to modern eyes a bit more like a cult of mathematics, and so sometimes mathematics that came from his school was credited to him even though it was probably one of his students who actually did the mathematical work of proving the theorem. In fact, women and men were both part of the Pythagorean school, and so it's possible that a female mathematician played a part in proving this theorem. We'll never know for sure!
 
