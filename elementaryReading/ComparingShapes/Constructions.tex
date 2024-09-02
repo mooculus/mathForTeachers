@@ -58,7 +58,7 @@ If you use folding to bisect a line segment, how is the fold related to the orig
 \choice{the fold does not intersect the segment}
 \end{multipleChoice} 
 \begin{feedback}
-	Notice something important here: the first choice talks about a ``perpendicular bisector'' of the segment. To be a perpendicular bisector of a segment means that we start with some segment, and then we use another segment (or line, or ray) to cut that segment into two equal pieces, and our cutting splits the original segment, thought of as a straight angle, into two equal pieces. In other words, the segment's length is cut into two equal pieces, and we also get two right angles from the cutting.
+	Notice something important here: one of the choices talks about a ``perpendicular bisector'' of the segment. To be a perpendicular bisector of a segment means that we start with some segment, and then we use another segment (or line, or ray) to cut that segment into two equal pieces, and our cutting splits the original segment, thought of as a straight angle, into two equal pieces. In other words, the segment's length is cut into two equal pieces, and we also get two right angles from the cutting.
 	
 	This is important because we can construct a perpendicular that's not a bisector, and we can also construct a bisector that's not perpendicular, or we can construct a bisector that is perpendicular to the original segment. Sketch pictures of each of these situations in your notes!
 \end{feedback}
@@ -74,7 +74,7 @@ Let's use paper folding to show that the base angles of an isosceles triangle ar
     % Define the vertices of the triangle
     \coordinate (A) at (0, 0);
     \coordinate (B) at (4, 0);
-    \coordinate (C) at (2, 3);
+    \coordinate (C) at (2, 5);
     
     % Draw the triangle
     \draw[thick] (A) -- (B) -- (C) -- cycle;
@@ -85,8 +85,8 @@ Let's use paper folding to show that the base angles of an isosceles triangle ar
     \node[above] at (C) {C};
     
     % Mark and label the base angles
-    \draw (A) -- ++(0.5, 0) arc[start angle=0, end angle=56.31, radius=0.5] node[midway, above right] {$\alpha$};
-    \draw (B) -- ++(-0.5, 0) arc[start angle=180, end angle=123.69, radius=0.5] node[midway, above left] {$\beta$};
+    \draw (A) -- ++(0.5, 0) arc[start angle=0, end angle=70, radius=0.5] node[midway, above right] {$\alpha$};
+    \draw (B) -- ++(-0.5, 0) arc[start angle=180, end angle=110, radius=0.5] node[midway, above left] {$\beta$};
 \end{tikzpicture}
 \end{image}
 Next, we imagine that we cut out this triangle on paper. We are trying to decide whether the angles $\alpha$ and $\beta$ are equal, so let's fold the paper.
@@ -105,7 +105,7 @@ Here is a picture of what our folded triangle looks like.
     % Define the vertices of the triangle
     \coordinate (A) at (0, 0);
     \coordinate (B) at (4, 0);
-    \coordinate (C) at (2, 3);
+    \coordinate (C) at (2, 5);
     
     % Draw the triangle
     \draw[thick] (A) -- (B) -- (C) -- cycle;
@@ -116,19 +116,19 @@ Here is a picture of what our folded triangle looks like.
     \node[above] at (C) {C};
     
     % Mark and label the base angles
-    \draw (A) -- ++(0.5, 0) arc[start angle=0, end angle=56.31, radius=0.5] node[midway, above right] {$\alpha$};
-    \draw (B) -- ++(-0.5, 0) arc[start angle=180, end angle=123.69, radius=0.5] node[midway, above left] {$\beta$};
+    \draw (A) -- ++(0.5, 0) arc[start angle=0, end angle=70, radius=0.5] node[midway, above right] {$\alpha$};
+    \draw (B) -- ++(-0.5, 0) arc[start angle=180, end angle=110, radius=0.5] node[midway, above left] {$\beta$};
     
     %draw the fold
     \draw[dashed] (C)--(2,0);
     
     %draw the folded triangle
     \draw[->] (4,2)--(6,2);
-    \coordinate (D) at (7,3);
+    \coordinate (D) at (7,5);
     \coordinate (E) at (9,0);
     \draw[dashed] (D)--(7,0);
     \draw[thick](D)--(E)--(7,0);
-     \draw (E) -- ++(-0.5, 0) arc[start angle=180, end angle=123.69, radius=0.5] node[midway, above left] {$\alpha=\beta$};
+     \draw (E) -- ++(-0.5, 0) arc[start angle=180, end angle=110, radius=0.5] node[midway, above left] {$\alpha=\beta$};
 \end{tikzpicture}
 \end{image}
 After folding, it indeed appears that $\alpha$ and $\beta$ match up exactly. Our next goal would be to try this same process with some other isosceles triangles to see whether their angles would also match up. Try it for yourself!
@@ -152,7 +152,7 @@ As a final way to use folding to create shapes, notice that in our previous exam
     % Define the vertices of the triangle
     \coordinate (A) at (0, 0);
     \coordinate (B) at (4, 0);
-    \coordinate (C) at (2, 3);
+    \coordinate (C) at (2, 5);
     
     % Draw the triangle
     \draw[thick] (A) -- (B) -- (C) -- cycle;
@@ -163,19 +163,19 @@ As a final way to use folding to create shapes, notice that in our previous exam
     \node[above] at (C) {C};
     
     % Mark and label the base angles
-    \draw (A) -- ++(0.5, 0) arc[start angle=0, end angle=56.31, radius=0.5] node[midway, above right] {$\alpha$};
-    \draw (B) -- ++(-0.5, 0) arc[start angle=180, end angle=123.69, radius=0.5] node[midway, above left] {$\beta$};
+    \draw (A) -- ++(0.5, 0) arc[start angle=0, end angle=70, radius=0.5] node[midway, above right] {$\alpha$};
+    \draw (B) -- ++(-0.5, 0) arc[start angle=180, end angle=110, radius=0.5] node[midway, above left] {$\beta$};
     
     %draw the fold
     \draw[dashed] (C)--(2,0);
     
     %draw the folded triangle
     \draw[<-] (4,2)--(6,2);
-    \coordinate (D) at (7,3);
+    \coordinate (D) at (7,5);
     \coordinate (E) at (9,0);
     \draw[dashed] (D)--(7,0);
     \draw[thick](D)--(E)--(7,0);
-    \node at (8.5, 2) {cut lines};
+    \node[rotate=-70] at (8.5, 2.5) {cut lines};
      %\draw (E) -- ++(-0.5, 0) arc[start angle=180, end angle=123.69, radius=0.5] node[midway, above left] {$\alpha=\beta$};
 \end{tikzpicture}
 \end{image}
@@ -262,7 +262,7 @@ As we mentioned previously, being able to create a shape that we know is a squar
 
 \section{Classical Constructions (Compass and Straightedge Constructions)}
 
-At this point you might be feeling like these constructions aren't very powerful, since we haven't been able to prove anything with them. Many Ancient Greek mathematicians would have agreed with you. They were particularly suspicious of any time we tried to measure something, because measurements can have a lot of inaccuracies in them. (For fun, compare your answer to the angle measurement in the previous section to a friend's answer. I'll bet you didn't get the same answer!) Furthermore, the Ancient Greek mathematicians were very interested in both simplicity and beauty in their mathematics, and so when making constructions they allowed only two tools: a compass (for drawing circles) and an unmarked ruler which they called a ``straightedge''. There's no measuring allowed, here! These kind of constructions are most easily found in a book called ``The Elements'' by a mathematician named Euclid. ``Elements'' is perhaps the most famous book in all of mathematics, and if you are interested in the history and context of this work, you can glance through a textbook like \link[this one]{https://library.ohio-state.edu/record=b8693322~S7}. 
+At this point you might be feeling like these constructions aren't very powerful, since we haven't been able to prove anything with them. Many Ancient Greek mathematicians would have agreed with you. They were particularly suspicious of any time we tried to measure something, because measurements can have a lot of inaccuracies in them. (For fun, compare your answer to the angle measurement in the previous section to a friend's answer. I'll bet you didn't get the same answer!) Furthermore, the Ancient Greek mathematicians were very interested in both simplicity and beauty in their mathematics, and so when making constructions they allowed only two tools: a compass (for drawing circles) and an unmarked ruler which they called a ``straightedge''. There's no measuring allowed, here! One famous place that these kind of constructions are  found is in a book called ``The Elements'' by a mathematician named Euclid. ``Elements'' is perhaps the most famous book in all of mathematics, and if you are interested in the history and context of this work, you can glance through a textbook like \link[this one]{https://library.ohio-state.edu/record=b8693322~S7}. 
 
 To see how these constructions work, let's use the example of bisecting an angle again.
 \begin{example}
