@@ -124,6 +124,8 @@ Each of the groups has $\answer[given]{3}$ square centimeters in it so that one 
 \]
 square centimeters total in the figure. (Remember to use our convention that the number of groups goes first in multiplication unless you are explaining otherwise!)
 
+Notice also that the square units covering this rectangle is an example of an array, and arrays were one of the main models we had for thinking about multiplication.
+
 \end{example}
 
 This example is getting us closer to the formula that we want, but let's pause and notice something strange here. The length and width of the rectangle are given in centimeters.
@@ -160,7 +162,7 @@ We have covered the rectangle with square units, and so now we want to use multi
 \]
 or, if we use $A$ to represent the area of the rectangle, $A = L \times W$ square units.
 \end{explanation}
-Again, remember that our one-dimensional measurements of length and width are actually telling us how to count the $2D$ squares that cover the shape. This interpretation fits with our usual definition of multiplication, where the groups and objects per group typically have different units from one another, with the units on the objects matching what we are trying to count with our multiplication.
+Again, remember that our one-dimensional measurements of length and width are actually telling us how to count the 2D squares that cover the shape. This interpretation fits with our usual definition of multiplication, where the groups and objects per group typically have different units from one another, with the units on the objects matching what we are trying to count with our multiplication.
 
 \begin{question}
 Pause and think: does this formula work for side lengths that are decimals? Fractions?
@@ -318,19 +320,19 @@ It's very important to notice in the formula above that the height $H$ of the pa
 \end{image}
 
 \begin{theorem}
-Consider a trapezoid where the lengths of the two parallel sides are $A$ units and $B$ units. We draw the height as a segment perpendicular to both of the parallel sides, and we write the length of this height as $H$ units. In this case, the area $A$ in square units is given by
+Consider a trapezoid where the lengths of the two parallel sides are $B$ units and $C$ units. We draw the height as a segment perpendicular to both of the parallel sides, and we write the length of this height as $H$ units. In this case, the area $A$ in square units is given by
 \[
-A = \frac12 (A+B)H.
+A = \frac12 (B+C)H.
 \]
 \end{theorem}
 Again, notice that the height is not any of the sides of the trapezoid! We have labeled the various parts of the formula in the figure below.
 \begin{image}
 \begin{tikzpicture}
 \draw[thick] (0,0)--(6,0)--(5,3)--(2,3)--(0,0);
-\node[above] at (3.5, 3){length $A$};
-\node[below] at (3,0) {length $B$};
+\node[above] at (3.5, 3){length $B$};
+\node[below] at (3,0) {length $C$};
 \draw[dashed] (2,3)--(2,0);
-\node[right] at (2,1.5) {height};
+\node[right] at (2,1.5) {height $H$};
 \end{tikzpicture}
 \end{image}
 
@@ -364,6 +366,8 @@ Now that we have rearranged the pieces, they are arranged in a shape that looks 
 \node[above] at (1.5, 1) {$A$};
 \end{tikzpicture}
 \end{image}
+
+
 What shape have we made with our circle pieces?
 \begin{multipleChoice}
 \choice{A circle}
@@ -584,17 +588,27 @@ for the area of the base, and then the height measures $h$, so the volume of thi
 \[
 V = A \times h =\left ( \frac12\times  \answer[given]{a} \times b \right ) \times \answer[given]{h}.
 \]
+
+\end{example}
+
 In fact, we could use this formula on an oblique prism with a triangular base, since we could first shear the oblique prism into a right one! You should still imagine matching the cubes to the area squares in the first layer, but you might need to use part of a cube if you only have part of an area unit.
 
-We could also use this formula to calculate the volume of a right cylinder whose base is a circle of radius $r$ and whose height measures $h$. The area of the base is given by
+We could also use this formula to calculate the volume of a right cylinder whose base is a circle of radius $r$ and whose height measures $h$. 
+\begin{question}
+For a right cylinder whose base is a circle of radius $r$ and whose height is $h$, what is the area of the base?
+\begin{prompt}
 \[
 \pi \times \answer{r}^2
 \]
-which means the volume is given by
+\end{prompt}
+
+What is the volume using the formula $V = A \times h$?
+\begin{prompt}
 \[
-V = A \times h = (\pi \times \answer{r}^2 ) \times h.
+V = A \times h = (\pi \times \answer{r}^2 ) \times \answer{h}.
 \]
-\end{example}
+\end{prompt}
+\end{question}
 This is a powerful formula!
 
 However, we cannot use this formula to calculate every volume, because not every solid has layers which are all the same. For instance, if you took a right cone with a circular base and tried to cut it into layers, the layers would all be different. Here is a cone to help you visualize, but if you have some modeling dough handy you could try this out yourself.
