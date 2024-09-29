@@ -61,6 +61,49 @@ Pause and think: how would the explanation above change if we were measuring an 
 \begin{freeResponse} Enter your thoughts here! \end{freeResponse}
 \end{question}
 
+Let's pause here and return to number lines. Perhaps you can see a nice connection between units of measure, number lines, and rulers. We build number lines by choosing a location for zero and a unit of length, and then we make a bunch of copies of that unit of measure to represent our whole numbers.
+\begin{image}
+\begin{tikzpicture}
+\draw[thick, <->] (-0.3, 0)--(10.3,0);
+\foreach \x in {0, 1, ..., 10}
+	\draw (\x, 0.2)--(\x, -0.2) node[below] {$\x$};
+\end{tikzpicture}
+\end{image}
+Each whole number is then represented by how many units we need to get from $0$ to that whole number. We could use the number line as a ruler of sorts: if we lined up an object whose length we wanted to know with the zero mark, the mark at the other end of the object would tell us the length of the object. 
+\begin{question}
+Using the number line below, what is the length of the line $L$ which starts at zero and ends at the mark labeled $6$?
+\begin{image}
+\begin{tikzpicture}
+\draw[thick, <->] (-0.3, 0)--(10.3,0);
+\foreach \x in {0, 1, ..., 10}
+	\draw (\x, 0.2)--(\x, -0.2) node[below] {$\x$};
+\draw[very thick, blue] (0,0.5)--(6,0.5);
+\end{tikzpicture}
+\end{image}
+\begin{prompt}
+The length of the line is $\answer{6}$ units.
+\end{prompt}
+\end{question}
+
+\begin{question}
+What is the length of the line $L$ which starts at the mark labeled two and ends at the mark labeled $6$?
+\begin{image}
+\begin{tikzpicture}
+\draw[thick, <->] (-0.3, 0)--(10.3,0);
+\foreach \x in {0, 1, ..., 10}
+	\draw (\x, 0.2)--(\x, -0.2) node[below] {$\x$};
+\draw[very thick, red] (2,0.5)--(6,0.5);
+\end{tikzpicture}
+\end{image}
+\begin{prompt}
+The length of the line is $\answer{4}$ units.
+\end{prompt}
+\end{question}
+
+However, the number line is actually more powerful than to only be used as a ruler. The number line allows us to connect our ideas about length to our general ideas about numbers. For instance, the idea of the number ``two'' can refer to two units of length, but it can also refer to two candy bars or two dogs or two friends. All of these ideas about ``two'' are different, but they all can be represented by counting the number of units we need to move from zero on a number line. From using a number line to understand whole numbers, we can also understand fractions by cutting our units into equal-sized pieces. And from there, we can even define irrational numbers using their locations on the number line! We have a nice way of representing all kinds of numbers that even helps us understand what it means for one number to be larger or smaller than another!
+
+
+
 \section{Approximate measurements}
 
 Notice that in the previous section, we actually gave an approximate answer to the length example, because we estimated that the last pencil was about $\frac13$ of a full pencil's length. This is because in order to approximate length, area, or volume, we follow essentially the same four-step process for measurement that we do in order to get an exact measurement. The main difference is that when we approximate, it's okay to have gaps or overlaps, and it's okay to count too much or too little area. The closer we want our approximation to be, however, the less often we should leave those gaps, overlaps, or extra space.
@@ -111,6 +154,26 @@ The candies can't account for all the space inside the jar, because there are ga
 \end{feedback}
 \end{question} 
 So, if you ever run across this game after this, you can use your geometry approximation skills to win the candy!
+
+
+When we think about estimation, we should also consider how much precision we need for the situation at hand. Think about how certain division problems that don't have exact answers can ask for different types of answers. For instance, if we calculate $38 \div 5$, sometimes we give an exact answer, sometimes we round up, sometimes we round down, and so on. When we approximate, the problem could ask for an overestimate or an underestimate, or we could be asked to round to the nearest whole number of squares or even the nearest $5$ squares. Pay attention to the context of a story problem as much as you pay attention to whether you are overestimating or underestimating. You may also need to pay attention to \link[significant figures]{https://en.wikipedia.org/wiki/Significant_figures} when rounding.
+
+\begin{question}
+Hallie needs to cover the shape below with square tiles. The tiles come in packages of 10, and can be cut up to be used in her project. How many packages should Hallie buy?
+\begin{image}
+\begin{tikzpicture}
+\draw[dotted, gray, step=0.4] (0,0) grid (5,5);
+\draw[smooth, very thick] plot coordinates {(0.5,3) (2,4) (4,3.5) (4.5, 2.5) (3,2) (2,1) (1.5,2) (0.55, 2.5)  (0.5,3)};
+\end{tikzpicture}
+\end{image}
+\begin{prompt}
+Hallie should buy $\answer{5}$ boxes of tiles.
+\begin{feedback}[correct]
+We can count approximately $45$ squares for the area of this object. Since Hallie can only buy the tiles in packages of $10$, we need to round up to the nearest multiple of 10, which would be $50$ tiles. Then $50$ tiles would correspond to $5$ boxes of tiles.
+\end{feedback}
+\end{prompt}
+
+\end{question}
 
 
 
