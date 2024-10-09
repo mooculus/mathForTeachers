@@ -70,7 +70,7 @@ We start with a right triangle whose legs have lengths $a$ and $b$ and whose hyp
 \end{image}
 We have also labeled the angles $1$ and $2$ in the picture which are not the right angle. We are going to need the fact that
 \[
-1 + 2 = \answer[given]{90}
+1 + 2 = \answer[given]{90}\degree
 \]
 which we got in a previous section from the fact that
 \[
@@ -154,13 +154,15 @@ We now need to take a look at the sides of the central figure to determine their
 \end{tikzpicture}
 \end{image}
 When we take away a length of $a$ from a length of $b$, we get the length $\answer[given]{b-a}$.
-\begin{question}
+
+
 Check for yourself: is each side of the square formed in the same way?
 \begin{multipleChoice}
 \choice[correct]{Yes}
 \choice{No}
 \end{multipleChoice}
-\end{question}
+
+
 So, each side has the same length and all four corners are right angles, so the figure in the middle is, by definition, a square.
 
 Now that we know what figures we are dealing with, let's remember that we started with a big square with all sides of length $c$. Since a square is a rectangle, we can use the area formula for rectangles to find the area of this square, and we get $\answer[given]{c^2}$.
@@ -169,7 +171,7 @@ But we also formed the square using four triangles and a little square. The tria
 \[
 \textrm{big square's area} = \textrm{four triangles of area} + \textrm{central square's area}
 \]
-.Now substituting our formulas for each piece of area, we get the following.
+Now substituting our formulas for each piece of area, we get the following.
 \[
 c^2 = 4 \times \left (\frac12 a b \right) + (b-a)(b-a)
 \]
@@ -183,17 +185,7 @@ c^2 = b^2 + \answer{a^2}
 \]
 Since addition is commutative, this is the formula we wanted for the Pythagorean Theorem. Great work!
 \end{explanation}
-This is only one proof of the Pythagorean Theorem; there are many more. In fact, the \link[Guiness Book of World Records]{https://www.guinnessworldrecords.com/world-records/66189-most-proofs-of-pythagoras-theorem-published} lists a textbook published in 1940 that contained 370 different proofs of this theorem! Some people think it's silly to have more than one proof of a theorem, but having many different kinds of proofs gives us different kinds of insights into the theorem and the broader field of mathematics. Plus, some people think that coming up with new proofs is fun!
-
-Another interesting fact about the Pythagorean Theorem is that its converse is also true. (Remember: we talked about what it means to be a ``converse'' when we talked about the Parallel Postulate.) As we said before, just because a theorem is true doesn't necessarily mean that its converse or opposite is true, but it is in this case. Let's state it here without proof so that we can use it if we need it.
-
-\begin{theorem}
-[Converse of the Pythagorean Theorem] If we have a triangle whose side lengths are $a$, $b$, and $c$, and it's also true that
-\[
-a^2 + b^2 = c^2
-\]
-then the triangle has to be a right triangle with the side of length $c$ as the hypotenuse.
-\end{theorem}
+This is only one proof of the Pythagorean Theorem; there are many more. In fact, the \link[Guinness Book of World Records]{https://www.guinnessworldrecords.com/world-records/66189-most-proofs-of-pythagoras-theorem-published} mentions a textbook published in 1940 that contained 370 different proofs of this theorem! Some people think it's silly to have more than one proof of a theorem, but having many different kinds of proofs gives us different kinds of insights into the theorem and the broader field of mathematics. Plus, some people think that coming up with new proofs is fun!
 
 
 
@@ -201,10 +193,10 @@ Kids learn about the Pythagorean Theorem in middle school, but we like to talk a
 
 \section{The converse}
 
-We can also take a look at the converse of the Pythagorean theorem. Remember from when we talked about the Parallel Postulate that the converse of a statement is a little like its opposite; we swap the ``if'' and ``then'. You might also remember that the statement and its converse are different ideas, and when the original statement is true the converse may or may not also be true.
+Another interesting fact about the Pythagorean Theorem is that its converse is also true. (Remember: we talked about what it means to be a ``converse'' when we talked about the Parallel Postulate.) As we said before, just because a theorem is true doesn't necessarily mean that its converse or opposite is true, but it is in this case.
 
-However, in the case of the Pythagorean theorem, the converse is also a true statement.
-\begin{theorem}
+
+\begin{theorem}[Converse of the Pythagorean Theorem]
 If a triangle has side lengths $a$, $b$, and $c$ for which it's also true that
 \[
 a^2 + b^2 = c^2,
@@ -239,7 +231,7 @@ A set of three numbers which form the sides of a right triangle are often called
 \section{A little history}
 One thing you might notice about the Pythagorean theorem is that we typically think about it as relating some lengths: the side lengths of a right triangle. But our proof of the theorem was actually about some \emph{areas} that are equal. In fact, this is the way that Euclid and other Ancient Greek mathematicians would have thought about the theorem!
 
-An interesting fact about the Pythagorean Theorem is that it's named for an Ancient Greek philosopher and mathematician named \link[Pythagoras]{https://en.wikipedia.org/wiki/Pythagoras} who lived around 500 BCE. However, most people think that it wasn't actually Pythagoras who proved this theorem! Pythagoras ran a school of mathematics which appears to modern eyes a bit more like a cult of mathematics, and so sometimes mathematics that came from his school was credited to him even though it was probably one of his students who actually did the mathematical work of proving the theorem. In fact, women and men were both part of the Pythagorean school, and so it's possible that a female mathematician played a part in proving this theorem. We'll never know for sure!
+The Pythagorean Theorem is named for an Ancient Greek philosopher and mathematician named \link[Pythagoras]{https://en.wikipedia.org/wiki/Pythagoras} who lived around 500 BCE. However, most people think that it wasn't actually Pythagoras who proved this theorem! Pythagoras ran a school of mathematics which appears to modern eyes a bit more like a cult of mathematics, and so sometimes mathematics that came from his school was credited to him even though it was probably one of his students who actually did the mathematical work of proving the theorem. In fact, women and men were both part of the Pythagorean school, and so it's possible that a female mathematician played a part in proving this theorem. We'll never know for sure!
 
 Another interesting historical point about this theorem is the fact that the theorem was actually well known before the Pythagorean school ever worked on proving it. There are some legends that the Ancient Egyptians used the converse of the Pythagorean theorem to make sure the corners of the pyramids were exactly square, and the Ancient Babylonian mathematicians also likely knew the theorem. So, if you've ever had someone else take credit for some work that was yours, you have something in common with people other than Pythagoras who worked hard thinking about this theorem!
 
