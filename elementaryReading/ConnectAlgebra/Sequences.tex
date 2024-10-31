@@ -53,7 +53,7 @@ The pattern I'll choose in this case will be two squares and then one circle. We
 \node at (9,0) {\dots};
 \end{tikzpicture}
 \end{image}
-Let's extend this example by finding the $32$-nd shape in this pattern. We could do this by writing squares and circles until we've made $32$ shapes, but I think we can shortcut our work with a little algebra. We know that the shapes come in groups of three, so we could ask ourselves ``how many groups of $3$ are there in $32$?" This question means we need to use the operation \wordChoice{\choice{addition} \choice{subtraction} \choice{multiplication} \choice[correct]{division (how many groups?)} \choice{division (how many in each group?)}} So we'll take $32 \div 3$ and get $\answer[given]{10}$ with a remainder of $\answer[given]{2}$. (Remember to write specifically what you are using for your groups and your objects!) What does that mean for our sequence? Well, if we take $10$ full groups of $3$, we'll have made $30$ shapes and the $30$th shape will be a \wordChoice{\choice{circle} \choice[correct]{square}}. Since we need to get to the $32$-nd shape, we need to draw two more shapes, meaning that we will end up on a  \wordChoice{\choice[correct]{circle} \choice{square}}.
+Let's extend this example by finding the $32$-nd shape in this pattern. We could do this by writing squares and circles until we've made $32$ shapes, but I think we can shortcut our work with a little algebra. We know that the shapes come in groups of three, so we could ask ourselves ``how many groups of $3$ are there in $32$?" This question means we need to use the operation \wordChoice{\choice{addition} \choice{subtraction} \choice{multiplication} \choice[correct]{division (how many groups?)} \choice{division (how many in each group?)}} So we'll take $32 \div 3$ and get $\answer[given]{10}$ with a remainder of $\answer[given]{2}$. (Remember to write specifically what you are using for your groups and your objects!) What does that mean for our sequence? Well, if we take $10$ full groups of $3$, we'll have made $30$ shapes and the $30$th shape will be a \wordChoice{\choice[correct]{circle} \choice{square}}. Since we need to get to the $32$-nd shape, we need to draw two more shapes, meaning that we will end up on a  \wordChoice{\choice{circle} \choice[correct]{square}}.
 \end{example}
 The previous example might be very much at home in an art class. Here's an example that might be at home in a music class.
 \begin{example}
@@ -161,7 +161,7 @@ To find the amount after $15$ years, we could keep extending this table until we
 \]
 So at year $15$, we can substitute $N = \answer[given]{15}$ and get
 \[
-\textrm{ amount in the account at year } 15 = 30 \times 1.02^15 \approx 40.38.
+\textrm{ amount in the account at year } 15 = 30 \times 1.02^{15} \approx 40.38.
 \]
 In other words, we would have about \$40 in the account after $15$ years. (In a more practical example, you would be putting more money in this account and then earning even more interest! But that's a much more complicated problem and no longer a geometric sequence.)
 
@@ -180,15 +180,21 @@ The Fibonacci sequence is found in the following way. The first two elements of 
 1, 1, 3, 5, \answer[given]{8}, \answer[given]{13}, \answer[given]{21}, \answer[given]{34}, \dots
 \]
 The Fibonacci sequence tends to appear in \link[real-life applications]{https://www.geeksforgeeks.org/real-life-applications-of-fibonacci-sequence/} like flowers, trees, and poetry. It is also related to something called the \link[golden ratio]{https://en.wikipedia.org/wiki/Golden_ratio} which artists and architects sometimes use to make their work more visually pleasing.
+\end{example}
+
 
 Another example of a sequence is found by using a different mathematical operation.
+
 \begin{example}
 Let's write the terms of the sequence found in the following way. The first term is $3$, and every element after that is found by squaring the place of the term and adding two.
 \[
-1, 7, 11, \answer[given]{18}, \answer[given]{27}, \answer[given]{38}, \answer[given]{51}, \dots
+3, 6, 11, \answer[given]{18}, \answer[given]{27}, \answer[given]{38}, \answer[given]{51}, \dots
 \]
-\end{example}
+
+
 I don't know a practical application of this sequence off the top of my head, but keep this example in mind as we head to the next section to talk about functions.
+
+\end{example}
 
 \begin{question}
 Pause and think: design your own infinite sequence with a pattern that hasn't been mentioned in this section. What are its terms? What is the pattern?
@@ -196,7 +202,7 @@ Pause and think: design your own infinite sequence with a pattern that hasn't be
 Write your sequence here!
 \end{freeResponse}
 \end{question}
-\end{example}
+
 
 
 
