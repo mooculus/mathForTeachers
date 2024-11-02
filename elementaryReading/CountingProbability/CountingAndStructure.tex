@@ -223,7 +223,7 @@ $\answer{1296}$ four-dice rolls.
 Here's our second of three examples.
 \begin{question}{\bf The game setup problem.}
 
-Four members of a family would like to play a game made for three players. The family needs to decide which people will play as well as the order in which the players will play. To decide all of this fairly, the names of the people (we'll call them $A$, $B$, $C$, and $D$ are placed in a bag on slips of paper, and then the youngest person draws out three slips, one at a time. The first slip pulled out will go first, the second slip pulled out will go second, and the third slip pulled out will go fourth. How many orders of three names are possible in this scenario?
+Four members of a family would like to play a game made for three players. The family needs to decide which people will play as well as the order in which the players will play. To decide all of this fairly, the names of the people (we'll call them $A$, $B$, $C$, and $D$) are placed in a bag on slips of paper, and then the youngest person draws out three slips, one at a time. The first slip pulled out will go first, the second slip pulled out will go second, and the third slip pulled out will go fourth. How many orders of three names are possible in this scenario?
 
 \begin{explanation}
 Again, let's start by looking at some possible orders. We could have $A$ chosen first, then $C$, then $D$ for an order of $ACD$. We could choose $B$, then $A$, then $C$ for an order of $BAC$. Or, we could choose $C$, then $A$, then $B$ for an order of $\answer[given]{CAB}$. Notice that $BAC$ and $CAB$ are different options, here: I'm guessing that there's some advantage to going first (since that's true for most games), so person $B$ has a different experience playing the game if they go first rather than third.
@@ -241,12 +241,12 @@ $\answer[given]{ADC}$ & BDC & $\answer[given]{CDB}$ & DCB \\ \hline
 \end{image}
 
 We are confident that we got all of the options because of the organized way in which we made our list: all of the $AB$ options, then all of the $AC$ options, and so on. We didn't leave out any starting with $A$, and then we repeated this process for $B$, $C$, and $D$.
-\end{explanation}
+
 
 So, the total number of orders for playing the game is $\answer[given]{24}$.
  
 Notice that we could have gotten the same answer by calculating $\answer[given]{4} \times \left ( \answer[given]{3} \times \answer[given]{2} \right )$. It might help to think about a tree diagram to see the groups and objects per group, here: there are four possible first branches for the initial groups, then off of each branch would be three branches for the subgroups, and then finally two game-playing orders inside each subgroup.
-
+\end{explanation}
 \end{question}
 
 \begin{question}
@@ -277,7 +277,7 @@ This is really all of our choices for if $A$ gets a prize! We are sure we didn't
 BCD
 \]
 That's it! Since we can't write down any $A$'s, this is the only thing to write down for $B$. If we tried to start with $C$ and write only in alphabetical order, we wouldn't have enough letters to make three prize winners, so we are convinced we got all of the possible options.
-\end{explanation}
+
 
 So, the total number of ways to give out the prizes is $\answer[given]{4}$. Notice that we could also find this answer by calculating, but we'll need more than just a single operation to find the answer. Here's one way to do it. 
 
@@ -291,6 +291,7 @@ So: when we look at the total of $24$ entries (including the repeats), we are re
 24 \textrm{ total entries } \div 6 \textrm{ choices per group } = 4 \textrm{ groups of people }
 \]
 The groups are a little complicated to describe, here, so you could circle one of them on the grid of $24$ entries, or we could perhaps describe each group as a unique collection of people. In other words, the $ABC$ group would have all the entries for person $A$, person $B$, and person $C$. One object here is one ordering of three people, like $ABC$ or like $CBA$.
+\end{explanation}
 
 \end{question}
 
@@ -327,8 +328,10 @@ The rolls of the dice in the dice-rolling problem are like the \wordChoice{\choi
 We've now matched up each part of the dice-rolling problem with each part of the emojis problem, so we know that we can solve them in the same way. We solved the dice-rolling problem by multiplying the number of options for the die together the number of times that we rolled: $4$ options multiplied together $3$ times: $4 \times 4 \times 4 = 4^3$. This means we can solve the emojis problem using the same strategy. There are $\answer[given]{5}$ options for the emojis, and we need to multiply this together once for each student, so we will multiply this together $\answer[given]{12}$ times.
 
 
-\end{explanation}
+
 So, the total number of emojis possible is $\answer[given]{5^{12}}$. (Notice that you should be able to write your answer using algebra or by calculating the final value! Use the method that's easiest for you.)
+
+\end{explanation}
 \end{question}
 
 You've already done this a few times as we went through the beginning of the section: after each example problem, you solved another problem that had the same structure, but different numbers. However, in the first section the problems were more obviously the same. This section should point out to you that the problems can look very different from the ones we've modeled, but still have the same structure. Also, keep in mind that these three structures aren't the only ones that are possible! These three are common, but please be on the lookout for more!
