@@ -2,9 +2,9 @@
 
 \input{../elementaryReading/preamble.tex} 
 
-\title{Math for Elementary Teachers: Part II}
+%\title{Math for Elementary Teachers: Part II}
 
-\author{Jenny Sheldon}
+%\author{Jenny Sheldon}
 
 \begin{document}
 %\maketitle
@@ -20,6 +20,8 @@
 \end{onlineOnly}
 
 \chapterstyle
+\activity{../elementaryReading/Preliminaries/titlePage.tex}
+\sectionstyle
 \activity{../elementaryReading/Preliminaries/ExplanationAndProof.tex}
 
 \end{document}
