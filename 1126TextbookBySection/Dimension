@@ -2,7 +2,7 @@
 
 \input{../elementaryReading/preamble.tex} 
 
-\title{Math for Elementary Teachers: Part II}
+%\title{Math for Elementary Teachers: Part II}
 
 \author{Jenny Sheldon}
 
@@ -13,6 +13,8 @@
 
 
 \chapterstyle
+\activity{../elementaryReading/Preliminaries/titlePage.tex}
+\sectionstyle
 \activity{../elementaryReading/Preliminaries/Dimension.tex}
 
 \end{document}
