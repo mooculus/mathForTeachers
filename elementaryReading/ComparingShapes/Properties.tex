@@ -140,7 +140,7 @@ The corners represent the angles that we are trying to combine. So, let's combin
 \end{image}
 
 \begin{question}
-What type of angle appears to be made in this situation?
+What type of angle appears to be made when we combine the torn off corners?
 \begin{multipleChoice}
 \choice{A right angle}
 \choice[correct]{A straight angle}
@@ -149,10 +149,15 @@ What type of angle appears to be made in this situation?
 \end{multipleChoice}
 \end{question}
 
-What is the measure of the angle that appears to be made in this situation?
+\begin{question} 
+  What is the measure of the angle that appears to be made when we combine the torn off corners?
 \begin{prompt}
 	$\answer[given]{180}$ degrees
+  \begin{hint}
+    You should be able to answer this question without measuring the individual angles!
+  \end{hint}
 \end{prompt}
+\end{question}
 
 This investigation is not a proof, because we haven't checked every single triangle that's possible. But we are starting to get an idea for why this property might be true. Kids as young as kindergarten could investigate like this, and make guesses, or conjectures, about what they expect to be true.
 
@@ -335,9 +340,13 @@ We won't prove this theorem, but you should think about why it makes sense by dr
 
 \section{Properties of special quadrilaterals}
 
-While our special quadrilaterals are already quadrilaterals with extra properties in their definitions, as we explore shapes and their relationships it's natural to sometimes ask whether special quadrilaterals have extra properties. For instance, we might be playing around with some shapes and notice that it seems like a lot of them have pairs of interior angles that look the same. From there, we could ask: which special quadrilaterals have opposite angles that have equal measure?
+While our special quadrilaterals are already quadrilaterals with extra properties in their definitions, 
+we can continue to look for extra properties that we might be interested in. For instance, we might be 
+playing around with some shapes and notice that it seems like a lot of them have pairs of interior angles 
+that look the same. From there, we could ask: which special quadrilaterals have opposite angles that have equal measure?
 \begin{definition}
-The \dfn{opposite angles} in a quadrilateral are those interior angles that are opposite from one another in the shape. For example, angles $a$ and $c$ are opposite in the figure below. Angles $b$ and $d$ are also opposite.
+The \dfn{opposite angles} in a quadrilateral are those interior angles that are opposite from one another in the shape. 
+For example, angles $a$ and $c$ are opposite in the figure below. Angles $b$ and $d$ are also opposite.
 \begin{image}
 \begin{tikzpicture}
 	\draw[thick] (0,0)--(3,1)--(5,-1)--(2, -4)--(0,0);
@@ -349,9 +358,10 @@ The \dfn{opposite angles} in a quadrilateral are those interior angles that are 
 \end{image}
 \end{definition}
 
-As an example of checking whether a certain shape has a certain property, let's investigate whether opposite angles have equal measure in a parallelogram.
+Now let's investigate whether a parallelogram has opposite angles with equal measure.
 \begin{explanation}
-First, let's remember that a parallelogram is a quadrilateral for which opposite sides are parallel. Let's draw a parallelogram, extend its lines, and label its interior angles as well as some other angles we will need..
+First, remember that a parallelogram is a quadrilateral for which opposite sides are parallel. Let's draw 
+a parallelogram, extend its lines, and label a bunch of its angles.
 \begin{image}
 \begin{tikzpicture}
 \draw[thick] (0,0)--(4,0)--(5,2)--(1,2)--(0,0);
@@ -367,36 +377,65 @@ First, let's remember that a parallelogram is a quadrilateral for which opposite
 \end{tikzpicture}
 \end{image}
 
-Since line $L$ is parallel to line \wordChoice{\choice[correct]{$M$}\choice{$T$}\choice{$U$}}, we can use the Parallel Postulate with either line $U$ or line $T$ as a transversal. Let's start with line $U$. Considering alternate interior angles, angle $b$ has the same measure as angle $\answer[given]{e}$.  If you are drawing the picture in your own notes, you might find it helpful to highlight the angles that we know are equal.
+Since line $L$ is parallel to line \wordChoice{\choice[correct]{$M$}\choice{$T$}\choice{$U$}}, we can use 
+the Parallel Postulate with either line $U$ or line $T$ as a transversal. Let's start with line $U$. 
+Using $U$ as a transversal, angles $b$ and $\answer[given]{e}$ are alternate interior angles, so they have the 
+same measure.  If you are drawing the picture in your own notes, you might find it helpful to highlight the angles 
+that we know are equal.
 
 Next, we know that line $T$ is parallel to line  \wordChoice{\choice{$L$}\choice{$M$}\choice[correct]{$U$}},
- we can again use the Parallel Postulate, now with line $M$ as a transversal. Considering the corresponding angles this time, angle $e$ has the same measure as angle $\answer[given]{d}$. In other words, we have
+ we can again use the Parallel Postulate, now with line $M$ as a transversal. Considering the corresponding angles 
+ this time, angle $e$ has the same measure as angle $\answer[given]{d}$. In other words, we have
 \[
 b=e=d 
 \]
 showing that angles $b$ and $d$, which are opposite, have the same measure.
 
-To convince yourself that this makes sense, use a similar argument to show that angle $a$ has the same measure as angle $\answer[given]{c}$.
+To convince yourself that this makes sense, use a similar argument to show that angle $a$ has the same measure 
+as angle $c$.
 
 \end{explanation}
 
-We will explore other types of properties in class and in exercises. Think about how the definition of a parallelogram helped us to show that this property was true. Again, we don't need to add the property ``opposite angles are equal'' to the definition of a parallelogram, because we can show that this property is true using only the definition. Sometimes we like to use the word \dfn{implies} for this situation: the fact that the sides are parallel implies that the opposite angles are equal.
+The previous example is one type of property we could check for our special quadrilaterals. We will explore 
+other properties in class and in exercises. To take good notes on this topic, think about how the definition 
+of a parallelogram helped us to show that this property was true. But notice that we don't need to add the 
+property ``opposite angles are equal'' to the definition of a parallelogram, because we just showed that this 
+property is true using the defintion we already have. Adding more to the definition wouldn't add any information 
+that we don't already have. Sometimes we like to use the word \dfn{implies} for this situation: the fact that 
+the sides are parallel implies that the opposite angles are equal.
 
-Another thing we can do using properties is understand when a shape is a special case of another shape. To do this, we use the definitions of both shapes, and decide when one shape always satisfies the definition of another shape.
+\section{Properties and special cases}
+
+Another thing we can do using properties is understand when a shape is a special case of another shape. To do 
+this, we use the definitions of both shapes, and decide when the first shape always satisfies the definition 
+of the second shape.
 
 \begin{example}
 	Let's show that squares are a special case of rectangles.
 	
-	We'll start with the definition of a square: a quadrilateral where all of its interior angles are right angles and all of its sides have the same length.
+	We'll start with the definition of a square: a quadrilateral where all of its interior angles are right 
+  angles and all of its sides have the same length.
 	
-	Next, let's look at the definition of a rectangle: a quadrilateral where all of its interior angles are right anges.
+	Next, let's look at the definition of a rectangle: a quadrilateral where all of its interior angles are 
+  right anges.
 	
-	Does the definition of a square satisfy the definition of a rectangle? \wordChoice{\choice[correct]{Yes} \choice{No}}. In this case, we can see that the definition of a rectangle is actually part of the definition of a square, and then the square has additional special properties. So, the square is a special case of a rectangle.
+	Does the definition of a square satisfy the definition of a rectangle? \wordChoice{\choice[correct]{Yes} \choice{No}}. 
+  In this case, we can see that the definition of a rectangle is actually part of the definition of a square, 
+  and then the square has additional special properties. So, the square is a special case of a rectangle.
 \end{example}
 
-This example is tricky for a couple of reasons. First, the language can be confusing, so you should try to find a way to talk about the relationship between squares and rectangles that makes sense to you. For instance, you could say that a square is a rectangle with additional properties. You could say that every square is also a rectangle (but not every rectangle is necessarily a square). You could say that squares are rectangles. There are many options!
+This example is tricky for a couple of reasons. First, the language can be confusing, so you should try 
+to find a way to talk about the relationship between squares and rectangles that makes sense to you. For 
+instance, you could say that a square is a rectangle with additional properties. You could say that every 
+square is also a rectangle (but not every rectangle is necessarily a square). You could say that squares 
+are rectangles. There are many options!
 
-A second note is that in the case of squares and rectangles, we just had to match the definitions. Some shapes are more difficult to classify in this way because we need additional properties (like our parallelogram example) in order to see the relationship. For instance, a rhombus is a special case of a parallelogram, but in order to see why this is true we need to show that the opposite sides of a rhombus are parallel. This isn't obvious, and we will need more tools!
+A second note is that in the case of squares and rectangles, we just had to match the definitions. Some shapes 
+are more difficult to classify in this way because we need additional properties in order to see the relationship. 
+For instance, a rhombus is a special case of a parallelogram, but in order to see why this is true we need to 
+show that the opposite sides of a rhombus are parallel. To show that opposite sides of a rhombus are parallel, we 
+would work through an argument a little bit like we did to show that opposite angles of a parallelogram are equal.  
+This isn't obvious, and we will need more tools!
 
 \begin{question}
 Pause and think: can you show that a square is a special case of a parallelogram using the converse of the Parallel Postulate?
@@ -406,11 +445,21 @@ You'll want to sketch this out in your notes, but feel free to leave a note here
 \end{question}
 
 
-There are many more properties of special quadrilaterals as well as many more relationships between the special quadrilaterals we have defined. We will investigate more of these ideas as we develop more tools. But don't be afraid to notice properties yourself and then test out whether or not they hold! Noticing, making guesses about patterns, testing out your guesses, and then trying to prove or explain why your guesses will always be true is important mathematical work and models the trajectory we want kids to take as they explore with shapes.
+There are many more properties of special quadrilaterals as well as many more relationships between the special 
+quadrilaterals we have defined. We will investigate more of these ideas as we develop more tools. But don't be 
+afraid to notice properties yourself and then test out whether or not they hold! Noticing, making guesses about 
+patterns, testing out your guesses, and then trying to prove or explain why your guesses will always be true is 
+important mathematical work and models the trajectory we want kids to take as they explore with shapes.
 
 \section{Venn diagrams}
 
-A particular tool we can use to visualize the relationships between categories of shapes is called a Venn Diagram. Venn Diagrams are useful in many subjects other than math for comparing and contrasting things. For instance, suppose Ryan and Jim are trying to choose a restaurant for dinner. They could each make a list of restaurants they like. If they then made a Venn Diagram of their preferences, Ryan would put restaurants that he likes but that Jim doesn't like on one side of the diagram, and Jim would put restaurants that he likes but that Ryan doesn't like on the other side of the diagram. In the middle, they would place restaurants that they both like (and hopefully choose one from this category for dinner).
+A particular tool we can use to visualize the relationships between categories of shapes is called a Venn Diagram. 
+Venn Diagrams are useful in many subjects other than math for comparing and contrasting things. For instance, 
+suppose Ryan and Jim are trying to choose a restaurant for dinner. They could each make a list of restaurants they 
+like. If they then made a Venn Diagram of their preferences, Ryan would put restaurants that he likes but that Jim 
+doesn't like on one side of the diagram, and Jim would put restaurants that he likes but that Ryan doesn't like 
+on the other side of the diagram. In the middle, they would place restaurants that they both like (and hopefully 
+choose one from this category for dinner).
 
 \begin{image}
 \begin{tikzpicture}

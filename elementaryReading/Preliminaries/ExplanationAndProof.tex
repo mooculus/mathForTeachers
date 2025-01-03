@@ -18,12 +18,12 @@ Geometry has a pretty bad reputation. One of the reasons might be things like th
 	Prove that if two sides of a triangle are congruent, then the angles opposite those sides are congruent. In other words, given that $\overline{AB} \simeq \overline{AC}$ in the figure below, prove that $\angle B \simeq \angle C$.
 	\begin{image}
 	\begin{tikzpicture}
-		\draw[thick] (0,0)--(6,0)--(3,4)--(0,0);
-		\node at (-0.2, -0.2) {$B$};
-		\node at (3, 4.2) {$A$};
-		\node at (6.2, -0.2) {$C$};
-		\draw[dashed] (3,4)--(3,0);
-		\node at (3, -0.2) {$D$};
+		\draw[thick] (0,0)--(2,0)--(1,4)--(0,0);
+		\node[left] at (0,0) {$B$};
+		\node[above] at (1,4) {$A$};
+		\node[right] at (2,0) {$C$};
+		\draw[dashed] (1,4)--(1,0);
+		\node[below] at (1,0) {$D$};
 	\end {tikzpicture}
 	\end{image}
 \end{theorem}
