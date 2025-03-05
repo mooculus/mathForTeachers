@@ -114,7 +114,12 @@ Let's start with a figure that's a bit like an equilateral triangle, but it has 
 \end{tikzpicture}
 \end{image}
 
-When we rotate, we are thinking about \wordChoice{\choice{folding} \choice[correct]{turning} \choice{shifting}} around a chosen point. We need to find a point around which to rotate, and since we want to end up with the same shape in the same spot, we want  to use \wordChoice{\choice{vertex $A$} \choice{vertex $B$} \choice{vertex $C$} \choice[correct]{the middle of the figure}}. We have some choices for the angle in this case, since when the shape ends up in the same spot we need vertices to match up with vertices after rotating. So, if we rotate vertex $A$ to match up with vertex $B$ we would rotate $120\degree$ counterclockwise:
+When we rotate, we are thinking about \wordChoice{\choice{folding} \choice[correct]{turning} \choice{shifting}} 
+around a chosen point. We need to find a point around which to rotate, and since we want to end up with the same 
+shape in the same spot, we want  to use 
+\wordChoice{\choice{vertex $A$} \choice{vertex $B$} \choice{vertex $C$} \choice[correct]{the middle of the figure}}. 
+We have some choices for the angle in this case, since when the shape ends up in the same spot we need vertices to 
+match up with vertices after rotating. So, if we rotate vertex $A$ to match up with vertex $B$ we would rotate $120\degree$ counterclockwise:
 
 \begin{image}
 \begin{tikzpicture}
@@ -138,7 +143,7 @@ When we rotate, we are thinking about \wordChoice{\choice{folding} \choice[corre
     \filldraw (center) circle (2pt) node[above] {$O$};
 % Draw the arc for rotation
     \draw[thick, ->] (3.2, 0.5) arc[start angle=0, end angle=60, radius=3];
-    \node at (3.6, 1.5) {60°};
+    \node at (3.6, 1.5) {$120^{\circ}$};
 \end{tikzpicture}
 \end{image}
 Notice that the vertices $A$, $B$, and $C$ have changed places, but the entire figure looks the same as when we started.
@@ -166,13 +171,21 @@ We can rotate again using the central point $O$ another $120\degree$ (for a tota
     \filldraw (center) circle (2pt) node[above] {$O$};
 % Draw the arc for rotation
     \draw[thick, ->] (3.2, 0.5) arc[start angle=0, end angle=60, radius=3];
-    \node at (3.6, 1.5) {120°};
+    \node at (3.6, 1.5) {$240^{\circ}$};
 \end{tikzpicture}
 \end{image}
-Again, the vertices have changed places, but the overall shape remains the same. If we rotated one more $60\degree$ around $O$, that would be $360\degree$ from the start, and the shape would turn all the way around and return to the start. We won't draw this one, but you should visualize it. Overall, for this shape, we can rotate it by $60\degree$ around $O$ a total of $\answer[given]{3}$ times to return to the start.
+Again, the vertices have changed places, but the overall shape remains the same. If we rotated one more $120\degree$ around $O$, that 
+would be $360\degree$ from the start, and the shape would turn all the way around and return to the start. We won't draw this one, 
+but you should visualize it. Overall, for this shape, we can rotate it by $60\degree$ around $O$ a total of $\answer[given]{3}$ times 
+to return to the start.
 
 \end{example}
-There are a few things to notice about this example. First, if we consider any shape at all, we can always rotate about its center by $360\degree$ and return the shape to its original state. We don't particularly consider this a rotation symmetry since it's not very interesting mathematically. However, this is related to the second observation we want to make. When we rotate, we can keep track of how many times the figure matches up with its original state, including the final time when we hit $360\degree$. In the previous example, we could rotate by $60\degree$ three times including that final time when came back to the original. This number of times the shape matches up with the original state is called the \dfn{order} of the rotation.
+There are a few things to notice about this example. First, if we consider any shape at all, we can always rotate about its center 
+by $360\degree$ and return the shape to its original state. We don't particularly consider this a rotation symmetry since it's not 
+very interesting mathematically. However, this is related to the second observation we want to make. When we rotate, we can keep track 
+of how many times the figure matches up with its original state, including the final time when we hit $360\degree$. In the previous 
+example, we could rotate by $120\degree$ three times including that final time when came back to the original. This number of times 
+the shape matches up with the original state is called the \dfn{order} of the rotation.
 \begin{question}
 What is the order of the rotation symmetry in the previous example? 
 
