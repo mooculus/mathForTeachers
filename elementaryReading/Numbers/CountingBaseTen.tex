@@ -1,0 +1,220 @@
+\documentclass{ximera}
+
+\input{../preamble.tex}
+
+
+
+
+\title{Counting and Base Ten}
+\author{Jenny Sheldon}
+
+\begin{document}
+
+\begin{abstract}
+We consider what it means to count.
+\end{abstract}
+\maketitle
+
+\section{Activities for this section:} A Place of Value
+
+
+\section{Counting and base ten}
+
+One-to-once correspondence helps us to know when one set is {\em bigger} than another, {\em smaller} than another, or that two sets are the {\em same size}. But using the idea of one-to-one correspondence can be a little time consuming, especially when our sets start to be very large. Instead, we might want to be able to count the number of items in our set, or assign some kind of symbol to the set which tells us how many items are in that set. Instead of lining up the items in each set, we can count the total number of items in that set and then use what we know about how those numbers are related to say which is bigger, smaller, or whether they are the same size. To do this, we need a whole bunch of new vocabulary: we'll need names for each of the quantities and we'll have to understand how those names are related to one another. Let's take things slowly.
+
+\section{In the past}
+
+Different cultures have approached the idea of counting in different ways. For instance, in \link[Ancient Egypt]{https://en.wikipedia.org/wiki/Egyptian_numerals}, the first quantity (what we would call ``one'') was marked with a single line like this.
+
+\begin{center}
+\textpmhg{\Hone}
+\end{center}
+
+Next, another line would be added for the next quantity.
+
+\begin{center}
+\textpmhg{\Hone} \textpmhg{\Hone}
+\end{center}
+
+This would continue until we had (what we would call) nine lines.
+
+\begin{center}
+\textpmhg{\Hone} \textpmhg{\Hone} \textpmhg{\Hone} \textpmhg{\Hone} \textpmhg{\Hone} \textpmhg{\Hone} \textpmhg{\Hone} \textpmhg{\Hone} \textpmhg{\Hone}
+\end{center}
+
+But for the next symbol, the Ancient Egyptians invented something new.
+
+\begin{center}
+\textpmhg{\Hten}
+\end{center}
+
+Then, the Ancient Egyptians would write numbers by combining together however many ones and tens they needed to express their numbers. But that also meant they needed another new symbol for what we would call one hundred.
+
+\begin{center}
+\textpmhg{\Hhundred}
+\end{center}
+
+This would continue on. Each time you couldn't write the number you wanted, you needed a completely different symbol to express the number you wanted. And while this looks pretty cool when you write numbers like (what we would call) $13,412$
+
+\begin{center}
+\textpmhg{\HXthousand} \textpmhg{\Hthousand} \textpmhg{\Hthousand} \textpmhg{\Hthousand} \textpmhg{\Hhundred} \textpmhg{\Hhundred} \textpmhg{\Hhundred} \textpmhg{\Hhundred} \textpmhg{\Hten} \textpmhg{\Hone} \textpmhg{\Hone}
+\end{center}
+
+perhaps you get the feeling that this was a lot to memorize and could get a little tedious. We won't ask you to write numbers in Ancient Egyptian, but we want you to have something to compare our modern system with!
+
+In \link[Ancient Rome]{https://en.wikipedia.org/wiki/Roman_numerals}, they had a similar idea which you might have seen at some point in your life. They used I for what we would call one, V for what we would call five, X for what we would call ten, and so on. They also had a special case for something like IV (what we would call 4) where if a smaller number came before a bigger one, you would subtract the smaller quantity from the larger one instead of adding. Compare IV to VI in Roman numerals! So again, while we could write big numbers like
+
+\begin{center}
+MCMLXXXIX
+\end{center}
+
+you might already be feeling a little overwhelmed with interpreting all of those quantities and how they are related to one another! (Don't worry, we won't ask you to write Roman numerals either!)
+
+\section{The idea of bundling}
+
+Both of the systems we've already discussed rely on inventing a new symbol every time you run out of symbols to describe the quantity you are trying to write. This is a perfectly acceptable strategy, and both math and science continued to develop for thousands of years under such systems. But mathematicians decided we could probably come up with something that's a little more efficient, especially for writing bigger numbers. Let's see this in action.
+
+So that we can see what's happening without our own thoughts about counting getting in the way, let's say that we've invented a counting system where we will use the symbols $A$, $B$, $C$, $D$, $E$, and $0$ (the usual zero, a symbol that means we have nothing). We don't know any other symbols, so the usual $1, 2, 3$ and words like ``one'', ``two'', ``three'' and so on don't mean anything to us at the moment. Let's start to count using some little beads to visualize how many we have.
+
+\begin{center}
+\begin{tikzpicture}
+\foreach \x in {0} 
+	\draw (\x, 0) circle (3pt);
+\node[below] at (0,-0.2) {$A$};
+\end{tikzpicture}
+\end{center}
+This quantity is called $A$ because it's the smallest one in our list. (We'll assume that the quantities get larger as we move further in the list.) Now let's add another bead to our collection.
+
+\begin{center}
+\begin{tikzpicture}
+\foreach \x in {0,0.5} 
+	\draw (\x, 0) circle (3pt);
+\node[below] at (0.25,-0.2) {$B$};
+\end{tikzpicture}
+\end{center}
+This quantity is called $B$ because it's the next one in our list after $A$. Let's add yet another bead.
+
+\begin{center}
+\begin{tikzpicture}
+\foreach \x in {0, 0.5, 1} 
+	\draw (\x, 0) circle (3pt);
+%\node[below] at (0,-0.2) {$A$};
+\end{tikzpicture}
+\end{center}
+
+\begin{question}
+What would we call the quantity in the above picture? $\answer[given]{C}$
+\end{question}
+
+Let's draw the quantities $D$ and $E$ in the next picture.
+
+\begin{center}
+\begin{tikzpicture}
+\foreach \x in {0, 0.5, 1, 1.5, 4, 4.5, 5, 5.5, 6} 
+	\draw (\x, 0) circle (3pt);
+\node[below] at (0.75,-0.2) {$D$};
+\node[below] at (5,-0.2) {$E$};
+\end{tikzpicture}
+\end{center}
+
+I hope this feels pretty good so far, but it's time to jump into the deep end of the pool! Let's add another bead.
+
+\begin{center}
+\begin{tikzpicture}
+\foreach \x in {0, 0.5, 1, 1.5, 2, 2.5} 
+	\draw (\x, 0) circle (3pt);
+\node[below] at (1.25,-0.2) {?};
+\end{tikzpicture}
+\end{center}
+
+What should we call this quantity? If we lived in Ancient Egypt or Rome, we would just invent a new symbol (maybe like $F$) to describe this quantity. But remember that we're trying to be more efficient and use {\em only} the symbols that we were given. There's no inventing new symbols here and we decided to use only the letters $A$ through $E$ to write our quantities! Notice that we also don't want to use only our zero to describe this quantity, because zero should mean we have nothing, and there's clearly something here.
+
+Instead, let's invent something new that we will call a \dfn{bundle}. Now, instead of just counting our individual beads, we can also count how many bundles we have. We'll also draw a circle around our bundles to indicate that we are counting those beads as a unit - as a bundle.
+
+\begin{center}
+\begin{tikzpicture}
+\foreach \x in {0, 0.5, 1, 1.5, 2, 2.5} 
+	\draw (\x, 0) circle (3pt);
+	\draw[thick] (1.25, 0) ellipse (2cm and 0.5cm);
+\node at (1.25,-0.8) {?};
+\end{tikzpicture}
+\end{center}
+
+But how do we write down this quantity? In addition to the idea of a bundle, we need the idea of a \dfn{place value}. In other words, we decide that when we write two numbers next to each other, the one farthest to the right will tell us how many loose beads we have, and then the next one to the left will tell us how many bundles we have. In the previous case, we have no loose beads, so we can write this with a zero, and then we have $A$ amount of bundles. Remember that $A$ is the smallest quantity we have that's not zero, because it's at the beginning of our list!
+
+\begin{center}
+\begin{tikzpicture}
+\foreach \x in {0, 0.5, 1, 1.5, 2, 2.5} 
+	\draw (\x, 0) circle (3pt);
+	\draw[thick] (1.25, 0) ellipse (2cm and 0.5cm);
+\node at (1.25,-0.8) {$A0$};
+\end{tikzpicture}
+\end{center}
+
+We have written an $A$ in the ``bundles place'' and a $0$ in the ``individuals place''. Let's place another bead down and see if we can keep counting.
+
+\begin{center}
+\begin{tikzpicture}
+\foreach \x in {0, 0.5, 1, 1.5, 2, 2.5, 4.5} 
+	\draw (\x, 0) circle (3pt);
+	\draw[thick] (1.25, 0) ellipse (2cm and 0.5cm);
+\node at (3,-0.8) {$AA$};
+\end{tikzpicture}
+\end{center}
+
+We've called this quantity $AA$ because we can see that we have $A$ amount of loose beads, so we place an $A$ in the rightmost place, and then we have $A$ amount of bundles, so we place an $A$ in the next place left as well.
+
+\begin{center}
+\begin{tikzpicture}
+\foreach \x in {0, 0.5, 1, 1.5, 2, 2.5, 4.5, 5} 
+	\draw (\x, 0) circle (3pt);
+	\draw[thick] (1.25, 0) ellipse (2cm and 0.5cm);
+\node at (3.25,-0.8) {?};
+\end{tikzpicture}
+\end{center}
+
+\begin{question}
+If we place another bead in our picture of $AA$ and get the picture above, what would we call this quantity? $\answer[given]{AB}$
+\end{question}
+
+We can keep placing beads and counting, since we can now express a lot of different quantities.  Here is an example after we have added a bunch of individuals.
+
+\begin{center}
+\begin{tikzpicture}
+\foreach \x in {0, 0.5, 1, 1.5, 2, 2.5, 4.5, 5, 5.5, 6, 6.5, 7, 9, 9.5, 10, 10.5} 
+	\draw (\x, 0) circle (3pt);
+	\draw[thick] (1.25, 0) ellipse (2cm and 0.5cm);
+	\draw[thick] (5.75, 0) ellipse (2cm and 0.5cm);
+\node at (5.25,-0.8) {?};
+\end{tikzpicture}
+\end{center}
+
+\begin{question}
+What would you call the  quantity above which has $B$ amount of bundles and $D$ amount of individuals? $\answer[given]{BD}$
+\end{question}
+
+
+
+\section{Hindu-Arabic numerals}
+
+
+
+
+\section{Kids learning counting}
+
+
+
+
+\section{Back to one-to-one correspondence}
+
+
+
+
+
+\end{document}
+
+
+
+
+
+
