@@ -193,15 +193,183 @@ We can keep placing beads and counting, since we can now express a lot of differ
 What would you call the  quantity above which has $B$ amount of bundles and $D$ amount of individuals? $\answer[given]{BD}$
 \end{question}
 
+We can now count for a little while before we get stuck again.
+
+\begin{question}
+Pause and think: what is the highest value you can count in this system with just bundles and superbundles?
+\begin{freeResponse}
+Write your guess here and a few sentences about your reasoning.
+\end{freeResponse}
+\end{question}
+
+The video below will talk us through how to keep counting once we get stuck again.
+
+\youtube{1VGj-Nsk4r4}
+
+\begin{question}
+What would you call the quantity pictured below, with $A$ amount of superbundles, $C$ amount of bundles, and $E$ individual sticks?
+
+\begin{center}
+\begin{tikzpicture}
+\foreach \x in {0, 0.5, 1, 1.5, 2, 2.5, 4.5, 5, 5.5, 6, 6.5, 7}
+   \foreach \y in {0, 1, 2}
+	\draw (\x, \y) circle (3pt);
+   \foreach \y in {0, 1, 2}
+	\draw[thick] (1.25, \y) ellipse (2cm and 0.5cm);
+   \foreach \y in {0, 1, 2}
+	\draw[thick] (5.75, \y) ellipse (2cm and 0.5cm);
+\draw[very thick] (-0.75,-0.5)--(7.75,-0.5)--(7.75,2.5)--(-0.75,2.5)--(-0.75,-0.5);
+
+\foreach \x in {9, 9.5, 10, 10.5, 11, 11.5}
+   \foreach \y in {0,1,2}
+   	\draw (\x,\y) circle (3pt);
+   \foreach \y in {0, 1, 2}
+	\draw[thick] (10.25, \y) ellipse (2cm and 0.5cm);
+	
+\foreach \x in {13.5, 14, 14.5, 15, 15.5}
+	\draw (\x, 0) circle (3pt);
+
+\node at (8.5,-1) {?};
+\end{tikzpicture}
+\end{center}
+
+\begin{prompt}
+$\answer[given]{ACE}$
+\end{prompt}
+\end{question}
+
+\begin{question}
+What would you cal a quantity that had $B$ individual sticks, $A$ amount of bundles, $E$ amount of superbundles, and $E$ amount of mega bundles?
+
+\begin{prompt}
+$\answer[given]{EEAB}$
+\end{prompt}
+\end{question}
+
+Let's wrap up this section by summarizing what we did.
+
+\begin{definition}
+\dfn{Place value} is a way of writing quantities where the position of a particular digit in a number determines its value. For example, a $B$ in the bundles place doesn't mean only $B$ objects, it means we have $B$ amount of bundles. We create these place values when we create new types of objects we want to count. A \dfn{bundle} is the first new type of object we create, and we make one when we are out of symbols to use to keep counting. The next type of new object we make is a \dfn{superbundle}, which we could also think of as a bundle of bundles. We can keep making new kinds of objects, and new place values to go with them, to count as high as we want without creating any new symbols.
+\end{definition}
+
+
 
 
 \section{Hindu-Arabic numerals}
 
+While you are hopefully getting the hang of bundles and superbundles, we don't usually count with letters. Instead, we use the symbols $1$, $2$, $3$, $4$, $5$, $6$, $7$, $8$, $9$, and zero ($0$). This collection of symbols works just like the $A$ through $E$ system that we were just using, but we have a different number of symbols, so our bundles look a little different. Let's start counting to see, using our small beads again.
+
+\begin{center}
+\begin{tikzpicture}
+\foreach \x in {0, 1, 1.4, 2.4, 2.8, 3.2, 4.2, 4.6, 5, 5.4} 
+	\draw (\x, 0) circle (3pt);
+\node[below] at (0,-0.5) {$1$};
+\node[below] at (1.2,-0.5) {$2$};
+\node[below] at (2.8,-0.5) {$3$};
+\node[below] at (4.8,-0.5) {$4$};
+\node at (6.4,0) {$\dots$};
+\end{tikzpicture}
+\end{center}
+
+Once we get to $9$ beads and another bead, we are out of symbols to use.
+
+\begin{center}
+\begin{tikzpicture}
+\foreach \x in {0, 0.4, 0.8, 1.2, 1.6, 2, 2.4, 2.8, 3.2, 4, 5.2, 5.6, 6, 6.4, 6.8, 7.2, 7.6, 8, 8.4, 8.8} 
+	\draw (\x, 0) circle (3pt);
+\draw[thick] (7, 0) ellipse (2.2cm and 0.5cm);
+\node at (3.6, 0) {$+$};
+\node at (4.5, 0) {$\rightarrow$};
+
+\end{tikzpicture}
+\end{center}
+
+\begin{question}
+How would you write down the quantity that comes after 9?
+
+\begin{prompt}
+	$\answer[given]{10}$
+\end{prompt}
+\end{question}
+
+While you might be thinking that the answer to the previous question is ``ten'' (and you're not wrong), it's helpful to also be able to think about it as ``one-zero'', meaning we have one bundle and zero individuals leftover. 
+
+\begin{question}
+How would you write the quantity of beads where we have $8$ bundles and $3$ individuals?
+
+\begin{prompt}
+	$\answer[given]{83}$
+\end{prompt}
+\end{question}
 
 
+\begin{question}
+Think about the quantity that we would write as 59, and draw a picture of this quantity.
+
+How many bundles did you use? $\answer{5}$
+
+How many loose individuals did you use? $\answer{9}$
+
+How many sticks would you need all together (counting the ones that are loose and the ones that are in the bundles? $\answer{59}$
+\end{question}
+
+We can also make superbundles in this system. We start with $99$ sticks, drawn as $9$ bundles and $9$ individuals.
+
+\begin{center}
+\begin{tikzpicture}
+\foreach \x in {0, 0.4, 0.8, 1.2, 1.6, 2, 2.4, 2.8, 3.2, 3.6} 
+\foreach \y in {0, 1, ..., 8}
+	\draw (\x, \y) circle (3pt);
+\foreach \y in {0, 1, ..., 8}
+	\draw[thick] (1.8, \y) ellipse (2.2cm and 0.5cm);
+\foreach \x in {0, 1, ..., 8}
+ 	\draw (4.5, \x) circle (3pt);
+\end{tikzpicture}
+\end{center}
+
+Now, if we add another individual to this collection, the $9$ loose beads plus the extra bead will make enough for another bundle. But now we have $9$ bundles and another extra bundle, and we don't have a symbol beyond $9$ to write this down. Instead, we bundle up all of these bundles into a superbundle, create a place value to record the number of superbundles, and then count superbundles, bundles, and individuals. We've highlighted the last bead (or stick) blue so that you can see how it completed that extra bundle.
+
+\begin{center}
+\begin{tikzpicture}
+\foreach \x in {0, 0.4, 0.8, 1.2, 1.6, 2, 2.4, 2.8, 3.2, 3.6} 
+\foreach \y in {0, 1, ..., 9}
+	\draw (\x, \y) circle (3pt);
+\foreach \y in {0, 1, ..., 9}
+	\draw[thick] (1.8, \y) ellipse (2.2cm and 0.5cm);
+\draw[thick, blue] (3.6, 9) circle (3pt);
+\draw[very thick] (-0.75,-0.5)--(4.25,-0.5)--(4.25,9.5)--(-0.75,9.5)--(-0.75,-0.5);
+\end{tikzpicture}
+\end{center}
+
+\begin{question}
+How would we write down the quantity consisting of one superbundle, no loose bundles, and no loose sticks?
+
+\begin{prompt}
+	$\answer[given]{100}$
+\end{prompt}
+\end{question}
+
+We can now continue counting with just the symbols $0$ through $9$ to numbers as large as we'd like. Many of our place values have special names, like when we call the bundles place the ``tens'' place, or the superbundles place the ``hundreds place'', but we don't need to have names for the places to be able to understand numbers like this one.
+
+\[
+7,363,849,937,475,643,839,475,765,637,383,948,575,646,379,202
+\]
+
+That's a very powerful system!
+
+The counting system we use today is called the \link[Hindu-Arabic numeral system]{https://en.wikipedia.org/wiki/Hindu-Arabic_numeral_system} because it was first developed by mathematicians in India and then refined by mathematicians in the Middle East. The Hindu-Arabic numeral system is also called a place value system in base ten, where ``base ten'' means that we have ten unique symbols, counting zero, that we use to write our numbers. Our base ten system is essential to understanding so much of the way that we do mathematics today that we would like you to be very comfortable with it by the time you leave this course!
+
+\begin{question}
+How is the base-ten system similar to and different from the $A$ through $E$ counting system that we used above?
+
+\begin{freeResponse}
+Write your thoughts here!
+\end{freeResponse}
+\end{question}
 
 \section{Kids learning counting}
 
+We want to finish up this section by thinking a bit about the special challenges that kids can face learning to count in our system.
 
 
 
