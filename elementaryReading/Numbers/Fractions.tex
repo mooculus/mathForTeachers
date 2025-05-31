@@ -1,0 +1,687 @@
+\documentclass{ximera}
+
+\input{../preamble.tex}
+
+
+\title{Fractions}
+\author{Jenny Sheldon}
+
+\begin{document}
+
+\begin{abstract}
+We define and work with fractions.
+\end{abstract}
+\maketitle
+
+\section{Activities for this section:} Fraction intro, 2A, 2B (definitions), 2C, 2E (solving problems), Pies, 2Q, 2R (comparing), Improper fractions, More with fractions, 2K, 2M (solving with equivalent fractions)
+
+\section{The definition of a fraction}
+
+The numbers we discussed in the previous section, starting with $1$, then $2$, and so on, are called the \dfn{counting numbers}, because we typically use them to count things. Most of the examples that you imagined in the previous section were probably about counting whole things. What if we want to take a look at parts of things instead? This is where the idea of a fraction can naturally arise. 
+
+\begin{definition}
+Begin with some whole, and then divide this whole into $B$ equal pieces. Then a \dfn{unit fraction} $\frac{1}{B}$ of this whole is represented by one of these equal pieces.
+\end{definition}
+Any time we see a definition with some letters in it, it's a good idea to plug in some numbers to make sure this makes sense to us.
+
+\begin{example}
+Let's use a rectangle as our whole, and represent $\frac{1}{4}$ of that rectangle. Don't forget that we need to use our definition. The definition says that we have to start with some whole, and in this case that will be a rectangle. Let's draw it.
+
+\begin{center}
+\begin{tikzpicture}
+	\draw[thick] (0,0)--(4,0)--(4,1)--(0,1)--(0,0);
+\end{tikzpicture}
+\end{center}
+
+Next, our definition says that we need to cut this rectangle into $B$ equal parts, and since we are trying to represent $\frac{1}{4}$ in this case, our $B$ should be $4$. This number at the bottom of the fraction is also called the \dfn{denominator} of the fraction. So, let's cut our rectangle into $4$ equal pieces.
+
+\begin{center}
+\begin{tikzpicture}
+	\draw[thick] (0,0)--(4,0)--(4,1)--(0,1)--(0,0);
+	\foreach \x in {1,2,3}
+	\draw[thick] (\x, 0)--(\x,1);
+\end{tikzpicture}
+\end{center}
+
+Finally, our definition says that $\frac{1}{4}$ of this rectangle is what we get by taking one of these four equal pieces. So let's shade one of them to really emphasize what we are looking for.
+
+\begin{center}
+\begin{tikzpicture}
+	\draw[fill=yellow] (0,0)--(1,0)--(1,1)--(0,1)--(0,0);
+	\draw[thick] (0,0)--(4,0)--(4,1)--(0,1)--(0,0);
+	\foreach \x in {1,2,3}
+	\draw[thick] (\x, 0)--(\x,1);
+\end{tikzpicture}
+\end{center}
+
+This shaded piece represents $\frac{1}{4}$ of our rectangle.
+
+\end{example}
+
+\begin{question}
+What fraction of the rectangle below is shaded? Notice that the whole rectangle is cut into $8$ equal pieces and one of them is shaded.
+\begin{center}
+\begin{tikzpicture}
+	\draw[fill=yellow] (0,0)--(1,0)--(1,1)--(0,1)--(0,0);
+	\draw[thick] (0,0)--(8,0)--(8,1)--(0,1)--(0,0);
+	\foreach \x in {1,2,3, 4, 5, 6, 7}
+	\draw[thick] (\x, 0)--(\x,1);
+\end{tikzpicture}
+\end{center}
+
+\begin{prompt}
+$\answer[given]{\frac{1}{8}}$
+\end{prompt}
+\end{question}
+
+Unit fractions are not the only type of fractions we encounter, however, so we need a more general definition for fractions.
+
+\begin{definition}
+	Begin with some whole. The meaning of the \dfn{fraction} $\frac{A}{B}$ is $A$ pieces, each of size $\frac{1}{B}$ of that whole. The bottom number $B$ is frequently referred to as the \dfn{denominator}, and the top number $A$ is frequently referred to as the \dfn{numerator}.
+\end{definition}
+In other words, to get the fraction $\frac{A}{B}$, we need $A$ copies of the unit fraction $\frac{1}{B}$. This definition for fractions is the one used in most state standards, so we will practice with this quite a bit.
+
+\begin{example}
+Let's use a rectangle as our whole, and represent $\frac{3}{5}$ of that rectangle. Don't forget that we need to use our definition, so we will start with our whole as a rectangle. Let's draw it.
+
+\begin{center}
+\begin{tikzpicture}
+	\draw[thick] (0,0)--(5,0)--(5,1)--(0,1)--(0,0);
+\end{tikzpicture}
+\end{center}
+
+Next, we need to know what the unit fraction $\frac{1}{B}$ looks like, so we need to cut our whole into $B$ equal parts. In this case our denominator is $5$, so we will cut our whole into $5$ equal parts.
+
+\begin{center}
+\begin{tikzpicture}
+	\draw[thick] (0,0)--(5,0)--(5,1)--(0,1)--(0,0);
+	\foreach \x in {1,2,3,4}
+	\draw[thick] (\x, 0)--(\x,1);
+\end{tikzpicture}
+\end{center}
+
+Finally, our definition says that $\frac{3}{5}$ of this rectangle is what we get by taking three copies of one of these equal pieces. So let's shade the three we want to represent our fraction.
+
+\begin{center}
+\begin{tikzpicture}
+	\draw[fill=yellow] (0,0)--(3,0)--(3,1)--(0,1)--(0,0);
+	\draw[thick] (0,0)--(4,0)--(4,1)--(0,1)--(0,0);
+	\foreach \x in {1,2,3,4}
+	\draw[thick] (\x, 0)--(\x,1);
+\end{tikzpicture}
+\end{center}
+
+This shaded piece represents $\frac{3}{5}$ of our rectangle.
+
+\end{example}
+
+\begin{question}
+What fraction of the rectangle below is shaded? Notice that the whole rectangle is cut into $7$ equal pieces and two of them are shaded.
+\begin{center}
+\begin{tikzpicture}
+	\draw[fill=yellow] (0,0)--(2,0)--(2,1)--(0,1)--(0,0);
+	\draw[thick] (0,0)--(7,0)--(7,1)--(0,1)--(0,0);
+	\foreach \x in {1,2,3, 4, 5, 6}
+	\draw[thick] (\x, 0)--(\x,1);
+\end{tikzpicture}
+\end{center}
+
+\begin{prompt}
+$\answer[given]{\frac{2}{7}}$
+\end{prompt}
+\end{question}
+
+It's very important to recognize the role of the whole when we are talking about fractions. Each of our definitions says that we need to begin with some whole. This whole should be a physical object, like a rectangle or a pan of brownies or all of the children in the class. Once we know what our whole is, then the denominator tells us how many equal pieces to partition our whole into. The numerator tells us how many pieces of the whole to take. In other words, there is a difference between the whole, or the physical object, and the denominator, or the number of pieces we use to count that whole. Similarly, we might refer to the physical thing we want to solve our problem as the \dfn{part}, and the numerator as how many pieces are in that part. The whole and the part are physical things, while the denominator and the numerator are numbers that represent how those physical objects have been cut.
+
+While we have discussed the numerator and the denominator separately in order to interpret a fraction, it's very important to remember that a fraction like $\frac{3}{5}$ of some whole represents a \emph{single number}, not two different numbers. This is especially important for understanding how to locate fractions on a number line. First, let's define what we mean by a number line.
+\begin{definition}
+To draw a \dfn{number line}, we start by drawing a line. Next, we need choose a distance that represents $1$, or $1$ unit. Then, we need to mark at least two locations on the number line using that unit. Once we do so, we can find other points on the number line by using the unit as a distance from the first number we marked.
+\begin{center}
+	\begin{tikzpicture}
+	\draw[very thick, <->] (-0.3,0)--(6.3,0);
+	\foreach \x in {0, 1, 2, 3, 4, 5, 6} \draw[thick] (\x, 0.3)--(\x, -0.3) node[below] {$\x$};
+	\end{tikzpicture}
+\end{center}
+\end{definition}
+It's very common to mark the location of zero and 1 on your number line as the first two points, since then you can use the distance between $0$ and $1$ as the unit length. Every other number is determined by this length: for instance $2$ is located $2$ units from zero.
+
+Next, let's take a look at an example of locating a fraction on the number line.
+
+\begin{example}
+	Let's plot the fraction $\frac{3}{5}$ on the number line. First, notice that we just said ``the fraction $\frac{3}{5}$'' instead of ``$\frac{3}{5}$ \emph{of} something''. Most of the time, we need to remember to state the whole for our fraction, or what the fraction is {\bf of}. In the case of plotting the fraction on the number line, we have to understand the whole as the length of one single unit, or the distance between $0$ and $1$ on the number line. 
+
+\begin{center}
+	\begin{tikzpicture}
+	\draw[very thick, <->] (-0.3,0)-- (6.3,0);
+	\foreach \x in {0, 2, 4, 6} \draw[thick] (\x, -0.3)--(\x, 0.3);
+	\draw[<->] (0, 0.4)--(0,0.6)--(2, 0.6)--(2, 0.4);
+	\node[above] at (1, 0.6) {1 unit};
+	\node[below] at (0, -0.3) {$0$};
+	\node[below] at (2, -0.3) {$1$};
+	\node[below] at (4, -0.3) {$2$};
+	\node[below] at (6, -0.3) {$3$};
+	\end{tikzpicture}
+\end{center}
+
+Because we are drawing $\frac{3}{5}$ of this unit, we need to cut the unit into $\answer[given]{5}$ equal pieces.
+
+\begin{center}
+	\begin{tikzpicture}
+	\draw[very thick, <->] (-0.3,0)-- (6.3,0);
+	\foreach \x in {0, 2, 4, 6} \draw[thick] (\x, -0.3)--(\x, 0.3);
+	\draw[<->] (0, 0.4)--(0,0.6)--(0.4, 0.6)--(0.4, 0.4);
+	\node[above] at (0.2, 0.6) {$\frac{1}{5}$ of a unit};
+	\node[below] at (0, -0.3) {$0$};
+	\node[below] at (2, -0.3) {$1$};
+	\node[below] at (4, -0.3) {$2$};
+	\node[below] at (6, -0.3) {$3$};
+	\foreach \x in {0.4, 0.8, 1.2, 1.6} \draw (\x, -0.2)--(\x, 0.2);
+	\end{tikzpicture}
+\end{center}
+
+Each of these spaces represents $\frac{1}{5}$ of the unit. Since our numerator is $3$, we need $3$ copies of this $\frac{1}{5}$ of a unit, and instead of highlighting $3$ pieces, we'll mark our point with a dot.
+
+\begin{center}
+	\begin{tikzpicture}
+	\draw[very thick, <->] (-0.3,0)-- (6.3,0);
+	\foreach \x in {0, 2, 4, 6} \draw[thick] (\x, -0.3)--(\x, 0.3);
+	\draw[<->] (0, 0.4)--(0,0.6)--(1.2, 0.6)--(1.2, 0.4);
+	\node[above] at (0.6, 0.6) {$\frac{3}{5}$ of a unit};
+	\node[below] at (0, -0.3) {$0$};
+	\node[below] at (2, -0.3) {$1$};
+	\node[below] at (4, -0.3) {$2$};
+	\node[below] at (6, -0.3) {$3$};
+	\foreach \x in {0.4, 0.8, 1.2, 1.6} \draw (\x, -0.2)--(\x, 0.2);
+	\draw[fill=black] (1.2, 0) circle (2pt);
+	\node[below] at (1.2, -0.2) {$\frac{3}{5}$};
+	\end{tikzpicture}
+\end{center}
+
+\end{example}
+
+Notice that in our previous example, when we locate numbers on the line, it's the distance from zero that tells us the number, not the number or tick marks. While we spend time drawing lots of tick marks, we are really paying attention to the spaces in between them. 
+
+\section{Improper fractions and mixed fractions}
+
+Our definition of fractions is written in a way that helps us make sense of many kinds of fractions. Let's tackle another example.
+	
+\begin{example}
+	Let's investigate how we could use our definition of fractions to draw a picture of $2 \frac{1}{4}$ pans of brownies.
+	
+	We will use a rectangle to represent one pan of brownies. When we write the whole number $2$ in front of a fraction, that whole number tells us that the part we are interested in consists of two wholes as well as a part of another whole. In other words, we will need $3$ copies of the whole in order to get started with drawing this picture.
+	
+	First, we need to identify our whole, which in this case is \wordChoice{\choice{brownie} \choice[correct]{a pan of brownies} \choice{4} \choice{2}}. Let's draw three copies of our whole.
+	
+	\begin{center}
+		\begin{tikzpicture}
+			\draw[thick] (0,0)--(4,0)--(4,1)--(0,1)--(0,0);
+			\draw[thick] (5,0)--(9,0)--(9,1)--(5,1)--(5,0);
+			\draw[thick] (10, 0)--(14,0)--(14,1)--(10,1)--(10,0);
+			\node[below] at (2,0) {1 pan of brownies};
+		\end{tikzpicture}
+	\end{center}
+	
+	We know from the $2$ in front of our number that we need to shade $\answer[given]{2}$ full wholes, so let's start by doing that.
+	
+	\begin{center}
+		\begin{tikzpicture}
+			\draw[thick, fill=orange] (0,0)--(4,0)--(4,1)--(0,1)--(0,0);
+			\draw[thick, fill=orange] (5,0)--(9,0)--(9,1)--(5,1)--(5,0);
+			\draw[thick] (10, 0)--(14,0)--(14,1)--(10,1)--(10,0);
+			\node[below] at (2,0) {1 pan of brownies};
+		\end{tikzpicture}
+	\end{center}	
+	
+	We also need $\frac{1}{4}$ of another whole, so we need to take the last pan of brownies and cut it into $\answer[given]{4}$ equal pieces because our denominator is $4$, and then we'll need to shade $\answer[given]{1}$ of those pieces because of numerator is $1$.
+
+	\begin{center}
+		\begin{tikzpicture}
+			\draw[thick, fill=orange] (0,0)--(4,0)--(4,1)--(0,1)--(0,0);
+			\draw[thick, fill=orange] (5,0)--(9,0)--(9,1)--(5,1)--(5,0);
+			\draw[fill=orange] (10,0)--(11,0)--(11,1)--(10,1)--(10,0);
+			\node[below] at (2,0) {1 pan of brownies};
+			\draw[thick] (10, 0)--(14,0)--(14,1)--(10,1)--(10,0);
+			\foreach \x in {11, 12, 13} \draw[thick] (\x,0)--(\x,1);
+		\end{tikzpicture}
+	\end{center}
+	
+	In this final picture, we've shaded $2 \frac{1}{4}$ pans of brownies.		
+	
+\end{example}
+
+The number $2 \frac{1}{4}$ in the previous example is called a mixed number.
+\begin{definition}
+A \dfn{mixed number} is a number in the form $A \frac{B}{C}$, where the $A$ is a whole number and $\frac{B}{C}$ is a fraction of that same whole. We can also interpret this mixed number as $A + \frac{B}{C}$ of some whole (though we will wait until we talk about addition to discuss why it makes sense to put a plus sign there).
+\end{definition}
+
+
+We can also use our meaning of fractions to draw fractions whose numerator is larger than the denominator.
+
+\begin{example}
+Let's draw a picture of $\frac{8}{5}$ pounds of rice. Our whole in this case is \wordChoice{\choice{rice} \choice[correct]{one pound of rice} \choice{5}} so let's draw a rectangle and label it with our description of our whole.
+
+\begin{center} \begin{tikzpicture}
+\draw[thick] (0,0)--(5,0)--(5,1)--(0,1)--(0,0);
+\node[below] at (2.5,0) {1 pound of rice};
+\end{tikzpicture}\end{center}
+
+Next, our denominator tells us how many equal-sized pieces to cut our whole into. In this case, the denominator is $\answer[given]{5}$, so let's cut our whole in the picture.
+
+\begin{center} \begin{tikzpicture}
+\draw[thick] (0,0)--(5,0)--(5,1)--(0,1)--(0,0);
+\node[below] at (2.5,0) {1 pound of rice};
+\foreach \x in {1, 2, 3, 4} \draw[thick] (\x, 0)--(\x,1);
+\end{tikzpicture}\end{center}
+
+Finally, our numerator tells us how many parts to shade. In this case the numerator is $\answer[given]{8}$, which is currently a problem since we don't have that many pieces. However, remember that another way to write our definition is to say that the numerator tells us how many copies of one piece we need. So, in this case, we can interpret the fraction to mean that we need $8$ copies of $\frac{1}{5}$ of our whole. So, we are going to use all five of the copies we already drew, and make 3 more copies of the piece we are using. We want to shade them all.
+
+\begin{center} \begin{tikzpicture}
+\draw[fill=pink] (0,0)--(8,0)--(8,1)--(0,1)--(0,0);
+\draw[very thick] (0,0)--(5,0)--(5,1)--(0,1)--(0,0);
+\draw (5,0)--(8,0)--(8,1)--(5,1);
+\node[below] at (2.5,0) {1 pound of rice};
+\foreach \x in {1, 2, 3, 4, 6, 5, 7} \draw (\x, 0)--(\x,1);
+\end{tikzpicture}\end{center}
+
+Notice that the original five pieces making up one full pound of rice are more darkly outlined than the other pieces. That dark outline shows us that our whole didn't change, and it is still made out of five equal pieces, even though we needed a few extra in order to make up the entire $\frac{8}{5}$ pound of rice. Since the numerator is bigger than the denominator, the part we are shading is bigger than the whole.
+
+Some people prefer to draw the extra parts separated from the original whole so that we can see the whole a little more clearly in the picture. And some people prefer to draw more copies of the whole so that they have enough copies to shade. For instance, here is a different picture of $\frac{8}{5}$ of a pound of rice, where we have drawn two copies of our whole and then shaded $\frac{8}{5}$ of the whole.
+
+\begin{center} \begin{tikzpicture}
+\draw[fill=pink] (0,0)--(5,0)--(5,1)--(0,1)--(0,0);
+\draw[fill=pink] (6,0)--(9,0)--(9,1)--(6,1)--(6,0);
+\draw[thick] (0,0)--(5,0)--(5,1)--(0,1)--(0,0);
+\draw[thick] (6,0)--(11,0)--(11,1)--(6,1)--(6,0);
+\node[below] at (2.5,0) {1 pound of rice};
+\foreach \x in {1, 2, 3, 4, 7, 8, 9, 10} \draw[thick] (\x, 0)--(\x,1);
+\end{tikzpicture}\end{center}
+
+However, notice in this second picture that it can be tempting to write that the shaded region is $\frac{8}{10}$ of the whole. However, since our whole is one pound of rice, and the one pound of rice is cut into $5$ equal pieces in the picture, we have to use $5$ as our denominator. If we changed the whole to be $2$ pounds of rice, then the denominator would be $10$ because the $2$ pounds are cut into $10$ equal pieces. What we choose and label as the whole can completely change our answer to a problem about fractions!
+
+\end{example}
+
+Fractions like $\frac{8}{5}$ are examples of improper fractions.
+
+\begin{definition}
+An \dfn{improper fraction} is a fraction whose numerator is larger than its denominator.
+\end{definition}
+
+We can also use our meaning of fractions to convert back and forth between improper fractions and mixed numbers.
+
+\begin{example}
+Let's use the picture we drew at the end of the previous example to write $\frac{8}{5}$ as a mixed number. Here is the picture again.
+
+\begin{center} \begin{tikzpicture}
+\draw[fill=pink] (0,0)--(5,0)--(5,1)--(0,1)--(0,0);
+\draw[fill=pink] (6,0)--(9,0)--(9,1)--(6,1)--(6,0);
+\draw[thick] (0,0)--(5,0)--(5,1)--(0,1)--(0,0);
+\draw[thick] (6,0)--(11,0)--(11,1)--(6,1)--(6,0);
+\node[below] at (2.5,0) {1 pound of rice};
+\foreach \x in {1, 2, 3, 4, 7, 8, 9, 10} \draw[thick] (\x, 0)--(\x,1);
+\end{tikzpicture}\end{center}
+
+In our picture, we drew 2 pounds of rice. One of them was entirely filled in, and the second one was only partially filled in. The whole number part of a mixed number indicates how many full wholes we need, so in this case the whole number part would be $\answer[given]{1}$. The fraction part of a mixed number tells us the fraction of the last whole that we have. In this case, the second whole is $\answer[given]{\frac{3}{5}}$ shaded. Putting this together, we can see that 
+\[
+\frac{8}{5} \textrm{ of a pound of rice } = 1 \frac{3}{5} \textrm{ of a pound of rice.}
+\]
+
+\end{example}
+
+\begin{question}
+What fraction of the following rectangle is shaded? The picture has 3 rectangles, each cut into 2 equal pieces. The first two rectangles are completely shaded, and the third has one piece shaded.
+
+\begin{center}\begin{tikzpicture}
+\draw[thick, fill=green] (0,0)--(2,0)--(2,1)--(0,1)--(0,0);
+\draw[thick, fill=green] (3,0)--(5,0)--(5,1)--(3,1)--(3,0);
+\draw[thick, fill=green] (6,0)--(7,0)--(7,1)--(6,1)--(6,0);
+\draw[thick] (7,0)--(8,0)--(8,1)--(7,1);
+\foreach \x in {1, 4} \draw[thick] (\x,0)--(\x,1);
+\end{tikzpicture}\end{center}
+
+Write your answer as a mixed number: $\answer{2+\frac{1}{2}}$
+
+Write your answer as an improper fraction: $\answer{\frac{5}{2}}$
+\end{question}
+
+
+
+\section{Equivalent fractions}
+
+We have already seen how it can be possible to represent the same quantity with different fractions when the wholes are different. But perhaps you have also noticed that we can represent the same quantity with different-looking fractions even when the wholes are the same.
+
+\begin{definition}
+Two fractions are called \dfn{equivalent} if they represent the same part of the same whole. In other words, the two fractions have the same value, or would be placed in the same location on a number line.
+\end{definition}
+
+Let's take a look at a couple of different examples of this idea.
+
+\begin{example}
+Consider a cup of sugar. Let's represent the entire cup of sugar in several different ways.
+
+First, our whole in this case is the cup of sugar. Let's draw it with a rectangle.
+
+\begin{center} \begin{tikzpicture}
+\draw[thick, fill=cyan] (0,0)--(12,0)--(12,1)--(0,1)--(0,0);
+\node[below] at (6,0) {one cup of sugar (whole)};
+\end{tikzpicture}\end{center}
+
+We can already write this cup of sugar as a fraction. The denominator tells us how many equal pieces the whole is cut into, which in this case is $\answer[given]{1}$. The numerator tells us how many copies of one piece we want, and in this case that is also $\answer[given]{1}$. So we can write the full cup of sugar as $\frac{1}{1}$ of a cup of sugar.
+
+But we could also divide the cup of sugar into, say, four equal pieces without changing the whole or changing the shaded part. Let's do that in our picture.
+
+\begin{center} \begin{tikzpicture}
+\draw[thick, fill=cyan] (0,0)--(12,0)--(12,1)--(0,1)--(0,0);
+\foreach \x in {4, 8} \draw[thick] (\x, 0)--(\x,1);
+\node[below] at (6,0) {one cup of sugar (whole)};
+\end{tikzpicture}\end{center}
+
+Now how could we write the fraction? The denominator should be $\answer[given]{3}$, because that's how many equal pieces the whole is cut into, and the numerator should be $\answer[given]{3}$, because that's how many equal pieces are shaded. So we can write the full cup of sugar as $\frac{3}{3}$ of a cup of sugar.
+
+Let's do one more. What if we cut each of the pieces in half again, so that now there are $6$ pieces total? Let's do that in our picture and see what fraction we get.
+
+\begin{center} \begin{tikzpicture}
+\draw[thick, fill=cyan] (0,0)--(12,0)--(12,1)--(0,1)--(0,0);
+\foreach \x in {2, 4, 6,  8, 10} \draw[thick] (\x, 0)--(\x,1);
+\node[below] at (6,0) {one cup of sugar (whole)};
+\end{tikzpicture}\end{center}
+
+The denominator is now $\answer[given]{6}$, and the numerator is now $\answer[given]{6}$, so we can also write this fraction as $\frac{6}{6}$ of a cup of sugar. Each of these represents the same amount of sugar with regard to the same whole (one cup of sugar), so these fractions are equivalent. Often we write equivalent fractions with an equals sign between them, so we have that
+\[
+\frac{1}{1} \textrm{ of a cup of sugar } = \frac{3}{3} \textrm{ of a cup of sugar } = \frac{6}{6} \textrm{ of a cup of sugar. }
+\]
+
+\end{example}
+
+\begin{question}
+What is another fraction we could use to represent the entire cup of sugar above?
+
+\begin{prompt}
+	$\answer{\frac{12}{12}}$
+\end{prompt}
+\end{question}
+
+However, we can also consider equivalent fractions when the shaded region is not the same as the entire whole.
+
+\begin{example}
+Let's find a few fractions which are equivalent to the fraction $\frac{2}{3}$. Let's start with a whole, which will be a rectangle in this case. 
+
+\begin{center} \begin{tikzpicture}
+	\draw[thick, fill=magenta] (0,0)--(8,0)--(8,2)--(0,2)--(0,0);
+	\draw[thick] (8,0)--(12,0)--(12,2)--(8,2);
+	\node[below] at (6,0) {our whole};
+	\foreach \x in {4} \draw[thick] (\x,0)--(\x,2);
+\end{tikzpicture} \end{center}
+
+Our definition of equivalent fractions says that we need to keep the same whole and the same shaded part, but that we can change how those are cut. So, let's cut each of our shaded pieces in half. We'll used dashed lines to see these new cuts.
+
+\begin{center} \begin{tikzpicture}
+	\draw[thick, fill=magenta] (0,0)--(8,0)--(8,2)--(0,2)--(0,0);
+	\draw[thick] (8,0)--(12,0)--(12,2)--(8,2);
+	\node[below] at (6,0) {our whole};
+	\draw[thick] (4,0)--(4,2);
+	\foreach \x in {2, 6, 10} \draw[thick, dashed] (\x,0)--(\x,2);
+\end{tikzpicture} \end{center}
+
+We count the number of equal pieces in the whole to find our denominator, and we find a total of $\answer[given]{6}$ pieces. We count the number of shaded pieces to find our numerator, and we count $\answer[given]{4}$ pieces. So now we know that 
+\[
+\frac{2}{3} \textrm{ of the rectangle } = \frac{\answer[given]{4}}{\answer[given]{6}} \textrm{ of the rectangle.}
+\]
+
+This isn't the only fraction we could make, however. Let's erase the dashed lines and cut the pieces again, but this time into three equal pieces each.
+
+\begin{center} \begin{tikzpicture}
+	\draw[thick, fill=magenta] (0,0)--(8,0)--(8,2)--(0,2)--(0,0);
+	\draw[thick] (8,0)--(12,0)--(12,2)--(8,2);
+	\node[below] at (6,0) {our whole};
+	\draw[thick] (4,0)--(4,2);
+	\foreach \x in {1.333, 2.666, 5.333, 6.666, 9.333, 10.666} \draw[thick, dashed] (\x,0)--(\x,2);
+\end{tikzpicture} \end{center}
+
+Using our meaning of fractions again, we now see that 
+
+\[
+\frac{2}{3} \textrm{ of the rectangle } = \frac{\answer[given]{6}}{\answer[given]{9}} \textrm{ of the rectangle.}
+\]
+
+There are many more such examples!
+\end{example}
+
+\begin{question}
+	Imagine that you cut each of the pieces in the previous example into $10$ equal pieces. (If you can't imagine it, draw this example in your notes!) What equivalent fraction would you get?
+	
+	\[
+\frac{2}{3} \textrm{ of the rectangle } = \frac{\answer[given]{20}}{\answer[given]{30}} \textrm{ of the rectangle.}
+\]
+\end{question}
+
+Notice that we can not only cut our equal pieces into more pieces, but we can fuse them back together into bigger equal pieces, as long as what we end up with are actually equal pieces! For instance, start with the fraction $\frac{4}{6}$. Here is the same picture we drew earlier.
+
+\begin{center} \begin{tikzpicture}
+	\draw[thick, fill=magenta] (0,0)--(8,0)--(8,2)--(0,2)--(0,0);
+	\draw[thick] (8,0)--(12,0)--(12,2)--(8,2);
+	\node[below] at (6,0) {our whole};
+	\draw[thick] (4,0)--(4,2);
+	\foreach \x in {2, 6, 10} \draw[thick, dashed] (\x,0)--(\x,2);
+\end{tikzpicture} \end{center}
+
+We can think of erasing the dashed lines, turning every two pieces into one single piece, or fusing two pieces together.
+
+\begin{center} \begin{tikzpicture}
+	\draw[thick, fill=magenta] (0,0)--(8,0)--(8,2)--(0,2)--(0,0);
+	\draw[thick] (8,0)--(12,0)--(12,2)--(8,2);
+	\node[below] at (6,0) {our whole};
+	\foreach \x in {4} \draw[thick] (\x,0)--(\x,2);
+\end{tikzpicture} \end{center}
+
+This would leave us with the fraction $\frac{2}{3}$ of the rectangle again. But with $\frac{2}{3}$ of the rectangle, we don't have another way to fuse pieces together that would still give us equal pieces when we are finished (and that would still give us a whole number of shaded pieces), so the fraction $\frac{2}{3}$ is in \dfn{lowest terms}. Another way to say this is that since $2$ and $3$ don't have any factors in common, we can't reduce it any farther.
+
+Kids begin to think about equivalent fractions with examples like the one above, using the meaning of fractions and counting the pieces involved. You might remember a more advanced way of thinking about fractions that requires multiplication.
+
+\begin{theorem}
+	The following fractions are equivalent for any number $N$.
+	\[
+	\frac{A}{B} = \frac{A \times N}{B \times N}
+	\]
+\end{theorem}
+
+We will return to this idea after we've talked about multiplication so that we can explain why this idea makes sense and fits with our initial thinking about equivalent fractions. For now, you can use these ideas to solve problems, but we would prefer that you explain your thinking based on the meaning of equivalent fractions and counting the pieces like we did in the previous example.
+
+
+\section{Comparing fractions}
+
+Now that we can tell when two fractions are equal to one another, we would also like to use our meaning of fractions to tell when one fraction is larger or smaller than another. Let's start with unit fractions.
+
+\begin{question}
+Say that we have two pizzas which are exactly the same. Which is larger: $\frac{1}{8}$ of the pizza, or $\frac{1}{9}$ of the pizza?
+
+\begin{explanation}
+It's always a good idea to start by drawing a picture, so let's take a look at our two pizzas. Even though pizza is typically round, we'll draw a rectangle to represent the whole pizza. (It's usually easier to draw roughly even pieces with a rectangle!)
+
+\begin{center} \begin{tikzpicture}
+\draw[thick] (0,0)--(3,0)--(3,2)--(0,2)--(0,0);
+\node[below] at (1.5, 0) {one pizza};
+\draw[thick] (5,0)--(8,0)--(8,2)--(5,2)--(5,0);
+\node[below] at (6.5, 0) {one pizza};
+\end{tikzpicture} \end{center}
+
+
+Using our meaning of fractions, let's draw $\frac{1}{9}$ of the first pizza and $\frac{1}{8}$ of the second pizza. For the first pizza, the denominator tells us that we should cut it into $\answer[given]{9}$ equal pieces. For the second pizza, the denominator tells us that we should cut it into $\answer[given]{8}$ equal pieces. For each pizza, the numerator tells us that we should shade $\answer[given]{1}$ piece.
+
+\begin{center} \begin{tikzpicture}
+\draw[fill=red] (0,0)--(0.333, 0)--(0.333,2)--(0,2)--(0,0);
+\draw[thick] (0,0)--(3,0)--(3,2)--(0,2)--(0,0);
+\node[below] at (1.5, 0) {one pizza};
+\draw[fill=red] (5,0)--(5.375, 0)--(5.375, 2)--(5,2)--(5,0);
+\draw[thick] (5,0)--(8,0)--(8,2)--(5,2)--(5,0);
+\node[below] at (6.5, 0) {one pizza};
+\foreach \x in {0.333, 0.666, 1, 1.333, 1.666, 2, 2.333, 2.666} \draw[thick] (\x, 0)--(\x, 2);
+\foreach \a in {5.375, 5.75, 6.125, 6.5, 6.875, 7.25, 7.625} \draw[thick] (\a, 0)--(\a, 2);
+\end{tikzpicture} \end{center}
+
+Now, which piece is larger? It's a little hard to tell just by looking at the picture, but we can use our reasoning for this. Since we have taken only one piece in each case, we can think about which of these pieces should be bigger. The first pizza was cut into $9$ equal parts, while the second was cut into only $8$ equal parts. Since the two pizzas are exactly the same, the one that got cut into more pieces will have smaller pieces. Think about it as if you are hungry and want to eat this pizza: would you rather share your pizza with $8$ other people, or would you rather share your pizza with $7$ other people? Fewer people to share with means that everyone gets a larger piece. So we see in this case that
+\[
+\frac{1}{8} > \frac{1}{9}.
+\]
+\end{explanation}
+\end{question}
+
+There were a few important points to remember from that question, and I hope you'll take some notes for your future explanations. First, we used the symbol $>$ to indicate which of the fractions is greater. The bigger, open end of the symbol always points towards the larger number, while the smaller, pointy end of the symbol always points towards the smaller number. We could have also written the answer above as
+\[
+\frac{1}{9} < \frac{1}{8}.
+\]
+Some teachers help students to remember how to point the symbol by drawing teeth on it or pretending it's an alligator's mouth. The alligator is always hungry and eats the bigger number.
+
+The second thing to keep in mind is that this strategy only makes sense because the two pizzas are exactly the same. This is important when comparing any fractions. If the wholes aren't the same, the comparison doesn't really make sense. It would be hard to make sense of comparing $\frac{1}{8}$ of a gallon of water to $\frac{1}{9}$ of a pizza. Perhaps we could think about converting both wholes into pounds or ounces or another common unit of measure, but that would also mean we then would be using the same wholes to describe the fractions before we compare them.
+
+Finally, we want to keep in mind that when using a strategy like this one, we not only pay attention to the denominator but also to the numerator. We had the same number of pieces of each pizza, so we only needed to consider the size of those pieces. If we were trying to compare $\frac{4}{9}$ of the pizza to $\frac{5}{8}$ of the pizza, we don't have the same number of pieces any more. But in this particular case we can still use our reasoning. Each of the $\frac{1}{8}$-sized pieces of pizza is still larger than each of the $\frac{1}{9}$-sized pieces of pizza. Also, we have more of those bigger slices, since our meaning of the numerator tells us we have 5 pieces of the $\frac{1}{8}$-sized slices  but only $4$ pieces of the $\frac{1}{9}$-sized slices. Since we have more of the bigger pieces of pizza, we have more pizza overall. In other words, 
+\[
+\frac{4}{9} < \frac{5}{8}.
+\]
+
+\begin{question}
+Use a similar strategy as we used in the previous example to decide which of $\frac{11}{34}$ and $\frac{15}{29}$ is the larger fraction. Be sure to jot down notes about your thoughts!
+
+Select the larger fraction below.
+\begin{multipleChoice}
+\choice{$\frac{11}{34}$}
+\choice[correct]{$\frac{15}{29}$}
+\choice{The fractions are equivalent.}
+\end{multipleChoice}
+\end{question}
+
+
+\begin{question}
+Use a similar strategy as we used in the previous example to decide which of $\frac{89}{90}$ and $\frac{79}{80}$ is the larger fraction. Be sure to jot down notes about your thoughts!
+
+Select the larger fraction below.
+\begin{multipleChoice}
+\choice[correct]{$\frac{89}{90}$}
+\choice{$\frac{79}{80}$}
+\choice{The fractions are equivalent.}
+\end{multipleChoice}
+\end{question}
+
+
+Another strategy we can use to compare fractions and help us practice with the meaning of fractions is to estimate.
+
+\begin{question}
+Which is larger: $\frac{7}{15}$ of a gallon of punch or $\frac{6}{11}$ of a gallon of punch?
+
+\begin{explanation}
+
+We want to estimate the fractions $\frac{7}{15}$ and $\frac{6}{11}$. We could draw a picture of these fractions, but it's going to be tough to get a picture that's accurate enough to give us good information in this case. Let's just use our reasoning instead.
+
+Maybe you noticed that $\frac{7}{15}$ of the gallon of punch is pretty close to $\frac{1}{2}$ of the gallon of punch. In order to think about why this is true, you could perhaps use an equivalent fraction like $\frac{1}{2} = \frac{7}{14}$ (how would you cut each piece of the gallon to show that these fractions are equivalent?), or maybe you can think about having $15$ cookies and dividing them up equally amongst $2$ friends. Each friend would get $7$ cookies, which a child might model with blocks or other objects, and there would be another cookie left over. Maybe you drew a picture of the fraction and noticed that about half of the gallon of punch was shaded.
+
+Similarly, maybe you could also notice that $\frac{6}{11}$ of the gallon of punch is also close to $\frac{1}{2}$ of the gallon of punch. Try out a different strategy than you used on the previous fraction.
+
+Now that we know both of these fractions are close to $\frac{1}{2}$, we can see if that helps us to determine which fraction is the larger one. We can see that
+\[
+\frac{7}{15} < \frac{7}{14} = \frac{1}{2}
+\]
+and that 
+\[
+\frac{6}{11} > \frac{6}{12} = \frac{1}{2}
+\]
+using the idea of the size of the pieces. Notice that we have the same numerators here so we only need to think about which pieces are larger!
+
+Now, we can put these inequalities together in a string with all of them pointing the same way, putting our $\frac{1}{2}$ in the middle.
+\[
+\frac{7}{15} < \frac{1}{2} < \frac{6}{11}
+\]
+Since the $\frac{1}{2}$ of a gallon of punch wasn't part of our initial question, we can remove it from the middle.
+\[
+\frac{7}{15} < \frac{6}{11}
+\]
+So we found our answer by realizing that one of our fractions was less than $\frac{1}{2}$ of a gallon of punch, and the other fraction was more than $\frac{1}{2}$ of a gallon of punch. The fraction that's bigger than the half gallon is the bigger fraction overall.
+
+
+\end{explanation}
+\end{question}
+
+Let's notice a few important ideas about this example as well. First, we should pay attention to the fact that the larger fraction in this case actually has the smaller numerator. It's tempting to think that a larger numerator means a larger fraction, but we have to consider both the numerator and the denominator when we compare fractions. Remember that the meaning of the denominator is about the size of the pieces, and the meaning of the numerator is about how many pieces we have. Both how many and what size they are need to be considered when we are comparing fractions.
+
+Second, this strategy of estimating and comparing to other fractions that are easier for us to understand is called \dfn{using a benchmark}. The benchmark we used in the example was the fraction $\frac{1}{2}$ of our whole, but you can use this strategy with any other fraction that you understand more easily than the fractions you are trying to compare. For instance $\frac{1}{4}$, $\frac{2}{3}$, or even something like $\frac{5}{2}$ make great benchmarks to use. Kids in Grade 3 start working with fractions, but the denominators they work with are primarily restricted to $2$, $3$, $4$, $6$, and $8$,  so these denominators are the ones that children should have the most practice with and make great denominators to use for benchmarks as children work with more and more denominators as they move through the rest of their education.
+
+\begin{question}
+Use a benchmark strategy to decide which is larger: $\frac{8}{33}$ of a bowl of soup or $\frac{11}{41}$ of the same bowl of soup. Be sure to write some notes about your thinking!
+
+Select the larger fraction below.
+\begin{multipleChoice}
+\choice{$\frac{8}{33}$}
+\choice[correct]{$\frac{11}{41}$}
+\choice{The fractions are equivalent.}
+\end{multipleChoice}
+\end{question}
+
+The strategies we've used so far don't work for every pair of fractions that we might like to compare. For instance, if we wanted to compare $\frac{3}{11}$ and $\frac{4}{15}$, we can't think about the size and number of the pieces because we have more of the smaller pieces in this case and it's hard to tell whether that would balance out the fact that the pieces are smaller. And there's not really a clear benchmark fraction to use for comparing these. So, we will need a more reliable method for comparing fractions, and luckily we have two methods based on making equivalent fractions. Even though the previous methods don't always tell us which fraction is larger, they are still important for children to learn because they are such good practice for thinking about the meaning of fractions. Eventually we will expect children to move towards the methods using equivalent fractions, but estimating and thinking are two skills we never want to lose!
+
+
+As we work through these methods, don't forget to practice using a picture to explain why our equivalent fractions are actually equivalent!
+
+\begin{example}
+Let's show that $\frac{4}{25} > \frac{2}{15}$.
+
+Start by drawing a picture of these two fractions, using the same rectangle as a whole. One way to figure out which fraction is larger is by making all of the pieces in both pictures exactly the same size. Since the wholes are exactly the same, that's the same as making the two denominators the same.
+
+One way to do this would be to split each of the 25 pieces into 15 more equal pieces, and to split each of the 15 pieces into $25$ more equal pieces, leaving us with $375$ total equal pieces in each diagram. That sounds like a lot to count, but we could absolutely do it. However, there's an easier way: we can change the $25$ pieces into $75$ pieces by splitting each of the $25$ pieces into $\answer[given]{3}$ equal pieces. We can also split the 15 pieces into $75$ equal pieces by cutting each of the $15$ pieces into $\answer[given]{5}$ equal pieces. 
+
+When we do this, each of the $4$ original pieces from the $\frac{4}{25}$ of our rectangle is split into $\answer[given]{3}$ equal pieces as well, so we end up with $\answer[given]{12}$ equal pieces, meaning that
+\[
+\frac{4}{25} = \frac{12}{75}.
+\]
+Similarly, each of the $2$ original pieces from the $\frac{2}{15}$ of our rectangle is split into $\answer[given]{5}$ equal pieces as well, so we end up with $\answer[given]{10}$ equal pieces. This means that
+\[
+\frac{2}{15} = \frac{10}{75}.
+\]
+Now, since all of our pieces are the same size, we can figure out which rectangle has the greater shaded region by comparing which one has more pieces shaded. The $\frac{4}{25}$ has $12$ pieces shaded while the $\frac{2}{15}$ only has $10$ pieces shaded, so we see that 
+\[
+\frac{12}{75} = \frac{4}{25} \answer[given]{>} \frac{2}{15} = \frac{10}{75}
+\]
+which is just what we wanted to show.
+\end{example}
+
+Let's practice noticing things about our solution again. We needed to have the same whole to compare our fractions, which is hopefully starting to feel like a habit. Our goal was to make all the pieces the same size so that we could just compare how many pieces we have. In other words, we made the denominators the same, and then just compared the numerators. Remember that this only works because the denominators are the same. Most of the time we still need to consider both the size of the pieces as well as how many there are.
+
+\begin{definition}
+The method where we change the fractions into equivalent fractions with the same denominator is called \dfn{making a common denominator}, and we use this strategy when we would like all of our pieces to be the same size.
+\end{definition}
+
+However, there is actually an easier method we could use for the fractions in the previous example.
+
+\begin{example}
+We will show that $\frac{4}{25} > \frac{2}{15}$ using a different method.
+
+Draw your rectangles again to be the wholes for these fractions. But this time, let's leave $\frac{4}{25}$ as it is, and change $\frac{2}{15}$ into an equivalent fraction that has the same numerator as the other fraction. In this case, we want the numerator to be $4$, so we are going to cut each of our pieces into $\answer[given]{2}$ equal pieces. This will turn our $2$ shaded pieces into $4$ shaded pieces, and it will turn the $15$ equal pieces in our whole into $\answer[given]{30}$ total equal pieces. So we see that
+\[
+\frac{2}{15} = \frac{4}{\answer[given]{30}}.
+\]
+Now, since the fractions have the same numerator or the same number of pieces, we can compare these fractions by thinking only about the size of the pieces. Using the same thinking that we used earlier in this section, we see that the \wordChoice{\choice[correct]{$\frac{1}{25}$-sized pieces} \choice{$\frac{1}{30}$-sized pieces}} are the larger ones, or in other words that
+\[
+\frac{4}{25} \answer[given]{>} \frac{4}{30} = \frac{2}{15}.
+\]
+And that's exactly what we wanted to show!
+\end{example}
+
+In this method, instead of making common denominators, we ended up making \dfn{common numerators}. Hopefully you agree that this made our calculations a little bit easier (and it certainly made our pictures a little easier to draw!) Instead of making the pieces all the same size, we made the total number of shaded pieces the same. In either of these methods, we are trying to make either the numerators or the denominators the same so that we only really have one thing to think about instead of thinking about both the size of the pieces as well as the number of pieces at the same time.
+
+Choosing which method to use to compare fractions depends a bit on the fractions you are trying to compare. As you practice comparing fractions, be sure to write down notes about your thinking in each case so that you can describe how you selected the method you thought would be easiest in each case. There's not really one right answer for which method will be easiest, and we hope that by the time you are finished practicing this section that you have many methods you feel comfortable using.
+
+
+
+We will work with fractions in many different contexts throughout the course, and so we encourage you to keep coming back to the definition and to keep coming back to this section any time you need to refresh your memory. Remember that you can always delete your work on the page and answer the questions again without affecting your score for the page.
+\begin{question}
+How has the definition of fractions helped us to solve problems in this section?
+\begin{freeResponse}
+Write your thoughts here!
+\end{freeResponse}
+\end{question}
+
+
+\end{document}
+
+
+
+
+
+
