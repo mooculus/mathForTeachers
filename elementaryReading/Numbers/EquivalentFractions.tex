@@ -31,31 +31,31 @@ Consider a cup of sugar. Let's represent the entire cup of sugar in several diff
 
 First, our whole in this case is the cup of sugar. Let's draw it with a rectangle.
 
-\begin{center} \begin{tikzpicture}
+\begin{image} \begin{tikzpicture}
 \draw[thick, fill=cyan] (0,0)--(12,0)--(12,1)--(0,1)--(0,0);
 \node[below] at (6,0) {one cup of sugar (whole)};
-\end{tikzpicture}\end{center}
+\end{tikzpicture}\end{image}
 
 We can already write this cup of sugar as a fraction. The denominator tells us how many equal pieces the whole is cut into, which in this case is $\answer[given]{1}$. The numerator tells us how many copies of one piece we want, and in this case that is also $\answer[given]{1}$. So we can write the full cup of sugar as $\frac{1}{1}$ of a cup of sugar.
 
 But we could also divide the cup of sugar into, say, three equal pieces without changing the whole or changing the shaded part. Let's do that in our picture.
 
-\begin{center} \begin{tikzpicture}
+\begin{image} \begin{tikzpicture}
 \draw[thick, fill=cyan] (0,0)--(12,0)--(12,1)--(0,1)--(0,0);
 \foreach \x in {4, 8} \draw[thick] (\x, 0)--(\x,1);
 \node[below] at (6,0) {one cup of sugar (whole)};
-\end{tikzpicture}\end{center}
+\end{tikzpicture}\end{image}
 
 Now how could we write the fraction? The denominator should be $\answer[given]{3}$, because that's how many equal pieces the whole is cut into, and the numerator should be $\answer[given]{3}$, because that's how many equal pieces are shaded. So we can write the full cup of sugar as $\frac{3}{3}$ of a cup of sugar.
 
 Let's do one more. What if we cut each of the pieces into two equal pieces again, so that now there are $6$ pieces total? Let's do that in our picture with dashed lines and see what fraction we get.
 
-\begin{center} \begin{tikzpicture}
+\begin{image} \begin{tikzpicture}
 \draw[thick, fill=cyan] (0,0)--(12,0)--(12,1)--(0,1)--(0,0);
 \foreach \x in {4,  8} \draw[thick] (\x, 0)--(\x,1);
 \foreach \x in {2, 6, 10} \draw[thick, dashed] (\x, 0)--(\x, 1);
 \node[below] at (6,0) {one cup of sugar (whole)};
-\end{tikzpicture}\end{center}
+\end{tikzpicture}\end{image}
 
 The denominator is now $\answer[given]{6}$, and the numerator is now $\answer[given]{6}$, so we can also write this fraction as $\frac{6}{6}$ of a cup of sugar. Each of these represents the same amount of sugar with regard to the same whole (one cup of sugar), so these fractions are equivalent. Often we write equivalent fractions with an equals sign between them, so we have that
 \[
@@ -77,22 +77,22 @@ We can also consider equivalent fractions when the shaded region is not the same
 \begin{example}
 Let's find a few fractions which are equivalent to the fraction $\frac{2}{3}$. Let's start with a whole, which will be a rectangle in this case. 
 
-\begin{center} \begin{tikzpicture}
+\begin{image} \begin{tikzpicture}
 	\draw[thick, fill=magenta] (0,0)--(8,0)--(8,2)--(0,2)--(0,0);
 	\draw[thick] (8,0)--(12,0)--(12,2)--(8,2);
 	\node[below] at (6,0) {our whole};
 	\foreach \x in {4} \draw[thick] (\x,0)--(\x,2);
-\end{tikzpicture} \end{center}
+\end{tikzpicture} \end{image}
 
 Our definition of equivalent fractions says that we need to keep the same whole and the same shaded part, but that we can change how those are cut. So, let's cut each of our shaded pieces into two equal pieces. We'll used dashed lines to see these new cuts.
 
-\begin{center} \begin{tikzpicture}
+\begin{image} \begin{tikzpicture}
 	\draw[thick, fill=magenta] (0,0)--(8,0)--(8,2)--(0,2)--(0,0);
 	\draw[thick] (8,0)--(12,0)--(12,2)--(8,2);
 	\node[below] at (6,0) {our whole};
 	\draw[thick] (4,0)--(4,2);
 	\foreach \x in {2, 6, 10} \draw[thick, dashed] (\x,0)--(\x,2);
-\end{tikzpicture} \end{center}
+\end{tikzpicture} \end{image}
 
 We count the number of equal pieces in the whole to find our denominator, and we find a total of $\answer[given]{6}$ pieces. We count the number of shaded pieces to find our numerator, and we count $\answer[given]{4}$ pieces. So now we know that 
 \[
@@ -103,13 +103,13 @@ The whole and the part did not change, so these two fractions represent the same
 
 This isn't the only fraction we could make, however. Let's erase the dashed lines and cut the pieces again, but this time into three equal pieces each.
 
-\begin{center} \begin{tikzpicture}
+\begin{image} \begin{tikzpicture}
 	\draw[thick, fill=magenta] (0,0)--(8,0)--(8,2)--(0,2)--(0,0);
 	\draw[thick] (8,0)--(12,0)--(12,2)--(8,2);
 	\node[below] at (6,0) {our whole};
 	\draw[thick] (4,0)--(4,2);
 	\foreach \x in {1.333, 2.666, 5.333, 6.666, 9.333, 10.666} \draw[thick, dashed] (\x,0)--(\x,2);
-\end{tikzpicture} \end{center}
+\end{tikzpicture} \end{image}
 
 Using our meaning of fractions again, we now see that 
 
@@ -130,22 +130,22 @@ There are many more such examples!
 
 Notice that we can both cut our equal pieces into more smaller equal pieces, and we can fuse them back together into fewer bigger equal pieces. We are really emphasizing that these pieces must all be equal! For instance, start with the fraction $\frac{4}{6}$. Here is the same picture we drew earlier.
 
-\begin{center} \begin{tikzpicture}
+\begin{image} \begin{tikzpicture}
 	\draw[thick, fill=magenta] (0,0)--(8,0)--(8,2)--(0,2)--(0,0);
 	\draw[thick] (8,0)--(12,0)--(12,2)--(8,2);
 	\node[below] at (6,0) {our whole};
 	\draw[thick] (4,0)--(4,2);
 	\foreach \x in {2, 6, 10} \draw[thick, dashed] (\x,0)--(\x,2);
-\end{tikzpicture} \end{center}
+\end{tikzpicture} \end{image}
 
 We can think of erasing the dashed lines, turning every two pieces into one single piece, or fusing two pieces together.
 
-\begin{center} \begin{tikzpicture}
+\begin{image} \begin{tikzpicture}
 	\draw[thick, fill=magenta] (0,0)--(8,0)--(8,2)--(0,2)--(0,0);
 	\draw[thick] (8,0)--(12,0)--(12,2)--(8,2);
 	\node[below] at (6,0) {our whole};
 	\foreach \x in {4} \draw[thick] (\x,0)--(\x,2);
-\end{tikzpicture} \end{center}
+\end{tikzpicture} \end{image}
 
 This would leave us with the fraction $\frac{2}{3}$ of the rectangle again. But with $\frac{2}{3}$ of the rectangle, we don't have another way to fuse pieces together that would still give us equal pieces when we are finished (and that would still give us a whole number of shaded pieces), so the fraction $\frac{2}{3}$ is in \dfn{lowest terms}. Another way to say this is that since $2$ and $3$ don't have any factors in common, we can't reduce it any farther.
 

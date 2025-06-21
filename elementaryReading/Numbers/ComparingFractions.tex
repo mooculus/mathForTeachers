@@ -26,17 +26,17 @@ Say that we have two pizzas which are exactly the same. Which is larger: $\frac{
 \begin{explanation}
 It's always a good idea to start by drawing a picture, so let's take a look at our two pizzas. Even though pizza is typically round, we'll draw a rectangle to represent the whole pizza. (Rectangular wholes can be less confusing for children because it's easier to draw roughly equal pieces.)
 
-\begin{center} \begin{tikzpicture}
+\begin{image} \begin{tikzpicture}
 \draw[thick] (0,0)--(3,0)--(3,2)--(0,2)--(0,0);
 \node[below] at (1.5, 0) {one pizza};
 \draw[thick] (5,0)--(8,0)--(8,2)--(5,2)--(5,0);
 \node[below] at (6.5, 0) {one pizza};
-\end{tikzpicture} \end{center}
+\end{tikzpicture} \end{image}
 
 
 Using our meaning of fractions, let's draw $\frac{1}{9}$ of the first pizza and $\frac{1}{8}$ of the second pizza. For the first pizza, the denominator tells us that we should cut it into $\answer[given]{9}$ equal pieces. For the second pizza, the denominator tells us that we should cut it into $\answer[given]{8}$ equal pieces. For each pizza, the numerator tells us that we should shade $\answer[given]{1}$ piece.
 
-\begin{center} \begin{tikzpicture}
+\begin{image} \begin{tikzpicture}
 \draw[fill=red] (0,0)--(0.333, 0)--(0.333,2)--(0,2)--(0,0);
 \draw[thick] (0,0)--(3,0)--(3,2)--(0,2)--(0,0);
 \node[below] at (1.5, 0) {one pizza};
@@ -45,7 +45,7 @@ Using our meaning of fractions, let's draw $\frac{1}{9}$ of the first pizza and 
 \node[below] at (6.5, 0) {one pizza};
 \foreach \x in {0.333, 0.666, 1, 1.333, 1.666, 2, 2.333, 2.666} \draw[thick] (\x, 0)--(\x, 2);
 \foreach \a in {5.375, 5.75, 6.125, 6.5, 6.875, 7.25, 7.625} \draw[thick] (\a, 0)--(\a, 2);
-\end{tikzpicture} \end{center}
+\end{tikzpicture} \end{image}
 
 Now, which piece is larger? It's a little hard to tell just by looking at the picture, but we can use our reasoning for this. Since we have taken only one piece in each case, we can think about which of these pieces should be bigger. The first pizza was cut into $9$ equal parts, while the second was cut into only $8$ equal parts. Since the two pizzas are exactly the same, the one that got cut into more pieces will have smaller pieces. Think about it as if you are hungry and want to eat this pizza: would you rather share your pizza with $8$ other people ($9$ people total), or would you rather share your pizza with $7$ other people ($8$ people total)? Fewer people to share with means that everyone gets a larger piece. So we see in this case that
 \[

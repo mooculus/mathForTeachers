@@ -70,7 +70,7 @@ Use the four items above to write your own explanation for this problem. We will
 
 
 The definition of a one-to-one correspondence is when we match every object of one set (in this case the markers) to every object in another set (in this case the caps) where no objects are left out or left over. So, Marisol can make this kind of matching by putting the caps on the markers. Here's an example drawing of her work, where the diamonds represent the markers and the circles represent the caps.
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
 	\foreach \i in {1, 2, ..., 6} 
 			 \node[draw, star, star points=4, fill=gray] at (\i, 1) {};
@@ -79,7 +79,7 @@ The definition of a one-to-one correspondence is when we match every object of o
 	\foreach \m in {1, 2, ..., 6}
 		\draw[dash dot] (\m,1)--(\m,2);
 \end{tikzpicture}
-\end{center}
+\end{image}
 In our picture, the dashed lines show us the matching of one object to one object. We can see one marker (or one diamond) connected by a dashed line to one cap (or one circle). When Marisol is finished with this matching, which uses the idea of one-to-one correspondence according to our definition, she will know whether everything is matched or not. In the example above, we would say that Marisol does not have a one-to-one correspondence, because (in this example) there is an extra cap which doesn't have a marker which matches to it. In other words, every object in the set of caps is not matched with exactly one object in the set of markers. So, the idea of one-to-one correspondence helped Marisol to realize that in fact she is missing one of her markers! There are two other cases that could also be true: there could be markers with no cap, where our drawing would show more diamondss than circles, or there could be the same number of markers and caps, where each marker would be matched with a cap, and there would be no leftovers at all.
 
 \begin{prompt}

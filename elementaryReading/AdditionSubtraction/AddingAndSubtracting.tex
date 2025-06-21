@@ -23,7 +23,7 @@ Let's start by going back to the previous question and see if we can identify wh
 \begin{explanation}
 Alastair has $5$ pencils in his pencil box, and Blake has $8$ pencils in her pencil box. We are trying to see how many pencils they have all together. We'll start by drawing a picture using beads to represent this situation.
 
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
 	 \foreach \x/\y in {
     0/0, 2/2, 3/0.2, 0.3/1.2, 4/2
@@ -40,11 +40,11 @@ Alastair has $5$ pencils in his pencil box, and Blake has $8$ pencils in her pen
 	\node[below] at (8, -1) {Blake's pencils};
 
 \end{tikzpicture}
-\end{center}
+\end{image}
 
 The problem is asking us how many pencils Alastair and Blake have all together, so let's put their pencils all together in a pile and count how many pencils there are in total. We'll show the pencils being put together with some arrows.
 
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
 	 \foreach \x/\y in {
     0/0, 2/2, 3/0.2, 0.3/1.2, 4/2
@@ -76,7 +76,7 @@ The problem is asking us how many pencils Alastair and Blake have all together, 
 
 
 \end{tikzpicture}
-\end{center}
+\end{image}
 
 We can count $\answer[given]{8}$ pencils in total.
 
@@ -87,7 +87,7 @@ What action did we take with the pencils (or with the beads that represented the
 
 \begin{definition}
 When we \dfn{add} two numbers $A$ and $B$ together, we combine the two quantities $A$ and $B$ and count the total. We write this total as $A+B$. Sometimes we use a different variable like $C$ to represent $A+B$ to remind us that the total is a single quantity. The two numbers $A$ and $B$ are called the \dfn{addends} and the total is also called the \dfn{sum}.
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
 \node at (0, 0) {$A$};
 \node at (0.5, 0) {$+$};
@@ -100,7 +100,7 @@ When we \dfn{add} two numbers $A$ and $B$ together, we combine the two quantitie
 \draw[->] (0.5, -0.75)--(1, -0.25);
 \draw[->] (2, -0.75)--(2, -0.25);
 \end{tikzpicture}
-\end{center}
+\end{image}
 \end{definition}
 
 One thing to pay attention to here is that $A+B$ means the total of all of the objects. We often think of $A+B$ as telling us to do something (perhaps to combine some things), but we want you to practice thinking about it more as the result than the process.
@@ -119,24 +119,24 @@ Carlos has $3$ pencils in his pencil box, and then his friend Darius gives him $
 \begin{explanation}
 In this case, we want to start by drawing the pencils that Carlos has at the beginning of the story. We will represent the pencils with small circles, and we need to draw $\answer[given]{3}$ of them.
 
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
 	\foreach \x in {0, 0.5, 1} \draw[fill=yellow] (\x, 0) circle (3pt);
 \end{tikzpicture}
-\end{center}
+\end{image}
 
 Next, Darius gives Carlos $4$ more pencils. If we had actual blocks in front of us, we might set down more blocks next to the ones we already have, and then count the total. Let's add to our picture the $\answer[given]{4}$ pencils from Darius. We'll make them a different color only so that we can see which ones were the original ones and which ones are new.
 
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
 	\foreach \x in {0, 0.5, 1} \draw[fill=yellow] (\x, 0) circle (3pt);
 	\foreach \x in {1.5, 2, 2.5, 3} \draw[fill=purple] (\x, 0) circle (3pt);
 \end{tikzpicture}
-\end{center}
+\end{image}
 
 Now we can count all of the circles that we have.
 
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
 	\foreach \x in {0, 0.5, 1} \draw[fill=yellow] (\x, 0) circle (3pt);
 	\foreach \x in {1.5, 2, 2.5, 3} \draw[fill=purple] (\x, 0) circle (3pt);
@@ -148,7 +148,7 @@ Now we can count all of the circles that we have.
 	\node[below] at (2.5, -0.2) {$6$};
 	\node[below] at (3, -0.2) {$7$};
 \end{tikzpicture}
-\end{center}
+\end{image}
 We see that Carlos now has $\answer[given]{7}$ pencils.
 
 \end{explanation}
@@ -195,7 +195,7 @@ We want to see how this is a subtraction story problem.
 
 Let's start by drawing all $8$ pencils that Blake is using.
 
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
  \foreach \x/\y in {
     3/4.5, 2.5/3.75, 4.5/5, 7/5, 5/4, 4.5/3.5, 6/4.5, 7.25/3.5
@@ -203,11 +203,11 @@ Let's start by drawing all $8$ pencils that Blake is using.
     \draw[fill=orange] (\x, \y) circle (4pt);}
     \node[below] at (5, 3.25) {all of the pencils};
 \end{tikzpicture}
-\end{center}
+\end{image}
 
 We know that not all of these pencils belong to Blake, however. There are $\answer[given]{5}$ of them that belong to Alastair. Let's separate out Alastair's pencils from the entire collection and draw a circle around them.
 
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
 
  \foreach \x/\y in {
@@ -233,12 +233,12 @@ We know that not all of these pencils belong to Blake, however. There are $\answ
 \draw[thick, ->] (4.9, 2.5)--(3.5, 0.8);
 \draw[thick, ->] (5.1, 2.5)--(7, 0.5);
 
-\end{tikzpicture} \end{center}
+\end{tikzpicture} \end{image}
 
 The group of pencils that is not Alastair's must be Blake's, so we can label the other circle as Blake's pencils and then count how many pencils are in Blake's circle.
 
 
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
 
  \foreach \x/\y in {
@@ -264,7 +264,7 @@ The group of pencils that is not Alastair's must be Blake's, so we can label the
 \draw[thick, ->] (4.9, 2.5)--(3.5, 0.8);
 \draw[thick, ->] (5.1, 2.5)--(7, 0.5);
 
-\end{tikzpicture} \end{center}
+\end{tikzpicture} \end{image}
 
 We count $\answer[given]{3}$ pencils in Blake's circle, and that's the answer to the original problem. 
 
@@ -276,7 +276,7 @@ The previous example gives us a good example of a definition of subtraction that
 
 \begin{definition}
 When we \dfn{subtract} two numbers, we take the quantity $B$ away from the quantity $A$ and then count the remaining objects. We write this total as $A - B$. If we write the total using a single variable $C$ to remind ourselves that this is a single quantity, then we can use the terminology \dfn{difference} to describe the total $C$. We can also call $A$, the starting number, the \dfn{minuend} and $B$, the number we subtracted, the \dfn{subtrahend}.
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
 \node at (0, 0) {$A$};
 \node at (0.5, 0) {$-$};
@@ -290,7 +290,7 @@ When we \dfn{subtract} two numbers, we take the quantity $B$ away from the quant
 \draw[->] (1, -0.75)--(1, -0.25);
 \draw[->] (2.75, -0.75)--(2, -0.25);
 \end{tikzpicture}
-\end{center}
+\end{image}
 \end{definition}
 
 Similarly to how we think about $A+B$ as meaning the total number of objects, we want to think about $A-B$ as the number of leftover objects. So while we got this number by working with the two separate numbers $A$ and $B$, the quantity $A-B$ is a single number. 
@@ -308,20 +308,20 @@ We want to see that this is a subtraction story problem that involves change ove
 
 Let's start by drawing all $4$ of Carlos's pencils, using small circles to represent the pencils.
 
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
 \foreach \x in {0, 0.5, 1, 1.5} \draw[fill=yellow] (\x, 0) circle (4pt);
 \end{tikzpicture}
-\end{center}
+\end{image}
 
 Next, Carlos gives away $\answer[given]{3}$ of his pencils. Let's cross out the pencils that Carlos gives away.
 
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
 \foreach \x in {0, 0.5, 1, 1.5} \draw[fill=yellow] (\x, 0) circle (4pt);
 \foreach \a in {0, 0.5, 1} \node at (\a, 0) {\huge $\times$};
 \end{tikzpicture}
-\end{center}
+\end{image}
 
 Finally, we count the pencils that Carlos still has, and we see the answer to this question is $\answer[given]{1}$.
 
@@ -346,18 +346,18 @@ Before we get started, notice that this story is asking us to compare the blocks
 
 Here is our first idea. Let's draw Elphaba's blocks in a horizontal line using small circles to represent the blocks, and then we'll draw Flynn's blocks in another horizontal line, but we'll line up the blocks vertically like we are using a one-to-one correspondence.
 
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
 \node at (0,0) {Elphaba's blocks: };
 \foreach \x in {2, 2.5, 3, 3.5, 4, 4.5} \draw[fill=pink] (\x, 0) circle (3pt);
 \node at (0, -1) {Flynn's blocks: };
 \foreach \x in {2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6} \draw[fill=red] (\x, -1) circle (3pt);
 \end{tikzpicture}
-\end{center}
+\end{image}
 
 Since we are thinking about a one-to-one correspondence, let's cross out the blocks that both girls have in common. We'll do this in our picture with horizontal lines through the ones that match up. Those are blocks that we don't want to count for our answer, so we want to take them away from our picture. (We won't actually remove them, but the lines through them will indicate taking them away.)
 
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
 \node at (0,0) {Elphaba's blocks: };
 \foreach \x in {2, 2.5, 3, 3.5, 4, 4.5} \draw[fill=pink] (\x, 0) circle (3pt);
@@ -365,11 +365,11 @@ Since we are thinking about a one-to-one correspondence, let's cross out the blo
 \foreach \x in {2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6} \draw[fill=red] (\x, -1) circle (3pt);
 \foreach \x in {2, 2.5, 3, 3.5, 4, 4.5} \draw[thick] (\x, -1.5)--(\x, 0.5);
 \end{tikzpicture}
-\end{center}
+\end{image}
 
 The blocks that are not crossed off are the ones that Flynn has that Elphaba doesn't have, so these are the ones we want to count in order to solve this problem. We can circle them in our diagram, and then count and see that Flynn has $\answer[given]{3}$ extra blocks.
 
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
 \node at (0,0) {Elphaba's blocks: };
 \foreach \x in {2, 2.5, 3, 3.5, 4, 4.5} \draw[fill=pink] (\x, 0) circle (3pt);
@@ -378,24 +378,24 @@ The blocks that are not crossed off are the ones that Flynn has that Elphaba doe
 \foreach \x in {2, 2.5, 3, 3.5, 4, 4.5} \draw[thick] (\x, -1.5)--(\x, 0.5);
 \draw[thick] (5.5,-1) ellipse (0.75cm and 0.5cm);
 \end{tikzpicture}
-\end{center}
+\end{image}
 
 What expression might we write to describe our solution? Let's start with our operation. Here we will choose \wordChoice{\choice{addition} \choice[correct]{subtraction}} because the main action we took while solving this problem was \wordChoice{\choice{combining} \choice[correct]{taking away}}. In that case, our expression for the solution would be $9 - 6$ , because in a sense we started with the $9$ blocks that Flynn had, and removed the $6$ blocks that Elphaba had.
 
 But this isn't the only way that children might solve the problem above. Let's redraw our starting picture and then attack the problem using different thinking. 
 
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
 \node at (0,0) {Elphaba's blocks: };
 \foreach \x in {2, 2.5, 3, 3.5, 4, 4.5} \draw[fill=pink] (\x, 0) circle (3pt);
 \node at (0, -1) {Flynn's blocks: };
 \foreach \x in {2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6} \draw[fill=red] (\x, -1) circle (3pt);
 \end{tikzpicture}
-\end{center}
+\end{image}
 
 This time, instead of crossing out the blocks, let's think about what we might need to add to Elphaba's blocks in order to make them match with Flynn's blocks. We'll draw one unshaded circle for each block we add, and we'll count them as we go by labeling them with numbers.
 
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
 \node at (0,0) {Elphaba's blocks: };
 \foreach \x in {2, 2.5, 3, 3.5, 4, 4.5} \draw[fill=pink] (\x, 0) circle (3pt);
@@ -406,7 +406,7 @@ This time, instead of crossing out the blocks, let's think about what we might n
 \node at (0, -1) {Flynn's blocks: };
 \foreach \x in {2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6} \draw[fill=red] (\x, -1) circle (3pt);
 \end{tikzpicture}
-\end{center}
+\end{image}
 
 The number of extra blocks that we had to put down to make the two lines of blocks equal was $\answer[given]{3}$, so that's (still) the answer to this problem.
 

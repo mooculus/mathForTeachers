@@ -29,7 +29,7 @@ With all of that being said, our aim in this section is to understand \emph{why}
 
 We will start out by describing the steps of the algorithm, using the subtraction problem $1527 - 854$ as an example. Here is what our finished work would look like. 
 
-\begin{center} \begin{tikzpicture}[every node/.style={font=\large}]
+\begin{image} \begin{tikzpicture}[every node/.style={font=\large}]
 
     % Original top number (minuend)
     \node at (0, 2.2) {1};
@@ -66,7 +66,7 @@ We will start out by describing the steps of the algorithm, using the subtractio
     \draw[thick, red] (1.2, 2.4)--(0.8, 2);
     \draw[thick, red] (-0.2, 2)--(0.2, 2.5);
     \draw[thick, red] (1.8, 2)--(2.2, 2.5);
-\end{tikzpicture} \end{center}
+\end{tikzpicture} \end{image}
 
 What steps did we use? First, we started from the ones place with the $7$ and the $4$. We subtracted $7$ from $4$ and wrote the result, $3$, below the line and under the ones place. Next, we looked at the tens place, with the $2$ and the $5$. We can try to subtract $5$ from $2$, but the answer would be negative. Instead, we are going to borrow from the hundreds place. So, we take the $5$ in the hundreds place of $1527$ and cross it out. We marked that in our example with a red line. We change this $5$ to be one less, so we write a $4$ above that $5$. (Notice it looks like there's a $14$ there, because we've done more steps. At first, we just place a $4$.) We also mark off the $2$ in the tens place of $1527$ and write $12$ above it. This step, when we subtract one from the next highest place and add ten to the place we are working with, is called \dfn{borrowing}. So we can say that we borrowed $10$ from the hundreds place and added it to the tens place. Now we can subtract $12-5$ and place the resulting $7$ below the line in the tens place of our answer. Next, we investigate the hundreds place. We have $4$ hundreds left in $1527$ because of the one we borrowed, and we need to subtract $8$ hundreds from that. We don't have enough hundreds, so we borrow again. We cross off the $1$ in the thousands place of $1527$ and reduce it by $1$, so it is now zero. We add ten to the place we are working with, so the $4$ becomes $14$. Now we can subtract, and $14-8 = 6$, so we write the $6$ below the line in the hundreds place. Since we don't have any more thousands, we are finished calculating, and we read off our answer from below the line: $1527 - 854 = 673$.
 
@@ -79,7 +79,7 @@ Remember our goal according to the definition of subtraction: we want to take aw
 
 First, we will set up for our calculation on the left hand side of our picture, and draw the quantity  $305$ using base ten blocks on the right. Since we are working with whole numbers, the value of one little block will be $\answer[given]{1}$, which means the value of one bundle will be one place value to the left or $\answer[given]{10}$ and the value of one superbundle will be two place values to the left of the individual blocks or $\answer[given]{100}$. In order to draw $305$, we will need $\answer[given]{3}$ superbundles, $\answer[given]{0}$ bundles, and $\answer[given]{5}$ individual blocks.
 
-\begin{center}
+\begin{image}
 \begin{tikzpicture}[every node/.style={font=\large}]
 
     % Original top number (minuend)
@@ -117,11 +117,11 @@ First, we will set up for our calculation on the left hand side of our picture, 
 	\foreach \a in {7.6, 7.8, 8} \draw[thick] (\a, 0)--(\a+0.1, 0)--(\a+0.1, 0.1)--(\a, 0.1)--(\a, 0);
 	\foreach \a in {7.7, 7.9} \draw[thick] (\a, 0.2)--(\a+0.1, 0.2)--(\a+0.1, 0.3)--(\a, 0.3)--(\a, 0.2);
 
-\end{tikzpicture} \end{center}
+\end{tikzpicture} \end{image}
 
 Our first step is to look at the tens place. In our algorithm, we want to subtract $5-7$, which would give us a negative number. Using our blocks, we want to remove $7$ individual blocks (because we are working in the ones place) from the $5$ individual blocks that we have drawn. In order to get more blocks, we are going to have to break something down. It would be natural for us to break down a bundle, but we don't have any of those, so let's first break down one of our superbundles into $\answer[given]{10}$ bundles. In our picture we will draw one of the superbundles crossed out in purple, and then draw the corresponding bundles with a purple box around them so we can see where they came from.
 
-\begin{center}
+\begin{image}
 \begin{tikzpicture}[every node/.style={font=\large}]
 
     % Original top number (minuend)
@@ -162,11 +162,11 @@ Our first step is to look at the tens place. In our algorithm, we want to subtra
 	\foreach \a in {9.6, 9.8, 10} \draw[thick] (\a, 0)--(\a+0.1, 0)--(\a+0.1, 0.1)--(\a, 0.1)--(\a, 0);
 	\foreach \a in {9.7, 9.9} \draw[thick] (\a, 0.2)--(\a+0.1, 0.2)--(\a+0.1, 0.3)--(\a, 0.3)--(\a, 0.2);
 
-\end{tikzpicture} \end{center}
+\end{tikzpicture} \end{image}
 
 To record what we've done in our algorithm, notice that we crossed off one superbundle and we have two superbundles left. So, let's cross off the $3$ in $305$ and replace it with a $2$. We now have $10$ bundles, so let's cross off the $0$ in $305$ and replace it with a $10$.
 
-\begin{center}
+\begin{image}
 \begin{tikzpicture}[every node/.style={font=\large}]
 
     % Original top number (minuend)
@@ -207,11 +207,11 @@ To record what we've done in our algorithm, notice that we crossed off one super
 	\foreach \a in {9.6, 9.8, 10} \draw[thick] (\a, 0)--(\a+0.1, 0)--(\a+0.1, 0.1)--(\a, 0.1)--(\a, 0);
 	\foreach \a in {9.7, 9.9} \draw[thick] (\a, 0.2)--(\a+0.1, 0.2)--(\a+0.1, 0.3)--(\a, 0.3)--(\a, 0.2);
 
-\end{tikzpicture} \end{center}
+\end{tikzpicture} \end{image}
 
 Now, we have some bundles to unbundle. Remember, our goal was to get some more individual blocks! We will unbundle that last bundle into $\answer[given]{10}$ individual blocks. We will delete the purple box around all of the bundles, cross out one of the bundles in an olive color, and then show the $10$ new individual blocks with an olive box around them so you can see where they came from.
 
-\begin{center}
+\begin{image}
 \begin{tikzpicture}[every node/.style={font=\large}]
 
     % Original top number (minuend)
@@ -255,11 +255,11 @@ Now, we have some bundles to unbundle. Remember, our goal was to get some more i
 	\foreach \a in {9.6, 9.8, 10} \draw[thick] (\a, 0)--(\a+0.1, 0)--(\a+0.1, 0.1)--(\a, 0.1)--(\a, 0);
 	\foreach \a in {9.7, 9.9} \draw[thick] (\a, 0.2)--(\a+0.1, 0.2)--(\a+0.1, 0.3)--(\a, 0.3)--(\a, 0.2);
 
-\end{tikzpicture} \end{center}
+\end{tikzpicture} \end{image}
 
 To record this step in the algorithm, we took away one bundle from our $10$ bundles, so let's cross off the $10$ that we made in the previous step. We have $9$ bundles remaining, so we'll write a $9$ above that $10$. Finally, we now have $\answer[given]{15}$ individual blocks, so we'll cross off the $5$ in $305$ and write $15$ above it. 
 
-\begin{center}
+\begin{image}
 \begin{tikzpicture}[every node/.style={font=\large}]
 
     % Original top number (minuend)
@@ -306,13 +306,13 @@ To record this step in the algorithm, we took away one bundle from our $10$ bund
 	\foreach \a in {9.6, 9.8, 10} \draw[thick] (\a, 0)--(\a+0.1, 0)--(\a+0.1, 0.1)--(\a, 0.1)--(\a, 0);
 	\foreach \a in {9.7, 9.9} \draw[thick] (\a, 0.2)--(\a+0.1, 0.2)--(\a+0.1, 0.3)--(\a, 0.3)--(\a, 0.2);
 
-\end{tikzpicture} \end{center}
+\end{tikzpicture} \end{image}
 
 Notice how the small numbers above the $305$ in the algorithm represent the way that we've rearranged our base ten blocks. We have $2$ superbundles remaining, $9$ bundles, and $15$ individual blocks. We still have the same amount of blocks that we started with, but we've rearranged them to make our job of taking away some blocks a lot easier. We will start by taking away the individual blocks in $127$, so we'll remove the olive colored box around the unbundled ones. 
 
 The problem tells us to take away $\answer[given]{7}$ individual blocks since there is a $7$ in the ones place of $127$, so we will cross off $7$ individual blocks using a red marker. This will leave us with $8$ individual blocks total, which we will record in the algorithm underneath the line. Since they are individual blocks and the value of each block is $1$, this will go in the ones place in our answer.
 
-\begin{center}
+\begin{image}
 \begin{tikzpicture}[every node/.style={font=\large}]
 
     % Original top number (minuend)
@@ -360,11 +360,11 @@ The problem tells us to take away $\answer[given]{7}$ individual blocks since th
 	\foreach \a in {9.6, 9.8, 10, 10.2, 10.4} \draw[thick, red] (\a-0.05, 0.75)--(\a+0.15, 0.95);
 	\foreach \a in {9.6, 9.8} \draw[thick, red] (\a-0.05, 0.55)--(\a+0.15, 0.75);
 
-\end{tikzpicture} \end{center}
+\end{tikzpicture} \end{image}
 
 Next, the $2$ in $127$ tells us we need to take away $\answer[given]{2}$ tens, which are bundles in our picture. We have enough bundles to do this, so we don't need to rearrange again. We will mark these bundles off with our red marker again, and record that we have $\answer[given]{7}$ bundles or tens remaining underneath the line in the tens place.
 
-\begin{center}
+\begin{image}
 \begin{tikzpicture}[every node/.style={font=\large}]
 
     % Original top number (minuend)
@@ -413,11 +413,11 @@ Next, the $2$ in $127$ tells us we need to take away $\answer[given]{2}$ tens, w
 	\foreach \a in {9.6, 9.8} \draw[thick, red] (\a-0.05, 0.55)--(\a+0.15, 0.75);
 	\foreach \b in {9.2, 9} \draw[thick, red] (\b-0.05, -0.05)--(\b+0.15, 1.05);
 
-\end{tikzpicture} \end{center}
+\end{tikzpicture} \end{image}
 
 Last but not least, we need to take away $\answer[given]{1}$ superbundle for the one hundred in $127$. Again, we have enough superbundles, so we don't need to rearrange. We can mark off one of the superbundles and record the remaining one superbundle or hundred underneath the line.
 
-\begin{center}
+\begin{image}
 \begin{tikzpicture}[every node/.style={font=\large}]
 
     % Original top number (minuend)
@@ -467,7 +467,7 @@ Last but not least, we need to take away $\answer[given]{1}$ superbundle for the
 	\foreach \b in {9.2, 9} \draw[thick, red] (\b-0.05, -0.05)--(\b+0.15, 1.05);
 	\draw[thick, red] (5.15, -0.05)--(6.25, 1.05);
 
-\end{tikzpicture} \end{center}
+\end{tikzpicture} \end{image}
 
 For our answer, we can either read beneath the line or count how many superbundles, bundles, and individual blocks we have left. We have $\answer[given]{1}$ superbundle, $\answer[given]{7}$ bundles, and $\answer[given]{8}$ individual blocks, which corresponds exactly to the $178$ underneath the line. And notice that we also did the right operation (subtraction), because we \wordChoice{\choice[correct]{took away} \choice{combined}} all of the requested blocks (a total value of $127$, though we split that up into steps). That's the meaning of subtraction. So, we are confident that our answer is correct and that this algorithm produced the correct answer to this subtraction problem.
 
@@ -483,7 +483,7 @@ Now, let's turn our attention to the standard addition algorithm. Like we did wi
 
 First, let's show how to perform the calculations with the example of $58.7 + 6.59$.
 
-\begin{center} \begin{tikzpicture}[every node/.style={font=\large}]
+\begin{image} \begin{tikzpicture}[every node/.style={font=\large}]
 
     % Carrying digits
     \node at (0, 2.8) {\scriptsize 1};
@@ -516,7 +516,7 @@ First, let's show how to perform the calculations with the example of $58.7 + 6.
     \node at (2, 0.7) {2};
     \node at (3, 0.7) {9};
 
-\end{tikzpicture} \end{center}
+\end{tikzpicture} \end{image}
 
 What were the steps we took? First, since we are using decimal numbers in this case, our first step was to add the numbers by lining up the decimal places. Since $58.7$ didn't have anything in the hundredths place we can add a zero to the end of that number, making it $58.70$.
 
@@ -532,7 +532,7 @@ Remember our goal according to the definition of addition: we want to combine to
 
 First, we will set up our calculation on the left hand side of our picture and again draw our base ten blocks on the right. In this case, the smallest place value we have is the tenths place, so we will let the value of one individual block be $\answer[given]{0.1}$, meaning the value of one bundle is one place to the left or $\answer[given]{1}$ and the value of the superbundle is one more place to the right or $\answer[given]{10}$. To represent our first number, $18.6$, we will need $\answer[given]{1}$ superbundle, $\answer[given]{8}$ bundles, and $\answer[given]{6}$ individual blocks.
 
-\begin{center}
+\begin{image}
 \begin{tikzpicture}[every node/.style={font=\large}]
 
     % Carrying digits
@@ -571,11 +571,11 @@ First, we will set up our calculation on the left hand side of our picture and a
 \foreach \a in {7, 7.2, 7.4} \draw[thick] (\a, 0.2)--(\a+0.1, 0.2)--(\a+0.1, 0.3)--(\a, 0.3)--(\a, 0.2);
 
 \end{tikzpicture}
-\end{center}
+\end{image}
 
 We start with our smallest place value, which in this case is the tenths. We have $6$ tenths already from $18.6$ and we need to combine that together with $7$ more tenths from $4.7$. Let's draw $7$ more individual blocks.
 
-\begin{center}
+\begin{image}
 \begin{tikzpicture}[every node/.style={font=\large}]
 
     % Carrying digits
@@ -616,11 +616,11 @@ We start with our smallest place value, which in this case is the tenths. We hav
 \foreach \a in {7, 7.2} \draw[thick] (\a, 0.6)--(\a+0.1, 0.6)--(\a+0.1, 0.7)--(\a, 0.7)--(\a, 0.6);
 \foreach \a in {7, 7.2} \draw[thick] (\a, 0.8)--(\a+0.1, 0.8)--(\a+0.1, 0.9)--(\a, 0.9)--(\a, 0.8);
 \end{tikzpicture}
-\end{center}
+\end{image}
 
 Looking at our picture, we now see $13$ individual blocks. We can make a bundle out of $\answer[given]{10}$ of them, so let's do that with a red box.
 
-\begin{center}
+\begin{image}
 \begin{tikzpicture}[every node/.style={font=\large}]
 
     % Carrying digits
@@ -662,11 +662,11 @@ Looking at our picture, we now see $13$ individual blocks. We can make a bundle 
 \foreach \a in {7, 7.2} \draw[thick] (\a, 0.8)--(\a+0.1, 0.8)--(\a+0.1, 0.9)--(\a, 0.9)--(\a, 0.8);
 \draw[thick, red] (6.9, -0.1)--(7.35, -0.1)--(7.35, 1.1)--(6.9, 1.1)--(6.9,-0.1);
 \end{tikzpicture}
-\end{center}
+\end{image}
 
 The ten individual blocks together make up a new bundle, and there are $\answer[given]{3}$ individual blocks left.. We'll record the result of this work in our algorithm by writing the $3$ individual blocks below the tenths place, and placing our new bundle in the bundles place. But since we haven't added the bundles place yet, we'll record it as a small $1$ above the bundles place.
 
-\begin{center}
+\begin{image}
 \begin{tikzpicture}[every node/.style={font=\large}]
 
     % Carrying digits
@@ -708,11 +708,11 @@ The ten individual blocks together make up a new bundle, and there are $\answer[
 \foreach \a in {7, 7.2} \draw[thick] (\a, 0.8)--(\a+0.1, 0.8)--(\a+0.1, 0.9)--(\a, 0.9)--(\a, 0.8);
 \draw[thick, red] (6.9, -0.1)--(7.35, -0.1)--(7.35, 1.1)--(6.9, 1.1)--(6.9,-0.1);
 \end{tikzpicture}
-\end{center}
+\end{image}
 
 Now, we move on to the ones place. We have $8$ ones and an additional one that we got from bundling $10$ individual blocks, and we will also have $\answer[given]{4}$ more ones, or bundles, from $4.7$. Let's rewrite our red boxed bundle as an extra bundle in the middle, and then add the four more bundles that we need.
 
-\begin{center}
+\begin{image}
 \begin{tikzpicture}[every node/.style={font=\large}]
 
     % Carrying digits
@@ -751,11 +751,11 @@ Now, we move on to the ones place. We have $8$ ones and an additional one that w
 \foreach \x in {7.2, 7.4, 7.6, 7.8} \draw[thick, step=0.1] (\x, 0) grid (\x+0.101, 1);
 \foreach \y in {0, 0.2, 0.4} \draw[thick] (8.1, \y)--(8.2, \y)--(8.2, \y+0.1)--(8.1, \y+0.1)--(8.1, \y);
 \end{tikzpicture}
-\end{center}
+\end{image}
 
 All together we now have $\answer[given]{13}$ bundles. Just like we did before, we can bundle $\answer[given]{10}$ of those bundles together to make a superbundle. We will do this with a dotted blue box so that we can see them, and we will record this extra superbundle above the superbundles place with a little $1$ since it's one extra superbundle. We will also  record the number of leftover bundles, which is $\answer[given]{3}$, below the line in the bundles or ones place.
 
-\begin{center}
+\begin{image}
 \begin{tikzpicture}[every node/.style={font=\large}]
 
     % Carrying digits
@@ -795,11 +795,11 @@ All together we now have $\answer[given]{13}$ bundles. Just like we did before, 
 \draw[thick, dotted, blue] (5.15, -0.1)--(7.35, -0.1)--(7.35, 1.1)--(5.15, 1.1)--(5.15, -0.1);
 \foreach \y in {0, 0.2, 0.4} \draw[thick] (8.1, \y)--(8.2, \y)--(8.2, \y+0.1)--(8.1, \y+0.1)--(8.1, \y);
 \end{tikzpicture}
-\end{center}
+\end{image}
 
 Finally, we combine together all of the superbundles, which in this case is the one from $18.6$ and the one that we just made from the bundles. We have $\answer[given]{2}$ superbundles all together, so we record that under the line in the superbundles or tens place. 
 
-\begin{center}
+\begin{image}
 \begin{tikzpicture}[every node/.style={font=\large}]
 
     % Carrying digits
@@ -839,7 +839,7 @@ Finally, we combine together all of the superbundles, which in this case is the 
 \draw[thick, dotted, blue] (5.15, -0.1)--(7.35, -0.1)--(7.35, 1.1)--(5.15, 1.1)--(5.15, -0.1);
 \foreach \y in {0, 0.2, 0.4} \draw[thick] (8.1, \y)--(8.2, \y)--(8.2, \y+0.1)--(8.1, \y+0.1)--(8.1, \y);
 \end{tikzpicture}
-\end{center}
+\end{image}
 
 Finally, we see our answer. In the picture, we have a total of $\answer[given]{2}$ superbundles, $\answer[given]{3}$ bundles, and $\answer[given]{3}$ individual blocks, for a total value of $23.3$. And that's exactly the number we have below the line. Notice that we know that we used the meaning of addition to solve this problem, because we \wordChoice{\choice{took away} \choice[correct]{combined}} all of the requested blocks (a total quantity of $4.7$, even though we broke that up into steps). So, we are confident that our picture with the blocks gives us the correct answer. Since our steps correspond with the algorithm steps, we are also confident that we got the right answer using the algorithm.
 

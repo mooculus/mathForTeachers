@@ -31,7 +31,7 @@ Write your thoughts here!
 
 When we came up with the idea of bundling in order to write numbers larger than $9$ without coming up with new symbols, we also came up with the idea of using a place value to record the number of bundles. We put the bundles place just to the left of the individuals place (whether we are using sticks, beads, or any other kind of small object to represent our number). When we ran out of symbols to write numbers using only sticks and bundles, we came up with the idea of making a superbundle, and we also recorded the number of superbundles in a place just to the left of the bundles place. When we ran out of symbols to write numbers using only sticks, bundles, and superbundles, we came up with the idea of making a megabundle, and we also recorded the number of megabundles in a place just to the left of the superbundles place. This pattern can continue on as long as we need it to. But notice as well that a superbundle is a bundle of bundles, so when we bundled up our superbundles we made another place to the left to record these bundles of bundles. And when we make a megabundle, we're actually bundling up our superbundles and making a place value to write these bundles of superbundles. I hope you can see a pattern here: any time we bundle up any kind of object, we move one place value to the left. That's actually what the place values mean! They are a place to write the number of bundles of whatever object we were counting when we ran out of symbols again.
 
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
  % Two short horizontal lines on the same level
   \draw (0,0) -- (1.5,0);
@@ -42,11 +42,11 @@ When we came up with the idea of bundling in order to write numbers larger than 
     (2.75,-0.3) .. controls (2.75,-1) and (0.75,-1) .. (0.75,-0.3)
     node[midway, below, yshift=-2pt] {bundle};
 \end{tikzpicture}
-\end{center}
+\end{image}
 
 There's absolutely no reason this process can't got the other way as well: when we move from one place value to the next one to the right of it, we are unbundling whatever object we have. For example, if we move from the superbundles place to the bundles place, we are unbundling the superbundle in order to get bundles. If we move from the megabundles place to the superbundles place, we are unbundling the megabundles and finding superbundles inside of them. 
 
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
  % Two short horizontal lines on the same level
   \draw (0,0) -- (1.5,0);
@@ -57,11 +57,11 @@ There's absolutely no reason this process can't got the other way as well: when 
     (2.75,-0.3) .. controls (2.75,-1) and (0.75,-1) .. (0.75,-0.3)
     node[midway, below, yshift=-2pt] {unbundle};
 \end{tikzpicture}
-\end{center}
+\end{image}
 
 And now we are ready to write decimal numbers: if we need to write numbers that are parts of whole numbers, we'll need to unbundle the individual sticks. While perhaps you initially thought that individual sticks were the smallest type of object we could possibly have, there's no reason we can't subdivide a single stick. In our base-ten system, we would cut it into $10$ equal pieces, which is the same as unbundling that individual stick. We could call these broken stick pieces ministicks.
 
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
 \draw[thick] (0,0)--(1,0)--(1,10)--(0,10)--(0,0);
 \node[below] at (0.5, 0) {one stick};
@@ -81,7 +81,7 @@ And now we are ready to write decimal numbers: if we need to write numbers that 
   }
   \node[below] at (7, 0) {individual ministicks};
 \end{tikzpicture}
-\end{center}
+\end{image}
 
 Because the individual stick was in the ones place, each ministick have a value of 1 but one place to the right. We use a decimal point to indicate that we have crossed from whole numbers into partial numbers, and so each ministick has a value of $0.1$. Compare this to unbundling a bundle: if we start with a bundle and unbundle it into individual sticks, each stick has a value of $1$ in the place just to the right of the bundles place, which is the individuals place. So while each bundle has a value of $10$, unbundling it gives $10$ sticks each with a value of $1$. We are doing the same thing, but with a smaller place value.
 
@@ -97,7 +97,7 @@ First we need to interpret the place values in the number we are given. The deci
 	\item $\answer[given]{3}$ ministicks
 \end{itemize}
 
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
   % Stick dimensions
   \def\stickheight{2}
@@ -121,7 +121,7 @@ First we need to interpret the place values in the number we are given. The deci
     \fill[gray] ({10*\gap + 3.5 + \i*0.2}, 0) rectangle ++(\stickwidth, {\stickheight/10});
   }
 \end{tikzpicture}
-\end{center}
+\end{image}
 Now that we drew each of our objects, we've represented $16.3$ as we wanted.
 \end{example}
 
@@ -231,7 +231,7 @@ First, when we were comparing fractions, we made a big deal about how we couldn'
 
 Since we are taking one stick to be $0.01$, we know that one bundle has to have the value $\answer[given]{0.1}$. This is because when we bundle our sticks, we always write the number of bundles exactly one place to the left of the number of sticks. So, to represent $0.39$, we will need $\answer[given]{9}$ individual sticks and $\answer[given]{3}$ bundles. 
 
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
   % Parameters
   \def\stickheight{2}
@@ -268,11 +268,11 @@ Since we are taking one stick to be $0.01$, we know that one bundle has to have 
   }
 
 \end{tikzpicture}
-\end{center}
+\end{image}
 
 Drawing $0.4$ could be a bit more confusing. But notice that we don't have anything in the $0.01$ place, so we can also write this number as $0.40$. Notice that the $4$ is still in the tenths place, and zero means nothing, so we didn't change the value of this number at all. When we write the number as $0.40$, we can see that in order to represent this number, we will need $\answer[given]{0}$ individual sticks and $\answer[given]{4}$ bundles.
 
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
   % Parameters
   \def\stickheight{2}
@@ -301,7 +301,7 @@ Drawing $0.4$ could be a bit more confusing. But notice that we don't have anyth
   }
 
 \end{tikzpicture}
-\end{center}
+\end{image}
 Now, which number is larger? Since we used the same value for the sticks in both pictures, we need to know which picture has more sticks in it. The one with more sticks will be the larger number. One strategy we could use is to count the sticks. We see that to represent $0.39$ we used $\answer[given]{39}$ sticks, and to represent $0.4$ we used $\answer[given]{40}$ sticks. Since $40 > 39$, we see that $0.4$ is larger than $0.39$.
 
 Alternatively, we could use the idea of one-to-one correspondence to decide which number is larger. We can line up the sticks in each picture. The first three bundles match exactly in both pictures. But then in the picture of $0.4$ we have another bundle while in the picture of $0.39$ we have $9$ loose sticks. We can unbundle the $4$th bundle in $0.4$ and then match up the sticks. After we match $9$ sticks in each picture, we are out of sticks in $0.39$, while we still have a stick left over in $0.4$. This means that $0.4$ is the larger number.
@@ -339,14 +339,14 @@ We have been drawing pictures in this section using sticks, but another common r
 
 \begin{question}
 In the picture below, we have drawn base ten blocks for $4$ superbundles, $1$ bundle, and $5$ individual block. If one individual block is worth $0.0001$, what is the value of all of the base ten blocks in the picture?
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
 \foreach \x in {0, 2, 4, 6} \draw[thick, step=0.1] (\x, 0) grid (\x+1.001, 1);
 \draw[thick, step=0.1] (8,0) grid (8.101, 1);
 \foreach \a in {0, 0.2, 0.4, 0.6, 0.8} \draw[thick] (8.4, \a)--(8.5, \a)--(8.5, \a+0.1)--(8.4, \a+0.1)--(8.4, \a);
 
 \end{tikzpicture}
-\end{center}
+\end{image}
 
 \begin{prompt}
 $\answer{0.0415}$
@@ -360,12 +360,12 @@ The second way we would like to represent and compare decimal numbers is by usin
 
 We represent decimal numbers using paper strips by starting with drawing some unit. It's common for this unit to be a length of one, but as with the value of the individual sticks in bundling, you can really choose your unit to be any size. We'll build our numbers based on this unit.
 
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
 	\draw[thick] (0,0)--(10,0)--(10,1)--(0,1)--(0,0);
 	\node[below] at (5,0) {one unit};
 \end{tikzpicture}
-\end{center}
+\end{image}
 
 Let's just dive in with an example.
 
@@ -375,26 +375,26 @@ Represent the decimal number $2.48$ using a paper strip.
 
 First, we'll draw a strip which will be our unit for this problem.
 
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
 	\draw[thick] (0,0)--(5,0)--(5,1)--(0,1)--(0,0);
 	\node[below] at (2.5,0) {one unit};
 \end{tikzpicture}
-\end{center}
+\end{image}
 
 Now, the whole number part of the number we are trying to represent is $2$, which means we need two full units. We'll draw that next.
 
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
 	\draw[thick] (0,0)--(5,0)--(5,1)--(0,1)--(0,0);
 	\draw[thick] (5,0)--(10,0)--(10,1)--(5,1);
 	\node[below] at (2.5,0) {one unit};
 \end{tikzpicture}
-\end{center}
+\end{image}
 
 Let's move one place value to the right. As we discussed with our pictures with sticks, that means we need to unbundle. In our base ten system, unbundling is the same thing as breaking into $10$ equal pieces, so let's do that to our one unit.
 
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
 	\draw[thick] (0,0)--(5,0)--(5,1)--(0,1)--(0,0);
 	\foreach \x in {0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5} \draw[thick] (\x, 0)--(\x, 1);
@@ -402,11 +402,11 @@ Let's move one place value to the right. As we discussed with our pictures with 
 	\node[above] at (0.25, 1.3) {$0.1$ unit};
 	\draw[<->] (0, 1.1)--(0, 1.3)--(0.5, 1.3)--(0.5, 1.1);
 \end{tikzpicture}
-\end{center}
+\end{image}
 
 Since we unbundled our single unit, each of the new pieces is one place value to the right of the unit, so each of these smaller strips is $0.1$ of our unit. We are trying to model $2.48$, so we need $4$ copies of $0.1$ since we have a $4$ in the tenths place. Let's add those on to the picture we are drawing.
 
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
 	\draw[thick] (0,0)--(5,0)--(5,1)--(0,1)--(0,0);
 	\draw[thick] (5,0)--(10,0)--(10,1)--(5,1);
@@ -414,21 +414,21 @@ Since we unbundled our single unit, each of the new pieces is one place value to
 	\foreach \x in {10.5, 11, 11.5} \draw[thick] (\x, 0)--(\x,1);
 	\node[below] at (2.5,0) {one unit};
 \end{tikzpicture}
-\end{center}
+\end{image}
 
 Finally, we need to move one more place to the right. We'll take one of our strips which is $0.1$ units long and unbundle it into $10$ equal pieces. The picture will be harder to label since these strips are getting pretty little, but each of the tiny strips will be $0.01$ of our original unit since we have now unbundled the original unit twice.
 
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
 \draw[thick] (0,0)--(0.5,0)--(0.5, 1)--(0,1)--(0,0);
 \foreach \x in {0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45} \draw[thick] (\x, 0)--(\x, 1);
 \node[below] at (0.25, 0) {$0.1$ unit};
 \end{tikzpicture}
-\end{center}
+\end{image}
 
 Since the number we are trying to model is $2.48$ and it has an $8$ in the hundredths place, we need to add $8$ of these tiny strips to our picture.
 
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
 	\draw[thick] (0,0)--(5,0)--(5,1)--(0,1)--(0,0);
 	\draw[thick] (5,0)--(10,0)--(10,1)--(5,1);
@@ -436,7 +436,7 @@ Since the number we are trying to model is $2.48$ and it has an $8$ in the hundr
 	\foreach \x in {10.5, 11, 11.5, 12, 12.05, 12.1, 12.15, 12.2, 12.25, 12.3, 12.35} \draw[thick] (\x, 0)--(\x,1);
 	\node[below] at (6.2,0) {$2.48$ units total length};
 \end{tikzpicture}
-\end{center}
+\end{image}
 
 Now the total length of the strip is $2.48$ units, because it is made up of $2$ full units, $4$ copies of $0.1$ unit, and $8$ copies of $0.01$ unit. Compare this to a bundling picture of $2.48$ sticks, where we might draw $8$ individual sticks, $4$ bundles of sticks, and $2$ superbundles of sticks.
 
@@ -464,13 +464,13 @@ Use paper strips to show which of $0.083$ and $0.102$ is the larger decimal.
 
 We first need to draw both of these numbers using our paper strips. In this case, let's choose the value of our unit to be one in the tenths place since we don't need any place values to the left of that one. In other words, one full strip will equal $0.1$. When we unbundle that strip, we'll move one place to the right so each smaller strip will equal $0.01$ and then when we unbundle that smaller strip we'll move one place to the right again so each tiny strip will equal $0.001$. Let's draw each of those pieces.
 
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
 	\draw[thick] (0,0)--(5,0)--(5,1)--(0,1)--(0,0);
 	\node[below] at (2.5,0) {$0.1$ unit};
 \end{tikzpicture}
-\end{center}
-\begin{center}
+\end{image}
+\begin{image}
 \begin{tikzpicture}
 	\draw[thick] (0,0)--(5,0)--(5,1)--(0,1)--(0,0);
 	\foreach \x in {0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5} \draw[thick] (\x, 0)--(\x, 1);
@@ -478,14 +478,14 @@ We first need to draw both of these numbers using our paper strips. In this case
 	\node[above] at (0.25, 1.3) {$0.01$ unit};
 	\draw[<->] (0, 1.1)--(0, 1.3)--(0.5, 1.3)--(0.5, 1.1);
 \end{tikzpicture}
-\end{center}
-\begin{center}
+\end{image}
+\begin{image}
 \begin{tikzpicture}
 \draw[thick] (0,0)--(0.5,0)--(0.5, 1)--(0,1)--(0,0);
 \foreach \x in {0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45} \draw[thick] (\x, 0)--(\x, 1);
 \node[below] at (0.25, 0) {each tiny strip is $0.001$ unit};
 \end{tikzpicture}
-\end{center}
+\end{image}
 
 Now, we assemble our pieces to draw the strips. For $0.083$, we need the following.
 \begin{itemize}
@@ -503,7 +503,7 @@ For $0.102$, we need the following.
 
 Now let's draw these two strips, lining them up on their left-hand sides.
 
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
 	\draw[thick] (0,0)--(4.15,0)--(4.15,1)--(0,1)--(0,0);
 	\foreach \x in {0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.05, 4.1} \draw[thick] (\x, 0)--(\x,1);
@@ -513,7 +513,7 @@ Now let's draw these two strips, lining them up on their left-hand sides.
 	\foreach \x in {5, 5.05} \draw[thick] (\x, -3)--(\x,-2);
 	\node[below] at (2.05,-3) {$0.102$ units total length};
 \end{tikzpicture}
-\end{center}
+\end{image}
 
 Which number is larger? Since we used the same unit length to build each number, the longer strip is the larger number. In this case, the strip for $0.102$ is longer, and so we see that
 \[
@@ -550,18 +550,18 @@ We'll plot the number $0.34$ on a number line.
 
 To get started, we need to decide what kinds of marks we are going to make on our number line. One of the best ways to do this is to estimate the decimal number. In this case, we know that $0.34$ is between $0$ and $1$, so let's start by marking those two points on our number line.
 
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
 	\draw[thick, <->] (-0.4, 0)--(10.4, 0);
 	\foreach \x in {0, 10} 
 		\pgfmathtruncatemacro{\t}{0.1*\x}
 		\draw[thick] (\x, 0.4)--(\x, -0.4) node[below]{$\t$};
 \end{tikzpicture}
-\end{center}
+\end{image}
 
 We could guess at the location of $0.34$ on this number line, but we can also be more accurate if we ``zoom in'' on the number line. Essentially, we need to unbundle the space between $0$ and $1$ to help us to locate this number. Let's do that on our number line.
 
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
 	\draw[thick, <->] (-0.4, 0)--(10.4, 0);
 	\foreach \x in {0, 10} 
@@ -579,11 +579,11 @@ We could guess at the location of $0.34$ on this number line, but we can also be
 	\node[below] at (8, -0.3) {$0.8$};
 	\node[below] at (9, -0.3) {$0.9$};
 \end{tikzpicture}
-\end{center}
+\end{image}
 
 Thinking about the number $0.34$, we can see that we have a $3$ in the tenths place, so if we were drawing this with a paper strip we would use $3$ copies of the $0.1$ strip and then add on some more smaller strips to deal with the $0.04$ that's left over. This tells us that the number $0.34$ will be between the $0.3$ and the $0.4$ on our number line. Again, we could guess at the location of the number, or we can zoom in again on our number line to locate the number exactly. We could unbundle each of the $0.1$ spaces on our number line, but because we know that the number is between $0.3$ and $0.4$, we only need to unbundle that piece of the line.
 
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
 	\draw[thick, <->] (-0.4, 0)--(10.4, 0);
 	\foreach \x in {0, 10} 
@@ -604,11 +604,11 @@ Thinking about the number $0.34$, we can see that we have a $3$ in the tenths pl
 	\foreach \a in {3.1, 3.2, ..., 3.9} 
 		\draw[thick] (\a, -0.2)--(\a, 0.2);
 \end{tikzpicture}
-\end{center}
+\end{image}
 
 We are now ready to plot our point on the number line. Think again about our paper strip: we need to add another $0.04$ after the $0.3$, so we need to move $\answer[given]{4}$ of these $0.01$-spaces past $0.3$ on the number line. We'll put a dot in the correct location.
 
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
 	\draw[thick, <->] (-0.4, 0)--(10.4, 0);
 	\foreach \x in {0, 10} 
@@ -631,11 +631,11 @@ We are now ready to plot our point on the number line. Think again about our pap
 	\draw[fill=black] (3.4, 0) circle (2pt); 
 	\node[rotate=90] at (3.4, 0.5) {$0.34$};
 \end{tikzpicture}
-\end{center}
+\end{image}
 
 This picture is a little bit crowded, so let's show how we could make some more space to draw this picture.
 
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
 	\draw[thick, <->] (-0.4, 0)--(10.4, 0);
 	\foreach \x in {0, 10} 
@@ -684,12 +684,12 @@ This picture is a little bit crowded, so let's show how we could make some more 
 	
 	
 \end{tikzpicture}
-\end{center}
+\end{image}
 We ``zoomed in'' on just the space between $0.3$ and $0.4$ so that we could focus on the part of the number line that we needed. If we had initially estimated that $0.34$ was in between $0.3$ and $0.4$, then we could have started from this number line, but it's good to be able to start from essentially any estimate for the decimal number. Notice that we could have written $0.30$ and $0.40$ at the ends of this number line instead of $0.3$ and $0.4$. We know that $0.3$ is equal to $0.30$ because both numbers mean $3$ tenths and $0$ hundredths, and we could say something similar for $0.4$ and $0.40$. Some people like to write the zero at the end to make counting between $0.3$ and $0.4$ by hundredths a little bit easier.  
 
 To tie everything together, let's place a paper strip with length $0.34$ lined up with our number line so that the left side of the paper strip aligns with zero. To draw such a paper strip, we start with our unit, then cut it into tenths. We'll need $\answer[given]{3}$ of these tenths. Then we cut one of our tenths into $10$ equal pieces to get hundredths, and we'll need $\answer[given]{4}$ of these hundredths. We line all of these paper strips up like usual to get a total length of $0.34$.
 
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
 	\draw[thick, <->] (-0.4, 0)--(10.4, 0);
 	\foreach \x in {0, 10} 
@@ -716,7 +716,7 @@ To tie everything together, let's place a paper strip with length $0.34$ lined u
 	\foreach \x in {1, 2, 3, 3.1, 3.2, 3.3} \draw[thick] (\x, -2)--(\x, -1);
 	\node[below] at (1.6, -2) {$0.34$ units total length};
 \end{tikzpicture}
-\end{center}
+\end{image}
 Since it's the length from zero that helps us to mark numbers on the number line, this aligns exactly with our paper strip.
 
 \end{example}
@@ -730,7 +730,7 @@ Use a number line to decide which of $145.003$ and $145.030$ is the larger numbe
 
 Remember that our goal is first to estimate the numbers so that we can draw them on a number line. Since we are going to compare these numbers, we want to draw them on the same number line, so we need an estimate that works for both numbers. There are many options, and it's very natural to start with the whole number parts. Let's begin there, marking the left end of our number line as $\answer[given]{145}$ and the right end $\answer[given]{146}$. We'll also start with our line unbundled into tenths in the picture.
 
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
 	\draw[thick, <->] (-0.4, 0)--(10.4, 0);
 	\foreach \x in {0, 10} \draw[thick] (\x, 0.5)--(\x, -0.5);
@@ -747,14 +747,14 @@ Remember that our goal is first to estimate the numbers so that we can draw them
 	\node[below] at (7, -0.3) {$145.7$};
 	\node[below] at (8, -0.3) {$145.8$};
 	\node[below] at (9, -0.3) {$145.9$};
-\end{tikzpicture} \end{center}
+\end{tikzpicture} \end{image}
 
 Notice that we didn't draw zero and one on this number line, but we can still imagine them way off to the left in this picture because we have a specific location and the length of one unit.  We could use the length of this unit to back up $145$ units along the line, and then we would hit zero. The arrows on the end of the line remind us that the line goes on forever in both directions.
 
 Now, we need to plot our numbers. Both of them are actually between $145$ and $145.1$ because both numbers have a zero in the tenths place. So we could actually start our number line with $145$ and $145.1$ on either end. Let's draw a picture to show that we have zoomed in on that spot.
 
 
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
 	\draw[thick, <->] (-0.4, 0)--(10.4, 0);
 	\draw[thick] (0, 0.6)--(0,-0.6);
@@ -795,11 +795,11 @@ Now, we need to plot our numbers. Both of them are actually between $145$ and $1
 	  \draw[->, thick] (1,-0.8) .. controls (1,-1) and (10,-1) .. (10,-3.2);	
 	
 \end{tikzpicture}
-\end{center}
+\end{image}
 
 One of our numbers is already on the line, since $145.030$ is the same as $145.03$: we don't have to add any thousandths to this number in order to plot it. But our other number, $145.003$, needs three thousandths added on from $145.00 = 145$. Notice this number has no tenths and no hundredths. So we need to add more tick marks between $145$ and $145.01$ by unbundling this part of the number line.
 
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
 	\draw[thick, <->] (-0.4, -4)--(10.4, -4);
 	\draw[thick] (0, -4.6)--(0, -3.4);
@@ -819,11 +819,11 @@ One of our numbers is already on the line, since $145.030$ is the same as $145.0
 	\node[rotate=90] at (9, -4.8) {$145.09$};
 	
 	\foreach \a in {0.1, 0.2, ..., 0.9} \draw[thick] (\a, -4.3)--(\a, -3.7);
-\end{tikzpicture} \end{center}
+\end{tikzpicture} \end{image}
 Each tick mark between $145.00$ and $145.01$ is one thousandth, so the first tick would be marked $145.001$, then $145.002$, and so on. Now, we locate both of our numbers on the line with a dot and label them.
 
 
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
 	\draw[thick, <->] (-0.4, -4)--(10.4, -4);
 	\draw[thick] (0, -4.6)--(0, -3.4);
@@ -847,7 +847,7 @@ Each tick mark between $145.00$ and $145.01$ is one thousandth, so the first tic
 	\draw[fill=black] (0.3, -4) circle (2pt);
 	\draw[fill=black] (3, -4) circle (2pt);
 	\node[rotate=90] at (0.3, -3) {$145.003$};
-\end{tikzpicture} \end{center}
+\end{tikzpicture} \end{image}
 
 Which number is larger? When we draw our number lines in this way, numbers farther to the right of zero are larger, because the position of a number on the line is its length from zero. (Notice that we are just talking about positive numbers for now, but you can think about how you might describe what happens with negative numbers. We'll postpone that for a bit.) A longer distance from zero is a bigger number. Think again about paper strips, and the fact that we said that a longer strip meant a bigger number, and we connected this back to sticks and bundling as well. Each time we move to the right one tick mark on the number line, that's like adding another stick or another bundle or another object of some kind. Using this thinking, we can see that 
 \[

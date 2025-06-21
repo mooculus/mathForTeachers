@@ -27,18 +27,18 @@ Let's draw a picture to solve this problem, and use our picture to think about w
 
 First, we'll use the meaning of fractions to draw a picture of $\frac{3}{4}$ of a cup of water. In this case our whole is \wordChoice{\choice{3} \choice{4} \choice{water} \choice[correct]{one cup of water}}. The whole is cut into $\answer[given]{4}$ equal pieces, because the denominator tells us how many equal pieces to cut our whole into, and then we want to shade $\answer[given]{3}$ of those pieces, because the numerator tells us how many pieces to shade.
 
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
 \draw[fill=cyan] (0,0)--(3,0)--(3,2)--(0,2)--(0,0);
 \draw[thick] (0,0)--(4,0)--(4,2)--(0,2)--(0,0);
 \foreach \x in {1, 2, 3} \draw[thick] (\x, 0)--(\x, 2);
 \node[below] at (2, 0) {one cup of water};
 \end{tikzpicture}
-\end{center}
+\end{image}
 
 Next, we want to represent $1 \frac{1}{4}$ cups of oil. This is one full cup of oil and $\frac{1}{4}$ of a second cup. In this case our whole is \wordChoice{\choice{4} \choice{water} \choice{one cup of water} \choice{oil} \choice[correct]{one cup of oil}}, and this whole will be cut into $\answer[given]{4}$ equal pieces. We need to shade one full cup, and then $\answer[given]{1}$ piece out of the second cup.
 
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
 \draw[fill=brown] (0,0)--(4,0)--(4,2)--(0,2)--(0,0);
 \draw[fill=brown, thick] (5,0)--(6,0)--(6,2)--(5,2)--(5,0);
@@ -46,7 +46,7 @@ Next, we want to represent $1 \frac{1}{4}$ cups of oil. This is one full cup of 
 \foreach \x in {1, 2, 3, 6, 7, 8} \draw[thick] (\x, 0)--(\x, 2);
 \node[below] at (2, 0) {one cup of oil};
 \end{tikzpicture}
-\end{center}
+\end{image}
 
 Now, Gino takes all of the shaded pieces and puts them together in a bowl. We want to combine these pieces together, and that means we are going to use the operation \wordChoice{\choice[correct]{addition} \choice{subtraction} \choice{something else}} because the definition of addition is to combine things together. In this case, since the story problem mentions the water first, we will write the amount of water before the amount of oil in our expression. So the total amount of liquid in the bowl is
 \[
@@ -55,7 +55,7 @@ Now, Gino takes all of the shaded pieces and puts them together in a bowl. We wa
 
 We could stop here, because this expression is the total amount of liquid in the bowl. However, most of the time we want to simplify this expression and write it without the plus sign, so let's continue working with our picture by putting together all of the shaded pieces that we had. We'll mark the water ones with a small $w$ and the oil ones with a small $o$ to make them easier to see in the picture.
 
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
 	\draw[thick, fill=cyan] (0,0)--(3,0)--(3,2)--(0,2)--(0,0);
 	\draw[fill=brown, thick] (3,0)--(8,0)--(8,2)--(3,2)--(3,0);
@@ -63,10 +63,10 @@ We could stop here, because this expression is the total amount of liquid in the
 	\foreach \a in {0.5, 1.5, 2.5} \node at (\a, 1) {$w$};
 	\foreach \b in {3.5, 4.5, 5.5, 6.5, 7.5} \node at (\b, 1) {$o$};
 \end{tikzpicture}
-\end{center}
+\end{image}
 In order to see how much liquid this is, we need to think about what size each of these pieces are. Each of the original fractions had a denominator of $\answer[given]{4}$, so both the cup of water and the cup of oil were cut into $4$ equal pieces. This means that each of the pieces in our picture is $\frac{1}{4}$ of a cup of either water or oil. We need to change our whole to be \wordChoice{\choice{one cup of water} \choice{one cup of oil} \choice[correct]{one cup of liquid}} and since water and oil are both kinds of liquid we can think about all of our previous parts as $\frac{1}{\answer[given]{4}}$ of a cup of liquid. In other words, one cup of liquid is made up of $\answer[given]{4}$ of the pieces we already drew. Let's add that information to our picture.
 
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
 	\draw[thick, fill=cyan] (0,0)--(3,0)--(3,2)--(0,2)--(0,0);
 	\draw[fill=brown, thick] (3,0)--(8,0)--(8,2)--(3,2)--(3,0);
@@ -76,7 +76,7 @@ In order to see how much liquid this is, we need to think about what size each o
 	\draw[ultra thick] (0,0)--(4,0)--(4,2)--(0,2)--(0,0);
 	\node[below] at (2,0) {one cup of liquid};
 \end{tikzpicture}
-\end{center}
+\end{image}
 
 There are a total of $\answer[given]{8}$ shaded pieces in the picture when we consider the water and oil together, and our whole cup of liquid is cut into $\answer[given]{4}$ equal pieces, so we could write our answer as 
 \[
@@ -139,7 +139,7 @@ Shonda ran $\frac{5}{8}$ of a mile on Monday, but only ran $\frac{1}{3}$ of a mi
 
 We want to see how we could write the answer to this question as a subtraction expression, and then simplify our answer into a single fraction. We'll use a number line to represent our fractions this time. First, let's draw our whole, which in this problem is \wordChoice{\choice{8} \choice{3} \choice[correct]{one mile} \choice{distance}}. We'll draw two different number lines, one on top of the other, so that we can compare Monday's distance and Tuesday's distance.
 
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
 \draw[thick, <->] (-0.2,0)--(12.2,0);
 \node[left] at (-0.5, 0) {Tuesday};
@@ -151,11 +151,11 @@ We want to see how we could write the answer to this question as a subtraction e
 \node[below] at (0, 1.7) {$0$};
 \node[below] at (12, 1.7) {$1$ mile};
 \end{tikzpicture}
-\end{center}
+\end{image}
 
 Because Shonda ran $\frac{5}{8}$ of a mile on Monday, the denominator tells us that we need to cut the mile on Monday's line into $\answer[given]{8}$ equal pieces, and the numerator tells us that we need to shade $\answer[given]{5}$ of them. Because Shonda ran $\frac{1}{3}$ of a mile on Tuesday, the denominator tells us that we need to cut the mile on Tuesday's line into $\answer[given]{3}$ equal pieces, and the numerator tells us that we need to shad $\answer[given]{1}$ of them. Let's do that on our picture. %5/8 = 15/24 = 7.5/12 and 1/3=8/24=4/12
 
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
 \draw[fill=green] (0, 1.9)--(7.5,1.9)--(7.5,2.1)--(0,2.1)--(0,1.9);
 \draw[fill=teal] (0, -0.1)--(4,-0.1)--(4,0.1)--(0,0.1)--(0,-0.1);
@@ -173,10 +173,10 @@ Because Shonda ran $\frac{5}{8}$ of a mile on Monday, the denominator tells us t
 \node[below] at (4, -0.3) {$\frac{1}{3}$ mi};
 \node[above] at (7.5, 2.3) {$\frac{5}{8}$ mi};
 \end{tikzpicture}
-\end{center}
+\end{image}
 We want to find out how much farther Shonda ran on Monday, so we want to take away Tuesday's distance from Monday's distance. In a sense, we want to line up the end of Tuesday with the Monday line, and then cross off Tuesday's distance. Let's show that in our picture.
 
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
 \draw[fill=green] (0, 1.9)--(7.5,1.9)--(7.5,2.1)--(0,2.1)--(0,1.9);
 \draw[fill=teal] (0, -0.1)--(4,-0.1)--(4,0.1)--(0,0.1)--(0,-0.1);
@@ -197,7 +197,7 @@ We want to find out how much farther Shonda ran on Monday, so we want to take aw
 \draw[thick] (0, 2.5)--(4, 1.5);
 \draw[thick] (0, 1.5)--(4, 2.5);
 \end{tikzpicture}
-\end{center}
+\end{image}
 
 This picture shows us taking away $\frac{1}{3}$ of a mile from $\frac{5}{8}$ of a mile, so the operation we are using here is \wordChoice{\choice{addition} \choice[correct]{subtraction} \choice{something else}}. As an expression, we could write our answer as
 \[
@@ -206,7 +206,7 @@ This picture shows us taking away $\frac{1}{3}$ of a mile from $\frac{5}{8}$ of 
 
 We would also like to be able to simplify this answer, but right now that's difficult because we don't know exactly where the $\frac{1}{3}$ of a mile crosses Monday's number line. The main issue is that our pieces are not all the same size. So, let's cut all of these pieces some more. If we cut Monday's eight equal pieces into $\answer[given]{3}$ equal pieces each, and if we cut Tuesday's $3$ equal pieces into $\answer[given]{8}$ equal pieces each, we will have the one mile made out of $24$ equal pieces of both Monday's number line and Tuesday's number line. In other words, we are making equivalent fractions whose denominators are $24$. Let's go ahead and do that in our picture.
 
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
 \draw[fill=green] (0, 1.9)--(7.5,1.9)--(7.5,2.1)--(0,2.1)--(0,1.9);
 \draw[fill=teal] (0, -0.1)--(4,-0.1)--(4,0.1)--(0,0.1)--(0,-0.1);
@@ -228,7 +228,7 @@ We would also like to be able to simplify this answer, but right now that's diff
 \draw[thick] (0, 2.5)--(4, 1.5);
 \draw[thick] (0, 1.5)--(4, 2.5);
 \end{tikzpicture}
-\end{center}
+\end{image}
 
 Now we can see that the $\frac{1}{3}$ mile mark is at the $8$th mark after zero, so it is equivalent to $\frac{8}{24}$ of a mile. We can also see that $\frac{5}{8}$ is at the $15$th mark after zero, so it is equivalent to $\frac{15}{24}$ of a mile. And now that both lines are marked in units of $\frac{1}{24}$ of a mile, we can take away the $8$ copies of $\frac{1}{24}$ of a mile from the $15$ copies of $\frac{1}{24}$ of a mile to see that we have $\answer[given]{7}$ copies of $\frac{1}{24}$ of a mile left. Using our meaning of fractions, we see that the answer to this problem is
 \[
@@ -258,7 +258,7 @@ Notice also that some students say things like ``in order to subtract fractions,
 
 To wrap up our thinking about addition and fractions, let's return to something we said about mixed numbers. We said that a mixed number like $2 \frac{3}{7}$ could also be written as $2 + \frac{3}{7}$. Notice how this makes sense with our meaning of addition. The number $2 + \frac{3}{7}$ is the total amount that we get from combining together $2$ whole units and $\frac{3}{7}$ of another unit. And that's the same thing that we mean when we write $2 \frac{3}{7}$ next to each other. In other words, we can think about $2 + \frac{3}{7}$ using a picture like we did for addition. We will draw two wholes and $\frac{3}{7}$ of another whole, and then use arrows to show the result after combining all of that together. The result is $2 \frac{3}{7}$ of the same whole.
 
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
 \draw[thick, fill=lime] (0,0)--(3.5,0)--(3.5,1)--(0,1)--(0,0);
 \node[below] at (1.75, 0) {one whole};
@@ -282,7 +282,7 @@ To wrap up our thinking about addition and fractions, let's return to something 
 \foreach \x in {10.5, 11, 11.5} \draw[thick, dashed] (\x, -3)--(\x, -2);
 \node[below] at (10.25, -3) {one whole};
 \end{tikzpicture}
-\end{center}
+\end{image}
 
 
 \section{Adding and subtracting decimal numbers}
@@ -302,27 +302,27 @@ First, the operation of subtraction means that we need to \wordChoice{\choice{co
 
 Now, we'd like to simplify this answer into a single number. We will start by drawing the $5.3$ liters using base ten blocks. Since we know that one of our numbers in this problem has a value in the hundredths place, we will make the value of the smallest block equal to $\answer[given]{0.01}$, meaning that the bundle is one place to the left or has value $\answer[given]{0.1}$ and the superbundle is two places to the left or has value $1$. In other words, in order to represent the number $5.3$ we will use $\answer[given]{5}$ superbundles and $\answer[given]{3}$ bundles. Let's go ahead and draw this amount.
 
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
 \foreach \x in {0, 1.2, 2.4, 3.6, 4.8} \draw[thick, step=0.1] (\x,0) grid (\x+1, 1);
 \foreach \x in {6, 6.2, 6.4} \draw[thick, step=0.1] (\x, 0) grid (\x+0.101, 1);
 \end{tikzpicture}
-\end{center}
+\end{image}
 
 Now, we want to take away $2.84$ liters from this amount. This means that we need to remove $\answer[given]{2}$ superbundles, $\answer[given]{8}$ bundles, and $\answer[given]{4}$ individual blocks. Let's start with the $2$ superbundles. We will mark them off with a red line.
 
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
 \foreach \x in {0, 1.2, 2.4, 3.6, 4.8} \draw[thick, step=0.1] (\x,0) grid (\x+1, 1);
 \foreach \x in {6, 6.2, 6.4} \draw[thick, step=0.1] (\x, 0) grid (\x+0.101, 1);
 \draw[ultra thick, red] (-0.2, -0.2)--(1.2, 1.2);
 \draw[ultra thick, red] (1, -0.2)--(2.4, 1.2);
 \end{tikzpicture}
-\end{center}
+\end{image}
 
 Next, we need to remove $8$ bundles from this picture, but right now we only have $3$ bundles. Let's unbundle the last superbundle into $\answer[given]{10}$ bundles so that we have enough bundles to do this taking away. We will put a purple dotted box around the $10$ bundles that used to be this superbundle, just for this step so that you can see them.
 
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
 \foreach \x in {0, 1.2, 2.4, 3.6} \draw[thick, step=0.1] (\x,0) grid (\x+1, 1);
 \foreach \x in {4.8, 5, 5.2, 5.4, 5.6, 5.8, 6, 6.2, 6.4, 6.6, 6.8, 7, 7.2} \draw[thick, step=0.1] (\x, 0) grid (\x+0.101, 1);
@@ -330,11 +330,11 @@ Next, we need to remove $8$ bundles from this picture, but right now we only hav
 \draw[ultra thick, red] (-0.2, -0.2)--(1.2, 1.2);
 \draw[ultra thick, red] (1, -0.2)--(2.4, 1.2);
 \end{tikzpicture}
-\end{center}
+\end{image}
 
 Now we can take away $8$ bundles using our big red lines again. (We removed the purple dotted box from this one, since the bundles don't make a superbundle anymore.)
 
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
 \foreach \x in {0, 1.2, 2.4, 3.6} \draw[thick, step=0.1] (\x,0) grid (\x+1, 1);
 \foreach \x in {4.8, 5, 5.2, 5.4, 5.6, 5.8, 6, 6.2, 6.4, 6.6, 6.8, 7, 7.2} \draw[thick, step=0.1] (\x, 0) grid (\x+0.101, 1);
@@ -342,11 +342,11 @@ Now we can take away $8$ bundles using our big red lines again. (We removed the 
 \draw[ultra thick, red] (1, -0.2)--(2.4, 1.2);
 \foreach \a in {4.8, 5, 5.2, 5.4, 5.6, 5.8, 6, 6.2} \draw[ultra thick, red] (\a-0.1,-0.2)--(\a+0.1, 1.2);
 \end{tikzpicture}
-\end{center}
+\end{image}
 
 Our last removal will be the $4$ individual blocks, but again we don't have any individual blocks so we'll unbundle one of our bundles. This time we won't use the extra purple box since all of the individuals will be from that unbundled bundle.
 
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
 \foreach \x in {0, 1.2, 2.4, 3.6} \draw[thick, step=0.1] (\x,0) grid (\x+1, 1);
 \foreach \x in {4.8, 5, 5.2, 5.4, 5.6, 5.8, 6, 6.2, 6.4, 6.6, 6.8, 7} \draw[thick, step=0.1] (\x, 0) grid (\x+0.101, 1);
@@ -356,11 +356,11 @@ Our last removal will be the $4$ individual blocks, but again we don't have any 
 \draw[ultra thick, red] (1, -0.2)--(2.4, 1.2);
 \foreach \a in {4.8, 5, 5.2, 5.4, 5.6, 5.8, 6, 6.2} \draw[ultra thick, red] (\a-0.1,-0.2)--(\a+0.1, 1.2);
 \end{tikzpicture}
-\end{center}
+\end{image}
 
 We are ready to remove the $4$ individual blocks with our big red lines.
 
-\begin{center}
+\begin{image}
 \begin{tikzpicture}
 \foreach \x in {0, 1.2, 2.4, 3.6} \draw[thick, step=0.1] (\x,0) grid (\x+1, 1);
 \foreach \x in {4.8, 5, 5.2, 5.4, 5.6, 5.8, 6, 6.2, 6.4, 6.6, 6.8, 7} \draw[thick, step=0.1] (\x, 0) grid (\x+0.101, 1);
@@ -373,7 +373,7 @@ We are ready to remove the $4$ individual blocks with our big red lines.
 	\foreach \a in {7.2, 7.4} 
 		\draw[ultra thick, red] (\a-0.1, \b-0.1)--(\a+0.1, \b+0.1);
 \end{tikzpicture}
-\end{center}
+\end{image}
 
 Now that we are done removing things, we find the answer by counting the remaining amount. We see that we still have $\answer[given]{2}$ superbundles, $\answer[given]{4}$ bundles, and $\answer[given]{6}$ individual blocks, which means that the answer  $5.3 - 2.84$ can also be written as $\answer[given]{2.46}$. In other words, Raina will need to make $2.46$ liters of regular lemonade.
 
