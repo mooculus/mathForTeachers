@@ -43,7 +43,7 @@ $\angle B \simeq \angle C$ & CPCTC \\ \hline
 
 Don't worry: we're not planning to make this kind of proof in this class unless you want to. And we don't expect you to be able to decode everything in the proof above right now. 
 
-But perhaps you can see my point about geometry's bad reputation. Besides the alphabet soup of letters that makes this tough to decipher, why would we even make one of these in the first place? And once we've made one of them, why continue making them for a whole host of other statements? What even is a proof, anyway, and why would anyone want one?
+But perhaps you can see my point about geometry's bad reputation. The example above is actually a very nice example of a particular class of proofs, but this version is hard to understand.  Besides the alphabet soup of letters that makes this tough to decipher, why would we even make one of these in the first place? And once we've made one of them, why continue making them for a whole host of other statements? What even is a proof, anyway, and why would anyone want one? 
 
 I'm glad you asked!
 
@@ -55,7 +55,36 @@ This should hopefully feel a little familiar, even if the terminology is strange
 
 Turning to an example you might have seen before in a math class, let's look at the following.
 \begin{example}
-We could make a statement like ``$14$ is an even number'', and while you probably don't need much convincing to believe this statement, we can still explain why it's true. We might start by saying that an even number is a number that's divisible by $\answer[given]{2}$ with no remainder, and then apply that definition to this case. We could say that $14$ divided by $2$ is $\answer[given]{7}$ with no remainder, so 14 satisfies our definition of an even number, and so our statement is true. The statement is a theorem, and our argument is its proof. If you felt like it, you could even organize this proof into two columns like the one above.
+We could make a statement like ``the sum of two odd numbers is an even number''. Since this is a statement about any two odd numbers, we can't really just try some examples to see whether not this statement is true. We need a more general argument. We might start by saying that an even number is a number that's divisible by $\answer[given]{2}$ with no remainder, and an odd number is a number that's divisible by $2$ with a remainder of $\answer[given]{1}$.  If we apply these definitions to this particular case, we start with two different odd numbers. Each of them can be arranged into groups of $2$ with one remainder. We can draw an example of adding two odd numbers together. We will have a collection of dots organized into groups of $2$ with one leftover, and another collection of dots organized into groups of $2$ with one left over. These two numbers don't have to be the same size, and we will use some dots in the middle of the groups of two to indicate that there could be any number of these groups.
+\begin{image}
+\begin{tikzpicture}
+\foreach \x in {0, 1, 2, 4, 5, 6} \foreach \y in {0, 1} \draw[fill=pink] (\x, \y) circle (3pt);
+\foreach \x in {10, 12} \foreach \y in {0, 1} \draw[fill=violet] (\x, \y) circle (3pt);
+\draw[fill=pink] (7,0) circle (3pt);
+\draw[fill=violet] (9,1) circle (3pt);
+\node at (8, 0.5) {$+$};
+\node at (3, 0.5) {$\dots$};
+\node at (11, 0.5) {$\dots$};
+\end{tikzpicture}
+\end{image}
+If we combine together the leftover objects into another group of $2$, we have made groups of $2$ with $\answer[given]{0}$ leftovers, meaning the sum of these two numbers is even because it satisfies our definition of an even number. We'll show circles around the original groups of two, and another circle around the two extra objects making another group of $2$.
+\begin{image}
+\begin{tikzpicture}
+\foreach \x in {0, 1, 2, 4, 5, 6} \foreach \y in {0, 1} \draw[fill=pink] (\x, \y) circle (3pt);
+\foreach \x in {10, 12} \foreach \y in {0, 1} \draw[fill=violet] (\x, \y) circle (3pt);
+\draw[fill=pink] (7,0) circle (3pt);
+\draw[fill=violet] (9,1) circle (3pt);
+\node at (8, 0.5) {$+$};
+\node at (3, 0.5) {$\dots$};
+\node at (11, 0.5) {$\dots$};
+\foreach \x in {0, 1, 2, 4, 5, 6, 10, 12} \draw (\x, 0.5) ellipse (0.25cm and 0.75cm);
+\begin{scope}[shift={(8, 0.5)}]
+\draw[rotate=120] (0,0) ellipse (0.3cm and 1.35cm);
+\end{scope}
+\end{tikzpicture}
+\end{image}
+
+The statement is a theorem, and our argument is its proof. If you felt like it, you could even organize this proof into two columns like the one above.
 \end{example}
 
 The previous proof was pretty simple, but I hope you can now imagine many more complicated theorems that you have already stated in your mathematics education, and perhaps you've even proven some of them. The two-column proof above is a way of organizing a proof whose goal is to remind you that while you are making your proof, you need to give a justification for every step you take. In other words, after every sentence you write, you should ask yourself ``why?'' and then be sure that the ``why'' is included in your proof.
@@ -66,7 +95,7 @@ The previous proof was pretty simple, but I hope you can now imagine many more c
  
 \emph{Proof allows mathematics to build on itself.} Once a theorem is known without a doubt, we can use it to prove other theorems and to build more mathematics. Mathematicians are still extending the reach of mathematical knowledge today, building off of what past mathematicians have proven.
  
- Finally, \emph{proof is beautiful}. Proof shows us how the world works. We can find connections in places we never expected. We can be surprised by how changing tiny details can make a big difference in an outcome. We can be delighted in the certainty of knowing things. We can be proud of our accomplishments when we finish a tough argument. I hope that you will catch at least a glimpse of the beauty of proof in this course!
+ Finally, \emph{proof can be beautiful}. Proof shows us how the world works. We can find connections in places we never expected. We can be surprised by how changing tiny details can make a big difference in an outcome. We can be delighted in the certainty of knowing things. We can refine our proofs over time to make the main ideas more clear and concise. We can be proud of our accomplishments when we finish a tough argument.  I hope that you will catch at least a glimpse of the beauty of proof in this course!
 
 
 \section{Proof in this class}
