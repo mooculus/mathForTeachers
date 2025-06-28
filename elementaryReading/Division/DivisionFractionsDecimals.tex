@@ -1,0 +1,312 @@
+\documentclass{ximera}
+
+\input{../preamble.tex}
+
+
+\title{Division, fractions, and decimals}
+\author{Jenny Sheldon}
+
+\begin{document}
+
+\begin{abstract}
+We connect ideas we've discussed separately.
+\end{abstract}
+\maketitle
+
+\section{Activities for this section:} Fractions and decimals
+
+\section{Division and fractions}
+
+You may have noticed that we have so far written division problems like this.
+\[
+18 \div 6
+\]
+But you might also recall having seen division problems written like this.
+\[
+18 / 6
+\]
+And that notation is really the same as writing division like this.
+\[
+\frac{18}{6}
+\]
+However, this last notation is the same thing that we have used for fractions, but we have a different definition for fractions than we do for division. While this might seem confusing at first, we aren't in as much trouble as we might think, because the answer to the division problem $18 \div 6$ is actually the fraction $\frac{18}{6}$. Let's see if we can make this make more sense with an example.
+
+\begin{example}
+Consider the following story problem. 
+
+\emph{Manuel has $18$ slices of pizza left over from a party, and he wants to put these slices equally into leftover containers so that he can eat pizza every day for the next $6$ days. How many slices should Manuel place in each container?}
+
+First, we want to see that this is a division problem, so that it can be solved by $18 \div 6$. Next, we want to solve it with a picture to see that the answer is $\frac{18}{6}$. 
+
+To see that this is a division problem, we need to identify our groups and objects per group as well as the type of division. Manuel is going to place the pizza into the leftover containers, but then he will eat one container per day. In other words, the containers are really representing the days, so it makes sense to take one group as one \wordChoice{\choice{pizza} \choice{pizza slice} \choice{leftover container} \choice[correct]{day}}.  The objects going into the containers are most specifically described as slices of pizza, so we will take one object to be one \wordChoice{\choice{pizza} \choice[correct]{pizza slice} \choice{day of the week} \choice{leftover container}}. We know that we have a total of $\answer[given]{18}$ pizza slices, which is our total number of objects. We also know that there are $\answer[given]{6}$ days on which Manuel wants to eat pizza, and this is our number of groups. The piece of information we don't know is how many slices per day or in other words \wordChoice{\choice{how many groups} \choice[correct]{how many in each group} \choice{this is a multiplication problem}}. We can write this using our definition of multiplication as follows.
+
+\begin{image}
+\begin{tikzpicture}
+\node at (0, 0) {$6$};
+\node at (0.5, 0) {$\times$};
+\node at (1, 0) {$?$};
+\node at (1.5, 0) {$=$};
+\node at (2, 0) {$18$};
+\node at (-0.75, -1) {\# of };
+\node at (-0.75, -1.35) {days}; 
+\node at (1,-1) {\# of slices};
+\node at (1, -1.35) { per day}; 
+\node at (2.8, -1) {total};
+\node at (2.8, -1.35) {slices};
+\draw[->] (-0.75, -0.75)--(0, -0.25);
+\draw[->] (1, -0.75)--(1, -0.25);
+\draw[->] (2.75, -0.75)--(2, -0.25);
+\end{tikzpicture}
+\end{image}
+
+In other words, this is a how many in each group division story for $18 \div 6$. This expression represents the answer to this division problem in the same way that something like $2 \times 5$ represents the answer to a multiplication problem or $4+9$ represents the answer to an addition problem. We often simplify the answer $18 \div 6$ as the whole number $\answer[given]{3}$, but we don't actually want to think about it that way in this particular case.
+
+Next, let's draw a picture to solve this problem. We'll start by drawing the $18$ slices of pizza as $18$ rectangles.
+\begin{image}
+\begin{tikzpicture}
+\foreach \y in {0, 1, 2} \foreach \x in {0, 1, 2, 3, 4, 5} \draw (\x, \y) rectangle (\x+0.75, \y+0.5);
+\end{tikzpicture}
+\end{image}
+
+Next, we know that there are $6$ days on which Manuel wants to eat pizza, so we want to pass out all of this pizza into the containers. However, we're going to do this in a bit of a strange way: we're going to start by cutting each of the pieces of pizza into $6$ equal slices. Here is what one slice will look like.
+\begin{image}
+\begin{tikzpicture}
+\draw[thick] (0,0)rectangle (6,4);
+\foreach \x in {1, 2, 3, 4, 5} \draw[thick, dotted] (\x, 0)--(\x, 4);
+\end{tikzpicture}
+\end{image}
+
+Here is what all the slices will look like after they are cut.
+
+\begin{image}
+\begin{tikzpicture}
+\foreach \y in {0, 1, 2} \foreach \x in {0, 1, 2, 3, 4, 5} \draw (\x, \y) rectangle (\x+0.75, \y+0.5);
+\foreach \y in {0, 1, 2}
+	\foreach \x in {0.125, 0.25, 0.375, 0.5, 0.625, 1.125, 1.25, 1.375, 1.5, 1.625, 2.125, 2.25, 2.375, 2.5, 2.625, 3.125, 3.25, 3.375, 3.5, 3.625, 4.125, 4.25, 4.375, 4.5, 4.625, 5.125, 5.25, 5.375, 5.5, 5.625}
+		\draw[thick, dotted] (\x, \y)--(\x, \y+0.5);
+\end{tikzpicture}
+\end{image}
+
+This seems odd, but perhaps each of these $18$ slices is a different type of pizza, and Manuel wants to make sure he is eating all of the types of pizza every day. In this case, we want to give each leftover container one of the pieces from each slice. Looking back again at the single slice, we might label the slices according to which day they are eaten like so.
+
+\begin{image}
+\begin{tikzpicture}
+\draw[thick] (0,0)rectangle (6,4);
+\foreach \x in {1, 2, 3, 4, 5} \draw[thick, dotted] (\x, 0)--(\x, 4);
+\foreach \x in {1, 2, 3, 4, 5, 6} \node at (\x-0.5, 2) {$\x$};
+\end{tikzpicture}
+\end{image}
+All of the slices would get labeled this way. Let's look just at the portion that's labeled $1$ since it gets eaten on day $1$. The whole here is the whole for our answer, or one object, which is one slice of pizza. The slice is cut into $\answer[given]{6}$ equal small pieces, and the small piece for day $1$ is one of the small pieces, so this small piece is $\answer[given]{\frac{1}{6}}$ of a slice of pizza. This small piece goes into the container for day $1$ along with all of the other day $1$ small pieces, each of which is $\frac{1}{6}$ of a slice of pizza. In total the day $1$ container will have $\answer[given]{18}$ small pieces, each of which is $\frac{1}{6}$ of a slice of pizza, so according to our definition of fractions the container for day $1$ has $\frac{18}{6}$ of a slice of pizza in it. Each of the other containers will have the same amount of pizza in it since they are all equal, so the answer to $18 \div 6$ is $\frac{18}{6}$ or in other words
+\[
+18 \div 6 = \frac{18}{6}.
+\]
+
+\end{example}
+
+In other words, we have shown in this example that when we divide, we can also write our answer as a fraction, or that it makes sense to use the same notation for both ideas, since both of them are the answer to the same division problem. Let's keep exploring this idea, but now also include decimals in our thinking.
+
+
+
+\section{Fractions and decimals}
+
+Another thing you might have noticed is that we use the same language to describe $\frac{1}{10}$ and $0.1$. Both of them are called ``one tenth'', but we defined them differently. Let's see how these ideas are actually the same thing.
+
+\begin{example}
+Explain why $\frac{1}{10}$ and $0.1$ are the same value. 
+
+We will start by drawing a whole which also has the value $1$.
+\begin{image}
+\begin{tikzpicture}
+\draw[thick] (0,0) rectangle (10,1);
+\node[below] at (5,0) {one unit};
+\end{tikzpicture}
+\end{image}
+
+To find $\frac{1}{10}$ of this whole, we need to cut it into $\answer[given]{10}$ equal pieces, based on the meaning of the denominator, and then shade $\answer[given]{1}$ pieces, based on the meaning of the numerator. Let's do that in our picture.
+\begin{image}
+\begin{tikzpicture}
+\draw[fill=pink] (0,0) rectangle (1,1);
+\draw[thick] (0,0) rectangle (10,1);
+\node[below] at (5,0) {one unit};
+\foreach \x in {1, 2, ..., 9} \draw[thick] (\x, 0)--(\x, 1);
+\end{tikzpicture}
+\end{image}
+Using our definition of fractions, this shaded piece is $\frac{1}{10}$ of the whole. But what if we thought about this using bundling? We started with one unit, and then unbundled it into $\answer[given]{10}$ equal sections. By definition, each section has the value $\answer[given]{0.1}$ because when we unbundle, we move one place value right.
+
+In other words, this shaded region is $\frac{1}{10}$ of the unit, and its value is also $0.1$. Since it's the same shaded region, these values must be equal.
+\[
+\frac{1}{10} = 0.1
+\]
+\end{example}
+
+Similarly, we could unbundle each of the $0.1$-sized pieces, meaning that the new, smaller pieces would each have the value $0.01$. But unbundling each of the $10$ equal pieces into $10$ more equal pieces would mean that our whole is split into $100$ equal pieces, or that each piece is worth $\frac{1}{100}$. In this way we can see that 
+\[
+\frac{1}{100} = 0.01.
+\]
+This process could continue as long as we like. 
+\begin{question}
+Using thinking like we just described, what are the decimal values of the fractions below?
+
+\begin{itemize}
+	\item $\frac{1}{1000} = \answer{0.001}$
+	\item $\frac{1}{10000} = \answer{0.0001}$
+	\item $\frac{1}{100000} = \answer{0.00001}$
+\end{itemize}
+\end{question}
+
+We can use this connection between fractions and decimals to write other fractions as decimals as well.
+
+\begin{example}
+Write $\frac{9}{20}$ as a decimal. 
+
+Since we want to use one of the facts above, we want to change this fraction into an equivalent fraction whose denominator is $10$, $100$, $1000$, or some other power of $10$. We know that $20 \times \answer[given]{5} = 100$, so we can make an equivalent fraction with denominator $100$ in this case. We have
+\[
+\frac{9}{20} = \frac{\answer[given]{45}}{100}.
+\]
+Now, we know that $\frac{1}{100} = \answer[given]{0.01}$ as a decimal, and that according to our meaning of fractions $\frac{45}{100}$ is $45$ pieces, each of size $\frac{1}{100}$. This means that $\frac{45}{100}$ is also $45$ pieces, each of size $\answer[given]{0.01}$ as a decimal. We can think about this as $45$ individual blocks, each of value $0.01$. These $45$ blocks could be organized into $\answer[given]{4}$ bundles and $\answer[given]{5}$ individual blocks, and so the total value of all of these blocks would be $\answer[given]{0.45}$. In other words, 
+\[
+\frac{9}{20} = 0.45
+\]
+as a decimal.
+\end{example}
+
+The previous example shows us that if we can make an equivalent fraction whose denominator is a power of $10$, we can write the fraction as a decimal by looking at the numerator of that fraction. Decimals like this one, which can be written as a fraction whose denominator is a power of $10$ and whose decimal values stop at some place value, are called \dfn{terminating decimals}. 
+
+\begin{question}
+Using the strategy of the example above, what is the decimal equivalent of the fraction $\frac{5}{8}$?
+
+\begin{prompt}
+$\answer{0.625}$
+\end{prompt}
+\end{question}
+
+
+\begin{question}
+Using a strategy similar to the one above, how would you write the decimal $0.735$ as a fraction?
+
+\begin{prompt}
+$\frac{\answer{735}}{1000}$
+\end{prompt}
+\end{question}
+
+
+We also have another class of decimals called \dfn{repeating decimals}, where the decimal does not stop at any place value, but repeats over and over in a pattern. For example, the decimal number
+\[
+4.36\overline{25}
+\]
+could also be written as
+\[
+4.36252525252525\dots
+\]
+Where the $2$ and $5$ repeat forever. We draw a line over the repeating part of the decimal so that we know it's the part that repeats.
+
+Repeating decimals cannot be written as a fraction whose denominator is a power of 10, so we cannot use the strategy of the example above to find these decimal numbers. However, we can use the connection between division and fractions to help us.
+
+\begin{example}
+Use the connection between division and fractions to write $\frac{5}{9}$ as a decimal. 
+
+We know that the fraction $\frac{5}{9}$ can be written as the answer to the division problem $5 \div 9$. So, if we calculate the answer to the division problem $5 \div 9$ by using long division, this answer will be equal to the fraction $\frac{5}{9}$. Let's write down the first few steps in the long division.
+
+\begin{image}
+\begin{tikzpicture}[font=\large, every node/.style={inner sep=0pt, outer sep=1pt}]
+
+% Long division symbol
+\draw[thick] (0.8,1.9) -- (3,1.9);
+
+% Dividend and Divisor
+\node at (0.5,1.6) {$9$};
+\node at (0.85,1.6) {\,\big)};
+\node at (1.2, 1.6) { $5$};
+\node at (1.4, 1.5) {$.$};
+\node at (1.7, 1.6) {$0$};
+\node at (2.2, 1.6) {$0$};
+
+\node at (2.7, 1.6) {$0$};
+
+% Quotient
+\node at (1.2,2.3) {$0$};
+\node at (1.4,2.2) {$.$};
+\node at (1.7,2.3) {$5$};
+\node at (2.2,2.3) {$5$};
+\node at (2.7, 2.3) {$5$};
+
+
+
+% First subtraction step
+\node at (1.2,1.1) {$4$};
+\node at (1.7,1.1) {$5$};
+\draw (1,0.9) -- (2.2,0.9);
+\node at (1.7,0.6) {$5$};
+\node at (2.2,0.6) {$0$};
+
+% Bring down arrow for the 8
+\draw[->, thick] (2.2,1.4) -- (2.2,1.0);
+\draw[->, thick] (2.7, 1.4)--(2.7, 0);
+%\node at (2.9,1.3) {↓};
+
+% Second subtraction step
+\node at (1.7,0.1) {$4$};
+\node at (2.2,0.1) {$5$};
+\draw (1.6,-0.1) -- (2.8,-0.1);
+\node at (2.2,-0.4) {$5$};
+\node at (2.7, -0.4) {$0$};
+
+\end{tikzpicture}
+\end{image}
+As we work through this long division, we can keep placing more zeroes on the end of $5.0$ because we will never see a remainder of zero, no matter how many steps we take. However, we do see a pattern here: every time we subtract, our remainder is $5$, and then we drop down a zero next to that and divide $50$ by $9$ to continue. We'll get another remainder of $5$, drop down another zero, and this pattern will continue forever. So we can see that the answer to $5 \div 9$ is $0.\overline{5}$ or in other words that
+\[
+\frac{5}{9} = 0.\overline{\answer[given]{5}}
+\]
+as a decimal.
+\end{example}
+
+We found the pattern very quickly in this case, but sometimes the pattern can take longer to find.
+\begin{question}
+Using long division, what is the decimal equivalent of $\frac{2}{7}$?
+
+\begin{prompt}
+$0.\overline{\answer{285714}}$
+\end{prompt}
+\end{question}
+
+The numbers we have been considering are decimals which can also be written as fractions. Any number which can also be written in the form $\frac{A}{B}$ for integers $A$ and $B$ is called a \dfn{rational number}. (Notice again we said integers, so you can think about this as whole numbers for now.)
+\begin{question}
+Which of the following are rational numbers? Select all that apply.
+\begin{selectAll}
+\choice[correct]{$6$}
+\choice[correct]{$\frac{8}{327}$}
+\choice[correct]{$0.0472$}
+\end{selectAll}
+\begin{hint}
+Remember that the number can be placed in the form $\frac{A}{B}$, it does not have to look like that right now!
+\end{hint}
+\end{question}
+The previous question might give you the impression that every number is a rational number, but in fact that's not true. There are many numbers that cannot be written as fractions, no matter how hard we try. For example, the number $\pi$ or the number $\sqrt{2}$ are good examples to keep in mind. These numbers, which cannot be written as fractions, are called \dfn{irrational numbers}. (If you are interested in a proof that $\sqrt{2}$ is irrational, you can find one \link[online]{https://www.mathsisfun.com/numbers/euclid-square-root-2-irrational.html}.)
+
+These connections between division, fractions, and decimals allow us to ask and answer many interesting questions about numbers. (In fact, there is an entire branch of mathematics called ``number theory'' where mathematicians ask and answer questions about numbers!) If this sounds interesting, try out some of the following puzzles!
+
+\begin{itemize}
+	\item How can we predict what power of $10$ we will need to write a terminating decimal?
+	\item How can we predict whether a fraction's decimal will terminate or repeat?
+	\item How can we predict how many long division steps we need to take before a repeating decimal will repeat?
+	\item How can we write down a number we know will be irrational?
+\end{itemize}
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}
+
+
+
+
+
+
