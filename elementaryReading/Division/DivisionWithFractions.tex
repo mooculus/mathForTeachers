@@ -1,0 +1,286 @@
+\documentclass{ximera}
+
+\input{../preamble.tex}
+
+
+\title{Division with fractions}
+\author{Jenny Sheldon}
+
+\begin{document}
+
+\begin{abstract}
+We explore how to divide fractions.
+\end{abstract}
+\maketitle
+
+\section{Activities for this section:} 6M, 6R
+
+\section{Dividing fractions with how many groups}
+
+So far, we have worked on dividing whole numbers and decimals. It's time to turn our attention to fractions. Let's start with a how many groups example.
+
+\begin{example}
+Consider the following story problem. 
+
+\emph{Min is arranging her bead collection into jars. She knows that each jar will hold $\frac{2}{5}$ of a gram of a particular size of beads. If Min has a total of $\frac{8}{3}$ of a gram of this particular size of beads, how many of the jars will she need (including fractional jars if the last one isn't full)?}
+
+We will explain why this is a division problem, then solve it with a picture. To explain why this is a division problem, we need to identify our groups and objects. Since the beads are going into jars, it makes sense to use one group as one \wordChoice{\choice[correct]{jar} \choice{bead} \choice{gram} \choice{collection}} and one object as one \wordChoice{\choice{jar} \choice{bead} \choice[correct]{gram} \choice{collection}}. Notice that the unit for the beads is how many grams Min has, not how many beads she has! Next we'll consider the numbers in the problem. The fraction $\frac{2}{5}$ of a gram is measuring \wordChoice{\choice{the number of groups} \choice[correct]{the number of objects in one full group} \choice{the total number of objects}} because it is the number of grams in one full jar. The fraction $\frac{8}{3}$ of a gram is measuring \wordChoice{\choice{the number of groups} \choice{the number of objects in one full group} \choice[correct]{the total number of objects}} because it is the total amount of grams of beads that Min has. In other words, we can fit this problem into our definition of multiplication like so.
+
+\begin{image}
+\begin{tikzpicture}
+\node at (0, 0) {$?$};
+\node at (0.5, 0) {$\times$};
+\node at (1, 0) {$\frac{2}{5}$};
+\node at (1.5, 0) {$=$};
+\node at (2, 0) {$\frac{8}{3}$};
+\node at (-0.75, -1) {\# of };
+\node at (-0.75, -1.35) {days}; 
+\node at (1,-1) {\# of slices};
+\node at (1, -1.35) { per day}; 
+\node at (2.8, -1) {total};
+\node at (2.8, -1.35) {slices};
+\draw[->] (-0.75, -0.75)--(0, -0.25);
+\draw[->] (1, -0.75)--(1, -0.4);
+\draw[->] (2.75, -0.75)--(2, -0.4);
+\end{tikzpicture}
+\end{image}
+In other words, this is a  how many groups division story for $\frac{8}{3} \div \frac{2}{5}$. We have solved how many groups problems in the past by starting with drawing all of the objects and then making sections for each group. Let's start the same way by drawing the $\frac{8}{3}$ of a gram of beads that Min has.
+
+\begin{image}
+\begin{tikzpicture}
+	\draw[thick, fill=yellow] (0,0) rectangle (3,2);
+	\draw[thick, fill=yellow] (4,0) rectangle (7,2);
+	\draw[thick, fill=yellow] (8,0) rectangle (10,2);
+	\draw[thick] (10,0)--(11,0)--(11,2)--(10,2);
+	\foreach \x in {1, 2, 5, 6, 9} \draw[thick] (\x, 0)--(\x, 2);
+	\node[below] at (1.5, 0) {one gram};
+	\draw[<->] (0,2.2)--(0, 2.4)--(10, 2.4)--(10, 2.2);
+	\node[above] at (5, 2.4) {all of Min's beads};
+\end{tikzpicture}
+\end{image}
+In this picture, we want to circle groups of $\frac{2}{5}$ of a gram. Right now this is difficult because each gram is split into $3$ equal pieces, not $5$. If we split each of the three equal pieces into $5$ equal pieces, the entire gram will be split into $\answer[given]{15}$ equal pieces, and then we can rewrite our $\frac{2}{5}$ of a gram as $\frac{\answer[given]{6}}{15}$ of a gram. Let's cut the pieces in our picture.
+\begin{image}
+\begin{tikzpicture}
+	\draw[thick, fill=yellow] (0,0) rectangle (3,2);
+	\draw[thick, fill=yellow] (4,0) rectangle (7,2);
+	\draw[thick, fill=yellow] (8,0) rectangle (10,2);
+	\draw[thick] (10,0)--(11,0)--(11,2)--(10,2);
+	\foreach \x in {0.2, 0.4, ..., 2.8, 4.2, 4.4, ..., 6.8, 8.2, 8.4, ..., 10.8} \draw[thick, dashed] (\x, 0)--(\x, 2);
+	\foreach \x in {1, 2, 5, 6, 9} \draw[thick] (\x, 0)--(\x, 2);
+	\node[below] at (1.5, 0) {one gram};
+	\draw[<->] (0,2.2)--(0, 2.4)--(10, 2.4)--(10, 2.2);
+	\node[above] at (5, 2.4) {all of Min's beads};
+\end{tikzpicture}
+\end{image}
+Next, we can section this off $6$ pieces at a time, since $\frac{6}{15}$ of a gram fills one jar. We will do this below with different colors, but if the colors are hard to see you can reason using the fact that there are a total of $40$ pieces each sized $\frac{1}{15}$ of a gram in our total $\frac{8}{3}$ of a gram.
+
+\begin{image}
+\begin{tikzpicture}
+	\draw[thick] (0,0) rectangle (3,2);
+	\draw[thick] (4,0) rectangle (7,2);
+	\draw[thick] (8,0) rectangle (10,2);
+	\draw[fill={rgb,255: red,185; green, 225; blue, 146}] (0,0) rectangle (1.2, 2);
+	\draw[fill={rgb,255: red,207; green, 235; blue, 182}] (1.2,0) rectangle (2.4,2);
+	\draw[fill={rgb,255: red,179; green, 199; blue, 247}] (2.4,0) rectangle (3,2);
+	\draw[fill={rgb,255: red,179; green, 199; blue, 247}] (4,0) rectangle (4.6,2);
+	\draw[fill={rgb,255: red,248; green, 184; blue, 208}] (4.6,0) rectangle (5.8,2);
+	\draw[fill={rgb,255: red,241; green, 148; blue, 184}] (5.8,0) rectangle (7,2);
+	\draw[fill={rgb,255: red,252; green, 201; blue, 181}] (8,0) rectangle (9.2,2);
+	\draw[fill=yellow] (9.2,0) rectangle (10,2);
+	\draw[thick] (10,0)--(11,0)--(11,2)--(10,2);
+	\foreach \x in {0.2, 0.4, ..., 2.8, 4.2, 4.4, ..., 6.8, 8.2, 8.4, ..., 10.8} \draw[thick, dashed] (\x, 0)--(\x, 2);
+	%\foreach \x in {1, 2, 5, 6, 9} \draw[thick] (\x, 0)--(\x, 2);
+	\node[below] at (1.5, 0) {one gram};
+	\node[above] at (0.6, 2) {$1$};
+	\node[above] at (1.8, 2) {$2$};
+	\node[above] at (3.5, 2) {$3$};
+	\node[above] at (5.2, 2) {$4$};
+	\node[above] at (6.4, 2) {$5$};
+	\node[above] at (8.6, 2) {$6$};
+	\node[above] at (9.6,2) {$?$};
+\end{tikzpicture}
+\end{image}
+So far, we have made $\answer[given]{6}$ full groups, and there are $\answer[given]{4}$ small pieces left that we haven't placed into a group. Let's look at those last four pieces as a fraction of one whole group. Notice that we've changed the whole from the gram to the jar!
+\begin{image}
+\begin{tikzpicture}
+\draw[thick, dashed, fill=yellow] (0,0) rectangle (0.8, 2);
+\draw[thick] (0,0) rectangle (1.2,2);
+\foreach \x in {0.2, 0.4, 0.6, 0.8, 1} \draw[thick, dashed] (\x, 0)--(\x, 2);
+\node[below] at (0.6, 0) {one jar};
+\end{tikzpicture}
+\end{image}
+This jar is cut into $\answer[given]{6}$ equal pieces, and we have shaded $\answer[given]{4}$ of those pieces. In other words, this last jar is $\frac{4}{6}$ full. This means that our final answer is that Min can fill
+\[
+\answer[given]{6} + \frac{\answer[given]{4}}{6} \textrm{ jars.}
+\]
+Notice that we could have written this answer as $\frac{40}{6}$ jars: the jar is cut into $\answer[given]{6}$ equal pieces, and the original yellow shading representing all of Min's beads was made up of $\answer[given]{40}$ pieces, each size $\frac{1}{6}$ of a jar. And of course $\frac{40}{6}$ is equivalent to $6 \frac{4}{6}$ as a mixed number.
+
+
+\end{example}
+
+Solving this division problem with a picture is something we could have done at the beginning of the semester based only on our meaning of fractions and drawing a good picture. This is a lot like when we solved fraction multiplication problems. Explaining what operation we are seeing in the story, or identifying the structure of the problem, is a separate from solving it. It's good to keep our work with fraction multiplication in the back of your mind as we work through problems in this section!
+
+\section{Dividing fractions with how many in each group}
+
+Next, let's see how we could solve a how many in each group fraction division story.
+
+\begin{example}
+Consider the following story problem.
+
+\emph{Oliver is $\frac{5}{6}$ of the way done with his chores for today, and he has been working on his chores for $\frac{2}{3}$ of an hour. If he continues at this steady pace, how many hours will it take for Oliver to complete his chores?} 
+
+Let's explain why this is a division story, and then solve it with a picture. First, we need to identify our groups and objects per group. The question in this story is asking how many hours it will take for Oliver to complete his daily chores, and we can rephrase this as asking how many hours in one day Oliver will work on chores, or how many hours per day Oliver will work on chores. This combined unit of ``hours per day'' sounds a lot like ``objects per group'', so let's take one group to be one \wordChoice{\choice{Oliver} \choice{chore} \choice{hour} \choice[correct]{day}} and one object to be one  \wordChoice{\choice{Oliver} \choice{chore} \choice[correct]{hour} \choice[correct]{day}}. Now, let's look at the numbers in the problem. The fraction $\frac{5}{6}$ of the way done with his chores represents the number of \wordChoice{\choice[correct]{groups} \choice{objects in one group} \choice{total objects}} because this is the amount of days Oliver has already been working. (Even though he doesn't work the full day, we are using the day to represent ``all of the chores in one day''.) The fraction $\frac{2}{3}$ of an hour represents the number of \wordChoice{\choice{groups} \choice{objects in one group} \choice[correct]{total objects}} because this is the total number of hours that Oliver has been working already. Notice that the answer should be bigger than this number, since Oliver hasn't worked the full day yet. We can fit this into our definition of multiplication as follows.
+
+\begin{image}
+\begin{tikzpicture}
+\node at (0, 0) {$\frac{5}{6}$};
+\node at (0.5, 0) {$\times$};
+\node at (1, 0) {$?$};
+\node at (1.5, 0) {$=$};
+\node at (2, 0) {$\frac{2}{3}$};
+\node at (-0.75, -1) {\# of };
+\node at (-0.75, -1.35) {days}; 
+\node at (1,-1) {\# of hour};
+\node at (1, -1.35) { per day}; 
+\node at (2.8, -1) {total};
+\node at (2.8, -1.35) {hours};
+\draw[->] (-0.75, -0.75)--(0, -0.4);
+\draw[->] (1, -0.75)--(1, -0.4);
+\draw[->] (2.75, -0.75)--(2, -0.4);
+\end{tikzpicture}
+\end{image}
+It's very important with fraction division problems to think about the number of objects in each group as the number of objects in one full group, since the total number of objects could be larger or smaller than this number. Using our meaning of division, we see that this story is a how many in each group division problem for $\frac{2}{3} \div \frac{5}{6}$. Let's solve this with a picture.
+
+In other how many in each group pictures, we have started by drawing the total number of objects and passing them out to the groups that we have. We could do that here, but since we don't have even one full group this might be a little bit more tricky. Instead, let's think about how we can ``fill up'' our full group with objects. The one thing we know from the problem is that $\frac{5}{6}$ of a day and $\frac{2}{3}$ of an hour represent the same thing, so these need to occupy the same space in our drawing. 
+\begin{image}
+\begin{tikzpicture}
+\draw[thick, fill=lime] (0,0) rectangle (5, 2);
+\node[below] at (2.5, 0) {$\frac{5}{6}$ of a day};
+\node[above] at (2.5, 2) {$\frac{2}{3}$ of an hour};
+\end{tikzpicture}
+\end{image}
+Notice that this shaded region is not one full hour or one full day, so we don't want to cut it into $6$ equal pieces or into $3$ equal pieces. Since this is the shaded region for both fractions, it has to represent the part of the fraction, not the whole, and we need to cut it according to the numerator, not the denominator. But which fraction do we want to use? There are many ways to solve this problem, and we will see several others when we encourage you to use your creativity in class. For now, let's remember that we are trying to fill up one group and we know that this shaded region represents $\answer[given]{\frac{5}{6}}$ of one group, so let's cut the shaded region into $5$ equal pieces and then add on a sixth unshaded piece so that we can see one full group.
+\begin{image}
+\begin{tikzpicture}
+\draw[thick, fill=lime] (0,0) rectangle (5, 2);
+\draw[thick] (0,0) rectangle (6,2);
+\foreach \x in {1, 2, 3, 4} \draw[thick] (\x, 0)--(\x, 2);
+\node[below] at (3, -0.4) {one day};
+\draw[<->] (0,-0.2)--(0, -0.4)--(6, -0.4)--(6, -0.2);
+\draw[<->] (0,2.2)--(0,2.4)--(5, 2.4)--(5, 2.2);
+\node[above] at (2.5, 2.4) {$\frac{2}{3}$ of an hour};
+\end{tikzpicture}
+\end{image}
+Now, we left the $\frac{2}{3}$ of an hour at the top of our picture, because we will need this information in order to solve the problem. The green shading is also the shading for $\frac{2}{3}$ of an hour, or it represents the $2$ pieces, each size $\frac{1}{3}$ of an hour. But the shading looks like $5$ pieces right now and so it's hard for us to see this as $\frac{2}{3}$ of an hour. If we rewrite $\frac{2}{3}$ of an hour as an equivalent fraction $\frac{10}{15}$ of an hour, we can see what is going on a little better. We chose $10$ as the new numerator because that represented cutting each of the $5$ existing pieces into $2$ pieces so that both numerators could easily be represented in the picture. Next, we want to find out how much of an hour goes in each of these five boxes. We have $5$ boxes (or groups) and $10$ pieces (or objects), each size $\frac{1}{15}$ of an hour, to distribute amongst these five boxes. We can pass them out one by one, or we can recognize this as a division problem for $10 \div 5$ and see that there should be $2$ pieces, each size $\frac{1}{15}$ of an hour, in each of the five sections. In other words, each of the five green boxes in our picture is worth $\answer[given]{\frac{2}{15}}$ of an hour. Let's mark that on the picture.
+\begin{image}
+\begin{tikzpicture}
+\draw[thick, fill=lime] (0,0) rectangle (5, 2);
+\draw[thick] (0,0) rectangle (6,2);
+\foreach \x in {1, 2, 3, 4} \draw[thick] (\x, 0)--(\x, 2);
+\node[below] at (3, -0.4) {one day};
+\draw[<->] (0,-0.2)--(0,-0.4)--(6, -0.4)--(6, -0.2);
+\draw[<->] (0,2.2)--(0,2.4)--(5, 2.4)--(5, 2.2);
+\node[above] at (2.5, 2.4) {$\frac{2}{3}$ of an hour};
+\foreach \x in {0.5, 1.5, 2.5, 3.5, 4.5} \node at (\x, 1.2) {$\frac{2}{15}$};
+\foreach \x in {0.5, 1.5, 2.5, 3.5, 4.5} \node at (\x, 0.5) {hr};
+\end{tikzpicture}
+\end{image}
+The last unshaded box must be the same size as the other boxes in the picture because the hour was cut into $6$ equal pieces, so it must also be worth $\frac{2}{15}$ of an hour. Let's add that to our picture.
+\begin{image}
+\begin{tikzpicture}
+\draw[thick, fill=lime] (0,0) rectangle (5, 2);
+\draw[thick] (0,0) rectangle (6,2);
+\foreach \x in {1, 2, 3, 4} \draw[thick] (\x, 0)--(\x, 2);
+\node[below] at (3, -0.4) {one day};
+\draw[<->] (0,-0.2)--(0,-0.4)--(6, -0.4)--(6, -0.2);
+\draw[<->] (0,2.2)--(0,2.4)--(5, 2.4)--(5, 2.2);
+\node[above] at (2.5, 2.4) {$\frac{2}{3}$ of an hour};
+\foreach \x in {0.5, 1.5, 2.5, 3.5, 4.5, 5.5} \node at (\x, 1.2) {$\frac{2}{15}$};
+\foreach \x in {0.5, 1.5, 2.5, 3.5, 4.5, 5.5} \node at (\x, 0.5) {hr};
+\end{tikzpicture}
+\end{image}
+Finally, to find how many hours fill up the entire day, we can count or add up the $6$ copies of $\frac{2}{15}$ of an hour and see that Oliver will spend
+\[
+\frac{\answer[given]{12}}{15} \textrm{ of an hour}
+\]
+on his chores today.
+\end{example}
+This method of solving this division problem is a little different than what we have done in the past. You can absolutely solve it in your own way using a different picture, but the key step in every picture is recognizing that the $\frac{2}{3}$ of an hour and the $\frac{5}{6}$ of one day have to be the same physical shaded region in the picture. The other key step is recognizing that we need to work with the numerators instead of with the denominators here, because we start with the shaded region instead of starting with the whole. Any time you solve a division problem like this one, it's good to go back and look at your explanation for these two key ideas.
+
+
+\begin{question}
+How can you distinguish how many groups fraction division stories from how many in each group fraction division stories?
+\begin{freeResponse}
+Write some advice for yourself here!
+\end{freeResponse}
+\end{question}
+
+
+\section{Fraction division algorithms}
+
+Most of the time, we don't want to draw a picture to solve a fraction division problem. We would like to have an algorithm to speed up our calculations. What is the algorithm for dividing fractions? Let's see an example where we calculate without drawing.
+\begin{example}
+Let's see how we can solve $\frac{2}{3} \div \frac{5}{6}$ using the fraction division algorithm. The first step is to flip over the second fraction, which in this case is $\frac{5}{6}$. It's important that this is the second fraction, not the first one, and flipping it over means exchanging the numerator and denominator. So $\frac{5}{6}$ turns into $\frac{6}{5}$. Some people call this \dfn{inverting} the fraction. The next step is to multiply the first fraction with the inverted second fraction. In other words, we calculate
+\[
+\frac{2}{3} \times \frac{6}{5}.
+\]
+Now, we can use the fraction multiplication algorithm, which says we multiply the numerators and multiply the denominators.
+\[
+\frac{2}{3} \times \frac{6}{5} = \frac{\answer[given]{2} \times 6}{3 \times \answer[given]{5}}
+\]
+We can simplify this as
+\[
+\frac{\answer[given]{12}}{15}
+\]
+to get our answer.
+\end{example}
+
+This algorithm is sometimes called ``invert and multiply'' because we invert the second fraction and then use fraction multiplication. Some teachers call this algorithm ``keep-change-flip'' because we keep the first fraction as it is, change the operation from division to multiplication, and flip or invert the second fraction. Why does this algorithm make sense with our meanings of multiplication, division, and fractions? Watch the next video for one explanation.
+
+\youtube{g2sSy3Bp2Ck}
+
+Another way to think about this algorithm involves using our connection between fractions and division. Remember that $A \div B$ is the same as $\frac{A}{B}$. Let's use this fact to look at $\frac{2}{3} \div \frac{5}{6}$ one more time.
+
+\begin{example}
+If we use our connection between fractions and division on $\frac{2}{3} \div \frac{5}{6}$, we can see that this division problem is the same as the fraction
+\[
+\frac{\frac23}{\frac56}.
+\]
+
+This fraction is hard to understand because we don't have a whole number in the denominator, so let's change that. Remember that we said we can make equivalent fractions by multiplying the numerator and the denominator by the same number, or 
+\[
+\frac{A}{B} = \frac{A \times N}{B \times N}.
+\]
+In this case, let's use $N = \frac{6}{5}$. We have
+\[
+\frac{\frac23}{\frac56} = \frac{\frac{2}{3} \times \frac{6}{5}}{\frac{5}{6} \times \frac{\answer[given]{6}}{\answer[given]{5}}}.
+\]
+Looking at the denominator we can see why we've done this: 
+\[
+\frac{5}{6} \times \frac{6}{5} = \answer[given]{1}.
+\]
+So our original fraction is now equal to
+\[
+\frac{\frac{2}{3} \times \frac{6}{5}}{\answer[given]{1}}.
+\]
+Coming back to our relationship between fractions and division, we can replace this fraction with a division problem.
+\[
+\frac{\frac{2}{3} \times \frac{6}{5}}{1} = \left ( \frac{2}{3} \times \frac{6}{5} \right ) \div \answer[given]{1}
+\]
+Anything divided by $1$ is the same as that number (can you use the meaning of division to show this?) so all together we see the following.
+\[
+\frac{2}{3} \div \frac{5}{6} = \frac{\frac23}{\frac56} = \frac{\frac{2}{3} \times \frac{6}{5}}{1} = \left ( \frac{2}{3} \times \frac{6}{5} \right ) \div 1 = \frac{2}{3} \times \frac{6}{5}
+\]
+That's the exact same thing we got from our invert and multiply procedure.
+\end{example}
+
+While this algebraic argument might feel more familiar to you than drawing pictures to explain why the fraction division algorithm makes sense, we encourage you to practice both. Children should be able to draw good pictures and notice patterns in their work well before they are ready to formalize things with the language of algebra, and being able to identify rules like ``invert and multiply'' in kids' pictures can be very powerful for their learning.
+
+
+\end{document}
+
+
+
+
+
+
