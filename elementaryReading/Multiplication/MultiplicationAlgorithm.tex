@@ -301,13 +301,16 @@ Looking back at our partial products algorithm, these are exactly the four produ
 
 \end{explanation}
 
-Notice one more thing about this algorithm before we move forward: the four products that we multiplied are exactly what we would have gotten if we split apart the $53$ and the $28$ into their place value parts and used the distributive property.
+Notice one more thing about this algorithm before we move forward: the four products that we multiplied are exactly what we would have gotten if we split apart the $53$ and the $28$ into their place value parts and used the distributive property several times.
 
-\[
-53 \times 28 = (50 + 3) \times (20 + 8) = 50 \times 20 + 50 \times 8 + 3 \times 20 + 3 \times 8
-\]
+\begin{align*}
+53 \times 28 &= (50 + 3) \times (20 + 8) \\
+& = (50+3) \times 20 + (50 + 3) \times 8) \\
+&= 50 \times 20 + 3 \times 20 + (50+3) \times 8 \\
+&= 50 \times 20 + 3 \times 20 + 50 \times 8 + 3 \times 8
+\end{align*}
 
-In other words, the partial products algorithm is just a fancy way to write down a version of the distributive property. 
+These calculations aren't in the same order that we did them in the algorithm, but the commutative property says that we can add these terms in any order. However, the main idea with this calculation is that the partial products algorithm is just a fancy way to write down a version of the distributive property. 
 
 
 \section{The standard multiplication algorithm}
@@ -669,7 +672,7 @@ We have spaced out the standard algorithm in a suggestive way. When we look at t
 \[
 (50 + 3) \times 8 = 50 \times 8 + 3 \times 8 = 50 \times 8 + 24 = 50 \times 8 + 20 + 4.
 \]
-In the algorithm, we calculated $5 \times 8$ instead of $50 \times 8$, which is like rewriting $50 = 5 \times \answer[given]{10}$. If we also think of $20$ as $2 \times 10$, we can rearrange this calculation a little bit.
+In the algorithm, we calculated $5 \times 8$ instead of $50 \times 8$, which is like rewriting $50 = 5 \times \answer[given]{10}$. If we also think of $20$ as $2 \times 10$, we can use the commutative and associative properties to rearrange this calculation a little bit.
 \[
 50 \times 8 + 20 + 4 = (5 \times 10) \times 8 + 2 \times 10 + 4 = (5 \times 8) \times 10 + 2 \times 10 + 4 = (5 \times 8 + 2) \times 10 + 4
 \]
