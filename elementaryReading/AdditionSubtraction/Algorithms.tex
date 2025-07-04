@@ -37,7 +37,7 @@ We will start out by describing the steps of the algorithm, using the subtractio
     \node at (2, 2.2) {2};
     \node at (3, 2.2) {7};
 
-    % Adjusted digits after borrowing
+    % Adjusted digits after regrouping
     \node at (0, 2.6) {\scriptsize 0};
     \node at (1, 2.6) {\scriptsize 14};
     \node at (2, 2.6) {\scriptsize 12};
@@ -60,15 +60,13 @@ We will start out by describing the steps of the algorithm, using the subtractio
     \node at (2, 0.7) {7};
     \node at (3, 0.7) {3};
 
-    % Borrowing arrows and annotations
-    % Borrow from tens to ones (not needed here)
-    % Borrow from hundreds to tens
+    % regrouping arrows and annotations
     \draw[thick, red] (1.2, 2.4)--(0.8, 2);
     \draw[thick, red] (-0.2, 2)--(0.2, 2.5);
     \draw[thick, red] (1.8, 2)--(2.2, 2.5);
 \end{tikzpicture} \end{image}
 
-What steps did we use? First, we started from the ones place with the $7$ and the $4$. We subtracted $4$ from $7$ and wrote the result, $3$, below the line and under the ones place. Next, we looked at the tens place, with the $2$ and the $5$. We can try to subtract $5$ from $2$, but the answer would be negative. Instead, we are going to borrow from the hundreds place. So, we take the $5$ in the hundreds place of $1527$ and cross it out. We marked that in our example with a red line. We change this $5$ to be one less, so we write a $4$ above that $5$. (Notice it looks like there's a $14$ there, because we've done more steps. At first, we just place a $4$.) We also mark off the $2$ in the tens place of $1527$ and write $12$ above it. This step, when we subtract one from the next highest place and add ten to the place we are working with, is called \dfn{borrowing}. So we can say that we borrowed $10$ from the hundreds place and added it to the tens place. Now we can subtract $12-5$ and place the resulting $7$ below the line in the tens place of our answer. Next, we investigate the hundreds place. We have $4$ hundreds left in $1527$ because of the one we borrowed, and we need to subtract $8$ hundreds from that. We don't have enough hundreds, so we borrow again. We cross off the $1$ in the thousands place of $1527$ and reduce it by $1$, so it is now zero. We add ten to the place we are working with, so the $4$ becomes $14$. Now we can subtract, and $14-8 = 6$, so we write the $6$ below the line in the hundreds place. Since we don't have any more thousands, we are finished calculating, and we read off our answer from below the line: $1527 - 854 = 673$.
+What steps did we use? First, we started from the ones place with the $7$ and the $4$. We subtracted $4$ from $7$ and wrote the result, $3$, below the line and under the ones place. Next, we looked at the tens place, with the $2$ and the $5$. We can try to subtract $5$ from $2$, but the answer would be negative. Instead, we are going to regroup. So, we take the $5$ in the hundreds place of $1527$ and cross it out. We marked that in our example with a red line. We change this $5$ to be one less, so we write a $4$ above that $5$. (Notice it looks like there's a $14$ there, because we've done more steps. At first, we just place a $4$.) We also mark off the $2$ in the tens place of $1527$ and write $12$ above it. This step, when we subtract one from the next highest place and add ten to the place we are working with, is called \dfn{regrouping}. (You may also have learned to call this step \dfn{borrowing}.) So we can say that we regrouped $10$ from the hundreds place and moved it to the tens place. Now we can subtract $12-5$ and place the resulting $7$ below the line in the tens place of our answer. Next, we investigate the hundreds place. We have $4$ hundreds left in $1527$ because of the one we regrouped, and we need to subtract $8$ hundreds from that. We don't have enough hundreds, so we regroup again. We cross off the $1$ in the thousands place of $1527$ and reduce it by $1$, so it is now zero. We add ten to the place we are working with, so the $4$ becomes $14$. Now we can subtract, and $14-8 = 6$, so we write the $6$ below the line in the hundreds place. Since we don't have any more thousands, we are finished calculating, and we read off our answer from below the line: $1527 - 854 = 673$.
 
 But why does this work? Let's go through another example, drawing pictures of what's going on behind the scenes.
 
@@ -87,7 +85,7 @@ First, we will set up for our calculation on the left hand side of our picture, 
     \node at (1, 2.2) {$0$};
     \node at (2, 2.2) {$5$};
 
-    % Adjusted digits after borrowing
+    % Adjusted digits after regrouping
    % \node at (0, 2.6) {\scriptsize 2};
    % \node at (1, 2.6) {\scriptsize 9};
    % \node at (2, 2.6) {\scriptsize 15};
@@ -108,9 +106,8 @@ First, we will set up for our calculation on the left hand side of our picture, 
    % \node at (1, 0.7) {7};
    % \node at (2, 0.7) {8};
 
-    % Borrowing arrows
-   % \draw[thick, red] (0.8, 2)--(0.4, 2.5);  % borrow from 3 to fix tens
-    %\draw[thick, red] (1.8, 2)--(1.4, 2.5);  % borrow from tens to ones
+    % regrouping arrows
+   % \draw[thick, red] (0.8, 2)--(0.4, 2.5); 
 
 	%base ten blocks
 	\foreach \x in {4, 5.2, 6.4} \draw[thick, step=0.1] (\x, 0) grid (\x+1.01,1);
@@ -129,7 +126,7 @@ Our first step is to look at the tens place. In our algorithm, we want to subtra
     \node at (1, 2.2) {$0$};
     \node at (2, 2.2) {$5$};
 
-    % Adjusted digits after borrowing
+    % Adjusted digits after regrouping
    % \node at (0, 2.6) {\scriptsize 2};
    % \node at (1, 2.6) {\scriptsize 9};
    % \node at (2, 2.6) {\scriptsize 15};
@@ -150,9 +147,7 @@ Our first step is to look at the tens place. In our algorithm, we want to subtra
    % \node at (1, 0.7) {7};
    % \node at (2, 0.7) {8};
 
-    % Borrowing arrows
-   % \draw[thick, red] (0.8, 2)--(0.4, 2.5);  % borrow from 3 to fix tens
-    %\draw[thick, red] (1.8, 2)--(1.4, 2.5);  % borrow from tens to ones
+    % regrouping arrows
 
 	%base ten blocks
 	\foreach \x in {4, 5.2, 6.4} \draw[thick, step=0.1] (\x, 0) grid (\x+1.01,1);
@@ -164,7 +159,7 @@ Our first step is to look at the tens place. In our algorithm, we want to subtra
 
 \end{tikzpicture} \end{image}
 
-To record what we've done in our algorithm, notice that we crossed off one superbundle and we have two superbundles left. So, let's cross off the $3$ in $305$ and replace it with a $2$. (Remember this is the borrowing step.) We now have $10$ bundles, so let's cross off the $0$ in $305$ and replace it with a $10$.
+To record what we've done in our algorithm, notice that we crossed off one superbundle and we have two superbundles left. So, let's cross off the $3$ in $305$ and replace it with a $2$. (Remember this is the regrouping step.) We now have $10$ bundles, so let's cross off the $0$ in $305$ and replace it with a $10$.
 
 \begin{image}
 \begin{tikzpicture}[every node/.style={font=\large}]
@@ -174,7 +169,7 @@ To record what we've done in our algorithm, notice that we crossed off one super
     \node at (1, 2.2) {$0$};
     \node at (2, 2.2) {$5$};
 
-    % Adjusted digits after borrowing
+    % Adjusted digits after regrouping
     \node at (0, 2.6) {\scriptsize $2$};
     \node at (1, 2.6) {\scriptsize $10$};
    % \node at (2, 2.6) {\scriptsize $15$};
@@ -195,9 +190,9 @@ To record what we've done in our algorithm, notice that we crossed off one super
    % \node at (1, 0.7) {7};
    % \node at (2, 0.7) {8};
 
-    % Borrowing arrows
-    \draw[thick, violet] (-0.2, 2)--(0.2, 2.5);  % borrow from 3 to fix tens
-    \draw[thick, violet] (0.8, 2)--(1.2, 2.5);  % borrow from tens to ones
+    % regrouping arrows
+    \draw[thick, violet] (-0.2, 2)--(0.2, 2.5);  
+    \draw[thick, violet] (0.8, 2)--(1.2, 2.5);  
 
 	%base ten blocks
 	\foreach \x in {4, 5.2, 6.4} \draw[thick, step=0.1] (\x, 0) grid (\x+1.01,1);
@@ -219,7 +214,7 @@ Now, we have some bundles to unbundle. Remember, our goal was to get some more i
     \node at (1, 2.2) {$0$};
     \node at (2, 2.2) {$5$};
 
-    % Adjusted digits after borrowing
+    % Adjusted digits after regrouping
     \node at (0, 2.6) {\scriptsize $2$};
     \node at (1, 2.6) {\scriptsize $10$};
    % \node at (2, 2.6) {\scriptsize $15$};
@@ -240,9 +235,9 @@ Now, we have some bundles to unbundle. Remember, our goal was to get some more i
    % \node at (1, 0.7) {7};
    % \node at (2, 0.7) {8};
 
-    % Borrowing arrows
-    \draw[thick, violet] (-0.2, 2)--(0.2, 2.5);  % borrow from 3 to fix tens
-    \draw[thick, violet] (0.8, 2)--(1.2, 2.5);  % borrow from tens to ones
+    % regrouping arrows
+    \draw[thick, violet] (-0.2, 2)--(0.2, 2.5);  
+    \draw[thick, violet] (0.8, 2)--(1.2, 2.5);  
 
 	%base ten blocks
 	\foreach \x in {4, 5.2, 6.4} \draw[thick, step=0.1] (\x, 0) grid (\x+1.01,1);
@@ -267,7 +262,7 @@ To record this step in the algorithm, we took away one bundle from our $10$ bund
     \node at (1, 2.2) {$0$};
     \node at (2, 2.2) {$5$};
 
-    % Adjusted digits after borrowing
+    % Adjusted digits after regrouping
     \node at (0, 2.6) {\scriptsize $2$};
     \node at (1, 2.6) {\scriptsize $10$};
     \node at (1, 2.9) {\scriptsize $9$};
@@ -289,10 +284,10 @@ To record this step in the algorithm, we took away one bundle from our $10$ bund
    % \node at (1, 0.7) {7};
    % \node at (2, 0.7) {8};
 
-    % Borrowing arrows
-    \draw[thick, violet] (-0.2, 2)--(0.2, 2.5);  % borrow from 3 to fix tens
+    % regrouping arrows
+    \draw[thick, violet] (-0.2, 2)--(0.2, 2.5);  %  from 3 to fix tens
     \draw[thick, violet] (0.8, 2)--(1.2, 2.5);  % adjust tens
-    \draw[thick, olive] (0.8, 2.5)--(1.2, 2.8); %borrow from tens 
+    \draw[thick, olive] (0.8, 2.5)--(1.2, 2.8); % from tens 
     \draw[thick, olive] (1.8, 2)--(2.2, 2.5); %adjust ones
 
 	%base ten blocks
@@ -320,7 +315,7 @@ The problem tells us to take away $\answer[given]{7}$ individual blocks since th
     \node at (1, 2.2) {$0$};
     \node at (2, 2.2) {$5$};
 
-    % Adjusted digits after borrowing
+    % Adjusted digits after regrouping
     \node at (0, 2.6) {\scriptsize $2$};
     \node at (1, 2.6) {\scriptsize $10$};
     \node at (1, 2.9) {\scriptsize $9$};
@@ -342,10 +337,10 @@ The problem tells us to take away $\answer[given]{7}$ individual blocks since th
    % \node at (1, 0.7) {$7$};
     \node at (2, 0.7) {$8$};
 
-    % Borrowing arrows
-    \draw[thick, violet] (-0.2, 2)--(0.2, 2.5);  % borrow from 3 to fix tens
+    % regropuing arrows
+    \draw[thick, violet] (-0.2, 2)--(0.2, 2.5);  %  from 3 to fix tens
     \draw[thick, violet] (0.8, 2)--(1.2, 2.5);  % adjust tens
-    \draw[thick, olive] (0.8, 2.5)--(1.2, 2.8); %borrow from tens 
+    \draw[thick, olive] (0.8, 2.5)--(1.2, 2.8); % from tens 
     \draw[thick, olive] (1.8, 2)--(2.2, 2.5); %adjust ones
 
 	%base ten blocks
@@ -372,7 +367,7 @@ Next, the $2$ in $127$ tells us we need to take away $\answer[given]{2}$ tens, w
     \node at (1, 2.2) {$0$};
     \node at (2, 2.2) {$5$};
 
-    % Adjusted digits after borrowing
+    % Adjusted digits after regrouping
     \node at (0, 2.6) {\scriptsize $2$};
     \node at (1, 2.6) {\scriptsize $10$};
     \node at (1, 2.9) {\scriptsize $9$};
@@ -394,10 +389,10 @@ Next, the $2$ in $127$ tells us we need to take away $\answer[given]{2}$ tens, w
     \node at (1, 0.7) {$7$};
     \node at (2, 0.7) {$8$};
 
-    % Borrowing arrows
-    \draw[thick, violet] (-0.2, 2)--(0.2, 2.5);  % borrow from 3 to fix tens
+    % regroup arrows
+    \draw[thick, violet] (-0.2, 2)--(0.2, 2.5);  %  from 3 to fix tens
     \draw[thick, violet] (0.8, 2)--(1.2, 2.5);  % adjust tens
-    \draw[thick, olive] (0.8, 2.5)--(1.2, 2.8); %borrow from tens 
+    \draw[thick, olive] (0.8, 2.5)--(1.2, 2.8); % from tens 
     \draw[thick, olive] (1.8, 2)--(2.2, 2.5); %adjust ones
 
 	%base ten blocks
@@ -425,7 +420,7 @@ Last but not least, we need to take away $\answer[given]{1}$ superbundle for the
     \node at (1, 2.2) {$0$};
     \node at (2, 2.2) {$5$};
 
-    % Adjusted digits after borrowing
+    % Adjusted digits after regrouping
     \node at (0, 2.6) {\scriptsize $2$};
     \node at (1, 2.6) {\scriptsize $10$};
     \node at (1, 2.9) {\scriptsize $9$};
@@ -447,10 +442,10 @@ Last but not least, we need to take away $\answer[given]{1}$ superbundle for the
     \node at (1, 0.7) {$7$};
     \node at (2, 0.7) {$8$};
 
-    % Borrowing arrows
-    \draw[thick, violet] (-0.2, 2)--(0.2, 2.5);  % borrow from 3 to fix tens
+    % regrouping arrows
+    \draw[thick, violet] (-0.2, 2)--(0.2, 2.5);  %  from 3 to fix tens
     \draw[thick, violet] (0.8, 2)--(1.2, 2.5);  % adjust tens
-    \draw[thick, olive] (0.8, 2.5)--(1.2, 2.8); %borrow from tens 
+    \draw[thick, olive] (0.8, 2.5)--(1.2, 2.8); % from tens 
     \draw[thick, olive] (1.8, 2)--(2.2, 2.5); %adjust ones
 
 	%base ten blocks
@@ -474,7 +469,7 @@ For our answer, we can either read beneath the line or count how many superbundl
 
 \end{example}
 
-While we've worked through the reasoning for the subtraction algorithm with this specific example, we hope that you can work through more examples, drawing pictures of each step in the algorithm, until you feel confident that these steps make sense. In particular, pay attention to the borrowing steps, since these can seem the most mysterious when we are first learning the algorithm. But, the borrowing isn't so mysterious when we recognize that we're just unbundling and rearranging the blocks in our picture.
+While we've worked through the reasoning for the subtraction algorithm with this specific example, we hope that you can work through more examples, drawing pictures of each step in the algorithm, until you feel confident that these steps make sense. In particular, pay attention to the regrouping steps, since these can seem the most mysterious when we are first learning the algorithm. But, the regrouping isn't so mysterious when we recognize that we're just unbundling and rearranging the blocks in our picture.
 
 
 \section{The standard addition algorithm}
@@ -520,7 +515,7 @@ First, let's show how to perform the calculations with the example of $58.7 + 6.
 
 What were the steps we took? First, since we are using decimal numbers in this case, our first step was to add the numbers by lining up the decimal places. Since $58.7$ didn't have anything in the hundredths place we can place a zero to the end of that number, making it $58.70$.
 
-Next, like with the subtraction algorithm, we start with the smallest place value we have, which in this case is the hundredths place. We add the $0$ hundredths from $58.70$ to the $9$ hundredths from $6.59$, and the answer is $9$ hundredths, which we write below the line in the hundredths place. We move one place value left, and add the tenths places. $7$ tenths plus $5$ tenths will give us $12$ tenths, which is too many to fit just in the tenths place. So, we write the $2$ from that $12$ below the line in the tenths place, and place the $1$ above the next place to the left (the ones place). That's where we see the small $1$ above the $8$. This step is called \dfn{carrying}, when we place a small number over the next place value to the left. Moving to the ones place, we add the $8$ ones from $58.70$, the $6$ ones from $6.59$, and the extra small $1$ above the $8$. All together that give us $15$ ones, so we break that apart like we did with the $12$ tenths: the $5$ goes in the ones place below the line, and the $1$ gets carried above the $5$ in the next place value to the left. Finally, we add all the tens, which is the $5$ tens from $58.70$ and the extra $1$ ten we just wrote, giving us $6$ tens to write below the line. Our answer is written below the line: $58.7+6.59=65.29$.
+Next, like with the subtraction algorithm, we start with the smallest place value we have, which in this case is the hundredths place. We add the $0$ hundredths from $58.70$ to the $9$ hundredths from $6.59$, and the answer is $9$ hundredths, which we write below the line in the hundredths place. We move one place value left, and add the tenths places. $7$ tenths plus $5$ tenths will give us $12$ tenths, which is too many to fit just in the tenths place. So, we write the $2$ from that $12$ below the line in the tenths place, and place the $1$ above the next place to the left (the ones place). That's where we see the small $1$ above the $8$. This step is called \dfn{regrouping}, when we place a small number over the next place value to the left. (You may have learned to call this step ``carrying''.) Moving to the ones place, we add the $8$ ones from $58.70$, the $6$ ones from $6.59$, and the extra small $1$ above the $8$. All together that give us $15$ ones, so we break that apart like we did with the $12$ tenths: the $5$ goes in the ones place below the line, and the $1$ gets carried above the $5$ in the next place value to the left. Finally, we add all the tens, which is the $5$ tens from $58.70$ and the extra $1$ ten we just wrote, giving us $6$ tens to write below the line. Our answer is written below the line: $58.7+6.59=65.29$.
 
 Hopefully, you are already imagining how we can justify this with our base ten blocks. Let's take a look at how this works, using a different example.
 
@@ -664,7 +659,7 @@ Looking at our picture, we now see $13$ individual blocks. We can make a bundle 
 \end{tikzpicture}
 \end{image}
 
-The ten individual blocks together make up a new bundle, and there are $\answer[given]{3}$ individual blocks left.. We'll record the result of this work in our algorithm by writing the $3$ individual blocks below the tenths place, and placing our new bundle in the bundles place. But since we haven't added the bundles place yet, we'll record it as a small $1$ above the bundles place. (Remember that this is the carrying step.)
+The ten individual blocks together make up a new bundle, and there are $\answer[given]{3}$ individual blocks left.. We'll record the result of this work in our algorithm by writing the $3$ individual blocks below the tenths place, and placing our new bundle in the bundles place. But since we haven't added the bundles place yet, we'll record it as a small $1$ above the bundles place. (Remember that this is the regrouping step.)
 
 \begin{image}
 \begin{tikzpicture}[every node/.style={font=\large}]
@@ -851,7 +846,7 @@ Finally, we see our answer. In the picture, we have a total of $\answer[given]{2
 
 \end{example}
 
-Again, we have done this with a specific example, but we hope you will practice with more examples and see why the algorithm works for any two numbers, whether they are whole numbers or decimals. Pay special attention to the carrying step, which can be a little confusing. But when we did the carrying step, each time we were bundling up one kind of object into the next kind of object, and so we had to place them in the next place value to the left.
+Again, we have done this with a specific example, but we hope you will practice with more examples and see why the algorithm works for any two numbers, whether they are whole numbers or decimals. Pay special attention to the regrouping step, which can be a little confusing. But when we did the regrouping step, each time we were bundling up one kind of object into the next kind of object, and so we had to place them in the next place value to the left.
 
 Overall, we hope that you are now feeling more confident in both using the standard algorithms and understanding why they work.
 

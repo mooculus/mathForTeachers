@@ -1,0 +1,122 @@
+\documentclass{ximera}
+
+\input{../preamble.tex}
+
+
+\title{Percent increase and decrease}
+\author{Jenny Sheldon}
+
+\begin{document}
+
+\begin{abstract}
+We return to calculating percents.
+\end{abstract}
+\maketitle
+
+\section{Activities for this section:} Percent Increase and Decrease
+
+\section{Percents as rates}
+
+Our definition for percent is that $P\%$ means the fraction $\frac{P}{100}$ of some whole. However, another convenient way to think about what a percent means is that $P\%$ is a rate per $100$. In other words, if we say that $25\%$ of a collection of $1000$ marbles are blue, then $25$ marbles per every $100$ marbles are blue. We could then find the total number of blue marbles by first calculating how many groups of $100$ marbles are in $1000$ marbles (a division question for $1000 \div 100$) and then multiplying this number of groups by $25$, since every copy of $100$ marbles would have $25$ blue ones. 
+
+Let's work through an example using this thinking about rates.
+
+\begin{example}
+Consider the following story problem.
+
+\emph{Mr. Underhill is making punch for an end-of-year party. The school requires any punch served to contain $30\%$ fruit juice. If Mr. Underhill needs to make $50$ liters of punch for the party, how many liters of fruit juice must be used?}
+
+Let's see how to solve this problem by thinking about the percent as a rate.
+
+We said that $30\%$ of the liters of punch as a rate means $\answer[given]{30}$ out of every $100$ liters of punch. Let's use this rate in two different ways. First, we can change this rate into a ratio of $30:100$ liters of fruit juice to liters of punch and think of this like a recipe for the punch. One batch of punch contains $30$ liters of fruit juice and makes $100$ liters of punch total. Since we need to make $50$ liters of punch, we see that we want $\answer[given]{\frac{1}{2}}$ of a batch since $50$ is half of $100$. Since we are thinking about batches, we should have multiplication in our minds. Using one group as one \wordChoice{\choice{liter of punch} \choice{liter of fruit juice} \choice[correct]{batch} \choice{classroom}} and one object as one liter of punch, we can see that we have a total of $\answer[given]{\frac{1}{2}}$ of a group with $100$ liters of punch per group, giving us the following multiplication.
+\begin{image}
+\begin{tikzpicture}
+\node at (0, 0) {$\frac{1}{2}$};
+\node at (0.5, 0) {$\times$};
+\node at (1, 0) {$100$};
+\node at (1.5, 0) {$=$};
+\node at (2, 0) {$50$};
+\node[left] at (-0.75, -1) {\# of };
+\node[left] at (-0.75, -1.35) {batches}; 
+\node at (1,-1) {\# of L of punch};
+\node at (1, -1.35) { per batch}; 
+\node[right] at (2.8, -1) {total L of};
+\node[right] at (2.8, -1.35) {punch};
+\draw[->] (-0.75, -0.75)--(-0.1, -0.35);
+\draw[->] (1, -0.75)--(1, -0.4);
+\draw[->] (2.75, -0.75)--(2, -0.4);
+\end{tikzpicture}
+\end{image}
+Since we have a ratio, we have to keep the same relationship between the punch and the fruit juice, so we will also make half a batch of the fruit juice.
+\begin{image}
+\begin{tikzpicture}
+\node at (0, 0) {$\frac{1}{2}$};
+\node at (0.5, 0) {$\times$};
+\node at (1, 0) {$30$};
+\node at (1.5, 0) {$=$};
+\node at (2, 0) {$?$};
+\node at (-0.75, -1) {\# of };
+\node at (-0.75, -1.35) {batches}; 
+\node at (1,-1) {\# of L juice};
+\node at (1, -1.35) { per batch}; 
+\node at (2.8, -1) {total L};
+\node at (2.8, -1.35) {of juice};
+\draw[->] (-0.75, -0.75)--(-0.1, -0.35);
+\draw[->] (1, -0.75)--(1, -0.4);
+\draw[->] (2.75, -0.75)--(2, -0.4);
+\end{tikzpicture}
+\end{image}
+Simplifying this multiplication, we see that Mr. Underhill should use $\answer[given]{15}$ liters of fruit juice for this recipe.
+
+\end{example}
+
+However, we can also use our thinking about rates to consider the percent as a unit rate. Let's work through the same example again, but thinking about the percent as a unit rate.
+
+\begin{example}
+Consider the following story problem.
+
+\emph{Mr. Underhill is making punch for an end-of-year party. The school requires any punch served to contain $30\%$ fruit juice. If Mr. Underhill needs to make $50$ liters of punch for the party, how many liters of fruit juice must be used?}
+
+Let's see how to solve this problem using a unit rate.
+
+Our story says that $30\% = \frac{30}{100}$ of the punch must be fruit juice. Considering this fraction as a unit rate, we can interpret this as saying that $\frac{30}{100}$ of each one liter of punch must be made of fruit juice. This $\frac{30}{100}$ corresponds to a unit rate for the ratio $30:100$, which we discussed in the previous problem. The unit rate of $\frac{30}{100}$ liters of fruit juice per liter of punch can also be used as how many objects in each group if we take one group to be one \wordChoice{\choice[correct]{liter of punch} \choice{liter of fruit juice} \choice{batch} \choice{classroom}} and one object to be one \wordChoice{\choice{liter of punch} \choice[correct]{liter of fruit juice} \choice{batch} \choice{classroom}}. Now, our $50$ liters of punch is $50$ \wordChoice{\choice[correct]{groups} \choice{objects per group} \choice{total objects}} so we can set up our multiplication equation as follows.
+\begin{image}
+\begin{tikzpicture}
+\node at (0, 0) {$50$};
+\node at (0.5, 0) {$\times$};
+\node at (1, 0) {$\frac{30}{100}$};
+\node at (1.5, 0) {$=$};
+\node at (2, 0) {$?$};
+\node[left] at (-0.75, -1) {\# of L};
+\node[left] at (-0.75, -1.35) {punch}; 
+\node at (1,-1) {\# of L juice};
+\node at (1, -1.35) { per L of punch}; 
+\node[right] at (2.8, -1) {total L};
+\node[right] at (2.8, -1.35) {of juice};
+\draw[->] (-0.75, -0.75)--(0, -0.25);
+\draw[->] (1, -0.75)--(1, -0.4);
+\draw[->] (2.75, -0.75)--(2, -0.4);
+\end{tikzpicture}
+\end{image}
+In other words, this is a multiplication story for $\answer[given]{50} \times \answer[given]{\frac{30}{100}}$. Simplifying this expression we see that Mr. Underhill needs to use $\answer[given]{15}$ liters of fruit juice to make $50$ liters of punch. 
+
+\end{example}
+
+Notice how we have now incorporated multiplication into our solutions for percent problems, which we did not do in the first section. We have many more tools at our disposal now that we have talked about addition, subtraction, multiplication, division, rates, and ratios, and we encourage you to use any solution method you like. Just be sure to explain why your calculations make sense in terms of their meaning, and never be afraid to draw a picture to help you sort out why you are using the operations that you are using.
+
+
+
+\section{Percent increase and decrease}
+
+When we work with percents, sometimes we would like to use a percent to make something larger or smaller. You might have seen this language on products at the grocery store, saying something like ``Now in a $20\%$ larger package!'' Problems where we increase or decrease a base amount using a percent are called percent increase or decrease problems. Let's take a look at some examples. 
+
+
+
+
+\end{document}
+
+
+
+
+
+
