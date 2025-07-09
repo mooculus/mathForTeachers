@@ -34,11 +34,11 @@ We will explain why this is a division problem, then solve it with a picture. To
 \node at (1.5, 0) {$=$};
 \node at (2, 0) {$\frac{8}{3}$};
 \node at (-0.75, -1) {\# of };
-\node at (-0.75, -1.35) {days}; 
-\node at (1,-1) {\# of slices};
-\node at (1, -1.35) { per day}; 
+\node at (-0.75, -1.35) {jars}; 
+\node at (1,-1) {\# of grams};
+\node at (1, -1.35) { per jar}; 
 \node at (2.8, -1) {total};
-\node at (2.8, -1.35) {slices};
+\node at (2.8, -1.35) {grams};
 \draw[->] (-0.75, -0.75)--(0, -0.25);
 \draw[->] (1, -0.75)--(1, -0.4);
 \draw[->] (2.75, -0.75)--(2, -0.4);
@@ -140,7 +140,7 @@ Let's explain why this is a division story, and then solve it with a picture. Fi
 \node at (2, 0) {$\frac{2}{3}$};
 \node at (-0.75, -1) {\# of };
 \node at (-0.75, -1.35) {days}; 
-\node at (1,-1) {\# of hour};
+\node at (1,-1) {\# of hours};
 \node at (1, -1.35) { per day}; 
 \node at (2.8, -1) {total};
 \node at (2.8, -1.35) {hours};
@@ -220,7 +220,7 @@ Write some advice for yourself here!
 
 Most of the time, we don't want to draw a picture to solve a fraction division problem. We would like to have an algorithm to speed up our calculations. What is the algorithm for dividing fractions? Let's see an example where we calculate without drawing.
 \begin{example}
-Let's see how we can solve $\frac{2}{3} \div \frac{5}{6}$ using the fraction division algorithm. The first step is to flip over the second fraction, which in this case is $\frac{5}{6}$. It's important that this is the second fraction, not the first one, and flipping it over means exchanging the numerator and denominator. So $\frac{5}{6}$ turns into $\frac{6}{5}$. Some people call this \dfn{inverting} the fraction. The next step is to multiply the first fraction with the inverted second fraction. In other words, we calculate
+Let's see how we can solve $\frac{2}{3} \div \frac{5}{6}$ using the fraction division algorithm. The first step is to flip over the second fraction, which in this case is $\frac{5}{6}$. It's important that this is the second fraction (the divisor), not the first one, and flipping it over means exchanging the numerator and denominator. So $\frac{5}{6}$ turns into $\frac{6}{5}$. Some people call this \dfn{inverting} the fraction or finding the \dfn{reciprocal} of the fraction. The next step is to multiply the first fraction with the inverted second fraction. In other words, we calculate
 \[
 \frac{2}{3} \times \frac{6}{5}.
 \]
