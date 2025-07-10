@@ -53,7 +53,7 @@ Finally, the meaning of the numerator is the number of $\frac{1}{7}$-sized piece
 \foreach \x in {1, 2, ..., 6} \draw[thick] (\x, 0)--(\x, 2);
 \end{tikzpicture}
 \end{image}
-This shaded region is now $\frac{5}{7}$ of our rectangle. But we want to show that this shaded region is also $\frac{5 \times 3}{7 \times 3}$ of our rectangle, and the new denominator is $7 \times 3$ instead of $7$. According to our meaning of multiplication, $7 \times 3$ means that we want to have $\answer[given]{7}$ equal groups, with $\answer[given]{3}$ objects in each full group. When we look at our picture, we could think of one group as one of the pieces we have cut our whole into, since we have $7$ such groups making up our whole. If we cut each of our original pieces into $\answer[given]{3}$ mini pieces, then each of the $7$ groups will have $3$ mini pieces inside of it. In other words, we could use one mini piece as one object, and then the total number of pieces in our whole would be given by $7 \times 3$, or in other words our new denominator would be $7 \times 3$. Let's cut the pieces in our picture using dashed lines.
+This shaded region is now $\frac{5}{7}$ of our rectangle. But we want to show that this shaded region is also $\frac{5 \times 3}{7 \times 3}$ of our rectangle. Let's start with the denominator.  According to our meaning of multiplication, $7 \times 3$ means that we want to have $\answer[given]{7}$ equal groups, with $\answer[given]{3}$ objects in each full group. When we look at our picture, we could think of one group as one of the $7$ pieces we cut our whole into. We can cut each of our original $7$ pieces into $\answer[given]{3}$ mini pieces, to get $7$ groups of $3$ mini pieces, where one mini piece is one object. Now the total number of mini pieces in our whole would be given by $7 \times 3$, or in other words our new denominator would be $7 \times 3$. Let's cut the pieces in our picture using dashed lines.
 
 \begin{image}
 \begin{tikzpicture}
@@ -64,25 +64,25 @@ This shaded region is now $\frac{5}{7}$ of our rectangle. But we want to show th
 \foreach \x in {0.33, 0.66, 1.33, 1.66, 2.33, 2.66, 3.33, 3.66, 4.33, 4.66, 5.33, 5.66, 6.33, 6.66} \draw[thick, dashed] (\x, 0)--(\x, 2);
 \end{tikzpicture}
 \end{image}
-We did not change the whole or the shading, so we still have the same fraction that we started with, but the denominator is now $7 \times 3$. What will the numerator be? When we look at the shaded pieces, we could simply count them and see that there are $\answer[given]{15}$. Or, we could organize these mini pieces into groups. We have $\answer[given]{5}$ groups of mini pieces, where one group is one of the original pieces. And we have $\answer[given]{3}$ mini pieces in each of these groups, or one object is one mini piece. In other words, we can count the total number of shaded mini pieces by using $5 \times 3$. In other words, we can express our fraction as $\frac{5 \times 3}{7 \times 3}$ of the rectangle. Since we started from a picture of $\frac{5}{7}$ of the rectangle and didn't change the whole or the shaded region, we know that these two fractions are equivalent.
+What will the numerator be? When we look at the shaded mini pieces, we could count them and see that there are $\answer[given]{15}$. Or, we could organize these mini pieces into groups. We have $\answer[given]{5}$ groups of mini pieces, where one group is one of the original pieces. And we have $\answer[given]{3}$ mini pieces in each of these groups, so one object is one mini piece. In other words, we can count the total number of shaded mini pieces by using $5 \times 3$. Since the numerator is the total number of shaded pieces, we now know the numerator is $5 \times 3$. This means we can express our fraction as $\frac{5 \times 3}{7 \times 3}$ of the rectangle. Since we started from a picture of $\frac{5}{7}$ of the rectangle and didn't change the whole or the shaded region, we know that these two fractions are equivalent.
 \[
 \frac{5}{7} = \frac{5 \times 3}{7 \times 3}
 \]
 
 \end{example}
 
-While we worked through the previous example with specific numbers, we hope that you can see a general pattern here. We start with a fraction $\frac{A}{B}$ and cut each of its equal pieces into $N$ smaller mini pieces. Looking at the entire rectangle, we have created $B$ groups with $N$ mini pieces in each group, so the new denominator is $B \times N$ according to our definition of multiplication. And the original $A$ shaded pieces also act as $A$ groups, with $N$ smaller mini pieces in each group. So the number of shaded pieces, or the numerator, becomes $A \times N$. Our meanings of fractions and multiplication agree with the rule for making equivalent fractions.
+While we worked through the previous example with specific numbers, we hope that you can see a general pattern here. We start with a fraction $\frac{A}{B}$ and cut each of its equal pieces into $N$ smaller mini pieces. Looking at the entire rectangle, we have created $B$ groups with $N$ mini pieces in each group, so the new denominator is $B \times N$ according to our definition of multiplication. And the original $A$ shaded pieces also act as $A$ groups, with $N$ smaller mini pieces in each group. So the number of shaded pieces, or the numerator, becomes $A \times N$. The rule for making equivalent fractions comes from our meanings of fractions and multiplication.
 
 \section{Multiplying fractions}
 
-Other than our work with decimals in the previous section, all of our work with multiplication so far has been using whole numbers. Many of the representations of multiplication that we discussed in the opening section only really make sense for whole numbers. One of the advantages of the groups-and-objects meaning of multiplication is that we can use it with any numbers that we like. So, let's take a look at an example where we multiply two fractions together. 
+Other than our work with decimals in the previous section, all of our work with multiplication so far has been using whole numbers. Many of the meanings of multiplication that we discussed in the opening section only really make sense for whole numbers. One of the advantages of the groups-and-objects meaning of multiplication is that we can use it with any numbers that we like. So, let's take a look at an example where we multiply two fractions together. 
 
 \begin{example}
 Consider the following story problem. 
 
 \emph{Salim is baking a cake where the recipe calls for $\frac{3}{8}$ of a cup of cocoa powder. However, Salim wants to make only $\frac{2}{5}$ of this recipe for a small party of friends. How much cocoa will Salim need for the smaller batch?}
 
-Let's explain why this story can be solved with multiplication. Our meaning of multiplication says that $A \times B$ means the total number of objects when we have $A$ groups with $B$ objects in each full group. What would we like to use for our objects in this story? We have two different wholes in this problem: the recipe and the cup of cocoa. The question is asking us for how much cocoa Salim will need, and the cocoa is measured using the cup as a whole. So, if we want to count this total using multiplication, we should use the cup of cocoa for our object. In other words, one object is \wordChoice{\choice{one recipe} \choice[correct]{one cup of cocoa} \choice{all the cake} \choice{the friends}}. Then let's take one group to be \wordChoice{\choice[correct]{one recipe} \choice{one cup of cocoa} \choice{all the cake} \choice{the friends}}. Let's check to make sure this makes sense with our meaning of multiplication.
+Let's explain why this story can be solved with multiplication. Our meaning of multiplication says that $A \times B$ means the total number of objects when we have $A$ groups with $B$ objects in each full group. What would we like to use for our objects in this story? We have two different wholes in this problem: the recipe and the cup of cocoa. The question is asking us for how much cocoa Salim will need, and the cocoa is measured using the cup as a whole. So, if we want to find this total using multiplication, we must use the cup of cocoa for our object. In other words, one object is \wordChoice{\choice{one recipe} \choice[correct]{one cup of cocoa} \choice{all the cake} \choice{the friends}}. Then let's take one group to be \wordChoice{\choice[correct]{one recipe} \choice{one cup of cocoa} \choice{all the cake} \choice{the friends}}. Let's check to make sure this makes sense with our meaning of multiplication.
 
 \begin{image}
 \begin{tikzpicture}
@@ -99,7 +99,7 @@ Let's explain why this story can be solved with multiplication. Our meaning of m
 \node at (8, 1) {total \# of cups};
 \end{tikzpicture}
 \end{image}
-This matches up with our meaning of multiplication, so we feel confident using these groups and objects per group. Now we just need to know how many groups we have and how many objects in one full group. Let's look at the objects first: we have $\answer[given]{\frac{3}{8}}$ of a cup of cocoa in one full recipe. Notice that we are talking about the full recipe here, not the partial amount that we want. But this is important, since the number of objects should be the amount that fills one full group. Next, we know that one group is one recipe, so that the number of groups is the number of recipes we are trying to make, which in this problem is $\answer[given]{\frac{2}{5}}$. So, we can fill in these numbers for $A$ and $B$.
+This selection of one object and one group matches up with both the story situation and our meaning of multiplication, so it must be correct. Now we need to know how many groups we have and how many objects in one full group. Let's look at the objects first: we have $\answer[given]{\frac{3}{8}}$ of a cup of cocoa in one full recipe.  Next, we know that one group is one recipe, so that the number of groups is the number of recipes we are trying to make, which in this problem is $\answer[given]{\frac{2}{5}}$. So, we can fill in these numbers for $A$ and $B$.
 
 \begin{image}
 \begin{tikzpicture}
@@ -148,7 +148,7 @@ As we've already discussed, we have two different wholes in this problem: the re
 \end{tikzpicture}
 \end{image}
 
-Now, we need to change our whole to look just at the recipe. Let's draw that whole, changing the lines to dotted lines in case we need to recut the whole. 
+Now, we need to change our whole to look just at the recipe. Let's draw that whole, changing the lines to dotted lines. 
 
 \begin{image}
 \begin{tikzpicture}
@@ -158,7 +158,7 @@ Now, we need to change our whole to look just at the recipe. Let's draw that who
 \end{tikzpicture}
 \end{image}
 
-We need to shade $\frac{2}{5}$ of this recipe. In this case our whole is \wordChoice{\choice{5} \choice{2} \choice{one cup} \choice[correct]{one recipe}}, and the meaning of the denominator tells us to cut this whole into $\answer[given]{5}$ equal pieces while the meaning of the numerator tells us to shade $\answer[given]{2}$ of those pieces. Since the dotted lines are already cutting this into three equal pieces vertically, we'll make our new cuts horizontally. Keep in mind, however, that you could also make equivalent fractions and cut the three existing pieces into five equal pieces each so that the whole is cut into $15$ equal pieces, and then we would shade $6$, since $\frac{2}{5} = \frac{6}{15}$. In the picture, we will shade the bottom two pieces cut horizontally.
+We need to shade $\frac{2}{5}$ of this recipe. In this case our whole is \wordChoice{\choice{5} \choice{2} \choice{one cup} \choice[correct]{one recipe}}, and the meaning of the denominator tells us to cut this whole into $\answer[given]{5}$ equal pieces while the meaning of the numerator tells us to shade $\answer[given]{2}$ of those pieces. Since the dotted lines are already cutting this into three equal pieces vertically, we'll make our new cuts horizontally. (Keep in mind, however, that you could also cut the existing three pieces using vertical cuts and shade two of the smaller pieces in each of the three original pieces to shade $6$ pieces total. In this case we are thinking of $\frac{2}{5}$ as the equivalent fraction $\frac{6}{15}$.) In this picture, we will shade the bottom two rows cut horizontally, representing $\frac{2}{5}$ or $\frac{6}{15}$ of the whole.
 
 \begin{image}
 \begin{tikzpicture}
@@ -210,14 +210,14 @@ We will use this picture in a moment to justify why we multiply fractions the wa
 
 \youtube{y-JlxtIamdc}
 
-So, we multiply fractions by multiplying the numerators and multiplying the denominators. Let's use the picture we drew in our previous example to explain why this rule makes sense.
+The rule says that we multiply fractions by multiplying the numerators and multiplying the denominators. Let's use the picture we drew in our previous example to explain why this rule makes sense.
 
 \begin{example}
 Consider the following story problem. 
 
 \emph{Salim is baking a cake where the recipe calls for $\frac{3}{8}$ of a cup of cocoa powder. However, Salim wants to make only $\frac{2}{5}$ of this recipe for a small party of friends. How much cocoa will Salim need for the smaller batch?}
 
-In our first example we showed that we can solve this problem by multiplying
+In a previous example we showed that we can solve this problem by multiplying
 \[
 \frac{2}{5} \times \frac{3}{8}.
 \]
@@ -263,7 +263,9 @@ Looking at one group, we need to find $8$ objects inside that group. If we take 
 \[
 \answer[given]{5} \times \answer[given]{8}.
 \]
-This has to be the denominator of our answer, because it's the total number of pieces in the whole. Notice that we started by cutting the whole into $8$ equal pieces, and then cut each of those pieces into $5$ more pieces. As when we made equivalent fractions at the beginning of this section, when we cut our pieces into more pieces, we should be thinking about multiplication just like this. (While we might get $8 \times 5$ using this thinking, we also know that multiplication is commutative, so $8 \times 5 = 5 \times 8$. 
+This has to be the denominator of our answer, because it's the total number of pieces in the whole. 
+
+Notice that we started by cutting the whole into $8$ equal pieces, and then cut each of those pieces into $5$ more pieces. As when we made equivalent fractions at the beginning of this section, when we cut our pieces into more pieces, we should be thinking about multiplication. Thinking about first cutting $8$ pieces and then further cutting $5$ pieces inside each of the $8$ pieces naturally gives us $8 \times 5$ using our meaning of multiplication, but we know that multiplication is commutative, so $8 \times 5 = 5 \times 8$. 
 
 What about the numerator? We found the numerator by counting the number of darker shaded pieces in the lower left section. Let's take a look at just that part of the array.
 \begin{image}
@@ -310,15 +312,17 @@ and we explained why this made sense using the meaning of multiplication. Howeve
 \[
 \frac{A}{B} = \frac{A}{B} \times \frac{N}{N}
 \]
-Here, the fraction $\frac{N}{N}$ is equal to one, since we have cut the whole into $N$ equal pieces and shaded all of them. So if we multiply any fraction $\frac{A}{B}$ by $1$, we will get the same fraction back. This is often called the \dfn{identity property of multiplication}.  So, the equation above is a true statement for any numbers $A$, $B$, and $N$. Next, we have now explained why we multiply fractions by multiplying the numerators and multiplying the denominators, so we can simplify the right hand side of the equation.
-\[
-\frac{A}{B} = \frac{A}{B} \times 1 = \frac{A}{B} \times \frac{N}{N} = \frac{A \times N}{B \times N}
-\]
-Taking just the first and last terms in that string of equations, we see the rule for making equivalent fractions again.
+Here, the fraction $\frac{N}{N}$ is equal to one, since we have cut the whole into $N$ equal pieces and shaded all of them. So if we multiply any fraction $\frac{A}{B}$ by $1$, we will get the same fraction back. This is often called the \dfn{identity property of multiplication}.  So, the equation above is a true statement for any numbers $A$, $B$, and $N$. We also explained why we multiply fractions by multiplying the numerators and multiplying the denominators, so we can simplify the right hand side of the equation.
+\begin{align*}
+\frac{A}{B} &= \frac{A}{B} \times 1 \\
+&= \frac{A}{B} \times \frac{N}{N} \\
+&= \frac{A \times N}{B \times N}
+\end{align*}
+We again see the rule for making equivalent fractions.
 \[
 \frac{A}{B} = \frac{A \times N}{B \times N}
 \]
-While kids start working with equivalent fractions well before they would be comfortable with this kind of algebra, we hope you've found it interesting to see how much mathematics can be hiding behind the scenes with even simple-looking rules!
+Remember that kids start working with equivalent fractions well before they would be comfortable with this kind of algebra, and as teachers it's important to be able to recognize and encourage making sense of equivalent fractions in many ways. Having deeper understanding and stronger sense-making helps children work with the rules once they learn them.
 
 
 \end{document}
