@@ -32,10 +32,10 @@ The \dfn{ratio} $A:B$ means that if  you multiply the quantity $A$ by a number $
 \begin{definition}
 The \dfn{ratio} $A:B$ means that if  you multiply the quantity $A$ by a number $N$ and get $A \times N$, you must also multiply the quantity $B$ by the same value of $N$, getting $B \times N$. %I don't love this
 \end{definition}
-These last two definitions are of course the same, but we interpret them differently because our convention when we multiply is to use the first number to refer to the number of groups and the second number to refer to the number of objects per group. But of course we know that multiplication is commutative, so while we apply these definitions differently, they are not saying two different things. The fact that multiplying the quantity $A$ by $N$ requires us to also multiply $B$ by $N$ preserves the fixed relationship that the ratio $A:B$ is describing. If you are mixing red and yellow paint to get orange paint, think of $A$ and $B$ as the quantities of red and yellow, respectively, and $A:B$ as describing the particular shade of orange you are mixing. If you double the amount of red, you must also double the amount of yellow or the orange shade will change. Our third alternate definition is more algebraic.
+These last two definitions are of course the same, but we interpret them differently because our convention when we multiply is to use the first number to refer to the number of groups and the second number to refer to the number of objects per group. But of course we know that multiplication is commutative, so while we apply these definitions differently, they represent the same idea. The fact that multiplying the quantity $A$ by $N$ requires us to also multiply $B$ by $N$ preserves the fixed relationship that the ratio $A:B$ is describing. If you are mixing red and yellow paint to get orange paint, think of $A$ and $B$ as the quantities of red and yellow, respectively, and $A:B$ as describing the particular shade of orange you are mixing. If you double the amount of red, you must also double the amount of yellow or the orange shade will change. Our third alternate definition is more algebraic.
 
 \begin{definition}
-Two quantities $x$ and $y$ are in a \dfn{proportional relationship} if there is a constant $k$ so that $x = ky$.
+Two quantities $x$ and $y$ are in a \dfn{proportional relationship} if there is a constant $k$ so that $y = kx$.
 \end{definition}
 The most difficult part of this last definition is that the constant $k$ does not have to be a whole number. This definition also focuses on the parts that are making up the ratio, rather than the relationship we have described above. So if $x$ and $y$ are in a proportional relationship, we can also consider their ratio $x:y$ as the fixed relationship between them. 
 
@@ -43,7 +43,7 @@ We have used a colon (:) as our notation for a ratio. Perhaps you have also seen
 \[
 A:B = \frac{A}{B}.
 \]
-We will talk in the next section about why it makes sense to use the same notation for both ideas, so for this section we will stick to the colon when describing a ratio.
+We will talk later about why it makes sense to use the same notation for both ideas, so for this section we will stick to the colon when describing a ratio.
 
 Let's take a look at our first example.
 
@@ -174,7 +174,7 @@ We have labeled each of the four boxes as $1$ ounce, since the entire amount of 
 \node[below] at (5.5, 0) {$?$};
 \end{tikzpicture}\end{image}
 
-Next, let's distribute the $10$ ounces into the four boxes equally. If we place one ounce into each box, this would use $\answer[given]{4}$ ounces, so we have $6$ more ounces to distribute. We can place a second ounce into each box, so we have used a total of $\answer[given]{8}$ ounces and have $2$ ounces left over. We can't place another full ounce in each box, but we can place $\frac{1}{2}$ an ounce in each box and use up those $2$ ounces exactly. Let's label our picture accordingly.
+Next, let's distribute the $10$ ounces into the four boxes equally. We have $4$ boxes (one box is one group) and $10$ ounces total (one ounce is one object), so this is a \wordChoice{\choice{how many groups} \choice[correct]{how many in each group}} division problem for $10 \div \answer[given]{4}$. This means we should place $\answer[given]{2.5}$ ounces in each box. Let's label our picture accordingly.
 
 \begin{image} \begin{tikzpicture}
 \draw[thick, fill=yellow] (0,0) rectangle (4,2);
@@ -183,10 +183,10 @@ Next, let's distribute the $10$ ounces into the four boxes equally. If we place 
 \draw[thick, dotted] (5,1) rectangle (6,2);
 \foreach \x in {0.5, 1.5, 2.5, 3.5} \node at (\x, 1.2) {$2 \frac{1}{2}$};
 \foreach \x in {0.5, 1.5, 2.5, 3.5} \node at (\x, 0.6) {oz};
-\node[below] at (5.5, 0) {$?$};
+\node[below] at (5.5, 0.75) {$?$};
 \end{tikzpicture}\end{image}
 
-Now, each of the parts of the glue has $2 \frac{1}{2}$ ounces in it, so we must make the box representing the teaspoon also have $2 \frac{1}{2}$ teaspoons in it so that we maintain the right relationship between the glue and the baking soda. However, we only have half of the teaspoon of baking soda, so we need half of the $2 \frac{1}{2}$ teaspoons that would fill the whole box. In other words, we will fill in the baking soda box with $1 \frac{1}{4}$ teaspoons of baking soda. If the baking soda was made of more than one part, we would also scale each of the parts of baking soda in the same way in order to maintain this relationship.
+Now, each of the parts of the glue has $2 \frac{1}{2}$ ounces in it, so it is $2 \frac{1}{2}$ times as large as it was when it was $1$ ounce.  In order to maintain the same relationship between the glue and the baking soda, we must also make the $\frac{1}{2}$ teaspoon $2 \frac{1}{2}$ times as large as it was. To find this, we will calculate $2 \frac{1}{2} \times \frac{1}{2}$ to get that we will fill in the baking soda box with $1 \frac{1}{4}$ teaspoons of baking soda. (For this multiplication, we are using one group as one copy of the original and one object as one teaspoon.) If the baking soda was made of more than one part, we would also scale each of the parts of baking soda in the same way in order to maintain this relationship.
 
 \begin{image} \begin{tikzpicture}
 \draw[thick, fill=yellow] (0,0) rectangle (4,2);
@@ -195,10 +195,10 @@ Now, each of the parts of the glue has $2 \frac{1}{2}$ ounces in it, so we must 
 \draw[thick, dotted] (5,1) rectangle (6,2);
 \foreach \x in {0.5, 1.5, 2.5, 3.5} \node at (\x, 1.2) {$2 \frac{1}{2}$};
 \foreach \x in {0.5, 1.5, 2.5, 3.5} \node at (\x, 0.6) {oz};
-\node[below] at (5.5, 0) {$1 \frac{1}{4}$ tsp};
+\node[below] at (5.5, 1) {$1 \frac{1}{4}$ tsp};
 \end{tikzpicture}\end{image}
 
-In other words, to make the slime with $10$ ounces of glue, Quinn should use $\answer[given]{\frac{5}{4}}$ teaspoons of baking soda.
+To make the slime with $10$ ounces of glue, Quinn should use $\answer[given]{\frac{5}{4}}$ teaspoons of baking soda.
 
 How can we solve this using our reasoning about operations? In our picture, we thought about our ratio $4:\frac{1}{2}$ as being composed of $4$ boxes for the glue and a smaller box for the baking soda. We passed out the glue into these boxes, or asked ourselves: if we have $10$ ounces of glue and need to distribute them amongst $4$ boxes, how much glue will go in each box? This question could be rephrased as \wordChoice{\choice{how many groups?} \choice[correct]{how many in each group?} \choice{what is the total?}} if we let one group be one \wordChoice{\choice{glue} \choice{ounce} \choice{teaspoon} \choice[correct]{box}} and one object be one \wordChoice{\choice{glue} \choice[correct]{ounce} \choice{teaspoon} \choice{box}}. We have $10$ ounces of glue total and $4$ boxes to put it in, so this fits our definition of multiplication as follows.
 
@@ -229,7 +229,7 @@ Quinn should use $1 \frac{1}{4}$ teaspoons of baking soda with the $10$ ounces o
 
 \end{example}
 
-Notice the way that this explanation fit more with our other definition of a ratio. If we start with a ratio of $A:B$ and then change this to $(A \times N) : (B \times N)$, we still have the same ratio. Some people call this a ``variable parts'' perspective, because we changed the size of the parts as part of our solution. 
+Notice the way that this explanation fit more with our third definition of a ratio. If we start with a ratio of $A:B$ and then change this to $(A \times N) : (B \times N)$, we still have the same ratio. Some people call this a ``variable parts'' perspective, because we changed the size of the parts as part of our solution. 
 
 There is another type of picture we would like to mention in order to close out this section, and this is called a \dfn{double number line}. A double number line is a picture where we draw two number lines with different scales, but the two scales show how the two quantities in our mixture relate to one another. Let's see how we could solve the slime problem again using a double number line. We start by drawing two number lines, labeling one for the amount of glue and the other for the amount of baking soda.
 
