@@ -1,0 +1,82 @@
+\documentclass[nooutcomes,noauthor]{ximera}
+
+\input{../preamble}
+
+
+\title{What Is A Percent?}
+
+\begin{document}
+\begin{abstract}\end{abstract}
+\maketitle
+
+\begin{problem}
+ What does it mean to be a percent? Give some examples to illustrate your thinking.
+\end{problem}
+
+\begin{problem}
+What percent of the following diagram is shaded? Explain your thinking in terms of the meaning of a percent.
+\begin{center}
+	\begin{tikzpicture}
+		\draw[ultra thick, fill=cyan](0,0)--(3,0)--(3,2)--(0,2)--(0,0);
+		\foreach \x in {1, 2, 4, 5} \draw[ultra thick] (\x,0)--(\x,2);
+		\draw[ultra thick] (3,0)--(5,0);
+		\draw[ultra thick] (3,2)--(5,2);
+	\end{tikzpicture}
+\end{center}
+\end{problem}
+
+
+\begin{problem}
+What percent of the following diagram is shaded? Explain your thinking in terms of the meaning of a percent.
+\begin{center}
+	\begin{tikzpicture}
+		\draw[ultra thick, fill=cyan](0,0)--(3,0)--(3,2)--(0,2)--(0,0);
+		\draw[ultra thick, fill=cyan] (3,0)--(4,0)--(4,0.5)--(3,0.5)--(3,0);
+		\foreach \x in {1, 2, 4, 5} \draw[ultra thick] (\x,0)--(\x,2);
+		\draw[ultra thick] (3,0)--(5,0);
+		\draw[ultra thick] (0,1)--(5,1);
+		\draw[ultra thick] (3,2)--(5,2);
+		\draw[ultra thick] (0, 0.5)--(5,0.5);
+		\draw[ultra thick] (0,1.5)--(5, 1.5);
+	\end{tikzpicture}
+\end{center}
+\end{problem}
+
+
+\begin{problem}
+How would you draw a rectangle which is $12.5\%$ shaded? Explain your thinking in terms of the meaning of a percent.
+\end{problem}
+
+
+
+\newpage
+
+\begin{instructorNotes} 
+
+
+
+{\bf Main goal:} We introduce the concept of a percent from the perspective of fractions.
+
+
+{\bf Overall picture:} You will want to settle the answer to the first question before moving on to the rest of the questions. See the timing suggestion below. 
+
+Throughout this activity, ask students to think about percents through the lens of fractions (not algebra or calculations, etc). These perspectives can be considered later in the course, after we've developed more machinery. Right now, we want to focus on percents just as an application of the meaning of fractions.
+
+\begin{itemize}
+	\item For the definition, you will want to draw out that a percent is a fraction whose denominator is 100 and whose numerator does not have to be a whole number. 
+	\item Students should apply the meaning of fractions to these problems. For instance, we want to think of part 1 as $\frac35$ of our whole.  Then, if we imagine each of the fifths cut into 20 equal pieces, the entire whole will be cut into 100 equal pieces and we will have $\frac{60}{100} = 60\%$ of the diagram shaded.
+	\item This activity can give us a nice reminder of why we make equivalent fractions the way we do. When assessing this type of problem, we will want to be clear in our instructions whether students should explain their equivalent fractions or whether they can simply state that two fractions are equivalent to one another. Both types of problems are valid.
+	\item We want students to focus their thinking on fractions rather than percents, here. For instance, we aren't looking for something like $20\% + 20\% + 20\%  = 60\%$. Instead, we want to think first of the more common fractions, and then use equivalent fractions to see the percents. For instance, we can see that $\frac{1}{5} = \frac{20}{100} = 20\%$ and go from there.
+	\item The final problem will likely be tricky for students. If students are stuck, encourage them to start with another fraction they know, like perhaps $\frac{1}{4} = \frac{25}{100}$ and then reason that if we take half of that, we must end up with half as many pieces, so $\frac{1}{8} = \frac{12.5}{100}$. Emphasize the fraction reasoning here over the algebra of taking $25\% \div 2 = 12.5\%$. We want to be thinking in terms of pieces!
+\end{itemize}
+
+
+{\bf Good language:}  Encourage students to visualize subdividing the sections so that there are 100 pieces total in the whole (i.e. making equivalent fractions).  You may have some groups actually do this subdivision, and it's good to have them present alongside students who did not completely subdivide.
+
+
+{\bf Suggested timing:} Give students about 5 minutes to discuss the first problem in their groups, and then take 5-10 minutes to discuss as a class. Then, give students 5-8 minutes to think about the remaining problems, and have groups present their work. This activity should take roughly half a class period so that we also have time to begin ``Calculations with Percents''.
+
+\end{instructorNotes}
+
+
+\end{document}
