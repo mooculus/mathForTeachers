@@ -102,7 +102,7 @@ In other words, this is a multiplication story for $\answer[given]{50} \times \a
 
 \end{example}
 
-Notice how we have now incorporated multiplication into our solutions for percent problems, which we did not do in the first section. We have many more tools at our disposal now that we have talked about addition, subtraction, multiplication, division, rates, and ratios, and we encourage you to use any solution method you like. Just be sure to explain why your calculations make sense in terms of their meaning, and never be afraid to draw a picture to help you sort out why you are using the operations that you are using.
+Notice how we have now incorporated multiplication into our solutions for percent problems, which we did not do previously. We have many more tools at our disposal now that we have talked about addition, subtraction, multiplication, division, rates, and ratios, and we encourage you to use any solution method you like. Just be sure to explain why your calculations make sense in terms of their meaning, and never be afraid to draw a picture to help you sort out why you are using the operations that you are using.
 
 
 
@@ -150,7 +150,30 @@ We need to find out how many hours are in this shaded region, since these are th
 \end{tikzpicture}
 \end{image}
 
-In other words, the additional amount of practice that Vera would like to do this week is $\answer[given]{3}$ hours. However, the question is asking for her total practice time this week, which means we need to combine these $3$ hours with the $15$ hours she practiced last week. The operation we use for combining is \wordChoice{\choice[correct]{addition} \choice{subtraction}}, and so we see Vera's total practice time for this week is $\answer[given]{18}$ hours.
+The additional amount of practice that Vera would like to do this week is $\answer[given]{3}$ hours. However, the question is asking for her total practice time this week, which means we need to combine these $3$ hours with the $15$ hours she practiced last week. The operation we use for combining is \wordChoice{\choice[correct]{addition} \choice{subtraction}}, and so we see Vera's total practice time for this week is $\answer[given]{18}$ hours. Let's draw a picture of all of the hours together.
+
+\begin{image}
+\begin{tikzpicture}
+\draw[fill=red] (7,0) rectangle (8,2);
+\draw[thick] (7,0) rectangle (12,2);
+\foreach \x in {8, 9, 10, 11} \draw[thick] (\x, 0)--(\x, 2);
+\foreach \x in {8.5, 9.5, 10.5, 11.5} \node at (\x, 1) {$3$ hr};
+\node[text=white] at (7.5, 1) {$3$ hr};
+
+\draw[fill=red] (0,0) rectangle (5, 2);
+\foreach \x in {1, 2, 3, 4} \draw[thick, white] (\x, 0)--(\x, 2);
+\foreach \x in {0.5, 1.5, ..., 4.5} \node[text=white] at (\x, 1) {$3$ hr};
+
+
+\node[below] at (2.5, 0) {last week's $15$ hours};
+%\node[below] at (9.5, 0) {last week's $15$ hour};
+
+\draw[thick, <->] (0, -0.2)--(0, -0.7)--(8, -0.7)--(8, -0.2);
+\node[below] at (4, -0.7) {this week's hours};
+\end{tikzpicture}
+\end{image}
+
+
 
 \end{example}
 
@@ -163,7 +186,7 @@ Consider the following story problem.
 
 First, we know that $45\%$ means $\frac{\answer[given]{45}}{\answer[given]{100}}$ of some whole according to our meaning of percents. We also know that $\frac{1}{100} = \answer[given]{0.01}$ as a decimal (remember that we unbundled our unit twice!) so we can write $\frac{45}{100}$ as a decimal as $\answer[given]{0.45}$.
 
-Next, we need to determine the whole for this problem. When we say that next year's class will be $45\%$ smaller than this year's class, we mean that we would like to calculate $45\%$ of this year's class and then remove these students from this year's class. In other words, the whole for this percent should be \wordChoice{\choice[correct]{this year's class} \choice{next year's class} \choice{$100$ students} \choice{Wafa's friends}}.
+Next, we need to determine the whole for this problem. When we say that next year's class will be $45\%$ smaller than this year's class, we mean that we would like to calculate $45\%$ of this year's class and then remove these students from this year's class. So, the whole for this percent should be \wordChoice{\choice[correct]{this year's class} \choice{next year's class} \choice{$100$ students} \choice{Wafa's friends}}.
 
 Now, let's calculate $45\%$ of this year's class by reasoning about operations. If we think about this year's class as one group of students, we know this group contains $\answer[given]{960}$ students. In other words, we could say that we have $960$ students per this year's class. We are thinking of one student as one \wordChoice{\choice{group} \choice[correct]{object}} and the full amount of this year's class as one \wordChoice{\choice[correct]{group} \choice{object}}. We know the number of objects per group, but how many groups do we want? We are looking for $0.45$ of this year's class, so we can say that we are looking for the total number of students in $0.45$ of a group. We can fit this into our definition of multiplication as follows.
 \begin{image}
@@ -184,7 +207,7 @@ Now, let's calculate $45\%$ of this year's class by reasoning about operations. 
 \draw[->] (2.75, -0.75)--(2, -0.4);
 \end{tikzpicture}
 \end{image}
-In other words, this is a multiplication problem for $\answer[given]{0.45} \times \answer[given]{960}$, and we simplify this product to get $\answer[given]{432}$ students. 
+This is a multiplication problem for $\answer[given]{0.45} \times \answer[given]{960}$, and we simplify this product to get $\answer[given]{432}$ students. 
 
 However, these are the students that we don't want in next year's total, so we want to take away this number from $\answer[given]{960}$. Taking away means we use the operation of \wordChoice{\choice{addition} \choice[correct]{subtraction}} and see that next year's class will have $960 - 432 =\answer[given]{528}$ students.
 

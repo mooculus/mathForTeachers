@@ -35,7 +35,7 @@ Britt needs the rectangles to cover the floor exactly, using no partial rectangl
 \[
 W \times N = 30.
 \]
-In other words, the width of the rectangle must be a \wordChoice{\choice[correct]{factor} \choice{multiple}} of $30$ according to our definition. Similarly, the length $L$ of the rectangles must be a \wordChoice{\choice[correct]{factor} \choice{multiple}} of $12$. Let's list the factors of $12$ and of $30$ in order from smallest to largest.
+The width of the rectangle must be a \wordChoice{\choice[correct]{factor} \choice{multiple}} of $30$ according to our definition. Similarly, the length $L$ of the rectangles must be a \wordChoice{\choice[correct]{factor} \choice{multiple}} of $12$. Let's list the factors of $12$ and of $30$ in order from smallest to largest.
 
 \[
 \textrm{Factors of } 30: \answer[given]{1}, \answer[given]{2},  \answer[given]{3}, \answer[given]{5}, \answer[given]{6}, \answer[given]{10}, \answer[given]{15}, 30
@@ -45,7 +45,20 @@ In other words, the width of the rectangle must be a \wordChoice{\choice[correct
 \textrm{Factors of } 12: \answer[given]{1}, \answer[given]{2},  \answer[given]{3}, \answer[given]{4}, \answer[given]{6}, \answer[given]{15}, 12
 \]
 
-Let's choose a $3$-by-$3$ rectangle and verify that these rectangles cover the floor of the house. We will be able to fit $\answer[given]{10}$ of these rectangles along the length of the house and $\answer[given]{4}$ of these rectangles along the width of the house.
+Choosing from our list of factors, we could draw a rectangle which is $5$cm long and $4$cm wide. Since $5$ is a factor of $30$ we can fit $\answer[given]{6}$ rectangles along the length of the house and since $4$ is a factor of $12$ we can fit $\answer[given]{3}$ rectangles along the width of the house. Let's draw this on our house.
+\begin{image}
+\begin{tikzpicture}
+\draw[thick] (0,0) rectangle (4, 10);
+\foreach \x in {1.333, 2.667} \draw[thick, orange] (\x,0)--(\x, 10);
+\foreach \y in {1.667, 3.333, 5, 6.667, 8.333} \draw[thick, orange] (0,\y)--(4, \y);
+\node[above] at (2, 10) {$12$ cm};
+\node[right] at (4, 5) {$30$ cm};
+\end{tikzpicture}
+\end{image}
+These rectangles exactly cover the floor of the house, so this is one correct answer for this question. 
+
+
+However, there are also other correct choices that we can make. We could also draw a rectangle which is $3$cm long and $3$cm wide. Since $3$ is a factor of $30$, we will be able to fit $\answer[given]{10}$ of these rectangles along the length of the house. Since $3$ is also a factor of $12$ we can fit $\answer[given]{4}$ of these rectangles along the width of the house. Let's draw this in our house.
 
 \begin{image}
 \begin{tikzpicture}
@@ -56,22 +69,15 @@ Let's choose a $3$-by-$3$ rectangle and verify that these rectangles cover the f
 \node[right] at (4, 5) {$30$ cm};
 \end{tikzpicture}
 \end{image}
+These rectangles also exactly cover the floor of the house, so this is another correct answer for this question.
 
-However, we have many other choices. We could draw a rectangle which is $5$cm long and $4$cm wide. Since $5$ is a factor of $30$ we can fit $\answer[given]{6}$ rectangles along the length of the house and since $4$ is a factor of $12$ we can fit $\answer[given]{3}$ rectangles along the width of the house. Let's draw this on our house.
-\begin{image}
-\begin{tikzpicture}
-\draw[thick] (0,0) rectangle (4, 10);
-\foreach \x in {1.333, 2.667} \draw[thick, orange] (\x,0)--(\x, 10);
-\foreach \y in {1.667, 3.333, 5, 6.667, 8.333} \draw[thick, orange] (0,\y)--(4, \y);
-\node[above] at (2, 10) {$12$ cm};
-\node[right] at (4, 5) {$30$ cm};
-\end{tikzpicture}
-\end{image}
-These rectangles also exactly cover the floor of the house. In fact, we can choose any factor of $30$ for the width of the rectangle and any factor of $12$ for the length of the rectangle and we will be able to exactly cover the floor with these rectangles.
+
+In fact, we can choose any factor of $30$ for the width of the rectangle and any factor of $12$ for the length of the rectangle and we will be able to exactly cover the floor with these rectangles.
+
 \end{explanation}
 \end{question}
 
-In the previous question, we explained why we wanted to find factors of $30$ and $12$ to solve the problem in the story, and then we found all of these factors. Remember that prime factorization can help when you are looking for a list of all of the factors of a number! Let's change our question a little bit and see if we can change the answer.
+In the previous question, we explained that we wanted to find factors of $30$ and $12$ because the story asked for a whole number of rectangles to fit on each side of the house. Then, we found all of the factors of both $30$ and $12$. Remember that prime factorization can help when you are looking for a list of all of the factors of a number! Let's change our question a little bit and see how our solution changes.
 
 \begin{question}
 Britt is making a small house in her art class and she wants to cover the floor of the house with colorful squares. If the house currently measures $12$cm wide and $30$ cm long, what size squares can Britt use so that there are no partial squares covering the floor?
@@ -117,7 +123,7 @@ In this last version of the house decorating problem, we wanted to find a single
 The \dfn{greatest common factor (GCF)} of two whole numbers $A$ and $B$ is the largest factor that is common to both $A$ and $B$. We can use the notation GCF$(A, B)$ as notation for the greatest common factor.
 \end{definition}
 
-Before we transition to multiples, let's see how prime factorizations can help us in this situation. We can write the prime factorization of $30$ as
+Let's see how prime factorizations can help us in this situation. We can write the prime factorization of $30$ as
 \[
 30 = 2 \times 3 \times 5
 \]
@@ -172,15 +178,23 @@ and the prime factorization of $4$ (with primes written in increasing order) is
 \[
 6 = \answer[given]{2} \times \answer[given]{3}.
 \]
-If we want a number $N$ that is a multiple of $4$, the Fundamental Theorem of Arithmetic says it must have $2\times 2$ as a factor. And if we want $N$ to also be a multiple of $6$ it must have $2 \times 3$ as a factor. This means that the prime factorization of $N$ has to have at least two copies of the prime $2$ and one copy of the prime $3$ in order to have both $2 \times 2$ and $2 \times 3$ as factors. But when we multiply this out, we see that 
+Remember that we are looking for a  number $N$ that is a multiple of both $4$ and $6$. Since $N$ is a multiple of $4$, the Fundamental Theorem of Arithmetic says it must have $2\times 2$ as a factor. Since $N$ is also a multiple of $6$ it must have $2 \times 3$ as a factor. This means that the prime factorization of $N$ has to include at least two copies of the prime $2$ and at least one copy of the prime $3$ in order to have both $2 \times 2$ and $2 \times 3$ as factors. For example, we could have
 \[
-2 \times 2 \times 3 = \answer[given]{12}.
+N = 2 \times 2 \times 3 \times 5
 \]
-This means that $12$ must be a factor of $N$, or $N$ is a multiple of $12$. Since $N$ is then a multiple of both $4$ and $6$, we see that the shouting and clapping happens at the same time on beats which are multiples of $12$.
+or
+\[
+N = 2 \times 2 \times 2 \times 3 \times 11 \times 13.
+\]
+However, the smallest $N$ we could make would be
+\[
+N = 2 \times 2 \times 3 = \answer[given]{12}.
+\]
+Since $N$ must have $2 \times 2 \times 3$ as part of its prime factorization, we see that $12$ must be a factor of $N$, or $N$ is a multiple of $12$. Since $N$ is then a multiple of both $4$ and $6$, we see that the shouting and clapping happens at the same time on beats which are multiples of $12$.
 \end{explanation}
 \end{question}
 
-In this problem we were looking for multiple that both $4$ and $6$ have in common. As we did with factors, we used the story situation to explain why we needed multiples, and then why we wanted those multiples to be common to both $4$ and $6$. Please follow this same pattern in your own explanations! Let's change this problem a little bit.
+In this problem we were looking for multiple that both $4$ and $6$ have in common. As we did with factors, we used the story situation to explain why we needed multiples, and then why we wanted those multiples to be common to both $4$ and $6$. Please make sure to do this in your own explanations! Let's change this problem a little bit.
 
 
 \begin{question}
