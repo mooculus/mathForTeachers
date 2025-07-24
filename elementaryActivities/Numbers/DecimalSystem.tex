@@ -1,0 +1,200 @@
+\documentclass{ximera}
+
+\input{../preamble}
+
+
+\title{The Decimal System}
+
+\begin{document}
+\begin{abstract}\end{abstract}
+\maketitle
+
+
+\begin{problem}
+We have talked about how to represent numbers like $35$ and $28$ with bundling. Now let's think about numbers like $3.5$ and $0.28$.
+
+\begin{enumerate}
+	\item How would you represent these decimal numbers using bundles? Remember to explain your thoughts with details. How would you talk to kids about doing this?
+	\item How would you represent these decimal numbers using strips of paper, where the length of the assembled paper strip represents the number? Remember to explain your thoughts with details. How would you talk to kids about doing this?
+	\item How would you represent these decimal numbers using a number line? Remember to explain your thoughts with details. How would you talk to kids about doing this?
+\end{enumerate}
+\end{problem}
+
+
+\begin{problem}
+ Some children are looking at the following picture of bundled blocks.
+\begin{center}
+\begin{tikzpicture}
+\draw[step=0.1] (0,0) grid (1,1); 
+\draw[step=0.1] (2,0) grid (3,1);
+\draw[step=0.1] (4,0) grid (5,1);
+\draw[step=0.1] (6,0) grid (7.001,1);
+\draw[step=0.1] (8,0) grid (8.101,1);
+\draw[step=0.1] (8.2,0) grid (8.301,1);
+\draw[step=0.1] (8.4,0) grid (8.501,0.1);
+\draw[step=0.1] (8.4, 0.3) grid (8.501, 0.4);
+\draw[step=0.1] (8.4, 0.5) grid (8.501, 0.6);
+\end{tikzpicture}
+\end{center}
+\begin{enumerate}
+\item Anji says that if one stick in this picture represents $0.001$, then the number represented here could be $0.423$. Do you agree with Anji? If so, explain why. If not, how could you help her correct her work?
+\item Jake says that if one stick in this picture represents $0.01$, then the number represented here could be $40.23$. Do you agree with Jake? If so, explain why. If not, how could you help her correct her work?
+\item What other decimal numbers could be represented by this picture? Give at least three examples.
+\end{enumerate}
+\end{problem}
+
+\newpage
+
+\begin{problem}
+Some children are trying to use strips of paper to represent the number $2.07$.  Here are their pictures.
+\begin{center}
+\begin{tikzpicture} [scale=1.75]
+\draw[thick] (0,0)--(2.7,0)--(2.7,1)--(0,1)--(0,0);
+\draw[thick] (1,0)--(1,1);
+\draw[thick] (2,0)--(2,1);
+\foreach \x in {2.1, 2.2, 2.3, 2.4, 2.5, 2.6} \draw[thick] (\x, 0)--(\x, 1);
+\node at (1.2, -0.5) {Allana's picture};
+
+
+\draw[thick] (4,0)--(7,0)--(7,1)--(4,1)--(4,0);
+\draw[thick] (5,0)--(5,1);
+\draw[thick] (6,0)--(6,1);
+\draw[thick, fill=yellow] (6, 1)--(6,0.3)--(6.1,0.3)--(6.1,1)--(6,1);
+\draw[thick, step=0.1] (6,0) grid (7,1);
+
+
+%\draw[thick] (4,0)--(5,0)--(5,1)--(4,1)--(4,0);
+%\draw[thick] (5.3,0)--(6.3,0)--(6.3,1)--(5.3,1)--(5.3,0);
+%
+%\draw[thick] (7.2,0)--(7.6,0)--(7.6,1)--(7.2,1);
+%\foreach \a in {6.7, 6.8, 6.9, 7.0, 7.1} \draw[thick] (\a, 0)--(\a, 1);
+\node at (5.5,-0.5) {Jeri's picture};
+\end{tikzpicture}
+\end{center}
+
+
+\begin{enumerate} 
+\item Look at Allana's picture. Do you agree with Allana?  If so, explain why.  If not, explain why not.
+\item Look at Jeri's picture. Do you agree with Jeri?  If so, explain why.  If not, explain why not.
+\item Draw your own strip of paper whose length represents $2.07$. Explain your process.
+\item Could you draw a strip of paper whose length represents $2.007$? Explain your thinking (but you do not need to draw this picture!)
+\end{enumerate}
+\end{problem}
+
+
+\newpage
+
+
+\begin{problem}
+ Several children are drawing number lines to illustrate the tenths between $22$ and $23$. Here are their pictures. Do you agree with each child?  If so, explain why.  If not, how could you help them correct their work?  What could they learn about the decimal system?
+
+\begin {center}
+\begin{tikzpicture}
+\draw[thick, <->] (-0.2,0)--(4.6,0);
+\draw[thick] (0,-1)--(0,1);
+\foreach \x in {0.4, 0.8, 1.2, 1.6, 2.0, 2.4, 2.8, 3.2, 3.6, 4} \draw[thick] (\x, -0.5)--(\x, 0.5);
+\draw[thick] (4.4, -1)--(4.4, 1);
+\node at (2,-1) {Alf's number line};
+\draw[thick, <->] (5.8, 0)--(9.8, 0);
+\foreach \y in {6, 6.4, 6.8, 7.2, 7.6, 8.0, 8.4, 8.8, 9.2, 9.6} \draw[thick] (\y,-0.5)--(\y, 0.5);
+\node at (7, -1) {Bao's number line};
+\end{tikzpicture}
+\end{center}
+
+\begin{enumerate}
+	\item Give an example of at least one thing you like about Alf's number line and one thing you don't like.
+	\item Give an example of at least one thing you like about Bao's number line and one thing you don't like.
+\end{enumerate}
+\end{problem}
+
+
+
+
+\begin{problem}
+ Belinda has been asked to label the tick marks on the three number lines in three different ways which correspond with the structure of the base-ten system.  Do you agree with her work?  If so, explain why.  If not, how could you help her correct her mistake?  What could she learn about the decimal system?  Then, fill in the third line with your own answer!
+\begin{image}
+\begin{tikzpicture}
+\foreach \y in {0, 2, 4} \draw[thick, <->] (-0.2, \y)--(10.2, \y);
+\foreach \x in {0, 10} \foreach \y in {0, 2, 4} \draw[thick] (\x, \y-0.3)--(\x, \y+0.3);
+\foreach \x in {1, 2, ..., 9} \foreach \y in {0, 2, 4} \draw[thick] (\x, \y-0.15)--(\x, \y+0.15);
+\foreach \y in {0, 2, 4} \node[below] at (10, \y-0.3) {$2.8$};
+\node[below] at (0, 3.7) {$2.7$};
+\foreach \x in {2.71, 2.72, 2.73, 2.74, 2.75, 2.76, 2.77, 2.78, 2.79} \node[below] at (100*\x-270, 3.85) {$\x$};
+\node[below] at (0, 1.7) {$2.700$};
+\node[below] at (1, 1.85) {$2.701$};
+\node[below] at (2, 1.85) {$2.702$};
+\node[below] at (3, 1.85) {$2.703$};
+\node[below] at (4, 1.85) {$2.704$};
+\node[below] at (5, 1.85) {$2.705$};
+\node[below] at (6, 1.85) {$2.706$};
+\node[below] at (7, 1.85) {$2.707$};
+\node[below] at (8, 1.85) {$2.708$};
+\node[below] at (9, 1.85) {$2.709$};
+\end{tikzpicture}
+\end{image}
+\end{problem}
+\begin{problem}
+ Beau was asked to plot $0.02415$ on the following number line.  Here is his work.  Do you agree with Beau?  If so, explain why.  If not, how could you help him correct his work?  What could he learn about the decimal system?
+\begin{image}
+\begin{tikzpicture}
+\draw[thick, <->] (-0.2, 0)--(10.2, 0);
+\foreach \x in {0, 10}  \draw[thick] (\x, -0.3)--(\x, 0.3);
+\foreach \x in {1, 2, ..., 9}  \draw[thick] (\x, -0.15)--(\x, 0.15);
+\node[below] at (0, -0.3) {$0.02$};
+\node[below] at (10, -0.3) {$0.03$};
+\draw[fill=black] (5,0) circle (2pt);
+\node[above] at (5, 0.15) {$0.02415$};
+\end{tikzpicture}
+\end{image}
+\end{problem}
+
+\newpage
+
+\begin{instructorNotes}
+
+{\bf Main goal:} We introduce students to the three representations we would like them to use for decimal numbers. 
+
+{\bf Overall picture:}
+    This activity asks students to extend and maintain the whole number place-value system into partial numbers.  The overall idea is to determine or name the value of one space, one strip, or one stick and work with the resulting consequences of that determination. Our main representation will be bundling, and we would like to connect both paper strips as well as number lines back to the ideas happening when bundling.
+    
+    For bundling (problems 1 and 2):
+    \begin{itemize}
+    	\item We are looking for students to start by identifying the value of one stick or block. We would then like students to explain how the other place values are determined by the value of the individual stick. For example, say the block is worth $0.001$. In this case, the bundle must be worth $0.01$ because the bundle is made of 10 sticks, so it must have 10 times the value of one stick, hence $10 \times 0.001 = 0.01$. Another way of thinking about the value of the bundle is that it is a bundle, and the meaning of our place values is that when we make a bundle of any object, we record the number of bundles in the next place value left. It's how we defined place values! So if the stick has value $0.001$, then the number of bundles of sticks must go in the next place value left, or one bundle would be $0.01$. Students can use either description, but should explain how the place values are connected for decimals.
+	\item Generally, students should choose the smallest place value for the value of the stick, but this is not strictly required. However, if students want to make smaller place values, they would have to break the stick into 10 equal pieces, perhaps making mini-sticks or micro-sticks.
+	\item We want to emphasize that a zero in a particular place value still has meaning. A zero in a place value doesn't mean nothing, it means that there are none of that particular object. So, we can't represent $40.23$ and $0.423$ with the same picture, because the first number has a zero for the number of superbundles.
+	\item When students come up with their own decimal numbers for this picture, make sure to emphasize numbers like $4230$ as well as $0.00000423$.
+	\item The picture given may be the first they have seen which uses base-ten blocks; you should name this type of picture in case students remember base ten blocks from their previous education.
+	\item If there are difficulties, have students revert back to whole numbers and consider one stick to be worth $1$, determine what each other object is worth, and, finally, determine the value of the picture, perhaps in expanded form.  The major theme is that a bundle is worth $10$ sticks, a superbundle is worth $100$ sticks, etc.
+    \end{itemize}
+
+For paper strips (problems 1 and 3):
+\begin{itemize}
+	\item The idea with paper strips is to do essentially the opposite of bundling. We want to start (usually) with a whole unit, and then cut that unit into 10 equal pieces (or unbundle it) to move one place value to the right. Each piece of the unbundled strip must be $0.1$ in value, for the same reasons we discussed with bundling. Be sure to help students see this connection! We continue unbundling until we reach the desired smallest place value, and then we select the correct number of each type of strip to build our paper strip model. 
+	\item Students should connect the end of one piece to the beginning of the next so that the length of the paper strip is representing the decimal number. Jeri's picture in Problem 3 has two issues: first, the length isn't helping us determine the value of the decimal, and second we are including more paper than we need in order to represent the decimal. This isn't a problem with a number like $2.7$, but if the student wanted to represent something like $1.53$ we don't want them to highlight 5 tenths of a strip and then 3 hundredths of a strip, so it's better to discourage highlighting pictures at this stage.
+	\item Even though it's a repeat, re-emphasize the role of zero here. Just because there is a zero and we don't draw any strips to represent that zero doesn't mean it has no meaning. The zero in the tenths place does affect the size of the next strips.
+	\item For a number like $2.007$, we don't expect students to draw this with accuracy, but they should realize that they could keep cutting the strips as needed to form this number. We also want students to attempt to draw slices of their paper strips that are relatively correct with respect to the unit. So, a picture of $2.007$ should look significantly different than a picture of $2.07$, for instance.
+\end{itemize}
+
+For number lines (problems 1, 4, 5, 6):
+
+\begin{itemize}
+	\item When drawing number lines, students should attend to how they chose to place the first tick marks so that their labeling indicates the sizing of the spaces between ticks. This is like choosing a zero and a unit length, but note that students don't need to mark zero and 1 on every number line they draw. Once they have chosen the size of their units, they should explain that we need ten equal spaces between tick marks to represent the next place value to the right. Essentially, again, we are unbundling the space between any two tick marks, and we move the place values accordingly. If they need to continue ``zooming in'' on their number line, they should, and indicate the unbundling as needed.
+	\item In problem 4, we want students to notice that it's much easier to read a number line where larger place values have larger tick marks, and we want them to notice that it's the spacing between the ticks that we are unbundling, not the tick marks themselves. We don't need 10 marks between $22$ and $23$, we need 10 spaces. Also, like each stick is $\frac{1}{10}$ the size and value of one bundle, so is the relationship between the size of the space between adjoining tick marks and the space between 22 and 23.
+    \item  Problem 5 highlights that equally-spaced tick marks should have equal value; we don't want to use the student's example because the final space is larger than the others. Students should come up with their own example (and hopefully they can come up with more than one answer to this problem!) but working backwards from the end of the line can be challenging.
+    \item Problem 6 helps us to discuss a common misconception about number lines: that we place the number on the tick mark corresponding to the last digit of the number. Instead, we need to ``zoom in'' on this number line to find the correct placement of the number, or we can estimate that the value should be between $0.024$ and $0.025$, both of which could be labeled on the given number line. Students should consider the relative weights of the place values on the number line.
+    
+\end{itemize}
+
+
+
+{\bf Good language:} The names of the decimal places tend to be difficult for some (but not all) of our students. Be sure to ask students to pronounce carefully so we can tell whether they are dealing with hundreds or hundredths! (Some students may not know the difference. Listen carefully and be patient!)
+
+Some students may also be concerned from our initial work with bundling that they aren't allowed to say the word ``ten''. It is not banned from this activity, but students are always welcome to use ``one-zero'' in place of ten.
+
+
+
+{\bf Suggested Timing:} We have two days to explore this activity. The goal on the first day should be to really introduce the representations, so the main thing to tackle will be problem 1. Give students 15 minutes to work on their representations, then have groups present their work for about 20 minutes, then take 10 minutes to summarize how students should explain their work in each case. Afterwards, give students about 5 minutes to start working on problem 2, and discuss as you can.
+
+On the second day, students may be ready to move faster, so you can give them about 20 minutes to work on the rest of the problems. Take about 25 minutes to have groups present, and be sure to continue to point out how they are drawing their representations in these examples. Wrap up by summarizing the misconceptions we have seen on this page and perhaps again reminding students about the important ideas to highlight in their explanations.
+\end{instructorNotes}
+\end{document}
