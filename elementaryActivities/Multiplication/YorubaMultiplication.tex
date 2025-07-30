@@ -1,0 +1,106 @@
+\documentclass[nooutcomes, noauthor]{ximera}
+
+\input{../preamble}
+
+
+\title{Yoruba Multiplication}
+\author{Jenny Sheldon}
+
+\begin{document}
+\begin{abstract}
+
+ \end{abstract}
+\maketitle
+
+This activity is based on an example in \link[this text]{https://link.springer.com/book/10.1007/978-3-030-04037-6}. In pre-colonial Western Africa, the Yoruba people lived in what is now southern Nigeria. This group of people organized their numbers around groups of 20, and had a sophisticated mathematical system for buying and selling using small cowry shells as currency. Both men and women were merchants; let's pretend we are watching a woman selling goods in the market.
+
+
+\begin{problem}
+Our merchant is calculating $17 \times 19$. She begins by setting out 20 groups of 20 cowrie shells. Let's call this ``Step 1''. We will draw small circles to represent the shells.
+\begin{center} \begin{tikzpicture}
+\foreach \x in {0, 0.2, 0.4, 0.6, 0.8, 1.2, 1.4, 1.6, 1.8, 2, 2.4, 2.6, 2.8, 3, 3.2, 3.6, 3.8, 4, 4.2, 4.4, 4.8, 5, 5.2, 5.4, 5.6} 
+	\foreach \y in {0, 0.2, 0.4, 0.6, 0.8, 1.2, 1.4, 1.6, 1.8, 2, 2.4, 2.6, 2.8, 3, 3.2, 3.6, 3.8, 4, 4.2, 4.4}
+	\draw[thick] (\x, \y) circle (2pt);
+\end{tikzpicture} \end{center}
+
+She first rearranges the shells by moving one shell from each of the groups into a new group she is forming. We'll show this in the next picture and call this ``Step 2''.
+\begin{center} \begin{tikzpicture}
+\foreach \x in {0, 0.2, 0.4, 0.6, 0.8, 1.2, 1.4, 1.6, 1.8, 2, 2.4, 2.6, 2.8, 3, 3.2, 3.6, 3.8, 4, 4.2, 4.4, 4.8, 5, 5.2, 5.4, 5.6} 
+	\foreach \y in {0, 0.2, 0.4, 0.6, 0.8, 1.2, 1.4, 1.6, 1.8, 2, 2.4, 2.6, 2.8, 3, 3.2, 3.6, 3.8, 4, 4.2, 4.4}
+	\draw[thick] (\x, \y) circle (2pt);
+\foreach \x in {0.8, 2, 3.2, 4.4, 5.6}
+	\foreach \y in {0.8, 2, 3.2, 4.4}
+		\draw[thick, white] (\x, \y) circle (2pt);
+\foreach \x in {6, 6.2, 6.4, 6.6, 6.8}
+	\foreach \y in {0, 0.2, 0.4, 0.6, 0.8}
+		\draw[thick] (\x, \y) circle (2pt);
+\end{tikzpicture}\end{center}
+ Finally, she rearranges the shells from Step 2, removing two more shells from one group and placing them in two of the groups of $19$ to make $3$ groups of $20$. Let's draw this in the next picture and call it ``Step 3''. 
+ \begin{center} \begin{tikzpicture}
+\foreach \x in {0, 0.2, 0.4, 0.6, 0.8, 1.2, 1.4, 1.6, 1.8, 2, 2.4, 2.6, 2.8, 3, 3.2, 3.6, 3.8, 4, 4.2, 4.4, 4.8, 5, 5.2, 5.4, 5.6} 
+	\foreach \y in {0, 0.2, 0.4, 0.6, 0.8, 1.2, 1.4, 1.6, 1.8, 2, 2.4, 2.6, 2.8, 3, 3.2, 3.6, 3.8, 4, 4.2, 4.4}
+	\draw[thick] (\x, \y) circle (2pt);
+\foreach \x in {0.8, 2, 3.2}
+	\foreach \y in {0.8, 2, 3.2, 4.4}
+		\draw[thick, white] (\x, \y) circle (2pt);
+\foreach \x in {4.4, 5.6}
+	\foreach \y in {2, 3.2, 4.4} 
+		\draw[thick, white] (\x, \y) circle (2pt);
+\foreach \x in {2.8, 3}
+	\draw[thick, white] (\x, 0.8) circle (2pt);
+\foreach \x in {6, 6.2, 6.4, 6.6, 6.8}
+	\foreach \y in {0, 0.2, 0.4, 0.6, 0.8}
+		\draw[thick] (\x, \y) circle (2pt);
+\draw[thick] (-0.2, -0.2)--(2.2, -0.2)--(2.2, 1)--(5.8, 1)--(5.8, 4.6)--(-0.2, 4.6)--(-0.2, -0.2);
+\end{tikzpicture}\end{center}
+
+\begin{enumerate}
+	\item Which part of the diagram shows $17 \times 19$, and how do you know?
+	\item How many shells are in the diagram all together, and how do you know?
+	\item How could the merchant use mental math or properties of multiplication to find the solution to $17 \times 19$ from the Step 3 picture? What is the final answer?
+\end{enumerate}
+\end{problem}
+
+
+\begin{problem}
+Marcus thinks that $17 \times 19$ is the same as $18 \times 20$. How could you use the pictures above to help Marcus understand why this thinking is incorrect?
+\end{problem}
+
+
+\begin{problem}
+Parsa thinks that $17 \times 19$ should be equal to $(10 \times 10) + (7 \times 9)$. Use the pictures above or draw a new picture to help Parsa understand why this thinking is incorrect.
+\end{problem}
+
+
+\begin{problem}
+How could you use a similar method (with a different picture) in our base ten system to solve $23 \times 8$?
+\end{problem}
+
+%\begin{problem}
+%\begin{enumerate}
+%	\item Use a similar method (starting from the same starting diagram of shells) to calculate $21 \times 19$. Explain your steps and why they make sense.
+%	\item Some people think that $21 \times 19$ should be the same as $20 \times 20$. Why might they think this? Does your picture suggest that $21 \times 19$ is the same as $20 \times 20$? Why or why not?
+%\end{enumerate}
+%\end{problem}
+
+\newpage
+\begin{instructorNotes}
+{\bf Main goal:} Students develop flexibility with the groups-and-objects meaning of multiplication and develop mental math strategies.
+
+
+{\bf Overall picture:} 
+\begin{itemize}
+	\item For Problem 1, the merchant has first taken one shell from each group and set them apart to form a new group. Then, she set aside three of the original 20 groups (needing only 17, not 20). Now there are four groups set aside: the original 20 set aside in one group, and three more groups with 19 shells each. Finally, she rearranges the extras into as many groups of 20 as she can. Using shells from one of the groups of 19, she completes the two other groups of 19 into groups of 20, and she still has the original group of 20 for a total of three groups of 20. Her fourth group is now leftovers that can't make 20, and there are 17 in this group. To count only $17\times 19$, she then removes three groups of 20 from the original total ($400 - 60 = 340$) and then removes the additional 17 leftover ($340 - 17 = 323$) to find the answer. This method will hopefully highlight for our students the flexibility of thinking about multiplication in terms of groups and objects per group.
+	\item In Problem 2 the idea is that if we take one of the groups and make it into objects, perhaps we haven't changed the total? But since the size of a group is different from the number of objects in one group, the total won't match up exactly. You can also try drawing a single array with 17 rows and 19 squares per row and see if they can be ``rearranged'' into 18 rows with 20 squares per row. Yet another way to think about what's happening here is to overlay two pictures (one for each multiplication) and see that the ``extras'' don't match up.
+	\item Problem 3 has a student ``forgetting'' the middle terms of the extended distributive property. A new picture is likely needed here, and this problem and problem 4 should be considered ``bonus content'' - you may not get here unless you have a full class to spend on this activity. Problem 3 makes a nice homework problem.
+	\item We don't need the students to be able to use this method of multiplication, but it makes a nice connection to historical content, bases other than 10, and the properties of multiplication. It's a good idea to wrap up the discussion by looking for instances where we used the properties as we solved these problems.
+
+\end{itemize}
+
+{\bf Good language:}  You can emphasize the fact that the multiplication here is counting the number of shells in the diagram. It's also helpful to continue to have students clearly identify what they are viewing as the groups and what they are viewing as the objects.
+
+
+{\bf Suggested Timing:} Students will likely need 10 minutes to work through the first problem (and may need some hints along the way). After about 10 minutes, work through the problem together. Then go back to groups and give students another 10 minutes to work on problems 2, 3, and 4. Discuss the students' work and point out where the properties have been used.
+\end{instructorNotes}
+
+\end{document}

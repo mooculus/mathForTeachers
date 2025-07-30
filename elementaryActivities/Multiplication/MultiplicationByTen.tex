@@ -1,0 +1,69 @@
+\documentclass[handout]{ximera}
+
+\input{../preamble}
+
+\title{Multiplication by ten}
+\author{Jenny Sheldon}
+
+\begin{document}
+
+\begin{abstract} \end{abstract}
+\maketitle
+
+
+\begin{problem}
+Write a story problem for $10 \times 4.7$. How do you know your story is correct? What is one group? One object?
+\end{problem}
+
+\begin{problem}
+When we multiply a decimal number by 10, all of the digits shift one place to the left. We would like to explain why this rule makes sense using the picture below.
+
+\begin{center}
+	\begin{tikzpicture}[scale=2]
+		\foreach \x in {0, 1.2, 2.4, 3.6}
+			\foreach \y in {0, 0.2, 0.4, 0.6, 0.8, 1, 1.2, 1.4, 1.6, 1.8} 
+				\draw[step=0.1] (\x, \y) grid (\x+1, \y+0.1);
+		\foreach \a in {4.8, 5, 5.2, 5.4, 5.6, 5.8, 6}
+			\foreach \b in {0, 0.2, 0.4, 0.6, 0.8, 1, 1.2, 1.4, 1.6, 1.8} 
+				\draw[step=0.1] (\a, \b) grid (\a+0.101, \b+0.101);
+	\end{tikzpicture}
+\end{center}
+
+\begin{enumerate}
+	\item Why can this picture be used to solve $10 \times 4.7$?
+	\item How does this picture show that the $4$ in $4.7$ would move to the tens place?
+	\item How does this picture show that the $7$ in $4.7$ would move to the ones place?
+	\item How does this picture show that we would have $0$ in the tenths place?
+\end{enumerate}
+\end{problem}
+
+
+
+
+\newpage
+
+\begin{instructorNotes}
+
+{\bf Main Goal:} We connect multiplication and bundling to explain the rule for multiplying by 10.
+
+{\bf Overall Picture:}
+\begin{itemize}
+	\item The big idea here is seeing that making ten copies of any type of object makes a bundle of that type of object. By the meaning of the place value system, a bundle of any type of object must go in the next higher place value.
+	\item Emphasize the bundling idea with both sticks and bundles.
+	\item We need to see that each stick becomes a bundle, and each bundle becomes a superbundle so that we know we don't change the numbers when they move to the next place up.
+	\item We should also highlight the idea that no sticks are left un-bundled by this process!
+	\item  In wrap-up, we might contrast the rule stated in this activity with  ``add a zero to the end'' (but working with a decimal number should help with this discussion). 
+\end{itemize}
+
+{\bf Good Language:} Be on the lookout for how students are describing their groups and objects with this multiplication! We would like to see one row as one group, and one big square (square unit) as one object. The rows are organizing our square units for us. Many students like to say that the rows are the groups and the columns are the objects, but we aren't counting columns here!
+
+{\bf Suggested Timing:} This is a relatively quick activity.Give students about 5 minutes to work on the problems here, and then discuss for about 10 minutes.
+
+
+
+\end{instructorNotes}
+
+
+
+
+\end{document}
