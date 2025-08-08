@@ -1,0 +1,123 @@
+%\documentclass{ximera}
+\documentclass[nooutcomes,noauthor]{ximera}
+\input{../preamble}
+\title{Divide and conquer}
+
+\begin{document}
+\begin{abstract}
+\end{abstract}
+
+\maketitle
+
+At a small board game company, some employees assemble board games in their boxes. Part of the assembly requires sorting small pieces into the boxes. Since this is a board game company, the manager prefers that the employees make a game out of the mathematics needed to distribute the pieces, so calculators are not allowed, no matter how many pieces need to be sorted.
+
+\begin{problem}
+Nadirah needs to sort $261$ pieces into $7$ boxes. Here is her strategy. 
+
+\emph{$70$ pieces would be $10$ in each box, so $140$ pieces would be $20$ in each box and $210$ pieces would be $30$ in each box. I've got $51$ pieces left. I can put $7$ pieces in each box to use up $49$ pieces, so I'll have $2$ pieces left over. So my answer is $37$ pieces in each box with $2$ leftover pieces.}
+
+Explain why Nadirah's strategy is correct for calculating how many pieces are in each box. Be sure to address the following.
+\begin{itemize}
+	\item What division problem is Nadirah solving, and why?
+	\item What interpretation of division is Nadirah using, and how do you know? (How many groups, or how many in each group?)
+	\item Describe Nadirah's steps in your own words and explain how these steps fit with the interpretation of division that you chose.
+	\item How does Nadirah get the answer, and how do you know it's correct?
+\end{itemize}
+\end{problem}
+
+
+\begin{problem}
+Nadirah wrote down the following equations to explain her calculations to her math teacher the next day.
+\begin{align*}
+70 + 70 + 70 + 49 + 2 &= 261 \\
+10 \times 7 + 10 \times 7 + 10 \times 7 + 7 \times 7 + 2 &= 261 \\
+(10 + 10 + 10 + 7) \times 7 + 2 &= 261 \\
+37 \times 7 + 2 &= 261 \\
+\end{align*}
+
+How does each expression in the first line correspond to one of Nadirah's steps? What properties does Nadirah use to simplify the first equation into the last one? How does the last line of the equation tell Nadirah the answer to her division problem?
+
+
+\end{problem}
+
+
+
+\begin{problem}
+La'tasha needs to sort $325$ pieces into $9$ boxes. Here is her strategy.
+
+\emph{I start with $9$ pieces used, then double that to get $18$, then $36$, then $72$, then $144$, then $288$ and I can't double again. That was $1$, $2$, $4$, $8$, $16$ and I have $2$ plus $10$ plus $25$ pieces left. That's $37$ pieces. I can use the $36$ which was $4$ nines, and have one leftover, so I get $20$ nines and one leftover, or each box gets $20$ pieces and I have one leftover piece.}
+
+Explain why La'tasha's strategy is correct for calculating how many pieces are in each box. Be sure to address the following.
+\begin{itemize}
+	\item What division problem is La'tasha solving, and why?
+	\item What interpretation of division is La'tasha using, and how do you know?
+	\item Describe La'tasha's  steps in your own words and explain how these steps fit with the interpretation of division that you chose.
+	\item How does La'tasha get the answer, and how do you know it's correct?
+	\item Can you write equations that represent La'tasha's strategy?
+\end{itemize}
+\end{problem}
+
+
+
+
+\begin{problem}
+Monique needs to sort $497$ pieces into $8$ boxes. Here is her strategy.
+
+\emph{If I had $800$ pieces to sort, that would be $100$ in each box, so $400$ pieces would be $50$ in each box. Now if I had $80$ pieces to sort, that would be $10$ per box. And $16$ pieces would be $2$ per box. So all together I'll put $62$ pieces in each box and have $1$ piece left over.}
+
+Explain why Monique's strategy is correct for calculating how many pieces are in each box. Be sure to address the following.
+\begin{itemize}
+	\item What division problem is Monique solving, and why?
+	\item What interpretation of division is Monique using, and how do you know?
+	\item Describe Monique's  steps in your own words and explain how these steps fit with the interpretation of division that you chose.
+	\item How does Monique get the answer, and how do you know it's correct?
+	\item Can you write equations that represent Monique's strategy?
+\end{itemize}
+\end{problem}
+
+
+
+\begin{problem}
+Imagine that you are working at this board game company and need to sort $4210$ pieces into $12$ boxes. How many pieces will fit in each box? How many different ways can you solve this problem?
+\end{problem}
+
+
+
+
+
+
+
+
+\newpage
+
+\begin{instructorNotes} 
+
+
+
+{\bf Main goal:} We practice with the meaning of division using mental math.
+
+
+{\bf Overall picture:} Students may be unfamiliar with several of these strategies (or with mental division altogether). Don't be afraid to have people explain their thinking more than once, or to have multiple students explain the same thing in their own words so that everyone has a chance to catch on!
+
+\begin{itemize}
+	\item In each case, continue to connect to the physical situation. (La'tasha has forgotten this in her calculations, which students might find more difficult to follow.) While we don't want to draw pictures of all of these objects, some drawings might help some students to follow along with the strategy. If you see some students struggling, you could suggest they try to draw their thinking using squares or other symbols instead of the individual pieces. Encourage these groups to present, especially if the drawing ends up helping them.
+	\item When you discuss the final equation (in $d \cdot q + r = n$ form, but not with those variables), ask students to identify which are the groups, and which are the objects. Ask them how to find the remainder in that equation, and why it's being added to the total from the multiplication. Ask them to identify where to find the answer to the original division question inside the equation. Students should also identify the distributive property at work. Equations and properties are not the focus of this activity, so it's okay if no one really has equations for La'tasha and Monique. However, do look out for misuse of the equals sign (placed between calculations instead of things which are equal).
+	\item Encourage presenters to describe the strategy in their own words. We would like our students to practice interpreting someone else's mental strategy, but this can be very challenging. Encourage students to be patient with themselves.
+	\item The story situation here is a ``how many in each group'' situation, but you might discuss whether ``how many groups'' mental strategies would also be appropriate. La'tasha's strategy is vague to open this discussion - could she be thinking about making groups of $9$ instead of $9$ groups?
+	\item There is another strategy here that can be good to include, which is a ``counting backwards'' strategy. We overestimate the final answer and then remove groups until we get to the required total. Monique's strategy might be the closest to this before she adjusts back down to $400$ instead of $800$.
+\end{itemize}
+
+
+{\bf Good language:}  The more we can connect division back to our conversations about multiplication, the easier this should be for students. We really want the two operations to seem very similar in every way except which question we are asking. 
+
+
+{\bf Suggested timing:} Give students about 5-8 minutes to work through the first two problems and then have groups present their work. Talk through all of the questions until everyone sees the point of this activity. Then give students 10-12 minutes to work on the rest of the problems and use any remaining time to present. (Writing division stories makes a great ``exit ticket''!)
+
+
+
+
+\end{instructorNotes}
+
+
+
+\end{document}
