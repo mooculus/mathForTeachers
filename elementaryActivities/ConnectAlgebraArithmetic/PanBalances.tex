@@ -1,0 +1,122 @@
+%\documentclass{ximera}
+\documentclass[nooutcomes,noauthor]{ximera}
+\input{../../preamble}
+
+\title{Pan balances}
+
+\begin{document}
+\begin{abstract}
+\end{abstract}
+
+\maketitle
+
+\begin{problem}
+What is the difference between an expression and an equation? Write your thoughts in words, and then give at least four examples to illustrate your thinking. 
+\end{problem}
+
+
+
+
+\begin{problem}
+The two sides of the image below are balanced. On one side we have $4$ boxes labeled $x$ and on the other side we have $8$ boxes each representing one unit.
+\begin{image}
+\begin{tikzpicture}
+\draw[thick] (0,0)--(4,0);
+\draw[thick] (6,0)--(10,0);
+\draw[thick] (2,0)--(2, -0.5)--(8, -0.5)--(8,0);
+\draw[thick] (2,-2)--(5,-0.5)--(8,-2);
+\foreach \x in {7.2, 7.4, 7.6, 7.8, 8, 8.2, 8.4, 8.6} \draw[thick] (\x, 0) rectangle (\x+0.1, 0.1);
+\foreach \x in {1.2, 1.6, 2, 2.4} \draw[thick] (\x, 0) rectangle (\x+0.3, 0.3);
+\foreach \x in {1.2, 1.6, 2, 2.4} \node at (\x+0.15, 0.15) {$x$};
+\end{tikzpicture}
+\end{image}
+
+Draw two other examples of things you know would be balanced from this information. Explain your thinking in each case and write an equation that corresponds to each pan balance that you draw. 
+\end{problem}
+
+
+
+\begin{problem}
+The two sides of the image below are balanced. On one side we have one box labeled $x$ and five unit blocks. On the other side we have $7$ unit blocks.
+\begin{image}
+\begin{tikzpicture}
+\draw[thick] (0,0)--(4,0);
+\draw[thick] (6,0)--(10,0);
+\draw[thick] (2,0)--(2, -0.5)--(8, -0.5)--(8,0);
+\draw[thick] (2,-2)--(5,-0.5)--(8,-2);
+\foreach \x in {1.6, 1.8, 2, 2.2, 2.4, 7.2, 7.4, 7.6, 7.8, 8, 8.2, 8.4} \draw[thick] (\x, 0) rectangle (\x+0.1, 0.1);
+\foreach \x in {1.2} \draw[thick] (\x, 0) rectangle (\x+0.3, 0.3);
+\foreach \x in {1.2} \node at (\x+0.15, 0.15) {$x$};
+\end{tikzpicture}
+\end{image}
+
+Draw two other examples of things you know would be balanced from this information. Explain your thinking in each case and write an equation that corresponds to each pan balance that you drew. 
+\end{problem}
+
+
+
+\begin{problem}
+Consider the equation $3x + 12 = 4 + 5x$.
+\begin{enumerate}
+	\item Solve this equation by using pictures of pan balances. Draw a new pan balance for each step. Explain your thinking, paying close attention to how you know the balance is still balanced at each step.
+	\item Write equations that correspond to each pan balance drawing from the previous part. Explain how you know your equations are correct.
+	\item Solve the original equation using algebra. What do you notice?
+\end{enumerate}
+\end{problem}
+
+
+
+
+\begin{problem}
+	\begin{enumerate}
+		\item Give another example of an equation you could solve with a pan balance, and then solve it using both pictures and equations as we did in the previous problem.
+		\item Give an example of an equation that you could not solve using a pan balance, and explain how you know that you could not use a pan balance for this equation.
+	\end{enumerate}
+\end{problem}
+
+
+
+\newpage
+
+\begin{instructorNotes} 
+
+
+
+{\bf Main goal:} We learn to solve equations with a picture.
+
+
+{\bf Overall picture:} This is our first look at solving equations, so we will start by having students clarify the difference between an equation and an expression. We continue to emphasize that our pictures and expressions reflect one another; we don't want students simplifying their expressions in their heads but rather writing expressions which match what they are seeing in a diagram or picture.
+
+By way of introduction, we also want to remind students that there are different types of equations. The ones we will work with here will be linear equations, so we want to remember that there are other types of equations than just linear ones. We will also mostly see linear equations with one solution, but students should also be reminded that there are linear equations with zero and infinitely many solutions. As you discuss the first problem, issues like the following should come up.
+\begin{enumerate}
+\item How are equations different from expressions? How are they similar?
+\item Give examples of equations. How many different types can you think of?
+\item Why is it helpful to think about equations being ``true'' or ``false''?
+\item Can equations have more than one answer? Can they have no answer? Can you give examples of these?
+\end{enumerate}	
+
+After this introduction, we use pan balances to solve equations.
+
+
+\begin{itemize}
+	\item The main goal with pan balances should be to relate physical actions with the balances (taking something off of both sides) to algebraic actions while solving. Problems 2 and 3 give students the main tools they will need to solve equations with pan balances, and Problems 4 and 5 give them opportunities to practice.
+	\item With problem 2, you will want to help students determine that they are using ``how many in each group'' division or thinking about a ratio in order to associate one $x$ with two units.
+	\item In Problem 4, the main point is to see that each step in the typical algebraic solution can be modeled with a pan balance, and everything that we ``do to both sides'' keeps the balance between the two sides. We really want to emphasize the role of the equals sign as balancing the two sides. This type of thinking helps children avoid the misconception that the equals sign means ``do something''.
+	\item You will want to emphasize different types of actions with the balances. For instance, we can take off equal blocks from each side (such as one $x$ block from each side, or one small block from each side). We can also make groups out of each side. Since we make groups and then investigate what is in each group, we think of this as a HMIEG division situation. This is an important connection to the meaning of operations!
+	\item For equations that cannot be solved with pan balances, you might initially think of quadratic or higher equations (though you could challenge the students to find equations like $x^2 + 5x + 2 = x^2 + 3x + 8$ that could be solved using this method). You might also ask students whether we could solve equations like $3x - 5 = 2x - 1$ using a pan balance. They may have some creative ideas!
+\end{itemize}
+
+
+%{\bf Good language:}  
+
+
+
+{\bf Suggested timing:} Give students about five minutes to think about Problem 1, and then discuss for about 10 minutes. Alternatively, take about 10-15 minutes to introduce this idea in whole-class discussion.
+
+Afterwards, give students about 10 minutes to work on the rest of the problems. Use the remaining time to discuss, having students present their work.
+
+\end{instructorNotes}
+
+
+
+\end{document}

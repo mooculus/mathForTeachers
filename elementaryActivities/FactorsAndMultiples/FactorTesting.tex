@@ -1,0 +1,104 @@
+%\documentclass{ximera}
+\documentclass[nooutcomes,noauthor]{ximera}
+%\input{../preamble}
+\title{Factor testing}
+
+\begin{document}
+\begin{abstract}
+\end{abstract}
+
+\maketitle
+
+
+\begin{problem}
+Using a ``how many groups'' interpretation of division and the picture below, is $13$ divisible by $3$? If not, what is the remainder when dividing by $3$? Explain how you know.
+
+\begin{image} \begin{tikzpicture}
+\foreach \x in {0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5} \draw[thick] (\x, 0) rectangle (\x+0.2, 0.2);
+\end{tikzpicture}\end{image}
+\end{problem}
+
+\begin{problem}
+Using a ``how many groups'' interpretation of division and the picture below, is one bundle of blocks divisible by $3$? If not, what is the remainder when dividing by $3$? Explain how you know.
+
+\begin{center} \begin{tikzpicture} [scale=2]
+\draw[thick, step=0.1] (0,0) grid (0.1, 1);
+\end{tikzpicture}\end{center}
+\end{problem}
+
+
+\begin{problem}
+Using a ``how many groups'' interpretation of division and the picture below, is one superbundle of blocks divisible by $3$? If not, what is the remainder when dividing by $3$? Explain how you know.
+
+\begin{image} \begin{tikzpicture}
+\draw[thick, step=0.1] (0,0) grid (1, 1);
+\end{tikzpicture}\end{image}
+\end{problem}
+
+\newpage
+
+\begin{problem}
+Using your work from the previous two problems, is $360$ divisible by $3$? If not, what is the remainder when dividing by $3$? Explain how you know.
+
+\begin{image} \begin{tikzpicture}
+\foreach \x in {0, 1.2, 2.4} \draw[thick, step=0.1] (\x, 0) grid (\x+1, 1);
+\foreach \x in {3.6, 3.8, 4, 4.2, 4.4, 4.6} \draw[thick, step=0.1] (\x, 0) grid (\x+0.1, 1);
+\end{tikzpicture}\end{image}
+
+How did you use the results of the previous two problems to make your work easier in this case?
+\end{problem}
+
+
+\begin{problem}
+Using your work from the bundle and superbundle problems (or a strategy similar to the previous problem), is $275$ divisible by $3$? If not, what is the remainder when dividing by $3$? Explain how you know.
+
+\begin{image} \begin{tikzpicture}
+\foreach \x in {0, 1.2} \draw[thick, step=0.1] (\x, 0) grid (\x+1, 1);
+\foreach \x in {2.4, 2.6, 2.8, 3, 3.2, 3.4, 3.6} \draw[thick, step=0.1] (\x, 0) grid (\x+0.1, 1);
+\foreach \x in {3.8, 4, 4.2, 4.4, 4.6} \draw[thick] (\x, 0) rectangle (\x+0.1, 0.1);
+\end{tikzpicture}\end{image}
+
+
+\end{problem}
+
+
+
+\begin{problem}
+Use the work we have done in this activity to explain how we can test whether $3$ is a factor of a number $N$ by adding the digits of $N$ and dividing by $3$. Use the examples of $492$ and $2486$ to explain your thinking, and be sure to include the meaning of ``factor'' in your explanation.
+\end{problem}
+
+
+
+
+\newpage
+
+\begin{instructorNotes} 
+
+
+
+{\bf Main goal:} We justify the divisibility test for 3.
+
+
+{\bf Overall picture:} This activity corresponds to our outcome about factors and multiples; we want to emphasize the connections between divisibility and factors here. 
+
+\begin{itemize}
+	\item See \link[Divisibility testing]{https://ximera.osu.edu/m4t/elementaryTeachersOne/elementaryReading/FactorsAndMultiples/DivisibilityTesting} in the textbook - we explain the (similar) divisibility test for $9$ in that section.
+	\item Since this is the only divisibility test we will discuss in class, you may want to wrap up your work by mentioning other divisibility tests like those for $2$, $5$, or $10$.
+	\item Some students will not have previously seen this divisibility test. Be sure to work through the examples at the end carefully so that everyone can follow along.
+	\item An algebraic place value argument for this divisibility test can be given using expanded forms if students find these easier to work with. If you have extra time, you can go through this argument together (or give students time to think about it in groups and present).
+\end{itemize}
+
+
+{\bf Good language:}  In your discussion, you might highlight that according to our two definitions of division, we could also talk about making three equal groups, rather than groups of three.
+
+
+{\bf Suggested timing:} Give students about $15$ minutes to work through all of the problems in this activity. As you walk around, make sure that students are circling groups of $3$ blocks in the first questions, and then transitioning to using the idea that there is one block remaining from each bundle and each superbundle once they get to problem 4. This transition might be tricky for some students. It's also okay to stop the group work and discuss before everyone has had a chance to work through problem 6. This can be an in-class discussion. After the individual work, have groups present their work on each problem. Use the last 5 minutes to wrap up by talking about what divisibility tests are and how they are related to finding factors of a number. 
+
+
+
+
+\end{instructorNotes}
+
+
+
+\end{document}

@@ -8,6 +8,12 @@
 \let\c@problem\relax
 \makeatother
 
+
+
+
+
+
+
 \let\problem\relax
 \let\endproblem\relax
 
@@ -19,6 +25,16 @@
 {./elementaryActivities/graphics/}
 }
 
+
+
+
+
+
+
+
+
+
+
 \newtheoremstyle{SlantTheorem}{\topsep}{\fill}%%% space between body and thm
  {\slshape}                      %%% Thm body font
  {}                              %%% Indent amount (empty = no indent)
@@ -29,13 +45,28 @@
 \theoremstyle{SlantTheorem}
 \newtheorem{problem}{Problem}[]
 
+
+%\setcounter{problem}{0}
+
+
 %\counterwithin*{problem}{section}
+
 
 
 \ifdefined\HCode
 \RenewEnviron{instructorNotes}{}
 \RenewEnviron{instructorIntro}{}
 \fi
+
+
+
+
+
+
+
+
+
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%Jenny's code%%%%%%%%%%%%%%%%%%%%
@@ -67,7 +98,7 @@
 %{\begin{trivlist}\item[\hskip \labelsep\bfseries Instructor Notes:\hspace{2ex}]}
 %{}
 %}
-%% %% line at the bottom} 
+%% %% line at the bottom
 %{\end{trivlist}\par\addvspace{.5ex}\nobreak\noindent\hung} 
 %\fi
 %

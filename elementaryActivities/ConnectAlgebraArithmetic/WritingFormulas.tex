@@ -1,0 +1,66 @@
+\documentclass{ximera}
+
+\input{preamble}
+
+
+\title{Writing Formulas}
+
+\begin{document}
+\begin{abstract} \end{abstract}
+\maketitle
+
+
+
+
+An art class is planning to make fences out of popsicle sticks to decorate different walls around the school. The art teacher would like to know how many popsicle sticks will be used for fences of various sizes. The class agrees that the length of the fence is the number of popsicle sticks used in the bottom row of sticks.
+\begin{problem}
+ Why is the fence shown here considered to be of length 6?  How many rods does it use?
+
+\begin{image} \begin{tikzpicture}
+\foreach \x in {0, 1, 2, 3, 4, 5} \draw[thick] (\x+0.1, 0)--(\x+0.9, 0);
+\foreach \x in {0, 1, 2, 3, 4, 5, 6} \draw[thick] (\x, 0.2)--(\x, 0.8);
+\foreach \x in {0, 1, 2, 3, 4, 5} \draw[thick] (\x+0.1, 1)--(\x+0.45, 1.4);
+\foreach \x in {0.55, 1.55, 2.55, 3.55, 4.55, 5.55} \draw[thick] (\x, 1.4)--(\x+0.35, 1);
+\end{tikzpicture} \end{image}
+\end{problem}
+
+\begin{problem}
+ Sketch a fence of length 8.  Sketch a beam of length 1.
+\end{problem}
+
+\begin{problem}
+The art teacher would like to write a formula to find the number of popsicle sticks $S$ in a fence of length $L$. In other words, we will use $L$ to represent the length of the fence and $S$ to represent the number of popsicle sticks.
+
+Find four different formulas that could be used to relate $L$ and $S$. In each case, explain how your formula is related to the diagram. Be sure to use the meanings of any operations to explain why they are part of your formula. For example, if your formula was $18L - 5L + 12$ you would use groups and objects to explain why you multiplied $18 \times L$ and $5 \times L$, then you would use the meaning of subtraction to explain why you subtract $18L - 5L$ and then the meaning of addition to explain why you added $12$ to the result of $18L - 5L$. (Note that this is not a correct formula for this problem, just an example so that you can see what to explain.)
+\end{problem}
+
+
+
+\begin{problem}
+Can we build such a fence using exactly $267$ popsicle sticks? Explain your thinking.
+\end{problem}
+
+
+\newpage
+\begin{instructorNotes}
+
+First and foremost, this activity should promote discussion of algebra as a way to represent what one sees in a problem situation. It is therefore important that a variety of different ways of representing the problem be presented and justified in terms of how the individual's formula reflects their way of counting the sticks and/or seeing the picture (i.e., connecting to arithmetic). Of course, in the end, all of the formulations can be reduced to the same formula. While this shows their equivalence, it should be pointed out that once an expression is simplified, the reasoning behind it becomes less clear. This will become significant later in more difficult problems. That is, the process of simplification can actually obscure the pattern that will ultimately help one understand the structure of a problem.
+
+\begin{itemize}
+	\item Do \#1 together so you're on the same page: The length is the number of ``bottom'' sticks.
+	\item The idea of \#3 is to get the students to come up with a general expression for a certain quantity in terms of another quantity either through abstracting a numerical or geometrical pattern. Students must justify, not just claim, that their pattern will continue no matter what the length of the beam. Some students see a numerical pattern occurring and came up with a (correct) formula, but cannot connect back to the situation to justify that it was true for all lengths. They need to have an argument that uses the context (in this case, the picture) to justify that their formula is ``trustworthy''.
+	\item Be sure to note that others will likely come up with the expression from different points of view. Have students write what they did at the board and justify it to the class from the picture. Some formulas may include:
+	$5 + 4(L-1)$, $3L + 2L - (L-1)$, $5L - (L-1)$, $L + L+1 + 2L$, etc. All are derived from looking at the picture in different ways as they counted the number of rods to make their table (this might have tunneled their vision from seeing the other ways).  
+	\item Note the role of simplification - both as a tool to verify equivalent expressions and to simplify evaluating the expression. Have them verify that the formulas all work by plugging in examples (and see that the formulas match with values they obtained) or by algebraic simplification.
+	\item	Point out the difference in the relative strengths of the methods of the general geometric argument versus the (weaker) noticing of a purely numerical pattern. You might point out other (weaker) ways to ``verify'' equivalence using a graphing calculator: tables and graphs. (You might remind them that verifying trig identities is a special case of what we're globally dealing with here - expressions that are equivalent, but look different.)
+	\item You might bring up the idea of ``function'' here, although it will be dealt with in later activities. You might note the idea that the \# of sticks is dependent (and can be predicted from) the length of the fence.
+	\item Other issues that might come up in this activity are ``equation'' vs. ``expression'', and the roles of the equals sign (e.g., ``do something'', ``define as'', ``is equivalent to'', ``the rule for finding $y$ is'', etc.).
+\end{itemize}
+
+{\bf Suggested Timing:} Give students plenty of time (15-20 minutes) to work through this activity, and encourage them to find multiple answers to the formula problem. Spend the rest of the time on discussion. Take about 30 minutes to have students present every formula they came up with (hopefully you have 5-10 different options to look at!) Carefully discuss how the student saw their formula in the diagram, including the meaning of any operations. You can also add a few of your own formulas as well at this point, or work out several more together as a class if you don't have as many ideas from the students as you would like. Wrap up by walking through one of the formulas again highlighting the meaning of any operations used to develop the formula. Emphasize that we want students to write formulas that represent what they see, using the meaning of operations, before they simplify into an expression that's potentially easier to work with. Finish up by noticing (if you haven't already) that all of the expressions simplify to the same formula using algebra.
+
+
+\end{instructorNotes}
+
+
+\end{document}
