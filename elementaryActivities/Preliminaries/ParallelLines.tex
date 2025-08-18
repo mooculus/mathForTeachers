@@ -1,0 +1,123 @@
+\documentclass[nooutcomes,noauthor]{ximera}
+%\documentclass{ximera}
+\input{../../preamble}
+
+\title{Parallel Lines}
+\begin{document}
+\begin{abstract}\end{abstract}
+\maketitle
+
+
+
+
+\begin{problem}
+Determine which of the following lines is parallel to line $M$.  You may use any method you choose - be ready to explain it to the class!  After you make your selections, jot down some notes about what it means for two lines to be parallel.
+
+\vskip 1.5in
+
+\begin{image}
+\begin{tikzpicture}
+	\draw[thick] (0, 5)--(6, 6.5) node[below] {$M$};
+	\draw[thick] (0, 1)--(6, 2.5) node[below] {$A$};
+	\draw[thick] (0, 0)--(6, 1) node[below] {$B$};
+	\draw[thick] (0, -0.75)--(6, -1) node[below] {$C$};
+	\draw[thick] (0, -3)--(6, -1.75) node[below] {$D$};
+\end{tikzpicture}
+\end{image}
+
+\end{problem}
+
+\vfill
+\begin{problem}
+Does your meaning of ``parallel lines'' still hold in three dimensional space? Explain your thinking using a drawing or a physical model.
+\end{problem}
+
+\newpage
+\begin{problem}
+
+In each of the three examples below, you are given one pair of lines that appear to be parallel, and a transversal to those lines.  Which of the pairs of lines are actually parallel?  Justify your answer in at least two ways.
+
+\begin{image}
+\begin{tikzpicture}
+\draw[thick] (0, 2)--(4, 0);
+\draw[thick] (0, 4)--(4, 2);
+\draw[thick] (2, 6)--(1.25, -0.75);
+\node at (-1, 4) {Pair $1$};
+
+\draw[thick] (9,0)--(11, 3);
+\draw[thick] (7.5, 1.5)--(10, 4.5);
+\draw[thick] (7, 2)--(12, 2.5);
+\node at (12, 3) {Pair $2$};
+
+\draw[thick] (3, -5)--(7, -4.5);
+\draw[thick] (2, -3.125)--(7, -2.5);
+\draw[thick] (2.5, -2.5)--(6, -5);
+\node at (8, -5) {Pair $3$};
+\end{tikzpicture}
+\end{image}
+
+\end{problem}
+
+\begin{problem}
+The figure below shows two parallel lines and a transversal. All of the angles are labeled with letters starting with $a$ in the upper left hand corner, then moving in alphabetical order counter clockwise around the upper intersection and then the lower intersection.
+\begin{image} \begin{tikzpicture}
+\draw[thick] (0,0)--(6,0);
+\draw[thick] (0, 3)--(6,3);
+\draw[thick] (4, 4)--(2, -1);
+\node[above] at (3.5, 3) {$a$};
+\node[below] at (3.3, 3) {$b$};
+\node[below] at (3.7, 3) {$c$};
+\node[above] at (3.85, 3) {$d$};
+\node[above] at (2.3, 0) {$e$};
+\node[below] at (2.1, 0) {$f$};
+\node[below] at (2.6, 0) {$g$};
+\node[above] at (2.8, 0) {$h$};
+\end{tikzpicture} \end{image}
+
+List all of the angles that have the same measure as angle $a$. Explain how you know your answer is correct.
+
+
+\end{problem}
+
+\newpage
+
+\begin{instructorNotes}
+
+{\bf Main goal:} This activity helps students develop the definition of parallel and to use the Parallel Postulate.
+
+{\bf Overall picture:}
+
+This activity is intended to help students discover the meaning of parallel for themselves, so we do not make an actual definition until after the first exercise.  The second problem gives students a chance to apply the meanings of parallel that we have just discussed, and gives us an opportunity to use the converse of the parallel postulate.
+
+First and second problems: Line $A$ is parallel to line $M$.  Line $D$ is VERY close to parallel, but is not actually parallel.
+\begin{enumerate}
+\item Students should be encouraged to justify their answers by whatever means they can.  Since we haven't defined ``parallel'' yet, this can be a little imprecise. Use these justifications to develop a definition of parallel as part of your discussion.  One way to discuss the meaning of parallel is to make a list of the different ways that students justify which lines are parallel.
+\item One uncommon idea is to use folding to determine whether the lines are parallel. The idea is to fold line $m$ onto itself, and then other lines which lie completely on themselves are parallel to $m$. This is a version of creating a transversal, where the transversal is perpendicular to the original line.
+\item A common method used by students is to measure the distance between the lines on both ends.  This can present a nice discussion - it is possible to determine which two lines are parallel using this method, but you have to measure very carefully!
+\item Some students may suggest measuring some angles - remembering the parallel postulate from a previous course.  If this idea doesn't come up, you'll want to state the Parallel Postulate during the discussion of parallel lines before Problem 2.  Make sure to double-check the book's statement!  (Beckmann's statement of the Parallel Postulate relies on corresponding angles rather than alternate interior angles or any other form of this postulate.)  
+\item The second question should bring up the idea of skew lines in three dimensional space, and how we need to be more careful with our definition of parallel lines in 3D.
+\end{enumerate}
+
+Third problem:  The first and third pair of lines is parallel.  The second is not.
+\begin{enumerate}
+\item If this is the first time you've used protractors in class, you might have to remind many students in their groups how to use the protractor.  This is also a good thing to bring up in full-class discussion, to make sure that everyone remembers!
+\item Students should use at least two ways to determine whether the lines are parallel - but should be able to discuss even more than two!  In discussion, it's nice to see if you can find an argument corresponding to each argument discussed in the first problem.  
+\item Again, the issue of measurement is key.  The lines that are not parallel appear to actually be parallel, but a very careful measurement will show they are not.
+\item You might want to highlight how we are using the converse of the Parallel Postulate in this case - but we will still assume that this result holds.
+\end{enumerate}
+
+Fourth problem: we discuss using the parallel postulate in both alternate interior and corresponding angle forms.
+\begin{enumerate}
+	\item Depending on how you stated the Parallel postulate, some of these angles will be ``easier'' and some will be more challenging.
+	\item You should have already justified that vertical angles are equal; this can be a good opportunity to go over that result again if needed.
+	\item Students should use a chain of reasoning that incorporates both vertical angles and either alternate interior or corresponding angles (depending on your definition). Be sure to introduce the other type of angles (corresponding or alternate interior) in your discussion and distinguish between the two.
+\end{enumerate}
+
+
+{\bf Suggested timing:} This activity should take the whole class.  For the first page, about 10 minutes in groups, followed by 10-15 minutes of discussion, then a 10-15 minute discussion about what we've discovered about the meaning of parallel.  The second problem should take about 10 minutes in groups, followed by 15 minutes of presentations and discussion.
+
+\end{instructorNotes}
+
+
+\end{document}
+

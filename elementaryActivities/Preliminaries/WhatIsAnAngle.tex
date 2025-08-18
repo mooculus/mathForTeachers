@@ -1,0 +1,175 @@
+\documentclass[nooutcomes,noauthor]{ximera}
+%\documentclass{ximera}
+\input{preamble}
+\title{What Is An Angle?}
+
+\begin{document}
+\begin{abstract}
+
+\end{abstract}
+\maketitle
+
+
+
+Two hikers - Wayward Wynona and Lost Larry - meet where the roads Clueless Corners and Loser's Lane intersect and start hitchhiking along the two straight roads.  Clueless Corners heads directly north and Loser’s Lane directly northeast.  Assume the hikers travel at the same speed.
+
+
+\begin{image} \begin{tikzpicture}
+\draw[thick, ->] (0,0)--(0,3) node[above] {North};
+\draw[thick, ->] (0,0)--(2, 2);
+\node[rotate=90] at (-0.3, 1.5) {Clueless Corners};
+\node[rotate=45] at (1.25, 1) {Loser's Lane};
+\end{tikzpicture} \end{image}
+
+The students in your third grade class all agree that they see an angle on this page.  But they give several different definitions of an ``angle".  Which of these (if any) is a correct definition of an ``angle"?
+
+\begin{problem}
+Student 1 says that an angle is the distance between the two roads, Clueless Corners and Loser's Lane. What do you think about this idea? Can you draw the distance between the two roads? Will this work for other kinds of angles? 
+\end{problem}
+
+\begin{problem}
+Student 2 says that an angle is the space between the two hikers.  What do you think about this idea? Can you draw the space between the hikers? Will this work for other kinds of angles?
+\end{problem}
+
+\begin{problem}
+Student 3 says that an angle is the roads themselves. What do you think about this idea? Is just having the roads enough to have an angle? Will this work for other roads also?
+\end{problem}
+
+
+%\begin{problem}
+%Here are some thought questions to help you analyze the children's ideas.
+%\begin{itemize}
+%\item As they hike, what is happening to the distance between the two hikers?  
+%\begin{solution}
+%The distance is increasing.
+%\end{solution}
+%
+%\item As they hike, what is happening to the space between the two hikers?
+%\begin{solution}
+%The space is increasing.
+%\end{solution}
+%
+%\item As they hike, what is happening to the relative directions between the two hikers?
+%\begin{solution}
+%The relative directions are staying the same.
+%\end{solution}
+%
+%\end{itemize}
+%\end{problem}
+
+
+
+\begin{problem}
+Compiling your thoughts after reviewing the students' ideas, how would you identify the angle in the picture above? What is this angle measuring?
+
+
+\end{problem}
+
+\begin{problem}
+Some people say that an angle measures the amount of rotation that, say, a ballerina would turn. Is this idea the same as the hiking situation, or different? Explain your thinking to your group.
+
+\end{problem}   
+
+\newpage
+
+\begin{problem}
+If the hikers each hiked on Clueless Corners, but in opposite directions, what would be the angle between their two paths?  How is this related to the situation with the ballerina?
+
+\end{problem}
+
+
+\begin{problem}
+On a different day, the hikers meet again at the intersection of the two roads.  This time, Wayward Winona hikes south on Clueless Corners, and Lost Larry hikes southwest on Loser's Lane.  Is the angle between their paths the same as on their first hike, or different?  Make two arguments for your claim: one that could be understood by very young children, and one that uses arithmetic.
+
+\begin{image} \begin{tikzpicture}
+\draw[thick, <->] (0,-3)--(0,3) node[above] {North};
+\draw[thick, <->] (-2, -2)--(2, 2);
+\node[rotate=90] at (-0.3, 1.5) {Clueless Corners};
+\node[rotate=45] at (1.25, 1) {Loser's Lane};
+\end{tikzpicture} \end{image}
+
+
+\end{problem}
+
+\newpage
+
+\begin{problem}
+We often talk about circles when we talk about angles. Is there an angle in the picture below? (The picture shows a shaded portion of a circle.) Is there more than one angle in the picture below? Explain your thinking.
+\begin{image} \begin{tikzpicture}
+\def\radius{2}
+  \def\startangle{0}
+  \def\endangle{90}
+
+  \coordinate (O) at (0,0);
+  \fill[orange!70] (O) -- (\startangle:\radius) arc (\startangle:\endangle:\radius) -- cycle;
+  \draw[thick] (O) -- (\startangle:\radius);
+  \draw[thick] (O) -- (\endangle:\radius);
+  \draw[thick] (\startangle:\radius) arc (\startangle:\endangle:\radius);
+\draw[thick] (O) circle (2cm);
+\end{tikzpicture} \end{image}
+\end{problem}
+
+\begin{problem}
+What is the measure of the angle that we identified in the previous problem? Explain how you know.
+\begin{image} \begin{tikzpicture}
+\def\radius{2}
+  \def\startangle{0}
+  \def\endangle{90}
+
+  \coordinate (O) at (0,0);
+  \fill[orange!70] (O) -- (\startangle:\radius) arc (\startangle:\endangle:\radius) -- cycle;
+  \draw[thick] (O) -- (\startangle:\radius);
+  \draw[thick] (O) -- (\endangle:\radius);
+  \draw[thick] (\startangle:\radius) arc (\startangle:\endangle:\radius);
+\draw[thick] (O) circle (2cm);
+\end{tikzpicture} \end{image}
+\end{problem}
+
+\newpage
+
+\begin{instructorNotes}
+
+{\bf Main goal:}
+The intent of this activity is to develop two definitions of angle:
+(1) as two rays with a common vertex, and (2) as a rotation, thought of as some fraction of a full turn (improper fractions count!).  
+
+
+
+{\bf Overall picture:}
+
+A subtle point to keep in mind throughout your discussions (and bring up with your students if it's appropriate) is the distinction between an angle itself and the measure of an angle. The angle itself is the geometric object (the rays and vertex or the physical turn), whereas the measure of the angle is the relative direction between the rays or the amount of turning, as a fraction of a full turn. 
+
+
+
+You can start this activity with a whole-class discussion or reminder about the definitions of point, line, and ray.
+
+In the first part of this activity, students confront some misconceptions about the meaning of angles and use these to (hopefully) come up with the idea that an angle is the union of two rays meeting at a common vertex - NOT these misconceptions about distance or space. These are very common misconceptions, even amongst our students.
+
+It's worthwhile noting that the textbook defines an angle as the union of two rays meeting at a common vertex and the space between them -- this definition isn't ideal because the ``space'' is a bit misleading for children. You'll want to steer the conversation away from ideas about space, but you'll need to accept the textbook's definition in the student's writing.
+
+    Once we explore the two rays definition, we move on to the rotation definition with the problem about the ballerina. In this problem, students are asked to look at an angle as the rotation from the first ray’s direction to the second.  Some students might be quick to see this connection, while others will take some time. You can do this question as a whole-class discussion if you prefer. The connection can also be made more clear with a student physically acting out the turning, starting facing one ray and opening their arms while they turn to show the change from the initial ray to the final ray.  This turning definition is the more elementary of the two, and we'll emphasize it more than the other definition in the future. The physical actions with the turning foreshadow some activities we have upcoming!
+
+
+
+ The students are asked (in Problem 6 about hiking opposite directions) to intuitively see that it makes sense for vertical angles to be congruent (they may need some prodding to show this algebraically:  That one angle is represented in both sums of two supplementary angles and thus the remaining angles must be the same measure). Students should recognize that a half-turn (or half of a full circle) is between the hikers.  Since we usually use $360\degree$ for a full circle, this would be $180\degree$.  You might point out that if we chose a different measure for a full turn, then this measure would be different.
+
+
+In the problem where the roads extend both ways, you should introduce the term ``vertical'' or ``opposite'' angles to describe the angles between the hikers.  Make sure to discuss both pairs of vertical angles!
+
+You can also begin here talking about different levels of arguments that students can make.  We have a folding argument for this problem, where the students would fold one angle on top of the other.  A related cutting or turning argument is also sometimes made.  These arguments are good for experimentation, but would require us to check all cases before making a conclusion.  They are also good experiences for even very young children as they develop geometric intuition.  The more algebraic argument $a+b = b+c$ so $a = c$ is more formal and allows us to say something about all sets of vertical angles without measuring them.
+
+The final two problems give an opportunity to connect angles and circles, and to identify both angles that complete a full turn. The last question helps us talk about the idea that the measure of an angle depends on what we choose for the measure of one full rotation (the rotation being the connection to the circle - it's good to ask the students why there is a circle in this picture). So, we can find the measure of the angle if we are making an assumption that a full turn is $360$ degrees, but we could also redefine a full turn and recalculate the measure of that angle as $\frac{1}{4}$ of a full turn. This discussion should help us also clarify the distinction between the angle (the physical rays and vertex) and the measure of the angle (the number we associate to what fraction of a full turn is represented). If you have students who have seen some trigonometry or calculus, you might also have some students identify that the angle in the figure could be a full rotation plus a quarter turn (in other words 450 degrees) and this is a good conversation to have with the whole class.
+
+
+{\bf Good language:} This is one of our first activities where we develop a definition together. Students should begin with informal language but slowly transition to more formal language. After we agree on our definition, the formal version should be used even if students also include informal descriptions in their writing.
+
+
+{\bf Suggested timing;} Give students about 5-10 minutes to discuss the first five (or six) problems motivating the two definitions. Then spend about 15 minutes having students share their thoughts with the class and using these student ideas to motivate the two definitions. Then, give students another 5-10 minutes to think through the rest of the activity with their groups, and use the remaining time to have students present their work at the board and discuss.
+
+\end{instructorNotes}
+
+
+
+
+
+\end{document}
