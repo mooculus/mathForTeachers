@@ -1,0 +1,149 @@
+\documentclass[nooutcomes,noauthor]{ximera}
+\input{../../preamble}
+
+
+\title{The fab four}
+\begin{document}
+\begin{abstract}\end{abstract}
+\maketitle
+
+
+
+
+\begin{problem}
+Cut out the figures below. 
+\begin{itemize}
+    \item  On your own, sort them using any organizing principle you like.  Be sure to write down your thinking and draw or photograph your sorted shapes so that you can remember what you did.
+    \item With your group members, take turns doing the following: Have one person show their groupings without any information. The other people then guess what criteria were used to make the groupings. (You can keep score if you want to!) Make sure you play at least two rounds of this game (at least two people display their groupings), so that you can see more than one way of sorting the shapes. 
+    \item For participation credit, you'll submit your thinking for your own groupings -- so make sure to save it! 
+    
+\end{itemize}
+
+\begin{center}
+\begin{tikzpicture}[every node/.style={font=\large}]
+
+\def\xshift{4}
+\def\yshift{3}
+
+% Row 1
+\begin{scope}[shift={(0*\xshift,0*\yshift)}]
+  \draw (0,0) -- (3,0) -- (3,0.6) -- (0,0.6) -- cycle; % skinny rectangle
+  \node at (1.5,0.3) {1};
+\end{scope}
+
+\begin{scope}[shift={(1*\xshift,0*\yshift)}]
+  \draw (1,0) -- (0.3, 1) -- (1,2) -- (1.7, 1) -- cycle; % diamond (rhombus)
+  \node at (1,1) {2};
+\end{scope}
+
+\begin{scope}[shift={(2*\xshift,0*\yshift)}]
+  \draw (0,0) -- (2,0) -- (1.5,1.2) -- (0.5,1.2) -- cycle; % isosceles trapezoid
+  \node at (1,0.6) {3};
+\end{scope}
+
+\begin{scope}[shift={(3*\xshift,0*\yshift)}]
+  \draw (0,0) -- (2,0.5) -- (2.2,1.7) -- (0.2,1.2) -- cycle; % tilted parallelogram
+  \node at (1.1,0.8) {4};
+\end{scope}
+
+% Row 2
+\begin{scope}[shift={(0*\xshift,1*\yshift)}]
+  \draw (0,0) -- (2,0) -- (2.5,1.5) -- (0.5,1.5) -- cycle; % parallelogram
+  \node at (1.25,0.75) {5};
+\end{scope}
+
+\begin{scope}[shift={(1*\xshift,1*\yshift)}]
+  \draw (0,0) -- (3,0) -- (2.2,0.8) -- (0.8,0.8) -- cycle; % trapezoid
+  \node at (1.5,0.4) {6};
+\end{scope}
+
+\begin{scope}[shift={(2*\xshift,1*\yshift)}]
+  \draw (0,0) -- (2,0) -- (3,1.26) -- (1.41,1.41) -- cycle; % sideways kite
+  \node at (1.6,0.7) {7};
+\end{scope}
+
+\begin{scope}[shift={(3*\xshift,1*\yshift)}]
+  \draw (0,0) -- (1.5,2) -- (3,0) -- (1.5,1) -- cycle; % arrowhead (concave)
+  \node at (1.5,1.2) {8};
+\end{scope}
+
+% Row 3
+\begin{scope}[shift={(0*\xshift,2*\yshift)}]
+  \draw (0,0) -- (2.5,0) -- (2,2) -- (0,1.5) -- cycle; % irregular
+  \node at (1.25,0.9) {9};
+\end{scope}
+
+\begin{scope}[shift={(1*\xshift,2*\yshift)}]
+  \draw (0,2) -- (1.4,0) -- (2.5,1.4) -- (1.8,1) -- cycle; % irregular concave
+  \node at (1.3,1) {10};
+\end{scope}
+
+\begin{scope}[shift={(2*\xshift,2*\yshift)}]
+  \draw (0,0.6) -- (1,2) -- (2,0.6) -- (1,0) -- cycle; % kite
+  \node at (1,0.9) {11};
+\end{scope}
+
+\begin{scope}[shift={(3*\xshift,2*\yshift)}]
+  \draw (0,0) -- (2,0) -- (2,2) -- (0,2) -- cycle; % square
+  \node at (1,1) {12};
+\end{scope}
+
+\end{tikzpicture}\end{center}
+
+
+\end{problem}
+
+\pagebreak
+
+As with triangles, there are special kinds of quadrilaterals. Here are their definitions.
+
+\begin{tabular}{p{3cm} | p{5cm} | p{3.2cm}}
+Name & Definition & Sample picture \\ \hline \hline
+Kite & Quadrilateral with two separate pairs of equal adjacent sides &\begin{tikzpicture} \draw[thick] (1,0)--(0, 0.8)--(1, 1)--(2, 0.8)--(1,0); \addvmargin{1mm} \end{tikzpicture} \\ \hline
+Parallelogram & Quadrilateral for which opposite sides are parallel & \begin{tikzpicture} \draw[thick] (0,0)--(2,0)--(2.5,1)--(0.5,1)--(0,0); \addvmargin{1mm}  \end{tikzpicture}\\ \hline
+Rectangle & Quadrilateral with four right angles &  \begin{tikzpicture} \draw[thick] (0,0) rectangle (3,1); \addvmargin{1mm}  \end{tikzpicture} \\ \hline
+Rhombus & Quadrilateral with four equal sides & \begin{tikzpicture} \draw[thick] (0,0)--(1.41, 1.41)--(3.37, 1.41)--(2,0)--(0,0); \addvmargin{1mm}  \end{tikzpicture} \\ \hline
+Trapezoid & Quadrilateral with at least one pair of parallel sides & \begin{tikzpicture} \draw[thick] (0,0)--(3,0)--(2.5,1)--(2,1)--(0,0) ; \addvmargin{1mm}  \end{tikzpicture} \\ \hline
+Isosceles Trapezoid & Trapezoid with two pairs of equal adjacent angles & \begin{tikzpicture} \draw[thick] (0,0) -- (3,0)--(2.5,1)--(0.5,1)--(0,0); \addvmargin{1mm}  \end{tikzpicture} \\ \hline
+Square & Quadrilateral with four right angles and four equal sides & \begin{tikzpicture} \draw[thick] (0,0) rectangle (1,1); \addvmargin{1mm}  \end{tikzpicture}\\ \hline
+\end{tabular}
+
+
+
+\begin{problem}
+Did any of these categories correspond with your sorting? Why or why not? Are there other categories of quadrilaterals you would invent?
+\end{problem}
+
+
+
+\begin{problem}
+Write at least two examples of ``possible or not possible'' questions (like we worked through yesterday for triangles) using our special quadrilaterals.  At least one of your questions should be ``possible'', and at least one should be ``not possible''. 
+\end{problem}
+
+\pagebreak
+\begin{instructorNotes}
+
+{\bf Main goal:} We motivate the definitions of special quadrilaterals through sorting.
+
+
+
+{\bf Overall picture:}
+Students begin by sorting (mostly) quadrilaterals into categories. We want to encourage creativity here -- please emphasize that there is no ``right answer'' to this question. We do not want students trying to remember the definitions on the second page and sorting the shapes according to categories they memorized in school! Rather, we want students to sort the shapes in ways that make sense to them, and then motivate the categories of quadrilaterals as one type of convenient way to sort these shapes. It's important in your discussion here to see as many different examples as you can, to help students build their creativity and to also emphasize that we were not looking for the usual sorting into special quadrilaterals.
+
+Once the sorting ideas have been discussed, wrap up the discussion by introducing the special quadrilaterals. Students then begin working with these definitions through their possible/not possible problems.
+
+
+{\bf Good language:} We continue to emphasize the difference between definitions and properties. Students may have different definitions for the special quadrilaterals, or they might remember properties instead of definitions. Keep directing students back to these definitions when they want to check whether they have a particular shape, and to the properties when they are trying to investigate that shape. We will discuss properties more in the next activities!
+
+
+{\bf Suggested timing:} You can choose to have students bring their cut-out and sorted quadrilaterals, or to have them work on this in class. If you are having them work on it in class, give about 10 minutes at the start for students to cut out and sort their shapes and play the game. Then, spend about 15 minutes having one person from each group talk about how they did their sorting -- what motivated them, what were they thinking, etc. Next, give students about 10 minutes to think about the second page. Spend the rest of the class in discussion, working through as many of their ``possible/not possible'' questions together as you can.
+
+
+
+%\end{center}
+\end{instructorNotes}
+
+\end{document}
+
+
+\pagebreak

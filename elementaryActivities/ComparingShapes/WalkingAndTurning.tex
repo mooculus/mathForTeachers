@@ -1,0 +1,128 @@
+\documentclass[nooutcomes, noauthor]{ximera}
+%\documentclass{ximera}
+\input{../../preamble}
+
+\title{Walking around a triangle}
+\begin{document}
+\begin{abstract}
+\end{abstract}
+\maketitle
+
+Imagine that you walk around a triangle $ABC$ using the following steps.
+
+\begin{enumerate}
+\item Put 3 ``dots" labeled $A$, $B$, and $C$ on the floor to create a triangle (there is an example below).  Connect them with masking tape.  Label a point P on the line segment between $C$ and $A$.
+
+\item Choose two people: one to be a \emph{walker} and one to be a \emph{turner}.
+
+\emph{The walker's job}:  Stand at point P, facing point A.  Walk all the way around the triangle, returning to point P.
+
+\emph{The turner's job}:  Stand at one fixed spot, and face the same direction that the walker faces at all times.  This means that when the walker turns at a corner, you should turn in the same way.
+
+\item Repeat the process a few times, to make sure that everyone in the classroom understands what's going on. Here is a link to a video where you can see the process in action: \url{https://youtu.be/AVLahAs3H60}.
+\end{enumerate}
+
+
+
+\begin{problem}
+In the example triangle below, mark the angles through which the walker turned. Please feel free to add more lines to the triangle if needed. Label the turning angles with the letters $d$, $e$, and $f$, then use our meaning of angle to explain why what you have marked are angles.
+\vfill
+\begin{image}
+\begin{tikzpicture}
+\draw[thick] (0,0)--(5,0)--(4,3)--(0,0);
+\draw[fill=black] (0,0) circle (2pt) node[below] {$C$};
+\draw[fill=black] (5,0) circle (2pt) node[below] {$A$};
+\draw[fill=black] (4,3) circle (2pt) node[above] {$B$};
+\draw[fill=black] (2,0) circle (2pt) node[below] {$P$};
+\end{tikzpicture}
+\end{image}
+\vfill
+\end{problem}
+
+
+\newpage
+
+\begin{problem}
+What is the relationship between the walker and the turner? What does this tell you about angles $d$, $e$, and $f$ (also called the ``exterior angles'' of the triangle)?
+\end{problem}
+
+
+
+\begin{problem}
+What would happen if we walked around another triangle using the same process? Would we get the same result, or a different result? Explain your thinking, drawing more triangles as needed.
+\end{problem}
+
+
+\begin{problem}
+What would happen if we walked around a quadrilateral using the same process? Explain your thinking, drawing several different-looking quadrilaterals to illustrate your thinking.
+\end{problem}
+
+
+
+
+
+
+\begin{problem}
+Here is our triangle again. Label its interior angles $a$, $b$, and $c$. How is each interior angle related to its exterior angle? How can we use this information to find the value of $a +b + c$?
+
+
+\begin{image}
+\begin{tikzpicture}
+\draw[thick] (0,0)--(5,0)--(4,3)--(0,0);
+\draw[fill=black] (0,0) circle (2pt) node[below] {$C$};
+\draw[fill=black] (5,0) circle (2pt) node[below] {$A$};
+\draw[fill=black] (4,3) circle (2pt) node[above] {$B$};
+\draw[fill=black] (2,0) circle (2pt) node[below] {$P$};
+\end{tikzpicture}
+\end{image}
+\end{problem}
+
+
+
+
+
+\pagebreak
+
+
+\begin{instructorNotes}
+
+
+{\bf Main goal:} We explore the exterior angles of shapes and use their sum to explain why the interior angles in a triangle sum to 180 degrees.
+
+
+{\bf Overall picture:} 
+
+
+
+
+Begin with a whole class demonstration of walking around the triangle. Have students act out walking around the triangle so that everyone in the class has a chance to observe what is happening. You can have several pairs of students walk and turn if they are unsure about the process, and you can invite students who are stuck finding the exterior angles to get up and walk around the triangle as part of their work in groups as well.   After the demonstration, students work to finish the exercise in their small groups.
+
+You will need masking tape for creating a triangle on the classroom floor. Sticky notes have been a helpful way to label the three vertices as A, B, and C.
+
+\begin{itemize}
+	\item Students will struggle to identify the turning angles on the figure. This is one of the main things we want to accomplish in this activity. Be sure to look at students' drawings and ask questions about how they know they are correct. It can help to have students walk around the triangle with their arms in front of them to show the rays of the angle with their arms as they turn.
+	\item Don't hesitate to practice with the definition of an angle. Where are the two rays? Where is the vertex? Can we label the triangle some more until we can identify them exactly?
+	\item Once students have identified the angles, they may have trouble recognizing that the turner has turned through a full 360 degrees, i.e., all directions, not just North, East, South, and West. Look out for this as you talk to the groups individually.
+	\item We would like students to recognize that the SUM of the exterior angles will always be $360$ degrees because of what they represent.  In discussion, you should ask whether any directions were repeated during the turning process, and whether any directions were left out. In applying the walking and turning argument to other polygons, we want to consider both convex and non convex polygons (this terminology is not needed but you can introduce it if you find it helpful.)  If you see some exotic triangles or quadrilaterals, be sure to have these groups present so that we get the idea that changing the shape does not change the procedure for triangles, and mostly does not change the procedure for quadrilaterals as well.
+	\item To follow up on the discussion about quadrilaterals, you should ask about pentagons, hexagons, and other shapes. We want students to see that the exterior angles sum to $360$ degrees as long as we don't turn ``back and forth'' in the turning process.
+	\item To find the sum of the interior angles, there are several steps and students may need a hint.  Ask: what do you know about $a+d$?  What would happen if you added together all of the angles in the picture?  Add the 6 angles together and get 540 degrees, with 360 of it taken up by the exterior angles. Feel free to go over this argument multiple times using multiple ways of writing the algebra.
+	\item You should connect back to the fact that for triangles, the sum of the exterior angles are always $360$ degrees, so we can always add the interior angles to get $180$ degrees.  If you have extra time, you can discuss other exterior angle theorems for triangles with any remaining time.
+\end{itemize}
+
+
+
+
+
+
+{\bf Good language:} Be sure to clarify the difference between the exterior angles and the interior angles for this triangle. We would like students to be specific that it's the interior angles of the triangle which add to 180 degrees, not just ``the angles in a triangle''. 
+
+This is a difficult argument for many students -- don't be afraid to go over the argument several times!
+
+
+
+{\bf Suggested timing:} 10-15 minutes of demonstration and clarification, followed by 15-20 minutes in small groups, and finally 15 minutes in whole class discussion.
+
+
+\end{instructorNotes}
+
+\end{document}

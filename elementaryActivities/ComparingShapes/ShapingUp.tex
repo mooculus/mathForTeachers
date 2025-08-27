@@ -1,0 +1,171 @@
+%\documentclass[handout]{ximera}
+\documentclass[nooutcomes,noauthor]{ximera}
+
+\input{../../preamble}
+
+\title{Shaping up}
+\begin{document}
+\begin{abstract}\end{abstract}
+\maketitle
+
+
+
+
+\begin{problem} We just worked a little with triangles.  But what {\em is} a ``triangle''?  Which of the following should be considered a triangle and why?
+
+\begin{image} \begin{tikzpicture}
+\draw[thick] (-2,0)--(0,-1)--(0.3, 1)--(-2.6, 0.9)--(-2,0);
+\node[below] at (-1,-1) {$A$};
+\draw[thick] (1, -0.4)--(3.5,0)--(2.7, 1.6)--(1, -0.4);
+\node[below] at (2, -1) {$B$};
+\draw[thick] (3.7, 2)--(5, 0.3)--(4, -0.8)--(4.7, 1.5);
+\node[below] at (4, -1) {$C$};
+\draw[thick] (5.5, 0)--(6, 0.8)--(6.5, 0.8)--(7, 0);
+\node[below] at (6.25, -1) {$D$};
+\draw[thick] (8,-0.2)--(7.6, 1.3)--(8.8, 1.4);
+\draw[thick, smooth] plot coordinates {(8,-0.2) (8.2, 0.7) (8.8, 1.4)};
+\node[below] at (8.1, -1) {$E$};
+\end{tikzpicture} \end{image}
+
+
+From examining these figures, come up with a definition of ``triangle''.  That is, what criteria should a figure satisfy in order to be a member of the ``club'' of triangles?
+
+\begin{solution}
+Check your textbook for the official definition of a triangle.  Only the second shape above should be considered a triangle.
+\end{solution}
+
+
+\end{problem} 
+
+
+
+%\end{problem}
+
+\pagebreak
+
+
+%For EXPLORATION OF QUADRILATERALS THIS IS COMMENTED OUT
+\begin{problem} You may recall from school that there are some special triangles that fulfill even more criteria than the basic definition on our previous page.  Try to recall what it means for a triangle to be equilateral, isosceles, scalene, right, acute, or obtuse.  Then decide whether or not the following triangles are possible.
+\begin{enumerate}
+\item An equilateral right triangle
+\item An isosceles triangle that is obtuse.
+\item A scalene triangle in which at least two angles are the same.
+\item An acute right triangle.
+\item A triangle with two right angles.
+\end{enumerate}
+
+\begin{solution}
+\begin{enumerate}
+\item Not possible.
+\item Possible.
+\item Not possible.
+\item Not possible.
+\item Not possible.
+\end{enumerate}
+\end{solution}
+
+%COMMENTED OUT FOR MOVING TO ANOTHER ORDER
+\begin{instructorNotes}
+    See the notes for the first problem.
+\end{instructorNotes}
+\end{problem}
+
+\pagebreak
+ We now move on to another kind of polygon: the {\em quadrilateral}.
+
+These figures are quadrilaterals:
+
+\begin{image}
+\begin{tikzpicture}
+\draw[thick] (0.5,0)--(2,0)--(1.4, 2)--(0, 0.7)--(0.5,0);
+\draw[thick] (2.5, 1.8)--(2.6,0)--(3.2, -0.3)--(3.3, 1)--(2.5, 1.8);
+\draw[thick] (3.8, 0)--(4.2, 0.4)--(4.6, 0)--(4.2, 1.7)--(3.8,0);
+\draw[thick] (4.7, 0.5)--(6, 0)--(5.4, 1.2)--(5, 1.5)--(4.7, 0.5);
+\end{tikzpicture}
+\end{image}
+
+These figures are not quadrilaterals:
+\begin{image} \begin{tikzpicture}
+\draw[thick] (0,0)--(1,0)--(1.3, 0.8)--(0.7, 1.7)--(-0.3, 0.9)--(0,0);
+\draw[thick] (1.8, 1)--(2, 0)--(2.5, 0)--(3, 1.5);
+\draw[thick, smooth] plot coordinates{ (1.8, 1) (2.3, 1.6) (3, 1.5)};
+\draw[thick] (3.5, 0.4)--(4.5, 2)--(3.6, 1.8)--(4.6, -0.2)--(3.5, 0.4);
+\draw[thick] (5.4, 2)--(5.1, 0.5)--(5.7, -0.1)--(6, 0.8)--(5.6, 1.7);
+\draw[thick] (6.8, 2)--(6.3, 0)--(7.2, 0)--(7.5, 1.6)--(6.4, 1.7);
+\end{tikzpicture} \end{image}
+
+
+\begin{problem}
+From examining these figures, come up with a definition of a ``quadrilateral''.  What should be the definition of a ``polygon''?
+
+\end{problem}
+
+\begin{solution}
+Check your textbook for these definitions.
+\end{solution}
+
+% \begin{problem}
+% At home, cut out your figures in Activity 10R from the textbook activities manual. 
+% \begin{itemize}
+%     \item  On your own, sort them using any organizing principle you like.  Be sure to write down your thinking and draw or photograph your sorted shapes so that you can remember what you did.
+%     \item With your group members, take turns doing the following: Have one person show their groupings without any information. The other people then guess what criteria were used to make the groupings. (You can keep score if you want to!) Make sure you play at least two rounds of this game (at least two people display their groupings), so that you can see more than one way of sorting the shapes. 
+%     \item For participation credit, you'll submit your thinking for your own groupings -- so make sure to save it! %These should be posted to a discussion board or OneNote Collaboration space after class or at least AFTER playing the game below!
+    
+% \end{itemize}
+
+
+% \end{problem}
+
+% \pagebreak
+
+% As with triangles, there are special kinds of quadrilaterals:
+% \[
+% \includegraphics[width=4.75in]{graphics/defquads.pdf}
+% \]
+% \vskip 1in
+% \begin{problem}
+% Write two examples of ``possible or not possible'' questions (as in Problem 2 for triangles) using our special quadrilaterals.  One of your questions should be ``possible'', and the other should be ``not possible''. 
+% \end{problem}
+
+\pagebreak
+\begin{instructorNotes}
+
+{\bf Main goal:} We  introduce the definitions of triangles and quadrilaterals in a hands-on method.
+
+{\bf Overall picture:} By this point, you've probably had several discussions where you work through definitions.  Here, we want to really focus on the purpose of definitions in geometry (and mathematics more generally).
+
+
+
+
+For the problems about definitions:
+\begin{enumerate}
+\item Check the textbook for the official definitions of these shapes. We want to draw out these definitions from what the students are saying.
+\item This is a good place to begin talking about the idea that we want our definitions to contain as little as possible, so that when we check the definition, we need to do as little work as possible.
+\item This is also a good place to bring up the distinction between definitions and properties (in conjunction with the previous point about having as little to check as we can). We don't want to include something in our definition that we could ``easily'' prove later!
+\item If you choose to use this vocabulary, some students will be confused at the difference between ``closed'' and ``simple''.  A few more examples might be needed.
+\item The meaning of the word ``side'' is difficult for students.  Try to encourage them to talk about edges instead of sides.  
+\item Some students are a little confused about how many edges and vertices a shape has when it's not simple.  It's good to clarify here!
+\end{enumerate}
+
+
+For the problem about special triangles:
+\begin{enumerate}
+\item If students don't remember the definitions of specific types of triangles, you can suggest they look them up online while working on the activity.  During presentations, a student presenting on this question should include the meaning of their special types of triangles.
+\item Students should justify their answers with illustrations as often as possible, even when they are trying to explain why something is not possible.
+\item The item about scalene triangles is a little hard to justify if they haven't had much experience that the ``bigger side'' is across from the ``bigger angle''.  This fact can be proven with trig (sine or cosine laws) or with triangle equivalence, but both are beyond the scope of this course.
+\end{enumerate}
+
+{\bf Good language:} Continue to emphasize that students remind themselves and their classmates of the definitions of terms they are using! Especially in their explanations for the possible/not possible problems, it's good to start by defining everything in sight.
+
+
+
+{\bf Suggested timing:} Give students about 5 minutes to think about their definition of triangles, and then take 10 minutes to discuss their ideas and settle on the textbook's definition. Give students about 5 minutes to think about the special triangles, and then discuss for about 10 minutes. Finally, give students about 5 minutes to think about defining quadrilaterals, and then use the rest of the time for discussion.
+
+
+\end{instructorNotes}
+
+
+\end{document}
+
+
+\pagebreak

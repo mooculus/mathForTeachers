@@ -10,9 +10,13 @@
 
 \usepackage{tikz}
 \usepackage{tkz-euclide}
-\usetikzlibrary{shapes}
+\usetikzlibrary{shapes, fit}
 \newcommand{\dfn}{\textbf}
 \tikzstyle geometryDiagrams=[ultra thick,color=blue!50!black]
+
+\newcommand\addvmargin[1]{
+  \node[fit=(current bounding box),inner ysep=#1,inner xsep=0]{};
+}
 \newcommand{\tri}{\triangle}
 \renewcommand{\l}{\ell}
 \renewcommand{\P}{\mathcal{P}}
