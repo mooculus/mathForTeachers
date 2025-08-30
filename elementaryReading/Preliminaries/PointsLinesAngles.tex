@@ -14,24 +14,25 @@ We introduce some basic objects in geometry.
 
 \section{Points and Lines}
 
-We've already been talking about points and lines, and you probably already have a good idea about what we mean when we talk about these objects: in the figure below, $P$ is a point, and $L$ is a line. 
+We've already been talking about points and lines, and you probably already have a good idea about what we mean when we talk about these objects: in the figure below, $P$ is a point, and $\ell$ is a line. 
 \begin{image}
 	\begin{tikzpicture}
-		\draw[thick, <->] (0,0)--(5,2) node[below right] {$L$}; %%
+		\draw[thick, <->] (0,0)--(5,2) node[below right] {$\ell$}; %%
 		\draw[fill=black] (2.5, 1) circle (2pt) node[above]{$P$};
 	\end{tikzpicture}
 \end{image}
+We typically use upper-case letters to label points and lower case letters to label lines. This is a convention that most people choose to follow, not a requirement. However, it's important to keep in mind that if we use both an upper case and a lower case letter in the same example (like both a $p$ and a $P$) these would mean different objects in the example.
 
-If you are expecting a definition here, you might be surprised: points and lines actually don't have definitions. The mental images you have for these objects are just about the best we can do. In mathematics, we have some ideas that we essentially have to take for granted. We try to minimize the number of those ideas, but we will still have a few. If we tried to define points and lines, we would run into trouble pretty quickly! (Pause and try to do it yourself to see how tough it is!)
+If you are expecting a definition here for lines or points, you might be surprised: points and lines actually don't have definitions. The mental images you have for these objects are just about the best we can do. In mathematics, we have some ideas that we essentially have to take for granted. We try to minimize the number of those ideas, but we will still have a few. If we tried to define points and lines, we would run into trouble pretty quickly! (Pause and try to do it yourself to see how tough it is!)
 
-However, points and lines do have some important properties that we should consider.
+We also make some important assumptions about points and lines that we should consider.
 
 While we usually draw a little circle to represent a point (like $P$ above), we have to remember that a point doesn't have any thickness at all. This is hard to imagine, but if you were our friend the little bug, and your entire world was the point $P$ above, you actually couldn't move at all. In fact, this means that points are $0$-dimensional, because there are $0$ different directions that the bug could move.
 
 Also, in most kinds of geometry, we can identify points anywhere we like. So on the line $M$ below, we can identify points $Q$, $R$, and $S$, as well as many, many more points. 
 \begin{image}
 	\begin{tikzpicture}
-		\draw[thick, <->] (0,0)--(4,-4) node[below] {$M$};
+		\draw[thick, <->] (0,0)--(4,-4) node[below] {$m$};
 		\draw[fill=black] (0.2, -0.2) circle (2pt) node[above right]{$Q$};
 		\draw[fill=black] (2.6, -2.6) circle (2pt) node[above right]{$R$};
 		\draw[fill=black] (3.15, -3.15) circle (2pt) node[above right]{$S$};
@@ -52,7 +53,7 @@ Lines extend forever in each direction, and we usually indicate that by placing 
 \end{image}
 Notice that we can name either a ray or a line segment using two points. We can do the same for lines.
 
-Lines are one-dimensional, meaning they have no thickness. In this case, our little bug could move in the forward-back direction, just not right-left.
+Lines are one-dimensional, meaning they have no thickness. In this case, our little bug could move in the forward-back direction, just not right-left. One of the most important things to keep in mind concerning lines is that if we are looking for the shortest distance between two points, it will be located along a line.
 
 We have drawn all of our lines so far to be straight lines, and most of the time when we refer to a line we will want it to be straight. When we refer to curved lines, we will usually call them curves, but it's best to be specific most of the time!
 
@@ -60,6 +61,10 @@ Finally, we can tallk about a \dfn{plane}, which is like a piece of paper with n
 \begin{image}
 	\begin{tikzpicture}
 		\draw[thick, dotted] (0,0)--(3,1)--(3,6)--(0,5)--(0,0);
+		\draw[->] (-0.5, 2.5)--(-1.5, 2.17);
+		\draw[->] (3.5, 3.5)--(4.5, 3.83);
+		\draw[->] (1.5, 6.16)--(1.5, 7.16);
+		\draw[->] (1.5, 0.16)--(1.5, -0.84);
 	\end{tikzpicture}
 \end{image}
 Imagine that the edges drawn aren't actually edges, but keep extending forever. Even though this plane is drawn in three-dimensional space, the plane itself is two dimensional, because if our friend the little bug lived on this plane, it could move forward-back and also right-left as well as all of the combinations of those two directions. But since the plane has no thickness, the little bug couldn't fly around in an up-down direction.
@@ -119,7 +124,7 @@ We can also indicate points on the rays that make up our angle, and name the ang
 \end{image}
 This angle can be called either $\angle ABC$ or $\angle CBA$. Since the angle has a marking indicating it starts at the horizontal ray, it would be most common to label it as $\angle CBA$. Or, if the points $A$ and $C$ are clear or not labeled, we could also call it angle $\angle B$ using just the vertex label.
 
-While our definition for an angle is a static object formed by the two rays and the vertex, the way we measure angles is most commonly done by thinking either about turning or about the relative direction between the two rays.
+While our definition for an angle is a static object formed by the two rays and the vertex, the way we measure angles is most commonly done by thinking either about turning or about the relative direction between the two rays. The center of the turn must be the vertex of the angle.
 
 \begin{definition}
 The \dfn{measure} of an angle is given by the fraction of a full turn which is represented by the two rays. The turn can be thought of as part of a circle whose center is at the vertex of the angle. We can also think of this turn as telling us the relative direction between the two rays.
@@ -192,7 +197,8 @@ Angles are used to describe many different phenomena in the world as well as in 
 
 We end this section by talking through some vocabulary we will use to talk about lines and angles.
 
-We sometimes call a half-turn a \dfn{straight angle}, because it looks like a straight line. Remember to distinguish when you are discussing a line and when you are discussing an angle!
+We sometimes call a half-turn a \dfn{straight angle}, because it looks like a straight line. Remember to distinguish when you are discussing a line and when you are discussing an angle! For example, if I am considering this object as an angle with vertex $V$, it is a straight angle measuring $180$ degrees. If I am thinking about measuring a part of this object as a line, that measure would refer to its length, not an amount of turning.
+
 \begin{image}
 \begin{tikzpicture}
   % Draw the lines
@@ -204,6 +210,7 @@ We sometimes call a half-turn a \dfn{straight angle}, because it looks like a st
   % Draw the arc
   \draw[thick,->] (3.3,0) arc (0:180:0.3);
 \draw[fill=black] (B) circle (2pt);
+\node[below] at (B) {$V$};
 \end{tikzpicture}
 \end{image}
 
