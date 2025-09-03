@@ -1,0 +1,109 @@
+%\documentclass{ximera}
+\documentclass[nooutcomes,noauthor]{ximera}
+\input{../../preamble}
+\title{Triangle angles}
+
+\begin{document}
+\begin{abstract}
+\end{abstract}
+
+\maketitle
+
+\begin{problem}
+Draw a very large triangle on a piece of paper. Tear off the corners of that triangle. Play with the three corners for a little while, and then make at least three observations about your work. If you get finished early, repeat the process with a different-looking triangle and continue making observations.
+\end{problem}
+
+\begin{problem}
+Using your triangle and the observations you just made, answer the following questions.
+\begin{enumerate}
+\item Would your observations hold if your triangle was a special triangle, like obtuse or isosceles? How do you know?
+\item Do your observations hold for every triangle or just for the one you are looking at? How do you know?
+\item Would your observations hold for shapes other than triangles? How do you know?
+\item Do you think it is possible to justify your observations using only examples? Why or why not?
+\end{enumerate}
+\end{problem}
+
+\newpage
+
+\begin{problem}
+Here is another way that some people think about the interior angles of a triangle. The figure below has a triangle $ABC$ with a line drawn through point $B$ which is parallel to $AC$. The angle measures are labeled with lower case letters matching the point labelings (for instance the angle at point $A$ has measure $a$.) 
+\begin{image}
+\begin{tikzpicture}
+	\draw[thick] (0,0)--(6,0)--(5,3)--(0,0);
+	\node[below] at (0,0) {$A$};
+	\node[below] at (6,0) {$C$};
+	\node[above] at (5,3) {$B$};
+	\node at (0.5,0.15) {$a$};
+	\node at (5.8,0.15) {$c$};
+	\node at (4.9,2.7) {$b$};
+	\draw[thick] (-1,3)--(7,3);
+\end{tikzpicture}
+\end{image}
+
+Explain how you could use this extra parallel line to determine the sum of the three interior angles of triangle $ABC$.
+
+\end{problem}
+
+
+\begin{problem}
+Compare and contrast your work with tearing off the corners of the triangle to this work with adding an extra parallel line. Give at least one pro and one con for each method.
+\end{problem}
+
+
+\begin{problem}
+Some people extend the base of their triangle (in our case side $AC$) and then draw the parallel line through $A$ parallel to $BC$. This image is shown below. 
+\begin{image}
+\begin{tikzpicture}
+	\draw[thick] (0,0)--(6,0)--(5,3)--(0,0);
+	\node[below] at (0,0) {$A$};
+	\node[below] at (6,0) {$C$};
+	\node[above] at (5,3) {$B$};
+	\node at (0.5,0.15) {$a$};
+	\node at (5.8,0.15) {$c$};
+	\node at (4.9,2.7) {$b$};
+	\draw[thick] (-4,0)--(0,0)--(-1, 3);
+\end{tikzpicture}
+\end{image}
+
+Using the fact that you now know the triangle's interior angle sum, what can you say about the exterior angle to the triangle at point $A$?
+\end{problem}
+
+
+\newpage
+
+\begin{instructorNotes} 
+
+
+
+{\bf Main goal:} Explain why the interior angles of a triangle sum to $180$ degrees.
+
+{\bf Overall picture:} 
+\begin{itemize}
+\item This activity complements our work on Walking Around a Triangle where we find the interior angle sum of a triangle in two different ways.
+\item One important aspect of this activity that we want to draw out is the different types of mathematics that children do at different age levels. Tearing off the corners of the triangle is appropriate for young children who are exploring shapes, and we want our students to recognize this as valid mathematics. However, we also want our students to realize that checking examples is not enough to prove that something is true for every triangle. Both of these ideas should be highlighted in your work with tearing off the corners, and perhaps emphasized again when you compare and contrast the two methods.
+\item To speed up the first exploration, you can provide triangles pre-made for students to rip. Emphasize that they should rip off the corners rather than cut them so that they can tell which sides of the ripped figure contained the original angle of the triangle.
+\item To help emphasize that making observations is a vital part of mathematics, all observations (especially the more creative ones) should be welcomed. For instance, observations like ``I can use the corners to form a cat face'' help our students to grow in their definition of what mathematics is and how we see it all around us.  You can mention that there is one observation you are particularly looking for (that we can put the angles together to form a straight angle) but that no observation is incorrect at this stage.
+\item Your discussion should include both a demonstration of how the angles fit together to make a half-turn, as well as a connection of the half-turn to the 180 degree measurement. Finally, you should discuss the final question, that both we cannot really tell whether 1 degree or even 0.5 degrees are ``missing'' from our half-turn, and we would need to check every triangle (an infinitely large task) to really prove this theorem. But, we do want to highlight how this idea can build a foundation for young children to build upon in the later grades.
+\item When moving to the parallel line argument, we are now working with a high school level argument (as opposed to the elementary school level of ``tearing off the corners'' or the middle school level of ``walking around the triangle''). 
+\item Encourage students to carefully state the Parallel Postulate as they are using it. 
+\item Students should identify that the three angles which form a straight line are the same as the three angles in the triangle. We want to see that this is the opposite situation as with tearing off the corners of the paper triangle, because we are guaranteed the straight angle in this case. Instead, we are matching the angles we have to the angles forming the straight angle. Being careful about this logic is a good idea. Furthermore, we can highlight that we don't have anything in this argument which is specific to the individual triangle (as opposed to putting the corners together), so this argument is much closer to a proof. However, it's nice to see how the two arguments are related!
+\item You can connect this parallel line argument to the idea of folding down the corners of the triangle to make a straight angle inside the triangle if you'd like and have time.
+\item The final problem connects again back to our with with exterior angles. Either version of the Exterior Angle Theorem can be brought up here. This problem is a bonus if you have time, and would make a good homework problem if you don't have time.
+\end{itemize}
+
+{\bf Good language:} Encourage students to describe their results as young children might. We also want to highlight the connection between the turning meaning of angles and the degree measurement.
+
+When using the Parallel Postulate, help students to be specific about which angles are congruent to which angles and why. It's worth discussing that we are also using the alternate interior angle version of the Parallel Postulate rather than the corresponding angle version.
+
+
+
+{\bf Suggested timing:} Give students about 5-10 minutes to work on the first two problems (page 1) and then discuss for about 15 minutes. Repeat with the remaining problems as time allows.
+
+
+
+
+\end{instructorNotes}
+
+
+
+\end{document}
