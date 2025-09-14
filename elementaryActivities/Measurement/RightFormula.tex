@@ -1,0 +1,118 @@
+%\documentclass{ximera}
+\documentclass[nooutcomes,noauthor]{ximera}
+\input{../../preamble}
+\title{The right formula}
+
+\begin{document}
+\begin{abstract}
+\end{abstract}
+
+\maketitle
+
+Our goal over the next several activities will be to find an area formula for triangles. In order to do this, we need to start by identifying the base and height for triangles.
+\begin{problem}
+On the triangle below, draw the height of the triangle in three different ways.
+\begin{enumerate}
+	\item Use side $AB$ as the base.
+	\begin{image}
+		\begin{tikzpicture}
+			\draw[thick] (0,0) -- (6,1)--(4,3)--(0,0);
+			\node[below] at (0,0) {$A$};
+			\node[below right] at (6,1) {$B$};
+			\node[above left] at (4,3) {$C$};
+		\end{tikzpicture}
+	\end{image}
+	\item Use side $BC$ as the base.
+	\begin{image}
+		\begin{tikzpicture}
+			\draw[thick] (0,0) -- (6,1)--(4,3)--(0,0);
+			\node[below] at (0,0) {$A$};
+			\node[below right] at (6,1) {$B$};
+			\node[above left] at (4,3) {$C$};
+		\end{tikzpicture}
+	\end{image}
+	\item Use side $AC$ as the base.
+	\begin{image}
+		\begin{tikzpicture}
+			\draw[thick] (0,0) -- (6,1)--(4,3)--(0,0);
+			\node[below] at (0,0) {$A$};
+			\node[below right] at (6,1) {$B$};
+			\node[above left] at (4,3) {$C$};
+		\end{tikzpicture}
+	\end{image}
+\end{enumerate}
+\end{problem}
+
+\newpage
+
+The first type of triangles we will work with are right triangles.
+
+\begin{problem}
+Use a moving and additivity strategy to find a formula for the area of the triangle below in terms of $b$, the length of its base, and $h$, the length of its height. If you move and reattach pieces of the triangle or make copies of the triangle, you should prove that they fit exactly as you claim.
+
+\begin{image}
+\begin{tikzpicture}
+\draw[thick] (0,0)--(4,0)--(0,2)--(0,0);
+\node[below] at (2,0) {$b$};
+\node[left] at (0,1) {$h$};
+\end{tikzpicture}
+\end{image}
+\end{problem}
+
+\begin{problem}
+Use a different moving and additivity strategy than you did in the first problem to find a formula for the area of the triangle below in terms of $b$, the length of its base, and $h$, the length of its height. If you move and reattach pieces of the triangle or make copies of the triangle, you should prove that they fit exactly as you claim.
+
+\begin{image}
+\begin{tikzpicture}
+\draw[thick] (0,0)--(4,0)--(0,2)--(0,0);
+\node[below] at (2,0) {$b$};
+\node[left] at (0,1) {$h$};
+\end{tikzpicture}
+\end{image}
+\end{problem}
+
+\begin{problem}
+Use a third different moving and additivity strategy to find a formula for the area of the triangle below in terms of $b$, the length of its base, and $h$, the length of its height. If you move and reattach pieces of the triangle or make copies of the triangle, you should prove that they fit exactly as you claim.
+
+\begin{image}
+\begin{tikzpicture}
+\draw[thick] (0,0)--(4,0)--(0,2)--(0,0);
+\node[below] at (2,0) {$b$};
+\node[left] at (0,1) {$h$};
+\end{tikzpicture}
+\end{image}
+\end{problem}
+
+
+
+\newpage
+
+\begin{instructorNotes} 
+
+{\bf Main goal:} We begin to work towards the area formula for triangles using right triangles. We will spend three days on this formula: one for right triangles, one for acute triangles, and one for obtuse triangles.
+
+{\bf Overall picture:} 
+\begin{itemize}
+\item  The problems about base and height are included because it's an excellent exercise for our students. They tend to struggle with identifying the height for obtuse triangles, and this activity reminds them that they can turn any triangle so that the height is completely inside the triangle. These problems don't need a lot of discussion other than defining the height of a triangle.
+	\item For the three problems about the right triangle, our three options are to cut the height in half, cut the base in half, and cut the entire (doubled) area in half. We would like the students to see this connection and emphasize it in their explanations. By allowing the students to come up with their own ideas, we hope that the groups begin with different ideas and can present them. Look for each of these options as you walk around the classroom.
+	\item Since we have recently learned about the moving and additivity principles, it's good to emphasize when and how we are using those principles here.
+	\item We would like to discuss how we know that the pieces of the triangles that we are cutting actually fit exactly together. We don't want to guess or estimate here, but use the way we've cut the triangles, along with the parallel postulate and the definitions of various shapes, to justify why the pieces fit.  You will likely need to ask students to justify why things fit after they present their ideas about how to calculate the area, or to expand on their thinking in this area.
+	\item For instance, when we make two copies of the triangle, we can label the measures of the angles as $a$ and $b$. When we match them up, we need to explain why what we've created is a rectangle, so that we can use the area formula for rectangles. A rectangle has four right angles, so we need to justify that we have made four right angles. Two are easy, and two require us to think about the angles $a$ and $b$ together using the total angle sum of a triangle.
+	\item When we cut the base and height in half and glue these pieces together, we need to also justify that our figure has four sides (have we created a new side when we put together the three angles along one ``side'' of the rectangle?). 
+	\item Pay attention to what you can assume based on your cutting, and what you need to justify! But be patient -- these are difficult ideas for our students.
+\end{itemize}
+
+
+{\bf Good language:} This is the first time we have focused on the base and height of a triangle, so we want to contrast this with the length of the base and the length of the height. Generally we don't expect our students to use this language, but we do need them to recognize the difference between a segment and its length. Remind the students that the meaning of area is the amount of 2D space an object takes up (and we measure it by covering with area units) any time it makes sense to do so!
+
+
+
+{\bf Suggested timing:} These activities take a full class period. Give students about $5$ minutes to draw the heights on the triangle, and then discuss for about $10$ minutes. Next, give students about $10$ minutes to think about their strategies for the right triangle (be prepared to make suggestions for groups that are stuck). Use the remaining time to present and discuss why the pieces fit exactly.
+
+
+
+\end{instructorNotes}
+
+
+
+\end{document}

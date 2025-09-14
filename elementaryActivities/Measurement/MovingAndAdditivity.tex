@@ -1,0 +1,85 @@
+\documentclass[noauthor,nooutcomes]{ximera}
+\input{../../preamble}
+
+\begin{document}
+\title{Moving and Additivity}
+\begin{abstract}
+\end{abstract}
+\maketitle
+
+The moving and additivity principles tell us that the area of a figure is not changed by moving parts of the figure around, as long as there are no gaps or overlaps in the new arrangement of pieces.  Similarly, we can add or subtract parts of a figure as long as we change the area accordingly.  Check out the textbook for more details!
+
+\begin{problem}
+Find the area of the following figure in at least four different ways.  Be as creative as possible!  The only area formula you may use is that for a rectangle.
+
+Note that if we placed this shape on a grid, its vertices would be located at $(0,0)$, $(8,0)$, $(8,6)$, $(5,6)$, $(5,3)$, and $(0,3)$.
+\begin{center}
+\begin{tikzpicture}[scale=0.7]
+	\draw[thick] (0,0)--(8,0)--(8,6)--(5,6)--(5,3)--(0,3)--(0,0);
+	\node[below] at (4,0) {8 cm};
+	\node[right] at (8,3) {6cm};
+	\node[above] at (6.5, 6) {3cm};
+	\node[left] at (5, 4.5) {3cm};
+\end{tikzpicture}
+\end{center}
+\end{problem}
+
+
+
+\pagebreak
+
+\begin{problem}
+Find the area of the shaded shape below in three different ways.  Be as creative as possible!  The only area formula you may use is that for a rectangle.
+
+Note that if we placed this shape on a grid, its vertices would be at $(0,0)$, $(2,2)$, $(0,4)$, $(4,8)$, $(8,4)$, $(6,2)$, and $(8,0)$.
+
+\begin{center}
+\begin{tikzpicture}
+\draw[fill=lime] (0,0)--(1,1)--(0,2)--(2,4)--(4,2)--(3,1)--(4,0)--(0,0);
+\draw[thick] (0,0) rectangle (4,4);
+\node[right] at (4, 2) {8 units};
+\node[below] at (2,0) {8 units};
+\end{tikzpicture}
+\end{center}
+\end{problem}
+
+\newpage
+
+
+
+
+\begin{instructorNotes}
+{\bf Main goal:} We introduce the moving and additivity principles for area.
+
+{\bf Overall picture:} 
+
+Problem 1:
+\begin{itemize}
+\item Problem 1 is pretty straightforward, but does have two goals: 1) Students should recognize that the methods of subdividing unusual shapes into rectangles and totaling the area of those subdivisions is an application of the principle of Moving and Additivity, and 2) Students should continue to appreciate that there are many different ways to solve a problem, each reflecting the individuality of the problem solver.
+
+\item Here are some common solution methods you might see or elicit (and are mentioned in Activity 12C explicitly)
+\begin{itemize}
+    \item Subdivide strategy (make rectangles)
+    \item Takeaway or surround strategy (surround the shape with a rectangle and remove a rectangle)
+    \item Combine two copies and take half (two copies makes a rectangle)
+    \item Move and reattach strategy (Move a rectangle to form a different rectangle)
+\end{itemize}
+
+\item You need not give names to any of these strategies, but students should be familiar with the term ``moving and additivity'' by the end of this activity.  Notice that the only area formula needed for this problem is the formula for the area of a rectangle, which students can use here without justification.
+\item We also want to spend some time in our overall discussion why the moving and additivity principles make sense from our ``common-sense'' ideas about what should preserve area and what should change the area.
+\end{itemize}
+
+Problem 2:
+\begin{itemize}
+\item Problem 2 is more challenging, but fun!   Students may also assume any symmetry that seems obvious, especially as they think about folding parts of the outer square or shaded shape to match with other parts of the figure. Note that the Pythagorean theorem and area of a triangle formulas are not permitted on this problem because they have not yet been justified in class. Students should focus on rearranging the pieces of area in creative ways. The area should be 40 square units.
+\end{itemize}
+
+
+{\bf Good language:} Encourage students to emphasize that they are putting together area pieces without gaps or overlaps, and if they are just rearranging area to emphasize that no area is being lost. While these are common-sense principles for working with area, we want our students to be clear when describing their thinking.
+
+We will also be looking in future problems for students to describe (using angles or other features) how they know the pieces they cut and reassemble fit together exactly. It's good to bring that up here even if you don't discuss it.
+
+{\bf Suggested timing:} We have a whole class period for this activity. Give students 10 minutes to think through their own strategy, and then have students present their work. We are looking for several strategies for each figure to be demonstrated and explained!
+\end{instructorNotes}
+
+\end{document}

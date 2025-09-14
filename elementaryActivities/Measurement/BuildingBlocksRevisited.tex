@@ -1,0 +1,81 @@
+\documentclass[nooutcomes,noauthor]{ximera}
+\input{../../preamble}
+
+\title{Building Blocks}
+
+\begin{document}
+\begin{abstract}
+\end{abstract}
+\maketitle
+
+
+
+
+\begin{problem}
+First measure the area of the rectangle below.  Describe how you would build a rectangular prism with volume $8$ cubic inches with its base on the rectangle.
+
+%\vspace{1 in}
+\tikz{ \draw (-2 in,-1 in) -- (2 in,-1 in); \draw (-2 in, -1 in) -- (-2 in, 1 in); \draw (-2 in, 1 in) -- (2 in, 1 in);\draw (2 in, 1 in) -- (2 in, -1 in);\draw (-2 in, -1 in) -- (2 in, -1 in); \draw(-2 in, 0)--(2 in, 0);\draw(-1 in, -1 in)--(-1 in, 1 in);\draw(0 in, -1 in)--(0 in, 1 in);\draw(1 in, -1 in)--(1 in, 1 in);}
+
+\end{problem}
+
+\begin{problem}
+Using the same base, build a rectangular prism with volume $24$ cubic inches.
+
+%\begin{solution}
+%Your prism should have three layers identical to the prism you build in Problem 1.
+%\end{solution}
+\end{problem}
+
+\begin{problem}
+Using the same base, build a rectangular prism with volume $44$ cubic inches.
+\end{problem}
+
+
+\begin{problem}
+We are familiar with the formula for the volume of a rectangular prism $V = \ell \times w \times h = A \times h$.  Using our Math 1125 interpretation of multiplication, explain why this formula is accurate.
+
+%\begin{solution}
+%Here we can see that we have $h$ layers, each containing $\ell \times w$ number of volume units.  In other words, we have $h$ layers, each containing $A$ volume units for a total of $h \times A$ total volume units.  Notice something strange, here: the area (which is 2-dimnesional) gives us a number of (3-dimensional) volume units!
+%\end{solution}
+\end{problem}
+
+
+\begin{problem}
+Draw a different shape whose area is $8$ square inches. What would your volumes with 24 cubic inches and 44 cubic inches look like now? How is this related to the volume formula you just discussed?
+\end{problem}
+
+
+\newpage
+\begin{instructorNotes}
+
+{\bf Main goal:} We discuss measuring volume, and justify the $V = L \times W \times H$ formula for rectangular prisms
+
+
+{\bf Overall picture:} There are 1-inch cubes in the supply closet that may be useful for this activity.
+
+\begin{itemize}
+\item The key idea of this exercise is the subtle reasoning about the volume formula for prisms.  The students will create layers of cubes.  The volume of one layer of cubes is the same number of volume units as the area of the base.  This observation, which can be applied to all prisms (and cylinders, in fact), justifies the volume formula for a prism $V = Ah$.
+\item We consider how filling a box can be done systematically by
+  building the first layer by covering the base of the box with the
+  same number of cubes as squares needed to ``cover'' the base - this
+  number is also the ``area'' of the base.  Then we iterate the layer
+  itself the same number of times as the height.
+  \item Point out that the measurements used in the $V=L \times
+  W \times H$ must all be found in the same length unit (e.g., inches)
+  in order to generate an answer in ``cubic units''.
+\item Students may need to be reminded that to measure volume, our goal is to fill the object (no gaps, no overlaps) and count the number of cubes we have. Emphasize this connection!
+\item We may again need to discuss how the 2D area units on the base give us a number of cubes in the first layer. It can be useful to visualize a one-to-one correspondence between the area units covering the base and the volume units which make up the first layer. Students often want to explain the volume formula for a box as
+  ``stacking the area up H times''. We don't want to count square units with $A \times h$, since this would give us a ``hollow'' cube! This is, however, the most common error students make with this explanation.
+\item We are more concerned with the $A \times h$ formulation here than a true $L \times W \times H$ formulation. Students should be able to count the area of the base using $L \times W$, but using the area is more general for other types of prisms and cylinders. The final problem begins to attack this more general formula.
+\end{itemize}
+
+{\bf Good language:} We really want to emphasize here the groups and objects meaning of multiplication at play. That means students should clearly distinguish what they are seeing as one group (one layer) and what they are seeing as one object (one cube). We also want to continue to emphasize the correct dimensions of what we are doing: we can't use area to measure a volume (we have to use volume units), just like we can't use a length to measure area (we have to use area units).
+
+
+\timing{This activity should probably take about 1/2 of a class period. Give students about 5-10 minutes to work through the problems, and then spend about 15-20 minutes in discussion. Be sure to have students sketch or demonstrate clearly how they are counting the layers!}
+
+
+\end{instructorNotes}
+
+\end{document}

@@ -1,0 +1,93 @@
+%\documentclass{ximera}
+\documentclass[nooutcomes,noauthor, handout]{ximera}
+\input{../../preamble}
+\title{Shear Fun}
+
+\begin{document}
+\begin{abstract}
+\end{abstract}
+
+\maketitle
+
+\begin{problem}
+Work with a partner for this problem. Have both people cut out both shapes below, but then have one person cut the shapes into strips as indicated by the dotted lines. The other person should leave the shapes whole.
+\begin{center}
+\begin{tikzpicture}
+	\draw[very thick] (-1,0)--(4,0)--(6,6)--(1,6)--(-1,0);
+	\draw[very thick] (14,0)--(11,0)--(8,6)--(14,0);
+	\foreach \y in {1, 2, 3, 4, 5} \draw[dotted] (-1,\y)--(14,\y);
+	
+\end{tikzpicture}
+\end{center}
+
+How could you rearrange the strips of area in order to make another shape whose area might be easier to find? 
+
+\end{problem}
+
+
+\begin{problem}
+Compare your original shape to your new shape. List as many attributes as you can that have changed, and list as many attributes as you can that have stayed the same.
+\end{problem}
+
+\newpage
+
+\begin{problem}
+What does this investigation tell you about the two triangles below? Make as many observations as you can.
+\begin{center}
+\begin{tikzpicture}
+	\draw[dotted] (0,0)--(8,0);
+	\draw[dotted] (0,5)--(8,5);
+	\draw[thick, red] (2,0)--(5,0)--(7,5)--(2,0);
+	\draw[thick, dashed, blue] (2,0)--(5,0)--(1,5)--(2,0);
+\end{tikzpicture}
+\end{center}
+\end{problem}
+
+\begin{problem}
+Draw several different-looking rhombuses that all have side lengths of 2 inches. (You can sketch these: you don't need to construct them exactly. But, be careful enough in your drawings that you can investigate their properties.)
+\vskip 0.1in
+Does our work today say that all of these rhombuses have the same area? Why or why not?
+\end{problem}
+
+
+\newpage
+
+\begin{instructorNotes} 
+
+
+
+{\bf Main goal:} We introduce the concept of shearing.
+
+{\bf Overall picture:} 
+
+
+\begin{itemize}
+	\item The first two problems introduce students to the idea of shearing. We are hoping the students come up with the idea of sliding the strips parallel to the base, but you may have some other creative methods. Feel free to explore other creative methods before focusing on shearing. However, after these two problems you should stop and have a whole-class discussion where you define shearing exactly.
+	\item We want to conclude that shearing preserves area. It can potentially help to have toothpicks or popsicle sicks for students to use to simulate the shearing process if those are available. In that case, if we think about the toothpicks themselves as an area unit, we should have the same area no matter how they are arranged, as long as we don't have gaps or overlaps between the toothpicks. 
+	\item We want to see shearing as a special case of moving and additivity. Students should recognize that they are moving around the strips without creating gaps or overlaps, so the area is unchanged.
+	\item In terms of other observations we want to make, we want students to recognize that the height of the stack is also preserved, which is useful when we think about applications of shearing to things like triangles or parallelograms. It's also included in the process of shearing: if the height changes, you're not doing shearing. The base of the figure also does not change. Thinking about this should help with the third problem, where the point is to see that if two triangles have the same base and fall between the same parallels (or have the same height) that their areas must be the same.
+	\item We also want to notice that the side lengths of the figures are changing. This is related to problem 4, where we want to recognize that just because the side lengths are all the same doesn't guarantee that the area stays the same. We are hoping students draw some rhombuses that are closer to squares and others that are very long and skinny so we can really see the difference in area. Sometimes we call this ``squashing'' instead of shearing. It may be helpful to do the squashing on grid paper, so that students can calculate the area at various stages and feel convinced that the area is in fact changing. You may have some debate about this amongst the students!
+	\item If students are struggling too see what shapes are being formed, you might suggest they cut their strips in half again. The ``jagged edges'' of the strips can be bothersome to some students, especially if we have been working on precision in drawing and language. Technically the strips would need to be ``infinitesimally thin'' before we get smooth sides again. Don't be afraid to discuss this and gently relate it to the idea of a limit. 
+
+\end{itemize}
+
+To wrap up, summarize clearly the things that change and don't change for each of the problems. Be sure that students understand why shearing preserves area. If you have some extra time, you can either attempt shearing some more complicated figures (a circle is nice, and if you shear it into an oval you can discuss again how we have to imagine the strips as thin as possible). 
+
+
+
+
+
+{\bf Good language:} Again, remind students that area is the amount of 2D space an object takes up. This idea should hopefully help with the misconceptions that arise with ``squashing''. Students who think that area is length times width may struggle with the idea that the same perimeter can produce different areas. We'll return to this misconception in a later activity.
+
+
+
+{\bf Suggested timing:} Give students 15 minutes to cut out and explore the first two problems, then spend about 15 minutes in discussion. Next, give students 5-10 minutes to think about the last few problems, and use the rest of the time on discussion and wrap-up.
+
+
+
+
+\end{instructorNotes}
+
+
+
+\end{document}

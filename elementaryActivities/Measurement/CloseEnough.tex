@@ -1,0 +1,109 @@
+%\documentclass{ximera}
+\documentclass[nooutcomes,noauthor, handout]{ximera}
+\input{../../preamble}
+\title{Close Enough}
+
+\begin{document}
+\begin{abstract}
+\end{abstract}
+
+\maketitle
+
+
+\begin{problem}
+How could we use the four-step process of measurement to find the area of the shape below?
+\begin{center}
+\begin{tikzpicture}
+\draw[dotted, gray, step=0.4] (0,0) grid (5,5);
+\draw[smooth, very thick] plot coordinates {(0.5,0.5) (0.5,4) (3,4.5) (4.5, 4) (3,2.5) (4,1)  (0.5,0.5)};
+\end{tikzpicture}
+\end{center}
+
+Is your answer exact, or an approximation? How can you tell?
+\end{problem}
+
+\begin{problem}
+See if you can find two more strategies to approximate the area of the figure in the previous problem.  Are your approximations over-estimates, or under-estimates? How do you know? Here are two more copies of the figure to draw on.
+\begin{center}
+\begin{tikzpicture}
+\draw[dotted, gray, step=0.4] (0,0) grid (5,5);
+\draw[smooth, very thick] plot coordinates {(0.5,0.5) (0.5,4) (3,4.5) (4.5, 4) (3,2.5) (4,1)  (0.5,0.5)};
+\end{tikzpicture}
+\hspace{0.5in}
+\begin{tikzpicture}
+\draw[dotted, gray, step=0.4] (0,0) grid (5,5);
+\draw[smooth, very thick] plot coordinates {(0.5,0.5) (0.5,4) (3,4.5) (4.5, 4) (3,2.5) (4,1)  (0.5,0.5)};
+\end{tikzpicture}
+\end{center}
+
+\end{problem}
+
+\pagebreak
+
+\begin{problem}
+Tad thinks he can find the area of the figure by wrapping a string around it and then reforming the string into a rectangle. Tad thinks the rectangle should have the same area as the original figure. Do you agree with Tad? Why or why not?
+\begin{center}
+\begin{tikzpicture}
+\draw[dotted, gray, step=0.4] (0,0) grid (5,5);
+\draw[smooth, very thick] plot coordinates {(0.5,0.5) (0.5,4) (3,4.5) (4.5, 4) (3,2.5) (4,1)  (0.5,0.5)};
+\end{tikzpicture}
+\end{center}
+\end{problem}
+
+
+\begin{problem}
+Aimee thinks that she can take some modeling dough and cover the area with an even thickness of half an inch. Then she can rearrange the modeling dough into a rectangle which also has a thickness of half an inch. Aimee thinks that her rectangle will have the same area as the original shape. Is Aimee's idea the same as Tad's, or different? Do you agree with Aimee? Why or why not?
+\end{problem}
+
+
+
+\begin{problem}
+Raquel thinks that she can start by weighing a piece of paper, then tracing the shape onto her paper. She'll cut out the shape and then weigh it. Raquel thinks this process should give her the area of the original shape, but she isn't sure how to calculate it. If the paper weighs 5 grams and the shape weighs 1 gram, what is the area of the shape?
+\end{problem}
+
+
+
+\newpage
+
+\begin{instructorNotes} 
+
+
+
+{\bf Main goal:} We use the meaning of area and several strategies to estimate irregular areas.
+
+{\bf Overall picture:}
+
+
+Problems 1 and 2 focus on approximating area by counting squares. 
+
+\begin{itemize}
+	\item Problem 1 brings up the four-step process of measurement so that we can connect our work with approximations to this idea. We want to always remember that if we are calculating area using a formula, these four steps are happening behind the scenes.
+	\item Problem 2 asks students to be creative in thinking of other ways to approximate the area other than simply counting squares. We could count the squares fully inside the shape or any square that the shape touches. We could count the squares outside of the shape and subtract from the total number of squares. We could cut the shape into approximate rectangles and calculate their area, or we could draw a rectangle whose shape is close to that of the shape we are approximating. We can also mix and match strategies. Students should be encouraged to be creative.
+	\item Problem 2 also asks students to consider whether they are under- or over-approximating, which should be connected back to the meaning of area.
+\end{itemize}
+
+
+Problems 3 -- 5 introduce other strategies that can be used to approximate the area.
+\begin{itemize}
+	\item Problem 2 about outlining the shape with the string is a common misconception, so it should be treated carefully. This will be related to our Perimeter and Area activity as well as the difference between shearing and squashing, but we want students to realize that this does not preserve area. Perhaps the easiest way is to ask if this is the same as moving and additivity, or different. The grid is provided to help students work out their ideas here - perhaps pushing out the ``bump'' in the shape could help students see that we can change the area without changing the perimeter and so this idea should not give the same area.
+	\item The modeling dough in Problem 3 is a good contrast to the string. Here we can reform the area into a rectangle, because we are taking area and moving it around. (With the string, this is not what is happening!) You should emphasize the fact that the modeling dough has a height, and have students clarify that the height needs to be exactly the same after we rearrange the dough. That way, we can ignore the three-dimensionality of the dough and focus on the two-dimensional face of the dough. You should ask students whether this constant height is important!
+	\item The scale in Problem 5 can be used with ratio ideas: if the object weighs some percent of a full piece of paper, as long as we assume a standard thickness of the paper, the area should be the same percent.
+	
+\end{itemize}
+
+
+
+{\bf Good language:} Keep track of the dimensions you're dealing with throughout these exercises. Students can be easily confused by these ideas again. Encourage drawing pictures as often as possible.
+
+
+
+{\bf Suggested timing:} This activity is intended to take a full class period. Give students about 5 minutes to work on problem 1 and then discuss for about 10 minutes, so that the main ideas are presented early and connected to the ideas we have seen previously in the course. Then give students about 10 minutes to work on the rest of the problems, and take the rest of the time to discuss as much as you can. Make sure you present as many ideas as you can! At the end of this activity, students should be able to describe more than one method for estimating the area.
+
+
+
+
+\end{instructorNotes}
+
+
+
+\end{document}

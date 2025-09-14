@@ -1,0 +1,96 @@
+\documentclass[noauthor,nooutcomes, handout]{ximera}
+\input{../../preamble}
+
+\begin{document}
+\title{Moving Boxes}
+\begin{abstract}
+Let's extend our ideas about moving and additivity to volume.
+\end{abstract}
+\maketitle
+
+
+\begin{problem}
+We build a prism which is 4 cm tall using the following shape as the base. Note that if we placed this shape on a grid, its vertices would be located at $(0,0)$, $(8,0)$, $(8,6)$, $(5,6)$, $(5,3)$, and $(0,3)$.
+\begin{center}
+\begin{tikzpicture}[scale=0.7]
+	\draw[thick] (0,0)--(8,0)--(8,6)--(5,6)--(5,3)--(0,3)--(0,0);
+	\node[below] at (4,0) {8 cm};
+	\node[right] at (8,3) {6cm};
+	\node[above] at (6.5, 6) {3cm};
+	\node[left] at (5, 4.5) {3cm};
+\end{tikzpicture}
+\end{center}
+Here is a picture of the 3D solid.
+
+\begin{center}
+\begin{tikzpicture}[scale=0.7]
+	\draw[thick] (0,0,0)--(8,0,0)--(8,0,6)--(5,0,6)--(5,0,3)--(0,0,3)--(0,0,0);
+	\draw[thick] (0,4,0)--(8,4,0)--(8,4,6)--(5,4,6)--(5,4,3)--(0,4,3)--(0,4,0);
+	\draw[thick] (0,0,0)--(0,4,0);
+	\draw[thick] (8,0,0)--(8,4,0);
+	\draw[thick] (8,0,6)--(8,4,6);
+	\draw[thick] (5,0,6)--(5,4,6);
+	\draw[thick] (5,0,3)--(5,4,3);
+	\draw[thick] (0,0,3)--(0,4,3);
+	\node[above] at (4,4,0) {8 cm};
+	\node[right] at (8,0,3) {6cm};
+	\node[below] at (6.5, 0, 6) {3cm};
+	\node[right] at (5, 0, 4.5) {3cm};
+	\node[right] at (8,2,0) {4cm};
+\end{tikzpicture}
+\end{center}
+Let's use a unit which is a rectangular prism measuring 1cm on each side of the base and 2cm tall. Use the four-step process of measurement to find the volume of this solid.
+\end{problem}
+
+
+\begin{problem}
+Find at least two different ways to rearrange this solid using the moving and additivity principles that would make it easier to find its volume.
+\end{problem}
+
+
+
+
+
+\begin{problem}
+Our unit for this problem is a cube measuring 1 unit on each side. Use the moving and additivity principles to find the volume of the prism whose base is the shaded shape below and whose height is 5 units in at least two different ways. If needed, you may use the formula $V = L \times W \times H$ for the volume of a rectangular prism (but keep in mind we need to justify this formula later!)
+
+Note that if we placed this shape on a grid, its vertices would be located at $(0,0)$, $(2,2)$, $(0,4)$, $(4,8)$, $(8,4)$, $(6,2)$, and $(8,0)$.
+
+\begin{center}
+\begin{tikzpicture}
+\draw[fill=lime] (0,0)--(1,1)--(0,2)--(2,4)--(4,2)--(3,1)--(4,0)--(0,0);
+\draw[thick] (0,0) rectangle (4,4);
+\node[right] at (4, 2) {8 units};
+\node[below] at (2,0) {8 units};
+\end{tikzpicture}
+\end{center}
+
+\end{problem}
+
+\newpage
+
+
+
+
+\begin{instructorNotes}
+{\bf Main goal:} We introduce the moving and additivity principles for volume.
+
+{\bf Overall picture:} 
+The first problem helps us to practice visualization as well as using the four-step process on volume. If we have had a lot of practice with this so far, we can skip this problem. However, the unit which is not a cube can make this problem worthwhile even if we have other practice.
+
+The second and third problems are where we apply the ideas of moving and additivity to volume. Using the same shapes for the bases as we used for moving and additivity with area should encourage students to use some of the same strategies that they used with area, but with volume instead. However, students might be encouraged to cut the height as well, especially if they are using a ``combine two copies and take half'' strategy.
+
+The third problem uses a standard unit of measure, and so students should be allowed to use the formula for areas of boxes if needed. You could point out why this was not allowed on the previous problem. One nice strategy here might be to place a cube on each area unit, then just cut the prism into five different layers, looking ahead to the $V = A \times h$ formula that we will justify later.
+
+Students should be encouraged to sketch pictures of their ideas, even if they struggle to draw in 3D. More practice is always a good idea!
+
+
+
+{\bf Good language:} Continue to encourage students to emphasize that they are putting together area pieces without gaps or overlaps, and if they are just rearranging area to emphasize that no area is being lost. While these are common-sense principles for working with area, we want our students to be clear when describing their thinking.
+
+
+
+{\bf Suggested timing:} We have a whole class period for this activity. Give students 15 minutes to work through the problems, and then have students present their work. Be sure to present as many strategies as possible. Wrap up by comparing and contrasting moving and additivity with area and with volume. If many students are stuck with the first problem, you can interrupt the group work time to discuss this, and then have groups restart with problems 2 and 3.
+\end{instructorNotes}
+
+\end{document}
