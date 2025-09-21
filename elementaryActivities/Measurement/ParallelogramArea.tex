@@ -1,0 +1,85 @@
+%\documentclass{ximera}
+\documentclass[nooutcomes,noauthor]{ximera}
+\input{../../preamble}
+\title{Parallelogram area}
+
+\begin{document}
+\begin{abstract}
+\end{abstract}
+
+\maketitle
+
+For this activity, you may use any area formulas we have already proven as part of your work.
+
+\begin{problem}
+Use a moving and additivity strategy to find a formula for the area of the parallelogram below in terms of $b$, the length of its base, and $h$, the length of its height. If you move and reattach pieces of the parallelogram or make copies of the parallelogram, you should prove that they fit exactly as you claim.
+
+\begin{image}
+\begin{tikzpicture}
+\draw[thick] (0,0)--(4,0)--(5,2)--(1,2)--(0,0);
+\node[below] at (2,0) {$b$};
+\draw[thick, dashed] (4,0)--(5,0)--(5,2);
+\node[right] at (5,1) {$h$};
+\end{tikzpicture}
+\end{image}
+\end{problem} \vfill
+
+\begin{problem}
+Use the rectangle and an algebraic strategy to find a formula for the area of the parallelogram below in terms of $b$, the length of its base, and $h$, the length of its height. If you need to label other unknown parts of the figure you can introduce additional letters, but you should simplify your final formula to be in terms of only $b$ and $h$.
+
+\begin{image}
+\begin{tikzpicture}
+\draw[thick] (0,0)--(4,0)--(5,2)--(1,2)--(0,0);
+\node[below] at (2,0) {$b$};
+\draw[thick, dashed] (4,0)--(5,0)--(5,2);
+\node[right] at (5,1) {$h$};
+\draw[thick, dotted] (0,0) rectangle (5,2);
+\end{tikzpicture}
+\end{image}
+\end{problem} \vfill
+
+\newpage
+\begin{problem}
+Use a shearing strategy to find a formula for the area of the parallelogram below in terms of $b$, the length of its base, and $h$, the length of its height. Be sure to clearly explain your shearing process and draw what happens to at least one of the strips.
+
+\begin{image}
+\begin{tikzpicture}
+\draw[thick] (0,0)--(4,0)--(5,2)--(1,2)--(0,0);
+\node[below] at (2,0) {$b$};
+\draw[thick, dashed] (4,0)--(5,0)--(5,2);
+\node[right] at (5,1) {$h$};
+\end{tikzpicture}
+\end{image}
+\end{problem}
+
+
+
+\newpage
+
+\begin{instructorNotes} 
+
+{\bf Main goal:} We use our three types of strategies to find an area formula for parallelograms.
+
+{\bf Overall picture:} 
+\begin{itemize}
+	\item For the moving and additivity strategy, students could cut off one of the right triangles and move it to the other side or cut the parallelogram into two triangles. We still want students to explain why the pieces fit exactly, considering whether we have made four sides and four right angles to form a rectangle.
+	\item For the algebraic strategy, we want to remove the extra right triangles from the rectangle. As usual, we might need an extra variable in our work. Students continue to be challenged by the more algebraic strategies.
+	\item For the shearing strategy, students should recognize that the height does not change and so we can shear the parallelogram into a rectangle and use the previous formula. 
+	\item At the end of the activity, we will want to let students know that they should be able to prove the area formula for parallelograms using at least one of these strategies - all three are not required.
+	\item We hope that the students are starting to fell more comfortable with these strategies as we continue to practice them.
+\end{itemize}
+
+
+{\bf Good language:} Since we have recently learned about the moving and additivity principles, it's good to emphasize when and how we are using those principles here. Continue to help students recognize the difference between the base and the length of the base. Continue to remind the students that the meaning of area is the amount of 2D space an object takes up (and we measure it by covering with area units) any time it makes sense to do so!
+
+
+
+{\bf Suggested timing:} Give students about $20$ minutes to work through the strategies here. Use the remaining time to present and discuss.
+
+
+
+\end{instructorNotes}
+
+
+
+\end{document}

@@ -1,0 +1,96 @@
+%\documentclass{ximera}
+\documentclass[nooutcomes,noauthor]{ximera}
+\input{../preamble}
+\title{Activity 12W}
+
+\begin{document}
+\begin{abstract}
+\end{abstract}
+
+\maketitle
+
+The Pythagorean Theorem states that for right triangles with leg lengths $a$ and $b$ and hypotenuse $c$, $a^2 + b^2 = c^2$.
+\begin{problem}
+On the right triangle below, label the side lengths $a$, $b$, and $c$.
+\begin{image}
+\begin{tikzpicture}
+\draw[thick] (0,0)--(4,0)--(0,2)--(0,0);
+\end{tikzpicture}
+\end{image}
+\end{problem} \vfill
+
+\begin{problem}
+In this proof, we will start with a square of side length $a$ and a square of side length $b$ joined together. How does the area of this figure relate to the statement of the Pythagorean Theorem? In other words, what is our goal in rearranging this area to prove that $a^2 + b^2 = c^2$?
+\begin{image}
+\begin{tikzpicture}
+\draw[thick] (0,0) rectangle (4,4);
+\draw[thick] (4,0) rectangle (6,2);
+\end{tikzpicture}
+\end{image}
+\end{problem} \vfill
+
+
+\newpage
+\begin{problem} 
+To prove the Pythagorean Theorem, cut out the figure and then cut along the dotted lines. Rearrange the figure according to your plan from the previous problem.
+\begin{image}
+\begin{tikzpicture}
+\draw[thick] (0,0) rectangle (4,4);
+\draw[thick] (4,0) rectangle (6,2);
+\draw[thick, dotted] (0,4)--(2,0);
+\draw[thick, dotted] (2,0)--(6,2);
+\end{tikzpicture}
+\end{image}
+\end{problem}
+
+\begin{problem}
+In your rearranged picture, can you explain why the pieces fit exactly as you claim they do?
+\end{problem}
+
+\begin{problem}
+Here is another proof of the Pythagorean Theorem. Consider the following diagram which is made by a square whose side lengths are each $c$ surrounded by four right triangles which together make a larger square whose side length is $a+b$.
+\begin{image} \begin{tikzpicture}
+\draw[thick] (0,0) rectangle (6,6);
+\draw (2,6)--(0,2)--(4,0)--(6,4)--(2,6);
+\end{tikzpicture}\end{image}
+
+Label the figure with the variables $a$, $b$, and $c$. Use an equation to write the area in two different ways. Can you use this equation to show that $a^2 + b^2 = c^2$?
+\end{problem}
+
+\newpage
+
+\begin{instructorNotes} 
+
+
+
+{\bf Main goal:} We prove the Pythagorean Theorem.
+
+{\bf Overall picture:}
+
+
+You will want to have paper copies that students can cut out and manipulate.
+\begin{itemize}
+	\item The geometric argument is to rotate the two cut off triangles to form a square of side length $c$. See \link[this site]{https://www.cut-the-knot.org/pythagoras/} for this proof (proof 2) as well as many others.
+	\item With the geometric argument, we need to stress the moving and additivity ideas that we have not changed the area, only rearranged it.
+	\item We would also like to be sure that the pieces fit together nicely, which uses the fact that our triangle is a right triangle! Students should hopefully be familiar with the ideas of making sure that the pieces fit exactly.
+	\item The algebraic argument in the final problem can be done by calculating the areas of each figure, as well as the area of the larger square. Setting them equal to each other and solving, we see the result we want. We have $(a+b)^2 = c^2 + 4 \times \frac{1}{2}ab$. Ensure that students are expanding $(a+b)^2$ correctly.
+	\item Wrap up this discussion by stating the Pythagorean Theorem clearly, and emphasizing that it only holds for right triangles (and perhaps indicate again where in our arguments we needed right triangles specifically).
+	\item Also in the wrap up, we want to discuss the idea that we could form the same picture and the same argument with any other right triangle as well -- and the pieces would still fit together nicely because of the way we are matching the sides up. Have students look back at their original arguments to convince themselves that this is true!
+	\item You might mention that that we have proven a theorem here about areas rather than lengths. Usually we think about the Pythagorean Theorem as telling us something about lengths, but we have translated this instead into a statement about areas. You can make a historical connection if you'd like -- the ancient Greeks likely thought about the theorem from this area perspective!
+\end{itemize}
+
+
+
+%{\bf Good language:} 
+
+
+
+{\bf Suggested timing:} Give students about 10 minutes to cut out and arrange the pieces and come up with their proof (first four problems), then discuss. If you have more time, give students about $5-8$ minutes for the algebraic proof and discuss. Note that the algebraic proof may be difficult for students who struggle with algebra and can take more time than you anticipate!
+
+
+
+\end{instructorNotes}
+
+
+
+\end{document}

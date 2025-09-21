@@ -1,0 +1,85 @@
+%\documentclass{ximera}
+\documentclass[nooutcomes,noauthor]{ximera}
+\input{../../preamble}
+\title{Feeling obtuse}
+
+\begin{document}
+\begin{abstract}
+\end{abstract}
+
+\maketitle
+
+Our final type of triangle is an obtuse triangle.
+
+\begin{problem}
+Explain why the moving and additivity strategies that we used for right triangles and acute triangles will not work for obtuse triangles. 
+
+\begin{image}
+\begin{tikzpicture}
+\draw[thick] (0,0)--(4,0)--(5,2)--(0,0);
+\node[below] at (2,0) {$b$};
+\draw[thick, dashed] (4,0)--(5,0)--(5,2);
+\node[right] at (5,1) {$h$};
+\end{tikzpicture}
+\end{image}
+\end{problem} \vfill
+
+\begin{problem}
+Use the rectangle, the area formula for right triangles, and an algebraic strategy to find a formula for the area of the triangle below in terms of $b$, the length of its base, and $h$, the length of its height. If you need to label other unknown parts of the figure you can introduce additional letters, but you should simplify your final formula to be in terms of only $b$ and $h$.
+
+\begin{image}
+\begin{tikzpicture}
+\draw[thick] (0,0)--(4,0)--(5,2)--(0,0);
+\node[below] at (2,0) {$b$};
+\draw[thick, dashed] (4,0)--(5,0)--(5,2);
+\node[right] at (5,1) {$h$};
+\draw[thick, dotted] (0,0) rectangle (5,2);
+\end{tikzpicture}
+\end{image}
+\end{problem} \vfill
+
+\newpage
+\begin{problem}
+Use a shearing strategy and the area formula for right triangles to find a formula for the area of the triangle below in terms of $b$, the length of its base, and $h$, the length of its height. Be sure to clearly explain your shearing process and draw what happens to at least one of the strips.
+
+\begin{image}
+\begin{tikzpicture}
+\draw[thick] (0,0)--(4,0)--(5,2)--(0,0);
+\node[below] at (2,0) {$b$};
+\draw[thick, dashed] (4,0)--(5,0)--(5,2);
+\node[right] at (5,1) {$h$};
+\end{tikzpicture}
+\end{image}
+\end{problem}
+
+
+
+\newpage
+
+\begin{instructorNotes} 
+
+{\bf Main goal:} We finish our work with areas of triangles.
+
+{\bf Overall picture:} 
+\begin{itemize}
+	\item For the moving and additivity strategy, students should try to cut the base in half, the height in half, or find half of the rectangle. None of the pieces will fit the way they did previously and students should present their attempts to fit the pieces together.
+	\item For the algebraic strategy, we want students to recognize that the rectangle is made out of the obtuse triangle and two different right triangles. They will likely need to introduce additional variables to find their formula, and this will continue to be challenging for many of our students.
+	\item For the shearing strategy, students should recognize that the height does not change and so we can shear the triangle into a right triangle and use the previous formula. 
+	\item At the end of the activity, we will want to let students know that they should be able to prove the area formula for obtuse triangles using at least one of these strategies - both are not required.
+	\item We want to finish this activity by discussing how we have checked all types of triangles and have gotten the same formula for all of them. This is why we use the same formula for any triangle rather than having three different formulas.
+\end{itemize}
+
+
+{\bf Good language:} Since we have recently learned about the moving and additivity principles, it's good to emphasize when and how we are using those principles here. Continue to help students recognize the difference between the base and the length of the base. Continue to remind the students that the meaning of area is the amount of 2D space an object takes up (and we measure it by covering with area units) any time it makes sense to do so!
+
+
+
+{\bf Suggested timing:} Give students about $15$ minutes to work through the strategies here. Use the remaining time to present and discuss, saving the last 5-10 minutes to wrap up the triangle area formula discussion.
+
+
+
+\end{instructorNotes}
+
+
+
+\end{document}
