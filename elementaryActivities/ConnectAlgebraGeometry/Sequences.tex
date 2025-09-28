@@ -1,0 +1,71 @@
+\documentclass{ximera}
+\input{../../preamble}
+
+\title{Sequences}
+\begin{document}
+\begin{abstract} A ``sequence'' is a list of objects in order. \end{abstract}
+\maketitle
+
+\begin{problem}
+A sequence is given by the following.
+\[
+4, 6, 8, 10, \dots
+\]
+Describe the pattern you see in this sequence of numbers, and then find the next four numbers in the sequence.
+\end{problem} \vfill
+
+\begin{problem}
+A sequence is given by the following.
+\[
+2, 6, 18, 54, \dots
+\]
+Describe the pattern you see in this sequence of numbers, and then find the next four numbers in the sequence.
+\end{problem} \vfill
+
+\begin{problem}
+A sequence is given by the following.
+\[
+1, 2, \dots
+\]
+Give three different ways that the sequence could continue. Feel free to be creative! In each case, describe the pattern for this sequence (if you can).
+\end{problem} \vfill
+
+
+\begin{problem}
+What is the $122$-nd shape in the sequence below, assuming the pattern of three circles and two squares shown below repeats forever? Explain your thinking and describe the pattern exactly.
+\begin{center}
+\begin{tikzpicture}
+\foreach \x in {0, 1, 2, 5, 6, 7}  \draw[fill=red] (\x,0) circle (0.1in);
+\foreach \y in {3, 4, 8, 9} \draw[fill=gray] (\y,0)--(\y+0.5, 0)--(\y+0.5, 0.5)--(\y, 0.5)--(\y, 0);
+\node at (10, 0.2) {\dots};
+\end{tikzpicture}
+\end{center}
+\end{problem} \vfill
+
+
+\newpage
+
+\begin{instructorNotes}
+
+{\bf Main goal:} We introduce the idea of a sequence.
+
+{\bf Overall picture:} 
+
+\begin{itemize}
+	\item Students should assume that the first sequence adds two to every entry and the second sequence multiplies each entry by $3$. At the end (during wrap-up), you can give names to these particular types of sequences.
+	\item The third problem should open up discussion that we actually didn't know how to answer the first two problems (we just made assumptions). Without being told something about the pattern, anything could be true. Have students give some examples of randomly generated sequences with no pattern (or give one yourself if no one in the class thinks of one).
+	\item The last problem should give an opportunity to talk about using the pattern to find other entries in the sequence, which we will later do with tables and equations. Students could draw out all of the items in the sequence and find the 122nd term, but this would take a while. Instead, they could continue the pattern and observe that all entries ending in $2$ are circles, or they could apply a HMG division interpretation and look at the remainder in this case to see how far we are into a ``group" of repeats when we hit the 122nd entry. Have several groups present if you have several different solutions in the room, and encourage students to be creative!
+\end{itemize}
+
+
+
+{\bf Good language:} The emphasis of our sequences outcome is to have students describe patterns explicitly. Encourage students to be as specific as they can with the patterns they are seeing here!
+
+{\bf Suggested timing:} Give students about 10 minutes to work on these problems, and use about 20 minutes to present and discuss. Wrap up with about 5 minutes of overall comments about sequences and describing their patterns. If you have extra time, go ahead and start the next activity.
+
+
+\end{instructorNotes}
+
+
+
+\end{document}
