@@ -1,6 +1,6 @@
-\documentclass[nooutcomes, noauthor]{ximera}
+\documentclass[nooutcomes, noauthor, handout]{ximera}
 
-\input{../preamble}
+\input{../../preamble}
 
 
 \title{Yoruba Multiplication}
@@ -19,37 +19,40 @@ This activity is based on an example in \link[this text]{https://link.springer.c
 Our merchant is calculating $17 \times 19$. She begins by setting out 20 groups of 20 cowrie shells. Let's call this ``Step 1''. We will draw small circles to represent the shells.
 \begin{center} \begin{tikzpicture}
 \foreach \x in {0, 0.2, 0.4, 0.6, 0.8, 1.2, 1.4, 1.6, 1.8, 2, 2.4, 2.6, 2.8, 3, 3.2, 3.6, 3.8, 4, 4.2, 4.4, 4.8, 5, 5.2, 5.4, 5.6} 
-	\foreach \y in {0, 0.2, 0.4, 0.6, 0.8, 1.2, 1.4, 1.6, 1.8, 2, 2.4, 2.6, 2.8, 3, 3.2, 3.6, 3.8, 4, 4.2, 4.4}
+	\foreach \y in {0, 0.2, 0.4, 0.6, 1.2, 1.4, 1.6, 1.8, 2.4, 2.6, 2.8, 3, 3.6, 3.8, 4, 4.2}
 	\draw[thick] (\x, \y) circle (2pt);
 \end{tikzpicture} \end{center}
 
 She first rearranges the shells by moving one shell from each of the groups into a new group she is forming. We'll show this in the next picture and call this ``Step 2''.
 \begin{center} \begin{tikzpicture}
 \foreach \x in {0, 0.2, 0.4, 0.6, 0.8, 1.2, 1.4, 1.6, 1.8, 2, 2.4, 2.6, 2.8, 3, 3.2, 3.6, 3.8, 4, 4.2, 4.4, 4.8, 5, 5.2, 5.4, 5.6} 
-	\foreach \y in {0, 0.2, 0.4, 0.6, 0.8, 1.2, 1.4, 1.6, 1.8, 2, 2.4, 2.6, 2.8, 3, 3.2, 3.6, 3.8, 4, 4.2, 4.4}
+	\foreach \y in {0, 0.2, 0.4, 0.6, 
+	1.2, 1.4, 1.6, 1.8, 
+	2.4, 2.6, 2.8, 3, 
+	3.6, 3.8, 4, 4.2}
 	\draw[thick] (\x, \y) circle (2pt);
 \foreach \x in {0.8, 2, 3.2, 4.4, 5.6}
-	\foreach \y in {0.8, 2, 3.2, 4.4}
+	\foreach \y in {0.6, 1.8, 3, 4.2}
 		\draw[thick, white] (\x, \y) circle (2pt);
 \foreach \x in {6, 6.2, 6.4, 6.6, 6.8}
-	\foreach \y in {0, 0.2, 0.4, 0.6, 0.8}
+	\foreach \y in {0, 0.2, 0.4, 0.6}
 		\draw[thick] (\x, \y) circle (2pt);
 \end{tikzpicture}\end{center}
  Finally, she rearranges the shells from Step 2, removing two more shells from one group and placing them in two of the groups of $19$ to make $3$ groups of $20$. Let's draw this in the next picture and call it ``Step 3''. 
  \begin{center} \begin{tikzpicture}
 \foreach \x in {0, 0.2, 0.4, 0.6, 0.8, 1.2, 1.4, 1.6, 1.8, 2, 2.4, 2.6, 2.8, 3, 3.2, 3.6, 3.8, 4, 4.2, 4.4, 4.8, 5, 5.2, 5.4, 5.6} 
-	\foreach \y in {0, 0.2, 0.4, 0.6, 0.8, 1.2, 1.4, 1.6, 1.8, 2, 2.4, 2.6, 2.8, 3, 3.2, 3.6, 3.8, 4, 4.2, 4.4}
+	\foreach \y in {0, 0.2, 0.4, 0.6, 1.2, 1.4, 1.6, 1.8, 2.4, 2.6, 2.8, 3, 3.6, 3.8, 4, 4.2}
 	\draw[thick] (\x, \y) circle (2pt);
 \foreach \x in {0.8, 2, 3.2}
-	\foreach \y in {0.8, 2, 3.2, 4.4}
+	\foreach \y in {0.6, 1.8, 3, 4.2}
 		\draw[thick, white] (\x, \y) circle (2pt);
 \foreach \x in {4.4, 5.6}
-	\foreach \y in {2, 3.2, 4.4} 
+	\foreach \y in {1.8, 3, 4.2} 
 		\draw[thick, white] (\x, \y) circle (2pt);
 \foreach \x in {2.8, 3}
-	\draw[thick, white] (\x, 0.8) circle (2pt);
+	\draw[thick, white] (\x, 0.6) circle (2pt);
 \foreach \x in {6, 6.2, 6.4, 6.6, 6.8}
-	\foreach \y in {0, 0.2, 0.4, 0.6, 0.8}
+	\foreach \y in {0, 0.2, 0.4, 0.6}
 		\draw[thick] (\x, \y) circle (2pt);
 \draw[thick] (-0.2, -0.2)--(2.2, -0.2)--(2.2, 1)--(5.8, 1)--(5.8, 4.6)--(-0.2, 4.6)--(-0.2, -0.2);
 \end{tikzpicture}\end{center}
