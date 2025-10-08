@@ -1,4 +1,4 @@
-\documentclass[noauthor,nooutcomes]{ximera}
+\documentclass[noauthor,nooutcomes, handout]{ximera}
 \input{../../preamble}
 
 \begin{document}
@@ -31,17 +31,36 @@ Note that if we placed this shape on a grid, its vertices would be located at $(
 \begin{problem}
 Find the area of the shaded shape below in three different ways.  Be as creative as possible!  The only area formula you may use is that for a rectangle.
 
-Note that if we placed this shape on a grid, its vertices would be at $(0,0)$, $(2,2)$, $(0,4)$, $(4,8)$, $(8,4)$, $(6,2)$, and $(8,0)$.
+Note that if we placed this shape on a grid, its vertices would be at $(0,0)$, $(8,0)$, and $(4,4)$.
 
 \begin{center}
 \begin{tikzpicture}
-\draw[fill=lime] (0,0)--(1,1)--(0,2)--(2,4)--(4,2)--(3,1)--(4,0)--(0,0);
+\draw[fill=lime] (0,0)--(4,0)--(2,2)--(0,0);
+\draw[thick] (0,0) rectangle (4,2);
+\node[right] at (4, 1) {4 units};
+\node[below] at (2,0) {8 units};
+\end{tikzpicture}
+\end{center}
+\end{problem} \vfill
+
+
+
+\begin{problem}
+Find the area of the shaded shape below in two different ways.  Be as creative as possible!  The only area formula you may use is that for a rectangle.
+
+The shape forms a symmetrical X inside the surrounding box which is $8$ units on each side.
+
+\begin{center}
+\begin{tikzpicture}
+\draw[fill=cyan] (1,0)--(2,1)--(3,0)--(4,1)--(3,2)--(4,3)--(3,4)--(2,3)--(1,4)--(0,3)--(1,2)--(0,1)--(1,0);
 \draw[thick] (0,0) rectangle (4,4);
 \node[right] at (4, 2) {8 units};
 \node[below] at (2,0) {8 units};
 \end{tikzpicture}
 \end{center}
-\end{problem}
+\end{problem} \vfill
+
+
 
 \newpage
 
