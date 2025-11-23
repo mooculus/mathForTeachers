@@ -43,11 +43,15 @@ Which of the following are expressions? Select all that apply.
 \choice[correct]{$Z$}
 \end{selectAll}
 \begin{hint}
-Remember that you can include numbers, variables, exponents, functions, operations, and grouping symbols (thought not all need to be included). You cannot include the equals sign or inequality symbols.
+Remember that you can include numbers, variables, exponents, functions, operations, 
+and grouping symbols (though not all need to be included). You cannot include the 
+equals sign or inequality symbols.
 \end{hint}
 \end{question}
 
-When we write expressions, as we have done all semester, we want to focus on using the meaning of operations to describe what we are seeing. Let's take a look at two examples.
+When we write expressions, as we have done all semester, we want to focus on using 
+the meaning of operations to describe what we are seeing. Let's take a look at two 
+examples.
 
 \begin{example}
 Below, we have a design made of dots. 
@@ -70,7 +74,18 @@ One way that we could describe the design is to say that we have a $3$-by$4$ arr
 \node[left] at (1.5, 7) {Box $2$};
 \end{tikzpicture}
 \end{image}
-Since these are both arrays, the appropriate operation to use to count the number of dots is \wordChoice{\choice{addition} \choice{subtraction} \choice[correct]{multiplication} \choice{division}}. For both arrays, we will use one circle as one \wordChoice{\choice{group} \choice[correct]{object}} and one row of dots as one \wordChoice{\choice[correct]{group} \choice{object}}, and then we see that in Box 1 we have a total of $\answer[given]{6}$ rows with $\answer[given]{8}$ dots in each row for a total of $\answer[given]{6} \times \answer[given]{8}$ total dots. In Box 2 we see that we have $\answer[given]{3}$ rows with $\answer[given]{4}$ dots in each row for a total of $\answer[given]{3} \times \answer[given]{4}$ total dots. To get the total number of dots in the entire design, we want to combine together the amount of dots in Box $1$ with the amount of dots in Box $2$, so the operation we should use is \wordChoice{\choice[correct]{addition} \choice{subtraction} \choice{multiplication} \choice{division}}. All together, we get the following.
+Since these are both arrays, the appropriate operation to use to count the number of dots 
+is \wordChoice{\choice{addition} \choice{subtraction} \choice[correct]{multiplication} \choice{division}}. 
+For both arrays, we will use one circle as one \wordChoice{\choice{group} \choice[correct]{object}} 
+and one row of dots as one \wordChoice{\choice[correct]{group} \choice{object}}, and then
+ we see that in Box 1 we have a total of $\answer[given]{6}$ rows with $\answer[given]{8}$ 
+ dots in each row for a total of $\answer[given]{6} \times \answer[given]{8}$ dots. In 
+ Box 2 we see that we have $\answer[given]{3}$ rows with $\answer[given]{4}$ dots in each 
+ row for a total of $\answer[given]{3} \times \answer[given]{4}$ dots. To get the total 
+ number of dots in the entire design, we want to combine together the amount of dots in 
+ Box $1$ with the amount of dots in Box $2$, so the operation we should use is 
+ \wordChoice{\choice[correct]{addition} \choice{subtraction} \choice{multiplication} \choice{division}}. 
+ All together, we get the following.
 \[ 
 \textrm{Dots in Box } 1 + \textrm{Dots in Box } 2 = 6 \times 8 + 3 \times 4
 \]
@@ -90,7 +105,7 @@ Below, we have a design made of dots. (This is the same design as in the last ex
 \foreach \x in {2, 3, 4, 5} \foreach \y in {6, 7, 8} \draw[fill=cyan] (\x, \y) circle (0.2cm);
 \end{tikzpicture}
 \end{image}
-We would like to write a different expression to describe the number of dots in the design. This time, let's view the diagram as a $9$-by$8$ array of dots, but with two $3$-by-$2$ arrays of dots removed from the top corners. Let's draw a rectangle to represent the entire array of dots, and then draw the removed dots as circles that are not filled in.
+We would like to write a different expression to describe the number of dots in the design. This time, let's view the diagram as a $9$-by-$8$ array of dots, but with two $3$-by-$2$ arrays of dots removed from the top corners. Let's draw a rectangle to represent the entire array of dots, and then draw the removed dots as circles that are not filled in.
 \begin{image}
 \begin{tikzpicture}
 \foreach \x in {0, 1, 2, 3, 4, 5, 6, 7} \foreach \y in {0, 1, 2, 3, 4, 5} \draw[fill=cyan] (\x, \y) circle (0.2cm);
@@ -100,7 +115,7 @@ We would like to write a different expression to describe the number of dots in 
 \end{tikzpicture}
 \end{image}
 
-We are still working with arrays, so we want to begin by thinking about multiplication. Continuing to use one dot as one object and one row as one group, we can count the full $9$-by$8$ array by seeing that we have $\answer[given]{9}$ rows with $\answer[given]{8}$ dots per row for a total of $\answer[given]{9} \times \answer[given]{8}$ dots. But now we want to remove the two arrays at the corners. They are identical, so let's start by counting one of them. The removed array is a $3$-by-$2$ array so we have $\answer[given]{3}$ rows with $\answer[given]{2}$ dots per row for a total of $\answer[given]{3} \times \answer[given]{2}$ dots in each of them. Since we want to remove or take away these from the bigger array, the correct operation in this case is \wordChoice{\choice{addition} \choice[correct]{subtraction} \choice{multiplication} \choice{division}}. We have the following expression.
+We are still working with arrays, so we want to begin by thinking about multiplication. Continuing to use one dot as one object and one row as one group, we can count the full $9$-by-$8$ array by seeing that we have $\answer[given]{9}$ rows with $\answer[given]{8}$ dots per row for a total of $\answer[given]{9} \times \answer[given]{8}$ dots. But now we want to remove the two arrays at the corners. They are identical, so let's start by counting one of them. The removed array is a $3$-by-$2$ array so we have $\answer[given]{3}$ rows with $\answer[given]{2}$ dots per row for a total of $\answer[given]{3} \times \answer[given]{2}$ dots in each of them. Since we want to remove or take away these from the bigger array, the correct operation in this case is \wordChoice{\choice{addition} \choice[correct]{subtraction} \choice{multiplication} \choice{division}}. We have the following expression.
 \[
 \textrm{Dots in full array } - 2 \times \textrm{Dots in each corner array} = 9 \times 8 - 2 \times \left (3 \times 2 \right )
 \]
@@ -138,7 +153,7 @@ Many expressions that we use to describe our thinking will also involve a variab
 \end{tikzpicture}
 \end{image}
 
-We could use the letter $R$ to indicate the number of rows in this bottom array, so that the array is an $R$-by$8$ array.
+We could use the letter $R$ to indicate the number of rows in this bottom array, so that the array is an $R$-by-$8$ array.
 
 \begin{question}
 Using the same thinking as the first example (subdividing the design into two rectangles), what expression would we write for the total number of dots?

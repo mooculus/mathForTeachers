@@ -18,12 +18,18 @@ We explain why divisibility tests make sense.
 
 \section{Divisibility tests}
 
-Another common technique in mathematics that is connected to the idea of factors and multiples is that of divisibility tests. A \dfn{divisibility test} is a criteria we can use to tell whether one number is divisible by another. Let's start with an example that you are likely already familiar with.
+Another common technique in mathematics that is connected to the idea of factors and 
+multiples is that of divisibility tests. A \dfn{divisibility test} is a criteria we 
+can use to tell whether one number is divisible by another. Let's start with an 
+example that you are likely already familiar with.
 
 \begin{example}
 Explain why an integer $N$ is divisible by $10$ if it ends in a zero.
 
-First, we need to remember that ``divisible'' means that we take the integer $N$ and compute $N \div 10$. If we get a remainder of zero, then $N$ is divisible by $10$. If the remainder is not zero, then $N$ is divisible by $10$. Using the division theorem, we should be able to find some quotient $q$ so that 
+First, we need to remember that ``divisible'' means that we take the integer $N$ and 
+compute $N \div 10$. If we get a remainder of zero, then $N$ is divisible by $10$. 
+If the remainder is not zero, then $N$ is not divisible by $10$. Using the division 
+theorem, we should be able to find some quotient $q$ so that 
 \[
 10 \times q + 0 = N
 \]
@@ -126,7 +132,11 @@ However, in this case we have $10$ blocks left over, so we can make $\answer[giv
 \foreach \x in {2.4, 2.6, ..., 4} \draw[thick] (\x, -1) rectangle (\x+0.1, -0.9);
 \end{tikzpicture}
 \end{image}
-We have now made as many groups of $9$ as we can out of our superbundle, and we ended up making $\answer[given]{10}$ groups of $9$ and we have $\answer[given]{1}$ block left over. Let's draw that leftover block below each superbundle. We will also draw the individual blocks down below as well so that all of the loose blocks are now available in order to make groups of $9$.
+We have now made as many groups of $9$ as we can out of our superbundle, and we ended up 
+making $\answer[given]{11}$ groups of $9$ and we have $\answer[given]{1}$ block left over. 
+Let's draw that leftover block below each superbundle. We will also draw the individual 
+blocks down below as well so that all of the loose blocks are now available in order to 
+make groups of $9$.
 \begin{image}
 \begin{tikzpicture}
 \foreach \x in {0, 1.2} \draw[fill=yellow] (\x, 0.9) rectangle (\x+0.9, 1);
@@ -145,7 +155,20 @@ Before we move forward, stop and notice how many individual blocks we have left 
 \[
 2 + 8 + 5 = \answer[given]{15}
 \]
-loose blocks. Notice that this is the same as the sum of the digits. Because we can always make $10$ groups of $9$ with $1$ individual block left over from every super bundle, and $1$ group of $9$ with $1$ left over from every bundle, (and similarly we would make $100$ groups of $9$ with $1$ left over from every megabundle, and so on), to know whether or not we can make groups of $9$ with none left over, we only need to consider what is happening with these extra individual blocks. Because we get one extra block from every superbundle, one extra block from every bundle, and one extra block from every individual block, the number of blocks we need to group is the same as the sum of the digits. In this case we got $2$ individual blocks left over from the two superbundles, $8$ individual blocks left over from the $8$ bundles, and $5$ individual blocks that were originally the loose blocks.  There is a one-to-one correspondence between the objects in the representation using base ten blocks and the leftover blocks we need to group. The one-to-one correspondence tells us we need to add up how many objects we have in the picture, which is the same as adding the digits.
+loose blocks. Notice that this is the same as the sum of the digits. Because we can 
+always make $11$ groups of $9$ with $1$ individual block left over from every super 
+bundle, and $1$ group of $9$ with $1$ left over from every bundle, (and similarly we 
+would make $111$ groups of $9$ with $1$ left over from every megabundle, and so on), 
+to know whether or not we can make groups of $9$ with none left over, we only need to 
+consider what is happening with these extra individual blocks. Because we get one 
+extra block from every superbundle, one extra block from every bundle, and one extra 
+block from every individual block, the number of blocks we need to group is the same 
+as the sum of the digits. In this case we got $2$ individual blocks left over from the 
+two superbundles, $8$ individual blocks left over from the $8$ bundles, and $5$ 
+individual blocks that were originally the loose blocks.  There is a one-to-one 
+correspondence between the objects in the representation using base ten blocks and the 
+leftover blocks we need to group. The one-to-one correspondence tells us we need to 
+add up how many objects we have in the picture, which is the same as adding the digits.
 
 Let's finish this one up by showing that $9$ is not a factor of $285$. If we look at the $15$ leftover blocks, we can make $\answer[given]{1}$ more group of $9$, but then we will have $\answer[given]{6}$ blocks left over, which is not a reminder of  $0$. Let's circle the last group of $9$ in the picture.
 
