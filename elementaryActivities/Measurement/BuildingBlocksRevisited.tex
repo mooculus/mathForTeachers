@@ -1,4 +1,4 @@
-\documentclass[nooutcomes,noauthor]{ximera}
+\documentclass[nooutcomes,noauthor, handout]{ximera}
 \input{../../preamble}
 
 \title{Building Blocks}
@@ -12,10 +12,15 @@
 
 
 \begin{problem}
-First measure the area of the rectangle below.  Describe how you would build a rectangular prism with volume $8$ cubic inches with its base on the rectangle.
+First measure the area of the 2-inch by 4-inch rectangle below.  Describe how you would build a rectangular prism with volume $8$ cubic inches with its base on the rectangle.
 
 %\vspace{1 in}
-\tikz{ \draw (-2 in,-1 in) -- (2 in,-1 in); \draw (-2 in, -1 in) -- (-2 in, 1 in); \draw (-2 in, 1 in) -- (2 in, 1 in);\draw (2 in, 1 in) -- (2 in, -1 in);\draw (-2 in, -1 in) -- (2 in, -1 in); \draw(-2 in, 0)--(2 in, 0);\draw(-1 in, -1 in)--(-1 in, 1 in);\draw(0 in, -1 in)--(0 in, 1 in);\draw(1 in, -1 in)--(1 in, 1 in);}
+\begin{image}
+\begin{tikzpicture}
+\draw[thick, step=2] (0,0) grid (8,4);
+\end{tikzpicture}
+\end{image}
+
 
 \end{problem}
 
