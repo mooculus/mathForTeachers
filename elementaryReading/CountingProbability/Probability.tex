@@ -43,6 +43,9 @@ How do we find these probabilities? We need to start by specifying the thing who
 Suppose we are considering a regular deck of cards, which has $52$ different cards in it. The deck has four types of cards, called suits, and the names of the suits are hearts and diamonds (which are red cards), as well as spades and clubs (which are black cards). There are $13$ cards from each suit. So, if we pick a single card from the deck and we want to discuss the probability a card which is a diamond, then ``picking a diamond'' could describe the \wordChoice{\choice[correct]{event space} \choice{sample space}}. This is the outcome we are looking for. Then we would have ``picking any card'' as the \wordChoice{\choice{event space} \choice[correct]{sample space}} because this is the collection of both the things we want and the things we don't want.
 \end{example}
 
+Once we know what we are using for our sample space, the events we are considering, and all of their probabilities, we have a \dfn{probability model}. 
+
+
 When we start calculating probabilities, there are two different ways that we can think about making these calculations: using experimental data or using theoretical data. Let's investigate both types.
 
 \begin{definition}
@@ -64,11 +67,18 @@ T, H, T, T, T, T, H, H, H, T,
 H, T, T, H, H, H, T, T, H, H
 \]
 
-The sample space here is all of the tosses of the coin, and so we have a total of $\answer[given]{30}$ options. For the event space, let's choose ``the result of the toss is heads'', so to find the number of outcomes in the event space, we count the number of $H$ tosses and get $\answer[given]{16}$. Now, to calculate the experimental probability, we create our fraction as follows. (Below, enter the numbers we've calculated; don't simplify your answer. You can simplify your final answer later, but to enter the numbers here use the ones we calculated.)
+The sample space here is all of the tosses of the coin, and so we have a total of $\answer[given]{30}$ options. For the event space, let's choose ``the result of the toss is heads'', so to find the number of outcomes in the event space, we count the number of $H$ tosses and get $16$. Now, to calculate the experimental probability, we create our fraction as follows. (Below, enter the numbers we've calculated; don't simplify your answer. You can simplify your final answer later, but to enter the numbers here use the ones we calculated.)
 \[
 \frac{\textrm{number of outcomes in the event space}}{\textrm{number of outcomes in the sample space}} = \frac{\answer[given]{16}}{\answer[given]{30}}
 \]
+
+The rest of our tosses are tails, so we could also compute the experimental probability of ``the result of the toss is tails'' using the following.
+\[
+\frac{\textrm{number of tails}}{\textrm{number of total tosses}} = \frac{\answer[given]{14}}{\answer[given]{30}}
+\]
+In this case, we could express our entire probability model by saying that the probability of tossing heads was $\frac{16}{30}$ and the probability of tossing tails was $\frac{14}{30}$.
 \end{example}
+
 Notice that the experimental probability we got in this case is different than what we expected from our answer earlier, and this is the main difference between experimental probability and theoretical probability. The experimental probability is based only on what we see in an experiment, and could be different than what we would get with our reasoning. We are going to move into calculating theoretical probability next, but for now you should think of it as probability that we would get by reasoning instead of probability that we get via experiments.
 
 Even though we can get two different answers with the two ways of calculating probability, there is an important result in probability called the Law of Large Numbers, which tells us that the more data we collect in our experiments, the closer our experimental probability should get to our theoretical probability. In other words, if our experiment is large enough, we expect the experimental probability to be very close to the theoretical probability.

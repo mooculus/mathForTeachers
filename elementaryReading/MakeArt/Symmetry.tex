@@ -17,7 +17,7 @@ We look at patterns within shapes.
 
 \section{Symmetry}
 
-Broadly, symmetry is a way of recognizing, investigating, or designing patterns. It can also be a way of describing or even quantifying beauty, since \link[studies have shown]{https://www.psychologytoday.com/us/blog/beastly-behavior/201907/why-are-symmetrical-faces-so-attractive} that people with more symmetrical faces are generally considered more ``attractive''. Artists frequently play with symmetry in their art. And symmetry can show up all around us in both human-made objects as well as natural ones. For our purposes, however, symmetry gives us a chance to come back to rotations, reflections, translations, and congruence and see how these ideas apply to shapes individually. You might take a few moments and review your notes on these concepts before we get started, or head back to the sections about \link[Transformations]{https://ximera.osu.edu/m4t/elementaryTeachersTwo/elementaryReading/ComparingShapes/Transformations} or \link[Congruence]{https://ximera.osu.edu/m4t/elementaryTeachersTwo/elementaryReading/ComparingShapes/Congruence}.
+Broadly, symmetry is a way of recognizing, investigating, or designing patterns. It can also be a way of describing or even quantifying beauty, since \link[studies have shown]{https://www.psychologytoday.com/us/blog/beastly-behavior/201907/why-are-symmetrical-faces-so-attractive} that people with more symmetrical faces are generally considered more ``attractive''. Artists frequently play with symmetry in their art. And symmetry can show up all around us in both human-made objects as well as natural ones. For our purposes, however, symmetry gives us a chance to come back to rotations, reflections, translations, and congruence and see how these ideas apply to shapes individually. Symmetry will also give us another way to look at properties of shapes. You might take a few moments and review your notes on these concepts before we get started, or head back to the sections about \link[Transformations]{https://ximera.osu.edu/m4t/elementaryTeachersTwo/elementaryReading/ComparingShapes/Transformations} or \link[Congruence]{https://ximera.osu.edu/m4t/elementaryTeachersTwo/elementaryReading/ComparingShapes/Congruence}.
 
 In general, a \dfn{symmetry} of a figure is a transformation that maps the figure onto itself. We'll explore some specific symmetries below. 
 
@@ -204,7 +204,7 @@ The rotation symmetry has order $\answer[given]{3}$.
 \end{prompt}
  \end{question}
 
-Let's finish up this section with a few examples helping us to think more about these concepts.
+Shapes can sometimes have more than one type of symmetry.
 \begin{question}
 True or false: the example above of the triangle with extra pieces also has reflection symmetry.
 \begin{multipleChoice}
@@ -276,6 +276,59 @@ If we took the star example and made  an infinite line of stars, we could form a
 \choice{False}
 \end{multipleChoice}
 \end{question}
+
+
+\section{Symmetry and properties}
+
+We can use what we've now learned about symmetry to think about properties of quadrilaterals. The most important idea we need here is to remember that a symmetry is built from reflections, rotations and translations, and we know that these particular transformations don't change lengths and they don't change angles.
+
+\begin{example}
+Let's show that the diagonals of a square are congruent to one another. 
+
+We'll draw a square $ABCD$ whose center point is $O$ along with its diagonals $AC$ and $BD$.
+\begin{image}
+\begin{tikzpicture}
+	\draw[fill=black] (0,0) circle (2pt) node[below] {$O$};
+	\draw[thick] (-1, -1) rectangle (1,1);
+	\node[below] at (-1,-1) {$A$};
+	\node[below] at (1, -1) {$B$};
+	\node[above] at (1,1) {$C$};
+	\node[above] at (-1,1) {$D$};
+	\draw[dashed] (-1,-1)--(1,1);
+	\draw[dotted] (1,-1)--(-1,1);
+\end{tikzpicture}
+\end{image}
+
+Next, we will use a rotational symmetry.  We \wordChoice{\choice{reflect} \choice[correct]{rotate} \choice{translate}} the square $90^{\circ}$ counterclockwise about point $\answer[given]{O}$, we get back the same square that we started with. It's the same shape, in the same location. However, after we rotated, the locations of the points have moved. Point $A$ moves to the original location of point $\answer[given]{B}$, point $B$ moves to the original location of point $\answer[given]{C}$, point $C$ moves to the original location of point $\answer[given]{D}$, and point $D$ moves to the original location of point $A$.
+
+\begin{image}
+\begin{tikzpicture}
+	\draw[fill=black] (0,0) circle (2pt) node[below] {$O$};
+	\draw[thick] (-1, -1) rectangle (1,1);
+	\node[below] at (-1,-1) {$D$};
+	\node[below] at (1, -1) {$A$};
+	\node[above] at (1,1) {$B$};
+	\node[above] at (-1,1) {$C$};
+	\draw[dotted] (-1,-1)--(1,1);
+	\draw[dashed] (1,-1)--(-1,1);
+\end{tikzpicture}
+\end{image}
+
+What does this mean for our diagonals? They have exchanged places in the square. However, since we know we have the same square, these lengths must exactly match up with one another, so they are congruent.
+
+\end{example}
+
+Remember that we could prove the same fact with our triangle congruence criteria. Symmetry gives us another way of thinking about the same fact.
+
+
+
+\section{Other examples of symmetry}
+
+Symmetry is prevalent in many other examples. There are two we'd like to quickly mention to wrap up this section and we encourage you to explore these examples as well as others you find in your everyday life. 
+
+First, symmetry shows up in many ways in dance. In fact, dance is sometimes used to teach symmetry in the classroom. You can check out an \link[example lesson]{https://artsnowlearning.org/project/using-movement-and-dance-to-explore-symmetry-2-4/} or a \link[video of children exploring dance and symmetry]{https://www.youtube.com/watch?v=mF1CyYvMdgM}. Both of these examples focus on reflection symmetry. Can you think of ways that the ideas of rotational or translational symmetry could also be involved?
+
+Second, symmetry shows up in objects called \dfn{fractals}. A fractal is a shape that's similar to itself but at a different scale. In other words, we are thinking about dilation symmetry. Fractals have applications in mathematics, like trying to \link[model chaos]{https://fractalfoundation.org/resources/what-are-fractals/} or to \link[model nature (video)]{https://www.youtube.com/watch?v=rGwwydEWLiI&t=48s}. Fractals are also found in \link[art]{https://en.wikipedia.org/wiki/Fractal_art}, in both traditional and digital media. And zooming in on them can make some really \link[interesting videos]{https://www.youtube.com/watch?v=9M7dTmvJxwA}!
 
 
 

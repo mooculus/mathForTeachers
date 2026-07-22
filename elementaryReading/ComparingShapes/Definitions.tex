@@ -167,6 +167,8 @@ Select all true statements below about the shape.
 \end{selectAll}
 \end{question}
 
+Here is one very confusing point. We have defined all of our polygons as two-dimensional shapes, meaning that we have included the boundary and the inside of the shape. However, we will use the word ``triangle'' to sometimes refer to the 2D triangle we just described, and sometimes we will use the word ``triangle'' to refer to the 1D boundary of the triangle. Some textbooks use language like ``triangular region'' to refer to the 2D shape and save ``triangle'' for only the 1D shape. You can use this language if you find it helpful to bring clarity to your explanations. The main point here is to be sure that you are paying attention to dimension.
+
 Next, we have special vocabulary to talk about the side lengths of triangles.
 
 \begin{definition}
@@ -224,6 +226,10 @@ When we work with triangles, we often designate one of its edges as the \dfn{bas
 \begin{definition}
 The \dfn{height} of a triangle is a segment which makes a right angle with the chosen base of the triangle (or an extension of that base) and also passes through the vertex of the triangle which is not on the base.
 \end{definition}
+
+There is quite a bit of terminology to describe what we are discussing here, so in your future classroom we encourage you to look at your textbook closely. For example, some books use the term \dfn{baseline} to describe the extension of the base into a line. Other books will use \dfn{altitude} for what we just described as the height (the segment connecting the base to the opposite vertex), and will use \dfn{height} to refer to the length of the altitude. If these distinctions help you to write more clear explanations, we encourage you to use them!
+
+
 This definition is a bit easier to understand with a picture, so let's take a look.
 \begin{example}
 Let's find the height of the triangle below in two different ways.
@@ -243,6 +249,7 @@ First, let's choose the bottom side $AB$ of this triangle as the base. If we do 
 \node[below] at (3,0) {$B$};
 \node[above] at (5,2) {$C$};
 \draw[dashed] (3,0)--(6,0);
+\node[right] at (6,0) {baseline};
 \end{tikzpicture}
 \end{image}
 Next, we need to draw a segment which makes a \wordChoice{\choice{straight} \choice[correct]{right} \choice{$45\degree$}} angle with $AB$ and passes through $C$. Try doing this with your protractor on your own!
@@ -255,11 +262,12 @@ Next, we need to draw a segment which makes a \wordChoice{\choice{straight} \cho
 \draw[dashed] (3,0)--(6,0);
 \draw[dashed] (5,0)--(5,2);
 \node[below] at (1.5, 0) {base};
-\node[right] at (5,1) {height};
+\node[right] at (6,0) {baseline};
+\node[right] at (5,1) {height or altitude};
 \draw[fill=black] (5,0) circle (2pt) node[below]{$D$};
 \end{tikzpicture}
 \end{image}
-We have labeled the intersection of the extension of the base and the perpendicular line as $D$, and our height in this case is the segment $CD$.
+We have labeled the intersection of the extension of the base and the perpendicular line as $D$, and our height in this case is the segment $CD$. We have marked the baseline and altitude in this example so that you can see how this terminology works, but we'll move forward with just the base and height.
 
 Next, let's choose the segment $BC$ as our base. Now we need to draw a segment which makes a right angle with segment $BC$ and passes through point $\answer[given]{A}$. We will first draw a dashed line extending the base.
 \begin{image}
