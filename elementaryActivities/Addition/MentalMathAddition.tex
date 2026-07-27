@@ -22,29 +22,161 @@ For each of the following, find the total without writing anything down, and wit
 \end{problem}
 
 
-%\begin{problem}
-%Choose at least three of your solutions above and write down a description of your solution method in words. Discuss your answers with your group. Did anyone use the same methods?
-%\end{problem}
+
+\begin{problem}
+I asked Copilot (an AI) to use a mental math strategy to solve $302-57$ and illustrate its answer. Here is the output, with the illustration first and then the description.
+\begin{image}
+\begin{tikzpicture}
+\node at (0, 10) {$302$};
+\node at (0.5, 10) {$-$};
+\node at (1, 10) {$57$};
+\node at (-0.5, 9) {$302$};
+\node at (0,9) {$-$};
+\node at (0.5, 9) {$60$};
+\node at (1, 9) {$+$};
+\node at (1.5, 9) {$3$};
+\node at (-0.25, 8) {$-60$};
+\draw[fill=pink] (1.3, 7.7) rectangle (2.7, 8.3);
+\node at (2, 8) {$-60$};
+\draw[->, thick]
+    (-0.25,8.4) .. controls (0.4,8.7) and (1.4,8.7) .. (2, 8.4);
+\draw[fill=lime] (1.7, 6.7) rectangle (2.3, 7.3);
+\node at (2, 7) {$+3$};
+\draw[->, thick]
+    (-0.25,7.2) .. controls (0.2,6.9) and (0.85,6.5) .. (1.6,7);
+\node at (-0.2, 6) {$(242)+3 = 245$};
+\end{tikzpicture}
+\end{image}
+
+\begin{mdframed}
+Here's a clear mental-math strategy for solving $302-57$ and an explanation of the picture you received. 
+
+{\bf Mental Math Strategy: Break Apart the Subtraction}
+
+Instead of subtracting $57$ all at once, break it into friendlier numbers: 
+
+\begin{enumerate}[label=\arabic*.]
+	\item Rewrite 57 as 60 − 3 \\
+	This works because: \\
+	$57 = 60-3$
+	\item  Use the expression \\
+	$302-57$ \\
+	$\rightarrow 302 - (60 - 3)$ 
+	\item Apply the ``add the opposite'' idea \\
+	Subtracting $(60 - 3)$ is the same as: \\
+	$302 - 60 + 3$
+	\item Now it's easy to do mentally \\
+		$302 - 60 = 242$ \\
+		$242 + 3 = 245 $\\
+		Final Answer: $245$
+\end{enumerate}		
+{\bf About the Picture} 
+
+		The image shows:
+		\begin{itemize}
+			\item Starting with $302 - 57$
+			\item Rewriting it as $302 - 60 + 3$
+			\item A curved arrow showing the $-60$ step
+			\item A second arrow showing adding $+3$ back
+			\item  Ending at $245$
+			\end{itemize}
+This matches the mental‑math breakdown strategy above. If you'd like, I can also create a number line version, a base‑ten block version, or a bar model to help students visualize it!
+
+\end{mdframed}
+
+	
+Answer the following questions about Copilot's work.
+\begin{enumerate}
+\item Does Copilot get the correct answer using a valid strategy? Explain the strategy in your own words. Was it the same or different as your strategy earlier?
+\item Does Copilot's picture illustrate its method? (Did it draw what you would consider a picture?) How would you improve the picture or adjust it to better model the method?
+\item What would children need to already know to understand Copilot's solution? Could you make its explanation more basic for a younger child? Could you make it more appropriate for an older child?
+\end{enumerate}
+
+\end{problem}
+
 
 
 \begin{problem}
-As a group, illustrate your solutions to each problem using a picture. Your pictures can include objects, number lines, or whatever else makes sense to you! Try using different types of pictures for each problem.
+Copilot gave me the option to model its work from the previous problem on a number line. Here is the output, with the illustration first followed by the description.
+
+\begin{image}
+\begin{tikzpicture}[x=1cm,y=1cm,>=stealth]
+
+% Title
+\node at (4.2,2.7) {\fontsize{28}{32}\selectfont $302-57$};
+
+% Number line
+\draw[<->, thick] (0,0) -- (9,0);
+
+% Tick marks
+\foreach \x in {1.5,3.0,4.5,6.0,7.5} {
+    \draw[thick] (\x,-0.15) -- (\x,0.15);
+}
+
+% Number labels -- intentionally kept as in screenshot
+\node[below] at (1.5,-0.05) {\fontsize{20}{24}\selectfont 245};
+\node[below] at (3.0,-0.05) {\fontsize{20}{24}\selectfont 240};
+\node[below] at (4.5,-0.05) {\fontsize{20}{24}\selectfont 235};
+\node[below] at (6.0,-0.05) {\fontsize{20}{24}\selectfont 245};
+\node[below] at (7.5,-0.05) {\fontsize{20}{24}\selectfont 302};
+
+% Large curved arrow: -60
+\draw[
+    ->,
+    line width=2.5pt,
+    orange!70
+]
+(1.5,0.2)
+.. controls (1.4,2.0) and (5.8,2.2)
+.. (6.45,0.75);
+
+\node at (3.9,1.3) {\fontsize{22}{26}\selectfont $-60$};
+
+% Small curved arrow: +3
+\draw[
+    ->,
+    line width=2.5pt,
+    green!40
+]
+(6.15,0.2)
+.. controls (6.15,0.9) and (6.8,0.9)
+.. (6.95,0.25);
+
+\node at (7.2,0.75) {\fontsize{22}{26}\selectfont $+3$};
+
+\end{tikzpicture}
+\end{image}
+\begin{mdframed}
+Here’s your number line version of the mental‑math strategy for $302 - 57 = 245$!
+
+The drawing shows:
+\begin{itemize}
+	\item Start at $302$
+	\item Make a big jump back $60$ (because $57 \approx 60$) \\
+$\rightarrow$ this lands at $242$
+	\item Then jump forward $3$ (because we subtracted too much) \\
+$\rightarrow$ final answer $245$
+	\end{itemize}
+\end{mdframed}	
+	
+	
+Answer the following questions about Copilot's work.
+\begin{enumerate}
+\item Does it model the same solution in the number line as it used in the previous problem? How can you tell?
+\item How would you improve this number line? Modify Copilot's work or draw your own number line.
+\item  Do you think a number line was a good suggestion to model this strategy? Why or why not? What other options should Copilot suggest if I want more information about this problem?
+
+\end{enumerate}
+
+
+
 \end{problem}
 
 
 \begin{problem}
-As a group, illustrate your solutions to each problem using equations. Be sure to place the equals sign only between things which are actually equal! Did you use any properties of arithmetic in your equations? If so, what were they, and where did you use them? Be as specific as you can.
-
+If you get done early, try modeling some of the other strategies we talked about in Problem 1!
 \end{problem}
 
-
-\begin{problem}
-Mel solves $302 - 57$ in the following way.
-
-\emph{I'm going to start by shifting this problem from $302 - 57$ to be $300 - 55$. This will have the same answer as my original problem because I took away $2$ from both numbers. Now I take $300 - 50$ and get $250$. Then I take away $5$ more and get $245$, which is my answer.}
-
-Why does Mel's strategy give us the correct answer? Draw pictures or write equations to help you understand this strategy. Did Mel use any properties of arithmetic in this strategy?  Explain your thinking.
-\end{problem}
 
 
 
@@ -57,10 +189,13 @@ Why does Mel's strategy give us the correct answer? Draw pictures or write equat
 {\bf Overall Picture:}
 
 \begin{itemize}
-\item You may want to work through the first two problems as a class, one at a time. Write one of the problems on the board, give students a few minutes to think, and then ask for 3-5 volunteers to talk through their solutions. Consider asking students to give a thumbs-up (visible only to the instructor) when they are ready, much like with \link[Number Talks]{https://www.insidemathematics.org/classroom-videos/number-talks/3rd-grade-math-one-digit-by-two-digit-multiplication} (see the ``Part 1'' video linked for an example).
+\item Work through the first problem as a class, one at a time. Write one of the problems on the board, give students a few minutes to think, and then ask for 3-5 volunteers to talk through their solutions. Consider asking students to give a thumbs-up (visible only to the instructor) when they are ready, much like with \link[Number Talks]{https://www.insidemathematics.org/classroom-videos/number-talks/3rd-grade-math-one-digit-by-two-digit-multiplication} (see the ``Part 1'' video linked for an example).
 \item If you are short on time or want to move through this first part more quickly, you can eliminate parts (b) and (d).
-\item Have students present as many types of drawings and equations as you see while you walk around the room. The equations need not be a string of equations, but do need to represent the student's thinking. If the student does write a string of equations, watch for the type where the equals sign means ``operate'' rather than ``equal'', for instance $2 + 7 = 9 + 1 = 10$ when solving $2 + 7 + 1$.
-\item If we have not yet discussed the commutative and associative properties of addition, you have a nice opportunity here to ask students why (using the meaning of addition) these ideas make sense.
+\item The AI problems are designed to help students think critically about AI output (as well as what children might say in their future classroom!) Students should recognize that the answer and strategy are correct, but that the illustration isn't really a picture and doesn't really add anything to the description given. Some students may draw a bundling picture to illustrate this method, and this should be discussed as a class.
+\item Students should recognize that the ``add the opposite'' idea involves understanding that subtracting a negative is the same as adding a positive, making this a more advanced strategy. There are other ways to describe this for younger children, and for older children we might use a more complete sequence of equations. If a student writes a sequence of equations, this should be presented (or it can be developed as a class in discussion).
+\item For the number line, students should recognize many problems with this illustration. For example, Copilot says to start at 302 but the arrow appears to start at 245. The number 245 also appears twice on the number line. You should have a student present a more correct number line for the whole class to see and discuss.
+
+\item The point of this activity is not to bring up properties of addition (we will do this later with multiplication). However, if there is extra time at the end, you can give names to the properties that students are using and/or ask students to draw pictures and use the meaning of operations to explain why those properties make sense.
 
 \end{itemize}
 
@@ -70,9 +205,33 @@ Why does Mel's strategy give us the correct answer? Draw pictures or write equat
 
 
 
-{\bf Suggested Timing:} This activity should take most of the class period. If you are working together for the first part, spend about 20 minutes here, then give students about 10 minutes to draw and write equations, and have groups present for the final 20 minutes. If the students are working in groups for the first part, encourage silence for about five minutes, then give groups about 15 minutes to discuss and progress through the activity. Then, use the last 25 minutes in whole-class discussion.
+{\bf Suggested Timing:} This activity should take the whole class period. Spend about 15 minutes on the discussion of mental math strategies in problem 1. Then give students about 15 minutes to interact with the AI output.  Finally, use the rest of the time in whole-class discussion and presentations.
 
 \end{instructorNotes}
 
 
 \end{document}
+
+
+
+
+
+%
+%\begin{problem}
+%As a group, illustrate your solutions to each problem using a picture. Your pictures can include objects, number lines, or whatever else makes sense to you! Try using different types of pictures for each problem.
+%\end{problem}
+%
+%
+%\begin{problem}
+%As a group, illustrate your solutions to each problem using equations. Be sure to place the equals sign only between things which are actually equal! Did you use any properties of arithmetic in your equations? If so, what were they, and where did you use them? Be as specific as you can.
+%
+%\end{problem}
+%
+%
+%\begin{problem}
+%Mel solves $302 - 57$ in the following way.
+%
+%\emph{I'm going to start by shifting this problem from $302 - 57$ to be $300 - 55$. This will have the same answer as my original problem because I took away $2$ from both numbers. Now I take $300 - 50$ and get $250$. Then I take away $5$ more and get $245$, which is my answer.}
+%
+%Why does Mel's strategy give us the correct answer? Draw pictures or write equations to help you understand this strategy. Did Mel use any properties of arithmetic in this strategy?  Explain your thinking.
+%\end{problem}
